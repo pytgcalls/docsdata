@@ -1,0 +1,45 @@
+<page>
+  <title>PyTgCalls Client</title>
+  <text>DATA DESCRIPTION - TEST <bold>bold</bold></text>
+
+  <syntax-highlight>
+    <selected>
+      <row>from pytgcalls import PyTgCalls</row>
+      <row></row>
+      <row>app = PyTgCalls(client)</row>
+    </selected>
+    <row>app.start()</row>
+  </syntax-highlight>
+
+  <separator></separator>
+
+  <secondary-title>Details</secondary-title>
+  <category>
+    <category-title>class <ref>pytgcalls.PyTgCalls</ref></category-title>
+    <subtext>
+      <category-title><ref>active_calls</ref></category-title>
+      <subtext>
+        <text>Get a list of active (Playing / Paused) group calls</text>
+        <text>TYPE</text>
+        <subtext>
+          List of <docs-ref link="">GroupCall</docs-ref>
+        </subtext>
+      </subtext>
+
+      <category-title><ref>calls</ref></category-title>
+      <subtext>
+        <text>Get a list of existent group calls</text>
+        <text>TYPE</text>
+        <subtext>
+          List of <docs-ref link="">GroupCall</docs-ref>
+        </subtext>
+      </subtext>
+
+      <subtext>PARAMETERS</subtext>
+      <list>
+        <item><bold>App</bold> – test</item>
+        <item><bold>cache_duration</bold> (<code>test</code>) - cc</item>
+      </list>
+    </subtext>
+  </category>
+</page>
