@@ -3,10 +3,10 @@
   <option id="PYTGCALLS_VERSION">1.0.0</option>
 
   <files-list>
-    <file>quickstart.xml</file>
-    <file>install.xml</file>
-    <file>invoking.xml</file>
-    <file>updates.xml</file>
-    <file>examples.xml</file>
+    <file>Calling Methods.xml</file>
+    <file>Examples.xml</file>
+    <file>Handling Updates.xml</file>
+    <file>Install Guide.xml</file>
+    <file>Quick Start.xml</file>
   </files-list>
 </config>

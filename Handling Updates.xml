@@ -46,7 +46,7 @@
         will be the function that gets executed every time a new update arrives.
     </text>
     <alert type="note">
-        You can mix <syntax-highlight>def</syntax-highlight> and <syntax-highlight>async def</syntax-highlight> handlers as much as you need,
+        You can mix <code>def</code> and <code>async def</code> handlers as much as you need,
         PyTgCalls will still work concurrently and efficiently regardless of what you choose.
     </alert>
 </page>
