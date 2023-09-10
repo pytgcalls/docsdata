@@ -13,7 +13,7 @@
     <h2>Install PyTgCalls</h2>
     <text>The easiest way to install and upgrade PyTgCalls to its latest stable version is by using pip:</text>
     <syntax-highlight language="bash">
-        pip3 install -U py-tgcalls
+        $ pip3 install -U py-tgcalls
     </syntax-highlight>
     <h2>Bleeding Edge</h2>
     <text>
@@ -24,15 +24,13 @@
         you can install the development version straight from the <code>master</code> branch using this command (note “master.zip” in the link):
     </text>
     <syntax-highlight language="bash">
-        pip3 install -U git+https://github.com/pytgcalls/pytgcalls
+        $ pip3 install -U git+https://github.com/pytgcalls/pytgcalls
     </syntax-highlight>
     <h2>Verifying</h2>
     <text>To verify that PyTgCalls is correctly installed, open a Python shell and import it. If no error shows up you are good to go.</text>
-    <syntax-highlight language="python-shell">
-        import pytgcalls
-        pytgcalls.__version__
-        <output>
-            '<config id="PYTGCALLS_VERSION"/>'
-        </output>
+    <syntax-highlight language="python">
+        >>> import pytgcalls
+        >>> pytgcalls.__version__
+        '<config id="PYTGCALLS_VERSION"/>'
     </syntax-highlight>
 </page>
