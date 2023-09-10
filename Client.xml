@@ -1,0 +1,48 @@
+<page>
+    <h1>PyTgCalls Client</h1>
+    <text>
+        You have entered the API Reference section where you can find detailed information about PyTgCalls API.
+        The main Client class, all available methods, types, attributes, decorator detailed descriptions can be found starting from this page.
+
+        This page is about the Client class, which exposes high-level methods for easy access to the API.
+    </text>
+    <syntax-highlight>
+        <selected>
+            from pytgcalls import PyTgCalls
+
+            app = PyTgCalls(client)
+        </selected>
+        app.start()
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category>
+        <category-title>
+            class <ref>pytgcalls.PyTgCalls</ref>(
+                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], # Pass the MtProto Client
+                cache_duration: int, # Cache duration of a Full Chat query
+                overload_quiet_mode: bool # Disable overload cpu messages by setting true
+            ) throws <docs-ref link="">InvalidMtProtoClient</docs-ref>
+        </category-title>
+        <subtext>
+            <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
+
+            <category-title><ref>active_calls</ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+            <subtext>
+                <text>Get a list of active (Playing / Paused) group calls</text>
+            </subtext>
+            <category-title><ref>calls</ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+            <subtext>
+                <text>Get a list of existent group calls</text>
+            </subtext>
+            <category-title><ref>cache_peer</ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>,<a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
+            <subtext>
+                <text>Get current Telegram user</text>
+            </subtext>
+            <category-title><ref>ping</ref>(): int</category-title>
+            <subtext>
+                <text>Ping of NTgCalls core</text>
+            </subtext>
+        </subtext>
+    </category>
+</page>
