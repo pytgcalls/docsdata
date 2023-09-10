@@ -6,12 +6,10 @@
 
         This page is about the Client class, which exposes high-level methods for easy access to the API.
     </text>
-    <syntax-highlight>
-        <selected>
-            from pytgcalls import PyTgCalls
+    <syntax-highlight mark="1-3">
+        from pytgcalls import PyTgCalls
 
-            app = PyTgCalls(client)
-        </selected>
+        app = PyTgCalls(client)
         app.start()
     </syntax-highlight>
     <separator/>

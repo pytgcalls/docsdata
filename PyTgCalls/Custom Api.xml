@@ -6,19 +6,17 @@
 
         This page is about the CustomAPI class, which exposes high-level methods for easy access to the API.
     </text>
-    <syntax-highlight>
-        <selected>
-            from pytgcalls import CustomApi
+    <syntax-highlight mark="1-10">
+        from pytgcalls import CustomApi
 
-            api = CustomApi()
+        api = CustomApi()
 
-            @api.on_update_custom_api()
-            async def custom_api_request(request: dict):
-                print(request)
-                return {
-                    'response': 'FOXES',
-                }
-        </selected>
+        @api.on_update_custom_api()
+        async def custom_api_request(request: dict):
+            print(request)
+            return {
+                'response': 'FOXES',
+            }
         api.start()
     </syntax-highlight>
     <separator/>

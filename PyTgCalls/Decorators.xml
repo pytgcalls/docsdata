@@ -5,16 +5,14 @@
 
         Decorators are able to register callback functions for handling updates in a much easier and cleaner way; All you need to do is adding the decorators on top of your functions.
     </code>
-    <syntax-highlight>
+    <syntax-highlight mark="7">
         from pytgcalls import PyTgCalls
         from pytgcalls.types import Update
         ...
         client = # Here Your MtProto Client
         app = PyTgCalls(client)
 
-        <selected>
-            @app.on_raw_update()
-        </selected>
+        @app.on_raw_update()
         async def my_handler(client: PyTgCalls, update: Update):
             print(message)
 
@@ -29,14 +27,12 @@
 
             When a video chat closes, this decorator will be raised
             <h3>Example</h3>
-            <syntax-highlight>
+            <syntax-highlight mark="4-5">
                 ...
                 app = PyTgCalls(client)
                 ...
-                <selected>
-                    @app.on_closed_voice_chat()
-                    async def handler(client: PyTgCalls, chat_id: int):
-                </selected>
+                @app.on_closed_voice_chat()
+                async def handler(client: PyTgCalls, chat_id: int):
                     print(chat_id)
                 ...
                 app.run()
@@ -48,15 +44,13 @@
 
             When your userbot will be invited on voice chat, this decorator will be raised
             <h3>Example</h3>
-            <syntax-highlight>
+            <syntax-highlight mark="4-5">
                 ...
                 app = PyTgCalls(client)
                 ...
-                <selected>
-                    @app.on_group_call_invite()
-                    async def handler(client: PyTgCalls, service_msg):
-                </selected>
-                print(chat_id)
+                @app.on_group_call_invite()
+                async def handler(client: PyTgCalls, service_msg):
+                    print(chat_id)
                 ...
                 app.run()
             </syntax-highlight>
@@ -67,15 +61,13 @@
 
             When your userbot will be kicked from a group/channel, this decorator will be raised
             <h3>Example</h3>
-            <syntax-highlight>
+            <syntax-highlight mark="4-5">
                 ...
                 app = PyTgCalls(client)
                 ...
-                <selected>
-                    @app.on_kicked()
-                    async def handler(client: PyTgCalls, service_msg):
-                </selected>
-                print(chat_id)
+                @app.on_kicked()
+                async def handler(client: PyTgCalls, service_msg):
+                    print(chat_id)
                 ...
                 app.run()
             </syntax-highlight>
@@ -86,15 +78,13 @@
 
             When your userbot leave a group/channel, this decorator will be raised
             <h3>Example</h3>
-            <syntax-highlight>
+            <syntax-highlight mark="4-5">
                 ...
                 app = PyTgCalls(client)
                 ...
-                <selected>
-                    @app.on_left()
-                    async def handler(client: PyTgCalls, chat_id: int):
-                </selected>
-                print(chat_id)
+                @app.on_left()
+                async def handler(client: PyTgCalls, chat_id: int):
+                    print(chat_id)
                 ...
                 app.run()
             </syntax-highlight>
@@ -105,15 +95,13 @@
 
             When the participant list changes, this decorator will be raised
             <h3>Example</h3>
-            <syntax-highlight>
+            <syntax-highlight mark="4-5">
                 ...
                 app = PyTgCalls(client)
                 ...
-                <selected>
-                    @app.on_participants_change()
-                    async def handler(client: PyTgCalls, update: Update):
-                </selected>
-                print(chat_id)
+                @app.on_participants_change()
+                async def handler(client: PyTgCalls, update: Update):
+                    print(chat_id)
                 ...
                 app.run()
             </syntax-highlight>
