@@ -1,0 +1,152 @@
+<page>
+    <h1>Calling Methods</h1>
+    <text>
+        At this point, we have successfully <docs-ref link="">installed PyTgCalls</docs-ref> and installed an MtProto client;
+        we are now aiming towards the core of the library. It’s time to start playing with the API!
+    </text>
+    <h2>Basic Usage</h2>
+    <text>Making API method calls with PyTgCalls is very simple. Here’s a basic example we are going to examine step by step:</text>
+    <syntax-highlight>
+        from pytgcalls import PyTgCalls
+        from pytgcalls import idle
+        from pytgcalls.types import AudioPiped
+        ...
+        api_id = 12345
+        api_hash = '0123456789abcdef0123456789abcdef'
+        ...
+        app = PyTgCalls(client)
+        app.start()
+        app.join_group_call(
+            -1001185324811,
+            AudioPiped(
+                'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+            )
+        )
+        idle()
+    </syntax-highlight>
+    <h3>Basic step-by-step</h3>
+    <list style="numbers">
+        <item>
+            Let’s begin by importing the Client class, Stream type and idle function:
+            <syntax-highlight>
+                from pytgcalls import PyTgCalls
+                from pytgcalls import idle
+                from pytgcalls.types import AudioPiped
+            </syntax-highlight>
+        </item>
+        <item>
+            Now let’s import your MtProto Client:
+
+            If you need Pyrogram:
+            <syntax-highlight>
+                from pyrogram import Client
+            </syntax-highlight>
+            If you need Telethon:
+            <syntax-highlight>
+                from telethon import TelegramClient
+            </syntax-highlight>
+        </item>
+        <item>
+            Set your api_id and api_hash taken from https://my.telegram.org/apps:
+            <syntax-highlight>
+                api_id = 12345
+                api_hash = '0123456789abcdef0123456789abcdef'
+            </syntax-highlight>
+        </item>
+        <item>
+            Initialize the MtProto client:
+
+            If you are using Pyrogram:
+            <syntax-highlight>
+                client = Client('test_session', api_id, api_hash)
+            </syntax-highlight>
+            If you are using Telethon:
+            <syntax-highlight>
+                client = TelegramClient('test_session', api_id, api_hash)
+            </syntax-highlight>
+        </item>
+        <item>
+            Initialize the PyTgCalls client:
+            <syntax-highlight>
+                app = PyTgCalls(client)
+            </syntax-highlight>
+        </item>
+        <item>
+            Start the PyTgCalls client:
+            <syntax-highlight>
+                app.start()
+            </syntax-highlight>
+        </item>
+        <item>
+            Now you can call any method you like:
+            <syntax-highlight>
+                app.join_group_call(
+                    -1001185324811,
+                    AudioPiped(
+                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                    )
+                )
+            </syntax-highlight>
+        </item>
+        <item>
+            Now add idle to block your code (To avoid the immediate closing of your script):
+            <syntax-highlight>
+                idle()
+            </syntax-highlight>
+        </item>
+    </list>
+    <h2>Asynchronous Calls</h2>
+    <text>In case you want PyTgCalls to run asynchronously:</text>
+    <syntax-highlight>
+        import asyncio
+        from pytgcalls import PyTgCalls
+        from pytgcalls import idle
+        from pytgcalls.types import AudioPiped
+        ...
+        app = PyTgCalls(client)
+
+        async def main():
+            await app.start()
+            await app.join_group_call(
+                -1001185324811,
+                AudioPiped(
+                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                )
+            )
+            await idle()
+
+        asyncio.get_event_loop().run_until_complete(main())
+    </syntax-highlight>
+    <h3>Asynchronous step-by-step</h3>
+    <list style="numbers">
+        <item>
+            Import PyTgCalls, AsyncIO and create an instance:
+            <syntax-highlight>
+                import asyncio
+                from pytgcalls import PyTgCalls
+                from pytgcalls import idle
+                ...
+                app = PyTgCalls(client)
+            </syntax-highlight>
+        </item>
+        <item>
+            Async methods can’t normally be executed at the top level, because they must be inside an async-defined function;
+            here we define one and put our code inside; method calls require the await keyword:
+            <syntax-highlight>
+                async def main():
+                await app.start()
+                await app.join_group_call(
+                    -1001185324811,
+                    AudioPiped(
+                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                    )
+                )
+                await idle()
+            </syntax-highlight>
+        </item>
+        <item>
+            Then we tell asyncio to call <code>main()</code>, they will call the function in async mode
+            <syntax-highlight>asyncio.get_event_loop().run_until_complete(main())</syntax-highlight>
+        </item>
+    </list>
+</page>

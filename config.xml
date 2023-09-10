@@ -5,5 +5,8 @@
   <files-list>
     <file>quickstart.xml</file>
     <file>install.xml</file>
+    <file>invoking.xml</file>
+    <file>updates.xml</file>
+    <file>examples.xml</file>
   </files-list>
 </config>
