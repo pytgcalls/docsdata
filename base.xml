@@ -4,14 +4,14 @@
 
   <syntax-highlight>
     <selected>
-      <row>from pytgcalls import PyTgCalls</row>
-      <row></row>
-      <row>app = PyTgCalls(client)</row>
+      from pytgcalls import PyTgCalls
+      
+      app = PyTgCalls(client)
     </selected>
-    <row>app.start()</row>
+    app.start()
   </syntax-highlight>
 
-  <separator></separator>
+  <separator/>
 
   <secondary-title>Details</secondary-title>
   <category>
@@ -40,6 +40,24 @@
         <item><bold>App</bold> – test</item>
         <item><bold>cache_duration</bold> (<code>test</code>) - cc</item>
       </list>
+
+      <subtext>TABLE EXAMPLE</subtext>
+      <table>
+        <definitions>
+          <column>Method</column>
+          <column>Description</column>
+        </definitions>
+        <datalist>
+          <item>
+            <column><docs-ref link="">get_fox</docs-ref></column>
+            <column>Get the list of</column>
+          </item>
+          <item>
+            <column><docs-ref link="">get_nicolino</docs-ref></column>
+            <column>Get the list of godspro</column>
+          </item>
+        </datalist>
+      </table>
     </subtext>
   </category>
 </page>
