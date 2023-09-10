@@ -1,0 +1,42 @@
+<page>
+    <title>Install Guide</title>
+    <text>
+        Being a modern Python library, PyTgCalls requires Python 3.6+ to be installed in your system.
+        We recommend using the latest versions of both Python 3 and pip.
+    </text>
+    <list>
+        <item>Get Python 3 from https://www.python.org/downloads/ (or with your package manager).</item>
+        <item>Get pip by following the instructions at https://pip.pypa.io/en/latest/installing/.</item>
+    </list>
+    <alert type="important">PyTgCalls supports <b>Python 3</b> only, starting from version 3.7. <b>PyPy</b> is supported too.</alert>
+    <separator/>
+    <secondary-title>Install PyTgCalls</secondary-title>
+    <list>
+        <item>
+            The easiest way to install and upgrade PyTgCalls to its latest stable version is by using pip:
+            <syntax-highlight language="bash">
+                pip3 install -U py-tgcalls
+            </syntax-highlight>
+        </item>
+    </list>
+    <secondary-title>Bleeding Edge</secondary-title>
+    <text>
+        PyTgCalls is always evolving, although new releases on PyPI are published only when enough changes are added,
+        but this doesn’t mean you can’t try new features right now!
+        <br/><br/>
+        In case you’d like to try out the latest PyTgCalls features, the  <a href="https://github.com/pytgcalls/pytgcalls">GitHub repo</a> is always kept updated with new changes;
+        you can install the development version straight from the <code>master</code> branch using this command (note “master.zip” in the link):
+        <syntax-highlight language="bash">
+            pip3 install -U git+https://github.com/pytgcalls/pytgcalls
+        </syntax-highlight>
+    </text>
+    <secondary-title>Verifying</secondary-title>
+    <text>To verify that PyTgCalls is correctly installed, open a Python shell and import it. If no error shows up you are good to go.</text>
+    <syntax-highlight language="python-shell">
+        import pytgcalls
+        pytgcalls.__version__
+        <output>
+            '<config id="PYTGCALLS_VERSION"/>'
+        </output>
+    </syntax-highlight>
+</page>

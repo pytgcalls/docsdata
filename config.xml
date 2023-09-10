@@ -3,6 +3,7 @@
   <option id="PYTGCALLS_VERSION">1.0.0</option>
 
   <files-list>
-    <file>base.xml</file>
+    <file>quickstart.xml</file>
+    <file>install.xml</file>
   </files-list>
 </config>

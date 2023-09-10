@@ -1,0 +1,39 @@
+<page>
+    <title>Quick Start</title>
+    <text>The next few steps serve as a quick start for all new Pythoneer that want to see PyTgCalls in action as fast as possible. Let’s go!</text>
+    <secondary-title>Get PyTgCalls Real Fast</secondary-title>
+    <list style="numbers">
+        <item>Install PyTgCalls with <code>pip3 install -U py-tgcalls</code>.</item>
+        <item>Choose your MtProto client between <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a> or <a href="https://github.com/LonamiWebs/Telethon">Telethon</a>.</item>
+        <item>Get your own Telegram API key from https://my.telegram.org/apps.</item>
+        <item>
+            Open your best text editor and use the following:
+            <syntax-highlight>
+                from pytgcalls import PyTgCalls
+                from pytgcalls import idle
+                from pytgcalls.types import AudioPiped
+                ...
+                chat_id = -1001185324811
+                app = PyTgCalls(client)
+                app.start()
+                app.join_group_call(
+                    chat_id,
+                    AudioPiped(
+                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                    )
+                )
+                idle()
+            </syntax-highlight>
+        </item>
+        <item>Replace client and <i>chat_id</i> values with your own.</item>
+        <item>Save the file as <code>main.py</code>.</item>
+        <item>Watch PyTgCalls playing the audio file.</item>
+        <item>Join our <a href="https://t.me/PyTgCallsChat">community</a>.</item>
+    </list>
+    <secondary-title>Enjoy the API</secondary-title>
+    <text>
+        That was just a quick overview that barely scratched the surface! In the next few pages of the introduction, we’ll take a much more in-depth look of what we have just done above.
+        <br/><br/>
+        Feeling eager to continue? You can take a shortcut to Calling Methods and come back later to learn some more details.
+    </text>
+</page>
