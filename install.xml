@@ -19,7 +19,7 @@
     <text>
         PyTgCalls is always evolving, although new releases on PyPI are published only when enough changes are added,
         but this doesn’t mean you can’t try new features right now!
-        <br/><br/>
+
         In case you’d like to try out the latest PyTgCalls features, the  <a href="https://github.com/pytgcalls/pytgcalls">GitHub repo</a> is always kept updated with new changes;
         you can install the development version straight from the <code>master</code> branch using this command (note “master.zip” in the link):
     </text>
