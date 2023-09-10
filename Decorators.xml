@@ -1,0 +1,122 @@
+<page>
+    <h1>Decorators</h1>
+    <code>
+        While still being methods bound to the <docs-ref link="">PyTgCalls</docs-ref> class, decorators are of a special kind and thus deserve a dedicated page.
+
+        Decorators are able to register callback functions for handling updates in a much easier and cleaner way; All you need to do is adding the decorators on top of your functions.
+    </code>
+    <syntax-highlight>
+        from pytgcalls import PyTgCalls
+        from pytgcalls.types import Update
+        ...
+        client = # Here Your MtProto Client
+        app = PyTgCalls(client)
+
+        <selected>
+            @app.on_raw_update()
+        </selected>
+        async def my_handler(client: PyTgCalls, update: Update):
+            print(message)
+
+        app.run()
+    </syntax-highlight>
+    <separator/>
+    <h1>PyTgCalls Decorators</h1>
+    <category>
+        <category-title><ref>@pytgcalls.PyTgCalls.on_closed_voice_chat</ref></category-title>
+        <subtext>
+            Decorator for handling closed voice chat event.
+
+            When a video chat closes, this decorator will be raised
+            <h3>Example</h3>
+            <syntax-highlight>
+                ...
+                app = PyTgCalls(client)
+                ...
+                <selected>
+                    @app.on_closed_voice_chat()
+                    async def handler(client: PyTgCalls, chat_id: int):
+                </selected>
+                    print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
+        <category-title><ref>@pytgcalls.PyTgCalls.on_group_call_invite</ref></category-title>
+        <subtext>
+            Decorator for handling when invited from voice chat event.
+
+            When your userbot will be invited on voice chat, this decorator will be raised
+            <h3>Example</h3>
+            <syntax-highlight>
+                ...
+                app = PyTgCalls(client)
+                ...
+                <selected>
+                    @app.on_group_call_invite()
+                    async def handler(client: PyTgCalls, service_msg):
+                </selected>
+                print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
+        <category-title><ref>@pytgcalls.PyTgCalls.on_kicked</ref></category-title>
+        <subtext>
+            Decorator for handling when kicked from a group/channel
+
+            When your userbot will be kicked from a group/channel, this decorator will be raised
+            <h3>Example</h3>
+            <syntax-highlight>
+                ...
+                app = PyTgCalls(client)
+                ...
+                <selected>
+                    @app.on_kicked()
+                    async def handler(client: PyTgCalls, service_msg):
+                </selected>
+                print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
+        <category-title><ref>@pytgcalls.PyTgCalls.on_left</ref></category-title>
+        <subtext>
+            Decorator for handling when the userbot left a group/channel
+
+            When your userbot leave a group/channel, this decorator will be raised
+            <h3>Example</h3>
+            <syntax-highlight>
+                ...
+                app = PyTgCalls(client)
+                ...
+                <selected>
+                    @app.on_left()
+                    async def handler(client: PyTgCalls, chat_id: int):
+                </selected>
+                print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
+        <category-title><ref>@pytgcalls.PyTgCalls.on_participants_change</ref></category-title>
+        <subtext>
+            Decorator for handling when the participant list of a group call is changed
+
+            When the participant list changes, this decorator will be raised
+            <h3>Example</h3>
+            <syntax-highlight>
+                ...
+                app = PyTgCalls(client)
+                ...
+                <selected>
+                    @app.on_participants_change()
+                    async def handler(client: PyTgCalls, update: Update):
+                </selected>
+                print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
+    </category>
+</page>

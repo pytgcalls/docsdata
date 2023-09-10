@@ -3,11 +3,17 @@
   <option id="PYTGCALLS_VERSION">1.0.0</option>
 
   <files-list>
-    <file>Calling Methods.xml</file>
-    <file>Client.xml</file>
-    <file>Examples.xml</file>
-    <file>Handling Updates.xml</file>
-    <file>Install Guide.xml</file>
+    <microtag>INTRODUCTION</microtag>
     <file>Quick Start.xml</file>
+    <file>Install Guide.xml</file>
+
+    <microtag>GETTING STARTED</microtag>
+    <file>Calling Methods.xml</file>
+    <file>Handling Updates.xml</file>
+    <file>Examples.xml</file>
+
+    <microtag>API REFERENCE</microtag>
+    <file>Client.xml</file>
+    <file>Custom Api.xml</file>
   </files-list>
 </config>
