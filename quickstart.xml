@@ -1,7 +1,7 @@
 <page>
-    <title>Quick Start</title>
+    <h1>Quick Start</h1>
     <text>The next few steps serve as a quick start for all new Pythoneer that want to see PyTgCalls in action as fast as possible. Let’s go!</text>
-    <secondary-title>Get PyTgCalls Real Fast</secondary-title>
+    <h2>Get PyTgCalls Real Fast</h2>
     <list style="numbers">
         <item>Install PyTgCalls with <code>pip3 install -U py-tgcalls</code>.</item>
         <item>Choose your MtProto client between <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a> or <a href="https://github.com/LonamiWebs/Telethon">Telethon</a>.</item>
@@ -30,7 +30,7 @@
         <item>Watch PyTgCalls playing the audio file.</item>
         <item>Join our <a href="https://t.me/PyTgCallsChat">community</a>.</item>
     </list>
-    <secondary-title>Enjoy the API</secondary-title>
+    <h2>Enjoy the API</h2>
     <text>
         That was just a quick overview that barely scratched the surface! In the next few pages of the introduction, we’ll take a much more in-depth look of what we have just done above.
         <br/><br/>

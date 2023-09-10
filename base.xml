@@ -1,5 +1,5 @@
 <page>
-  <title>PyTgCalls Client</title>
+  <h1>PyTgCalls Client</h1>
   <text>DATA DESCRIPTION - TEST <bold>bold</bold></text>
 
   <syntax-highlight>
@@ -13,7 +13,7 @@
 
   <separator/>
 
-  <secondary-title>Details</secondary-title>
+  <h2>Details</h2>
   <category>
     <category-title>class <ref>pytgcalls.PyTgCalls</ref></category-title>
     <subtext>
