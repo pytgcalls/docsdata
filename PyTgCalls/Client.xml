@@ -17,10 +17,10 @@
     <category>
         <category-title>
             class <ref>pytgcalls.PyTgCalls</ref>(
-                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], <syntax-highlight-inline># Pass the MtProto Client</syntax-highlight-inline>
-                cache_duration: <syntax-highlight-inline>int</syntax-highlight-inline>, <syntax-highlight-inline># Cache duration of a Full Chat query</syntax-highlight-inline>
-                overload_quiet_mode: <syntax-highlight-inline>bool</syntax-highlight-inline>,  <syntax-highlight-inline># Disable overload cpu messages by setting true</syntax-highlight-inline>
-            ) throws <docs-ref link="">InvalidMtProtoClient</docs-ref>
+                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], <shi># Pass the MtProto Client</shi>
+                cache_duration: <shi>int</shi>, <shi># Cache duration of a Full Chat query</shi>
+                overload_quiet_mode: <shi>bool</shi>, <shi># Disable overload cpu messages by setting true</shi>
+            ) <ref>throws</ref> <docs-ref link="">InvalidMtProtoClient</docs-ref>
         </category-title>
         <subtext>
             <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
