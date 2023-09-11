@@ -20,8 +20,9 @@
     </syntax-highlight>
     <separator/>
     <h1>PyTgCalls Decorators</h1>
+    <br/>
     <category>
-        <category-title><ref>@PyTgCalls.on_closed_voice_chat()</ref></category-title>
+        <category-title><ref>@PyTgCalls.<b>on_closed_voice_chat()</b></ref></category-title>
         <subtext>
             Decorator for handling closed voice chat event.
 
@@ -38,7 +39,8 @@
                 app.run()
             </syntax-highlight>
         </subtext>
-        <category-title><ref>@PyTgCalls.on_group_call_invite()</ref></category-title>
+        <br/><br/>
+        <category-title><ref>@PyTgCalls.<b>on_group_call_invite()</b></ref></category-title>
         <subtext>
             Decorator for handling when invited from voice chat event.
 
@@ -55,7 +57,8 @@
                 app.run()
             </syntax-highlight>
         </subtext>
-        <category-title><ref>@PyTgCalls.on_kicked()</ref></category-title>
+        <br/><br/>
+        <category-title><ref>@PyTgCalls.<b>on_kicked()</b></ref></category-title>
         <subtext>
             Decorator for handling when kicked from a group/channel
 
@@ -72,7 +75,8 @@
                 app.run()
             </syntax-highlight>
         </subtext>
-        <category-title><ref>@PyTgCalls.on_left()</ref></category-title>
+        <br/><br/>
+        <category-title><ref>@PyTgCalls.<b>on_left()</b></ref></category-title>
         <subtext>
             Decorator for handling when the userbot left a group/channel
 
@@ -89,7 +93,8 @@
                 app.run()
             </syntax-highlight>
         </subtext>
-        <category-title><ref>@PyTgCalls.on_participants_change()</ref></category-title>
+        <br/><br/>
+        <category-title><ref>@PyTgCalls.<b>on_participants_change()</b></ref></category-title>
         <subtext>
             Decorator for handling when the participant list of a group call is changed
 

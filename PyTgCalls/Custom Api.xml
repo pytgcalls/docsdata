@@ -23,12 +23,16 @@
     <h2>Details</h2>
     <category>
         <category-title>
-            class <ref>pytgcalls.CustomApi</ref>(
-                port: int # CustomApi port to bind the API http server
+            class <ref>pytgcalls.<b>CustomApi</b></ref>(
+                port: <shi>int</shi>, <shi># CustomApi port to bind the API http server</shi>
             )
         </category-title>
         <subtext>
             <text>CustomAPI, the main means host the local http api server.</text>
+            <category-title><ref><b>@on_update_custom_api</b></ref>()</category-title>
+            <subtext>
+                <text>Decorator for handling incoming http events</text>
+            </subtext>
         </subtext>
     </category>
 </page>

@@ -16,7 +16,7 @@
     <h2>Details</h2>
     <category>
         <category-title>
-            class <ref>pytgcalls.PyTgCalls</ref>(
+            class <ref>pytgcalls.<b>PyTgCalls</b></ref>(
                 app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], <shi># Pass the MtProto Client</shi>
                 cache_duration: <shi>int</shi>, <shi># Cache duration of a Full Chat query</shi>
                 overload_quiet_mode: <shi>bool</shi>, <shi># Disable overload cpu messages by setting true</shi>
@@ -25,19 +25,19 @@
         <subtext>
             <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
 
-            <category-title><ref>active_calls</ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+            <category-title><ref><b>active_calls</b></ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
             <subtext>
                 <text>Get a list of active (Playing / Paused) group calls</text>
             </subtext>
-            <category-title><ref>calls</ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+            <category-title><ref><b>calls</b></ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
             <subtext>
                 <text>Get a list of existent group calls</text>
             </subtext>
-            <category-title><ref>cache_peer</ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>, <a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
+            <category-title><ref><b>cache_peer</b></ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>, <a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
             <subtext>
                 <text>Get current Telegram user</text>
             </subtext>
-            <category-title><ref>ping</ref>(): int</category-title>
+            <category-title><ref><b>ping</b></ref>(): <shi>int</shi></category-title>
             <subtext>
                 <text>Ping of NTgCalls core</text>
             </subtext>
