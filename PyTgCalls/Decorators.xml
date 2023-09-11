@@ -1,10 +1,10 @@
 <page>
     <h1>Decorators</h1>
-    <code>
+    <text>
         While still being methods bound to the <docs-ref link="">PyTgCalls</docs-ref> class, decorators are of a special kind and thus deserve a dedicated page.
 
         Decorators are able to register callback functions for handling updates in a much easier and cleaner way; All you need to do is adding the decorators on top of your functions.
-    </code>
+    </text>
     <syntax-highlight mark="7">
         from pytgcalls import PyTgCalls
         from pytgcalls.types import Update
