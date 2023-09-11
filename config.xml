@@ -4,18 +4,18 @@
 
   <files-list>
     <microtag>INTRODUCTION</microtag>
-    <file>Quick Start.xml</file>
-    <file>PyTGCalls/Install Guide.xml</file>
+    <file>PyTgCalls/Quick Start.xml</file>
+    <file>PyTgCalls/Install Guide.xml</file>
 
     <microtag>GETTING STARTED</microtag>
-    <file>PyTGCalls/Calling Methods.xml</file>
-    <file>PyTGCalls/Handling Updates.xml</file>
-    <file>PyTGCalls/Examples.xml</file>
+    <file>PyTgCalls/Calling Methods.xml</file>
+    <file>PyTgCalls/Handling Updates.xml</file>
+    <file>PyTgCalls/Examples.xml</file>
 
     <microtag>API REFERENCE</microtag>
-    <file>PyTGCalls/Client.xml</file>
-    <file>PyTGCalls/Custom Api.xml</file>
-    <file>PyTGCalls/Decorators.xml</file>
-    <file>PyTGCalls/Exceptions.xml</file>
+    <file>PyTgCalls/Client.xml</file>
+    <file>PyTgCalls/Custom Api.xml</file>
+    <file>PyTgCalls/Decorators.xml</file>
+    <file>PyTgCalls/Exceptions.xml</file>
   </files-list>
 </config>
