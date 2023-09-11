@@ -15,75 +15,73 @@
             <column>Example</column>
             <column>Description</column>
         </definitions>
-        <datalist>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/additional_ffmpeg_parameters">additional_ffmpeg_parameters</a></column>
-                <column>Append parameters to ffmpeg</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/calls_with_module">calls_with_module</a></column>
-                <column>Directly join on group call without waiting the start of PyTgCalls</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/capture_mic">capture_mic</a></column>
-                <column>Capture microphone</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/custom_api">custom_api</a></column>
-                <column>Use custom api server to bind PHP or other api to PyTgCalls</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/fifo_conversion">fifo_conversion</a></column>
-                <column>Play a stream from fifo</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/multiple_calls">multiple_calls</a></column>
-                <column>Use multiple pytgcalls instances with different Telegram Accounts</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_audio_calls">piped_audio_calls</a></column>
-                <column>Play audio using ffmpeg for live conversion (With integrated ffmpeg)</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_image_calls">piped_image_calls</a></column>
-                <column>Play audio and image using ffmpeg for live conversion (With integrated ffmpeg)</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_video_calls">piped_video_calls</a></column>
-                <column>Play audio and video using ffmpeg for live conversion (With integrated ffmpeg)</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_piped_play">remote_piped_play</a></column>
-                <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg)</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_stream_with_header">remote_stream_with_header</a></column>
-                <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg) with additional headers</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/screen_sharing">screen_sharing</a></column>
-                <column>Screen sharing</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/screen_sharing_mic">screen_sharing_mic</a></column>
-                <column>Screen sharing with microphone</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/simple_calls">simple_calls</a></column>
-                <column>A simple example about using PyTgCalls</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/telethon_example">telethon_example</a></column>
-                <column>A simple example about using PyTgCalls with Telethon</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/video_calls">video_calls</a></column>
-                <column>Play PCM16L and RAW_VIDEO from disk</column>
-            </item>
-            <item>
-                <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/youtube_dl">youtube_dl</a></column>
-                <column>Example usage of PyTgCalls with YoutubeDL</column>
-            </item>
-        </datalist>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/additional_ffmpeg_parameters">additional_ffmpeg_parameters</a></column>
+            <column>Append parameters to ffmpeg</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/calls_with_module">calls_with_module</a></column>
+            <column>Directly join on group call without waiting the start of PyTgCalls</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/capture_mic">capture_mic</a></column>
+            <column>Capture microphone</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/custom_api">custom_api</a></column>
+            <column>Use custom api server to bind PHP or other api to PyTgCalls</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/fifo_conversion">fifo_conversion</a></column>
+            <column>Play a stream from fifo</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/multiple_calls">multiple_calls</a></column>
+            <column>Use multiple pytgcalls instances with different Telegram Accounts</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_audio_calls">piped_audio_calls</a></column>
+            <column>Play audio using ffmpeg for live conversion (With integrated ffmpeg)</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_image_calls">piped_image_calls</a></column>
+            <column>Play audio and image using ffmpeg for live conversion (With integrated ffmpeg)</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_video_calls">piped_video_calls</a></column>
+            <column>Play audio and video using ffmpeg for live conversion (With integrated ffmpeg)</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_piped_play">remote_piped_play</a></column>
+            <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg)</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_stream_with_header">remote_stream_with_header</a></column>
+            <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg) with additional headers</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/screen_sharing">screen_sharing</a></column>
+            <column>Screen sharing</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/screen_sharing_mic">screen_sharing_mic</a></column>
+            <column>Screen sharing with microphone</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/simple_calls">simple_calls</a></column>
+            <column>A simple example about using PyTgCalls</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/telethon_example">telethon_example</a></column>
+            <column>A simple example about using PyTgCalls with Telethon</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/video_calls">video_calls</a></column>
+            <column>Play PCM16L and RAW_VIDEO from disk</column>
+        </item>
+        <item>
+            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/youtube_dl">youtube_dl</a></column>
+            <column>Example usage of PyTgCalls with YoutubeDL</column>
+        </item>
     </table>
 </page>
