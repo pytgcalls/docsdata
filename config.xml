@@ -15,5 +15,7 @@
     <microtag>API REFERENCE</microtag>
     <file>PyTGCalls/Client.xml</file>
     <file>PyTGCalls/Custom Api.xml</file>
+    <file>PyTGCalls/Decorators.xml</file>
+    <file>PyTGCalls/Exceptions.xml</file>
   </files-list>
 </config>
