@@ -17,9 +17,9 @@
     <category>
         <category-title>
             class <ref>pytgcalls.PyTgCalls</ref>(
-                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], # Pass the MtProto Client
-                cache_duration: int, # Cache duration of a Full Chat query
-                overload_quiet_mode: bool # Disable overload cpu messages by setting true
+                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], <syntax-highlight-inline># Pass the MtProto Client</syntax-highlight-inline>
+                cache_duration: <syntax-highlight-inline>int</syntax-highlight-inline>, <syntax-highlight-inline># Cache duration of a Full Chat query</syntax-highlight-inline>
+                overload_quiet_mode: <syntax-highlight-inline>bool</syntax-highlight-inline>,  <syntax-highlight-inline># Disable overload cpu messages by setting true</syntax-highlight-inline>
             ) throws <docs-ref link="">InvalidMtProtoClient</docs-ref>
         </category-title>
         <subtext>
@@ -33,7 +33,7 @@
             <subtext>
                 <text>Get a list of existent group calls</text>
             </subtext>
-            <category-title><ref>cache_peer</ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>,<a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
+            <category-title><ref>cache_peer</ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>, <a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
             <subtext>
                 <text>Get current Telegram user</text>
             </subtext>
