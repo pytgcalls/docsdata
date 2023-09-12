@@ -63,7 +63,7 @@
   </option>
 
   <option id="ARG_PARTICIPANT">
-    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="">GroupCallParticipant</docs-ref></category-title>
+    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="PyTgCalls/Advanced Types/GroupCallParticipant.xml">GroupCallParticipant</docs-ref></category-title>
     <subtext><text>Info about a group call participant.</text></subtext>
   </option>
 
