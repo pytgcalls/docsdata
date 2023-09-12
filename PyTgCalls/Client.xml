@@ -15,32 +15,47 @@
     <separator/>
     <h2>Details</h2>
     <category>
-        <category-title>
-            class <ref>pytgcalls.<b>PyTgCalls</b></ref>(
-                app: Union[<a href="https://docs.pyrogram.org/api/client">Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">TelegramClient</a>], <shi># Pass the MtProto Client</shi>
-                cache_duration: <shi>int</shi>, <shi># Cache duration of a Full Chat query</shi>
-                overload_quiet_mode: <shi>bool</shi>, <shi># Disable overload cpu messages by setting true</shi>
-            ) <ref>throws</ref> <docs-ref link="">InvalidMtProtoClient</docs-ref>
-        </category-title>
+        <category-title><shi>class</shi> <ref>pytgcalls.<sb>PyTgCalls</sb></ref></category-title>
         <subtext>
             <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
+            <br/>
+            <category>
+                <text><b>PARAMETERS</b></text>
+                <subtext>
+                    <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>]</category-title>
+                    <subtext><text>Pass the MtProto Client</text></subtext>
+                    <category-title><ref>cache_duration</ref>: <shi>int</shi></category-title>
+                    <subtext><text>Cache duration of a Full Chat query</text></subtext>
+                    <category-title><ref>overload_quiet_mode</ref>: <shi>bool</shi></category-title>
+                    <subtext><text>Disable overload cpu messages by setting true</text></subtext>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <text><b>STATIC METHODS</b></text>
+                <subtext>
+                    <category-title><ref><sb>active_calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+                    <subtext><text>Get a list of active (Playing / Paused) group calls</text></subtext>
 
-            <category-title><ref><b>active_calls</b></ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
-            <subtext>
-                <text>Get a list of active (Playing / Paused) group calls</text>
-            </subtext>
-            <category-title><ref><b>calls</b></ref>(): List[<docs-ref link="">GroupCall</docs-ref>]</category-title>
-            <subtext>
-                <text>Get a list of existent group calls</text>
-            </subtext>
-            <category-title><ref><b>cache_peer</b></ref>(): Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">InputPeer[Pyrogram]</a>, <a href="https://tl.telethon.dev/types/input_peer.html">InputPeer[Telethon]</a>]</category-title>
-            <subtext>
-                <text>Get current Telegram user</text>
-            </subtext>
-            <category-title><ref><b>ping</b></ref>(): <shi>int</shi></category-title>
-            <subtext>
-                <text>Ping of NTgCalls core</text>
-            </subtext>
+                    <category-title><ref><sb>calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+                    <subtext><text>Get a list of existent group calls</text></subtext>
+
+                    <category-title><ref><sb>cache_peer</sb></ref>() <shi>-></shi> Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]</category-title>
+                    <subtext><text>Get current Telegram user</text></subtext>
+
+                    <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>int</shi></category-title>
+                    <subtext><text>Ping of NTgCalls core</text></subtext>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <text><b>RAISES</b></text>
+                <subtext>
+                    <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidMtProtoClient</sb></ref></category-title>
+                    <subtext><text> You set an invalid MtProto client.</text></subtext>
+                </subtext>
+            </category>
         </subtext>
+
     </category>
 </page>

@@ -1,0 +1,34 @@
+<page>
+    <h1>Get Participants</h1>
+    <text>This method return the list of participants on a group call using MtProto APIs.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="10-12">
+        from pytgcalls import Client
+        from pytgcalls import idle
+        ...
+
+        app = PyTgCalls(client)
+        app.start()
+
+        ...  # Call API methods
+
+        app.get_participants(
+            -1001185324811,
+        )
+
+        idle()
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title><ref>PyTgCalls.<sb>get_participants</sb></ref>() <shi>-> list</shi>[<docs-ref link="">GroupCall</docs-ref>]</category-title>
+    <subtext>
+        <text>Get a list of participants from a group call</text>
+        <br/>
+        <category>
+            <text><b>PARAMETERS</b></text>
+            <subtext>
+                <config id="ARG_CHAT_ID"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

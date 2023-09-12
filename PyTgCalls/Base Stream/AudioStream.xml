@@ -1,0 +1,22 @@
+<page>
+    <h1>AudioStream</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioStream</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The raw audio stream (PCM16L) descriptor</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
+            <subtext><text>Audio input mode.</text></subtext>
+
+            <category-title><ref>path</ref>: <shi>str</shi></category-title>
+            <subtext><text>The audio file path or shell command (PCM16L format only).</text></subtext>
+
+            <category-title><ref>parameters</ref>: <docs-ref link="">AudioParameters</docs-ref></category-title>
+            <config id="ARG_AUDIO_PARAMS_DESC"/>
+        </subtext>
+    </subtext>
+</page>

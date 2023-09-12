@@ -1,0 +1,22 @@
+<page>
+    <h1>VideoParameters</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoParameters</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Audio parameters of the stream.</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>width</ref>: <shi>int</shi></category-title>
+            <subtext><text>Video width.</text></subtext>
+
+            <category-title><ref>height</ref>: <shi>int</shi></category-title>
+            <subtext><text>Video height.</text></subtext>
+
+            <category-title><ref>frame_rate</ref>: <shi>int</shi></category-title>
+            <subtext><text>Framerate of video.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

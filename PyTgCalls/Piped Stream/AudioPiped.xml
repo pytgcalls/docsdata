@@ -1,0 +1,19 @@
+<page>
+    <h1>AudioPiped</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioPiped</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The audio only stream piped descriptor.</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>path</ref>: <shi>str</shi></category-title>
+            <subtext><text>The audio file path.</text></subtext>
+
+            <config id="ARG_AUDIO_PARAMS"/>
+            <config id="ARG_FFMPEG_PARAMS"/>
+        </subtext>
+    </subtext>
+</page>

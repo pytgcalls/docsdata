@@ -1,0 +1,16 @@
+<page>
+    <h1>UpdatedGroupCallParticipant</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>UpdatedGroupCallParticipant</sb></ref>
+    </category-title>
+    <subtext>
+        <text>A participant have changed him status.</text>
+        <br/>
+        <text><b>VALUES</b></text>
+        <subtext>
+            <config id="ARG_INT_ID"/>
+            <config id="ARG_PARTICIPANT"/>
+        </subtext>
+    </subtext>
+</page>

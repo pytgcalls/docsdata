@@ -22,17 +22,40 @@
     <separator/>
     <h2>Details</h2>
     <category>
-        <category-title>
-            class <ref>pytgcalls.<b>CustomApi</b></ref>(
-                port: <shi>int</shi>, <shi># CustomApi port to bind the API http server</shi>
-            )
-        </category-title>
+        <category-title><shi>class</shi> <ref>pytgcalls.<sb>CustomApi</sb></ref></category-title>
         <subtext>
             <text>CustomAPI, the main means host the local http api server.</text>
-            <category-title><ref><b>@on_update_custom_api</b></ref>()</category-title>
-            <subtext>
-                <text>Decorator for handling incoming http events</text>
-            </subtext>
+            <br/>
+            <category>
+                <text><b>PARAMETERS</b></text>
+                <subtext>
+                    <category-title><ref>port</ref>: <shi>int</shi></category-title>
+                    <subtext><text>CustomApi port to bind the API http server</text></subtext>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <text><b>METHODS</b></text>
+                <subtext>
+                    <category-title><ref><sb>start</sb></ref>()</category-title>
+                    <subtext><text>This method start the internal http webserver, this is helpful if you need an API interface to PyTgCalls.</text></subtext>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <text><b>DECORATORS</b></text>
+                <subtext>
+                    <category-title><ref><sb>@on_update_custom_api</sb></ref>()</category-title>
+                    <subtext>
+                        <text>Decorator for handling incoming http events</text>
+                        <text><b>RAISES</b></text>
+                        <subtext>
+                            <category-title>exception <ref>pytgcalls.exceptions.<sb>TooManyCustomApiDecorators</sb></ref></category-title>
+                            <subtext><text>You set too many decorators.</text></subtext>
+                        </subtext>
+                    </subtext>
+                </subtext>
+            </category>
         </subtext>
     </category>
 </page>

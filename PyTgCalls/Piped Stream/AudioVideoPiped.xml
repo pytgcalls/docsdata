@@ -1,0 +1,20 @@
+<page>
+    <h1>AudioVideoPiped</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioVideoPiped</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The audio/video stream piped descriptor.</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>path</ref>: <shi>str</shi></category-title>
+            <subtext><text>The audio-video (Like MP4 or etc.) file path.</text></subtext>
+
+            <config id="ARG_AUDIO_PARAMS"/>
+            <config id="ARG_VIDEO_PARAMS"/>
+            <config id="ARG_FFMPEG_PARAMS"/>
+        </subtext>
+    </subtext>
+</page>

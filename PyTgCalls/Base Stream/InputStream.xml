@@ -1,0 +1,19 @@
+<page>
+    <h1>InputStream</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>InputStream</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Info about a group call</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>stream_audio</ref>: <docs-ref link="">AudioStream</docs-ref></category-title>
+            <subtext><text>Audio Stream Descriptor.</text></subtext>
+
+            <category-title><ref>stream_video</ref>: <docs-ref link="">VideoStream</docs-ref></category-title>
+            <subtext><text>Video Stream Descriptor.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

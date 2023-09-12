@@ -1,0 +1,15 @@
+<page>
+    <h1>StreamAudioEnded</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>StreamAudioEnded</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Raised when ended audio stream.</text>
+        <br/>
+        <text><b>VALUES</b></text>
+        <subtext>
+            <config id="ARG_INT_ID"/>
+        </subtext>
+    </subtext>
+</page>

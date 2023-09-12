@@ -1,0 +1,57 @@
+<page>
+    <h1>Join Group Call</h1>
+    <text>This method allows streaming a file to Telegram Group Calls.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="10-15">
+        from pytgcalls import Client
+        from pytgcalls import idle
+        ...
+
+        app = PyTgCalls(client)
+        app.start()
+
+        ...  # Call API methods
+
+        app.join_group_call(
+            -1001185324811,
+            AudioPiped(
+                'test.mp4',
+            )
+        )
+
+        idle()
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title><ref>PyTgCalls.<sb>join_group_call</sb></ref>()</category-title>
+    <subtext>
+        <text>Join a group call to stream a file.</text>
+        <br/>
+        <category>
+            <text><b>PARAMETERS</b></text>
+            <subtext>
+                <config id="ARG_CHAT_ID"/>
+                <config id="ARG_INPUT_STREAM"/>
+                <category-title><ref>invite_hash</ref>: <shi>Optional[str]</shi></category-title>
+                <subtext><text>Unique identifier for the invite in a group call in form of a t.me link</text></subtext>
+                <category-title><ref>join_as</ref>: Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]</category-title>
+                <subtext><text>InputPeer of join as a channel or profile</text></subtext>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <text><b>RAISES</b></text>
+            <subtext>
+                <config id="BASE_EXCEPTIONS"/>
+
+                <config id="STREAM_EXCEPTIONS"/>
+
+                <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
+                <subtext><text>You are attempting to join a group call you're already a part of.</text></subtext>
+
+                <category-title>exception <ref>ntgcalls.<sb>RTMPNeeded</sb></ref></category-title>
+                <subtext><text>This error occurs when attempting to use NTgCalls to enter an RTMP stream.</text></subtext>
+            </subtext>
+        </category>
+    </subtext>
+</page>

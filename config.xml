@@ -2,6 +2,108 @@
   <option id="NTGCALLS_VERSION">1.0.0</option>
   <option id="PYTGCALLS_VERSION">1.0.0</option>
 
+  <!--MACRO-->
+  <!--exceptions-->
+  <option id="BASE_EXCEPTIONS">
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NoMTProtoClient</sb></ref></category-title>
+    <subtext><text>This method can only be called with an MtProto client.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>ClientNotStarted</sb></ref></category-title>
+    <subtext><text>Ensure you have started the process with <docs-ref link="">start()</docs-ref> before calling this method.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NoActiveGroupCall</sb></ref></category-title>
+    <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
+  </option>
+
+  <option id="STREAM_EXCEPTIONS">
+    <category-title>exception <ref><sb>FileNotFoundError</sb></ref></category-title>
+    <subtext><text>The specified file does not exist</text></subtext>
+
+    <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
+    <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
+
+    <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
+    <subtext><text>Error while executing the shell script</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NoAudioSourceFound</sb></ref></category-title>
+    <subtext><text>The audio file you're trying to play has no audio.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NoVideoSourceFound</sb></ref></category-title>
+    <subtext><text>The video file you're trying to play has no video.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidVideoProportion</sb></ref></category-title>
+    <subtext><text>Playing a video with incorrect proportions is not supported.</text></subtext>
+  </option>
+
+  <option id="GROUPCALL_NOT_FOUND_EXCEPTION">
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>GroupCallNotFound</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to access a group call that does not exist.</text></subtext>
+  </option>
+
+  <option id="RUNNING_EXCEPTION">
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>PyTgCallsAlreadyRunning</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>
+  </option>
+  <!--end exceptions-->
+
+  <!--parameters-->
+  <option id="ARG_CHAT_ID">
+    <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
+    <subtext><text>Can be direct id or a username</text></subtext>
+  </option>
+
+  <option id="ARG_INPUT_STREAM">
+    <category-title><ref>stream</ref>: <docs-ref link="">InputStream</docs-ref></category-title>
+    <subtext><text>Input Streams base descriptor</text></subtext>
+  </option>
+
+  <option id="ARG_INT_ID">
+    <category-title><ref><sb>chat_id</sb></ref> <shi>-> int</shi></category-title>
+    <subtext><text>Unique identifier of chat.</text></subtext>
+  </option>
+
+  <option id="ARG_PARTICIPANT">
+    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="">GroupCallParticipant</docs-ref></category-title>
+    <subtext><text>Info about a group call participant.</text></subtext>
+  </option>
+
+  <option id="ARG_AUDIO_PARAMS_DESC">
+    <subtext>
+      <text>
+        Audio parameters of the stream. Can be used also <docs-ref link="">HighQualityAudio()</docs-ref>,
+        <docs-ref link="">MediumQualityAudio()</docs-ref> or <docs-ref link="">LowQualityAudio()</docs-ref>.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="ARG_VIDEO_PARAMS_DESC">
+    <subtext>
+      <text>
+        Video parameters of the stream. Can be used also <docs-ref link="">HighQualityVideo()</docs-ref>,
+        <docs-ref link="">MediumQualityVideo()</docs-ref> or <docs-ref link="">LowQualityVideo()</docs-ref>.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="ARG_AUDIO_PARAMS">
+    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="">AudioParameters</docs-ref>]</category-title>
+    <config id="ARG_AUDIO_PARAMS_DESC"/>
+  </option>
+
+  <option id="ARG_VIDEO_PARAMS">
+    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="">VideoParameters</docs-ref>]</category-title>
+    <config id="ARG_VIDEO_PARAMS_DESC"/>
+  </option>
+
+  <option id="ARG_FFMPEG_PARAMS">
+    <category-title><ref>headers</ref>: Optional[<shi>dict</shi>[<shi>str</shi>, <shi>str</shi>]]</category-title>
+    <subtext><text>Headers of http the connection.</text></subtext>
+
+    <category-title><ref>additional_ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
+    <subtext><text>FFmpeg additional parameters.</text></subtext>
+  </option>
+  <!--end parameters-->
+
   <files-list>
     <microtag>INTRODUCTION</microtag>
     <file>PyTgCalls/Quick Start.xml</file>
@@ -16,6 +118,52 @@
     <file>PyTgCalls/Client.xml</file>
     <file>PyTgCalls/Custom Api.xml</file>
     <file>PyTgCalls/Decorators.xml</file>
-    <file>PyTgCalls/Exceptions.xml</file>
+
+    <microtag>METHODS</microtag>
+    <group>
+      <file>PyTgCalls/Basic Methods/Idle.xml</file>
+      <file>PyTgCalls/Basic Methods/Join Group Call.xml</file>
+      <file>PyTgCalls/Basic Methods/Leave Group Call.xml</file>
+      <file>PyTgCalls/Basic Methods/Run.xml</file>
+      <file>PyTgCalls/Basic Methods/Start.xml</file>
+    </group>
+    <group>
+      <file>PyTgCalls/Stream Methods/Change Stream.xml</file>
+      <file>PyTgCalls/Stream Methods/Mute Stream.xml</file>
+      <file>PyTgCalls/Stream Methods/Pause Stream.xml</file>
+      <file>PyTgCalls/Stream Methods/Played Time.xml</file>
+      <file>PyTgCalls/Stream Methods/Resume Stream.xml</file>
+      <file>PyTgCalls/Stream Methods/UnMute Stream.xml</file>
+    </group>
+    <group>
+      <file>PyTgCalls/Advanced Methods/Change Volume Call.xml</file>
+      <file>PyTgCalls/Advanced Methods/Get Active Call.xml</file>
+      <file>PyTgCalls/Advanced Methods/Get Call.xml</file>
+      <file>PyTgCalls/Advanced Methods/Get Participants.xml</file>
+    </group>
+
+    <microtag>TYPES</microtag>
+    <group>
+      <file>PyTgCalls/Base Stream/AudioParameters.xml</file>
+      <file>PyTgCalls/Base Stream/AudioStream.xml</file>
+      <file>PyTgCalls/Base Stream/InputStream.xml</file>
+      <file>PyTgCalls/Base Stream/VideoParameters.xml</file>
+      <file>PyTgCalls/Base Stream/VideoStream.xml</file>
+    </group>
+    <group>
+      <file>PyTgCalls/Piped Stream/AudioImagePiped.xml</file>
+      <file>PyTgCalls/Piped Stream/AudioPiped.xml</file>
+      <file>PyTgCalls/Piped Stream/AudioVideoPiped.xml</file>
+      <file>PyTgCalls/Piped Stream/VideoPiped.xml</file>
+    </group>
+    <group>
+      <file>PyTgCalls/Advanced Types/GroupCall.xml</file>
+      <file>PyTgCalls/Advanced Types/GroupCallParticipant.xml</file>
+      <file>PyTgCalls/Advanced Types/JoinedGroupCallParticipant.xml</file>
+      <file>PyTgCalls/Advanced Types/LeftGroupCallParticipant.xml</file>
+      <file>PyTgCalls/Advanced Types/StreamAudioEnded.xml</file>
+      <file>PyTgCalls/Advanced Types/StreamVideoEnded.xml</file>
+      <file>PyTgCalls/Advanced Types/UpdatedGroupCallParticipant.xml</file>
+    </group>
   </files-list>
 </config>

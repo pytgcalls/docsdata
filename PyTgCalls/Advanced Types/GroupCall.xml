@@ -1,0 +1,21 @@
+<page>
+    <h1>GroupCall</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>GroupCall</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Info about a group call</text>
+        <br/>
+        <text><b>VALUES</b></text>
+        <subtext>
+            <config id="ARG_INT_ID"/>
+
+            <category-title><ref><sb>is_playing</sb></ref> <shi>-> bool</shi></category-title>
+            <subtext><text>Check if exist any sort of stream.</text></subtext>
+
+            <category-title><ref><sb>status</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Status of Stream.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

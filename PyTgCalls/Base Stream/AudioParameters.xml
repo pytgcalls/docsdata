@@ -1,0 +1,19 @@
+<page>
+    <h1>AudioParameters</h1>
+    <br/>
+    <category-title>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioParameters</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Audio parameters of the stream.</text>
+        <br/>
+        <text><b>PARAMETERS</b></text>
+        <subtext>
+            <category-title><ref>bitrate</ref>: <shi>int</shi></category-title>
+            <subtext><text>Audio bitrate (0–48000 max allowed by PCM16L).</text></subtext>
+
+            <category-title><ref>channels</ref>: <shi>int</shi></category-title>
+            <subtext><text>Audio channels (1-2 max allowed by PCM16L).</text></subtext>
+        </subtext>
+    </subtext>
+</page>
