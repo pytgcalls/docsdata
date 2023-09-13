@@ -156,7 +156,7 @@
       <file>AudioVideoPiped.xml</file>
       <file>VideoPiped.xml</file>
     </group>
-    <group basepath="PyTgCalls/Advanced Types">
+    <group basepath="PyTgCalls/Advanced Types/">
       <file>GroupCall.xml</file>
       <file>GroupCallParticipant.xml</file>
       <file>JoinedGroupCallParticipant.xml</file>
