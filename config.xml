@@ -104,66 +104,70 @@
   </option>
   <!--end parameters-->
 
-  <files-list>
+  <files-list id="pytgcalls" basepath="PyTgCalls/">
     <microtag>INTRODUCTION</microtag>
-    <file>PyTgCalls/Quick Start.xml</file>
-    <file>PyTgCalls/Install Guide.xml</file>
+    <file>Quick Start.xml</file>
+    <file>Install Guide.xml</file>
 
     <microtag>GETTING STARTED</microtag>
-    <file>PyTgCalls/Calling Methods.xml</file>
-    <file>PyTgCalls/Handling Updates.xml</file>
-    <file>PyTgCalls/Examples.xml</file>
+    <file>Calling Methods.xml</file>
+    <file>Handling Updates.xml</file>
+    <file>Examples.xml</file>
 
     <microtag>API REFERENCE</microtag>
-    <file>PyTgCalls/Client.xml</file>
-    <file>PyTgCalls/Custom Api.xml</file>
-    <file>PyTgCalls/Decorators.xml</file>
+    <file>Client.xml</file>
+    <file>Custom Api.xml</file>
+    <file>Decorators.xml</file>
 
     <microtag>METHODS</microtag>
-    <group>
-      <file>PyTgCalls/Basic Methods/Idle.xml</file>
-      <file>PyTgCalls/Basic Methods/Join Group Call.xml</file>
-      <file>PyTgCalls/Basic Methods/Leave Group Call.xml</file>
-      <file>PyTgCalls/Basic Methods/Run.xml</file>
-      <file>PyTgCalls/Basic Methods/Start.xml</file>
+    <group basepath="PyTgCalls/Basic Methods/">
+      <file>Idle.xml</file>
+      <file>Join Group Call.xml</file>
+      <file>Leave Group Call.xml</file>
+      <file>Run.xml</file>
+      <file>Start.xml</file>
     </group>
-    <group>
-      <file>PyTgCalls/Stream Methods/Change Stream.xml</file>
-      <file>PyTgCalls/Stream Methods/Mute Stream.xml</file>
-      <file>PyTgCalls/Stream Methods/Pause Stream.xml</file>
-      <file>PyTgCalls/Stream Methods/Played Time.xml</file>
-      <file>PyTgCalls/Stream Methods/Resume Stream.xml</file>
-      <file>PyTgCalls/Stream Methods/UnMute Stream.xml</file>
+    <group basepath="PyTgCalls/Stream Methods/">
+      <file>Change Stream.xml</file>
+      <file>Mute Stream.xml</file>
+      <file>Pause Stream.xml</file>
+      <file>Played Time.xml</file>
+      <file>Resume Stream.xml</file>
+      <file>UnMute Stream.xml</file>
     </group>
-    <group>
-      <file>PyTgCalls/Advanced Methods/Change Volume Call.xml</file>
-      <file>PyTgCalls/Advanced Methods/Get Active Call.xml</file>
-      <file>PyTgCalls/Advanced Methods/Get Call.xml</file>
-      <file>PyTgCalls/Advanced Methods/Get Participants.xml</file>
+    <group basepath="PyTgCalls/Advanced Methods/">
+      <file>Change Volume Call.xml</file>
+      <file>Get Active Call.xml</file>
+      <file>Get Call.xml</file>
+      <file>Get Participants.xml</file>
     </group>
 
     <microtag>TYPES</microtag>
-    <group>
-      <file>PyTgCalls/Base Stream/AudioParameters.xml</file>
-      <file>PyTgCalls/Base Stream/AudioStream.xml</file>
-      <file>PyTgCalls/Base Stream/InputStream.xml</file>
-      <file>PyTgCalls/Base Stream/VideoParameters.xml</file>
-      <file>PyTgCalls/Base Stream/VideoStream.xml</file>
+    <group basepath="PyTgCalls/Base Stream/">
+      <file>AudioParameters.xml</file>
+      <file>AudioStream.xml</file>
+      <file>InputStream.xml</file>
+      <file>VideoParameters.xml</file>
+      <file>VideoStream.xml</file>
     </group>
-    <group>
-      <file>PyTgCalls/Piped Stream/AudioImagePiped.xml</file>
-      <file>PyTgCalls/Piped Stream/AudioPiped.xml</file>
-      <file>PyTgCalls/Piped Stream/AudioVideoPiped.xml</file>
-      <file>PyTgCalls/Piped Stream/VideoPiped.xml</file>
+    <group basepath="PyTgCalls/Piped Stream/">
+      <file>AudioImagePiped.xml</file>
+      <file>AudioPiped.xml</file>
+      <file>AudioVideoPiped.xml</file>
+      <file>VideoPiped.xml</file>
     </group>
-    <group>
-      <file>PyTgCalls/Advanced Types/GroupCall.xml</file>
-      <file>PyTgCalls/Advanced Types/GroupCallParticipant.xml</file>
-      <file>PyTgCalls/Advanced Types/JoinedGroupCallParticipant.xml</file>
-      <file>PyTgCalls/Advanced Types/LeftGroupCallParticipant.xml</file>
-      <file>PyTgCalls/Advanced Types/StreamAudioEnded.xml</file>
-      <file>PyTgCalls/Advanced Types/StreamVideoEnded.xml</file>
-      <file>PyTgCalls/Advanced Types/UpdatedGroupCallParticipant.xml</file>
+    <group basepath="PyTgCalls/Advanced Types">
+      <file>GroupCall.xml</file>
+      <file>GroupCallParticipant.xml</file>
+      <file>JoinedGroupCallParticipant.xml</file>
+      <file>LeftGroupCallParticipant.xml</file>
+      <file>StreamAudioEnded.xml</file>
+      <file>StreamVideoEnded.xml</file>
+      <file>UpdatedGroupCallParticipant.xml</file>
     </group>
+  </files-list>
+
+  <files-list id="pytgcalls" basepath="NTgCalls/">
+    <microtag>INTRODUCTION</microtag>
   </files-list>
 </config>
