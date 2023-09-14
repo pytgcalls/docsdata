@@ -25,7 +25,7 @@
         <text>Get a list of participants from a group call</text>
         <br/>
         <category>
-            <text><b>PARAMETERS</b></text>
+            <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
             </subtext>

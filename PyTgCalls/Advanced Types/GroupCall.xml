@@ -7,7 +7,7 @@
     <subtext>
         <text>Info about a group call</text>
         <br/>
-        <text><b>VALUES</b></text>
+        <pg-title>VALUES</pg-title>
         <subtext>
             <config id="ARG_INT_ID"/>
 

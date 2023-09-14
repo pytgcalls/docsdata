@@ -30,7 +30,7 @@
         <text>Change the streaming file</text>
         <br/>
         <category>
-            <text><b>PARAMETERS</b></text>
+            <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
                 <config id="ARG_INPUT_STREAM"/>
@@ -38,7 +38,7 @@
         </category>
         <br/>
         <category>
-            <text><b>RAISES</b></text>
+            <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="BASE_EXCEPTIONS"/>
                 <config id="STREAM_EXCEPTIONS"/>

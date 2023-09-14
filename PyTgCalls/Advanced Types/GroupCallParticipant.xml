@@ -7,7 +7,7 @@
     <subtext>
         <text>Info about a group call participant</text>
         <br/>
-        <text><b>VALUES</b></text>
+        <pg-title>VALUES</pg-title>
         <subtext>
             <category-title><ref><sb>user_id</sb></ref> <shi>-> int</shi></category-title>
             <subtext><text>Unique identifier of participant.</text></subtext>

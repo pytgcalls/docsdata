@@ -20,7 +20,7 @@
             <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
             <br/>
             <category>
-                <text><b>PARAMETERS</b></text>
+                <pg-title>PARAMETERS</pg-title>
                 <subtext>
                     <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>]</category-title>
                     <subtext><text>Pass the MtProto Client</text></subtext>
@@ -32,7 +32,7 @@
             </category>
             <br/>
             <category>
-                <text><b>STATIC METHODS</b></text>
+                <pg-title>STATIC METHODS</pg-title>
                 <subtext>
                     <category-title><ref><sb>active_calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">GroupCall</docs-ref>]</category-title>
                     <subtext><text>Get a list of active (Playing / Paused) group calls</text></subtext>
@@ -49,7 +49,7 @@
             </category>
             <br/>
             <category>
-                <text><b>RAISES</b></text>
+                <pg-title>RAISES</pg-title>
                 <subtext>
                     <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidMtProtoClient</sb></ref></category-title>
                     <subtext><text> You set an invalid MtProto client.</text></subtext>

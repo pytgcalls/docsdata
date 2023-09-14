@@ -7,7 +7,7 @@
     <subtext>
         <text>Info about a group call</text>
         <br/>
-        <text><b>PARAMETERS</b></text>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>stream_audio</ref>: <docs-ref link="">AudioStream</docs-ref></category-title>
             <subtext><text>Audio Stream Descriptor.</text></subtext>

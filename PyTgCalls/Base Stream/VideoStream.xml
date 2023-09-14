@@ -7,7 +7,7 @@
     <subtext>
         <text>The raw video stream (YUV420P) descriptor</text>
         <br/>
-        <text><b>PARAMETERS</b></text>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
             <subtext><text>Video input mode.</text></subtext>

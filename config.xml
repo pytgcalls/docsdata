@@ -104,7 +104,7 @@
   </option>
   <!--end parameters-->
 
-  <files-list id="pytgcalls" basepath="PyTgCalls/">
+  <files-list id="PyTgCalls" basepath="PyTgCalls/">
     <microtag>INTRODUCTION</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>
@@ -167,7 +167,7 @@
     </group>
   </files-list>
 
-  <files-list id="ntgcalls" basepath="NTgCalls/">
+  <files-list id="NTgCalls" basepath="NTgCalls/">
     <microtag>INTRODUCTION</microtag>
 
   </files-list>

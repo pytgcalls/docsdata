@@ -23,7 +23,7 @@
         <text>Start the client.</text>
         <br/>
         <category>
-            <text><b>RAISES</b></text>
+            <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="RUNNING_EXCEPTION"/>
             </subtext>

@@ -26,7 +26,7 @@
         <text>Start the client, idle the main script and finally stop the client.</text>
         <br/>
         <category>
-            <text><b>RAISES</b></text>
+            <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="RUNNING_EXCEPTION"/>
             </subtext>

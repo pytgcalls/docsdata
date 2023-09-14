@@ -7,7 +7,7 @@
     <subtext>
         <text>Raised when ended video stream.</text>
         <br/>
-        <text><b>VALUES</b></text>
+        <pg-title>VALUES</pg-title>
         <subtext>
             <config id="ARG_INT_ID"/>
         </subtext>

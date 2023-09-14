@@ -25,14 +25,14 @@
         <text>Check/Get an active call</text>
         <br/>
         <category>
-            <text><b>PARAMETERS</b></text>
+            <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
             </subtext>
         </category>
         <br/>
         <category>
-            <text><b>RAISES</b></text>
+            <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="GROUPCALL_NOT_FOUND_EXCEPTION"/>
             </subtext>

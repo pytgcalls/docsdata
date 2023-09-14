@@ -7,7 +7,7 @@
     <subtext>
         <text>Audio parameters of the stream.</text>
         <br/>
-        <text><b>PARAMETERS</b></text>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>bitrate</ref>: <shi>int</shi></category-title>
             <subtext><text>Audio bitrate (0–48000 max allowed by PCM16L).</text></subtext>

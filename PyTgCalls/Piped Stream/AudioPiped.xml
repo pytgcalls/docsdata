@@ -7,7 +7,7 @@
     <subtext>
         <text>The audio only stream piped descriptor.</text>
         <br/>
-        <text><b>PARAMETERS</b></text>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The audio file path.</text></subtext>

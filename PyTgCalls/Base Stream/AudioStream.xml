@@ -7,7 +7,7 @@
     <subtext>
         <text>The raw audio stream (PCM16L) descriptor</text>
         <br/>
-        <text><b>PARAMETERS</b></text>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
             <subtext><text>Audio input mode.</text></subtext>
