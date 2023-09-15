@@ -20,7 +20,9 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title><ref>PyTgCalls.<sb>unmute_stream</sb></ref>() <shi>-> bool</shi></category-title>
+    <category-title noref="true">
+        <ref>PyTgCalls.<sb>unmute_stream</sb></ref>() <shi>-> bool</shi>
+    </category-title>
     <subtext>
         <text>UnMute the userbot</text>
         <br/>

@@ -30,7 +30,9 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title><ref>pytgcalls.<sb>idle</sb></ref>()</category-title>
+    <category-title noref="true">
+        <ref>pytgcalls.<sb>idle</sb></ref>()
+    </category-title>
     <subtext>
         <text>Block the main script execution until a signal is received.</text>
     </subtext>

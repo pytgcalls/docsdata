@@ -20,7 +20,7 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title>
+    <category-title noref="true">
         <ref>PyTgCalls.<sb>leave_group_call</sb></ref>()
     </category-title>
     <subtext>

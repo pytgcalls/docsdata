@@ -22,7 +22,9 @@
     <separator/>
     <h2>Details</h2>
     <category>
-        <category-title><shi>class</shi> <ref>pytgcalls.<sb>CustomApi</sb></ref></category-title>
+        <category-title noref="true">
+            <shi>class</shi> <ref>pytgcalls.<sb>CustomApi</sb></ref>
+        </category-title>
         <subtext>
             <text>CustomAPI, the main means host the local http api server.</text>
             <br/>

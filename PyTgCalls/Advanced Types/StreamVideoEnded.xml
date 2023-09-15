@@ -1,7 +1,7 @@
 <page>
     <h1>StreamVideoEnded</h1>
     <br/>
-    <category-title>
+    <category-title noref="true">
         <shi>class</shi> <ref>pytgcalls.types.<sb>StreamVideoEnded</sb></ref>
     </category-title>
     <subtext>

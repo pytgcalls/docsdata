@@ -23,7 +23,9 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title><ref>PyTgCalls.<sb>join_group_call</sb></ref>()</category-title>
+    <category-title noref="true">
+        <ref>PyTgCalls.<sb>join_group_call</sb></ref>()
+    </category-title>
     <subtext>
         <text>Join a group call to stream a file.</text>
         <br/>

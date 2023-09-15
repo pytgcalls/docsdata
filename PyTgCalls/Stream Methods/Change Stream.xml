@@ -23,7 +23,7 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title>
+    <category-title noref="true">
         <ref>PyTgCalls.<sb>change_stream</sb></ref>()
     </category-title>
     <subtext>

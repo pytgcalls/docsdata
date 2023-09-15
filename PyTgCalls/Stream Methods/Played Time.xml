@@ -22,7 +22,9 @@
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
-    <category-title><ref>PyTgCalls.<sb>played_time</sb></ref>() <shi>-> int</shi></category-title>
+    <category-title noref="true">
+        <ref>PyTgCalls.<sb>played_time</sb></ref>() <shi>-> int</shi>
+    </category-title>
     <subtext>
         <text>Get the played time of the stream</text>
         <br/>
