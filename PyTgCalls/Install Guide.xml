@@ -5,8 +5,8 @@
         We recommend using the latest versions of both Python 3 and pip.
     </text>
     <list>
-        <item>Get Python 3 from https://www.python.org/downloads/ (or with your package manager).</item>
-        <item>Get pip by following the instructions at https://pip.pypa.io/en/latest/installing/.</item>
+        <item>Get Python 3 from <a href="https://www.python.org/downloads/">Python website</a> (or with your package manager).</item>
+        <item>Get pip by following the instructions <a href="https://pip.pypa.io/en/latest/installing/">here</a>.</item>
     </list>
     <alert type="important">PyTgCalls supports <b>Python 3</b> only, starting from version 3.7. <b>PyPy</b> is supported too.</alert>
     <separator/>
