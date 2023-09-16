@@ -1,0 +1,39 @@
+<page>
+    <h1>Create Call</h1>
+    <text>This method allows getting connection params for Telegram WebRTC connection.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="6-15">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+
+        params = app.createCall(
+            -1001185324811,
+            MediaDescription(
+                AudioDescription(
+                    input_mode=InputMode.File,
+                    input="audio.pcm",
+                    sample_rate=48000,
+                    bits_per_sample=16,
+                    channel_count=2,
+                ),
+            )
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref>NTgCalls.<sb>createCall</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Get connection params for Telegram.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_STREAM_PARAMS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

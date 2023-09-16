@@ -1,0 +1,39 @@
+<page>
+    <h1>Change Stream</h1>
+    <text>This method allow changing streaming file to a Group Call.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="6-15">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+
+        params = app.changeStream(
+            -1001185324811,
+            MediaDescription(
+                AudioDescription(
+                    input_mode=InputMode.File,
+                    input="foxes.pcm",
+                    sample_rate=48000,
+                    bits_per_sample=16,
+                    channel_count=2,
+                ),
+            )
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref>NTgCalls.<sb>changeStream</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Get connection params for Telegram.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_STREAM_PARAMS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

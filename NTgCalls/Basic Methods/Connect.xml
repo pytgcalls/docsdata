@@ -1,0 +1,37 @@
+<page>
+    <h1>Connect</h1>
+    <text>
+        This method allows connecting to Telegram Group Calls with the output params from Telegram method
+        <a href="https://core.telegram.org/method/phone.joinGroupCall">JoinGroupCall</a>.
+    </text>
+    <h3>Example</h3>
+    <syntax-highlight mark="7-10">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        ...
+        tg_params = ...
+
+        app.connect(
+            -1001185324811,
+            tg_params,
+        )
+    </syntax-highlight>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref>NTgCalls.<sb>connect</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Set connection params for WebRTC obtained from Telegram.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+                <category-title><ref><sb>params</sb></ref>: <shi>str</shi></category-title>
+                <subtext><text>Connection params obtained from Telegram.</text></subtext>
+            </subtext>
+        </category>
+    </subtext>
+</page>

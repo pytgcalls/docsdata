@@ -1,0 +1,36 @@
+<page>
+    <h1>NTgCalls Client</h1>
+    <text>
+        Welcome to the API Reference section, where you'll find comprehensive information about the NTgCalls API.
+        This is your gateway to in-depth details about the main Client class, its methods, types,
+        all of which play a crucial role in utilizing NTgCalls effectively.
+    </text>
+    <h3>Example</h3>
+    <syntax-highlight mark="1-3">
+        from ntgcalls import NTgCalls
+
+        app = NTgCalls()
+        print(app.ping())
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category>
+        <category-title noref="true">
+            <shi>class</shi> <ref>ntgcalls.<sb>NTgCalls</sb></ref>
+        </category-title>
+        <subtext>
+            <text>The NTgCalls Client is your primary interface for seamless interaction with Group Calls.</text>
+            <br/>
+            <category>
+                <pg-title>STATIC METHODS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>calls</sb></ref>() <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="">StreamStatus</docs-ref>]</category-title>
+                    <subtext><text>Get a list of existent group calls</text></subtext>
+
+                    <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>str</shi></category-title>
+                    <subtext><text>Return "pong" message when calling this method</text></subtext>
+                </subtext>
+            </category>
+        </subtext>
+    </category>
+</page>

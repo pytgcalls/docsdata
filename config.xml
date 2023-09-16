@@ -122,10 +122,18 @@
 
     <microtag>PYTHON API</microtag>
     <file>Client.xml</file>
+    <file>Callbacks.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>Connect.xml</file>
       <file>Create Call.xml</file>
       <file>Stop.xml</file>
+    </group>
+    <group basepath="NTgCalls/Stream Methods/">
+      <file>Change Stream.xml</file>
+      <file>Mute.xml</file>
+      <file>Pause.xml</file>
+      <file>Resume.xml</file>
+      <file>UnMute.xml</file>
     </group>
   </files-list>
 

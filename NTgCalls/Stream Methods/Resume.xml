@@ -1,0 +1,31 @@
+<page>
+    <h1>Resume</h1>
+    <text>This method allows you to resume the WebRTC stream.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="7-9">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        ...
+
+        app.resume(
+            -1001185324811,
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref>NTgCalls.<sb>resume</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Resume the WebRTC stream.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

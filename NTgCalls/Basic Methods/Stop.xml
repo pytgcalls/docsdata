@@ -1,0 +1,31 @@
+<page>
+    <h1>Stop</h1>
+    <text>This method allow stopping a WebRTC connection.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="7-9">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        ...
+
+        app.stop(
+            -1001185324811,
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref>NTgCalls.<sb>stop</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Stop a WebRTC connection.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>
