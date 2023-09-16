@@ -112,4 +112,30 @@
             </syntax-highlight>
         </subtext>
     </category>
+    <br/>
+    <h1>CustomApi Decorators</h1>
+    <category-title><ref><sb>@on_update_custom_api</sb></ref>()</category-title>
+    <subtext>
+        <text>Decorator for handling incoming http events</text>
+        <pg-title>RAISES</pg-title>
+        <subtext>
+            <category-title>exception <ref>pytgcalls.exceptions.<sb>TooManyCustomApiDecorators</sb></ref></category-title>
+            <subtext><text>You set too many decorators.</text></subtext>
+        </subtext>
+        <h3>Example</h3>
+        <syntax-highlight mark="4-5">
+            ...
+            webserver = CustomApi(client)
+            ...
+            @webserver.on_update_custom_api()
+            async def handler(request: dict):
+                print(update)
+                ... # Add Your Code here, switch or etc.
+                return {
+                    'result': 'OK',
+                }
+            webserver.start()
+            idle()
+        </syntax-highlight>
+    </subtext>
 </page>

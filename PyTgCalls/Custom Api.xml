@@ -43,21 +43,6 @@
                     <subtext><text>This method starts the internal http webserver, this is helpful if you need an API interface to PyTgCalls.</text></subtext>
                 </subtext>
             </category>
-            <br/>
-            <category>
-                <pg-title>DECORATORS</pg-title>
-                <subtext>
-                    <category-title><ref><sb>@on_update_custom_api</sb></ref>()</category-title>
-                    <subtext>
-                        <text>Decorator for handling incoming http events</text>
-                        <pg-title>RAISES</pg-title>
-                        <subtext>
-                            <category-title>exception <ref>pytgcalls.exceptions.<sb>TooManyCustomApiDecorators</sb></ref></category-title>
-                            <subtext><text>You set too many decorators.</text></subtext>
-                        </subtext>
-                    </subtext>
-                </subtext>
-            </category>
         </subtext>
     </category>
 </page>
