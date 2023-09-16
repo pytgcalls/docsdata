@@ -9,7 +9,7 @@
         <br/>
         <pg-title>VALUES</pg-title>
         <subtext>
-            <config id="ARG_INT_ID"/>
+            <config id="RET_INT_ID"/>
 
             <category-title><ref><sb>is_playing</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Check if exist any sort of stream.</text></subtext>

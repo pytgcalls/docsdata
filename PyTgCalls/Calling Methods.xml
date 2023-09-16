@@ -47,7 +47,7 @@
             </syntax-highlight>
         </item>
         <item>
-            Set your api_id and api_hash taken from https://my.telegram.org/apps:
+            Set your api_id and api_hash taken from <a href="https://my.telegram.org/apps">my.telegram.org</a>:
             <syntax-highlight>
                 api_id = 12345
                 api_hash = '0123456789abcdef0123456789abcdef'

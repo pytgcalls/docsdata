@@ -57,8 +57,13 @@
     <subtext><text>Input Streams base descriptor</text></subtext>
   </option>
 
-  <option id="ARG_INT_ID">
+  <option id="RET_INT_ID">
     <category-title><ref><sb>chat_id</sb></ref> <shi>-> int</shi></category-title>
+    <subtext><text>Unique identifier of chat.</text></subtext>
+  </option>
+
+  <option id="ARG_INT_ID">
+    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
     <subtext><text>Unique identifier of chat.</text></subtext>
   </option>
 
@@ -103,6 +108,18 @@
     <subtext><text>FFmpeg additional parameters.</text></subtext>
   </option>
   <!--end parameters-->
+
+  <files-list id="NTgCalls" basepath="NTgCalls/">
+    <microtag>INTRODUCTION</microtag>
+    <file>Quick Start.xml</file>
+    <file>Build Guide.xml</file>
+
+    <microtag>PYTHON API</microtag>
+    <file>Client.xml</file>
+    <group basepath="NTgCalls/Piped Stream/">
+
+    </group>
+  </files-list>
 
   <files-list id="PyTgCalls" basepath="PyTgCalls/">
     <microtag>INTRODUCTION</microtag>
@@ -165,11 +182,5 @@
       <file>StreamVideoEnded.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>
     </group>
-  </files-list>
-
-  <files-list id="NTgCalls" basepath="NTgCalls/">
-    <microtag>INTRODUCTION</microtag>
-    <file>Quick Start.xml</file>
-    <file>Build Guide.xml</file>
   </files-list>
 </config>

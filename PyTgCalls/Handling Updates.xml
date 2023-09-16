@@ -32,12 +32,12 @@
         @app.on_stream_end()
         async def my_handler(client: PyTgCalls, update: Update):
             if isinstance(update, StreamVideoEnded):
-            await pytgcalls.change_stream(
-                -1001185324811,
-                stream=AudioVideoPiped(
-                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                await pytgcalls.change_stream(
+                    -1001185324811,
+                    stream=AudioVideoPiped(
+                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                    )
                 )
-            )
 
         app.run()
     </syntax-highlight>

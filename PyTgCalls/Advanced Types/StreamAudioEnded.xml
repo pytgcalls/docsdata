@@ -9,7 +9,7 @@
         <br/>
         <pg-title>VALUES</pg-title>
         <subtext>
-            <config id="ARG_INT_ID"/>
+            <config id="RET_INT_ID"/>
         </subtext>
     </subtext>
 </page>
