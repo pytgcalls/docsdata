@@ -1,6 +1,6 @@
 <page>
     <h1>Leave Group Call</h1>
-    <text>This method allow leaving a Group Call.</text>
+    <text>This method allows leaving a Group Call.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
         from pytgcalls import Client
@@ -39,7 +39,7 @@
                 <config id="BASE_EXCEPTIONS"/>
 
                 <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInGroupCallError</sb></ref></category-title>
-                <subtext><text>This error occurs when attempting to leave a group call that you have not joined."</text></subtext>
+                <subtext><text>This error occurs when attempting to leave a group call that you have not joined.</text></subtext>
             </subtext>
         </category>
     </subtext>

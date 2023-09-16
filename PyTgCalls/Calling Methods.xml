@@ -1,7 +1,7 @@
 <page>
     <h1>Calling Methods</h1>
     <text>
-        At this point, we have successfully <docs-ref link="">installed PyTgCalls</docs-ref> and installed an MtProto client;
+        At this point, we have successfully <docs-ref link="">installed PyTgCalls</docs-ref> and installed an MTProto client;
         we are now aiming towards the core of the library. It’s time to start playing with the API!
     </text>
     <h2>Basic Usage</h2>
@@ -35,13 +35,13 @@
             </syntax-highlight>
         </item>
         <item>
-            Now let’s import your MtProto Client:
+            Now let’s import your MTProto Client:
 
-            If you need Pyrogram:
+            If you wish to use Pyrogram:
             <syntax-highlight>
                 from pyrogram import Client
             </syntax-highlight>
-            If you need Telethon:
+            If you wish to use Telethon:
             <syntax-highlight>
                 from telethon import TelegramClient
             </syntax-highlight>
@@ -54,7 +54,7 @@
             </syntax-highlight>
         </item>
         <item>
-            Initialize the MtProto client:
+            Initialize the MTProto client:
 
             If you are using Pyrogram:
             <syntax-highlight>
@@ -78,7 +78,7 @@
             </syntax-highlight>
         </item>
         <item>
-            Now you can call any method you like:
+            Now you can call any method you want:
             <syntax-highlight>
                 app.join_group_call(
                     -1001185324811,
@@ -89,14 +89,14 @@
             </syntax-highlight>
         </item>
         <item>
-            Now add idle to block your code (To avoid the immediate closing of your script):
+            Lastly, call the idle function to keep your code running:
             <syntax-highlight>
                 idle()
             </syntax-highlight>
         </item>
     </list>
     <h2>Asynchronous Calls</h2>
-    <text>In case you want PyTgCalls to run asynchronously:</text>
+    <text>In case you wish to run PyTgCalls asynchronously:</text>
     <syntax-highlight>
         import asyncio
         from pytgcalls import PyTgCalls
@@ -130,8 +130,8 @@
             </syntax-highlight>
         </item>
         <item>
-            Async methods can’t normally be executed at the top level, because they must be inside an async-defined function;
-            here we define one and put our code inside; method calls require the await keyword:
+            Async methods can’t be executed at the top level, because they must be within an async-defined function;
+            here, we define one and we put our code inside it; method calls require the await keyword:
             <syntax-highlight>
                 async def main():
                 await app.start()
@@ -145,7 +145,7 @@
             </syntax-highlight>
         </item>
         <item>
-            Then we tell asyncio to call <code>main()</code>, they will call the function in async mode
+            Then, we tell asyncio to call <code>main()</code> in async mode
             <syntax-highlight>asyncio.get_event_loop().run_until_complete(main())</syntax-highlight>
         </item>
     </list>

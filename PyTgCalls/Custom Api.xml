@@ -1,8 +1,8 @@
 <page>
-    <h1>Custom Api</h1>
+    <h1>Custom API</h1>
     <text>
-        You have entered the API Reference section where you can find detailed information about Custom API.
-        The Front-end API class, all available methods, types, attributes, decorator detailed descriptions can be found starting from this page.
+        You now are in the API Reference section where you can find detailed information about the Custom API:
+        the Front-end API class, all available methods, types, attributes and decorators detailed descriptions can be found starting from this page.
 
         This page is about the CustomAPI class, which exposes high-level methods for easy access to the API.
     </text>
@@ -26,7 +26,7 @@
             <shi>class</shi> <ref>pytgcalls.<sb>CustomApi</sb></ref>
         </category-title>
         <subtext>
-            <text>CustomAPI, the main means host the local http api server.</text>
+            <text>CustomApi, the main means host the local http api server.</text>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -40,7 +40,7 @@
                 <pg-title>METHODS</pg-title>
                 <subtext>
                     <category-title><ref><sb>start</sb></ref>()</category-title>
-                    <subtext><text>This method start the internal http webserver, this is helpful if you need an API interface to PyTgCalls.</text></subtext>
+                    <subtext><text>This method starts the internal http webserver, this is helpful if you need an API interface to PyTgCalls.</text></subtext>
                 </subtext>
             </category>
             <br/>

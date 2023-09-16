@@ -1,12 +1,12 @@
 <page>
     <h1>Examples</h1>
     <text>
-        This page contains example scripts to show you how PyTgCalls looks like.
+        This page contains example scripts to demonstrate how PyTgCalls looks like.
 
-        Every script is working right away (provided you correctly set up your credentials), meaning you can simply copy-paste
-        and run. The only things you have to change are session names and target chats, where applicable.
+        Every script is working right away (assuming you correctly set up your credentials), meaning you can simply copy-paste them
+        and run. The only things you have to modify are session names and target chats, where applicable.
 
-        The examples listed below can be treated as building blocks for your own applications and are meant to be simple enough
+        The examples listed below can be treated as building blocks for your own applications and are designed to be simple enough
         to give you a basic idea.
     </text>
     <separator/>
@@ -21,7 +21,7 @@
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/calls_with_module">calls_with_module</a></column>
-            <column>Directly join on group call without waiting the start of PyTgCalls</column>
+            <column>Join a group call directly without waiting for PyTgCalls to start</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/capture_mic">capture_mic</a></column>
@@ -29,35 +29,31 @@
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/custom_api">custom_api</a></column>
-            <column>Use custom api server to bind PHP or other api to PyTgCalls</column>
+            <column>Use custom API server to bind PHP or other API to PyTgCalls</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/fifo_conversion">fifo_conversion</a></column>
             <column>Play a stream from fifo</column>
         </item>
         <item>
-            <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/multiple_calls">multiple_calls</a></column>
-            <column>Use multiple pytgcalls instances with different Telegram Accounts</column>
-        </item>
-        <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_audio_calls">piped_audio_calls</a></column>
-            <column>Play audio using ffmpeg for live conversion (With integrated ffmpeg)</column>
+            <column>Play audio using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_image_calls">piped_image_calls</a></column>
-            <column>Play audio and image using ffmpeg for live conversion (With integrated ffmpeg)</column>
+            <column>Play audio and image using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/piped_video_calls">piped_video_calls</a></column>
-            <column>Play audio and video using ffmpeg for live conversion (With integrated ffmpeg)</column>
+            <column>Play audio and video using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_piped_play">remote_piped_play</a></column>
-            <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg)</column>
+            <column>Play a stream from a remote link using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/remote_stream_with_header">remote_stream_with_header</a></column>
-            <column>Play a stream from remote link using ffmpeg for live conversion (With integrated ffmpeg) with additional headers</column>
+            <column>Play a stream from a remote link using ffmpeg for live conversion (with integrated ffmpeg) with additional headers</column>
         </item>
         <item>
             <column><a href="https://github.com/pytgcalls/pytgcalls/tree/master/example/screen_sharing">screen_sharing</a></column>

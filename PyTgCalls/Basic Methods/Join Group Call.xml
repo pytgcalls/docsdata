@@ -35,9 +35,9 @@
                 <config id="ARG_CHAT_ID"/>
                 <config id="ARG_INPUT_STREAM"/>
                 <category-title><ref>invite_hash</ref>: <shi>Optional[str]</shi></category-title>
-                <subtext><text>Unique identifier for the invite in a group call in form of a t.me link</text></subtext>
+                <subtext><text>Unique identifier for a group call invite in t.me link form</text></subtext>
                 <category-title><ref>join_as</ref>: Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]</category-title>
-                <subtext><text>InputPeer of join as a channel or profile</text></subtext>
+                <subtext><text>InputPeer to join as a channel or a profile</text></subtext>
             </subtext>
         </category>
         <br/>

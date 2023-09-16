@@ -6,7 +6,7 @@
   <!--exceptions-->
   <option id="BASE_EXCEPTIONS">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoMTProtoClient</sb></ref></category-title>
-    <subtext><text>This method can only be called with an MtProto client.</text></subtext>
+    <subtext><text>This method can only be called with a valid MTProto client set.</text></subtext>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>ClientNotStarted</sb></ref></category-title>
     <subtext><text>Ensure you have started the process with <docs-ref link="">start()</docs-ref> before calling this method.</text></subtext>
@@ -17,13 +17,13 @@
 
   <option id="STREAM_EXCEPTIONS">
     <category-title>exception <ref><sb>FileNotFoundError</sb></ref></category-title>
-    <subtext><text>The specified file does not exist</text></subtext>
+    <subtext><text>The specified file does not exist.</text></subtext>
 
     <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
     <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
 
     <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
-    <subtext><text>Error while executing the shell script</text></subtext>
+    <subtext><text>Error while executing the shell script.</text></subtext>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoAudioSourceFound</sb></ref></category-title>
     <subtext><text>The audio file you're trying to play has no audio.</text></subtext>
@@ -49,7 +49,7 @@
   <!--parameters-->
   <option id="ARG_CHAT_ID">
     <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
-    <subtext><text>Can be direct id or a username</text></subtext>
+    <subtext><text>Can be a direct id or a username</text></subtext>
   </option>
 
   <option id="ARG_INPUT_STREAM">

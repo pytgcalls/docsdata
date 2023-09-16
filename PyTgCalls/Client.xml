@@ -1,8 +1,8 @@
 <page>
     <h1>PyTgCalls Client</h1>
     <text>
-        You have entered the API Reference section where you can find detailed information about PyTgCalls API.
-        The main Client class, all available methods, types, attributes, decorator detailed descriptions can be found starting from this page.
+        You now are in the API Reference section. Here you can find detailed information about PyTgCalls API:
+        the main Client class, all available methods, types, attributes and decorators detailed descriptions can be found starting from this page.
 
         This page is about the Client class, which exposes high-level methods for easy access to the API.
     </text>
@@ -20,13 +20,13 @@
             <shi>class</shi> <ref>pytgcalls.<sb>PyTgCalls</sb></ref>
         </category-title>
         <subtext>
-            <text>PyTgCalls Client, the main means for interacting with Group Calls.</text>
+            <text>PyTgCalls Client, the main tool for interacting with Group Calls.</text>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
                     <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>]</category-title>
-                    <subtext><text>Pass the MtProto Client</text></subtext>
+                    <subtext><text>Pass the MTProto Client</text></subtext>
                     <category-title><ref>cache_duration</ref>: <shi>int</shi></category-title>
                     <subtext><text>Cache duration of a Full Chat query</text></subtext>
                     <category-title><ref>overload_quiet_mode</ref>: <shi>bool</shi></category-title>
@@ -54,8 +54,8 @@
             <category>
                 <pg-title>RAISES</pg-title>
                 <subtext>
-                    <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidMtProtoClient</sb></ref></category-title>
-                    <subtext><text> You set an invalid MtProto client.</text></subtext>
+                    <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidMTProtoClient</sb></ref></category-title>
+                    <subtext><text> You set an invalid MTProto client.</text></subtext>
                 </subtext>
             </category>
         </subtext>
