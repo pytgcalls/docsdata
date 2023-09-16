@@ -1,0 +1,28 @@
+<page>
+    <h1>Quick Start</h1>
+    <text>
+        Welcome to this section, which is primarily intended for developers who are moderately experienced or
+        seeking to perform a porting in their language using C bindings. If you are new to Python development,
+        we strongly recommend using <docs-ref href="">Py-TgCalls</docs-ref>. However, if you fall into the aforementioned categories,
+        you can find an example of usage with the various porting below.
+    </text>
+    <h2>Community and Official Libraries</h2>
+    <text>
+        In the following section, we present a comprehensive catalog of libraries,
+        thoughtfully crafted by the community and officially endorsed,
+        all of which leverage the robust capabilities of NTgCalls.
+    </text>
+    <br/>
+    <github-ref user="pytgcalls" reponame="pytgcalls"/>
+    <github-ref user="roj1512" reponame="ntgcalls_deno"/>
+    <h2>Enjoy the API</h2>
+    <text>
+        What we've just seen are simplified ports of NTgCalls. However, now let's delve deeper!
+        In the upcoming pages, we'll explore NTgCalls in a step-by-step manner,
+        covering how it functions, how to install it, and more.
+
+        Are you feeling eager to continue?
+        You can take a shortcut to the Call Methods
+        section and return later to delve into more details.
+    </text>
+</page>

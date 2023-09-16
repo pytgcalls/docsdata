@@ -1,0 +1,163 @@
+<page>
+    <h1>Build Guide</h1>
+    <text>
+        Being a modern library, <b>NTgCalls</b> requires CMake 3.23+ to be built on your system,
+        on Linux is required at least CLang 17+ and libx11-dev.
+        We recommend using the latest versions of both CMake and CLang.
+    </text>
+    <alert type="important">
+        Before building NTgCalls, check for pre-compiled shared libs on <a href="https://github.com/pytgcalls/ntgcalls/releases">GitHub Releases</a> or
+        Python Bindings from <a href="https://pypi.org/project/ntgcalls/">PyPI</a>.
+        Building from source may be necessary if pre-compiled packages are not available.
+    </alert>
+    <separator/>
+    <h2>Installing Prerequisites</h2>
+    <text>
+        Below, we will guide you through the step-by-step process of installing the prerequisites
+        required to compile NTgCalls on your operating system.
+    </text>
+    <br/>
+    <subtext>
+        <h3>Linux</h3>
+        <list style="numbers">
+            <item>
+                <text>
+                    <b>Update the system's package list:</b><br/>
+                    First, make sure you have an updated list of packages:
+                </text>
+                <syntax-highlight language="bash">
+                    $ sudo apt update
+                </syntax-highlight>
+            </item>
+            <item>
+                <text>
+                    <b>Install CMake 3.23+, libx11-dev, and Clang 17+:</b><br/>
+                    This section provides instructions on how to install three specific packages: CMake version 3.23 or higher, libx11-dev,
+                    and Clang version 17 or higher. Use the following command:
+                </text>
+                <syntax-highlight language="bash">
+                    $ sudo apt install cmake libx11-dev clang
+                </syntax-highlight>
+            </item>
+        </list>
+        <br/>
+        <h3>Windows</h3>
+        <list style="numbers">
+            <item>
+                <text>
+                    <b>Install Microsoft Visual Studio 2022:</b><br/>
+                    Install Microsoft Visual Studio 2022 with the C++ workload. You can download it from the official website:
+                    <a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a>
+                </text>
+            </item>
+            <item>
+                <text>
+                    <b>Download CMake Installer:</b><br/>
+                    Download the CMake installer for Windows from the official website:
+                    <a href="https://cmake.org/download/">https://cmake.org/download/</a>
+                </text>
+            </item>
+            <item>
+                <text>
+                    <b>Run Installer:</b><br/>
+                    Run the downloaded CMake installer and follow the installation wizard instructions.
+                    Make sure to select the option to add CMake to the system PATH during installation.
+                </text>
+            </item>
+        </list>
+        <br/>
+        <h3>macOS</h3>
+        <list style="numbers">
+            <item>
+                <text>
+                    <b>Install Xcode Command Line Tools:</b><br/>
+                    If you don't have Xcode installed, you can install the Command Line Tools separately. Open a terminal and run the following command:
+                </text>
+                <subtext>
+                    <syntax-highlight language="bash">
+                        $ xcode-select --install
+                    </syntax-highlight>
+                </subtext>
+            </item>
+            <item>
+                <text>
+                    <b>Install CMake:</b><br/>
+                    Open a terminal and run the following command to install CMake:
+                </text>
+                <subtext>
+                    <syntax-highlight language="bash">
+                        $ brew install cmake
+                    </syntax-highlight>
+                </subtext>
+            </item>
+        </list>
+    </subtext>
+    <h2>Compilation</h2>
+    <text>
+        Now that you have successfully installed all the required prerequisites for NTgCalls,
+        it's time to build the library. Follow these steps to compile NTgCalls on your system.
+    </text>
+    <alert type="important">
+        It's essential to have Python 3.7+ installed on your server.
+    </alert>
+    <subtext>
+        <h3>Building Shared Library</h3>
+        <text>
+            For developers looking to use NTgCalls with C and C++, we provide C Bindings.
+            Follow these steps to compile NTgCalls with C Bindings in either Release or Debug mode:
+        </text>
+        <list style="numbers">
+            <item>
+                <text>
+                    <b>Change Directory:</b><br/>
+                    Navigate to the root directory of the NTgCalls project:
+                </text>
+                <syntax-highlight language="bash">
+                    $ cd /path/to/ntgcalls
+                </syntax-highlight>
+            </item>
+            <item>
+                <text>
+                    <b>Generate Shared Library:</b><br/>
+                    Run the following command to generate the shared libraries in Release mode:
+                </text>
+                <subtext>
+                    <text><b>Debug</b></text>
+                    <syntax-highlight language="bash">
+                        $ python3 setup.py build_shared --debug
+                    </syntax-highlight>
+                    <text><b>Release</b></text>
+                    <syntax-highlight language="bash">
+                        $ python3 setup.py build_shared
+                    </syntax-highlight>
+                </subtext>
+            </item>
+        </list>
+        <br/>
+        <h3>Building Python Bindings</h3>
+        <text>
+            NTgCalls offers Python Bindings, facilitating seamless integration with Python.
+            Follow these steps to compile NTgCalls with Python Bindings:
+        </text>
+        <list style="numbers">
+            <item>
+                <text>
+                    <b>Change Directory:</b><br/>
+                    Navigate to the root directory of the NTgCalls project:
+                </text>
+                <syntax-highlight language="bash">
+                    $ cd /path/to/ntgcalls
+                </syntax-highlight>
+            </item>
+            <item>
+                <text>
+                    <b>Install Python Bindings:</b><br/>
+                    Run the following command to install the Python Bindings:
+                </text>
+                <syntax-highlight language="bash">
+                    $ pip3 install . -U
+                </syntax-highlight>
+            </item>
+        </list>
+    </subtext>
+</page>

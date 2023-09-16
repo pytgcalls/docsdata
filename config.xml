@@ -169,6 +169,7 @@
 
   <files-list id="NTgCalls" basepath="NTgCalls/">
     <microtag>INTRODUCTION</microtag>
-
+    <file>Quick Start.xml</file>
+    <file>Build Guide.xml</file>
   </files-list>
 </config>
