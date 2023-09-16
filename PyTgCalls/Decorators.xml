@@ -1,9 +1,11 @@
 <page>
     <h1>Decorators</h1>
     <text>
-        While still being methods bound to the <docs-ref link="">PyTgCalls</docs-ref> class, decorators are of a special kind and thus deserve a dedicated page.
+        While still being methods bound to the <docs-ref link="">PyTgCalls</docs-ref> class,
+        decorators hold a special significance that justifies a dedicated page.
 
-        Decorators are able to register callback functions for handling updates in a much easier and cleaner way; all you need to do is adding the decorators on top of your functions.
+        Decorators allow you to register callback functions for handling updates in a much easier and cleaner way.
+        All you need to do is add the decorators on top of your functions.
     </text>
     <syntax-highlight mark="7">
         from pytgcalls import PyTgCalls
@@ -24,9 +26,11 @@
     <category>
         <category-title><ref>@PyTgCalls.<sb>on_closed_voice_chat</sb></ref>()</category-title>
         <subtext>
-            Decorator for handling the closed voice chat event.
+            <text>
+                Decorator for handling closed voice chat events.
 
-            When a video chat closes, this decorator will be triggered
+                When a video chat is closed, this decorator will be triggered.
+            </text>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -42,9 +46,11 @@
         <br/><br/>
         <category-title><ref>@PyTgCalls.<sb>on_group_call_invite</sb></ref>()</category-title>
         <subtext>
-            Decorator for handling invites to the voice chat.
+            <text>
+                Decorator for handling voice chat invitations.
 
-            When your userbot is invited to the voice chat, this decorator will be triggered
+                When your userbot is invited to a voice chat, this decorator will be triggered.
+            </text>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -60,9 +66,11 @@
         <br/><br/>
         <category-title><ref>@PyTgCalls.<sb>on_kicked</sb></ref>()</category-title>
         <subtext>
-            Decorator for handling when kicked from a group/channel.
+            <text>
+                Decorator for handling kicks from groups/channels.
 
-            When your userbot is kicked from a group/channel, this decorator will be triggered
+                When your userbot is kicked from a group or channel, this decorator will be triggered.
+            </text>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -78,9 +86,11 @@
         <br/><br/>
         <category-title><ref>@PyTgCalls.<sb>on_left</sb></ref>()</category-title>
         <subtext>
-            Decorator for handling when the userbot leaves a group/channel.
+            <text>
+                Decorator for handling when the userbot leaves a group/channel.
 
-            When your userbot leaves a group/channel, this decorator will be triggered
+                When your userbot leaves a group or channel, this decorator will be triggered.
+            </text>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -96,9 +106,11 @@
         <br/><br/>
         <category-title><ref>@PyTgCalls.<sb>on_participants_change</sb></ref>()</category-title>
         <subtext>
-            Decorator for handling when the participant list of a group call is changed.
+            <text>
+                Decorator for handling changes in the participant list of a group call.
 
-            When the participant list changes, this decorator will be triggered
+                When the participant list changes, this decorator will be triggered.
+            </text>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -111,16 +123,36 @@
                 app.run()
             </syntax-highlight>
         </subtext>
+        <br/><br/>
+        <category-title><ref>@PyTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Decorator for handling when a stream playback ends.
+
+                When a stream ends, this decorator will be triggered.
+            </text>
+            <h3>Example</h3>
+            <syntax-highlight mark="4-5">
+                ...
+                app = PyTgCalls(client)
+                ...
+                @app.on_stream_end()
+                async def handler(client: PyTgCalls, update: Update):
+                print(chat_id)
+                ...
+                app.run()
+            </syntax-highlight>
+        </subtext>
     </category>
     <br/>
     <h1>CustomApi Decorators</h1>
     <category-title><ref><sb>@on_update_custom_api</sb></ref>()</category-title>
     <subtext>
-        <text>Decorator for handling incoming http events</text>
+        <text>Decorator for handling incoming HTTP events.</text>
         <pg-title>RAISES</pg-title>
         <subtext>
             <category-title>exception <ref>pytgcalls.exceptions.<sb>TooManyCustomApiDecorators</sb></ref></category-title>
-            <subtext><text>You set too many decorators.</text></subtext>
+            <subtext><text>You have set too many decorators.</text></subtext>
         </subtext>
         <h3>Example</h3>
         <syntax-highlight mark="4-5">
