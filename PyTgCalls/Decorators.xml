@@ -11,7 +11,7 @@
         from pytgcalls import PyTgCalls
         from pytgcalls.types import Update
         ...
-        client = # Here Your MtProto Client
+        client = # Here Your MTProto Client
         app = PyTgCalls(client)
 
         @app.on_raw_update()

@@ -10,7 +10,7 @@
         ...
         app = Client(client)
 
-        ...  # Call API decorators / MtProto decorators
+        ...  # Call API decorators / MTProto decorators
 
         app.run()
     </syntax-highlight>

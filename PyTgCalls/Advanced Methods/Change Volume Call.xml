@@ -3,7 +3,7 @@
     <alert type="warning">
         This feature has some Telegram bugs, sometimes the volume not is applied Client side
     </alert>
-    <text>This method changes the output volume of the userbot using MtProto APIs.</text>
+    <text>This method changes the output volume of the userbot using MTProto APIs.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-13">
         from pytgcalls import Client
