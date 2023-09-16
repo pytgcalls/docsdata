@@ -107,6 +107,12 @@
     <category-title><ref>additional_ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
     <subtext><text>FFmpeg additional parameters.</text></subtext>
   </option>
+
+  <option id="ARG_STREAM_PARAMS">
+    <config id="ARG_INT_ID"/>
+    <category-title><ref>media</ref>: <docs-ref href="">MediaDescription</docs-ref></category-title>
+    <subtext><text>Media parameters of the stream.</text></subtext>
+  </option>
   <!--end parameters-->
 
   <files-list id="NTgCalls" basepath="NTgCalls/">
@@ -116,8 +122,10 @@
 
     <microtag>PYTHON API</microtag>
     <file>Client.xml</file>
-    <group basepath="NTgCalls/Piped Stream/">
-
+    <group basepath="NTgCalls/Basic Methods/">
+      <file>Connect.xml</file>
+      <file>Create Call.xml</file>
+      <file>Stop.xml</file>
     </group>
   </files-list>
 
