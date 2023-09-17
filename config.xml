@@ -305,6 +305,50 @@
   <option id="MEDIA_STOPPED_DESC">
     <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
   </option>
+
+  <option id="INPUT_MODE_DESC2">
+    <text>Enumeration of input modes for audio and video streams.</text>
+  </option>
+
+  <option id="MODE_FILE_DESC">
+    <subtext><text>Input mode using a file source.</text></subtext>
+  </option>
+
+  <option id="MODE_SHELL_DESC">
+    <subtext><text>Input mode using a shell command.</text></subtext>
+  </option>
+
+  <option id="MODE_FFMPEG_DESC">
+    <subtext><text>Input mode using FFmpeg.</text></subtext>
+  </option>
+
+  <option id="STREAM_STATUS_DESC">
+    <text>Enumeration of stream status values.</text>
+  </option>
+
+  <option id="STATUS_PLAYING_DESC">
+    <subtext><text>Indicates that the stream is currently playing.</text></subtext>
+  </option>
+
+  <option id="STATUS_PAUSED_DESC">
+    <subtext><text>Indicates that the stream is currently paused.</text></subtext>
+  </option>
+
+  <option id="STATUS_IDLING_DESC">
+    <subtext><text>Indicates that the stream is currently idling (neither playing nor paused).</text></subtext>
+  </option>
+
+  <option id="STREAM_TYPE_DESC">
+    <text>Enumeration of stream type values.</text>
+  </option>
+
+  <option id="TYPE_AUDIO_DESC">
+    <subtext><text>Indicates that the stream type is audio.</text></subtext>
+  </option>
+
+  <option id="TYPE_VIDEO_DESC">
+    <subtext><text>Indicates that the stream type is video.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -458,11 +502,16 @@
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
     </group>
-    <group basepath="NTgCalls/Available Types/">
+    <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
+    </group>
+    <group basepath="NTgCalls/Available Enums/">
+      <file>ntg_input_mode_enum.xml</file>
+      <file>ntg_stream_status_enum.xml</file>
+      <file>ntg_stream_type_enum.xml</file>
     </group>
   </files-list>
 

@@ -1,0 +1,22 @@
+<page>
+    <h1>ntg_input_mode_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref><sb>ntg_input_mode_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="INPUT_MODE_DESC2"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_FILE</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="MODE_FILE_DESC"/>
+
+            <category-title><ref><sb>NTG_SHELL</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="MODE_SHELL_DESC"/>
+
+            <category-title><ref><sb>NTG_FFMPEG</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="MODE_FFMPEG_DESC"/>
+        </subtext>
+    </subtext>
+</page>

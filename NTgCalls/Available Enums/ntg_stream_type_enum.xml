@@ -1,18 +1,18 @@
 <page>
-    <h1>StreamType</h1>
+    <h1>ntg_stream_type_enum</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
+        <shi language="c">typedef enum</shi> <ref><sb>ntg_stream_type_enum</sb></ref>
     </category-title>
     <subtext>
         <config id="STREAM_TYPE_DESC"/>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>Audio</sb></ref> <shi>=</shi> 0</category-title>
+            <category-title><ref><sb>NTG_STREAM_AUDIO</sb></ref> <shi>=</shi> 0</category-title>
             <config id="TYPE_AUDIO_DESC"/>
 
-            <category-title><ref><sb>Video</sb></ref> <shi>=</shi> 1</category-title>
+            <category-title><ref><sb>NTG_STREAM_VIDEO</sb></ref> <shi>=</shi> 1</category-title>
             <config id="TYPE_VIDEO_DESC"/>
         </subtext>
     </subtext>

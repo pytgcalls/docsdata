@@ -5,18 +5,18 @@
         <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
     </category-title>
     <subtext>
-        <text>Enumeration of stream status values.</text>
+        <config id="STREAM_STATUS_DESC"/>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
             <category-title><ref><sb>Playing</sb></ref> <shi>=</shi> 0</category-title>
-            <subtext><text>Indicates that the stream is currently playing.</text></subtext>
+            <config id="STATUS_PLAYING_DESC"/>
 
             <category-title><ref><sb>Paused</sb></ref> <shi>=</shi> 1</category-title>
-            <subtext><text>Indicates that the stream is currently paused.</text></subtext>
+            <config id="STATUS_PAUSED_DESC"/>
 
             <category-title><ref><sb>Idling</sb></ref> <shi>=</shi> 2</category-title>
-            <subtext><text>Indicates that the stream is currently idling (neither playing nor paused).</text></subtext>
+            <config id="STATUS_IDLING_DESC"/>
         </subtext>
     </subtext>
 </page>

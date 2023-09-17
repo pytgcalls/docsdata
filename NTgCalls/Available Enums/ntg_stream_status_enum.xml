@@ -1,0 +1,22 @@
+<page>
+    <h1>ntg_stream_status_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref><sb>ntg_stream_status_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="STREAM_STATUS_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_PLAYING</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="STATUS_PLAYING_DESC"/>
+
+            <category-title><ref><sb>NTG_PAUSED</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="STATUS_PAUSED_DESC"/>
+
+            <category-title><ref><sb>NTG_IDLING</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="STATUS_IDLING_DESC"/>
+        </subtext>
+    </subtext>
+</page>

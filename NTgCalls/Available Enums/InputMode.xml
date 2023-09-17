@@ -5,18 +5,18 @@
         <shi>class</shi> <ref>ntgcalls.<sb>InputMode</sb></ref>
     </category-title>
     <subtext>
-        <text>Enumeration of input modes for audio and video streams.</text>
+        <config id="INPUT_MODE_DESC2"/>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
             <category-title><ref><sb>File</sb></ref> <shi>=</shi> 0</category-title>
-            <subtext><text>Input mode using a file source.</text></subtext>
+            <config id="MODE_FILE_DESC"/>
 
             <category-title><ref><sb>Shell</sb></ref> <shi>=</shi> 1</category-title>
-            <subtext><text>Input mode using a shell command.</text></subtext>
+            <config id="MODE_SHELL_DESC"/>
 
             <category-title><ref><sb>FFmpeg</sb></ref> <shi>=</shi> 2</category-title>
-            <subtext><text>Input mode using FFmpeg.</text></subtext>
+            <config id="MODE_FFMPEG_DESC"/>
         </subtext>
     </subtext>
 </page>
