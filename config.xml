@@ -15,15 +15,37 @@
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
   </option>
 
+  <option id="FILE_EXCEPTION_DESC">
+    <subtext><text>The specified file does not exist.</text></subtext>
+  </option>
+
+  <option id="SHELL_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
+    <subtext><text>Error while executing the shell script.</text></subtext>
+  </option>
+
+  <option id="NTG_STREAM_EXCEPTIONS">
+    <category-title>exception <ref>ntgcalls.<sb>InvalidParams</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to send an invalid InputMode.</text></subtext>
+
+    <category-title>exception <ref>ntgcalls.<sb>FileError</sb></ref></category-title>
+    <config id="FILE_EXCEPTION_DESC"/>
+
+    <config id="SHELL_EXCEPTION"/>
+  </option>
+
+  <option id="NO_GROUP_CALL_EXCEPTION_DESC">
+    <subtext><text>This error occurs when attempting to access a group call that does not exist.</text></subtext>
+  </option>
+
   <option id="STREAM_EXCEPTIONS">
     <category-title>exception <ref><sb>FileNotFoundError</sb></ref></category-title>
-    <subtext><text>The specified file does not exist.</text></subtext>
+    <config id="FILE_EXCEPTION_DESC"/>
 
     <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
     <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
 
-    <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
-    <subtext><text>Error while executing the shell script.</text></subtext>
+    <config id="SHELL_EXCEPTION"/>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoAudioSourceFound</sb></ref></category-title>
     <subtext><text>The audio file you're trying to play has no audio.</text></subtext>
@@ -37,19 +59,34 @@
 
   <option id="GROUPCALL_NOT_FOUND_EXCEPTION">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>GroupCallNotFound</sb></ref></category-title>
-    <subtext><text>This error occurs when attempting to access a group call that does not exist.</text></subtext>
+    <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
+  </option>
+
+  <option id="NTG_NO_GROUP_CALL">
+    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+    <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
   </option>
 
   <option id="RUNNING_EXCEPTION">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>PyTgCallsAlreadyRunning</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>
   </option>
+
+  <option id="CONNECTION_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to execute an action on a non-existent Group Call.</text></subtext>
+  </option>
+
+  <option id="RTMP_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>RTMPNeeded</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to use NTgCalls to enter an RTMP stream.</text></subtext>
+  </option>
   <!--end exceptions-->
 
   <!--parameters-->
   <option id="ARG_CHAT_ID">
     <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
-    <subtext><text>Can be a direct id or a username</text></subtext>
+    <subtext><text>Can be direct id or a username</text></subtext>
   </option>
 
   <option id="ARG_INPUT_STREAM">
