@@ -11,14 +11,13 @@
         <subtext>
             <config id="ARG_INPUT_MODE"/>
 
-            <category-title><ref>input</ref>: <shi>str</shi></category-title>
-            <subtext><text>The audio input source.</text></subtext>
+            <config id="ARG_C_INPUT_MEDIA"/>
 
             <category-title><ref>sample_rate</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_SAMPLE_DESC"/>
 
             <category-title><ref>bits_per_sample</ref>: <shi>int</shi></category-title>
-            <subtext><text>Audio bits per sample (8 or 16).</text></subtext>
+            <config id="AUDIO_BPS_DESC"/>
 
             <category-title><ref>channel_count</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_CHAN_DESC"/>

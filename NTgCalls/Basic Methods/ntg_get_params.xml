@@ -43,10 +43,10 @@
             <subtext>
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <category-title><docs-ref link="">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
+                <category-title><docs-ref link="">ntg_media_description_struct</docs-ref> <ref>desc</ref></category-title>
                 <config id="ARG_MEDIA_DESC"/>
 
-                <category-title><shi language="c">char*</shi> <ref><sb>buffer</sb></ref></category-title>
+                <category-title><shi language="c">char*</shi> <ref>buffer</ref></category-title>
                 <subtext>
                     <text>
                         A string buffer to store the connection parameters retrieved from WebRTC.

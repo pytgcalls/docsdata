@@ -1,0 +1,25 @@
+<page>
+    <h1>ntg_audio_description_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref><sb>ntg_audio_description_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="AUDIO_CONFIG_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <config id="ARG_C_INPUT_MODE"/>
+            <config id="ARG_C_INPUT_MEDIA"/>
+
+            <category-title><shi language="c">uint16_t</shi> <ref>sampleRate</ref></category-title>
+            <config id="AUDIO_SAMPLE_DESC"/>
+
+            <category-title><shi language="c">uint8_t</shi> <ref>bitsPerSample</ref></category-title>
+            <config id="AUDIO_BPS_DESC"/>
+
+            <category-title><shi language="c">uint8_t</shi> <ref>channelCount</ref></category-title>
+            <config id="AUDIO_CHAN_DESC"/>
+        </subtext>
+    </subtext>
+</page>

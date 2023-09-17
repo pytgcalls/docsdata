@@ -5,15 +5,15 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>MediaDescription</sb></ref>
     </category-title>
     <subtext>
-        <text>Media Configuration for the Stream.</text>
+        <config id="MEDIA_DESC"/>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>audio</ref>: <shi>Optional[ntgcalls.AudioDescription]</shi></category-title>
-            <subtext><text>Audio configuration for the stream.</text></subtext>
+            <config id="AUDIO_DESC"/>
 
             <category-title><ref>video</ref>: <shi>Optional[ntgcalls.VideoDescription]</shi></category-title>
-            <subtext><text>Video configuration for the stream.</text></subtext>
+            <config id="VIDEO_DESC"/>
         </subtext>
     </subtext>
 </page>

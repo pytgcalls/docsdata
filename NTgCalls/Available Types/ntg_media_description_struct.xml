@@ -1,0 +1,19 @@
+<page>
+    <h1>ntg_media_description_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref><sb>ntg_media_description_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="MEDIA_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><docs-ref link="">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>audio</ref></category-title>
+            <config id="AUDIO_DESC"/>
+
+            <category-title><docs-ref link="">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>video</ref></category-title>
+            <config id="VIDEO_DESC"/>
+        </subtext>
+    </subtext>
+</page>

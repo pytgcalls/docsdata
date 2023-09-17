@@ -27,7 +27,7 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>params</sb></ref>: <shi>str</shi></category-title>
+                <category-title><ref>params</ref>: <shi>str</shi></category-title>
                 <config id="TG_PARAMS_DESC"/>
             </subtext>
         </category>

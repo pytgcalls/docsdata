@@ -86,7 +86,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <category-title><shi language="c">char*</shi> <ref><sb>buffer</sb></ref></category-title>
+                    <category-title><shi language="c">char*</shi> <ref>buffer</ref></category-title>
                     <subtext><text>A character buffer to store the version string.</text></subtext>
 
                     <config id="ARG_BUF_SIZE"/>

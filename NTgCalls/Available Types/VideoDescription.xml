@@ -11,8 +11,7 @@
         <subtext>
             <config id="ARG_INPUT_MODE"/>
 
-            <category-title><ref>input</ref>: <shi>str</shi></category-title>
-            <subtext><text>The video input source.</text></subtext>
+            <config id="ARG_INPUT_MEDIA"/>
 
             <config id="ARG_VIDEO_CONFIG"/>
 

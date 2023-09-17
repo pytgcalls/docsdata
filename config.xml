@@ -257,6 +257,54 @@
   <option id="ARG_MEDIA_DESC">
     <subtext><text>Media parameters of the stream.</text></subtext>
   </option>
+
+  <option id="INPUT_MODE_DESC">
+    <subtext><text>The input mode for audio or video.</text></subtext>
+  </option>
+
+  <option id="ARG_INPUT_MEDIA_DESC">
+    <subtext><text>The input media source.</text></subtext>
+  </option>
+
+  <option id="AUDIO_BPS_DESC">
+    <subtext><text>Audio bits per sample (8 or 16).</text></subtext>
+  </option>
+
+  <option id="VIDEO_WIDTH_DESC">
+    <subtext><text>Video width in pixels.</text></subtext>
+  </option>
+
+  <option id="VIDEO_HEIGHT_DESC">
+    <subtext><text>Video height in pixels.</text></subtext>
+  </option>
+
+  <option id="MEDIA_DESC">
+    <text>Media Configuration for the Stream.</text>
+  </option>
+
+  <option id="AUDIO_DESC">
+    <subtext><text>Audio configuration for the stream.</text></subtext>
+  </option>
+
+  <option id="VIDEO_DESC">
+    <subtext><text>Video configuration for the stream.</text></subtext>
+  </option>
+
+  <option id="MEDIA_STATE_DESC">
+    <text>State of the Media Stream.</text>
+  </option>
+
+  <option id="MEDIA_MUTED_DESC">
+    <subtext><text>Indicates whether the media stream is muted.</text></subtext>
+  </option>
+
+  <option id="MEDIA_PAUSED_DESC">
+    <subtext><text>Indicates whether the video stream is paused.</text></subtext>
+  </option>
+
+  <option id="MEDIA_STOPPED_DESC">
+    <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -322,15 +370,20 @@
 
   <option id="ARG_VIDEO_CONFIG">
     <category-title><ref>width</ref>: <shi>int</shi></category-title>
-    <subtext><text>Video width in pixels.</text></subtext>
+    <config id="VIDEO_WIDTH_DESC"/>
 
     <category-title><ref>height</ref>: <shi>int</shi></category-title>
-    <subtext><text>Video height in pixels.</text></subtext>
+    <config id="VIDEO_HEIGHT_DESC"/>
   </option>
 
   <option id="ARG_INPUT_MODE">
     <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
-    <subtext><text>The input mode for audio or video.</text></subtext>
+    <config id="INPUT_MODE_DESC"/>
+  </option>
+
+  <option id="ARG_C_INPUT_MODE">
+    <category-title><docs-ref link="">ntg_input_mode_enum</docs-ref> <ref>inputMode</ref></category-title>
+    <config id="INPUT_MODE_DESC"/>
   </option>
 
   <option id="ARG_MEDIA">
@@ -341,6 +394,16 @@
   <option id="ARG_BUF_SIZE">
     <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
     <subtext><text>The size of the provided buffer.</text></subtext>
+  </option>
+
+  <option id="ARG_INPUT_MEDIA">
+    <category-title><ref>input</ref>: <shi>str</shi></category-title>
+    <config id="ARG_INPUT_MEDIA_DESC"/>
+  </option>
+
+  <option id="ARG_C_INPUT_MEDIA">
+    <category-title><shi language="c">char*</shi> <ref>input</ref></category-title>
+    <config id="ARG_INPUT_MEDIA_DESC"/>
   </option>
   <!--end parameters-->
 
@@ -394,6 +457,12 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
+    </group>
+    <group basepath="NTgCalls/Available Types/">
+      <file>ntg_audio_description_struct.xml</file>
+      <file>ntg_media_description_struct.xml</file>
+      <file>ntg_media_state_struct.xml</file>
+      <file>ntg_video_description_struct.xml</file>
     </group>
   </files-list>
 

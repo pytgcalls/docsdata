@@ -5,18 +5,18 @@
         <shi>class</shi> <ref>ntgcalls.<sb>MediaState</sb></ref>
     </category-title>
     <subtext>
-        <text>State of the Media Stream.</text>
+        <config id="MEDIA_STATE_DESC"/>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <category-title><ref><sb>muted</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Indicates whether the media stream is muted.</text></subtext>
+            <config id="MEDIA_MUTED_DESC"/>
 
             <category-title><ref><sb>video_paused</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Indicates whether the video stream is paused.</text></subtext>
+            <config id="MEDIA_PAUSED_DESC"/>
 
             <category-title><ref><sb>video_stopped</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
+            <config id="MEDIA_STOPPED_DESC"/>
         </subtext>
     </subtext>
 </page>
