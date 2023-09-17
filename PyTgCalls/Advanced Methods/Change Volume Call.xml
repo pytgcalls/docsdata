@@ -1,9 +1,9 @@
 <page>
     <h1>Change Volume Call</h1>
     <alert type="warning">
-        This feature has some Telegram bugs, sometimes the volume not is applied Client side
+        This feature has some Telegram bugs; sometimes the volume is not applied on the Cient side.
     </alert>
-    <text>This method changes the output volume of the userbot using MTProto APIs.</text>
+    <text>This method changes the userbot’s output volume using MTProto APIs.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-13">
         from pytgcalls import Client
@@ -28,7 +28,7 @@
         <ref>PyTgCalls.<sb>change_volume_call</sb></ref>()
     </category-title>
     <subtext>
-        <text>Change the volume of the playing stream.</text>
+        <text>Change the stream’s volume.</text>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
@@ -36,7 +36,7 @@
                 <config id="ARG_CHAT_ID"/>
 
                 <category-title><ref>volume</ref>: <shi>int</shi></category-title>
-                <subtext><text>Volume to set to the stream</text></subtext>
+                <subtext><text>New stream’s volume</text></subtext>
             </subtext>
         </category>
         <br/>

@@ -32,7 +32,7 @@
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
                     <category-title><ref>port</ref>: <shi>int</shi></category-title>
-                    <subtext><text>CustomApi port to bind the API http server</text></subtext>
+                    <subtext><text>CustomApi port of the http server</text></subtext>
                 </subtext>
             </category>
             <br/>

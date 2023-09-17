@@ -1,6 +1,6 @@
 <page>
     <h1>UnMute Stream</h1>
-    <text>This method allow unmuting the userbot via MTProto APIs</text>
+    <text>This method allows unmuting the userbot via MTProto APIs</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
         from pytgcalls import Client

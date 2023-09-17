@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>VideoParameters</sb></ref>
     </category-title>
     <subtext>
-        <text>Audio parameters of the stream.</text>
+        <text>Stream’s video parameters.</text>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>

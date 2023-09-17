@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>StreamVideoEnded</sb></ref>
     </category-title>
     <subtext>
-        <text>Raised when ended video stream.</text>
+        <text>The video stream has ended.</text>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>

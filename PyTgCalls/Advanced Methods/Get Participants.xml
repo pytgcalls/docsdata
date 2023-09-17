@@ -1,6 +1,6 @@
 <page>
     <h1>Get Participants</h1>
-    <text>This method return the list of participants on a group call using MTProto APIs.</text>
+    <text>This method returns the list of a group call’s participants using MTProto APIs.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
         from pytgcalls import Client

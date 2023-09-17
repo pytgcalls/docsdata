@@ -1,8 +1,8 @@
 <page>
-    <h1>InputStream</h1>
+    <h1>Stream</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>InputStream</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.<sb>Stream</sb></ref>
     </category-title>
     <subtext>
         <text>Info about a group call</text>

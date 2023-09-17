@@ -119,7 +119,7 @@
 
   <!--descriptions-->
   <option id="CHANGE_STREAM_DESC">
-    <text>This method allow changing streaming file to a Group Call.</text>
+    <text>This method allows changing the streaming file in a Group Call.</text>
   </option>
 
   <option id="CHANGE_STREAM_DESC_2">
@@ -127,7 +127,7 @@
   </option>
 
   <option id="TIME_DESC">
-    <text>This method allow getting the played time of the stream.</text>
+    <text>This method allows getting the played time of the stream.</text>
   </option>
 
   <option id="TIME_DESC_2">
@@ -139,7 +139,7 @@
   </option>
 
   <option id="AUDIO_CONFIG_DESC">
-    <text>Audio Configuration for the Stream.</text>
+    <text>Stream’s Audio Configuration</text>
   </option>
 
   <option id="AUDIO_SAMPLE_DESC">
@@ -169,7 +169,7 @@
   <option id="ARG_AUDIO_PARAMS_DESC">
     <subtext>
       <text>
-        Audio parameters of the stream. Can be used also <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>,
+        Stream’s audio parameters. You can also use <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>,
         <docs-ref link="">pytgcalls.MediumQualityAudio()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityAudio()</docs-ref>.
       </text>
     </subtext>
@@ -178,7 +178,7 @@
   <option id="ARG_VIDEO_PARAMS_DESC">
     <subtext>
       <text>
-        Video parameters of the stream. Can be used also <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>,
+        Video parameters of the stream. You can also use <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>,
         <docs-ref link="">pytgcalls.MediumQualityVideo()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityVideo()</docs-ref>.
       </text>
     </subtext>
@@ -244,7 +244,7 @@
   </option>
 
   <option id="CHAT_ID_DESC">
-    <subtext><text>Unique identifier of chat.</text></subtext>
+    <subtext><text>Unique identifier of a chat.</text></subtext>
   </option>
 
   <option id="TG_PARAMS_DESC">
@@ -259,7 +259,7 @@
   <!--parameters-->
   <option id="ARG_CHAT_ID">
     <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
-    <subtext><text>Can be direct id or a username</text></subtext>
+    <subtext><text>Can be a direct id or a username</text></subtext>
   </option>
 
   <option id="ARG_INPUT_STREAM">
@@ -304,7 +304,7 @@
 
   <option id="ARG_FFMPEG_PARAMS">
     <category-title><ref>headers</ref>: Optional[<shi>dict</shi>[<shi>str</shi>, <shi>str</shi>]]</category-title>
-    <subtext><text>Headers of http the connection.</text></subtext>
+    <subtext><text>HTTP connection’s headers.</text></subtext>
 
     <category-title><ref>additional_ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
     <subtext><text>FFmpeg additional parameters.</text></subtext>

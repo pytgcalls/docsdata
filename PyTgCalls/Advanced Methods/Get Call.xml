@@ -1,6 +1,6 @@
 <page>
     <h1>Get Call</h1>
-    <text>This method check if exist a Group Call, if not, this can raise an error</text>
+    <text>This method checks if a Group Call exists; if not, it raises an error</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
         from pytgcalls import Client

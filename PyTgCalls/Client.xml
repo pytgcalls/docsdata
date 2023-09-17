@@ -29,8 +29,6 @@
                     <subtext><text>Pass the MTProto Client</text></subtext>
                     <category-title><ref>cache_duration</ref>: <shi>int</shi></category-title>
                     <subtext><text>Cache duration of a Full Chat query</text></subtext>
-                    <category-title><ref>overload_quiet_mode</ref>: <shi>bool</shi></category-title>
-                    <subtext><text>Disable overload cpu messages by setting true</text></subtext>
                 </subtext>
             </category>
             <br/>

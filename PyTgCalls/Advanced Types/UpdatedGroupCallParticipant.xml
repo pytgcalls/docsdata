@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>UpdatedGroupCallParticipant</sb></ref>
     </category-title>
     <subtext>
-        <text>A participant have changed him status.</text>
+        <text>A participant changed his status.</text>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>

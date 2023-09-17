@@ -12,10 +12,10 @@
             <config id="RET_INT_ID"/>
 
             <category-title><ref><sb>is_playing</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Check if exist any sort of stream.</text></subtext>
+            <subtext><text>Check if any sort of stream exists.</text></subtext>
 
             <category-title><ref><sb>status</sb></ref> <shi>-> str</shi></category-title>
-            <subtext><text>Status of Stream.</text></subtext>
+            <subtext><text>Stream’s Status.</text></subtext>
         </subtext>
     </subtext>
 </page>

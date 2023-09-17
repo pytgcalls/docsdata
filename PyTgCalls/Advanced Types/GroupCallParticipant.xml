@@ -10,25 +10,25 @@
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <category-title><ref><sb>user_id</sb></ref> <shi>-> int</shi></category-title>
-            <subtext><text>Unique identifier of participant.</text></subtext>
+            <subtext><text>Unique identifier of a participant.</text></subtext>
 
             <category-title><ref><sb>muted</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Whether the participant is muted.</text></subtext>
 
             <category-title><ref><sb>muted_by_admin</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Whether admin mutes the participant.</text></subtext>
+            <subtext><text>Whether an admin has muted the participant.</text></subtext>
 
             <category-title><ref><sb>video</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Whether this participant is currently broadcasting a video stream.</text></subtext>
+            <subtext><text>Whether the participant is currently broadcasting a video stream.</text></subtext>
 
             <category-title><ref><sb>screen_sharing</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Whether this participant is currently broadcasting a screen sharing.</text></subtext>
+            <subtext><text>Whether the participant is currently screen sharing.</text></subtext>
 
             <category-title><ref><sb>video_camera</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Whether this participant is currently broadcasting a video camera.</text></subtext>
+            <subtext><text>Whether the participant is currently broadcasting a video camera.</text></subtext>
 
             <category-title><ref><sb>raised_hand</sb></ref> <shi>-> bool</shi></category-title>
-            <subtext><text>Whether this participant has raised the hand.</text></subtext>
+            <subtext><text>Whether the participant has raised the hand.</text></subtext>
 
             <category-title><ref><sb>volume</sb></ref> <shi>-> int</shi></category-title>
             <subtext><text>Volume level of the participant.</text></subtext>
