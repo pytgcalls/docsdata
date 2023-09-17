@@ -227,11 +227,16 @@
       <file>Resume.xml</file>
       <file>UnMute.xml</file>
     </group>
-    <group basepath="NTgCalls/Types/">
+    <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
       <file>MediaDescription.xml</file>
       <file>MediaState.xml</file>
       <file>VideoDescription.xml</file>
+    </group>
+    <group basepath="NTgCalls/Available Enums/">
+      <file>InputMode.xml</file>
+      <file>StreamStatus.xml</file>
+      <file>StreamType.xml</file>
     </group>
   </files-list>
 

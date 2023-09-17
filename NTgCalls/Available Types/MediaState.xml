@@ -9,13 +9,13 @@
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>
-            <category-title><ref>muted</ref>: <shi>bool</shi></category-title>
+            <category-title><ref><sb>muted</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Indicates whether the media stream is muted.</text></subtext>
 
-            <category-title><ref>video_paused</ref>: <shi>bool</shi></category-title>
+            <category-title><ref><sb>video_paused</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Indicates whether the video stream is paused.</text></subtext>
 
-            <category-title><ref>video_stopped</ref>: <shi>bool</shi></category-title>
+            <category-title><ref><sb>video_stopped</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
         </subtext>
     </subtext>

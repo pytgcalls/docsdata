@@ -1,0 +1,19 @@
+<page>
+    <h1>StreamType</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of stream type values.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>Audio</sb></ref> <shi>=</shi> 0</category-title>
+            <subtext><text>Indicates that the stream type is audio.</text></subtext>
+
+            <category-title><ref><sb>Video</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Indicates that the stream type is video.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

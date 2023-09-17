@@ -1,0 +1,22 @@
+<page>
+    <h1>StreamStatus</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of stream status values.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>Playing</sb></ref> <shi>=</shi> 0</category-title>
+            <subtext><text>Indicates that the stream is currently playing.</text></subtext>
+
+            <category-title><ref><sb>Paused</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Indicates that the stream is currently paused.</text></subtext>
+
+            <category-title><ref><sb>Idling</sb></ref> <shi>=</shi> 2</category-title>
+            <subtext><text>Indicates that the stream is currently idling (neither playing nor paused).</text></subtext>
+        </subtext>
+    </subtext>
+</page>
