@@ -25,7 +25,7 @@
                 <pg-title>STATIC METHODS</pg-title>
                 <subtext>
                     <category-title><ref><sb>calls</sb></ref>() <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="">StreamStatus</docs-ref>]</category-title>
-                    <subtext><text>Get a list of existent group calls</text></subtext>
+                    <config id="LIST_CALLS_DESC"/>
 
                     <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>str</shi></category-title>
                     <subtext><text>Return "pong" message when calling this method</text></subtext>

@@ -9,14 +9,10 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>width</ref>: <shi>int</shi></category-title>
-            <subtext><text>Video width.</text></subtext>
-
-            <category-title><ref>height</ref>: <shi>int</shi></category-title>
-            <subtext><text>Video height.</text></subtext>
+            <config id="ARG_VIDEO_CONFIG"/>
 
             <category-title><ref>frame_rate</ref>: <shi>int</shi></category-title>
-            <subtext><text>Framerate of video.</text></subtext>
+            <config id="VIDEO_FPS_DESC"/>
         </subtext>
     </subtext>
 </page>

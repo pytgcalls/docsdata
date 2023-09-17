@@ -15,10 +15,6 @@
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
   </option>
 
-  <option id="FILE_EXCEPTION_DESC">
-    <subtext><text>The specified file does not exist.</text></subtext>
-  </option>
-
   <option id="SHELL_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
     <subtext><text>Error while executing the shell script.</text></subtext>
@@ -32,10 +28,6 @@
     <config id="FILE_EXCEPTION_DESC"/>
 
     <config id="SHELL_EXCEPTION"/>
-  </option>
-
-  <option id="NO_GROUP_CALL_EXCEPTION_DESC">
-    <subtext><text>This error occurs when attempting to access a group call that does not exist.</text></subtext>
   </option>
 
   <option id="STREAM_EXCEPTIONS">
@@ -99,7 +91,57 @@
   <option id="TIME_DESC_2">
     <text>Get the played time of the stream</text>
   </option>
-  <!--end exceptions-->
+
+  <option id="LIST_CALLS_DESC">
+    <subtext><text>Get a list of existent group calls</text></subtext>
+  </option>
+
+  <option id="AUDIO_CONFIG_DESC">
+    <text>Audio Configuration for the Stream.</text>
+  </option>
+
+  <option id="AUDIO_SAMPLE_DESC">
+    <subtext><text>Audio sample rate (0-48000, max allowed by PCM16L).</text></subtext>
+  </option>
+
+  <option id="AUDIO_CHAN_DESC">
+    <subtext><text>Audio channel count (1-2, max allowed by PCM16L).</text></subtext>
+  </option>
+
+  <option id="VIDEO_CONFIG_DESC">
+    <text>Video Configuration for the Stream.</text>
+  </option>
+
+  <option id="VIDEO_FPS_DESC">
+    <subtext><text>Frames per second (FPS) for video playback.</text></subtext>
+  </option>
+
+  <option id="FILE_EXCEPTION_DESC">
+    <subtext><text>The specified file does not exist.</text></subtext>
+  </option>
+
+  <option id="NO_GROUP_CALL_EXCEPTION_DESC">
+    <subtext><text>This error occurs when attempting to access a group call that does not exist.</text></subtext>
+  </option>
+
+  <option id="ARG_AUDIO_PARAMS_DESC">
+    <subtext>
+      <text>
+        Audio parameters of the stream. Can be used also <docs-ref link="">HighQualityAudio()</docs-ref>,
+        <docs-ref link="">MediumQualityAudio()</docs-ref> or <docs-ref link="">LowQualityAudio()</docs-ref>.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="ARG_VIDEO_PARAMS_DESC">
+    <subtext>
+      <text>
+        Video parameters of the stream. Can be used also <docs-ref link="">HighQualityVideo()</docs-ref>,
+        <docs-ref link="">MediumQualityVideo()</docs-ref> or <docs-ref link="">LowQualityVideo()</docs-ref>.
+      </text>
+    </subtext>
+  </option>
+  <!--end descriptions-->
 
   <!--parameters-->
   <option id="ARG_CHAT_ID">
@@ -127,24 +169,6 @@
     <subtext><text>Info about a group call participant.</text></subtext>
   </option>
 
-  <option id="ARG_AUDIO_PARAMS_DESC">
-    <subtext>
-      <text>
-        Audio parameters of the stream. Can be used also <docs-ref link="">HighQualityAudio()</docs-ref>,
-        <docs-ref link="">MediumQualityAudio()</docs-ref> or <docs-ref link="">LowQualityAudio()</docs-ref>.
-      </text>
-    </subtext>
-  </option>
-
-  <option id="ARG_VIDEO_PARAMS_DESC">
-    <subtext>
-      <text>
-        Video parameters of the stream. Can be used also <docs-ref link="">HighQualityVideo()</docs-ref>,
-        <docs-ref link="">MediumQualityVideo()</docs-ref> or <docs-ref link="">LowQualityVideo()</docs-ref>.
-      </text>
-    </subtext>
-  </option>
-
   <option id="ARG_AUDIO_PARAMS">
     <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="">AudioParameters</docs-ref>]</category-title>
     <config id="ARG_AUDIO_PARAMS_DESC"/>
@@ -165,8 +189,16 @@
 
   <option id="ARG_STREAM_PARAMS">
     <config id="ARG_INT_ID"/>
-    <category-title><ref>media</ref>: <docs-ref href="">MediaDescription</docs-ref></category-title>
+    <category-title><ref><sb>media</sb></ref>: <docs-ref href="">MediaDescription</docs-ref></category-title>
     <subtext><text>Media parameters of the stream.</text></subtext>
+  </option>
+
+  <option id="ARG_VIDEO_CONFIG">
+    <category-title><ref>width</ref>: <shi>int</shi></category-title>
+    <subtext><text>Video width in pixels.</text></subtext>
+
+    <category-title><ref>height</ref>: <shi>int</shi></category-title>
+    <subtext><text>Video height in pixels.</text></subtext>
   </option>
   <!--end parameters-->
 
