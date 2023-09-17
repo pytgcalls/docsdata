@@ -1,0 +1,19 @@
+<page>
+    <h1>MediaDescription</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>MediaDescription</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Media Configuration for the Stream.</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>audio</ref>: <shi>Optional[ntgcalls.AudioDescription]</shi></category-title>
+            <subtext><text>Audio configuration for the stream.</text></subtext>
+
+            <category-title><ref>video</ref>: <shi>Optional[ntgcalls.VideoDescription]</shi></category-title>
+            <subtext><text>Video configuration for the stream.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

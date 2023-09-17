@@ -1,0 +1,27 @@
+<page>
+    <h1>AudioDescription</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioDescription</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="AUDIO_CONFIG_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <config id="ARG_INPUT_MODE"/>
+
+            <category-title><ref>input</ref>: <shi>str</shi></category-title>
+            <subtext><text>The audio input source.</text></subtext>
+
+            <category-title><ref>sample_rate</ref>: <shi>int</shi></category-title>
+            <config id="AUDIO_SAMPLE_DESC"/>
+
+            <category-title><ref>bits_per_sample</ref>: <shi>int</shi></category-title>
+            <subtext><text>Audio bits per sample (8 or 16).</text></subtext>
+
+            <category-title><ref>channel_count</ref>: <shi>int</shi></category-title>
+            <config id="AUDIO_CHAN_DESC"/>
+        </subtext>
+    </subtext>
+</page>

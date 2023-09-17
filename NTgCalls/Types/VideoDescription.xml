@@ -1,0 +1,23 @@
+<page>
+    <h1>VideoDescription</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoDescription</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="VIDEO_CONFIG_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <config id="ARG_INPUT_MODE"/>
+
+            <category-title><ref>input</ref>: <shi>str</shi></category-title>
+            <subtext><text>The video input source.</text></subtext>
+
+            <config id="ARG_VIDEO_CONFIG"/>
+
+            <category-title><ref>fps</ref>: <shi>int</shi></category-title>
+            <config id="VIDEO_FPS_DESC"/>
+        </subtext>
+    </subtext>
+</page>

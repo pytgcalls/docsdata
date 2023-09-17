@@ -227,6 +227,12 @@
       <file>Resume.xml</file>
       <file>UnMute.xml</file>
     </group>
+    <group basepath="PyTgCalls/Types/">
+      <file>AudioDescription.xml</file>
+      <file>MediaDescription.xml</file>
+      <file>MediaState.xml</file>
+      <file>VideoDescription.xml</file>
+    </group>
   </files-list>
 
   <files-list id="PyTgCalls" basepath="PyTgCalls/">

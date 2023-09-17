@@ -7,7 +7,7 @@
     <subtext>
         <text>A participant have changed him status.</text>
         <br/>
-        <pg-title>VALUES</pg-title>
+        <pg-title>PROPERTIES</pg-title>
         <subtext>
             <config id="RET_INT_ID"/>
             <config id="ARG_PARTICIPANT"/>

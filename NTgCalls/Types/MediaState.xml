@@ -1,0 +1,22 @@
+<page>
+    <h1>MediaState</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>ntgcalls.<sb>MediaState</sb></ref>
+    </category-title>
+    <subtext>
+        <text>State of the Media Stream.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>muted</ref>: <shi>bool</shi></category-title>
+            <subtext><text>Indicates whether the media stream is muted.</text></subtext>
+
+            <category-title><ref>video_paused</ref>: <shi>bool</shi></category-title>
+            <subtext><text>Indicates whether the video stream is paused.</text></subtext>
+
+            <category-title><ref>video_stopped</ref>: <shi>bool</shi></category-title>
+            <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

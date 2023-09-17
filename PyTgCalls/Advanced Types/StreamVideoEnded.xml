@@ -7,7 +7,7 @@
     <subtext>
         <text>Raised when ended video stream.</text>
         <br/>
-        <pg-title>VALUES</pg-title>
+        <pg-title>PROPERTIES</pg-title>
         <subtext>
             <config id="RET_INT_ID"/>
         </subtext>
