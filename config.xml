@@ -10,6 +10,9 @@
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>ClientNotStarted</sb></ref></category-title>
     <subtext><text>Ensure you have started the process with <docs-ref link="">start()</docs-ref> before calling this method.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInGroupCallError</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to leave a group call that you have not joined.</text></subtext>
   </option>
 
   <option id="CONNECTION_EXCEPTIONS">
@@ -259,7 +262,7 @@
   <!--parameters-->
   <option id="ARG_CHAT_ID">
     <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
-    <subtext><text>Can be a direct id or a username</text></subtext>
+    <subtext><text>Can be direct id or a username</text></subtext>
   </option>
 
   <option id="ARG_INPUT_STREAM">

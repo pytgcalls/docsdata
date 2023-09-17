@@ -37,9 +37,6 @@
             <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="CONNECTION_EXCEPTIONS"/>
-
-                <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInGroupCallError</sb></ref></category-title>
-                <subtext><text>This error occurs when attempting to leave a group call that you have not joined.</text></subtext>
             </subtext>
         </category>
     </subtext>

@@ -53,7 +53,7 @@
                 <pg-title>RAISES</pg-title>
                 <subtext>
                     <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidMTProtoClient</sb></ref></category-title>
-                    <subtext><text> You set an invalid MTProto client.</text></subtext>
+                    <subtext><text>You set an invalid MTProto client.</text></subtext>
                 </subtext>
             </category>
         </subtext>
