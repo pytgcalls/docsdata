@@ -26,6 +26,7 @@
             return 0;
         }
     </syntax-highlight>
+    <separator/>
     <h2>Details</h2>
     <category-title noref="true">
         <ref><shi language="c">int</shi> <sb>ntg_mute</sb></ref>()

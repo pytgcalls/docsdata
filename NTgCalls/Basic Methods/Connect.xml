@@ -15,6 +15,7 @@
             tg_params,
         )
     </syntax-highlight>
+    <separator/>
     <h2>Details</h2>
     <category-title noref="true">
         <ref>NTgCalls.<sb>connect</sb></ref>()
