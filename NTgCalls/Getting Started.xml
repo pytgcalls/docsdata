@@ -27,6 +27,7 @@
             }
         </syntax-highlight>
     </subtext>
+
     <h2>Cleanup</h2>
     <text>
         To clean up and release the resources used by NTgCalls, you should call the <code>ntg_destroy</code> function.
@@ -52,5 +53,38 @@
                 return 0;
             }
         </syntax-highlight>
+    </subtext>
+
+    <separator/>
+    <h2>Library Version</h2>
+    <text>
+        You can retrieve the version of the NTgCalls library currently in use using the <code>ntg_get_version</code> function.
+        This function returns a string containing the version number.
+    </text>
+    <subtext>
+        <h3>Example</h3>
+        <syntax-highlight language="c" mark="4">
+            #include "ntgcalls.h"
+            #include &lt;stdio.h&gt;
+
+            int main() {
+                char version[8];
+                ntg_get_version(version, sizeof(version));
+                printf("NTgCalls Version: %s\n", version);
+                return 0;
+            }
+        </syntax-highlight>
+        <br/>
+        <h3>Details</h3>
+        <category-title noref="true">
+            <ref><shi language="c">int</shi> <sb>ntg_get_version</sb></ref>()
+        </category-title>
+        <subtext>
+            <text>Retrieve library version</text>
+            <category-title><shi language="c">char*</shi> <ref>buffer</ref></category-title>
+            <subtext><text>A character buffer to store the version string.</text></subtext>
+
+            <config id="ARG_BUF_SIZE"/>
+        </subtext>
     </subtext>
 </page>

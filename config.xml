@@ -330,6 +330,11 @@
     <category-title><docs-ref link="">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
+
+  <option id="ARG_BUF_SIZE">
+    <category-title><shi language="c">int</shi> <ref>size</ref></category-title>
+    <subtext><text>The size of the provided buffer.</text></subtext>
+  </option>
   <!--end parameters-->
 
   <files-list id="NTgCalls" basepath="NTgCalls/">

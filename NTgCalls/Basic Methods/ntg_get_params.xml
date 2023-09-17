@@ -53,8 +53,7 @@
                     </text>
                 </subtext>
 
-                <category-title><shi>int</shi> <ref>size</ref></category-title>
-                <subtext><text>The size of the buffer to store the connection parameters.</text></subtext>
+                <config id="ARG_BUF_SIZE"/>
             </subtext>
         </category>
         <br/>
