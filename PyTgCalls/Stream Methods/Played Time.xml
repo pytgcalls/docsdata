@@ -38,7 +38,7 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="BASE_EXCEPTIONS"/>
+                <config id="CONNECTION_EXCEPTIONS"/>
             </subtext>
         </category>
     </subtext>

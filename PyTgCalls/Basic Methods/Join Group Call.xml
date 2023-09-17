@@ -44,7 +44,7 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="BASE_EXCEPTIONS"/>
+                <config id="CONNECTION_EXCEPTIONS"/>
                 <config id="STREAM_EXCEPTIONS"/>
                 <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
                 <subtext><text>You are attempting to join a group call you're already a part of.</text></subtext>

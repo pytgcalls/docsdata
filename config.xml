@@ -10,6 +10,10 @@
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>ClientNotStarted</sb></ref></category-title>
     <subtext><text>Ensure you have started the process with <docs-ref link="">start()</docs-ref> before calling this method.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_EXCEPTIONS">
+    <config id="BASE_EXCEPTIONS"/>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoActiveGroupCall</sb></ref></category-title>
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
