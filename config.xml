@@ -88,8 +88,16 @@
     <text>This method allow changing streaming file to a Group Call.</text>
   </option>
 
+  <option id="CHANGE_STREAM_DESC_2">
+    <text>Change the streaming file.</text>
+  </option>
+
   <option id="TIME_DESC">
     <text>This method allow getting the played time of the stream.</text>
+  </option>
+
+  <option id="TIME_DESC_2">
+    <text>Get the played time of the stream</text>
   </option>
   <!--end exceptions-->
 

@@ -27,7 +27,7 @@
         <ref>NTgCalls.<sb>changeStream</sb></ref>()
     </category-title>
     <subtext>
-        <text>Get connection params for Telegram.</text>
+        <config id="CHANGE_STREAM_DESC_2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
