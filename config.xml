@@ -127,8 +127,8 @@
   <option id="ARG_AUDIO_PARAMS_DESC">
     <subtext>
       <text>
-        Audio parameters of the stream. Can be used also <docs-ref link="">HighQualityAudio()</docs-ref>,
-        <docs-ref link="">MediumQualityAudio()</docs-ref> or <docs-ref link="">LowQualityAudio()</docs-ref>.
+        Audio parameters of the stream. Can be used also <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>,
+        <docs-ref link="">pytgcalls.MediumQualityAudio()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityAudio()</docs-ref>.
       </text>
     </subtext>
   </option>
@@ -136,8 +136,8 @@
   <option id="ARG_VIDEO_PARAMS_DESC">
     <subtext>
       <text>
-        Video parameters of the stream. Can be used also <docs-ref link="">HighQualityVideo()</docs-ref>,
-        <docs-ref link="">MediumQualityVideo()</docs-ref> or <docs-ref link="">LowQualityVideo()</docs-ref>.
+        Video parameters of the stream. Can be used also <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>,
+        <docs-ref link="">pytgcalls.MediumQualityVideo()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityVideo()</docs-ref>.
       </text>
     </subtext>
   </option>
@@ -150,7 +150,7 @@
   </option>
 
   <option id="ARG_INPUT_STREAM">
-    <category-title><ref>stream</ref>: <docs-ref link="">InputStream</docs-ref></category-title>
+    <category-title><ref>stream</ref>: <docs-ref link="">pytgcalls.Stream</docs-ref></category-title>
     <subtext><text>Input Streams base descriptor</text></subtext>
   </option>
 
@@ -165,17 +165,17 @@
   </option>
 
   <option id="ARG_PARTICIPANT">
-    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="PyTgCalls/Advanced Types/GroupCallParticipant.xml">GroupCallParticipant</docs-ref></category-title>
+    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="PyTgCalls/Advanced Types/GroupCallParticipant.xml">pytgcalls.GroupCallParticipant</docs-ref></category-title>
     <subtext><text>Info about a group call participant.</text></subtext>
   </option>
 
   <option id="ARG_AUDIO_PARAMS">
-    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="">AudioParameters</docs-ref>]</category-title>
+    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="">pytgcalls.AudioParameters</docs-ref>]</category-title>
     <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_PARAMS">
-    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="">VideoParameters</docs-ref>]</category-title>
+    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="">pytgcalls.VideoParameters</docs-ref>]</category-title>
     <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
@@ -189,7 +189,7 @@
 
   <option id="ARG_STREAM_PARAMS">
     <config id="ARG_INT_ID"/>
-    <category-title><ref><sb>media</sb></ref>: <docs-ref href="">MediaDescription</docs-ref></category-title>
+    <category-title><ref><sb>media</sb></ref>: <docs-ref href="">ntgcalls.MediaDescription</docs-ref></category-title>
     <subtext><text>Media parameters of the stream.</text></subtext>
   </option>
 
@@ -199,6 +199,11 @@
 
     <category-title><ref>height</ref>: <shi>int</shi></category-title>
     <subtext><text>Video height in pixels.</text></subtext>
+  </option>
+
+  <option id="ARG_INPUT_MODE">
+    <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
+    <subtext><text>The input mode for audio or video.</text></subtext>
   </option>
   <!--end parameters-->
 

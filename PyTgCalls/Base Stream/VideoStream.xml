@@ -9,13 +9,12 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
-            <subtext><text>Video input mode.</text></subtext>
+            <config id="ARG_INPUT_MODE"/>
 
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The video file path or shell command (YUV420P format only).</text></subtext>
 
-            <category-title><ref>parameters </ref>: <docs-ref link="">VideoParameters</docs-ref></category-title>
+            <category-title><ref>parameters </ref>: <docs-ref link="">pytgcalls.VideoParameters</docs-ref></category-title>
             <config id="ARG_VIDEO_PARAMS_DESC"/>
         </subtext>
     </subtext>
