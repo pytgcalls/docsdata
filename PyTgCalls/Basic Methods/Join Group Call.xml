@@ -45,14 +45,10 @@
             <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="BASE_EXCEPTIONS"/>
-
                 <config id="STREAM_EXCEPTIONS"/>
-
                 <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
                 <subtext><text>You are attempting to join a group call you're already a part of.</text></subtext>
-
-                <category-title>exception <ref>ntgcalls.<sb>RTMPNeeded</sb></ref></category-title>
-                <subtext><text>This error occurs when attempting to use NTgCalls to enter an RTMP stream.</text></subtext>
+                <config id="RTMP_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

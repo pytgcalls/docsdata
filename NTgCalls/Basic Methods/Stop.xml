@@ -27,5 +27,11 @@
                 <config id="ARG_INT_ID"/>
             </subtext>
         </category>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="NTG_NO_GROUP_CALL"/>
+            </subtext>
+        </category>
     </subtext>
 </page>

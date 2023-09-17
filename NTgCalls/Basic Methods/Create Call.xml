@@ -35,5 +35,14 @@
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+                <subtext><text>You are attempting to init an already existent Group Call.</text></subtext>
+                <config id="NTG_STREAM_EXCEPTIONS"/>
+            </subtext>
+        </category>
     </subtext>
 </page>

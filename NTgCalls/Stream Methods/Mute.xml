@@ -19,12 +19,19 @@
         <ref>NTgCalls.<sb>mute</sb></ref>()
     </category-title>
     <subtext>
-        <text>Mute the WebRTC stream connection.</text>
+        <text>Mute the WebRTC stream.</text>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="NTG_NO_GROUP_CALL"/>
             </subtext>
         </category>
     </subtext>

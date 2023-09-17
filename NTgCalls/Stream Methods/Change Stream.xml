@@ -35,5 +35,13 @@
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="NTG_NO_GROUP_CALL"/>
+                <config id="NTG_STREAM_EXCEPTIONS"/>
+            </subtext>
+        </category>
     </subtext>
 </page>
