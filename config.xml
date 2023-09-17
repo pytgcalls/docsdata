@@ -83,6 +83,16 @@
   </option>
   <!--end exceptions-->
 
+  <!--descriptions-->
+  <option id="CHANGE_STREAM_DESC">
+    <text>This method allow changing streaming file to a Group Call.</text>
+  </option>
+
+  <option id="TIME_DESC">
+    <text>This method allow getting the played time of the stream.</text>
+  </option>
+  <!--end exceptions-->
+
   <!--parameters-->
   <option id="ARG_CHAT_ID">
     <category-title><ref>chat_id</ref>: Union[<shi>int</shi>, <shi>str</shi>]</category-title>
