@@ -8,11 +8,11 @@
     <separator/>
     <h2>Initialization</h2>
     <text>
-        To get started with NTgCalls in your application, you need to initialize the library using the `ntg_init` function.
+        To get started with NTgCalls in your application, you need to initialize the library using the <code>ntg_init</code> function.
         This function sets up the necessary resources and prepares NTgCalls for use.
     </text>
     <alert type="important">
-        Make sure to call `ntg_init` before using any other NTgCalls functions.
+        Make sure to call <code>ntg_init</code> before using any other NTgCalls functions.
     </alert>
     <subtext>
         <h3>Example</h3>
@@ -29,11 +29,11 @@
     </subtext>
     <h2>Cleanup</h2>
     <text>
-        To clean up and release the resources used by NTgCalls, you should call the `ntg_destroy` function.
+        To clean up and release the resources used by NTgCalls, you should call the <code>ntg_destroy</code> function.
         This function deallocates memory and performs necessary cleanup operations.
     </text>
     <alert type="warning">
-        Always call `ntg_destroy` when you are done using NTgCalls to prevent memory leaks and resource issues.
+        Always call <code>ntg_destroy</code> when you are done using NTgCalls to prevent memory leaks and resource issues.
     </alert>
     <subtext>
         <h3>Example</h3>
