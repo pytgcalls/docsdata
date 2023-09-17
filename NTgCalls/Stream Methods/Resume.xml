@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>resume</sb></ref>()
+        <ref>NTgCalls.<sb>resume</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <text>Resume the WebRTC stream.</text>

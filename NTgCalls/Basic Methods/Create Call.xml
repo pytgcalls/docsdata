@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>createCall</sb></ref>()
+        <ref>NTgCalls.<sb>createCall</sb></ref>() <shi>-> str</shi>
     </category-title>
     <subtext>
         <text>Get connection params for Telegram.</text>

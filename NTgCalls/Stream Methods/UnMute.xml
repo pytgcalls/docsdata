@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>unmute</sb></ref>()
+        <ref>NTgCalls.<sb>unmute</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <text>UnMute the WebRTC stream.</text>
