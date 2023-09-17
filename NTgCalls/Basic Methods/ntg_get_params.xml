@@ -62,12 +62,8 @@
             <pg-title>ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_C_EXCEPTIONS"/>
-
                 <config id="SMALL_BUFF_EXCEPTION"/>
-
-                <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
-                <subtext><text>A connection with the specified ID already exists.</text></subtext>
-
+                <config id="ARG_MEDIA"/>
                 <config id="STREAM_C_EXCEPTIONS"/>
             </subtext>
         </category>

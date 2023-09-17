@@ -1,0 +1,51 @@
+<page>
+    <h1>ntg_mute</h1>
+    <config id="MUTE_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="4">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+
+            int64_t chatID = ...; // Obtain the chat ID
+
+            int result = ntg_mute(uid, chatID);
+            if (result == 0) {
+                printf("Audio muted.\n");
+            } else if (result == 1) {
+                printf("Audio was already muted.\n");
+            } else {
+                printf("Failed to mute audio (Error code: %d).\n", result);
+                return 1;
+            }
+
+            ... // Your Code Here
+
+            return 0;
+        }
+    </syntax-highlight>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_mute</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="MUTE_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

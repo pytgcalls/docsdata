@@ -207,6 +207,38 @@
     <text>Stop a WebRTC connection.</text>
   </option>
 
+  <option id="MUTE_DESC">
+    <text>This method allows you to mute the WebRTC stream.</text>
+  </option>
+
+  <option id="MUTE_DESC2">
+    <text>Mute the WebRTC stream.</text>
+  </option>
+
+  <option id="UNMUTE_DESC">
+    <text>This method allows you to unmute the WebRTC stream.</text>
+  </option>
+
+  <option id="UNMUTE_DESC2">
+    <text>UnMute the WebRTC stream.</text>
+  </option>
+
+  <option id="PAUSE_DESC">
+    <text>This method allows you to pause the WebRTC stream.</text>
+  </option>
+
+  <option id="PAUSE_DESC2">
+    <text>Pause the WebRTC stream.</text>
+  </option>
+
+  <option id="RESUME_DESC">
+    <text>This method allows you to resume the WebRTC stream.</text>
+  </option>
+
+  <option id="RESUME_DESC2">
+    <text>Resume the WebRTC stream.</text>
+  </option>
+
   <option id="CHAT_ID_DESC">
     <subtext><text>Unique identifier of chat.</text></subtext>
   </option>
@@ -293,6 +325,11 @@
     <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
     <subtext><text>The input mode for audio or video.</text></subtext>
   </option>
+
+  <option id="ARG_MEDIA">
+    <category-title><docs-ref link="">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
+    <config id="ARG_MEDIA_DESC"/>
+  </option>
   <!--end parameters-->
 
   <files-list id="NTgCalls" basepath="NTgCalls/">
@@ -333,6 +370,14 @@
       <file>ntg_connect.xml</file>
       <file>ntg_get_params.xml</file>
       <file>ntg_stop.xml</file>
+    </group>
+    <group basepath="NTgCalls/Stream Methods/">
+      <file>ntg_change_stream.xml</file>
+      <file>ntg_mute.xml</file>
+      <file>ntg_pause.xml</file>
+      <file>ntg_resume.xml</file>
+      <file>ntg_time.xml</file>
+      <file>ntg_unmute.xml</file>
     </group>
   </files-list>
 

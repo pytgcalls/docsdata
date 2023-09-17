@@ -1,6 +1,6 @@
 <page>
     <h1>Pause</h1>
-    <text>This method allows you to pause the WebRTC stream.</text>
+    <config id="PAUSE_DESC"/>
     <h3>Example</h3>
     <syntax-highlight mark="7-9">
         from ntgcalls import NTgCalls
@@ -19,7 +19,7 @@
         <ref>NTgCalls.<sb>pause</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
-        <text>Pause the WebRTC stream.</text>
+        <config id="PAUSE_DESC2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
