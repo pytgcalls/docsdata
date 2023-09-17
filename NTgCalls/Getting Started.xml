@@ -1,0 +1,56 @@
+<page>
+    <h1>Getting Started</h1>
+    <text>
+        This section provides documentation for the NTgCalls C API, which allows you to use NTgCalls in various programming languages,
+        including C, C++, Go, Rust, Deno, and more.
+        Below, you will find detailed information about the initialization and cleanup functions.
+    </text>
+    <separator/>
+    <h2>Initialization</h2>
+    <text>
+        To get started with NTgCalls in your application, you need to initialize the library using the `ntg_init` function.
+        This function sets up the necessary resources and prepares NTgCalls for use.
+    </text>
+    <alert type="important">
+        Make sure to call `ntg_init` before using any other NTgCalls functions.
+    </alert>
+    <subtext>
+        <h3>Example</h3>
+        <syntax-highlight language="c" mark="4">
+            #include "ntgcalls.h"
+
+            int main() {
+                uint32_t uid = ntg_init();
+
+                ... // Your Code Here
+                return 0;
+            }
+        </syntax-highlight>
+    </subtext>
+    <h2>Cleanup</h2>
+    <text>
+        To clean up and release the resources used by NTgCalls, you should call the `ntg_destroy` function.
+        This function deallocates memory and performs necessary cleanup operations.
+    </text>
+    <alert type="warning">
+        Always call `ntg_destroy` when you are done using NTgCalls to prevent memory leaks and resource issues.
+    </alert>
+    <subtext>
+        <h3>Example</h3>
+        <syntax-highlight language="c" mark="7">
+            #include "ntgcalls.h"
+
+            int main() {
+                uint32_t uid = ntg_init();
+                ... // Your Code Here
+
+                int result = ntg_destroy(uid);
+                if (result != 0) {
+                    printf("NTgCalls cleanup failed.\n");
+                    return 1;
+                }
+                return 0;
+            }
+        </syntax-highlight>
+    </subtext>
+</page>

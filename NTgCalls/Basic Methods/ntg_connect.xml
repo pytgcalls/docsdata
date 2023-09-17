@@ -1,0 +1,60 @@
+<page>
+    <h1>ntg_connect</h1>
+    <config id="CONNECT_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="4">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+
+            int64_t chatID = ...; // Obtain the chat ID
+            char* params = ...;  // Obtain connection parameters
+
+            int result = ntg_connect(uid, chatID, params);
+            if (result == 0) {
+                // Successfully connected to the WebRTC
+                ...
+            } else {
+                printf("Failed to connect: %d\n", result);
+            }
+            ...
+            return 0;
+        }
+    </syntax-highlight>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_connect</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="CONNECT_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+
+                <category-title><shi language="c">char*</shi> <ref><sb>params</sb></ref></category-title>
+                <config id="TG_PARAMS_DESC"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+
+                <category-title><ref><sb><shi language="c">#NTG_RTMP_NEEDED</shi></sb></ref> <shi>-300</shi></category-title>
+                <subtext><text>This error occurs when attempting to join a group call that requires an RTMP transport.</text></subtext>
+
+                <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
+                <subtext><text>The specified transport is invalid.</text></subtext>
+
+                <category-title><ref><sb><shi language="c">#NTG_CONNECTION_FAILED</shi></sb></ref> <shi>-302</shi></category-title>
+                <subtext><text>The connection to WebRTC failed.</text></subtext>
+            </subtext>
+        </category>
+    </subtext>
+</page>

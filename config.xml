@@ -15,6 +15,34 @@
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
   </option>
 
+  <option id="BASE_C_EXCEPTIONS">
+    <category-title><ref><sb><shi language="c">#NTG_UNKNOWN_EXCEPTION</shi></sb></ref> <shi>-1</shi></category-title>
+    <subtext><text>An unknown exception occurred.</text></subtext>
+
+    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
+    <subtext><text>The provided UID is invalid.</text></subtext>
+  </option>
+
+  <option id="BASE_CONNECTION_EXCEPTIONS">
+    <config id="BASE_C_EXCEPTIONS"/>
+    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_NOT_FOUND</shi></sb></ref> <shi>-101</shi></category-title>
+    <subtext><text>The specified connection was not found.</text></subtext>
+  </option>
+
+  <option id="STREAM_C_EXCEPTIONS">
+    <category-title><ref><sb><shi language="c">#NTG_FILE_NOT_FOUND</shi></sb></ref> <shi>-200</shi></category-title>
+    <subtext><text>The specified file was not found.</text></subtext>
+
+    <category-title><ref><sb><shi language="c">#NTG_ENCODER_NOT_FOUND</shi></sb></ref> <shi>-201</shi></category-title>
+    <subtext><text>The required encoder was not found.</text></subtext>
+
+    <category-title><ref><sb><shi language="c">#NTG_FFMPEG_NOT_FOUND</shi></sb></ref> <shi>-202</shi></category-title>
+    <subtext><text>FFmpeg is not found in the system.</text></subtext>
+
+    <category-title><ref><sb><shi language="c">#NTG_SHELL_ERROR</shi></sb></ref> <shi>-203</shi></category-title>
+    <subtext><text>An error occurred while executing a shell command.</text></subtext>
+  </option>
+
   <option id="SHELL_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>ShellError</sb></ref></category-title>
     <subtext><text>Error while executing the shell script.</text></subtext>
@@ -72,6 +100,16 @@
   <option id="RTMP_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>RTMPNeeded</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to use NTgCalls to enter an RTMP stream.</text></subtext>
+  </option>
+
+  <option id="SMALL_BUFF_EXCEPTION">
+    <category-title><ref><sb><shi language="c">#NTG_ERR_TOO_SMALL</shi></sb></ref> <shi>-3</shi></category-title>
+    <subtext>
+      <text>
+        The provided buffer is too small to store the parameters.
+        You should allocate a larger buffer and try again.
+      </text>
+    </subtext>
   </option>
   <!--end exceptions-->
 
@@ -141,6 +179,45 @@
       </text>
     </subtext>
   </option>
+
+  <option id="CONNECT_DESC">
+    <text>
+      This method allows connecting to Telegram Group Calls with the output params from Telegram method
+      <a href="https://core.telegram.org/method/phone.joinGroupCall">JoinGroupCall</a>.
+    </text>
+  </option>
+
+  <option id="CONNECT_DESC2">
+    <text>Set connection params for WebRTC obtained from Telegram.</text>
+  </option>
+
+  <option id="CREATE_DESC">
+    <text>This method allows getting connection params for Telegram WebRTC connection.</text>
+  </option>
+
+  <option id="CREATE_DESC2">
+    <text>Get connection params for Telegram.</text>
+  </option>
+
+  <option id="STOP_DESC">
+    <text>This method allow stopping a WebRTC connection.</text>
+  </option>
+
+  <option id="STOP_DESC2">
+    <text>Stop a WebRTC connection.</text>
+  </option>
+
+  <option id="CHAT_ID_DESC">
+    <subtext><text>Unique identifier of chat.</text></subtext>
+  </option>
+
+  <option id="TG_PARAMS_DESC">
+    <subtext><text>Connection params obtained from Telegram.</text></subtext>
+  </option>
+
+  <option id="ARG_MEDIA_DESC">
+    <subtext><text>Media parameters of the stream.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -156,12 +233,22 @@
 
   <option id="RET_INT_ID">
     <category-title><ref><sb>chat_id</sb></ref> <shi>-> int</shi></category-title>
-    <subtext><text>Unique identifier of chat.</text></subtext>
+    <config id="CHAT_ID_DESC"/>
   </option>
 
   <option id="ARG_INT_ID">
     <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
-    <subtext><text>Unique identifier of chat.</text></subtext>
+    <config id="CHAT_ID_DESC"/>
+  </option>
+
+  <option id="ARG_C_CHAT_ID">
+    <category-title><shi language="c">int64_t</shi> <ref><sb>chatID</sb></ref></category-title>
+    <config id="CHAT_ID_DESC"/>
+  </option>
+
+  <option id="ARG_C_UID">
+    <category-title><shi language="c">uint32_t</shi> <ref><sb>uid</sb></ref></category-title>
+    <subtext><text>The unique identifier for the NTgCalls instance.</text></subtext>
   </option>
 
   <option id="ARG_PARTICIPANT">
@@ -189,8 +276,9 @@
 
   <option id="ARG_STREAM_PARAMS">
     <config id="ARG_INT_ID"/>
+
     <category-title><ref><sb>media</sb></ref>: <docs-ref href="">ntgcalls.MediaDescription</docs-ref></category-title>
-    <subtext><text>Media parameters of the stream.</text></subtext>
+    <config id="ARG_MEDIA_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_CONFIG">
@@ -237,6 +325,14 @@
       <file>InputMode.xml</file>
       <file>StreamStatus.xml</file>
       <file>StreamType.xml</file>
+    </group>
+
+    <microtag>C API</microtag>
+    <file>Getting Started.xml</file>
+    <group basepath="NTgCalls/Basic Methods/">
+      <file>ntg_connect.xml</file>
+      <file>ntg_get_params.xml</file>
+      <file>ntg_stop.xml</file>
     </group>
   </files-list>
 
