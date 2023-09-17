@@ -391,6 +391,10 @@
       <file>ntg_time.xml</file>
       <file>ntg_unmute.xml</file>
     </group>
+    <group basepath="NTgCalls/Advanced Methods/">
+      <file>ntg_calls.xml</file>
+      <file>ntg_calls_count.xml</file>
+    </group>
   </files-list>
 
   <files-list id="PyTgCalls" basepath="PyTgCalls/">
