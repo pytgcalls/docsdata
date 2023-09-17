@@ -27,6 +27,7 @@
                 <config id="ARG_INT_ID"/>
             </subtext>
         </category>
+        <br/>
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>

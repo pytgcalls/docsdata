@@ -336,7 +336,7 @@
   </option>
 
   <option id="ARG_BUF_SIZE">
-    <category-title><shi language="c">int</shi> <ref>size</ref></category-title>
+    <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
     <subtext><text>The size of the provided buffer.</text></subtext>
   </option>
   <!--end parameters-->
