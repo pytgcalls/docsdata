@@ -227,7 +227,7 @@
       <file>Resume.xml</file>
       <file>UnMute.xml</file>
     </group>
-    <group basepath="PyTgCalls/Types/">
+    <group basepath="NTgCalls/Types/">
       <file>AudioDescription.xml</file>
       <file>MediaDescription.xml</file>
       <file>MediaState.xml</file>
