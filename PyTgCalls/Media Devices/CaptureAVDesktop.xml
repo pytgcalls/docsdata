@@ -1,0 +1,18 @@
+<page>
+    <h1>CaptureAVDesktop</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>CaptureAVDesktop</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Capture video from Screen and Audio from file.</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <config id="ARG_AUDIO_DEVICE"/>
+            <config id="ARG_SCREEN_DEVICE"/>
+            <config id="ARG_AUDIO_PARAMS"/>
+            <config id="ARG_VIDEO_PARAMS"/>
+        </subtext>
+    </subtext>
+</page>

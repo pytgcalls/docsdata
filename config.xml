@@ -461,6 +461,21 @@
     <category-title><shi language="c">char*</shi> <ref>input</ref></category-title>
     <config id="ARG_INPUT_MEDIA_DESC"/>
   </option>
+
+  <option id="ARG_AUDIO_PATH">
+    <category-title><ref>audio_path</ref>: <shi>str</shi></category-title>
+    <subtext><text>The audio file path.</text></subtext>
+  </option>
+
+  <option id="ARG_AUDIO_DEVICE">
+    <category-title><ref>audio_info</ref>: <docs-ref link="">pytgcalls.DeviceInfo</docs-ref></category-title>
+    <subtext><text>The audio media device.</text></subtext>
+  </option>
+
+  <option id="ARG_SCREEN_DEVICE">
+    <category-title><ref>screen_info</ref>: <docs-ref link="">pytgcalls.ScreenInfo</docs-ref></category-title>
+    <subtext><text>The video media device.</text></subtext>
+  </option>
   <!--end parameters-->
 
   <files-list id="NTgCalls" basepath="NTgCalls/">
@@ -579,6 +594,12 @@
       <file>AudioPiped.xml</file>
       <file>AudioVideoPiped.xml</file>
       <file>VideoPiped.xml</file>
+    </group>
+    <group basepath="PyTgCalls/Media Devices/">
+      <file>CaptureAudioDevice.xml</file>
+      <file>CaptureAVDesktop.xml</file>
+      <file>CaptureAVDeviceDesktop.xml</file>
+      <file>CaptureVideoDesktop.xml</file>
     </group>
     <group basepath="PyTgCalls/Advanced Types/">
       <file>GroupCall.xml</file>

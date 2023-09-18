@@ -9,8 +9,7 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>audio_path</ref>: <shi>str</shi></category-title>
-            <subtext><text>The audio file path.</text></subtext>
+            <config id="ARG_AUDIO_PATH"/>
 
             <category-title><ref>image_path</ref>: <shi>str</shi></category-title>
             <subtext><text>The image file path.</text></subtext>
