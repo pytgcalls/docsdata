@@ -6,6 +6,7 @@
 
         This page is about the CustomAPI class, which exposes high-level methods for easy access to the API.
     </text>
+    <h3>Example</h3>
     <syntax-highlight mark="1-10">
         from pytgcalls import CustomApi
 

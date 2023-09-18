@@ -556,6 +556,7 @@
     <microtag>API REFERENCE</microtag>
     <file>Client.xml</file>
     <file>Custom Api.xml</file>
+    <file>Media Devices.xml</file>
     <file>Decorators.xml</file>
 
     <microtag>METHODS</microtag>
@@ -595,7 +596,7 @@
       <file>AudioVideoPiped.xml</file>
       <file>VideoPiped.xml</file>
     </group>
-    <group basepath="PyTgCalls/Media Devices/">
+    <group basepath="PyTgCalls/Capture Devices/">
       <file>CaptureAudioDevice.xml</file>
       <file>CaptureAVDesktop.xml</file>
       <file>CaptureAVDeviceDesktop.xml</file>
