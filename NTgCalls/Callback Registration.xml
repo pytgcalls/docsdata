@@ -1,0 +1,62 @@
+<page>
+    <h1>Callback Registration</h1>
+    <text>
+        Callbacks registration allows you to specify custom functions to be executed when specific
+        events occur or conditions are met within your application.
+        These events might include changes in call status, media state updates, or other critical moments in
+        the NTgCalls library's operation.
+    </text>
+    <alert type="note">
+        When registering callbacks, keep in mind that each registration replaces the previously set callback.
+    </alert>
+    <br/>
+    <category>
+        <category-title><ref><sb>ntg_on_stream_end</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_END_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+
+                void myStreamEndCallback(uint32_t uid, int64_t chatID, ntg_stream_type_enum type) {
+                    // Your callback logic here
+                }
+
+                int main() {
+                    uint32_t uid = ntg_init();
+
+                    ntg_on_stream_end(uid, myStreamEndCallback);
+
+                    ... // Your Code Here
+
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref><sb>ntg_on_upgrade</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_END_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+
+                void myOnUpgradeCallback(uint32_t uid, int64_t chatID, ntg_media_state_struct mediaState) {
+                    // Your callback logic here
+                }
+
+                int main() {
+                    uint32_t uid = ntg_init();
+
+                    ntg_on_upgrade(uid, myOnUpgradeCallback);
+
+                    ... // Your Code Here
+
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
+</page>

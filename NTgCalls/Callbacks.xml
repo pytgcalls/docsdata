@@ -1,7 +1,7 @@
 <page>
     <h1>Callbacks</h1>
     <text>
-        Callbacks in NTgCalls allow you to define custom behavior or actions that should be triggered in response to specific
+        Callbacks allows you to define custom behavior or actions that should be triggered in response to specific
         events or conditions within your application.
         These events could include call-related occurrences, state changes, or other interactions with the NTgCalls library.
     </text>
@@ -9,9 +9,7 @@
     <category>
         <category-title><ref>NTgCalls.<sb>onStreamEnd</sb></ref>()</category-title>
         <subtext>
-            <text>
-                Callback for handling when a stream playback ends. When a stream ends, this callback will be triggered.
-            </text>
+            <config id="CALLBACK_END_DESC"/>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...
@@ -23,12 +21,12 @@
                 app.onStreamEnd(handler)
             </syntax-highlight>
         </subtext>
-        <br/><br/>
+    </category>
+    <br/><br/>
+    <category>
         <category-title><ref>NTgCalls.<sb>onUpgrade</sb></ref>()</category-title>
         <subtext>
-            <text>
-                Callback for handling when is needed to update GroupCall MTProto Configurations.
-            </text>
+            <config id="CALLBACK_UPGRADE_DESC"/>
             <h3>Example</h3>
             <syntax-highlight mark="4-5">
                 ...

@@ -349,6 +349,18 @@
   <option id="TYPE_VIDEO_DESC">
     <subtext><text>Indicates that the stream type is video.</text></subtext>
   </option>
+
+  <option id="CALLBACK_END_DESC">
+    <text>
+      Callback for handling when a stream playback ends. When a stream ends, this callback will be triggered.
+    </text>
+  </option>
+
+  <option id="CALLBACK_UPGRADE_DESC">
+    <text>
+      Callback for handling when is needed to update GroupCall MTProto Configurations.
+    </text>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -485,6 +497,7 @@
 
     <microtag>C API</microtag>
     <file>Getting Started.xml</file>
+    <file>Callback Registration.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>ntg_connect.xml</file>
       <file>ntg_get_params.xml</file>
