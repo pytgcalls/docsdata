@@ -9,7 +9,7 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_AUDIO_DEVICE"/>
+            <config id="ARG_AUDIO_PATH"/>
             <config id="ARG_SCREEN_DEVICE"/>
             <config id="ARG_AUDIO_PARAMS"/>
             <config id="ARG_VIDEO_PARAMS"/>
