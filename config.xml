@@ -361,6 +361,19 @@
       Callback for handling when is needed to update GroupCall MTProto Configurations.
     </text>
   </option>
+
+  <option id="GET_STATE_DESC">
+    <text>
+      This method allows retrieving GroupCall MTProto Configurations for
+      <a href="https://core.telegram.org/method/phone.editGroupCallParticipant">EditGroupCallParticipant</a>.
+    </text>
+  </option>
+
+  <option id="GET_STATE_DESC2">
+    <text>
+      Retrieve GroupCall MTProto Configurations.
+    </text>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -498,6 +511,9 @@
       <file>Resume.xml</file>
       <file>UnMute.xml</file>
     </group>
+    <group basepath="NTgCalls/Advanced Methods/">
+      <file>Get State.xml</file>
+    </group>
     <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
       <file>MediaDescription.xml</file>
@@ -529,6 +545,7 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
+      <file>ntg_get_state.xml</file>
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
