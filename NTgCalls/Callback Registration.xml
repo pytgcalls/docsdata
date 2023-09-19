@@ -38,7 +38,7 @@
     <category>
         <category-title><ref><sb>ntg_on_upgrade</sb></ref>()</category-title>
         <subtext>
-            <config id="CALLBACK_END_DESC"/>
+            <config id="CALLBACK_UPGRADE_DESC"/>
             <h3>Example</h3>
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"

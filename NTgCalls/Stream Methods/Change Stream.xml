@@ -8,7 +8,7 @@
 
         app = NTgCalls()
 
-        params = app.changeStream(
+        params = app.change_stream(
             -1001185324811,
             MediaDescription(
                 AudioDescription(
@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>changeStream</sb></ref>()
+        <ref>NTgCalls.<sb>change_stream</sb></ref>()
     </category-title>
     <subtext>
         <config id="CHANGE_STREAM_DESC_2"/>

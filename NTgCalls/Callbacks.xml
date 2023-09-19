@@ -7,7 +7,7 @@
     </text>
     <br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>onStreamEnd</sb></ref>()</category-title>
+        <category-title><ref>NTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_END_DESC"/>
             <h3>Example</h3>
@@ -18,13 +18,13 @@
                 def handler(chat_id: int, update: StreamType):
                     print(chat_id, update)
                 ...
-                app.onStreamEnd(handler)
+                app.on_stream_end(handler)
             </syntax-highlight>
         </subtext>
     </category>
     <br/><br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>onUpgrade</sb></ref>()</category-title>
+        <category-title><ref>NTgCalls.<sb>on_upgrade</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_UPGRADE_DESC"/>
             <h3>Example</h3>
@@ -35,7 +35,7 @@
                 def handler(chat_id: int, update: MediaState):
                     print(chat_id, update)
                 ...
-                app.onUpgrade(handler)
+                app.on_upgrade(handler)
             </syntax-highlight>
         </subtext>
     </category>

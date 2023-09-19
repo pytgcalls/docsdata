@@ -291,7 +291,7 @@
   </option>
 
   <option id="MEDIA_STATE_DESC">
-    <text>State of the Media Stream.</text>
+    <text>GroupCall MTProto Configurations.</text>
   </option>
 
   <option id="MEDIA_MUTED_DESC">
