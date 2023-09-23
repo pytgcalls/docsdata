@@ -1,6 +1,8 @@
 <page>
     <h1>VideoStream</h1>
-    <br/>
+    <alert type="warning">
+        <text>This class replaces the deprecated <code>pytgcalls.types.InputVideoStream</code>.</text>
+    </alert>
     <category-title noref="true">
         <shi>class</shi> <ref>pytgcalls.types.<sb>VideoStream</sb></ref>
     </category-title>

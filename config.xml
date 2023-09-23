@@ -605,7 +605,7 @@
     <group basepath="PyTgCalls/Base Stream/">
       <file>AudioParameters.xml</file>
       <file>AudioStream.xml</file>
-      <file>InputStream.xml</file>
+      <file>Stream.xml</file>
       <file>VideoParameters.xml</file>
       <file>VideoStream.xml</file>
     </group>

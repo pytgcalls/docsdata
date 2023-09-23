@@ -1,6 +1,8 @@
 <page>
     <h1>AudioStream</h1>
-    <br/>
+    <alert type="warning">
+        <text>This class replaces the deprecated <code>pytgcalls.types.InputAudioStream</code>.</text>
+    </alert>
     <category-title noref="true">
         <shi>class</shi> <ref>pytgcalls.types.<sb>AudioStream</sb></ref>
     </category-title>
