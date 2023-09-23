@@ -2,7 +2,7 @@
     <h1>StreamType</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
+        <shi>class</shi> <ref>ntgcalls.<sb>StreamType</sb></ref>
     </category-title>
     <subtext>
         <config id="STREAM_TYPE_DESC"/>
