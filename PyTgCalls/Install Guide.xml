@@ -8,7 +8,7 @@
         <item>Get Python 3 from the <a href="https://www.python.org/downloads/">Python website</a> or use your package manager.</item>
         <item>Get pip by following the instructions <a href="https://pip.pypa.io/en/latest/installing/">here</a>.</item>
     </list>
-    <alert type="important">PyTgCalls only supports <b>Python 3</b>, starting from version 3.8. <b>PyPy</b> is also supported.</alert>
+    <alert type="important">PyTgCalls only supports <b>Python 3</b>, starting from version 3.8.</alert>
     <separator/>
     <h2>Install PyTgCalls</h2>
     <text>The easiest way to install and upgrade PyTgCalls to its latest stable version is by using pip:</text>
