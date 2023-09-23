@@ -124,7 +124,7 @@
             Follow these steps to compile NTgCalls on your system.
         </text>
         <alert type="important">
-            It's essential to have Python 3.7+ installed on your server.
+            It's essential to have Python 3.8+ installed on your server.
         </alert>
         <subtext>
             <h3>Building Shared Library</h3>
