@@ -146,7 +146,7 @@
   </option>
 
   <option id="AUDIO_SAMPLE_DESC">
-    <subtext><text>Audio sample rate (0-48000, max allowed by PCM16L).</text></subtext>
+    <subtext><text>Audio sample rate (0-96000, max allowed by PCM16L).</text></subtext>
   </option>
 
   <option id="AUDIO_CHAN_DESC">
@@ -172,8 +172,9 @@
   <option id="ARG_AUDIO_PARAMS_DESC">
     <subtext>
       <text>
-        Stream’s audio parameters. You can also use <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>,
-        <docs-ref link="">pytgcalls.MediumQualityAudio()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityAudio()</docs-ref>.
+        Stream’s audio parameters. You can also use <docs-ref link="">pytgcalls.VeryHighQualityAudio()</docs-ref>,
+        <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>, <docs-ref link="">pytgcalls.MediumQualityAudio()</docs-ref> or
+        <docs-ref link="">pytgcalls.LowQualityAudio()</docs-ref>.
       </text>
     </subtext>
   </option>
@@ -181,8 +182,9 @@
   <option id="ARG_VIDEO_PARAMS_DESC">
     <subtext>
       <text>
-        Video parameters of the stream. You can also use <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>,
-        <docs-ref link="">pytgcalls.MediumQualityVideo()</docs-ref> or <docs-ref link="">pytgcalls.LowQualityVideo()</docs-ref>.
+        Video parameters of the stream. You can also use <docs-ref link="">pytgcalls.VeryHighQualityVideo()</docs-ref>,
+        <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>, <docs-ref link="">pytgcalls.MediumQualityVideo()</docs-ref> or
+        <docs-ref link="">pytgcalls.LowQualityVideo()</docs-ref>.
       </text>
     </subtext>
   </option>

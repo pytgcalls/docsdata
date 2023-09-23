@@ -14,7 +14,7 @@
                 AudioDescription(
                     input_mode=InputMode.File,
                     input="foxes.pcm",
-                    sample_rate=48000,
+                    sample_rate=96000,
                     bits_per_sample=16,
                     channel_count=2,
                 ),
