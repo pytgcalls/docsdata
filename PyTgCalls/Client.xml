@@ -35,10 +35,10 @@
             <category>
                 <pg-title>STATIC METHODS</pg-title>
                 <subtext>
-                    <category-title><ref><sb>active_calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">GroupCall</docs-ref>]</category-title>
+                    <category-title><ref><sb>active_calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]</category-title>
                     <subtext><text>Get a list of active (Playing / Paused) group calls</text></subtext>
 
-                    <category-title><ref><sb>calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">GroupCall</docs-ref>]</category-title>
+                    <category-title><ref><sb>calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]</category-title>
                     <config id="LIST_CALLS_DESC"/>
 
                     <category-title><ref><sb>cache_peer</sb></ref>() <shi>-></shi> Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]</category-title>

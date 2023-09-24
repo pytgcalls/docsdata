@@ -9,10 +9,10 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><docs-ref link="">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>audio</ref></category-title>
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_audio_description_struct">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>audio</ref></category-title>
             <config id="AUDIO_DESC"/>
 
-            <category-title><docs-ref link="">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>video</ref></category-title>
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_video_description_struct">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>video</ref></category-title>
             <config id="VIDEO_DESC"/>
         </subtext>
     </subtext>

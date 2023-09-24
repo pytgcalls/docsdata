@@ -21,7 +21,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>get_call</sb></ref>() <shi>-></shi> <docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">GroupCall</docs-ref>
+        <ref>PyTgCalls.<sb>get_call</sb></ref>() <shi>-></shi> <docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>
     </category-title>
     <subtext>
         <text>Check/Get an active call</text>

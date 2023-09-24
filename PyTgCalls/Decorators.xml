@@ -1,7 +1,7 @@
 <page>
     <h1>Decorators</h1>
     <text>
-        While still being methods bound to the <docs-ref link="">PyTgCalls</docs-ref> class,
+        While still being methods bound to the <docs-ref link="/PyTgCalls/Client">PyTgCalls</docs-ref> class,
         decorators hold a special significance that justifies a dedicated page.
 
         Decorators allow you to register callback functions for handling updates in a much easier and cleaner way.

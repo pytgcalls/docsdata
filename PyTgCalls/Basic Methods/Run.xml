@@ -1,21 +1,20 @@
 <page>
     <h1>Run</h1>
     <text>
-        This is a convenience method that calls <docs-ref link="">start()</docs-ref>, <docs-ref link="">idle()</docs-ref> in sequence.
+        This is a convenience method that calls <docs-ref link="/PyTgCalls/Basic Methods/Start">start()</docs-ref>, <docs-ref link="/PyTgCalls/Basic Methods/Idle">idle()</docs-ref> in sequence.
         It makes running a client less verbose, but it is not suitable in case you want to run more than one client in a single script,
-        since the <docs-ref link="">idle()</docs-ref> part will block all the subsequent code after starting the client.
+        since the <docs-ref link="/PyTgCalls/Basic Methods/Idle">idle()</docs-ref> part will block all the subsequent code after starting the client.
     </text>
     <h3>Example</h3>
-    <syntax-highlight mark="5">
+    <syntax-highlight mark="8">
         from pytgcalls import Client
         from pytgcalls import idle
         ...
         app = Client(client)
-        app.start()
 
-        ...  # Call API methods
+        ...  # Call API decorators / MtProto decorators
 
-        idle()
+        app.run()
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>

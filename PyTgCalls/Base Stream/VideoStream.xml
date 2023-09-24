@@ -16,7 +16,7 @@
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The video file path or shell command (YUV420P format only).</text></subtext>
 
-            <category-title><ref>parameters </ref>: <docs-ref link="">pytgcalls.VideoParameters</docs-ref></category-title>
+            <category-title><ref>parameters </ref>: <docs-ref link="/PyTgCalls/Base Stream/VideoParameters">pytgcalls.VideoParameters</docs-ref></category-title>
             <config id="ARG_VIDEO_PARAMS_DESC"/>
         </subtext>
     </subtext>

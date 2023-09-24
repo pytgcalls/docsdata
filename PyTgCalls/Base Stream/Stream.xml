@@ -11,10 +11,10 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>stream_audio</ref>: <docs-ref link="">pytgcalls.AudioStream</docs-ref></category-title>
+            <category-title><ref>stream_audio</ref>: <docs-ref link="/PyTgCalls/Base Stream/AudioStream">pytgcalls.AudioStream</docs-ref></category-title>
             <subtext><text>Audio Stream Descriptor.</text></subtext>
 
-            <category-title><ref>stream_video</ref>: <docs-ref link="">pytgcalls.VideoStream</docs-ref></category-title>
+            <category-title><ref>stream_video</ref>: <docs-ref link="/PyTgCalls/Base Stream/AudioStream">pytgcalls.VideoStream</docs-ref></category-title>
             <subtext><text>Video Stream Descriptor.</text></subtext>
         </subtext>
     </subtext>

@@ -9,7 +9,7 @@
         First of all, let's define what these updates are. As hinted earlier, updates are events that happen in PyTgCalls, such as
         joining a group call, changes in the participant list, stream ended etc. They are meant to notify you about a new
         specific state change. These updates are handled by registering one or more callback functions in your app
-        using <docs-ref link="">Decorators</docs-ref>.
+        using <docs-ref link="/PyTgCalls/Decorators">Decorators</docs-ref>.
 
         Each handler deals with a specific event. When a matching update arrives from Telegram or NTgCalls, the registered callback
         function will be called back by the framework, and its body will execute.

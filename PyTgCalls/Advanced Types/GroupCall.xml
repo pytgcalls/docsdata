@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>GroupCall</sb></ref>
     </category-title>
     <subtext>
-        <text>Info about a group call</text>
+        <config id="GROUP_CALL_DESC"/>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>
@@ -15,7 +15,7 @@
             <subtext><text>Check if any sort of stream exists.</text></subtext>
 
             <category-title><ref><sb>status</sb></ref> <shi>-> str</shi></category-title>
-            <subtext><text>Stream’s Status.</text></subtext>
+            <config id="STREAM_STATUS_DESC2"/>
         </subtext>
     </subtext>
 </page>

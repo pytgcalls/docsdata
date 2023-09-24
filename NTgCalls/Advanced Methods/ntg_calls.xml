@@ -48,7 +48,7 @@
             <subtext>
                 <config id="ARG_C_UID"/>
 
-                <category-title><docs-ref link="">ntg_group_call_struct</docs-ref><shi language="c">*</shi> <ref>buffer</ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_group_call_struct">ntg_group_call_struct</docs-ref><shi language="c">*</shi> <ref>buffer</ref></category-title>
                 <subtext><text>The buffer that will hold the retrieved group call information.</text></subtext>
 
                 <config id="ARG_BUF_SIZE"/>

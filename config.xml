@@ -9,7 +9,11 @@
     <subtext><text>This method can only be called with a valid MTProto client set.</text></subtext>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>ClientNotStarted</sb></ref></category-title>
-    <subtext><text>Ensure you have started the process with <docs-ref link="">start()</docs-ref> before calling this method.</text></subtext>
+    <subtext>
+      <text>
+        Ensure you have started the process with <docs-ref link="/PyTgCalls/Basic Methods/Start">start()</docs-ref> before calling this method.
+      </text>
+    </subtext>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInGroupCallError</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to leave a group call that you have not joined.</text></subtext>
@@ -172,9 +176,9 @@
   <option id="ARG_AUDIO_PARAMS_DESC">
     <subtext>
       <text>
-        Stream’s audio parameters. You can also use <docs-ref link="">pytgcalls.VeryHighQualityAudio()</docs-ref>,
-        <docs-ref link="">pytgcalls.HighQualityAudio()</docs-ref>, <docs-ref link="">pytgcalls.MediumQualityAudio()</docs-ref> or
-        <docs-ref link="">pytgcalls.LowQualityAudio()</docs-ref>.
+        Stream’s audio parameters. You can also use <code>pytgcalls.VeryHighQualityAudio()</code>,
+        <code>pytgcalls.HighQualityAudio()</code>, <code>pytgcalls.MediumQualityAudio()</code> or
+        <code>pytgcalls.LowQualityAudio()</code>.
       </text>
     </subtext>
   </option>
@@ -182,9 +186,9 @@
   <option id="ARG_VIDEO_PARAMS_DESC">
     <subtext>
       <text>
-        Video parameters of the stream. You can also use <docs-ref link="">pytgcalls.VeryHighQualityVideo()</docs-ref>,
-        <docs-ref link="">pytgcalls.HighQualityVideo()</docs-ref>, <docs-ref link="">pytgcalls.MediumQualityVideo()</docs-ref> or
-        <docs-ref link="">pytgcalls.LowQualityVideo()</docs-ref>.
+        Video parameters of the stream. You can also use <code>pytgcalls.VeryHighQualityVideo()</code>,
+        <code>pytgcalls.HighQualityVideo()</code>, <code>pytgcalls.MediumQualityVideo()</code> or
+        <code>pytgcalls.LowQualityVideo()</code>.
       </text>
     </subtext>
   </option>
@@ -376,6 +380,14 @@
       Retrieve GroupCall MTProto Configurations.
     </text>
   </option>
+
+  <option id="GROUP_CALL_DESC">
+    <text>Info about a group call</text>
+  </option>
+
+  <option id="STREAM_STATUS_DESC2">
+    <subtext><text>Stream’s Status.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -385,7 +397,7 @@
   </option>
 
   <option id="ARG_INPUT_STREAM">
-    <category-title><ref>stream</ref>: <docs-ref link="">pytgcalls.Stream</docs-ref></category-title>
+    <category-title><ref>stream</ref>: <docs-ref link="/PyTgCalls/Base Stream/Stream">pytgcalls.Stream</docs-ref></category-title>
     <subtext><text>Input Streams base descriptor</text></subtext>
   </option>
 
@@ -410,17 +422,17 @@
   </option>
 
   <option id="ARG_PARTICIPANT">
-    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="PyTgCalls/Advanced Types/GroupCallParticipant.xml">pytgcalls.GroupCallParticipant</docs-ref></category-title>
+    <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Advanced Types/GroupCallParticipant">pytgcalls.GroupCallParticipant</docs-ref></category-title>
     <subtext><text>Info about a group call participant.</text></subtext>
   </option>
 
   <option id="ARG_AUDIO_PARAMS">
-    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="">pytgcalls.AudioParameters</docs-ref>]</category-title>
+    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/AudioParameters">pytgcalls.AudioParameters</docs-ref>]</category-title>
     <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_PARAMS">
-    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="">pytgcalls.VideoParameters</docs-ref>]</category-title>
+    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/VideoParameters">pytgcalls.VideoParameters</docs-ref>]</category-title>
     <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
@@ -448,17 +460,17 @@
   </option>
 
   <option id="ARG_INPUT_MODE">
-    <category-title><ref>input_mode</ref>: <docs-ref link="">ntgcalls.InputMode</docs-ref></category-title>
+    <category-title><ref>input_mode</ref>: <docs-ref link="/NTgCalls/Available Enums/InputMode">ntgcalls.InputMode</docs-ref></category-title>
     <config id="INPUT_MODE_DESC"/>
   </option>
 
   <option id="ARG_C_INPUT_MODE">
-    <category-title><docs-ref link="">ntg_input_mode_enum</docs-ref> <ref>inputMode</ref></category-title>
+    <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_input_mode_enum">ntg_input_mode_enum</docs-ref> <ref>inputMode</ref></category-title>
     <config id="INPUT_MODE_DESC"/>
   </option>
 
   <option id="ARG_MEDIA">
-    <category-title><docs-ref link="">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
+    <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
 
@@ -483,12 +495,12 @@
   </option>
 
   <option id="ARG_AUDIO_DEVICE">
-    <category-title><ref>audio_info</ref>: <docs-ref link="">pytgcalls.DeviceInfo</docs-ref></category-title>
+    <category-title><ref>audio_info</ref>: <code>pytgcalls.DeviceInfo</code></category-title>
     <subtext><text>The audio media device.</text></subtext>
   </option>
 
   <option id="ARG_SCREEN_DEVICE">
-    <category-title><ref>screen_info</ref>: <docs-ref link="">pytgcalls.ScreenInfo</docs-ref></category-title>
+    <category-title><ref>screen_info</ref>: <code>pytgcalls.ScreenInfo</code></category-title>
     <subtext><text>The video media device.</text></subtext>
   </option>
   <!--end parameters-->

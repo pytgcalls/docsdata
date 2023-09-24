@@ -1,7 +1,7 @@
 <page>
     <h1>Calling Methods</h1>
     <text>
-        At this point, we have successfully <docs-ref link="">installed PyTgCalls</docs-ref> and installed an MTProto client;
+        At this point, we have successfully <docs-ref link="/PyTgCalls/Install Guide">installed PyTgCalls</docs-ref> and installed an MTProto client;
         we are now aiming towards the core of the library. It’s time to start playing with the API!
     </text>
     <h2>Basic Usage</h2>

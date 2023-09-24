@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><sb>get_state</sb></ref>() <shi>-></shi> <docs-ref link="">ntgcalls.MediaState</docs-ref>
+        <ref><sb>get_state</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/MediaState">ntgcalls.MediaState</docs-ref>
     </category-title>
     <subtext>
         <config id="GET_STATE_DESC2"/>

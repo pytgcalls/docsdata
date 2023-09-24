@@ -16,7 +16,7 @@
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The audio file path or shell command (PCM16L format only).</text></subtext>
 
-            <category-title><ref>parameters</ref>: <docs-ref link="">pytgcalls.AudioParameters</docs-ref></category-title>
+            <category-title><ref>parameters</ref>: <docs-ref link="/PyTgCalls/Base Stream/AudioParameters">pytgcalls.AudioParameters</docs-ref></category-title>
             <config id="ARG_AUDIO_PARAMS_DESC"/>
         </subtext>
     </subtext>
