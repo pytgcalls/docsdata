@@ -3,7 +3,8 @@
     <text>
         Welcome to this section, which is primarily intended for developers who are moderately experienced or
         seeking to perform a porting in their language using C bindings. If you are new to Python development,
-        we strongly recommend using <docs-ref href="">Py-TgCalls</docs-ref>. However, if you fall into the aforementioned categories,
+        we strongly recommend using <docs-ref link="/PyTgCalls">Py-TgCalls</docs-ref>.
+        However, if you fall into the aforementioned categories,
         you can find an example of usage with the various porting below.
     </text>
     <h2>Community and Official Libraries</h2>
