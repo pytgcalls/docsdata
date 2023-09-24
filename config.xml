@@ -551,6 +551,7 @@
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
+      <file>ntg_group_call_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
