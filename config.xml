@@ -641,6 +641,10 @@
     <file>Custom Api.xml</file>
     <file>Media Devices.xml</file>
     <file>Decorators.xml</file>
+    <group basepath="PyTgCalls/Available Enums/">
+      <file>AudioQuality.xml</file>
+      <file>VideoQuality.xml</file>
+    </group>
 
     <microtag>METHODS</microtag>
     <group basepath="PyTgCalls/Basic Methods/">
