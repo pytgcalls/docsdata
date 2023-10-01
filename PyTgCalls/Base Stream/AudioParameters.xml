@@ -15,5 +15,11 @@
             <category-title><ref>channels</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_CHAN_DESC"/>
         </subtext>
+        <br/>
+        <pg-title>STATIC METHODS</pg-title>
+        <subtext>
+            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="PyTgCalls/Available Enums/AudioQuality.xml">pytgcalls.types.AudioQuality</docs-ref>)</category-title>
+            <subtext><text>Create an AudioParameters instance from an AudioQuality enumeration.</text></subtext>
+        </subtext>
     </subtext>
 </page>

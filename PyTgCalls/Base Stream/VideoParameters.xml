@@ -14,5 +14,11 @@
             <category-title><ref>frame_rate</ref>: <shi>int</shi></category-title>
             <config id="VIDEO_FPS_DESC"/>
         </subtext>
+        <br/>
+        <pg-title>STATIC METHODS</pg-title>
+        <subtext>
+            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="PyTgCalls/Available Enums/VideoQuality.xml">pytgcalls.types.VideoQuality</docs-ref>)</category-title>
+            <subtext><text>Create an VideoParameters instance from an VideoQuality enumeration.</text></subtext>
+        </subtext>
     </subtext>
 </page>

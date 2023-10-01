@@ -1,0 +1,25 @@
+<page>
+    <h1>AudioQuality</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioQuality</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of audio quality settings for group calls.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>STUDIO</sb></ref> <shi>=</shi> (96000, 2)</category-title>
+            <subtext><text>Represents studio-quality audio with a bitrate of 96000 and 2 channels.</text></subtext>
+
+            <category-title><ref><sb>HIGH</sb></ref> <shi>=</shi> (48000, 2)</category-title>
+            <subtext><text>Represents high-quality audio with a bitrate of 48000 and 2 channels.</text></subtext>
+
+            <category-title><ref><sb>MEDIUM</sb></ref> <shi>=</shi> (36000, 1)</category-title>
+            <subtext><text>Represents medium-quality audio with a bitrate of 36000 and 1 channel.</text></subtext>
+
+            <category-title><ref><sb>LOW</sb></ref> <shi>=</shi> (24000, 1)</category-title>
+            <subtext><text>Represents low-quality audio with a bitrate of 24000 and 1 channel.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

@@ -1,0 +1,31 @@
+<page>
+    <h1>VideoQuality</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoQuality</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of video quality settings for group calls.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>UHD_4K</sb></ref> <shi>=</shi> (3840, 2160, 60)</category-title>
+            <subtext><text>Represents ultra-high-definition 4K video with a resolution of 3840x2160 and 60 FPS.</text></subtext>
+
+            <category-title><ref><sb>QHD_2K</sb></ref> <shi>=</shi> (2560, 1440, 60)</category-title>
+            <subtext><text>Represents quad high-definition 2K video with a resolution of 2560x1440 and 60 FPS.</text></subtext>
+
+            <category-title><ref><sb>FHD_1080p</sb></ref> <shi>=</shi> (1920, 1080, 60)</category-title>
+            <subtext><text>Represents full high-definition 1080p video with a resolution of 1920x1080 and 60 FPS.</text></subtext>
+
+            <category-title><ref><sb>HD_720p</sb></ref> <shi>=</shi> (1280, 720, 30)</category-title>
+            <subtext><text>Represents high-definition 720p video with a resolution of 1280x720 and 30 FPS.</text></subtext>
+
+            <category-title><ref><sb>SD_480p</sb></ref> <shi>=</shi> (854, 480, 30)</category-title>
+            <subtext><text>Represents standard-definition 480p video with a resolution of 854x480 and 30 FPS.</text></subtext>
+
+            <category-title><ref><sb>SD_360p</sb></ref> <shi>=</shi> (640, 360, 30)</category-title>
+            <subtext><text>Represents standard-definition 360p video with a resolution of 640x360 and 30 FPS.</text></subtext>
+        </subtext>
+    </subtext>
+</page>
