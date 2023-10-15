@@ -22,7 +22,7 @@
         <text>Get a list of active (Playing / Paused) group calls</text>
         <text>TYPE</text>
         <subtext>
-          List of <docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">pytgcalls.GroupCall</docs-ref>
+          List of <docs-ref link="/PyTgCalls/Advanced Types/GroupCall.xml">pytgcalls.GroupCall</docs-ref>
         </subtext>
       </subtext>
 
@@ -31,7 +31,7 @@
         <text>Get a list of existent group calls</text>
         <text>TYPE</text>
         <subtext>
-          List of <docs-ref link="PyTgCalls/Advanced Types/GroupCall.xml">pytgcalls.GroupCall</docs-ref>
+          List of <docs-ref link="/PyTgCalls/Advanced Types/GroupCall.xml">pytgcalls.GroupCall</docs-ref>
         </subtext>
       </subtext>
 

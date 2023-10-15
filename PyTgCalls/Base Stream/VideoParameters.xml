@@ -17,7 +17,7 @@
         <br/>
         <pg-title>STATIC METHODS</pg-title>
         <subtext>
-            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>)</category-title>
+            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>)</category-title>
             <subtext><text>Create an VideoParameters instance from an VideoQuality enumeration.</text></subtext>
         </subtext>
     </subtext>
