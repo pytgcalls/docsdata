@@ -176,9 +176,7 @@
   <option id="ARG_AUDIO_PARAMS_DESC">
     <subtext>
       <text>
-        Stream’s audio parameters. You can also use <code>pytgcalls.VeryHighQualityAudio()</code>,
-        <code>pytgcalls.HighQualityAudio()</code>, <code>pytgcalls.MediumQualityAudio()</code> or
-        <code>pytgcalls.LowQualityAudio()</code>.
+        Stream’s audio parameters.
       </text>
     </subtext>
   </option>
@@ -186,9 +184,7 @@
   <option id="ARG_VIDEO_PARAMS_DESC">
     <subtext>
       <text>
-        Video parameters of the stream. You can also use <code>pytgcalls.VeryHighQualityVideo()</code>,
-        <code>pytgcalls.HighQualityVideo()</code>, <code>pytgcalls.MediumQualityVideo()</code> or
-        <code>pytgcalls.LowQualityVideo()</code>.
+        Stream’s video parameters.
       </text>
     </subtext>
   </option>
