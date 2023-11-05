@@ -2,7 +2,7 @@
     <h1>ntg_pause</h1>
     <config id="PAUSE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="4">
+    <syntax-highlight language="c" mark="9">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 

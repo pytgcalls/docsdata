@@ -11,13 +11,13 @@
         <subtext>
             <config id="CALLBACK_END_DESC"/>
             <h3>Example</h3>
-            <syntax-highlight mark="4-5">
+            <syntax-highlight mark="4-7">
                 ...
                 app = NTgCalls()
                 ...
                 def handler(chat_id: int, update: StreamType):
                     print(chat_id, update)
-                ...
+                    ...
                 app.on_stream_end(handler)
             </syntax-highlight>
         </subtext>
@@ -28,13 +28,13 @@
         <subtext>
             <config id="CALLBACK_UPGRADE_DESC"/>
             <h3>Example</h3>
-            <syntax-highlight mark="4-5">
+            <syntax-highlight mark="4-7">
                 ...
                 app = NTgCalls()
                 ...
                 def handler(chat_id: int, update: MediaState):
                     print(chat_id, update)
-                ...
+                    ...
                 app.on_upgrade(handler)
             </syntax-highlight>
         </subtext>

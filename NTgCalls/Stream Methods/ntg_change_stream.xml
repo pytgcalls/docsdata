@@ -2,7 +2,7 @@
     <h1>ntg_change_stream</h1>
     <config id="CHANGE_STREAM_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="4">
+    <syntax-highlight language="c" mark="13">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 

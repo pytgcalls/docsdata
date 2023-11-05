@@ -2,7 +2,7 @@
     <h1>Connect</h1>
     <config id="CONNECT_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="7-10">
+    <syntax-highlight mark="8-11">
         from ntgcalls import NTgCalls
         ...
 

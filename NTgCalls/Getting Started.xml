@@ -63,7 +63,7 @@
     </text>
     <subtext>
         <h3>Example</h3>
-        <syntax-highlight language="c" mark="4">
+        <syntax-highlight language="c" mark="6">
             #include "ntgcalls.h"
             #include &lt;stdio.h&gt;
 

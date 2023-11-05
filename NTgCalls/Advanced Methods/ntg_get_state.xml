@@ -2,7 +2,7 @@
     <h1>ntg_get_state</h1>
     <config id="GET_STATE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="4">
+    <syntax-highlight language="c" mark="10">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 

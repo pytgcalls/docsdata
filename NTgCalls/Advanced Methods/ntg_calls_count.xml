@@ -4,7 +4,7 @@
         This function returns the number of active group calls that NTgCalls is connected to.
     </text>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="4">
+    <syntax-highlight language="c" mark="9">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 

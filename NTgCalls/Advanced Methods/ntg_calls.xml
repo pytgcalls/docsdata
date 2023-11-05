@@ -8,7 +8,7 @@
         The function populates this list with data for active group calls and returns the number of group calls retrieved.
     </text>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="4">
+    <syntax-highlight language="c" mark="10">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 

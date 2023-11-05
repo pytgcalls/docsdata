@@ -12,7 +12,7 @@
 
         ...  # Call API decorators / MTProto decorators
 
-        app.run()
+        app.start()
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>

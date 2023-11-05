@@ -2,7 +2,7 @@
     <h1>Change Stream</h1>
     <config id="CHANGE_STREAM_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="6-15">
+    <syntax-highlight mark="6-17">
         from ntgcalls import NTgCalls
         ...
 
