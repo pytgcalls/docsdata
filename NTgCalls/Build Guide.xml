@@ -147,16 +147,18 @@
                         <b>Generate Shared Library:</b><br/>
                         Run the following command to generate the shared libraries in Release mode:
                     </text>
-                    <subtext>
-                        <text><b>Debug</b></text>
-                        <syntax-highlight language="bash">
+                    <multisyntax>
+                        <tabs>
+                            <tab id="debug">Debug</tab>
+                            <tab id="release">Release</tab>
+                        </tabs>
+                        <syntax-highlight language="bash" id="debug">
                             $ python3 setup.py build_shared --debug
                         </syntax-highlight>
-                        <text><b>Release</b></text>
-                        <syntax-highlight language="bash">
+                        <syntax-highlight language="bash" id="release">
                             $ python3 setup.py build_shared
                         </syntax-highlight>
-                    </subtext>
+                    </multisyntax>
                 </item>
             </list>
             <br/>

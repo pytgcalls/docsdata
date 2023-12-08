@@ -26,25 +26,29 @@
     </syntax-highlight>
     <h3>Basic step-by-step</h3>
     <list style="numbers">
-        <item>
-            Let’s begin by importing the Client class, Stream type and idle function:
-            <syntax-highlight>
-                from pytgcalls import PyTgCalls
+        <item syntax-highlight="from pytgcalls import PyTgCalls
                 from pytgcalls import idle
-                from pytgcalls.types import AudioPiped
-            </syntax-highlight>
+                from pytgcalls.types import AudioPiped">
+            Let’s begin by importing the Client class, Stream type and idle function:
         </item>
         <item>
             Now let’s import your MTProto Client:
-
-            If you wish to use Pyrogram:
-            <syntax-highlight>
-                from pyrogram import Client
-            </syntax-highlight>
-            If you wish to use Telethon:
-            <syntax-highlight>
-                from telethon import TelegramClient
-            </syntax-highlight>
+            <multisyntax>
+                <tabs>
+                    <tab id="pyrogram">Pyrogram</tab>
+                    <tab id="telethon">Telethon</tab>
+                    <tab id="hydrogram">Hydrogram</tab>
+                </tabs>
+                <syntax-highlight id="pyrogram">
+                    from pyrogram import Client
+                </syntax-highlight>
+                <syntax-highlight id="telethon">
+                    from telethon import TelegramClient
+                </syntax-highlight>
+                <syntax-highlight id="hydrogram">
+                    from hydrogram import Client
+                </syntax-highlight>
+            </multisyntax>
         </item>
         <item>
             Set your api_id and api_hash taken from <a href="https://my.telegram.org/apps">my.telegram.org</a>:
@@ -55,15 +59,22 @@
         </item>
         <item>
             Initialize the MTProto client:
-
-            If you are using Pyrogram:
-            <syntax-highlight>
-                client = Client('test_session', api_id, api_hash)
-            </syntax-highlight>
-            If you are using Telethon:
-            <syntax-highlight>
-                client = TelegramClient('test_session', api_id, api_hash)
-            </syntax-highlight>
+            <multisyntax>
+                <tabs>
+                    <tab id="pyrogram">Pyrogram</tab>
+                    <tab id="telethon">Telethon</tab>
+                    <tab id="hydrogram">Hydrogram</tab>
+                </tabs>
+                <syntax-highlight id="pyrogram">
+                    client = Client('test_session', api_id, api_hash)
+                </syntax-highlight>
+                <syntax-highlight id="telethon">
+                    client = TelegramClient('test_session', api_id, api_hash)
+                </syntax-highlight>
+                <syntax-highlight id="hydrogram">
+                    client = Client('test_session', api_id, api_hash)
+                </syntax-highlight>
+            </multisyntax>
         </item>
         <item>
             Initialize the PyTgCalls client:

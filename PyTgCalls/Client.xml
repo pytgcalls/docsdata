@@ -25,7 +25,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>]</category-title>
+                    <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>, <a href="https://hydrogram.amanoteam.com/en/latest/api/client.html">hydrogram.Client</a>]</category-title>
                     <subtext><text>Pass the MTProto Client</text></subtext>
                     <category-title><ref>cache_duration</ref>: <shi>int</shi></category-title>
                     <subtext><text>Cache duration of a Full Chat query</text></subtext>
@@ -41,7 +41,7 @@
                     <category-title><ref><sb>calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]</category-title>
                     <config id="LIST_CALLS_DESC"/>
 
-                    <category-title><ref><sb>cache_peer</sb></ref>() <shi>-></shi> Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]</category-title>
+                    <category-title><ref><sb>cache_peer</sb></ref>() <shi>-></shi> <config id="ARG_UNION_PEER"/></category-title>
                     <subtext><text>Get current Telegram user</text></subtext>
 
                     <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>int</shi></category-title>

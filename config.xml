@@ -392,6 +392,10 @@
     <subtext><text>Can be direct id or a username</text></subtext>
   </option>
 
+  <option id="ARG_UNION_PEER">
+    Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>, <a href="https://hydrogram.amanoteam.com/en/latest/telegram/base/input-peer.html">hydrogram.InputPeer</a>]
+  </option>
+
   <option id="ARG_INPUT_STREAM">
     <category-title><ref>stream</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/Stream">pytgcalls.Stream</docs-ref>]</category-title>
     <subtext><text>Input Streams base descriptor</text></subtext>
