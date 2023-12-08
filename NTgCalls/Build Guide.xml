@@ -147,7 +147,7 @@
                         <b>Generate Shared Library:</b><br/>
                         Run the following command to generate the shared libraries in Release mode:
                     </text>
-                    <multisyntax>
+                    <multisyntax id="build_type">
                         <tabs>
                             <tab id="debug">Debug</tab>
                             <tab id="release">Release</tab>
