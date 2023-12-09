@@ -5,7 +5,7 @@
     <list style="numbers">
         <item>Install PyTgCalls with <code><shi language="bash">pip3 install -U py-tgcalls</shi></code>.</item>
         <item>
-            Choose your MTProto client between <a href="https://github.com/pyrogram/pyrogram">Pyrogram</a>,
+            Choose your MTProto client between <a href="https://github.com/PyrogramMod/PyrogramMod">PyrogramMod (ex Pyrogram)</a>,
             <a href="https://github.com/LonamiWebs/Telethon">Telethon</a> or <a href="https://github.com/AmanoTeam/hydrogram">Hydrogram</a>.
         </item>
         <item>Get your own Telegram API key from <a href="https://my.telegram.org/apps">my.telegram.org</a></item>

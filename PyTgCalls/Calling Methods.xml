@@ -35,7 +35,7 @@
             Now let’s import your MTProto Client:
             <multisyntax id="mtproto">
                 <tabs>
-                    <tab id="pyrogram">Pyrogram</tab>
+                    <tab id="pyrogram">PyrogramMod</tab>
                     <tab id="telethon">Telethon</tab>
                     <tab id="hydrogram">Hydrogram</tab>
                 </tabs>
@@ -61,7 +61,7 @@
             Initialize the MTProto client:
             <multisyntax id="mtproto">
                 <tabs>
-                    <tab id="pyrogram">Pyrogram</tab>
+                    <tab id="pyrogram">PyrogramMod</tab>
                     <tab id="telethon">Telethon</tab>
                     <tab id="hydrogram">Hydrogram</tab>
                 </tabs>
