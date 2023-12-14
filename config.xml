@@ -384,6 +384,10 @@
   <option id="STREAM_STATUS_DESC2">
     <subtext><text>Stream’s Status.</text></subtext>
   </option>
+
+  <option id="BUG_FIX_CHANGELOGS">
+    <item><text><b>Bug Fixes:</b> Addressed various bugs for a more stable experience.</text></item>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
