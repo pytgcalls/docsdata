@@ -1,0 +1,221 @@
+<page>
+    <h1>Changelogs</h1>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgDec23.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v1.0.X"
+            description="NTgCalls, Hydrogram Support, New Documentation, and More"
+            mainbg="#000512"
+            version="1.0.7"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>NTgCalls Integration:</b> The PyTgCalls core has been updated to use NTgCalls instead of TgCallsJS, making it more portable and eliminating overhead. Now, you only need to install ffmpeg on your machine, resulting in improved performance.</text></item>
+                <item><text><b>Hydrogram Support:</b> Official support for Hydrogram, a new mtproto client based on Pyrogram, providing new possibilities and enhancing the overall experience.</text></item>
+                <item><text><b>New Documentation:</b> Revamped documentation with improved clarity, comprehensive examples, and up-to-date guidance for developers.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Community Milestone</h3>
+            <text>
+                <b>Thank You All:</b> Celebrating over 60,000 Downloads! The project has seen remarkable growth, averaging around 8,000 downloads per week since its launch. We appreciate the community's strong interest and support.
+            </text>
+            <h3 noref="true">Deprecation Notice</h3>
+            <text>
+                <b>End-of-Life (EOL) Dates:</b> Due to changes in Pyrogram and significant time since the release of PyTgCalls 0.8.X, different versions are marked for end-of-life:
+            </text>
+            <list>
+                <item><text>0.8.0, 0.8.1, 0.8.2, 0.8.3, 0.8.4, 0.8.5: Support ended due to outdated versions.</text></item>
+                <item><text>0.8.6: Support will continue until December 18 due to Pyrogram archiving.</text></item>
+                <item><text>0.9.X: Current Long-Term Support.</text></item>
+                <item><text>1.0.X: Latest version with high-support rate.</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgSep22.png"
+            minititle="BUG FIXES"
+            bigtitle="PyTgCalls v0.9.X"
+            description="Feature Enhancements and Bug Fixes"
+            mainbg="#000512"
+            version="0.9.7"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Time Tracking:</b> Added the ability to determine the time of the currently playing audio/video. For more details, check <docs-ref link="/PyTgCalls/Stream Methods/Played Time">Played Time</docs-ref>.</text></item>
+                <item><text><b>New Errors:</b> Introduced two new errors, UnMuteNeeded and RTMPStreamNeeded.</text></item>
+            </list>
+            <h3 noref="true">Changes &amp; Bug Fixes</h3>
+            <list>
+                <item><text><b>End of Life for Python3.6:</b> Support for Python 3.6 has reached the end of life and is no longer maintained.</text></item>
+                <item><text><b>Security Fix:</b> Addressed a security issue with the ID generation process to enhance overall security.</text></item>
+                <item><text><b>Multi-Thread Removal:</b> Removed Multi-Thread Py-TgCalls due to no bug fixes by Node.js for over 4 years.</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgJul22.png"
+            minititle="NEWS"
+            bigtitle="Google Partnership!"
+            description="Py-TgCalls classified as one of most used projects on PyPI"
+            mainbg="#000512"
+            version="0.9.7"
+        />
+        <subtext>
+            <text>
+                As we know, Google is in charge of financing Python.
+                Due to the recent events with the <a href="https://gitprotect.io/blog/compromised-npm-packages-malware-and-github/">Node.js situation</a>, PyPI ran for cover,
+                thanks to the strong collaboration between Python and the Google Open Source Security Team they offered 4000 Titan Tokens for free available only in some regions of the world.
+                PyPI to distribute these security tokens was based on a criterion, that is; any project in the top 1% of downloads in the previous 6 months is considered critical,
+                at the moment only <b>3500 projects</b> are considered out of <b>350 thousand</b> are considered as such and py-tgcalls is considered a critical project.
+                According to statistics last month, it was downloaded <b>684 thousand</b> times.
+            </text>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgDec21.png"
+            minititle="BUG FIXES"
+            bigtitle="PyTgCalls v0.8.3"
+            description="WebRTC Retry Fixes and Asynchronous Method Invocation"
+            mainbg="#000512"
+            version="0.8.6"
+        />
+        <subtext>
+            <h3 noref="true">Changes &amp; Bug Fixes</h3>
+            <list>
+                <item><text><b>WebRTC Retry Fixes:</b> Addressed issues with WebRTC retry for more reliable connections.</text></item>
+                <item><text><b>Asynchronous Method Invocation:</b> All methods, such as join_group_call, now use asyncio future, waiting for responses from Node.js asynchronously.</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgNov21.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v0.8.X"
+            description="Telethon Support, Group/Channel Join, Video Group Call, and More"
+            mainbg="#000512"
+            version="0.8.6"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item>
+                    <text><b>Internal FFmpeg Conversion:</b> Introduced internal FFmpeg conversion for AudioPiped, AudioVideoPiped, and AudioImagePiped for seamless multimedia handling.</text>
+                    <syntax-highlight mark="3-5">
+                        call_py.join_group_call(
+                            -1001234567890,
+                            AudioVideoPiped(
+                                'input.webm',
+                            ),
+                            stream_type=StreamType().pulse_stream,
+                        )
+                    </syntax-highlight>
+                </item>
+                <item><text><b>Remote Stream Support:</b> Added support for remote streams for more diverse streaming options.</text></item>
+                <item><text><b>Stream Image with Audio:</b> Added the ability to stream images with audio using AudioImagePiped.</text></item>
+                <item><text><b>GetParticipants and OnParticipantChange:</b> New functionalities for handling participants in group calls.</text></item>
+                <item><text><b>Browser Constants as Headers:</b> Added browser constants as headers for FFmpeg.</text></item>
+                <item><text><b>Python 3.10 Support:</b> Added compatibility with Python 3.10.</text></item>
+            </list>
+            <h3 noref="true">Changes &amp; Fixes</h3>
+            <list>
+                <item><text><b>Proportion Video Support:</b> Added support for all proportion video formats for a more versatile video experience.</text></item>
+                <item><text><b>Communication Fix:</b> Addressed stderr overflow by adding a reader for improved Node.js communication.</text></item>
+                <item><text><b>WebRTC Connection Retry:</b> Added automatic retry if WebRTC connection fails for more reliable connections.</text></item>
+                <item><text><b>Lighter Buffer Reader:</b> Optimized the Buffer Reader for lighter resource usage.</text></item>
+                <item><text><b>Multiple Ping Requests:</b> Now supports multiple ping requests for improved responsiveness.</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgAug21v2.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v0.7.X"
+            description="Code Cleanup, Full Asynchronous Support, and Enhanced Functionality"
+            mainbg="#000512"
+            version="0.7.4"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Custom Exceptions:</b> Added custom exceptions for more robust error handling.</text></item>
+                <item><text><b>Platform Support:</b> Added support for Windows, macOS, and Linux Arm64.</text></item>
+            </list>
+            <h3 noref="true">Changes &amp; Fixes</h3>
+            <list>
+                <item><text><b>PyTgCalls Re-Base:</b> Code cleanup and fixes for a more streamlined and efficient codebase.</text></item>
+                <item><text><b>Fully Async:</b> The library is now fully asynchronous for improved performance.</text></item>
+                <item><text><b>Communication Update:</b> Removed the internal socket server for Node.js communication between Python, replaced with stdin and stdout.</text></item>
+                <item><text><b>CustomAPI Renewed:</b> CustomAPI upgraded to version 2.1 with new features and improvements.</text></item>
+                <item><text><b>RawUpdate Enhancement:</b> RawUpdate renewed with PyTgCalls Object Update for better handling of updates.</text></item>
+                <item><text><b>Method Name Change:</b> .run() is now .start() and no longer blocks code execution.</text></item>
+                <item><text><b>Logging Update:</b> Now logs are directed to Python Logging for improved logging capabilities.</text></item>
+                <item><text><b>Voice Call Handling:</b> If the stream is deleted, the userbot will exit the voice call by printing an error in RawUpdate.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgAug21.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v0.6.X"
+            description="Multi-core Beta Support, Function Execution Without Node.js Core Waiting, and More"
+            mainbg="#000512"
+            version="0.6.0"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Multi-core support:</b> PyTgCalls now supports multiple cores for enhanced performance.</text></item>
+                <item><text><b>Remote version check:</b> Added the ability to check for the latest version available on GitHub remotely.</text></item>
+            </list>
+            <h3 noref="true">Changes &amp; Fixes</h3>
+            <list>
+                <item><text><b>CustomAPI 2.0:</b> Upgraded to CustomAPI version 2.0 with new features and improvements.</text></item>
+                <item><text><b>Security Fix:</b> Addressed a security vulnerability for a more secure experience.</text></item>
+                <item><text><b>Function execution without Node.js Core waiting:</b> Users can now call functions without waiting for the Node.js Core.</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
+            imageurl="/src/assets/updates/PyTgJul21.png"
+            minititle="BUG FIXES"
+            bigtitle="PyTgCalls v0.5.X"
+            description="Smoother Installation, Active Calls Resolved, and Enhanced Error Insight"
+            mainbg="#000512"
+            version="0.5.5"
+        />
+        <subtext>
+            <h3 noref="true">Changes &amp; Fixes</h3>
+            <list>
+                <item><text><b>Fixed PyPi builds: </b>Fixed an issue where PyTgCalls compiled without the JavaScript core</text></item>
+                <item><text><b>Improved join_group_call error: </b>The join_group_call error is now more descriptive</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+        </subtext>
+    </category>
+</page>

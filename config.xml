@@ -634,6 +634,7 @@
     <microtag>INTRODUCTION</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>
+    <file>Changelogs.xml</file>
 
     <microtag>GETTING STARTED</microtag>
     <file>Calling Methods.xml</file>
