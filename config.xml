@@ -1,6 +1,12 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.0.0</option>
-  <option id="PYTGCALLS_VERSION">1.0.0</option>
+  <option id="NTGCALLS_VERSION">1.0.1</option>
+  <option id="PYTGCALLS_VERSION">1.0.9</option>
+
+  <!--REDIRECTS - they are case-insensitive -->
+  <redirects>
+    <redirect path="/changelog">/PyTgCalls/Changelogs</redirect>
+    <redirect path="/changelogs">/PyTgCalls/Changelogs</redirect>
+  </redirects>
 
   <!--MACRO-->
   <!--exceptions-->
