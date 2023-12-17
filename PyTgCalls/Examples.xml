@@ -44,8 +44,8 @@
             <column>Play audio and image using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
-            <column><ref-shi url="example/piped_video_calls/example_piped_video.py" language="py">piped_video_calls</ref-shi></column>
-            <column>Play audio and video using ffmpeg for live conversion (with integrated ffmpeg)</column>
+            <column><ref-shi url="example/raw_streaming/example_video.py" language="py">raw_streaming</ref-shi></column>
+            <column>Play PCM16L and RAW_VIDEO from disk</column>
         </item>
         <item>
             <column><ref-shi url="example/remote_piped_play/example_remote_piped.py" language="py">remote_piped_play</ref-shi></column>
@@ -65,15 +65,15 @@
         </item>
         <item>
             <column><ref-shi url="example/simple_calls/example_simple.py" language="py">simple_calls</ref-shi></column>
-            <column>A simple example about using PyTgCalls</column>
+            <column>A simple example about using PyTgCalls with High Level Methods</column>
         </item>
         <item>
             <column><ref-shi url="example/telethon_example/example_telethon.py" language="py">telethon_example</ref-shi></column>
             <column>A simple example about using PyTgCalls with Telethon</column>
         </item>
         <item>
-            <column><ref-shi url="example/video_calls/example_video.py" language="py">video_calls</ref-shi></column>
-            <column>Play PCM16L and RAW_VIDEO from disk</column>
+            <column><ref-shi url="example/video_calls/example_piped_video.py" language="py">video_calls</ref-shi></column>
+            <column>Play audio and video using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
             <column><ref-shi url="example/youtube_dl/youtube_dl_example.py" language="py">youtube_dl</ref-shi></column>
