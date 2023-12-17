@@ -9,6 +9,8 @@
             description="NTgCalls, Hydrogram Support, New Documentation, and More"
             mainbg="#000512"
             version="1.0.7"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">What's new?</h3>
@@ -44,6 +46,8 @@
             description="Feature Enhancements and Bug Fixes"
             mainbg="#000512"
             version="0.9.7"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">What's new?</h3>
@@ -69,6 +73,8 @@
             description="Py-TgCalls classified as one of most used projects on PyPI"
             mainbg="#000512"
             version="0.9.7"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <text>
@@ -91,6 +97,8 @@
             description="WebRTC Retry Fixes and Asynchronous Method Invocation"
             mainbg="#000512"
             version="0.8.6"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">Changes &amp; Bug Fixes</h3>
@@ -110,6 +118,8 @@
             description="Telethon Support, Group/Channel Join, Video Group Call, and More"
             mainbg="#000512"
             version="0.8.6"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">What's new?</h3>
@@ -152,6 +162,8 @@
             description="Code Cleanup, Full Asynchronous Support, and Enhanced Functionality"
             mainbg="#000512"
             version="0.7.4"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">What's new?</h3>
@@ -183,6 +195,8 @@
             description="Multi-core Beta Support, Function Execution Without Node.js Core Waiting, and More"
             mainbg="#000512"
             version="0.6.0"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">What's new?</h3>
@@ -208,6 +222,8 @@
             description="Smoother Installation, Active Calls Resolved, and Enhanced Error Insight"
             mainbg="#000512"
             version="0.5.5"
+            imagewidth="1920"
+            imageheight="1080"
         />
         <subtext>
             <h3 noref="true">Changes &amp; Fixes</h3>
