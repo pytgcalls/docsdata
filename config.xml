@@ -567,11 +567,11 @@
   </team>
 
   <files-list id="NTgCalls" basepath="NTgCalls/" defaultfile="Quick Start.xml">
-    <microtag>INTRODUCTION</microtag>
+    <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Build Guide.xml</file>
 
-    <microtag>PYTHON API</microtag>
+    <microtag>Python Api</microtag>
     <file>Client.xml</file>
     <file>Callbacks.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
@@ -601,7 +601,7 @@
       <file>StreamType.xml</file>
     </group>
 
-    <microtag>C API</microtag>
+    <microtag>C Api</microtag>
     <file>Getting Started.xml</file>
     <file>Callback Registration.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
@@ -637,17 +637,17 @@
   </files-list>
 
   <files-list id="PyTgCalls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
-    <microtag>INTRODUCTION</microtag>
+    <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>
     <file>Changelogs.xml</file>
 
-    <microtag>GETTING STARTED</microtag>
+    <microtag>Getting Started</microtag>
     <file>Calling Methods.xml</file>
     <file>Handling Updates.xml</file>
     <file>Examples.xml</file>
 
-    <microtag>API REFERENCE</microtag>
+    <microtag>Api Reference</microtag>
     <file>Client.xml</file>
     <file>Custom Api.xml</file>
     <file>Media Devices.xml</file>
@@ -657,7 +657,7 @@
       <file>VideoQuality.xml</file>
     </group>
 
-    <microtag>METHODS</microtag>
+    <microtag>Methods</microtag>
     <group basepath="PyTgCalls/Basic Methods/">
       <file>Idle.xml</file>
       <file>Join Group Call.xml</file>
@@ -680,7 +680,7 @@
       <file>Get Participants.xml</file>
     </group>
 
-    <microtag>TYPES</microtag>
+    <microtag>Types</microtag>
     <group basepath="PyTgCalls/Base Stream/">
       <file>AudioParameters.xml</file>
       <file>AudioStream.xml</file>
