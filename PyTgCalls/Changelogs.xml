@@ -3,6 +3,104 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgDec23v2.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v1.1.X"
+            description="Unified Stream Design, AutoStart GroupCalls and More"
+            mainbg="#000512"
+            version="1.1.0"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, read here.</text></item>
+                <item>
+                    <text><b>Unified Stream Design:</b> Now you can do whatever you want, streaming audio, video, both, recording the stream etc. with just one class!.</text>
+                    <multisyntax id="stream_design">
+                        <tabs>
+                            <tab id="before">Before</tab>
+                            <tab id="after">After</tab>
+                        </tabs>
+                        <syntax-highlight id="before">
+                            # Play MP4 Video
+                            call_py.join_group_call(
+                                -1001234567890,
+                                AudioVideoPiped(
+                                  'input.mp4',
+                                ),
+                            )
+                            
+                            # Stream audio only from MP4
+                            call_py.join_group_call(
+                                -1001234567890,
+                                AudioPiped(
+                                    'input.mp4',
+                                ),
+                            )
+
+                            # Stream screen
+                            call_py.join_group_call(
+                                -1001234567890,
+                                CaptureVideoDesktop(
+                                    MediaDevices.get_screen_devices()[0],
+                                ),
+                            )
+                        </syntax-highlight>
+                        <syntax-highlight id="after">
+                            # Play MP4 Video
+                            call_py.join_group_call(
+                                -1001234567890,
+                                MediaStream(
+                                    'input.mp4',
+                                ),
+                            )
+
+                            # Stream audio only from MP4
+                            call_py.join_group_call(
+                                -1001234567890,
+                                MediaStream(
+                                    'input.mp4',
+                                    video_flags=MediaStream.IGNORE,
+                                ),
+                            )
+
+                            # Stream screen
+                            call_py.join_group_call(
+                                -1001234567890,
+                                MediaStream(
+                                    MediaDevices.get_screen_devices()[0],
+                                ),
+                            )
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Deprecation Notice</h3>
+            <text>
+                As we said in the last post,
+                now PyTgCalls <b>0.8.6</b> has reached the <b>end of life</b>,
+                so this update is completely incompatible with this or previous versions.
+                We have also deprecated most of the Stream Piped methods, here's the list:
+            </text>
+            <list>
+                <item><text>AudioImagePiped</text></item>
+                <item><text>AudioPiped</text></item>
+                <item><text>AudioVideoPiped</text></item>
+                <item><text>CaptureAudioDevice</text></item>
+                <item><text>CaptureAVDesktop</text></item>
+                <item><text>CaptureAVDeviceDesktop</text></item>
+                <item><text>CaptureVideoDesktop</text></item>
+                <item><text>VideoPiped</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgDec23.png"
             minititle="MAJOR UPDATE"
             bigtitle="PyTgCalls v1.0.X"

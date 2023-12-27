@@ -1,0 +1,38 @@
+<page>
+    <h1>MediaStream</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>MediaStream</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The media stream piped descriptor.</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo]</category-title>
+            <subtext><text>The audio, video or media device path.</text></subtext>
+
+            <category-title><ref>audio_path</ref>: Union[<shi>str</shi>, DeviceInfo]</category-title>
+            <subtext><text>The audio or input audio device path.</text></subtext>
+
+            <config id="ARG_AUDIO_PARAMS"/>
+            <config id="ARG_VIDEO_PARAMS"/>
+
+            <category-title><ref>audio_flags</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref>[<shi>int</shi>]</category-title>
+            <subtext>
+                <text>
+                    Flag used to control the handling of the audio stream in the media. It allows the system to decide whether to automatically detect, ignore, or require the audio stream.
+                </text>
+            </subtext>
+
+            <category-title><ref>video_flags</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref>[<shi>int</shi>]</category-title>
+            <subtext>
+                <text>
+                    Flag used to control the handling of the video stream in the media. It allows the system to decide whether to automatically detect, ignore, or require the video stream.
+                </text>
+            </subtext>
+
+            <config id="ARG_FFMPEG_PARAMS"/>
+        </subtext>
+    </subtext>
+</page>

@@ -1,6 +1,11 @@
 <page>
     <h1>AudioVideoPiped</h1>
-    <br/>
+    <alert type="warning">
+        <text>
+            This class was deprecated on PyTgCalls 1.1.X, use
+            <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref> instead
+        </text>
+    </alert>
     <category-title noref="true">
         <shi>class</shi> <ref>pytgcalls.types.<sb>AudioVideoPiped</sb></ref>
     </category-title>

@@ -1,0 +1,22 @@
+<page>
+    <h1>MediaStream</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>MediaStream</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration for managing media stream requirements in group calls.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>AUTO_DETECT</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Automatically detects the presence of the stream.</text></subtext>
+
+            <category-title><ref><sb>IGNORE</sb></ref> <shi>=</shi> 4</category-title>
+            <subtext><text>Ignores the stream.</text></subtext>
+
+            <category-title><ref><sb>REQUIRED</sb></ref> <shi>=</shi> 8</category-title>
+            <subtext><text>Indicates that the stream is mandatory.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

@@ -654,6 +654,7 @@
     <file>Decorators.xml</file>
     <group basepath="PyTgCalls/Available Enums/">
       <file>AudioQuality.xml</file>
+      <file>MediaStream.xml</file>
       <file>VideoQuality.xml</file>
     </group>
 
@@ -684,6 +685,7 @@
     <group basepath="PyTgCalls/Stream Descriptors/">
       <file>AudioParameters.xml</file>
       <file>AudioStream.xml</file>
+      <file>MediaStream.xml</file>
       <file>Stream.xml</file>
       <file>VideoParameters.xml</file>
       <file>VideoStream.xml</file>
