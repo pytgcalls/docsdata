@@ -8,7 +8,7 @@
             bigtitle="PyTgCalls v1.0.X"
             description="NTgCalls, Hydrogram Support, New Documentation, and More"
             mainbg="#000512"
-            version="1.0.7"
+            version="1.0.9"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -22,17 +22,17 @@
             </list>
             <h3 noref="true">Community Milestone</h3>
             <text>
-                <b>Thank You All:</b> Celebrating over 60,000 Downloads! The project has seen remarkable growth, averaging around 8,000 downloads per week since its launch. We appreciate the community's strong interest and support.
+                <b>Thank You All:</b> Celebrating over 100 thousand Downloads! The project has seen remarkable growth, averaging around 8,000 downloads per week since its launch. We appreciate the community's strong interest and support.
             </text>
             <h3 noref="true">Deprecation Notice</h3>
             <text>
                 <b>End-of-Life (EOL) Dates:</b> Due to changes in Pyrogram and significant time since the release of PyTgCalls 0.8.X, different versions are marked for end-of-life:
             </text>
             <list>
-                <item><text>0.8.0, 0.8.1, 0.8.2, 0.8.3, 0.8.4, 0.8.5: Support ended due to outdated versions.</text></item>
-                <item><text>0.8.6: Support will continue until December 18 due to Pyrogram archiving.</text></item>
-                <item><text>0.9.X: Current Long-Term Support.</text></item>
-                <item><text>1.0.X: Latest version with high-support rate.</text></item>
+                <item><text><b>0.8.0, 0.8.1, 0.8.2, 0.8.3, 0.8.4, 0.8.5:</b> Support ended due to outdated versions.</text></item>
+                <item><text><b>0.8.6:</b> Support will continue until December 18 due to Pyrogram archiving.</text></item>
+                <item><text><b>0.9.X:</b> Current Long-Term Support.</text></item>
+                <item><text><b>1.0.X:</b> Latest version with high-support rate.</text></item>
             </list>
         </subtext>
         <separator/>

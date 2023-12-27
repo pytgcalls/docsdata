@@ -14,8 +14,8 @@
         client = # Here Your MTProto Client
         app = PyTgCalls(client)
 
-        @app.on_raw_update()
-        async def my_handler(client: PyTgCalls, update: Update):
+        @app.on_participants_change()
+        async def handler(client: PyTgCalls, update: Update):
             print(message)
 
         app.run()

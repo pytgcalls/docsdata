@@ -407,7 +407,7 @@
   </option>
 
   <option id="ARG_INPUT_STREAM">
-    <category-title><ref>stream</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/Stream">pytgcalls.Stream</docs-ref>]</category-title>
+    <category-title><ref>stream</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.Stream</docs-ref>]</category-title>
     <subtext><text>Input Streams base descriptor</text></subtext>
   </option>
 
@@ -437,12 +437,12 @@
   </option>
 
   <option id="ARG_AUDIO_PARAMS">
-    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/AudioParameters">pytgcalls.AudioParameters</docs-ref>]</category-title>
+    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.AudioParameters</docs-ref>]</category-title>
     <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_PARAMS">
-    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Base Stream/VideoParameters">pytgcalls.VideoParameters</docs-ref>]</category-title>
+    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.VideoParameters</docs-ref>]</category-title>
     <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
@@ -681,7 +681,7 @@
     </group>
 
     <microtag>Types</microtag>
-    <group basepath="PyTgCalls/Base Stream/">
+    <group basepath="PyTgCalls/Stream Descriptors/">
       <file>AudioParameters.xml</file>
       <file>AudioStream.xml</file>
       <file>Stream.xml</file>
