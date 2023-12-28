@@ -24,22 +24,22 @@
                             <tab id="after">After</tab>
                         </tabs>
                         <syntax-highlight id="before">
-                            # Play MP4 Video
+                            # Play audio and video from and MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
                                 AudioVideoPiped(
                                   'input.mp4',
                                 ),
                             )
-                            
-                            # Stream audio only from MP4
+                            <br/>
+                            # Stream audio only from an MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
                                 AudioPiped(
                                     'input.mp4',
                                 ),
                             )
-
+                            <br/>
                             # Stream screen
                             call_py.join_group_call(
                                 -1001234567890,
@@ -49,15 +49,15 @@
                             )
                         </syntax-highlight>
                         <syntax-highlight id="after">
-                            # Play MP4 Video
+                            # Play audio and video from and MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
                                 MediaStream(
                                     'input.mp4',
                                 ),
                             )
-
-                            # Stream audio only from MP4
+                            <br/>
+                            # Stream audio only from an MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
                                 MediaStream(
@@ -65,7 +65,7 @@
                                     video_flags=MediaStream.IGNORE,
                                 ),
                             )
-
+                            <br/>
                             # Stream screen
                             call_py.join_group_call(
                                 -1001234567890,
