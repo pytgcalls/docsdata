@@ -9,7 +9,7 @@
     <syntax-highlight>
         from pytgcalls import PyTgCalls
         from pytgcalls import idle
-        from pytgcalls.types import AudioPiped
+        from pytgcalls.types import MediaStream
         ...
         api_id = 12345
         api_hash = '0123456789abcdef0123456789abcdef'
@@ -18,7 +18,7 @@
         app.start()
         app.join_group_call(
             -1001185324811,
-            AudioPiped(
+            MediaStream(
                 'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
             )
         )
@@ -28,7 +28,7 @@
     <list style="numbers">
         <item syntax-highlight="from pytgcalls import PyTgCalls
                 from pytgcalls import idle
-                from pytgcalls.types import AudioPiped">
+                from pytgcalls.types import MediaStream">
             Let’s begin by importing the Client class, Stream type and idle function:
         </item>
         <item>
@@ -93,7 +93,7 @@
             <syntax-highlight>
                 app.join_group_call(
                     -1001185324811,
-                    AudioPiped(
+                    MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                     )
                 )
@@ -112,7 +112,7 @@
         import asyncio
         from pytgcalls import PyTgCalls
         from pytgcalls import idle
-        from pytgcalls.types import AudioPiped
+        from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
@@ -120,7 +120,7 @@
             await app.start()
             await app.join_group_call(
                 -1001185324811,
-                AudioPiped(
+                MediaStream(
                     'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                 )
             )
@@ -142,13 +142,13 @@
         </item>
         <item>
             Async methods can’t be executed at the top level, because they must be within an async-defined function;
-            here, we define one and we put our code inside it; method calls require the await keyword:
+            here, we define one, and we put our code inside it; method calls require the await keyword:
             <syntax-highlight>
                 async def main():
                 await app.start()
                 await app.join_group_call(
                     -1001185324811,
-                    AudioPiped(
+                    MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                     )
                 )

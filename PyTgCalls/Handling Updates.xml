@@ -25,7 +25,7 @@
     <syntax-highlight>
         from pytgcalls import PyTgCalls
         from pytgcalls.types import Update
-        from pytgcalls.types import StreamVideoEnded
+        from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
@@ -34,7 +34,7 @@
             if isinstance(update, StreamVideoEnded):
                 await pytgcalls.change_stream(
                     -1001185324811,
-                    stream=AudioVideoPiped(
+                    stream=MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                     )
                 )

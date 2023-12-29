@@ -14,14 +14,14 @@
             <syntax-highlight>
                 from pytgcalls import PyTgCalls
                 from pytgcalls import idle
-                from pytgcalls.types import AudioPiped
+                from pytgcalls.types import MediaStream
                 ...
                 chat_id = -1001185324811
                 app = PyTgCalls(client)
                 app.start()
                 app.join_group_call(
                     chat_id,
-                    AudioPiped(
+                    MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                     )
                 )

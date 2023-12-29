@@ -5,6 +5,7 @@
     <syntax-highlight mark="10-15">
         from pytgcalls import Client
         from pytgcalls import idle
+        from pytgcalls.types import MediaStream
         ...
 
         app = PyTgCalls(client)
@@ -14,7 +15,7 @@
 
         app.join_group_call(
             -1001185324811,
-            AudioPiped(
+            MediaStream(
                 'test.mp4',
             )
         )
