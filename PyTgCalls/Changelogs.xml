@@ -3,6 +3,44 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgCon24.png"
+            minititle="NEWS"
+            bigtitle="#PyTgCon2K24"
+            description="If you've crafted a public open repository, it's time to showcase your work in the PyTgCalls Contest! 🌟"
+            mainbg="#000512"
+            version="1.1.2"
+            imagewidth="1920"
+            imageheight="1080"
+            presentationtitle="PyTgCalls Contest"
+            presentationdescription="Competition for bot developers"
+            presentationbuttontitle="Participate"
+            presentationbuttonurl="https://github.com/pytgcalls/pytgcalls/discussions/199"
+            presentationimage="/src/assets/contest.png"
+        />
+        <subtext>
+            <h3 noref="true">Here's how to join:</h3>
+            <list>
+                <item><text><b>Visit the discussion page:</b> <a href="https://github.com/pytgcalls/pytgcalls/discussions/199">PyTgCalls Contest</a></text></item>
+                <item><text><b> Share these details:</b> Your Repository Name, Brief Description of Your Bot, Link to Your Repository</text></item>
+            </list>
+            <h3 noref="true">Prizes and Recognition</h3>
+            <list>
+                <item><text>Encourage upvotes by reposting this message in your channels.</text></item>
+                <item><text>The bot with the highest upvotes earns a prestigious place in the PyTgCalls documentation.</text></item>
+            </list>
+            <h3 noref="true">Contest Rules</h3>
+            <list>
+                <item><text>Make sure your repository goes beyond minor tweaks of a fork.</text></item>
+                <item><text>Use the <a href="https://pypi.org/project/py-tgcalls/1.1.2/">latest</a> PyTgCalls version).</text></item>
+                <item><text>Your repository should be public.</text></item>
+            </list>
+            <text>Join the contest now and showcase your PyTgCalls-powered bot for a chance to be featured prominently on the PyTgCalls documentation! Good luck!</text>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgDec23v2.png"
             minititle="MINOR UPDATE"
             bigtitle="PyTgCalls v1.1.X"
@@ -173,6 +211,7 @@
             version="0.9.7"
             imagewidth="1920"
             imageheight="1080"
+            presentationbuttontitle="Download"
         />
         <subtext>
             <text>
