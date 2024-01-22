@@ -30,13 +30,28 @@
             </item>
             <item>
                 <text>
-                    <b>Install CMake 3.23+, libx11-dev, and Clang 17+:</b><br/>
+                    <b>Install CMake 3.23+, libx11-dev, and Clang 15:</b><br/>
                     This section provides instructions on how to install three specific packages: CMake version 3.23 or higher, libx11-dev,
-                    and Clang version 17 or higher. Use the following command:
+                    and Clang version 15. Use the following command:
                 </text>
-                <syntax-highlight language="bash">
-                    $ sudo apt install cmake libx11-dev clang
-                </syntax-highlight>
+                <multisyntax id="os_requirements">
+                    <tabs>
+                        <tab id="x86">x86_64</tab>
+                        <tab id="arm">ARM64</tab>
+                    </tabs>
+                    <syntax-highlight language="bash" id="x86">
+                        $ sudo apt install libx11-dev clang
+                        $ wget https://github.com/Kitware/CMake/releases/download/v3.28.1/cmake-3.28.1-linux-x86_64.sh
+                        $ chmod +x cmake-3.28.1-linux-x86_64.sh
+                        $ ./cmake-3.28.1-linux-x86_64.sh
+                    </syntax-highlight>
+                    <syntax-highlight language="bash" id="arm">
+                        $ sudo apt install libx11-dev clang
+                        $ wget https://github.com/Kitware/CMake/releases/download/v3.28.1/cmake-3.28.1-linux-aarch64.sh
+                        $ chmod +x cmake-3.28.1-linux-aarch64.sh
+                        $ ./cmake-3.28.1-linux-aarch64.sh
+                    </syntax-highlight>
+                </multisyntax>
             </item>
         </list>
         <h2>Windows</h2>
