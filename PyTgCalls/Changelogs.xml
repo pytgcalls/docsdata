@@ -8,7 +8,7 @@
             bigtitle="#PyTgCon2K24"
             description="If you've crafted a public open repository, it's time to showcase your work in the PyTgCalls Contest! 🌟"
             mainbg="#000512"
-            version="1.1.2"
+            version="1.1.5"
             imagewidth="1920"
             imageheight="1080"
             presentationtitle="PyTgCalls Contest"
@@ -46,7 +46,7 @@
             bigtitle="PyTgCalls v1.1.X"
             description="Unified Stream Design, AutoStart GroupCalls and More"
             mainbg="#000512"
-            version="1.1.0"
+            version="1.1.5"
             imagewidth="1920"
             imageheight="1080"
         />
