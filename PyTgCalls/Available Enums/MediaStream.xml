@@ -12,10 +12,10 @@
             <category-title><ref><sb>AUTO_DETECT</sb></ref> <shi>=</shi> 1</category-title>
             <subtext><text>Automatically detects the presence of the stream.</text></subtext>
 
-            <category-title><ref><sb>IGNORE</sb></ref> <shi>=</shi> 4</category-title>
+            <category-title><ref><sb>IGNORE</sb></ref> <shi>=</shi> 2</category-title>
             <subtext><text>Ignores the stream.</text></subtext>
 
-            <category-title><ref><sb>REQUIRED</sb></ref> <shi>=</shi> 8</category-title>
+            <category-title><ref><sb>REQUIRED</sb></ref> <shi>=</shi> 4</category-title>
             <subtext><text>Indicates that the stream is mandatory.</text></subtext>
         </subtext>
     </subtext>
