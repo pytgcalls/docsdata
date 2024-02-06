@@ -407,7 +407,7 @@
   </option>
 
   <option id="ARG_INPUT_STREAM">
-    <category-title><ref>stream</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.Stream</docs-ref>]</category-title>
+    <category-title><ref>stream</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>, <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">pytgcalls.types.MediaStream</docs-ref>]]</category-title>
     <subtext><text>Input Streams base descriptor</text></subtext>
   </option>
 
@@ -437,21 +437,35 @@
   </option>
 
   <option id="ARG_AUDIO_PARAMS">
-    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.AudioParameters</docs-ref>]</category-title>
+    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.types.raw.AudioParameters</docs-ref>]</category-title>
+    <config id="ARG_AUDIO_PARAMS_DESC"/>
+  </option>
+
+  <option id="ARG_AUDIO_PARAMSv2">
+    <category-title><ref>audio_parameters</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.types.raw.AudioParameters</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>]]</category-title>
     <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_PARAMS">
-    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.VideoParameters</docs-ref>]</category-title>
+    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>]</category-title>
     <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
+  <option id="ARG_VIDEO_PARAMSv2">
+    <category-title><ref>audio_parameters</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>]]</category-title>
+    <config id="ARG_AUDIO_PARAMS_DESC"/>
+  </option>
+
   <option id="ARG_FFMPEG_PARAMS">
-    <category-title><ref>headers</ref>: Optional[<shi>dict</shi>[<shi>str</shi>, <shi>str</shi>]]</category-title>
-    <subtext><text>HTTP connection’s headers.</text></subtext>
+    <config id="ARG_HTTP_PARAMS"/>
 
     <category-title><ref>additional_ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
     <subtext><text>FFmpeg additional parameters.</text></subtext>
+  </option>
+
+  <option id="ARG_HTTP_PARAMS">
+    <category-title><ref>headers</ref>: Optional[<shi>dict</shi>[<shi>str</shi>, <shi>str</shi>]]</category-title>
+    <subtext><text>HTTP connection’s headers.</text></subtext>
   </option>
 
   <option id="ARG_STREAM_PARAMS">

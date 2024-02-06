@@ -12,11 +12,11 @@
             <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo]</category-title>
             <subtext><text>The audio, video or media device path.</text></subtext>
 
+            <config id="ARG_AUDIO_PARAMSv2"/>
+            <config id="ARG_VIDEO_PARAMSv2"/>
+
             <category-title><ref>audio_path</ref>: Optional[Union[<shi>str</shi>, DeviceInfo]]</category-title>
             <subtext><text>The audio or input audio device path.</text></subtext>
-
-            <config id="ARG_AUDIO_PARAMS"/>
-            <config id="ARG_VIDEO_PARAMS"/>
 
             <category-title><ref>audio_flags</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/MediaStream">MediaStream</docs-ref>[<shi>int</shi>]]</category-title>
             <subtext>
@@ -32,7 +32,9 @@
                 </text>
             </subtext>
 
-            <config id="ARG_FFMPEG_PARAMS"/>
+            <config id="ARG_HTTP_PARAMS"/>
+            <category-title><ref>ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
+            <subtext><text>FFmpeg additional parameters.</text></subtext>
         </subtext>
     </subtext>
 </page>

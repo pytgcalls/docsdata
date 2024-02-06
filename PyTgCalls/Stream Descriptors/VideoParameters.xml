@@ -2,7 +2,7 @@
     <h1>VideoParameters</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoParameters</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>VideoParameters</sb></ref>
     </category-title>
     <subtext>
         <text>Stream’s video parameters.</text>
@@ -18,7 +18,15 @@
         <pg-title>STATIC METHODS</pg-title>
         <subtext>
             <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>)</category-title>
-            <subtext><text>Create an VideoParameters instance from an VideoQuality enumeration.</text></subtext>
+            <subtext>
+                <alert type="warning">
+                    <text>
+                        This method was deprecated on PyTgCalls 1.2.X, use directly
+                        <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref> in MediaStream instead
+                    </text>
+                </alert>
+                <text>Create an VideoParameters instance from an VideoQuality enumeration.</text>
+            </subtext>
         </subtext>
     </subtext>
 </page>

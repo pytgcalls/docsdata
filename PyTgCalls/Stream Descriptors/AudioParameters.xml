@@ -2,7 +2,7 @@
     <h1>AudioParameters</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioParameters</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>AudioParameters</sb></ref>
     </category-title>
     <subtext>
         <config id="AUDIO_CONFIG_DESC"/>
@@ -19,7 +19,15 @@
         <pg-title>STATIC METHODS</pg-title>
         <subtext>
             <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>)</category-title>
-            <subtext><text>Create an AudioParameters instance from an AudioQuality enumeration.</text></subtext>
+            <subtext>
+                <alert type="warning">
+                    <text>
+                        This method was deprecated on PyTgCalls 1.2.X, use directly
+                        <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref> in MediaStream instead
+                    </text>
+                </alert>
+                <text>Create an AudioParameters instance from an AudioQuality enumeration.</text>
+            </subtext>
         </subtext>
     </subtext>
 </page>

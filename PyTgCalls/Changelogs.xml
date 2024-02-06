@@ -3,6 +3,70 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgFeb24.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v1.2.X"
+            description="Static Typing, YtDlp support and More"
+            mainbg="#000512"
+            version="1.2.0"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Static Typing:</b> PyTgCalls is now fully statically typed, ensuring that the types of each method and class are thoroughly checked.</text></item>
+                <item><text><b>YtDlp Support:</b> MediaStream now supports links from YouTube using YtDlp, for example: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=iSbLHrrqmoM</a></text></item>
+                <item>
+                    <text><b>MediaStream Quality Support:</b> MediaStream now accepts enhanced quality options for audio and video parameters. For audio, use <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>, and for video, use <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>.</text>
+                    <multisyntax id="quality_design">
+                        <tabs>
+                            <tab id="before">Before</tab>
+                            <tab id="after">After</tab>
+                        </tabs>
+                        <syntax-highlight id="before">
+                            call_py.join_group_call(
+                                -1001234567890,
+                                MediaStream(
+                                    'input.mp4',
+                                    AudioParameters.from_quality(AudioQuality.STUDIO),
+                                    VideoParameters.from_quality(VideoQuality.FHD_1080p),
+                                ),
+                            )
+                        </syntax-highlight>
+                        <syntax-highlight id="after">
+                            call_py.join_group_call(
+                                -1001234567890,
+                                MediaStream(
+                                    'input.mp4',
+                                    AudioQuality.STUDIO,
+                                    VideoQuality.FHD_1080p,
+                                ),
+                            )
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <text>
+                With the latest update, there is a breaking change affecting raw methods.
+                The following components are now located under the <code>pytgcalls.types.raw</code>
+                namespace instead of <code>pytgcalls.types</code>:
+            </text>
+            <list>
+                <item><text>AudioParameters</text></item>
+                <item><text>VideoParameters</text></item>
+                <item><text>AudioStream</text></item>
+                <item><text>VideoStream</text></item>
+                <item><text>Stream</text></item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgCon24.png"
             minititle="NEWS"
             bigtitle="#PyTgCon2K24"

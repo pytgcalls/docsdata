@@ -4,7 +4,7 @@
         <text>This class replaces the deprecated <code>pytgcalls.types.InputVideoStream</code>.</text>
     </alert>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoStream</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>VideoStream</sb></ref>
     </category-title>
     <subtext>
         <text>The raw video stream (YUV420P) descriptor</text>
@@ -16,7 +16,7 @@
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The video file path or shell command (YUV420P format only).</text></subtext>
 
-            <category-title><ref>parameters </ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.VideoParameters</docs-ref></category-title>
+            <category-title><ref>parameters </ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref></category-title>
             <config id="ARG_VIDEO_PARAMS_DESC"/>
         </subtext>
     </subtext>

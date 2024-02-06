@@ -1,10 +1,10 @@
 <page>
     <h1>AudioStream</h1>
     <alert type="warning">
-        <text>This class replaces the deprecated <code>pytgcalls.types.InputAudioStream</code>.</text>
+        <text>This class replaces the deprecated <code>pytgcalls.types.raw.InputAudioStream</code>.</text>
     </alert>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioStream</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>AudioStream</sb></ref>
     </category-title>
     <subtext>
         <text>The raw audio stream (PCM16L) descriptor</text>
@@ -16,7 +16,7 @@
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The audio file path or shell command (PCM16L format only).</text></subtext>
 
-            <category-title><ref>parameters</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.AudioParameters</docs-ref></category-title>
+            <category-title><ref>parameters</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.types.raw.AudioParameters</docs-ref></category-title>
             <config id="ARG_AUDIO_PARAMS_DESC"/>
         </subtext>
     </subtext>
