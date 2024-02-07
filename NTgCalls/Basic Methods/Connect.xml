@@ -38,10 +38,10 @@
                 <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
                 <subtext>
                     <text>
-                        This error occurs when attempting to execute an action on a non-existent Group Call
-                        or when the connection to the WebRTC service fails.
+                        This error occurs when attempting to execute an action on a non-existent Group Call.
                     </text>
                 </subtext>
+                <config id="TELEGRAM_EXCEPTION"/>
                 <config id="RTMP_EXCEPTION"/>
                 <category-title>exception <ref>ntgcalls.<sb>InvalidParams</sb></ref></category-title>
                 <subtext><text>This error occurs when attempting to send invalid Transports.</text></subtext>

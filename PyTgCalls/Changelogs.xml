@@ -8,7 +8,7 @@
             bigtitle="PyTgCalls v1.2.X"
             description="Static Typing, YtDlp support and More"
             mainbg="#000512"
-            version="1.2.0"
+            version="1.2.1"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -49,17 +49,9 @@
                 <config id="BUG_FIX_CHANGELOGS"/>
             </list>
             <h3 noref="true">Breaking Changes</h3>
-            <text>
-                With the latest update, there is a breaking change affecting raw methods.
-                The following components are now located under the <code>pytgcalls.types.raw</code>
-                namespace instead of <code>pytgcalls.types</code>:
-            </text>
             <list>
-                <item><text>AudioParameters</text></item>
-                <item><text>VideoParameters</text></item>
-                <item><text>AudioStream</text></item>
-                <item><text>VideoStream</text></item>
-                <item><text>Stream</text></item>
+                <item><text>Now all raw methods like AudioParameters, VideoParameters, AudioStream, VideoStream, and Stream are all under <code>pytgcalls.types.raw</code> instead of <code>pytgcalls.types</code>.</text></item>
+                <item><text>The exception class <code>pytgcalls.exceptions.TelegramServerError</code> is now part of <code>ntgcalls.TelegramServerError</code>.</text></item>
             </list>
         </subtext>
         <separator/>

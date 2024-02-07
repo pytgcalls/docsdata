@@ -104,6 +104,15 @@
     <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
   </option>
 
+  <option id="TELEGRAM_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>TelegramServerError</sb></ref></category-title>
+    <subtext>
+      <text>
+        This error occurs when the connection between Telegram and the WebRTC service fails.
+      </text>
+    </subtext>
+  </option>
+
   <option id="RUNNING_EXCEPTION">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>PyTgCallsAlreadyRunning</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>

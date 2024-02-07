@@ -49,6 +49,7 @@
             <subtext>
                 <config id="CONNECTION_EXCEPTIONS"/>
                 <config id="STREAM_EXCEPTIONS"/>
+                <config id="TELEGRAM_EXCEPTION"/>
                 <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
                 <subtext><text>You are attempting to join a group call you're already a part of.</text></subtext>
                 <config id="RTMP_EXCEPTION"/>
