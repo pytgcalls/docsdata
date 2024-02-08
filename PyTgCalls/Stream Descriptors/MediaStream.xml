@@ -35,6 +35,8 @@
             <config id="ARG_HTTP_PARAMS"/>
             <category-title><ref>ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
             <subtext><text>FFmpeg additional parameters.</text></subtext>
+            <category-title><ref>ytdlp_parameters</ref>: Optional[<shi>str</shi>]</category-title>
+            <subtext><text>yt-dlp additional parameters.</text></subtext>
         </subtext>
     </subtext>
 </page>

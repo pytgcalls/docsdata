@@ -92,6 +92,9 @@
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>InvalidVideoProportion</sb></ref></category-title>
     <subtext><text>Playing a video with incorrect proportions is not supported.</text></subtext>
+
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>YtDlpError</sb></ref></category-title>
+    <subtext><text>This error occurs when yt-dlp encounters an error.</text></subtext>
   </option>
 
   <option id="GROUPCALL_NOT_FOUND_EXCEPTION">
