@@ -8,7 +8,7 @@
             bigtitle="PyTgCalls v1.2.X"
             description="Static Typing, YtDlp support and More"
             mainbg="#000512"
-            version="1.2.2"
+            version="1.2.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -98,7 +98,7 @@
             bigtitle="PyTgCalls v1.1.X"
             description="Unified Stream Design, AutoStart GroupCalls and More"
             mainbg="#000512"
-            version="1.1.6"
+            version="1.1.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -192,7 +192,7 @@
             bigtitle="PyTgCalls v1.0.X"
             description="NTgCalls, Hydrogram Support, New Documentation, and More"
             mainbg="#000512"
-            version="1.0.9"
+            version="1.0.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -229,7 +229,7 @@
             bigtitle="PyTgCalls v0.9.X"
             description="Feature Enhancements and Bug Fixes"
             mainbg="#000512"
-            version="0.9.7"
+            version="0.9.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -256,7 +256,7 @@
             bigtitle="Google Partnership!"
             description="Py-TgCalls classified as one of most used projects on PyPI"
             mainbg="#000512"
-            version="0.9.7"
+            version="0.9.X"
             imagewidth="1920"
             imageheight="1080"
             presentationbuttontitle="Download"
@@ -281,7 +281,7 @@
             bigtitle="PyTgCalls v0.8.3"
             description="WebRTC Retry Fixes and Asynchronous Method Invocation"
             mainbg="#000512"
-            version="0.8.6"
+            version="0.8.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -302,7 +302,7 @@
             bigtitle="PyTgCalls v0.8.X"
             description="Telethon Support, Group/Channel Join, Video Group Call, and More"
             mainbg="#000512"
-            version="0.8.6"
+            version="0.8.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -346,7 +346,7 @@
             bigtitle="PyTgCalls v0.7.X"
             description="Code Cleanup, Full Asynchronous Support, and Enhanced Functionality"
             mainbg="#000512"
-            version="0.7.4"
+            version="0.7.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -379,7 +379,7 @@
             bigtitle="PyTgCalls v0.6.X"
             description="Multi-core Beta Support, Function Execution Without Node.js Core Waiting, and More"
             mainbg="#000512"
-            version="0.6.0"
+            version="0.6.X"
             imagewidth="1920"
             imageheight="1080"
         />
@@ -406,7 +406,7 @@
             bigtitle="PyTgCalls v0.5.X"
             description="Smoother Installation, Active Calls Resolved, and Enhanced Error Insight"
             mainbg="#000512"
-            version="0.5.5"
+            version="0.5.X"
             imagewidth="1920"
             imageheight="1080"
         />
