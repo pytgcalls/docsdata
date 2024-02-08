@@ -1,6 +1,7 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.0.1</option>
-  <option id="PYTGCALLS_VERSION">1.0.9</option>
+  <option id="NTGCALLS_VERSION">1.0.7</option>
+  <option id="PYTGCALLS_VERSION">1.2.2</option>
+  <option id="PYPI_PACKAGE">py-tgcalls</option>
 
   <!--REDIRECTS - they are case-insensitive -->
   <redirects>
