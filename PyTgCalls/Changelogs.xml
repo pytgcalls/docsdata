@@ -19,12 +19,8 @@
                 <item><text><b>YtDlp Support:</b> MediaStream now supports links from YouTube using YtDlp, for example: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=iSbLHrrqmoM</a></text></item>
                 <item>
                     <text><b>MediaStream Quality Support:</b> MediaStream now accepts enhanced quality options for audio and video parameters. For audio, use <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>, and for video, use <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>.</text>
-                    <multisyntax id="quality_design">
-                        <tabs>
-                            <tab id="before">Before</tab>
-                            <tab id="after">After</tab>
-                        </tabs>
-                        <syntax-highlight id="before">
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
                             call_py.join_group_call(
                                 -1001234567890,
                                 MediaStream(
@@ -34,7 +30,7 @@
                                 ),
                             )
                         </syntax-highlight>
-                        <syntax-highlight id="after">
+                        <syntax-highlight>
                             call_py.join_group_call(
                                 -1001234567890,
                                 MediaStream(
@@ -112,17 +108,13 @@
                 <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, <docs-ref link="/PyTgCalls/Basic Methods/Join Group Call#Details">read here</docs-ref>.</text></item>
                 <item>
                     <text><b>Unified Stream Design:</b> Now you can do whatever you want, streaming audio, video, both, recording the stream etc. with just one class!.</text>
-                    <multisyntax id="stream_design">
-                        <tabs>
-                            <tab id="before">Before</tab>
-                            <tab id="after">After</tab>
-                        </tabs>
-                        <syntax-highlight id="before">
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
                             # Play audio and video from and MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
                                 AudioVideoPiped(
-                                  'input.mp4',
+                                    'input.mp4',
                                 ),
                             )
                             <br/>
@@ -142,7 +134,7 @@
                                 ),
                             )
                         </syntax-highlight>
-                        <syntax-highlight id="after">
+                        <syntax-highlight>
                             # Play audio and video from and MP4 file
                             call_py.join_group_call(
                                 -1001234567890,
