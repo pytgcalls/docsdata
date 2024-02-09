@@ -2,7 +2,7 @@
     <h1>Join Group Call</h1>
     <text>This method allows streaming a file to Telegram Group Calls.</text>
     <h3>Example</h3>
-    <syntax-highlight mark="10-15">
+    <syntax-highlight mark="11-16">
         from pytgcalls import Client
         from pytgcalls import idle
         from pytgcalls.types import MediaStream

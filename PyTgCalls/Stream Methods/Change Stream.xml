@@ -2,7 +2,7 @@
     <h1>Change Stream</h1>
     <config id="CHANGE_STREAM_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="10-15">
+    <syntax-highlight mark="11-16">
         from pytgcalls import Client
         from pytgcalls import idle
         from pytgcalls.types import MediaStream
