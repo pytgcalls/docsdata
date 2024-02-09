@@ -542,6 +542,133 @@
   </option>
   <!--end parameters-->
 
+  <homepage-config>
+    <pres-items>
+      <item>
+        <title>Play, easily.</title>
+        <description>Unlock endless possibilities: play whatever you want, be it audio or video, with just a few lines of code!</description>
+        <syntax-highlight>
+            from pytgcalls import PyTgCalls
+            from pytgcalls import idle
+            from pytgcalls.types import MediaStream
+            ...
+            api_id = 12345
+            api_hash = '0123456789abcdef0123456789abcdef'
+            ...
+            app = PyTgCalls(client)
+            app.start()
+            app.join_group_call(
+                -1001185324811,
+                MediaStream(
+                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                )
+            )
+            idle()
+        </syntax-highlight>
+        <discover-ref>PyTgCalls/Calling Methods.xml</discover-ref>
+      </item>
+      <item>
+        <title>Stay up to date.</title>
+        <description>Stay connected! Be notified every time a user joins or exits a voice chat. Never miss a moment!</description>
+        <syntax-highlight>
+            ...
+            app = PyTgCalls(client)
+            ...
+            @app.on_participants_change()
+            async def handler(client: PyTgCalls, update: Update):
+                print(chat_id)
+            ...
+            @app.on_left()
+            async def handler(client: PyTgCalls, chat_id: int):
+                print(chat_id)
+            ...
+            @app.on_kicked()
+            async def handler(client: PyTgCalls, service_msg):
+                print(chat_id)
+            ...
+            app.run()
+        </syntax-highlight>
+        <discover-ref>PyTgCalls/Handling Updates.xml</discover-ref>
+      </item>
+      <item>
+        <title>Play in real time..</title>
+        <description>Experience the thrill of live broadcasting! Stream your audio and/or video devices in real-time, without lag or any hiccups. It's like bringing the festival vibes straight to you!</description>
+        <syntax-highlight>
+            from pytgcalls import Client
+            from pytgcalls import idle
+            from pytgcalls.media_devices import MediaDevices
+            ...
+
+            app = PyTgCalls(client)
+            app.start()
+
+            ...  # Call API methods
+
+            app.join_group_call(
+                -1001185324811,
+                CaptureAudioDevice(
+                    MediaDevices.get_audio_devices()[0],
+                )
+            )
+
+            idle()
+        </syntax-highlight>
+        <discover-ref>PyTgCalls/Media devices.xml</discover-ref>
+      </item>
+    </pres-items>
+    <team>
+      <member>
+        <name>Laky</name>
+        <role>DevOps Engineer, Software Architect, Porting Engineer</role>
+        <github-username>Laky-64</github-username>
+        <telegram-username>Laky64</telegram-username>
+      </member>
+      <member>
+        <name>Giovanni</name>
+        <role>Senior UI/UX designer, Documenter</role>
+        <github-username>kuogi</github-username>
+        <telegram-username>kuogi</telegram-username>
+      </member>
+      <member>
+        <name>Avrumy</name>
+        <role>Mid-level NodeJS Developer</role>
+        <github-username>vrumger</github-username>
+        <telegram-username>twitface</telegram-username>
+      </member>
+      <member>
+        <name>Turi</name>
+        <role>Junior Python Developer</role>
+        <github-username>TuriOG</github-username>
+        <telegram-username>TuriOG</telegram-username>
+      </member>
+      <member>
+        <name>dogghi no</name>
+        <role>Junior DevOps, Tester</role>
+        <github-username>doggyhaha</github-username>
+        <telegram-username>cagavo</telegram-username>
+      </member>
+      <member>
+        <name>Valerio</name>
+        <role>Junior Go Developer, Tester</role>
+        <github-username>tappo03</github-username>
+        <telegram-username>tappo03</telegram-username>
+      </member>
+      <member>
+        <name>Nick</name>
+        <role>Tester</role>
+        <github-username>null-nick</github-username>
+        <telegram-username>GodsPro</telegram-username>
+      </member>
+      <member>
+        <name>BranchScope</name>
+        <role>Tester</role>
+        <github-username>branchscope</github-username>
+        <telegram-username>branchscope</telegram-username>
+      </member>
+    </team>
+  </homepage-config>
+
+  <!--TEMPORARY FALLBACK UNTIL SITE UPDATE-->
   <team>
     <member>
       <name>Laky</name>
