@@ -59,4 +59,29 @@
             </syntax-highlight>
         </subtext>
     </category>
+    <br/><br/>
+    <category>
+        <category-title><ref><sb>ntg_on_disconnect</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_DISCONNECT_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+
+                void myOnDisconnectCallback(uint32_t uid, int64_t chatID) {
+                    // Your callback logic here
+                }
+
+                int main() {
+                    uint32_t uid = ntg_init();
+
+                    ntg_on_disconnect(uid, myOnDisconnectCallback);
+
+                    ... // Your Code Here
+
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
 </page>
