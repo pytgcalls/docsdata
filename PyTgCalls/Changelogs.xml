@@ -49,6 +49,10 @@
                 <item><text>Now all raw methods like AudioParameters, VideoParameters, AudioStream, VideoStream, and Stream are all under <code>pytgcalls.types.raw</code> instead of <code>pytgcalls.types</code>.</text></item>
                 <item><text>The exception class <code>pytgcalls.exceptions.TelegramServerError</code> is now part of <code>ntgcalls.TelegramServerError</code>.</text></item>
             </list>
+            <h3 noref="true">Additional Notes</h3>
+            <text>
+                We're pleased to announce that pre-compiled wheels optimized for ARM64 devices are now available.
+            </text>
         </subtext>
         <separator/>
     </category>
