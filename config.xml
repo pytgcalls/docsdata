@@ -471,8 +471,8 @@
   </option>
 
   <option id="ARG_VIDEO_PARAMSv2">
-    <category-title><ref>audio_parameters</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>]]</category-title>
-    <config id="ARG_AUDIO_PARAMS_DESC"/>
+    <category-title><ref>video_parameters</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>]]</category-title>
+    <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_FFMPEG_PARAMS">
