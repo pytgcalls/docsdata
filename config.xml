@@ -550,16 +550,11 @@
 
   <homepage-config>
     <pres-items>
-      <item>
-        <title>Play, easily.</title>
-        <description>Unlock endless possibilities: play whatever you want, be it audio or video, with just a few lines of code!</description>
+      <file title="pytgcalls.py">
         <syntax-highlight>
             from pytgcalls import PyTgCalls
             from pytgcalls import idle
             from pytgcalls.types import MediaStream
-            ...
-            api_id = 12345
-            api_hash = '0123456789abcdef0123456789abcdef'
             ...
             app = PyTgCalls(client)
             app.start()
@@ -571,56 +566,30 @@
             )
             idle()
         </syntax-highlight>
-        <discover-ref>PyTgCalls/Calling Methods.xml</discover-ref>
-      </item>
-      <item>
-        <title>Stay up to date.</title>
-        <description>Stay connected! Be notified every time a user joins or exits a voice chat. Never miss a moment!</description>
-        <syntax-highlight>
-            ...
-            app = PyTgCalls(client)
-            ...
-            @app.on_participants_change()
-            async def handler(client: PyTgCalls, update: Update):
-                print(chat_id)
-            ...
-            @app.on_left()
-            async def handler(client: PyTgCalls, chat_id: int):
-                print(chat_id)
-            ...
-            @app.on_kicked()
-            async def handler(client: PyTgCalls, service_msg):
-                print(chat_id)
-            ...
-            app.run()
+      </file>
+      <file title="pytgcalls.c">
+        <syntax-highlight language="c">
+            #include &lt;stdint.h&gt;
+            #include "ntgcalls.h"
+
+            int main() {
+                uint32_t uid = ntg_init();
+
+                int64_t chatID = ...; // Obtain the chat ID
+                char* params = ...;  // Obtain connection parameters
+
+                int result = ntg_connect(uid, chatID, params);
+                if (result == 0) {
+                    // Successfully connected to the WebRTC
+                    ...
+                } else {
+                    printf("Failed to connect: %d\n", result);
+                }
+                ...
+                return 0;
+            }
         </syntax-highlight>
-        <discover-ref>PyTgCalls/Handling Updates.xml</discover-ref>
-      </item>
-      <item>
-        <title>Play in real time..</title>
-        <description>Experience the thrill of live broadcasting! Stream your audio and/or video devices in real-time, without lag or any hiccups. It's like bringing the festival vibes straight to you!</description>
-        <syntax-highlight>
-            from pytgcalls import Client
-            from pytgcalls import idle
-            from pytgcalls.media_devices import MediaDevices
-            ...
-
-            app = PyTgCalls(client)
-            app.start()
-
-            ...  # Call API methods
-
-            app.join_group_call(
-                -1001185324811,
-                CaptureAudioDevice(
-                    MediaDevices.get_audio_devices()[0],
-                )
-            )
-
-            idle()
-        </syntax-highlight>
-        <discover-ref>PyTgCalls/Media devices.xml</discover-ref>
-      </item>
+      </file>
     </pres-items>
     <team>
       <member>
