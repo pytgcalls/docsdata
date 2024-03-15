@@ -177,7 +177,7 @@
   </option>
 
   <option id="VIDEO_CONFIG_DESC">
-    <text>Video Configuration for the Stream.</text>
+    <text>Stream’s Video Configuration</text>
   </option>
 
   <option id="VIDEO_FPS_DESC">
