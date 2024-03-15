@@ -2,10 +2,10 @@
     <h1>ntg_video_description_struct</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef struct</shi> <ref><sb>ntg_audio_description_struct</sb></ref>
+        <shi language="c">typedef struct</shi> <ref><sb>ntg_video_description_struct</sb></ref>
     </category-title>
     <subtext>
-        <config id="AUDIO_CONFIG_DESC"/>
+        <config id="VIDEO_CONFIG_DESC"/>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
