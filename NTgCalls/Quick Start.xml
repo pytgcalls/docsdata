@@ -16,6 +16,7 @@
     <br/>
     <github-ref user="pytgcalls" reponame="pytgcalls"/>
     <github-ref user="roj1512" reponame="ntgcalls_deno"/>
+    <github-ref user="YouKnow-sys" reponame="ntgcalls-rs"/>
     <h2>Enjoy the API</h2>
     <text>
         What we've just seen are simplified ports of NTgCalls. However, now let's delve deeper!
