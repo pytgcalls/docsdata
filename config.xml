@@ -643,58 +643,6 @@
     </team>
   </homepage-config>
 
-  <!--TEMPORARY FALLBACK UNTIL SITE UPDATE-->
-  <team>
-    <member>
-      <name>Laky</name>
-      <role>DevOps Engineer, Software Architect, Porting Engineer</role>
-      <github-username>Laky-64</github-username>
-      <telegram-username>Laky64</telegram-username>
-    </member>
-    <member>
-      <name>Giovanni</name>
-      <role>Senior UI/UX designer, Documenter</role>
-      <github-username>kuogi</github-username>
-      <telegram-username>kuogi</telegram-username>
-    </member>
-    <member>
-      <name>Avrumy</name>
-      <role>Mid-level NodeJS Developer</role>
-      <github-username>vrumger</github-username>
-      <telegram-username>twitface</telegram-username>
-    </member>
-    <member>
-      <name>Turi</name>
-      <role>Junior Python Developer</role>
-      <github-username>TuriOG</github-username>
-      <telegram-username>TuriOG</telegram-username>
-    </member>
-    <member>
-      <name>dogghi no</name>
-      <role>Junior DevOps, Tester</role>
-      <github-username>doggyhaha</github-username>
-      <telegram-username>cagavo</telegram-username>
-    </member>
-    <member>
-      <name>Valerio</name>
-      <role>Junior Go Developer, Tester</role>
-      <github-username>tappo03</github-username>
-      <telegram-username>tappo03</telegram-username>
-    </member>
-    <member>
-      <name>Nick</name>
-      <role>Tester</role>
-      <github-username>null-nick</github-username>
-      <telegram-username>GodsPro</telegram-username>
-    </member>
-    <member>
-      <name>BranchScope</name>
-      <role>Tester</role>
-      <github-username>branchscope</github-username>
-      <telegram-username>branchscope</telegram-username>
-    </member>
-  </team>
-
   <files-list id="NTgCalls" basepath="NTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
