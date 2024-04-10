@@ -1,0 +1,20 @@
+<page>
+    <h1>Call Status</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.Call.<sb>Status</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration for managing call statuses.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>PLAYING</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Indicates that the call is playing.</text></subtext>
+            <category-title><ref><sb>PAUSED</sb></ref> <shi>=</shi> 2</category-title>
+            <subtext><text>Indicates that the call is paused.</text></subtext>
+            <category-title><ref><sb>IDLE</sb></ref> <shi>=</shi> 4</category-title>
+            <subtext><text>Indicates that the call is idle.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

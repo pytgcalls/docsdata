@@ -1,6 +1,9 @@
 <page>
-    <h1>Get Call</h1>
-    <text>This method checks if a Group Call exists; if not, it raises an error</text>
+    <h1>Leave Call</h1>
+    <alert type="warning">
+        <text>This method replaces the deprecated <code>leave_group_call</code> method.</text>
+    </alert>
+    <text>This method allows leaving and stopping a group call or a private call, or declining a private call.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
         from pytgcalls import Client
@@ -12,7 +15,7 @@
 
         ...  # Call API methods
 
-        app.get_call(
+        app.leave_call(
             -1001185324811,
         )
 
@@ -21,10 +24,10 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>get_call</sb></ref>() <shi>-></shi> <docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>
+        <ref>PyTgCalls.<sb>leave_call</sb></ref>()
     </category-title>
     <subtext>
-        <text>Check/Get an active call</text>
+        <text>Leave a group call or a private call.</text>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
@@ -36,7 +39,7 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="GROUPCALL_NOT_FOUND_EXCEPTION"/>
+                <config id="CONNECTION_EXCEPTIONS"/>
             </subtext>
         </category>
     </subtext>

@@ -109,7 +109,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, <docs-ref link="/PyTgCalls/Basic Methods/Join Group Call#Details">read here</docs-ref>.</text></item>
+                <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, <docs-ref link="/PyTgCalls/Basic Methods/Play#Details">read here</docs-ref>.</text></item>
                 <item>
                     <text><b>Unified Stream Design:</b> Now you can do whatever you want, streaming audio, video, both, recording the stream etc. with just one class!.</text>
                     <multisyntax as-blame="true">

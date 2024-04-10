@@ -1,0 +1,18 @@
+<page>
+    <h1>ChatUpdate</h1>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>ChatUpdate</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Represents a chat update.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <config id="RET_INT_ID"/>
+            <category-title><ref>status</ref> -> <docs-ref link="/PyTgCalls/Available Enums/Chat Status">Status</docs-ref></category-title>
+            <subtext><text>Status of the chat.</text></subtext>
+            <category-title><ref>action</ref> -> <shi>Any</shi></category-title>
+            <subtext><text>Action of the chat.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

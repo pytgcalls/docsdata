@@ -1,0 +1,93 @@
+<page>
+    <h1>Filters</h1>
+    <text>
+        Filters are objects that can be used to filter the content of incoming updates.
+        <docs-ref link="/PyTgCalls/Using Filters">Read more about how filters work.</docs-ref>
+    </text>
+    <h2>Details</h2>
+    <category>
+        <category-title><ref>pytgcalls.filters.<sb>create</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Easily create a custom filter.
+
+                Custom filters give you extra control over which updates are allowed or not to be processed by your handlers.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>func</ref>: <shi>callable</shi></category-title>
+                <subtext>
+                    <text>
+                        A function that accepts three positional arguments (filter, client, update) and returns a boolean: True if the update
+                        should be handled, False otherwise. The filter argument refers to the filter itself and can be used to access keyword
+                        arguments (read below). The client argument refers to the Client that received the update. The update argument type will
+                        vary depending on which <docs-ref link="/PyTgCalls/Decorators">Handler</docs-ref> is coming from. Your function body can then access the incoming update attributes and decide
+                        whether to allow it or not.
+                    </text>
+                </subtext>
+                <category-title><ref>name</ref>: Optional[<shi>str</shi>]</category-title>
+                <subtext>
+                    <text>
+                        Your filter’s name. Can be anything you like. Defaults to "CustomFilter".
+                    </text>
+                </subtext>
+                <category-title><ref>**kwargs</ref>: Optional[Any]</category-title>
+                <subtext>
+                    <text>
+                        Any additional keyword arguments you want to pass to your filter function.
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
+        <br/>
+        <category-title><ref>pytgcalls.filters.<sb>me</sb></ref></category-title>
+        <subtext>
+            <text>
+                Filter updates for yourself.
+            </text>
+        </subtext>
+        <br/>
+        <category-title><ref>pytgcalls.filters.<sb>stream_ended</sb></ref></category-title>
+        <subtext>
+            <text>
+                Filter updates for when a stream ends.
+            </text>
+        </subtext>
+        <br/>
+        <category-title><ref>pytgcalls.filters.<sb>chat</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Filter updates coming from one or more chats.
+                You can use <a href="https://docs.python.org/3/library/stdtypes.html#set">set bound methods</a> to manipulate the chats container.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>chats</ref>: Union[<shi>int</shi>, <shi>str</shi>, <shi>list</shi>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more chat ids/usernames to filter chats. Defaults to None (no chats).
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
+        <br/>
+        <category-title><ref>pytgcalls.filters.<sb>chat_update</sb></ref></category-title>
+        <subtext>
+            <text>
+                Filter specific type of chat updates.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>flags</ref>: <docs-ref link="/PyTgCalls/Available Enums/ChatUpdate Status">ChatUpdate.Status</docs-ref></category-title>
+                <subtext>
+                    <text>
+                        Pass one or more flags to filter chat updates.
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
+    </category>
+</page>

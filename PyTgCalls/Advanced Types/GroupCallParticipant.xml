@@ -32,6 +32,12 @@
 
             <category-title><ref><sb>volume</sb></ref> <shi>-> int</shi></category-title>
             <subtext><text>Volume level of the participant.</text></subtext>
+
+            <category-title><ref><sb>joined</sb></ref> <shi>-> bool</shi></category-title>
+            <subtext><text>Whether the participant has joined the call.</text></subtext>
+
+            <category-title><ref><sb>left</sb></ref> <shi>-> bool</shi></category-title>
+            <subtext><text>Whether the participant has left the call.</text></subtext>
         </subtext>
     </subtext>
 </page>

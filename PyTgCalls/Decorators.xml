@@ -7,16 +7,17 @@
         Decorators allow you to register callback functions for handling updates in a much easier and cleaner way.
         All you need to do is add the decorators on top of your functions.
     </text>
-    <syntax-highlight mark="7">
+    <syntax-highlight mark="8-9">
         from pytgcalls import PyTgCalls
         from pytgcalls.types import Update
+        from pytgcalls import filters as call_filters
         ...
         client = # Here Your MTProto Client
         app = PyTgCalls(client)
 
-        @app.on_participants_change()
+        @app.on_update(call_filters.stream_ended)
         async def handler(client: PyTgCalls, update: Update):
-            print(message)
+            print(update)
 
         app.run()
     </syntax-highlight>
@@ -24,121 +25,25 @@
     <h1>PyTgCalls Decorators</h1>
     <br/>
     <category>
-        <category-title><ref>@PyTgCalls.<sb>on_closed_voice_chat</sb></ref>()</category-title>
+        <category-title><ref>@PyTgCalls.<sb>on_update</sb></ref>()</category-title>
         <subtext>
             <text>
-                Decorator for handling closed voice chat events.
-
-                When a video chat is closed, this decorator will be triggered.
+                Decorator for handling all incoming updates.
+                When any update is received, this decorator will be triggered.
             </text>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>filters</ref>: Optional[<docs-ref link="/PyTgCalls/Filters">Filters</docs-ref>]</category-title>
+            </subtext>
             <h3>Example</h3>
-            <syntax-highlight mark="4-5">
+            <syntax-highlight mark="5-6">
+                from pytgcalls.types import Update
                 ...
                 app = PyTgCalls(client)
                 ...
-                @app.on_closed_voice_chat()
-                async def handler(client: PyTgCalls, chat_id: int):
-                    print(chat_id)
-                ...
-                app.run()
-            </syntax-highlight>
-        </subtext>
-        <br/><br/>
-        <category-title><ref>@PyTgCalls.<sb>on_group_call_invite</sb></ref>()</category-title>
-        <subtext>
-            <text>
-                Decorator for handling voice chat invitations.
-
-                When your userbot is invited to a voice chat, this decorator will be triggered.
-            </text>
-            <h3>Example</h3>
-            <syntax-highlight mark="4-5">
-                ...
-                app = PyTgCalls(client)
-                ...
-                @app.on_group_call_invite()
-                async def handler(client: PyTgCalls, service_msg):
-                    print(chat_id)
-                ...
-                app.run()
-            </syntax-highlight>
-        </subtext>
-        <br/><br/>
-        <category-title><ref>@PyTgCalls.<sb>on_kicked</sb></ref>()</category-title>
-        <subtext>
-            <text>
-                Decorator for handling kicks from groups/channels.
-
-                When your userbot is kicked from a group or channel, this decorator will be triggered.
-            </text>
-            <h3>Example</h3>
-            <syntax-highlight mark="4-5">
-                ...
-                app = PyTgCalls(client)
-                ...
-                @app.on_kicked()
-                async def handler(client: PyTgCalls, service_msg):
-                    print(chat_id)
-                ...
-                app.run()
-            </syntax-highlight>
-        </subtext>
-        <br/><br/>
-        <category-title><ref>@PyTgCalls.<sb>on_left</sb></ref>()</category-title>
-        <subtext>
-            <text>
-                Decorator for handling when the userbot leaves a group/channel.
-
-                When your userbot leaves a group or channel, this decorator will be triggered.
-            </text>
-            <h3>Example</h3>
-            <syntax-highlight mark="4-5">
-                ...
-                app = PyTgCalls(client)
-                ...
-                @app.on_left()
-                async def handler(client: PyTgCalls, chat_id: int):
-                    print(chat_id)
-                ...
-                app.run()
-            </syntax-highlight>
-        </subtext>
-        <br/><br/>
-        <category-title><ref>@PyTgCalls.<sb>on_participants_change</sb></ref>()</category-title>
-        <subtext>
-            <text>
-                Decorator for handling changes in the participant list of a group call.
-
-                When the participant list changes, this decorator will be triggered.
-            </text>
-            <h3>Example</h3>
-            <syntax-highlight mark="4-5">
-                ...
-                app = PyTgCalls(client)
-                ...
-                @app.on_participants_change()
+                @app.on_update()
                 async def handler(client: PyTgCalls, update: Update):
                     print(chat_id)
-                ...
-                app.run()
-            </syntax-highlight>
-        </subtext>
-        <br/><br/>
-        <category-title><ref>@PyTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
-        <subtext>
-            <text>
-                Decorator for handling when a stream playback ends.
-
-                When a stream ends, this decorator will be triggered.
-            </text>
-            <h3>Example</h3>
-            <syntax-highlight mark="4-5">
-                ...
-                app = PyTgCalls(client)
-                ...
-                @app.on_stream_end()
-                async def handler(client: PyTgCalls, update: Update):
-                print(chat_id)
                 ...
                 app.run()
             </syntax-highlight>
@@ -146,7 +51,7 @@
     </category>
     <br/>
     <h1>CustomApi Decorators</h1>
-    <category-title><ref><sb>@on_update_custom_api</sb></ref>()</category-title>
+    <category-title><ref>@CustomApi.<sb>on_update_custom_api</sb></ref>()</category-title>
     <subtext>
         <text>Decorator for handling incoming HTTP events.</text>
         <pg-title>RAISES</pg-title>

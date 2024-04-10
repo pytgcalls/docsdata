@@ -1,0 +1,18 @@
+<page>
+    <h1>Call Type</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.Call.<sb>Type</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration for managing call types.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>GROUP</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Group call type.</text></subtext>
+            <category-title><ref><sb>PRIVATE</sb></ref> <shi>=</shi> 2</category-title>
+            <subtext><text>Private call type.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

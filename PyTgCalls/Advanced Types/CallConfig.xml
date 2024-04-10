@@ -1,0 +1,16 @@
+<page>
+    <h1>CallConfig</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>CallConfig</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Configuration descriptor for a private call</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>timeout</ref>: <shi>int</shi></category-title>
+            <subtext><text>Timeout for an answer from the user</text></subtext>
+        </subtext>
+    </subtext>
+</page>
