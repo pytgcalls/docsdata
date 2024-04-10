@@ -73,7 +73,7 @@
             </subtext>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>chat_update</sb></ref></category-title>
+        <category-title><ref>pytgcalls.filters.<sb>chat_update</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter specific type of chat updates.
