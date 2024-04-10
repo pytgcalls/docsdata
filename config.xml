@@ -591,8 +591,30 @@
         </syntax-highlight>
       </file>
     </pres-items>
+    <numeric-pres-points>
+      <item
+        title="20 MLN+"
+        description="Total downloads from PyPi or Github"
+      />
+      <item
+        title="30,000+"
+        description="Projects that have adopted PyTgCalls or NTgCalls"
+        origin="Available NTgCalls since 2023"
+      />
+      <item
+        title="78,9%"
+        description="Developer preference for PyTgCalls"
+        origin="Based on Github stats 2024"
+      />
+    </numeric-pres-points>
+    <citation>
+      <value>
+        Our mission is to make Telegram calls effortless for developers of all backgrounds, from complex class to seamless integration.<br/>
+        No prior WebRTC or C++ experience is required.
+      </value>
+    </citation>
     <team>
-      <member>
+      <member owner="true">
         <name>Laky</name>
         <role>DevOps Engineer, Software Architect, Porting Engineer</role>
         <github-username>Laky-64</github-username>
