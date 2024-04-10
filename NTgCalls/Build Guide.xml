@@ -54,8 +54,8 @@
         <list style="numbers">
             <item>
                 <text>
-                    <b>Install Microsoft Visual Studio 2022:</b><br/>
-                    Install Microsoft Visual Studio 2022 with the C++ workload. You can download it from the <a href="https://visualstudio.microsoft.com/downloads/">official website</a>.
+                    <b>Install Microsoft Visual Studio 2019:</b><br/>
+                    Install Microsoft Visual Studio 2019 with the C++ workload. You can download it from the <a href="https://visualstudio.microsoft.com/downloads/">official website</a>.
                 </text>
             </item>
             <item>
@@ -155,8 +155,8 @@
                 </item>
                 <item>
                     <text>
-                        <b>Generate Shared Library:</b><br/>
-                        Run the following command to generate the shared libraries in Release mode:
+                        <b>Generate Library:</b><br/>
+                        Run the following command to generate the libraries:
                     </text>
                     <multisyntax id="build_type">
                         <tabs>
@@ -164,10 +164,16 @@
                             <tab id="release">Release</tab>
                         </tabs>
                         <syntax-highlight language="bash" id="debug">
-                            $ python3 setup.py build_shared --debug
+                            # Shared
+                            $ python3 setup.py build_lib --debug
+                            # Static
+                            $ python3 setup.py build_lib --debug --static
                         </syntax-highlight>
                         <syntax-highlight language="bash" id="release">
-                            $ python3 setup.py build_shared
+                            # Shared
+                            $ python3 setup.py build_lib
+                            # Static
+                            $ python3 setup.py build_lib --static
                         </syntax-highlight>
                     </multisyntax>
                 </item>
