@@ -39,12 +39,14 @@
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
   </option>
 
+  <option id="BASE_SYNC_C_EXCEPTION">
+    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
+    <subtext><text>The provided UID is invalid.</text></subtext>
+  </option>
+
   <option id="BASE_C_EXCEPTIONS">
     <category-title><ref><sb><shi language="c">#NTG_UNKNOWN_EXCEPTION</shi></sb></ref> <shi>-1</shi></category-title>
     <subtext><text>An unknown exception occurred.</text></subtext>
-
-    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
-    <subtext><text>The provided UID is invalid.</text></subtext>
   </option>
 
   <option id="BASE_CONNECTION_EXCEPTIONS">
@@ -146,6 +148,16 @@
         You should allocate a larger buffer and try again.
       </text>
     </subtext>
+  </option>
+
+  <option id="CRYPTO_ERROR_C">
+    <category-title><ref><sb><shi language="c">#NTG_CRYPTO_ERROR</shi></sb></ref> <shi>-102</shi></category-title>
+    <subtext><text>An error occurred while encrypting or decrypting data.</text></subtext>
+  </option>
+
+  <option id="INVALID_TRANSPORT_C">
+    <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
+    <subtext><text>The specified transport is invalid.</text></subtext>
   </option>
   <!--end exceptions-->
 
@@ -389,9 +401,15 @@
     </text>
   </option>
 
-  <option id="CALLBACK_DISCONNECT_DESC">
+  <option id="CALLBACK_CONN_CHANGE_DESC">
     <text>
-      Callback to listen for when the WebRTC connection is closed. When a WebRTC connection will be closed, this callback will be triggered.
+      Callback to listen for when the WebRTC connection has changed his state.
+    </text>
+  </option>
+
+  <option id="CALLBACK_SIGNALING_DESC">
+    <text>
+      Callback for handling when a signaling message is received.
     </text>
   </option>
 
@@ -418,6 +436,116 @@
 
   <option id="BUG_FIX_CHANGELOGS">
     <item><text><b>Bug Fixes:</b> Addressed various bugs for a more stable experience.</text></item>
+  </option>
+
+  <option id="CREATE_P2P_DESC">
+    <text>
+      This method allows creating a Private Call connection with the output params from Telegram method
+      <a href="https://core.telegram.org/method/messages.getDhConfig">GetDhConfig</a> and <a href="https://core.telegram.org/constructor/phoneCallRequested">PhoneCallRequested</a> when is an incoming call
+      and then use the output params for <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> (When is an incoming call) or <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> with <a href="https://core.telegram.org/constructor/phoneCallProtocol">Protocol</a>.
+    </text>
+  </option>
+
+  <option id="CREATE_P2P_DESC2">
+    <text>Create a connection for a Private Call.</text>
+  </option>
+
+  <option id="EXCHANGE_KEYS_DESC">
+    <text>
+      This method allows exchanging keys for a Private Call connection with the output params from
+      <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> when is an outgoing call or <a href="https://core.telegram.org/constructor/phoneCall">PhoneCall</a> when is an incoming call.
+    </text>
+  </option>
+
+  <option id="EXCHANGE_KEYS_DESC2">
+    <text>Exchange keys for a Private Call connection.</text>
+  </option>
+
+  <option id="DH_CONFIG_DESC">
+    <text>Diffie-Hellman configuration for key exchange.</text>
+  </option>
+
+  <option id="G_DESC">
+    <text>New value prime, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text>
+  </option>
+
+  <option id="P_DESC">
+    <text>New value primitive root, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text>
+  </option>
+
+  <option id="R_DESC">
+    <text>Random sequence of bytes of assigned length.</text>
+  </option>
+
+  <option id="G_A_HASH_DESC">
+      <text>Parameter for key exchange (Only when is incoming call).</text>
+  </option>
+
+  <option id="G_A_OR_B_DESC">
+    <text>Parameter for key exchange.</text>
+  </option>
+
+  <option id="FINGERPRINT_DESC">
+    <text>Fingerprint for the connection (Optional when is an incoming call).</text>
+  </option>
+
+  <option id="AUTH_PARAMS_DESC">
+    <text>Authentication parameters for the connection.</text>
+  </option>
+
+  <option id="CONNECT_P2P_DESC">
+    <text>
+      This method allows connecting to a Private Call with the output params from Telegram method
+      <a href="https://core.telegram.org/method/phone.confirmCall">ConfirmCall</a> when is an outgoing call or <a href="https://core.telegram.org/constructor/phoneCall">PhoneCall</a> when is an incoming call.
+    </text>
+  </option>
+
+  <option id="CONNECT_P2P_DESC2">
+    <text>Set connection params for a Private Call obtained from Telegram.</text>
+  </option>
+
+  <option id="RTC_SERVER_DESC">
+    <text>List of endpoints the user can connect to exchange call data.</text>
+  </option>
+
+  <option id="GET_PROTOCOL_DESC">
+    <text>
+      This method allows getting the protocol for a Private Call connection with the output params for Telegram constructor
+      <a href="https://core.telegram.org/constructor/phoneCallProtocol">PhoneCallProtocol</a>.
+    </text>
+  </option>
+
+  <option id="GET_PROTOCOL_DESC2">
+    <text>Get the protocol for a Private Call connection.</text>
+  </option>
+
+  <option id="PROTOCOL_DESC">
+    <text>Protocol for a Private Call connection.</text>
+  </option>
+
+  <option id="MIN_LAYER_DESC">
+    <text>Minimum layer for remote connection.</text>
+  </option>
+
+  <option id="MAX_LAYER_DESC">
+      <text>Maximum layer for remote connection.</text>
+  </option>
+
+  <option id="UDP_P2P_DESC">
+    <text>Whether to allow P2P connection to the other participant.</text>
+  </option>
+
+  <option id="UDP_REFLECTOR_DESC">
+    <text>Whether to allow connection to the other participants through the reflector servers.</text>
+  </option>
+
+  <option id="LIBRARY_VERSIONS_DESC">
+    <text>
+      When using <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> and <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a>,
+      specify all library versions supported by the client.
+      The server will merge and choose the best library version supported by both peers, returning only the best
+      value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
+    </text>
   </option>
   <!--end descriptions-->
 
@@ -518,7 +646,7 @@
     <config id="INPUT_MODE_DESC"/>
   </option>
 
-  <option id="ARG_MEDIA">
+  <option id="ARG_MEDIA_C">
     <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
@@ -551,6 +679,26 @@
   <option id="ARG_SCREEN_DEVICE">
     <category-title><ref>screen_info</ref>: <code>pytgcalls.ScreenInfo</code></category-title>
     <subtext><text>The video media device.</text></subtext>
+  </option>
+
+  <option id="ARG_CUSTOM_DATA">
+    <category-title><shi language="c">void*</shi> <ref><sb>userData</sb></ref></category-title>
+    <subtext><text>Custom data that can be passed to the callback function.</text></subtext>
+  </option>
+
+  <option id="ARG_ASYNC_STRUCT">
+    <category-title><docs-ref link="/NTgCalls/Using Async">ntg_async_struct</docs-ref><shi language="c">*</shi> <ref><sb>future</sb></ref></category-title>
+    <subtext><text>The <code>ntg_async_struct</code> instance that will be used to track the async operation.</text></subtext>
+  </option>
+
+  <option id="ARG_MEDIA">
+    <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref>desc</ref></category-title>
+    <config id="ARG_MEDIA_DESC"/>
+  </option>
+
+  <option id="ARG_CONN_ALREADY_EXISTS_C">
+    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
+    <subtext><text>A connection with the specified ID already exists.</text></subtext>
   </option>
   <!--end parameters-->
 
@@ -709,9 +857,13 @@
     <microtag>C Api</microtag>
     <file>Getting Started.xml</file>
     <file>Callback Registration.xml</file>
+    <file>Using Async.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>ntg_connect.xml</file>
-      <file>ntg_get_params.xml</file>
+      <file>ntg_connect_p2p.xml</file>
+      <file>ntg_create.xml</file>
+      <file>ntg_create_p2p.xml</file>
+      <file>ntg_exchange_keys.xml</file>
       <file>ntg_stop.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
@@ -725,13 +877,17 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
+      <file>ntg_get_protocol.xml</file>
       <file>ntg_get_state.xml</file>
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
-      <file>ntg_group_call_struct.xml</file>
+      <file>ntg_call_struct.xml</file>
+      <file>ntg_dh_config_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
+      <file>ntg_protocol_struct.xml</file>
+      <file>ntg_rtc_server_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">

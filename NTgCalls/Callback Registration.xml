@@ -9,76 +9,141 @@
     <alert type="note">
         When registering callbacks, keep in mind that each registration replaces the previously set callback.
     </alert>
-    <br/>
+    <separator/>
+    <br/><br/>
     <category>
         <category-title><ref><sb>ntg_on_stream_end</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_END_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_stream_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>The callback function to be executed when the stream ends.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
             <h3>Example</h3>
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
-
-                void myStreamEndCallback(uint32_t uid, int64_t chatID, ntg_stream_type_enum type) {
+                ...
+                void myStreamEndCallback(uint32_t uid, int64_t chatID, ntg_stream_type_enum type, void *data) {
                     // Your callback logic here
                 }
-
+                ...
                 int main() {
                     uint32_t uid = ntg_init();
-
-                    ntg_on_stream_end(uid, myStreamEndCallback);
-
                     ... // Your Code Here
-
+                    ntg_on_stream_end(uid, myStreamEndCallback, customData);
+                    ...
                     return 0;
                 }
             </syntax-highlight>
         </subtext>
+        <separator/>
     </category>
     <br/><br/>
     <category>
         <category-title><ref><sb>ntg_on_upgrade</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_UPGRADE_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_upgrade_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>The callback function to be executed when the stream needs to update MTProto stream parameters.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
             <h3>Example</h3>
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
-
-                void myOnUpgradeCallback(uint32_t uid, int64_t chatID, ntg_media_state_struct mediaState) {
+                ...
+                void myOnUpgradeCallback(uint32_t uid, int64_t chatID, ntg_media_state_struct mediaState, void *data) {
                     // Your callback logic here
                 }
-
+                ...
                 int main() {
                     uint32_t uid = ntg_init();
-
-                    ntg_on_upgrade(uid, myOnUpgradeCallback);
-
                     ... // Your Code Here
-
+                    ntg_on_upgrade(uid, myOnUpgradeCallback, customData);
+                    ...
                     return 0;
                 }
             </syntax-highlight>
         </subtext>
+        <separator/>
     </category>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_on_disconnect</sb></ref>()</category-title>
+        <category-title><ref><sb>ntg_on_connection_change</sb></ref>()</category-title>
         <subtext>
-            <config id="CALLBACK_DISCONNECT_DESC"/>
+            <config id="CALLBACK_CONN_CHANGE_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_connection_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>The callback function to be executed when the connection state changes.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
             <h3>Example</h3>
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
-
-                void myOnDisconnectCallback(uint32_t uid, int64_t chatID) {
+                ...
+                void myOnConnectionChangeCallback(uint32_t uid, int64_t chatID, ntg_connection_state_enum state, void *data) {
                     // Your callback logic here
                 }
-
+                ...
                 int main() {
                     uint32_t uid = ntg_init();
-
-                    ntg_on_disconnect(uid, myOnDisconnectCallback);
-
                     ... // Your Code Here
-
+                    ntg_on_connection_change(uid, myOnConnectionChangeCallback, customData);
+                    ...
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+        <separator/>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref><sb>ntg_on_signaling_data</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_SIGNALING_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_signaling_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>The callback function to be executed when signaling data is received.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+                ...
+                void myOnSignalingDataCallback(uint32_t uid, int64_t chatID, const char *data, size_t size, void *customData) {
+                    // Your callback logic here
+                }
+                ...
+                int main() {
+                    uint32_t uid = ntg_init();
+                    ... // Your Code Here
+                    ntg_on_signaling_data(uid, myOnSignalingDataCallback, customData);
+                    ...
                     return 0;
                 }
             </syntax-highlight>

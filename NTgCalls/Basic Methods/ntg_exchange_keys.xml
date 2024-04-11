@@ -1,0 +1,64 @@
+<page>
+    <h1>ntg_exchange_keys</h1>
+    <config id="EXCHANGE_KEYS_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="14">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+            ...
+            int64_t chatID = ...; // Obtain the chat ID
+            uint8_t* g_a_or_b = ...; // Obtain the parameter for key exchange
+            int sizeGAOrB = ...; // Obtain the size of the parameter for key exchange
+            int64_t fingerprint = ...; // Obtain the fingerprint
+            ntg_auth_params_struct buffer;
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_exchange_keys(uid, chatID, g_a_or_b, sizeGAOrB, fingerprint, &amp;buffer, &amp;future);
+            // Wait for the async operation to complete
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_exchange_keys</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="EXCHANGE_KEYS_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+                <category-title><shi language="c">uint8_t*</shi> <ref><sb>g_a_or_b</sb></ref></category-title>
+                <subtext><config id="G_A_OR_B_DESC"/></subtext>
+                <category-title><shi language="c">int</shi> <ref><sb>sizeGAOrB</sb></ref></category-title>
+                <subtext><text>Size of the parameter for key exchange</text></subtext>
+                <category-title><shi language="c">int64_t</shi> <ref><sb>fingerprint</sb></ref></category-title>
+                <subtext><config id="FINGERPRINT_DESC"/></subtext>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_auth_params_struct">ntg_auth_params_struct</docs-ref><shi language="c">*</shi> <ref><sb>authParams</sb></ref></category-title>
+                <subtext><config id="AUTH_PARAMS_DESC"/></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
+                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+                <config id="CRYPTO_ERROR_C"/>
+                <category-title><ref><sb><shi language="c">#NTG_MISSING_FINGERPRINT</shi></sb></ref> <shi>-103</shi></category-title>
+                <subtext><text>The fingerprint is missing (Happens only on outgoing calls)</text></subtext>
+            </subtext>
+        </category>
+    </subtext>
+</page>

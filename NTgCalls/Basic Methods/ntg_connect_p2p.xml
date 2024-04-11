@@ -1,0 +1,79 @@
+<page>
+    <h1>ntg_connect_p2p</h1>
+    <config id="CONNECT_P2P_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="15-24">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+            ...
+            int64_t chatID = ...; // Obtain the chat ID
+            ntg_rtc_server_struct* rtcServers = ...; // Obtain the RTC servers
+            int rtcServersCount = ...; // Obtain the count of RTC servers
+            char** libraryVersions = ...; // Obtain the library versions
+            int libraryVersionCount = ...; // Obtain the count of library versions
+            bool p2pAllowed = ...; // Obtain whether P2P is allowed
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_connect_p2p(
+                uid,
+                chatID,
+                rtcServers,
+                rtcServersCount,
+                libraryVersions,
+                libraryVersionCount,
+                p2pAllowed,
+                &amp;future
+            );
+            // Wait for the async operation to complete
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_connect_p2p</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="CONNECT_P2P_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_rtc_server_struct">ntg_rtc_server_struct</docs-ref><shi language="c">*</shi> <ref><sb>servers</sb></ref></category-title>
+                <subtext><config id="RTC_SERVER_DESC"/></subtext>
+                <category-title><shi language="c">int</shi> <ref><sb>serversSize</sb></ref></category-title>
+                <subtext><text>Count of list of endpoints</text></subtext>
+                <category-title><shi language="c">char**</shi> <ref><sb>versions</sb></ref></category-title>
+                <subtext><config id="LIBRARY_VERSIONS_DESC"/></subtext>
+                <category-title><shi language="c">int</shi> <ref><sb>versionsSize</sb></ref></category-title>
+                <subtext><text>Size of the versions array.</text></subtext>
+                <category-title><shi language="c">bool</shi> <ref><sb>p2pAllowed</sb></ref></category-title>
+                <subtext><text>Whether P2P is allowed</text></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
+                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+                <config id="CRYPTO_ERROR_C"/>
+                <category-title><ref><sb><shi language="c">#NTG_SIGNALING_ERROR</shi></sb></ref> <shi>-104</shi></category-title>
+                <subtext><text>An error occurred during signaling</text></subtext>
+                <category-title><ref><sb><shi language="c">#NTG_SIGNALING_UNSUPPORTED</shi></sb></ref> <shi>-105</shi></category-title>
+                <subtext><text>The current protocol is not supported</text></subtext>
+                <config id="INVALID_TRANSPORT_C"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

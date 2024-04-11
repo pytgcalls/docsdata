@@ -2,23 +2,19 @@
     <h1>ntg_connect</h1>
     <config id="CONNECT_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="10">
+    <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
             uint32_t uid = ntg_init();
-
+            ...
             int64_t chatID = ...; // Obtain the chat ID
             char* params = ...;  // Obtain connection parameters
-
-            int result = ntg_connect(uid, chatID, params);
-            if (result == 0) {
-                // Successfully connected to the WebRTC
-                ...
-            } else {
-                printf("Failed to connect: %d\n", result);
-            }
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_connect(uid, chatID, params, &amp;future);
+            // Wait for the async operation to complete
             ...
             return 0;
         }
@@ -39,19 +35,24 @@
 
                 <category-title><shi language="c">char*</shi> <ref>params</ref></category-title>
                 <config id="TG_PARAMS_DESC"/>
+                <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>ERROR CODES</pg-title>
             <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
 
                 <category-title><ref><sb><shi language="c">#NTG_RTMP_NEEDED</shi></sb></ref> <shi>-300</shi></category-title>
                 <subtext><text>This error occurs when attempting to join a group call that requires an RTMP transport.</text></subtext>
 
-                <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
-                <subtext><text>The specified transport is invalid.</text></subtext>
+                <config id="INVALID_TRANSPORT_C"/>
 
                 <category-title><ref><sb><shi language="c">#NTG_CONNECTION_FAILED</shi></sb></ref> <shi>-302</shi></category-title>
                 <subtext><text>The connection to WebRTC failed.</text></subtext>

@@ -2,27 +2,27 @@
     <h1>ntg_resume</h1>
     <config id="RESUME_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="9">
+    <syntax-highlight language="c" mark="10">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
             uint32_t uid = ntg_init();
-
+            ...
             int64_t chatID = ...; // Obtain the chat ID
-
-            int result = ntg_resume(uid, chatID);
-            if (result == 0) {
+            ntg_async_struct future;
+            // Initialize the async struct
+            int errCode = ntg_resume(uid, chatID, &amp;future);
+            // Wait for the async operation to complete
+            if (future.errorCode == 0) {
                 printf("Audio resumed.\n");
-            } else if (result == 1) {
+            } else if (future.errorCode == 1) {
                 printf("Audio was already resumed.\n");
             } else {
                 printf("Failed to resume audio (Error code: %d).\n", result);
                 return 1;
             }
-
             ... // Your Code Here
-
             return 0;
         }
     </syntax-highlight>
@@ -39,11 +39,17 @@
             <subtext>
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
+                <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
             </subtext>

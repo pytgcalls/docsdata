@@ -1,0 +1,81 @@
+<page>
+    <h1>Using Async</h1>
+    <text>
+        NTgCalls starting from version 1.2.0 supports asynchronous calls to function using <code>ntg_async_struct</code>,
+        which contains <code>userData</code> that can be used to pass data between the caller and the callback,
+        <code>promise</code> that is called when the operation is completed, and <code>error</code> that is set
+        when an error occurs, but by default it is set to <shi language="c">#NTG_ASYNC_NOT_READY</shi> (-4) until
+        the operation is completed.
+    </text>
+    <separator/>
+    <h2>Making an Async Call in a Sync way</h2>
+    <text>
+        To make an async call in a sync way, you can use a mutex to wait for the operation to complete:
+    </text>
+    <syntax-highlight language="cpp">
+        #include &lt;ntgcalls.h&gt;
+        #include &lt;mutex&gt;
+
+        void onCallReady(void* data) {
+            ((std::mutex*)data)-&gt;unlock();
+        }
+
+        void makeAsyncCall() {
+            ntg_async_struct asyncData;
+            std::mutex mtx;
+            asyncData.userData = &amp;mtx;
+            asyncData.promise = onCallReady;
+            mutex.lock();
+            int error = ntg_pause(asyncData);
+            if (error != 0) {
+                // Handle error
+            }
+            mutex.lock();
+            // Async operation completed
+            if (asyncData.errorCode != 0) {
+                // Handle Async error
+            }
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Making an Async Call with custom data</h2>
+    <text>
+        You can pass custom data to the async call by using the <code>userData</code> field:
+    </text>
+    <syntax-highlight language="cpp">
+        #include &lt;ntgcalls.h&gt;
+        #include &lt;mutex&gt;
+        #include &lt;iostream&gt;
+
+        struct CustomData {
+            std::mutex* mtx;
+            int64_t chatID;
+        };
+
+        void onCallReady(void* data) {
+            CustomData* customData = (CustomData*)data;
+            customData-&gt;mtx-&gt;unlock();
+            std::cout &lt;&lt; "Chat ID: " &lt;&lt; customData-&gt;chatID &lt;&lt; std::endl;
+        }
+
+        void makeAsyncCall() {
+            ntg_async_struct asyncData;
+            std::mutex mtx;
+            CustomData data;
+            data.mtx = &amp;mtx;
+            data.chatID = 1234567890;
+            asyncData.userData = &amp;data;
+            asyncData.promise = onCallReady;
+            mutex.lock();
+            int error = ntg_pause(asyncData);
+            if (error != 0) {
+                // Handle error
+            }
+            mutex.lock();
+            // Async operation completed
+            if (asyncData.errorCode != 0) {
+                // Handle Async error
+            }
+        }
+    </syntax-highlight>
+</page>

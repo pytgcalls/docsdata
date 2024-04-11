@@ -2,25 +2,20 @@
     <h1>ntg_get_state</h1>
     <config id="GET_STATE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="10">
+    <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
             uint32_t uid = ntg_init();
-
+            ...
             int64_t chatID = ...; // Obtain the chat ID
-
             ntg_media_state_struct buffer;
-            int result = ntg_connect(uid, chatID, &amp;buffer);
-
-            if (result &lt; 0) {
-                printf("Failed to get parameters (Error code: %d).\n", result);
-                return 1;
-            }
-
-            // Use 'buffer' for EditGroupCallParticipant
-
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_get_state(uid, chatID, &amp;buffer, &amp;future);
+            // Wait for the async operation to complete and use
+            // the buffer for EditGroupCallParticipant
             ...
             return 0;
         }
@@ -39,13 +34,20 @@
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
 
-                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_state_struct">ntg_media_state_struct</docs-ref><shi language="c">*</shi> <ref>mediaState</ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_state_struct">ntg_media_state_struct</docs-ref><shi language="c">*</shi> <ref><sb>mediaState</sb></ref></category-title>
                 <subtext><config id="MEDIA_STATE_DESC"/></subtext>
+
+                <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
             </subtext>
