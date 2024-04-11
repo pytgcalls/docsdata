@@ -11,7 +11,7 @@
         <subtext>
             <category-title><shi language="c">uint8_t*</shi> <ref>g_a_or_b</ref></category-title>
             <subtext><config id="G_A_OR_B_DESC"/></subtext>
-            <category-title><shi language="c">int</shi> <ref>sizeG_A_OR_B</ref></category-title>
+            <category-title><shi language="c">int</shi> <ref>sizeGAB</ref></category-title>
             <subtext><text>Size of the parameter for key exchange</text></subtext>
             <category-title><shi language="c">int64_t</shi> <ref>key_fingerprint</ref></category-title>
             <subtext><text>Fingerprint for the connection.</text></subtext>
