@@ -882,6 +882,7 @@
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
+      <file>ntg_auth_params_struct.xml</file>
       <file>ntg_call_struct.xml</file>
       <file>ntg_dh_config_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
