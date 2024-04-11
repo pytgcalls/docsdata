@@ -1,0 +1,56 @@
+<page>
+    <h1>ntg_send_signaling_data</h1>
+    <config id="SEND_SIGNALING_DATA_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="12">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+            ...
+            int64_t chatID = ...; // Obtain the chat ID
+            uint8_t* buffer = ...; // Obtain the signaling data
+            int size = ...; // Obtain the size of the signaling data
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_send_signaling_data(uid, chatID, buffer, size, &amp;future);
+            // Wait for the async operation to complete
+            return 0;
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_send_signaling_data</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="SEND_SIGNALING_DATA_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+
+                <category-title><shi language="c">uint8_t</shi><shi language="c">*</shi> <ref><sb>data</sb></ref></category-title>
+                <subtext><config id="SIGNALING_DATA_DESC"/></subtext>
+                <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
+                <subtext><text>Size of the data</text></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

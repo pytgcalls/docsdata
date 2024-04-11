@@ -547,6 +547,20 @@
       value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
     </text>
   </option>
+
+  <option id="SEND_SIGNALING_DATA_DESC">
+    <text>
+      This method allows sending signaling data to the WebRTC connection.
+    </text>
+  </option>
+
+  <option id="SEND_SIGNALING_DATA_DESC2">
+    <text>Send signaling data to the WebRTC connection.</text>
+  </option>
+
+  <option id="SIGNALING_DATA_DESC">
+    <text>Signaling payload.</text>
+    </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -879,6 +893,7 @@
       <file>ntg_calls_count.xml</file>
       <file>ntg_get_protocol.xml</file>
       <file>ntg_get_state.xml</file>
+      <file>ntg_send_signaling_data.xml</file>
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
