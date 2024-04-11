@@ -560,7 +560,80 @@
 
   <option id="SIGNALING_DATA_DESC">
     <text>Signaling payload.</text>
-    </option>
+  </option>
+
+  <option id="CPU_USAGE_DESC">
+    <text>Get an estimate of the CPU usage of the current process.</text>
+  </option>
+
+  <option id="CPU_USAGE_DESC2">
+      <text>Get the CPU usage of the current process.</text>
+  </option>
+
+  <option id="CPU_USAGE_DESC3">
+    <text>Buffer to store the CPU usage.</text>
+  </option>
+
+  <option id="REGISTER_LOGGER_DESC">
+    <text>Register a logger for the library, this logger will be used for all instances.</text>
+  </option>
+
+  <option id="LOGGER_DESC">
+    <text>Callback for logging messages.</text>
+  </option>
+
+  <option id="LOG_MESSAGE_STRUCT_DESC">
+    <text>Log message structure.</text>
+  </option>
+
+  <option id="LOG_LEVEL_DESC">
+    <text>Log level.</text>
+  </option>
+
+  <option id="LOG_SOURCE_DESC">
+    <text>Log source.</text>
+  </option>
+
+  <option id="LOG_FILE_DESC">
+    <text>File name where the log was generated.</text>
+  </option>
+
+  <option id="LOG_LINE_DESC">
+    <text>Line number where the log was generated.</text>
+  </option>
+
+  <option id="LOG_MESSAGE_DESC">
+    <text>Log message.</text>
+  </option>
+
+  <option id="NTG_LOG_DEBUG_DESC">
+    <text>Debug log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_INFO_DESC">
+    <text>Info log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_WARNING_DESC">
+    <text>Warning log level.</text>
+
+  </option>
+
+  <option id="LOG_LEVEL_ERROR_DESC">
+    <text>Error log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_UNKNOWN_DESC">
+    <text>Unknown log level.</text>
+  </option>
+
+  <option id="NTG_LOG_WEBRTC_DESC">
+    <text>WebRTC log level.</text>
+  </option>
+
+  <option id="NTG_LOG_SELF_DESC">
+    <text>NTgCalls log level.</text>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -900,6 +973,7 @@
       <file>ntg_auth_params_struct.xml</file>
       <file>ntg_call_struct.xml</file>
       <file>ntg_dh_config_struct.xml</file>
+      <file>ntg_log_message_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
       <file>ntg_protocol_struct.xml</file>
@@ -908,6 +982,8 @@
     </group>
     <group basepath="NTgCalls/Available Enums/">
       <file>ntg_input_mode_enum.xml</file>
+      <file>ntg_log_level_enum.xml</file>
+      <file>ntg_log_source_enum.xml</file>
       <file>ntg_stream_status_enum.xml</file>
       <file>ntg_stream_type_enum.xml</file>
     </group>

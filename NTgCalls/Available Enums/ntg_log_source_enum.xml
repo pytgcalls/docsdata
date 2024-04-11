@@ -1,0 +1,19 @@
+<page>
+    <h1>ntg_log_source_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref><sb>ntg_log_source_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="LOG_SOURCE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_LOG_WEBRTC</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="NTG_LOG_WEBRTC_DESC"/>
+
+            <category-title><ref><sb>NTG_LOG_SELF</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="NTG_LOG_SELF_DESC"/>
+        </subtext>
+    </subtext>
+</page>

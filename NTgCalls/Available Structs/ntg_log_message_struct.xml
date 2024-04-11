@@ -1,0 +1,24 @@
+<page>
+    <h1>ntg_log_message_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref><sb>ntg_log_message_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="LOG_MESSAGE_STRUCT_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_log_level_enum">ntg_log_level_enum</docs-ref> <ref><sb>level</sb></ref></category-title>
+            <subtext><config id="LOG_LEVEL_DESC"/></subtext>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_log_source_enum">ntg_log_source_enum</docs-ref> <ref><sb>source</sb></ref></category-title>
+            <subtext><config id="LOG_SOURCE_DESC"/></subtext>
+            <category-title><shi language="c">char*</shi> <ref><sb>file</sb></ref></category-title>
+            <subtext><config id="LOG_FILE_DESC"/></subtext>
+            <category-title><shi language="c">uint32_t</shi> <ref><sb>line</sb></ref></category-title>
+            <subtext><config id="LOG_LINE_DESC"/></subtext>
+            <category-title><shi language="c">char*</shi> <ref><sb>message</sb></ref></category-title>
+            <subtext><config id="LOG_MESSAGE_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

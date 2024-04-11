@@ -1,0 +1,38 @@
+<page>
+    <h1>ntg_cpu_usage</h1>
+    <config id="CPU_USAGE_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="10">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+            ...
+            double buffer;
+            ntg_async_struct future;
+            // Initialize the async struct
+            int64_t usage = ntg_cpu_usage(uid, &amp;buffer, &amp;future);
+            // Wait for the async operation to complete and use
+            return 0;
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb>ntg_cpu_usage</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="CPU_USAGE_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <category-title><shi language="c">double</shi><shi language="c">*</shi> <ref><sb>cpuUsage</sb></ref></category-title>
+                <subtext><config id="CPU_USAGE_DESC3"/></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>
