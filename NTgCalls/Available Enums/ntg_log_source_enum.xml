@@ -9,10 +9,10 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>NTG_LOG_WEBRTC</sb></ref> <shi>=</shi> 0</category-title>
+            <category-title><ref><sb>NTG_LOG_WEBRTC</sb></ref> <shi>=</shi> 1</category-title>
             <config id="NTG_LOG_WEBRTC_DESC"/>
 
-            <category-title><ref><sb>NTG_LOG_SELF</sb></ref> <shi>=</shi> 1</category-title>
+            <category-title><ref><sb>NTG_LOG_SELF</sb></ref> <shi>=</shi> 2</category-title>
             <config id="NTG_LOG_SELF_DESC"/>
         </subtext>
     </subtext>

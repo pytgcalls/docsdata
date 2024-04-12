@@ -10,25 +10,25 @@
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <category-title><shi language="c">uint64_t</shi> <ref>id</ref></category-title>
-            <subtext><text>Endpoint ID</text></subtext>
+            <config id="RTC_ID_DESC"/>
             <category-title><shi language="c">char*</shi> <ref>ipv4</ref></category-title>
-            <subtext><text>IPv4 address of endpoint</text></subtext>
-            <category-title><shi language="c">char*</shi> <ref>username</ref></category-title>
-            <subtext><text>Username of endpoint</text></subtext>
-            <category-title><shi language="c">char*</shi> <ref>password</ref></category-title>
-            <subtext><text>Password of endpoint</text></subtext>
+            <config id="RTC_IPV4_DESC"/>
             <category-title><shi language="c">char*</shi> <ref>ipv6</ref></category-title>
-            <subtext><text>IPv6 address of endpoint</text></subtext>
+            <config id="RTC_IPV6_DESC"/>
+            <category-title><shi language="c">char*</shi> <ref>username</ref></category-title>
+            <config id="RTC_USERNAME_DESC"/>
+            <category-title><shi language="c">char*</shi> <ref>password</ref></category-title>
+            <config id="RTC_PASSWORD_DESC"/>
             <category-title><shi language="c">int</shi> <ref>port</ref></category-title>
-            <subtext><text>Port ID</text></subtext>
+            <config id="RTC_PORT_DESC"/>
             <category-title><shi language="c++">bool</shi> <ref>turn</ref></category-title>
-            <subtext><text>Whether this is a TURN endpoint</text></subtext>
+            <config id="RTC_TURN_DESC"/>
             <category-title><shi language="c++">bool</shi> <ref>stun</ref></category-title>
-            <subtext><text>Whether this is a STUN endpoint</text></subtext>
+            <config id="RTC_STUN_DESC"/>
             <category-title><shi language="c++">bool</shi> <ref>tcp</ref></category-title>
-            <subtext><text>Whether TCP should be used</text></subtext>
+            <config id="RTC_TCP_DESC"/>
             <category-title><shi language="c">uint8_t*</shi> <ref>peerTag</ref></category-title>
-            <subtext><text>Our peer tag</text></subtext>
+            <config id="RTC_PEER_TAG_DESC"/>
             <category-title><shi language="c">int</shi> <ref>sizePeerTag</ref></category-title>
             <subtext><text>Size of the peer tag</text></subtext>
         </subtext>

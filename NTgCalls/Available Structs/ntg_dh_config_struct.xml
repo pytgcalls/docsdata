@@ -10,13 +10,13 @@
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <category-title><shi language="c">int32_t</shi> <ref>g</ref></category-title>
-            <subtext><config id="G_DESC"/></subtext>
+            <config id="G_DESC"/>
             <category-title><shi language="c">uint8*</shi> <ref>p</ref></category-title>
-            <subtext><config id="P_DESC"/></subtext>
+            <config id="P_DESC"/>
             <category-title><shi language="c">int</shi> <ref>sizeP</ref></category-title>
             <subtext><text>Size of the parameter for key exchange</text></subtext>
             <category-title><shi language="c">uint8*</shi> <ref>random</ref></category-title>
-            <subtext><config id="R_DESC"/></subtext>
+            <config id="R_DESC"/>
             <category-title><shi language="c">int</shi> <ref>sizeRandom</ref></category-title>
             <subtext><text>Size of the random number</text></subtext>
         </subtext>

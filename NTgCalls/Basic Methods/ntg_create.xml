@@ -60,7 +60,7 @@
             <subtext>
                 <config id="BASE_C_EXCEPTIONS"/>
                 <config id="SMALL_BUFF_EXCEPTION"/>
-                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="CONN_ALREADY_EXISTS_C"/>
                 <config id="STREAM_C_EXCEPTIONS"/>
             </subtext>
         </category>

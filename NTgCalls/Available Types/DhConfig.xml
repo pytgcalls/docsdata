@@ -1,0 +1,20 @@
+<page>
+    <h1>DhConfig</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>ntgcalls.<sb>DhConfig</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="DH_CONFIG_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>g</ref>: <shi>int</shi></category-title>
+            <config id="G_DESC"/>
+            <category-title><ref>p</ref>: <shi>bytes</shi></category-title>
+            <config id="P_DESC"/>
+            <category-title><ref>random</ref>: <shi>bytes</shi></category-title>
+            <config id="R_DESC"/>
+        </subtext>
+    </subtext>
+</page>

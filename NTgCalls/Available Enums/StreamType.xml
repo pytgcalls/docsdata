@@ -9,10 +9,10 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>Audio</sb></ref> <shi>=</shi> 0</category-title>
+            <category-title><ref><sb>AUDIO</sb></ref> <shi>=</shi> 0</category-title>
             <config id="TYPE_AUDIO_DESC"/>
 
-            <category-title><ref><sb>Video</sb></ref> <shi>=</shi> 1</category-title>
+            <category-title><ref><sb>VIDEO</sb></ref> <shi>=</shi> 1</category-title>
             <config id="TYPE_VIDEO_DESC"/>
         </subtext>
     </subtext>

@@ -8,7 +8,7 @@
         the operation is completed.
     </text>
     <separator/>
-    <h2>Making an Async Call in a Sync way</h2>
+    <h2>Async Call in a Sync way</h2>
     <text>
         To make an async call in a sync way, you can use a mutex to wait for the operation to complete:
     </text>
@@ -38,7 +38,7 @@
         }
     </syntax-highlight>
     <separator/>
-    <h2>Making an Async Call with custom data</h2>
+    <h2>Async Call with custom data</h2>
     <text>
         You can pass custom data to the async call by using the <code>userData</code> field:
     </text>

@@ -17,6 +17,9 @@
 
             <category-title><ref><sb>NTG_FFMPEG</sb></ref> <shi>=</shi> 2</category-title>
             <config id="MODE_FFMPEG_DESC"/>
+
+            <category-title><ref><sb>NTG_NO_LATENCY</sb></ref> <shi>=</shi> 3</category-title>
+            <config id="MODE_NO_LATENCY_DESC"/>
         </subtext>
     </subtext>
 </page>

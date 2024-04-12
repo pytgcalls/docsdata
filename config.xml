@@ -152,12 +152,27 @@
 
   <option id="CRYPTO_ERROR_C">
     <category-title><ref><sb><shi language="c">#NTG_CRYPTO_ERROR</shi></sb></ref> <shi>-102</shi></category-title>
-    <subtext><text>An error occurred while encrypting or decrypting data.</text></subtext>
+    <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
   </option>
 
   <option id="INVALID_TRANSPORT_C">
     <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
     <subtext><text>The specified transport is invalid.</text></subtext>
+  </option>
+
+  <option id="CRYPTO_ERROR">
+    <category-title>exception <ref>ntgcalls.<sb>CryptoError</sb></ref></category-title>
+    <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
+  </option>
+
+  <option id="P2P_CONN_ERROR">
+    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+    <subtext><text>A connection with the specified ID is already established or does not exist.</text></subtext>
+  </option>
+
+  <option id="CONN_ALREADY_EXISTS_C">
+    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
+    <subtext><text>A connection with the specified ID already exists.</text></subtext>
   </option>
   <!--end exceptions-->
 
@@ -361,6 +376,10 @@
     <subtext><text>Input mode using FFmpeg.</text></subtext>
   </option>
 
+  <option id="MODE_NO_LATENCY_DESC">
+    <subtext><text>Input mode with no latency.</text></subtext>
+  </option>
+
   <option id="STREAM_STATUS_DESC">
     <text>Enumeration of stream status values.</text>
   </option>
@@ -466,27 +485,31 @@
   </option>
 
   <option id="G_DESC">
-    <text>New value prime, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text>
+    <subtext><text>New value prime, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text></subtext>
   </option>
 
   <option id="P_DESC">
-    <text>New value primitive root, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text>
+    <subtext><text>New value primitive root, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text></subtext>
   </option>
 
   <option id="R_DESC">
-    <text>Random sequence of bytes of assigned length.</text>
+    <subtext><text>Random sequence of bytes of assigned length.</text></subtext>
   </option>
 
   <option id="G_A_HASH_DESC">
-      <text>Parameter for key exchange (Only when is incoming call).</text>
+    <subtext><text>Parameter for key exchange (Only when is incoming call).</text></subtext>
   </option>
 
   <option id="G_A_OR_B_DESC">
-    <text>Parameter for key exchange.</text>
+    <subtext><text>Parameter for key exchange.</text></subtext>
   </option>
 
   <option id="FINGERPRINT_DESC">
-    <text>Fingerprint for the connection (Optional when is an incoming call).</text>
+    <subtext><text>Fingerprint for the connection (Optional when is an outgoing call).</text></subtext>
+  </option>
+
+  <option id="KEY_FINGERPRINT_DESC">
+    <text>Fingerprint for the connection.</text>
   </option>
 
   <option id="AUTH_PARAMS_DESC">
@@ -504,8 +527,12 @@
     <text>Set connection params for a Private Call obtained from Telegram.</text>
   </option>
 
+  <option id="RTC_SERVERS_DESC">
+    <subtext><text>List of endpoints the user can connect to exchange call data.</text></subtext>
+  </option>
+
   <option id="RTC_SERVER_DESC">
-    <text>List of endpoints the user can connect to exchange call data.</text>
+    <text>Identifies an endpoint that can be used to connect to the other user in a phone call.</text>
   </option>
 
   <option id="GET_PROTOCOL_DESC">
@@ -524,28 +551,34 @@
   </option>
 
   <option id="MIN_LAYER_DESC">
-    <text>Minimum layer for remote connection.</text>
+    <subtext><text>Minimum layer for remote connection.</text></subtext>
   </option>
 
   <option id="MAX_LAYER_DESC">
-      <text>Maximum layer for remote connection.</text>
+    <subtext><text>Maximum layer for remote connection.</text></subtext>
   </option>
 
   <option id="UDP_P2P_DESC">
-    <text>Whether to allow P2P connection to the other participant.</text>
+    <subtext><text>Whether to allow P2P connection to the other participant.</text></subtext>
   </option>
 
   <option id="UDP_REFLECTOR_DESC">
-    <text>Whether to allow connection to the other participants through the reflector servers.</text>
+    <subtext><text>Whether to allow connection to the other participants through the reflector servers.</text></subtext>
   </option>
 
   <option id="LIBRARY_VERSIONS_DESC">
-    <text>
-      When using <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> and <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a>,
-      specify all library versions supported by the client.
-      The server will merge and choose the best library version supported by both peers, returning only the best
-      value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
-    </text>
+    <subtext>
+      <text>
+        When using <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> and <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a>,
+        specify all library versions supported by the client.
+        The server will merge and choose the best library version supported by both peers, returning only the best
+        value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="P2P_ALLOWED_DESC">
+    <subtext><text>Whether to allow P2P connection to the other participant.</text></subtext>
   </option>
 
   <option id="SEND_SIGNALING_DATA_DESC">
@@ -634,6 +667,86 @@
   <option id="NTG_LOG_SELF_DESC">
     <text>NTgCalls log level.</text>
   </option>
+
+  <option id="CRYPTO_ERROR_DESC">
+    <text>An error occurred while encrypting or decrypting data.</text>
+  </option>
+
+  <option id="SIGNALING_ERROR_DESC">
+    <text>An error occurred during signaling</text>
+  </option>
+
+  <option id="SIGNALING_UNSUPPORTED_DESC">
+    <text>The current protocol is not supported by the signaling server.</text>
+  </option>
+
+  <option id="MISSING_FINGERPRINT_DESC">
+    <text>The fingerprint is missing (Happens only on outgoing calls)</text>
+  </option>
+
+  <option id="RTC_ID_DESC">
+    <subtext><text>Endpoint ID</text></subtext>
+  </option>
+
+  <option id="RTC_IPV4_DESC">
+    <subtext><text>IPv4 address of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_IPV6_DESC">
+    <subtext><text>IPv6 address of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_USERNAME_DESC">
+    <subtext><text>Username of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_PASSWORD_DESC">
+    <subtext><text>Password of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_PORT_DESC">
+    <subtext><text>Port ID</text></subtext>
+  </option>
+
+  <option id="RTC_TURN_DESC">
+    <subtext><text>Whether the endpoint is a TURN server</text></subtext>
+  </option>
+
+  <option id="RTC_STUN_DESC">
+    <subtext><text>Whether the endpoint is a STUN server</text></subtext>
+  </option>
+
+  <option id="RTC_TCP_DESC">
+    <subtext><text>Whether TCP should be used</text></subtext>
+  </option>
+
+  <option id="RTC_PEER_TAG_DESC">
+    <subtext><text>Our peer tag</text></subtext>
+  </option>
+
+  <option id="CONNECTION_STATE_DESC">
+    <text>Enumeration of connection state values.</text>
+  </option>
+
+  <option id="NTG_STATE_CONNECTING_DESC">
+    <subtext><text>Indicates that the connection is in the process of being established.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_CONNECTED_DESC">
+    <subtext><text>Indicates that the connection has been established.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_TIMEOUT_DESC">
+    <subtext><text>Indicates that the connection has timed out.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_FAILED_DESC">
+    <subtext><text>Indicates that the connection has failed.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_CLOSED_DESC">
+    <subtext><text>Indicates that the connection has been closed.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -709,8 +822,6 @@
   </option>
 
   <option id="ARG_STREAM_PARAMS">
-    <config id="ARG_INT_ID"/>
-
     <category-title><ref><sb>media</sb></ref>: <docs-ref href="">ntgcalls.MediaDescription</docs-ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
@@ -781,11 +892,6 @@
   <option id="ARG_MEDIA">
     <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref>desc</ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
-  </option>
-
-  <option id="ARG_CONN_ALREADY_EXISTS_C">
-    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
-    <subtext><text>A connection with the specified ID already exists.</text></subtext>
   </option>
   <!--end parameters-->
 
@@ -916,7 +1022,10 @@
     <file>Callbacks.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>Connect.xml</file>
+      <file>Connect P2P.xml</file>
       <file>Create Call.xml</file>
+      <file>Create P2P Call.xml</file>
+      <file>Exchange Keys.xml</file>
       <file>Stop.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
@@ -931,8 +1040,12 @@
     </group>
     <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
+      <file>AuthParams.xml</file>
+      <file>DhConfig.xml</file>
       <file>MediaDescription.xml</file>
       <file>MediaState.xml</file>
+      <file>Protocol.xml</file>
+      <file>RTCServer.xml</file>
       <file>VideoDescription.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">

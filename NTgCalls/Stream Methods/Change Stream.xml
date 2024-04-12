@@ -8,7 +8,7 @@
 
         app = NTgCalls()
 
-        params = app.change_stream(
+        await app.change_stream(
             -1001185324811,
             MediaDescription(
                 AudioDescription(
@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>change_stream</sb></ref>()
+        <shi>async</shi> <ref>NTgCalls.<sb>change_stream</sb></ref>()
     </category-title>
     <subtext>
         <config id="CHANGE_STREAM_DESC_2"/>
@@ -32,6 +32,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
+                <config id="ARG_INT_ID"/>
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>

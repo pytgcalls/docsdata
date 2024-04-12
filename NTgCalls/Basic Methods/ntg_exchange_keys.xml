@@ -34,11 +34,11 @@
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
                 <category-title><shi language="c">uint8_t*</shi> <ref><sb>g_a_or_b</sb></ref></category-title>
-                <subtext><config id="G_A_OR_B_DESC"/></subtext>
+                <config id="G_A_OR_B_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>sizeGAOrB</sb></ref></category-title>
                 <subtext><text>Size of the parameter for key exchange</text></subtext>
                 <category-title><shi language="c">int64_t</shi> <ref><sb>fingerprint</sb></ref></category-title>
-                <subtext><config id="FINGERPRINT_DESC"/></subtext>
+                <config id="FINGERPRINT_DESC"/>
                 <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_auth_params_struct">ntg_auth_params_struct</docs-ref><shi language="c">*</shi> <ref><sb>authParams</sb></ref></category-title>
                 <subtext><config id="AUTH_PARAMS_DESC"/></subtext>
                 <config id="ARG_ASYNC_STRUCT"/>
@@ -53,11 +53,11 @@
             <br/>
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
-                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="CONN_ALREADY_EXISTS_C"/>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
                 <config id="CRYPTO_ERROR_C"/>
                 <category-title><ref><sb><shi language="c">#NTG_MISSING_FINGERPRINT</shi></sb></ref> <shi>-103</shi></category-title>
-                <subtext><text>The fingerprint is missing (Happens only on outgoing calls)</text></subtext>
+                <subtext><config id="MISSING_FINGERPRINT_DESC"/></subtext>
             </subtext>
         </category>
     </subtext>

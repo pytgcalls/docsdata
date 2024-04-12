@@ -51,7 +51,7 @@
                 <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_dh_config_struct">ntg_dh_config_struct</docs-ref> <ref><sb>dhConfig</sb></ref></category-title>
                 <subtext><config id="DH_CONFIG_DESC"/></subtext>
                 <category-title><shi language="c">uint8_t*</shi> <ref><sb>g_a_hash</sb></ref></category-title>
-                <subtext><config id="G_A_HASH_DESC"/></subtext>
+                <config id="G_A_HASH_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>sizeGAHash</sb></ref></category-title>
                 <subtext><text>Size of the parameter for key exchange (Only when is incoming call)</text></subtext>
                 <config id="ARG_MEDIA_C"/>
@@ -72,7 +72,7 @@
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
-                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="CONN_ALREADY_EXISTS_C"/>
                 <config id="STREAM_C_EXCEPTIONS"/>
             </subtext>
         </category>

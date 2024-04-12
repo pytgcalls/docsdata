@@ -9,14 +9,14 @@
         app = NTgCalls()
         ...
 
-        app.resume(
+        await app.resume(
             -1001185324811,
         )
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>resume</sb></ref>() <shi>-> bool</shi>
+        <shi>async</shi> <ref>NTgCalls.<sb>resume</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <config id="RESUME_DESC2"/>

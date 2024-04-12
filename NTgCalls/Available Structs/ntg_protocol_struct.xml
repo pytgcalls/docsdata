@@ -9,15 +9,15 @@
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <category-title><shi language="c">int32_t</shi> <ref>minLayer</ref></category-title>
-        <subtext><config id="MIN_LAYER_DESC"/></subtext>
+        <config id="MIN_LAYER_DESC"/>
         <category-title><shi language="c">int32_t</shi> <ref>maxLayer</ref></category-title>
-        <subtext><config id="MAX_LAYER_DESC"/></subtext>
+        <config id="MAX_LAYER_DESC"/>
         <category-title><shi language="c">bool</shi> <ref>udpP2P</ref></category-title>
-        <subtext><config id="UDP_P2P_DESC"/></subtext>
+        <config id="UDP_P2P_DESC"/>
         <category-title><shi language="c">bool</shi> <ref>udpReflector</ref></category-title>
-        <subtext><config id="UDP_REFLECTOR_DESC"/></subtext>
+        <config id="UDP_REFLECTOR_DESC"/>
         <category-title><shi language="c">char**</shi> <ref>libraryVersions</ref></category-title>
-        <subtext><config id="LIBRARY_VERSIONS_DESC"/></subtext>
+        <config id="LIBRARY_VERSIONS_DESC"/>
         <category-title><shi language="c">int</shi> <ref>libraryVersionsSize</ref></category-title>
         <subtext><text>Size of the libraryVersions array.</text></subtext>
     </subtext>

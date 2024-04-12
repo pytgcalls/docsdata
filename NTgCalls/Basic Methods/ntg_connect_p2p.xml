@@ -44,15 +44,15 @@
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
                 <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_rtc_server_struct">ntg_rtc_server_struct</docs-ref><shi language="c">*</shi> <ref><sb>servers</sb></ref></category-title>
-                <subtext><config id="RTC_SERVER_DESC"/></subtext>
+                <config id="RTC_SERVERS_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>serversSize</sb></ref></category-title>
                 <subtext><text>Count of list of endpoints</text></subtext>
                 <category-title><shi language="c">char**</shi> <ref><sb>versions</sb></ref></category-title>
-                <subtext><config id="LIBRARY_VERSIONS_DESC"/></subtext>
+                <config id="LIBRARY_VERSIONS_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>versionsSize</sb></ref></category-title>
                 <subtext><text>Size of the versions array.</text></subtext>
                 <category-title><shi language="c">bool</shi> <ref><sb>p2pAllowed</sb></ref></category-title>
-                <subtext><text>Whether P2P is allowed</text></subtext>
+                <config id="P2P_ALLOWED_DESC"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -65,13 +65,13 @@
             <br/>
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
-                <config id="ARG_CONN_ALREADY_EXISTS_C"/>
+                <config id="CONN_ALREADY_EXISTS_C"/>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
                 <config id="CRYPTO_ERROR_C"/>
                 <category-title><ref><sb><shi language="c">#NTG_SIGNALING_ERROR</shi></sb></ref> <shi>-104</shi></category-title>
-                <subtext><text>An error occurred during signaling</text></subtext>
+                <subtext><config id="SIGNALING_ERROR_DESC"/></subtext>
                 <category-title><ref><sb><shi language="c">#NTG_SIGNALING_UNSUPPORTED</shi></sb></ref> <shi>-105</shi></category-title>
-                <subtext><text>The current protocol is not supported</text></subtext>
+                <subtext><config id="SIGNALING_UNSUPPORTED_DESC"/></subtext>
                 <config id="INVALID_TRANSPORT_C"/>
             </subtext>
         </category>

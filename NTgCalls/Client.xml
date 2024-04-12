@@ -24,11 +24,17 @@
             <category>
                 <pg-title>STATIC METHODS</pg-title>
                 <subtext>
-                    <category-title><ref><sb>calls</sb></ref>() <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref>]</category-title>
+                    <category-title><ref><shi>async</shi> <sb>calls</sb></ref>() <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref>]</category-title>
                     <config id="LIST_CALLS_DESC"/>
+
+                    <category-title><ref><shi>async</shi> <sb>cpu_usage</sb></ref>() <shi>-></shi> <shi>float</shi></category-title>
+                    <subtext><config id="CPU_USAGE_DESC"/></subtext>
 
                     <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>str</shi></category-title>
                     <subtext><text>Return "pong" message when calling this method</text></subtext>
+
+                    <category-title><ref><sb>get_protocol</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/Protocol">ntgcalls.Protocol</docs-ref></category-title>
+                    <subtext><config id="GET_PROTOCOL_DESC"/></subtext>
                 </subtext>
             </category>
         </subtext>
