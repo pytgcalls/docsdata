@@ -673,11 +673,12 @@
         <link href="https://github.com/pytgcalls/pytgcalls">PyTgCalls project</link>
         <link href="https://github.com/pytgcalls/pytgcalls/issues/new/choose">Create new PyTgCalls issue</link>
       </category>
-      <category title="Website-related links">
+      <category title="Website links">
         <link href="https://github.com/pytgcalls/pytgcalls.github.io">Contribute to this website</link>
         <link href="https://github.com/pytgcalls/docsdata">Typos? Help us by suggestine edits</link>
         <link href="https://pytgcalls.github.io/old_docs/">Deprecated documentation version</link>
       </category>
+      <dsc>© 2024 • PYTGCALLS &amp; NTGCALLS SOFTWARE by Laky64</dsc>
     </footer-links>
   </homepage-config>
 
