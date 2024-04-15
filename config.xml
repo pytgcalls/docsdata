@@ -1010,6 +1010,23 @@
         <telegram-username>branchscope</telegram-username>
       </member>
     </team>
+    <footer-links>
+      <main-news-channel>https://t.me/pytgcallsnews</main-news-channel>
+      <main-group-channel>https://t.me/pytgcallschat</main-group-channel>
+      <category title="Project links">
+        <link href="https://github.com/pytgcalls">Organization link</link>
+        <link href="https://github.com/pytgcalls/ntgcalls">NTgCalls project</link>
+        <link href="https://github.com/pytgcalls/ntgcalls/issues/new/choose">Create new NTgCalls issue</link>
+        <link href="https://github.com/pytgcalls/pytgcalls">PyTgCalls project</link>
+        <link href="https://github.com/pytgcalls/pytgcalls/issues/new/choose">Create new PyTgCalls issue</link>
+      </category>
+      <category title="Website links">
+        <link href="https://github.com/pytgcalls/pytgcalls.github.io">Contribute to this website</link>
+        <link href="https://github.com/pytgcalls/docsdata">Typos? Help us by suggestine edits</link>
+        <link href="https://pytgcalls.github.io/old_docs/">Deprecated documentation version</link>
+      </category>
+      <dsc>© 2024 • PYTGCALLS &amp; NTGCALLS SOFTWARE by Laky64</dsc>
+    </footer-links>
   </homepage-config>
 
   <files-list id="NTgCalls" basepath="NTgCalls/" defaultfile="Quick Start.xml">
