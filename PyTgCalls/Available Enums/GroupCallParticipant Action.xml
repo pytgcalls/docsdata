@@ -1,0 +1,22 @@
+<page>
+    <h1>GroupCallParticipant Action</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.GroupCallParticipant.<sb>Action</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of actions for group call participants.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>JOINED</sb></ref></category-title>
+            <subtext><text>Represents a participant joined in a group call.</text></subtext>
+
+            <category-title><ref><sb>LEFT</sb></ref></category-title>
+            <subtext><text>Represents a participant left a group call.</text></subtext>
+
+            <category-title><ref><sb>UPDATED</sb></ref></category-title>
+            <subtext><text>Represents a participant updated in a group call.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

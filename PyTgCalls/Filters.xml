@@ -89,5 +89,21 @@
                 </subtext>
             </subtext>
         </subtext>
+        <category-title><ref>pytgcalls.filters.<sb>call_participant</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Filter updates for when a call participant joins, leaves or is updated.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>flags</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/GroupCallParticipant Action">GroupCallParticipant.Action</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more flags to filter call participant updates.
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
     </category>
 </page>

@@ -1142,6 +1142,7 @@
       <file>Call Status.xml</file>
       <file>Call Type.xml</file>
       <file>ChatUpdate Status.xml</file>
+      <file>GroupCallParticipant Action.xml</file>
       <file>MediaStream Flags.xml</file>
       <file>VideoQuality.xml</file>
     </group>
