@@ -1,4 +1,5 @@
 <page>
+    <p2p-banner/>
     <h1>Play</h1>
     <alert type="warning">
         <text>This method replaces the deprecated <code>join_group_call</code> and <code>change_stream</code> methods.</text>

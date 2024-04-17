@@ -1,4 +1,5 @@
 <page>
+    <p2p-banner/>
     <h1>Connect P2P</h1>
     <config id="CONNECT_P2P_DESC"/>
     <h3>Example</h3>

@@ -1,4 +1,5 @@
 <page>
+    <p2p-banner/>
     <h1>Create P2P Call</h1>
     <config id="CREATE_P2P_DESC"/>
     <h3>Example</h3>
