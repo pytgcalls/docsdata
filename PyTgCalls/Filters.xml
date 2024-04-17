@@ -48,7 +48,7 @@
             </text>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>stream_ended</sb></ref></category-title>
+        <category-title><ref>pytgcalls.filters.<sb>stream_end</sb></ref></category-title>
         <subtext>
             <text>
                 Filter updates for when a stream ends.
