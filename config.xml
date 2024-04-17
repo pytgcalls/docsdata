@@ -667,8 +667,8 @@
       <contribution-link>https://github.com/pytgcalls</contribution-link>
       <category title="Products">
         <link href="/PyTgCalls/Changelogs">Changelogs</link>
-        <link href="/PyTgCalls">PyTgCalls</link>
-        <link href="/PyTgCalls">NTgCalls</link>
+        <link href="https://github.com/pytgcalls/pytgcalls/">PyTgCalls</link>
+        <link href="https://github.com/pytgcalls/ntgcalls/">NTgCalls</link>
       </category>
       <category title="Project links">
         <link href="https://github.com/pytgcalls/ntgcalls/issues/new/choose">Open a NTgCalls issue</link>
@@ -678,7 +678,7 @@
       <category title="Company">
         <link href="https://github.com/pytgcalls">Github Organization</link>
         <link href="https://github.com/pytgcalls/pytgcalls.github.io">Contribute to this site</link>
-        <link href="https://github.com/pytgcalls">Newsletter</link>
+        <link href="https://t.me/pytgcallsnews">Newsletter</link>
       </category>
       <dsc>© 2024 • PyTgCalls Foundation by Vrumger &amp; Laky64</dsc>
     </footer-links>
