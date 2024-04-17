@@ -36,6 +36,10 @@
             <column>Play a stream from fifo</column>
         </item>
         <item>
+            <column><ref-shi url="example/p2p_example/example_p2p.py" language="py">p2p_example</ref-shi></column>
+            <column>Play a stream from a private call using PyTgCalls</column>
+        </item>
+        <item>
             <column><ref-shi url="example/piped_audio_calls/example_piped_audio.py" language="py">piped_audio_calls</ref-shi></column>
             <column>Play audio using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
