@@ -1,0 +1,28 @@
+<page>
+    <h1>ChatUpdate Status</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.ChatUpdate.<sb>Status</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration for managing chat update status in telegram calls.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>KICKED</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Indicates that you was kicked.</text></subtext>
+            <category-title><ref><sb>LEFT_GROUP</sb></ref> <shi>=</shi> 2</category-title>
+            <subtext><text>Indicates that you left the chat.</text></subtext>
+            <category-title><ref><sb>CLOSED_VOICE_CHAT</sb></ref> <shi>=</shi> 4</category-title>
+            <subtext><text>Indicates that the voice chat was closed.</text></subtext>
+            <category-title><ref><sb>INVITED_VOICE_CHAT</sb></ref> <shi>=</shi> 8</category-title>
+            <subtext><text>Indicates that you was invited to the voice chat.</text></subtext>
+            <category-title><ref><sb>DISCARDED_CALL</sb></ref> <shi>=</shi> 16</category-title>
+            <subtext><text>Indicates that the call was discarded.</text></subtext>
+            <category-title><ref><sb>INCOMING_CALL</sb></ref> <shi>=</shi> 32</category-title>
+            <subtext><text>Indicates that an incoming call is available.</text></subtext>
+            <category-title><ref><sb>LEFT_CALL</sb></ref> <shi>=</shi> KICKED | LEFT_GROUP | CLOSED_VOICE_CHAT | DISCARDED_CALL</category-title>
+            <subtext><text>Indicates that you left the call.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

@@ -10,7 +10,7 @@
         ...
         tg_params = ...
 
-        app.connect(
+        await app.connect(
             -1001185324811,
             tg_params,
         )
@@ -18,7 +18,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>connect</sb></ref>()
+        <shi>async</shi> <ref>NTgCalls.<sb>connect</sb></ref>()
     </category-title>
     <subtext>
         <config id="CONNECT_DESC2"/>

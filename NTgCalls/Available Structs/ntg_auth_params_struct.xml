@@ -1,0 +1,20 @@
+<page>
+    <h1>ntg_auth_params_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref><sb>ntg_auth_params_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="AUTH_PARAMS_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><shi language="c">uint8_t*</shi> <ref>g_a_or_b</ref></category-title>
+            <config id="G_A_OR_B_DESC"/>
+            <category-title><shi language="c">int</shi> <ref>sizeGAB</ref></category-title>
+            <subtext><text>Size of the parameter for key exchange</text></subtext>
+            <category-title><shi language="c">int64_t</shi> <ref>key_fingerprint</ref></category-title>
+            <config id="KEY_FINGERPRINT_DESC"/>
+        </subtext>
+    </subtext>
+</page>

@@ -7,7 +7,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>Stream</sb></ref>
     </category-title>
     <subtext>
-        <text>Info about a group call</text>
+        <text>Stream Descriptor.</text>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>

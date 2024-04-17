@@ -1,0 +1,24 @@
+<page>
+    <h1>Protocol</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref><sb>Protocol</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="PROTOCOL_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>min_layer</ref>: <shi>int</shi></category-title>
+            <config id="MIN_LAYER_DESC"/>
+            <category-title><ref>max_layer</ref>: <shi>int</shi></category-title>
+            <config id="MAX_LAYER_DESC"/>
+            <category-title><ref>udp_p2p</ref>: <shi>bool</shi></category-title>
+            <config id="UDP_P2P_DESC"/>
+            <category-title><ref>udp_reflector</ref>: <shi>bool</shi></category-title>
+            <config id="UDP_REFLECTOR_DESC"/>
+            <category-title><ref>library_versions</ref>: <shi>list</shi>[<shi>str</shi>]</category-title>
+            <config id="LIBRARY_VERSIONS_DESC"/>
+        </subtext>
+    </subtext>
+</page>

@@ -20,7 +20,7 @@
             <shi>class</shi> <ref>pytgcalls.<sb>PyTgCalls</sb></ref>
         </category-title>
         <subtext>
-            <text>PyTgCalls Client, the main tool for interacting with Group Calls.</text>
+            <text>PyTgCalls Client, the main tool for interacting with Telegram Calls.</text>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -35,17 +35,23 @@
             <category>
                 <pg-title>STATIC METHODS</pg-title>
                 <subtext>
-                    <category-title><ref><sb>active_calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]</category-title>
-                    <subtext><text>Get a list of active (Playing / Paused) group calls</text></subtext>
-
-                    <category-title><ref><sb>calls</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]</category-title>
+                    <category-title><shi>async</shi> <ref><sb>calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
                     <config id="LIST_CALLS_DESC"/>
 
-                    <category-title><ref><sb>cache_peer</sb></ref>() <shi>-></shi> <config id="ARG_UNION_PEER"/></category-title>
+                    <category-title><shi>async</shi> <ref><sb>group_calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
+                    <subtext><text>Get all group calls</text></subtext>
+
+                    <category-title><shi>async</shi> <ref><sb>private_calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
+                    <subtext><text>Get all private calls</text></subtext>
+
+                    <category-title><ref><sb>cache_peer</sb></ref> <shi>-></shi> <config id="ARG_UNION_PEER"/></category-title>
                     <subtext><text>Get current Telegram user</text></subtext>
 
-                    <category-title><ref><sb>ping</sb></ref>() <shi>-></shi> <shi>int</shi></category-title>
+                    <category-title><ref><sb>ping</sb></ref> <shi>-></shi> <shi>int</shi></category-title>
                     <subtext><text>Ping of NTgCalls core</text></subtext>
+
+                    <category-title><shi>async</shi> <ref><sb>cpu_usage</sb></ref> <shi>-> float</shi></category-title>
+                    <subtext><text>Get the CPU usage of the current process</text></subtext>
                 </subtext>
             </category>
             <br/>

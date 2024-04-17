@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>VideoQuality</sb></ref>
     </category-title>
     <subtext>
-        <text>Enumeration of video quality settings for group calls.</text>
+        <text>Enumeration of video quality settings for video streams in telegram calls.</text>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>

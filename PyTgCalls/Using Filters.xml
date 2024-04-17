@@ -1,0 +1,67 @@
+<page>
+    <h1>Using Filters</h1>
+    <text>
+        So far we’ve seen <docs-ref link="/PyTgCalls/Decorators">how to register a decorator</docs-ref> function that executes every time an update comes from the server,
+        but there’s much more than that to come.
+
+        Here we’ll discuss <docs-ref link="/PyTgCalls/Filters">filters</docs-ref>. Filters enable a fine-grain control over what kind of updates are allowed or
+        not to be passed in your callback functions, based on their inner details.
+    </text>
+    <separator/>
+    <h2>Single Filters</h2>
+    <text>Let’s start right away with a simple example:</text>
+    <list>
+        <item>
+            <text>
+                This example will show you how to only handle updates that are an Incoming Call
+                and ignore any other update. Filters are passed as the first argument of the decorator:
+                <syntax-highlight>
+                    from pytgcalls import filters
+                    ...
+                    @pytgcalls.on_update(filters.chat_update(ChatUpdate.Status.INCOMING_CALL))
+                    def on_incoming_call(client, update):
+                        print("Incoming call!", update)
+                </syntax-highlight>
+            </text>
+        </item>
+    </list>
+    <h2>Combining Filters</h2>
+    <text>
+        Filters can be used in a more advanced way by inverting and combining more filters together using bitwise operators <code>~</code>, <code>&amp;</code> and <code>|</code>:
+        <list>
+            <item>
+                <item>Use <code>~</code> to invert a filter (behaves like the <code>not</code> operator).</item>
+            </item>
+            <item>
+                <item>Use <code>&amp;</code> and <code>|</code> to combine filters together (behaves like the <code>and</code> and <code>or</code> operators).</item>
+            </item>
+        </list>
+        Here are some examples:
+        <list>
+            <item>
+                <text>
+                    This example will show you how to only handle updates that are <b>left</b> updates from a specific <b>chat</b> and ignore any other update:
+                    <syntax-highlight>
+                        from pytgcalls import filters
+                        ...
+                        @pytgcalls.on_update(~filters.chat_update(ChatUpdate.Status.LEFT_GROUP) &amp; filters.chat(1234567890))
+                        def on_incoming_voice_call(client, update):
+                            print("Left chat!", update)
+                    </syntax-highlight>
+                </text>
+            </item>
+            <item>
+                <text>
+                    This example will show you how to only handle updates that are <b>left</b> updates or <b>incoming call</b> updates and from a specific <b>chat</b>:
+                    <syntax-highlight>
+                        from pytgcalls import filters
+                        ...
+                        @pytgcalls.on_update(filters.chat(1234567890) &amp; (filters.chat_update(ChatUpdate.Status.LEFT_GROUP) | filters.chat_update(ChatUpdate.Status.INCOMING_CALL)))
+                        def on_incoming_voice_call(client, update):
+                            print("Incoming voice call or left chat!", update)
+                    </syntax-highlight>
+                </text>
+            </item>
+        </list>
+    </text>
+</page>

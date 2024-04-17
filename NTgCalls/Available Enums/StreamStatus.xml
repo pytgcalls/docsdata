@@ -9,13 +9,13 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>Playing</sb></ref> <shi>=</shi> 0</category-title>
+            <category-title><ref><sb>PLAYING</sb></ref> <shi>=</shi> 0</category-title>
             <config id="STATUS_PLAYING_DESC"/>
 
-            <category-title><ref><sb>Paused</sb></ref> <shi>=</shi> 1</category-title>
+            <category-title><ref><sb>PAUSED</sb></ref> <shi>=</shi> 1</category-title>
             <config id="STATUS_PAUSED_DESC"/>
 
-            <category-title><ref><sb>Idling</sb></ref> <shi>=</shi> 2</category-title>
+            <category-title><ref><sb>IDLING</sb></ref> <shi>=</shi> 2</category-title>
             <config id="STATUS_IDLING_DESC"/>
         </subtext>
     </subtext>

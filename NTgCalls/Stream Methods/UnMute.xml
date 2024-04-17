@@ -9,14 +9,14 @@
         app = NTgCalls()
         ...
 
-        app.unmute(
+        await app.unmute(
             -1001185324811,
         )
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>unmute</sb></ref>() <shi>-> bool</shi>
+        <shi>async</shi> <ref>NTgCalls.<sb>unmute</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <config id="UNMUTE_DESC2"/>

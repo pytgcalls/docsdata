@@ -12,6 +12,12 @@
   <!--MACRO-->
   <!--exceptions-->
   <option id="BASE_EXCEPTIONS">
+    <config id="BASE_MTPROTO"/>
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInCallError</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to execute an action on a call that you have not joined.</text></subtext>
+  </option>
+
+  <option id="BASE_MTPROTO">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoMTProtoClient</sb></ref></category-title>
     <subtext><text>This method can only be called with a valid MTProto client set.</text></subtext>
 
@@ -21,24 +27,26 @@
         Ensure you have started the process with <docs-ref link="/PyTgCalls/Basic Methods/Start">start()</docs-ref> before calling this method.
       </text>
     </subtext>
-
-    <category-title>exception <ref>pytgcalls.exceptions.<sb>NotInGroupCallError</sb></ref></category-title>
-    <subtext><text>This error occurs when attempting to leave a group call that you have not joined.</text></subtext>
   </option>
 
   <option id="CONNECTION_EXCEPTIONS">
     <config id="BASE_EXCEPTIONS"/>
+   <config id="GROUP_CALL_EXCEPTIONS"/>
+  </option>
 
+  <option id="GROUP_CALL_EXCEPTIONS">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoActiveGroupCall</sb></ref></category-title>
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
+  </option>
+
+  <option id="BASE_SYNC_C_EXCEPTION">
+    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
+    <subtext><text>The provided UID is invalid.</text></subtext>
   </option>
 
   <option id="BASE_C_EXCEPTIONS">
     <category-title><ref><sb><shi language="c">#NTG_UNKNOWN_EXCEPTION</shi></sb></ref> <shi>-1</shi></category-title>
     <subtext><text>An unknown exception occurred.</text></subtext>
-
-    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
-    <subtext><text>The provided UID is invalid.</text></subtext>
   </option>
 
   <option id="BASE_CONNECTION_EXCEPTIONS">
@@ -141,6 +149,31 @@
       </text>
     </subtext>
   </option>
+
+  <option id="CRYPTO_ERROR_C">
+    <category-title><ref><sb><shi language="c">#NTG_CRYPTO_ERROR</shi></sb></ref> <shi>-102</shi></category-title>
+    <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
+  </option>
+
+  <option id="INVALID_TRANSPORT_C">
+    <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
+    <subtext><text>The specified transport is invalid.</text></subtext>
+  </option>
+
+  <option id="CRYPTO_ERROR">
+    <category-title>exception <ref>ntgcalls.<sb>CryptoError</sb></ref></category-title>
+    <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
+  </option>
+
+  <option id="P2P_CONN_ERROR">
+    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+    <subtext><text>A connection with the specified ID is already established or does not exist.</text></subtext>
+  </option>
+
+  <option id="CONN_ALREADY_EXISTS_C">
+    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
+    <subtext><text>A connection with the specified ID already exists.</text></subtext>
+  </option>
   <!--end exceptions-->
 
   <!--descriptions-->
@@ -161,7 +194,7 @@
   </option>
 
   <option id="LIST_CALLS_DESC">
-    <subtext><text>Get a list of existent group calls</text></subtext>
+    <subtext><text>Get a list of all calls.</text></subtext>
   </option>
 
   <option id="AUDIO_CONFIG_DESC">
@@ -343,6 +376,10 @@
     <subtext><text>Input mode using FFmpeg.</text></subtext>
   </option>
 
+  <option id="MODE_NO_LATENCY_DESC">
+    <subtext><text>Input mode with no latency.</text></subtext>
+  </option>
+
   <option id="STREAM_STATUS_DESC">
     <text>Enumeration of stream status values.</text>
   </option>
@@ -383,9 +420,15 @@
     </text>
   </option>
 
-  <option id="CALLBACK_DISCONNECT_DESC">
+  <option id="CALLBACK_CONN_CHANGE_DESC">
     <text>
-      Callback to listen for when the WebRTC connection is closed. When a WebRTC connection will be closed, this callback will be triggered.
+      Callback to listen for when the WebRTC connection has changed his state.
+    </text>
+  </option>
+
+  <option id="CALLBACK_SIGNALING_DESC">
+    <text>
+      Callback for handling when a signaling message is received.
     </text>
   </option>
 
@@ -402,8 +445,8 @@
     </text>
   </option>
 
-  <option id="GROUP_CALL_DESC">
-    <text>Info about a group call</text>
+  <option id="CALL_DESC">
+    <text>Call Descriptor for a Group Call or Private Call.</text>
   </option>
 
   <option id="STREAM_STATUS_DESC2">
@@ -412,6 +455,297 @@
 
   <option id="BUG_FIX_CHANGELOGS">
     <item><text><b>Bug Fixes:</b> Addressed various bugs for a more stable experience.</text></item>
+  </option>
+
+  <option id="CREATE_P2P_DESC">
+    <text>
+      This method allows creating a Private Call connection with the output params from Telegram method
+      <a href="https://core.telegram.org/method/messages.getDhConfig">GetDhConfig</a> and <a href="https://core.telegram.org/constructor/phoneCallRequested">PhoneCallRequested</a> when is an incoming call
+      and then use the output params for <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> (When is an incoming call) or <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> with <a href="https://core.telegram.org/constructor/phoneCallProtocol">Protocol</a>.
+    </text>
+  </option>
+
+  <option id="CREATE_P2P_DESC2">
+    <text>Create a connection for a Private Call.</text>
+  </option>
+
+  <option id="EXCHANGE_KEYS_DESC">
+    <text>
+      This method allows exchanging keys for a Private Call connection with the output params from
+      <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> when is an outgoing call or <a href="https://core.telegram.org/constructor/phoneCall">PhoneCall</a> when is an incoming call.
+    </text>
+  </option>
+
+  <option id="EXCHANGE_KEYS_DESC2">
+    <text>Exchange keys for a Private Call connection.</text>
+  </option>
+
+  <option id="DH_CONFIG_DESC">
+    <text>Diffie-Hellman configuration for key exchange.</text>
+  </option>
+
+  <option id="G_DESC">
+    <subtext><text>New value prime, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text></subtext>
+  </option>
+
+  <option id="P_DESC">
+    <subtext><text>New value primitive root, see <a href="https://en.wikipedia.org/wiki/Diffie%E2%80%93Hellman_key_exchange">Wikipedia</a>.</text></subtext>
+  </option>
+
+  <option id="R_DESC">
+    <subtext><text>Random sequence of bytes of assigned length.</text></subtext>
+  </option>
+
+  <option id="G_A_HASH_DESC">
+    <subtext><text>Parameter for key exchange (Only when is incoming call).</text></subtext>
+  </option>
+
+  <option id="G_A_OR_B_DESC">
+    <subtext><text>Parameter for key exchange.</text></subtext>
+  </option>
+
+  <option id="FINGERPRINT_DESC">
+    <subtext><text>Fingerprint for the connection (Optional when is an outgoing call).</text></subtext>
+  </option>
+
+  <option id="KEY_FINGERPRINT_DESC">
+    <text>Fingerprint for the connection.</text>
+  </option>
+
+  <option id="AUTH_PARAMS_DESC">
+    <text>Authentication parameters for the connection.</text>
+  </option>
+
+  <option id="CONNECT_P2P_DESC">
+    <text>
+      This method allows connecting to a Private Call with the output params from Telegram method
+      <a href="https://core.telegram.org/method/phone.confirmCall">ConfirmCall</a> when is an outgoing call or <a href="https://core.telegram.org/constructor/phoneCall">PhoneCall</a> when is an incoming call.
+    </text>
+  </option>
+
+  <option id="CONNECT_P2P_DESC2">
+    <text>Set connection params for a Private Call obtained from Telegram.</text>
+  </option>
+
+  <option id="RTC_SERVERS_DESC">
+    <subtext><text>List of endpoints the user can connect to exchange call data.</text></subtext>
+  </option>
+
+  <option id="RTC_SERVER_DESC">
+    <text>Identifies an endpoint that can be used to connect to the other user in a phone call.</text>
+  </option>
+
+  <option id="GET_PROTOCOL_DESC">
+    <text>
+      This method allows getting the protocol for a Private Call connection with the output params for Telegram constructor
+      <a href="https://core.telegram.org/constructor/phoneCallProtocol">PhoneCallProtocol</a>.
+    </text>
+  </option>
+
+  <option id="GET_PROTOCOL_DESC2">
+    <text>Get the protocol for a Private Call connection.</text>
+  </option>
+
+  <option id="PROTOCOL_DESC">
+    <text>Protocol for a Private Call connection.</text>
+  </option>
+
+  <option id="MIN_LAYER_DESC">
+    <subtext><text>Minimum layer for remote connection.</text></subtext>
+  </option>
+
+  <option id="MAX_LAYER_DESC">
+    <subtext><text>Maximum layer for remote connection.</text></subtext>
+  </option>
+
+  <option id="UDP_P2P_DESC">
+    <subtext><text>Whether to allow P2P connection to the other participant.</text></subtext>
+  </option>
+
+  <option id="UDP_REFLECTOR_DESC">
+    <subtext><text>Whether to allow connection to the other participants through the reflector servers.</text></subtext>
+  </option>
+
+  <option id="LIBRARY_VERSIONS_DESC">
+    <subtext>
+      <text>
+        When using <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> and <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a>,
+        specify all library versions supported by the client.
+        The server will merge and choose the best library version supported by both peers, returning only the best
+        value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="P2P_ALLOWED_DESC">
+    <subtext><text>Whether to allow P2P connection to the other participant.</text></subtext>
+  </option>
+
+  <option id="SEND_SIGNALING_DATA_DESC">
+    <text>
+      This method allows sending signaling data to the WebRTC connection.
+    </text>
+  </option>
+
+  <option id="SEND_SIGNALING_DATA_DESC2">
+    <text>Send signaling data to the WebRTC connection.</text>
+  </option>
+
+  <option id="SIGNALING_DATA_DESC">
+    <text>Signaling payload.</text>
+  </option>
+
+  <option id="CPU_USAGE_DESC">
+    <text>Get an estimate of the CPU usage of the current process.</text>
+  </option>
+
+  <option id="CPU_USAGE_DESC2">
+      <text>Get the CPU usage of the current process.</text>
+  </option>
+
+  <option id="CPU_USAGE_DESC3">
+    <text>Buffer to store the CPU usage.</text>
+  </option>
+
+  <option id="REGISTER_LOGGER_DESC">
+    <text>Register a logger for the library, this logger will be used for all instances.</text>
+  </option>
+
+  <option id="LOGGER_DESC">
+    <text>Callback for logging messages.</text>
+  </option>
+
+  <option id="LOG_MESSAGE_STRUCT_DESC">
+    <text>Log message structure.</text>
+  </option>
+
+  <option id="LOG_LEVEL_DESC">
+    <text>Log level.</text>
+  </option>
+
+  <option id="LOG_SOURCE_DESC">
+    <text>Log source.</text>
+  </option>
+
+  <option id="LOG_FILE_DESC">
+    <text>File name where the log was generated.</text>
+  </option>
+
+  <option id="LOG_LINE_DESC">
+    <text>Line number where the log was generated.</text>
+  </option>
+
+  <option id="LOG_MESSAGE_DESC">
+    <text>Log message.</text>
+  </option>
+
+  <option id="NTG_LOG_DEBUG_DESC">
+    <text>Debug log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_INFO_DESC">
+    <text>Info log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_WARNING_DESC">
+    <text>Warning log level.</text>
+
+  </option>
+
+  <option id="LOG_LEVEL_ERROR_DESC">
+    <text>Error log level.</text>
+  </option>
+
+  <option id="LOG_LEVEL_UNKNOWN_DESC">
+    <text>Unknown log level.</text>
+  </option>
+
+  <option id="NTG_LOG_WEBRTC_DESC">
+    <text>WebRTC log level.</text>
+  </option>
+
+  <option id="NTG_LOG_SELF_DESC">
+    <text>NTgCalls log level.</text>
+  </option>
+
+  <option id="CRYPTO_ERROR_DESC">
+    <text>An error occurred while encrypting or decrypting data.</text>
+  </option>
+
+  <option id="SIGNALING_ERROR_DESC">
+    <text>An error occurred during signaling</text>
+  </option>
+
+  <option id="SIGNALING_UNSUPPORTED_DESC">
+    <text>The current protocol is not supported by the signaling server.</text>
+  </option>
+
+  <option id="MISSING_FINGERPRINT_DESC">
+    <text>The fingerprint is missing (Happens only on outgoing calls)</text>
+  </option>
+
+  <option id="RTC_ID_DESC">
+    <subtext><text>Endpoint ID</text></subtext>
+  </option>
+
+  <option id="RTC_IPV4_DESC">
+    <subtext><text>IPv4 address of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_IPV6_DESC">
+    <subtext><text>IPv6 address of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_USERNAME_DESC">
+    <subtext><text>Username of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_PASSWORD_DESC">
+    <subtext><text>Password of endpoint</text></subtext>
+  </option>
+
+  <option id="RTC_PORT_DESC">
+    <subtext><text>Port ID</text></subtext>
+  </option>
+
+  <option id="RTC_TURN_DESC">
+    <subtext><text>Whether the endpoint is a TURN server</text></subtext>
+  </option>
+
+  <option id="RTC_STUN_DESC">
+    <subtext><text>Whether the endpoint is a STUN server</text></subtext>
+  </option>
+
+  <option id="RTC_TCP_DESC">
+    <subtext><text>Whether TCP should be used</text></subtext>
+  </option>
+
+  <option id="RTC_PEER_TAG_DESC">
+    <subtext><text>Our peer tag</text></subtext>
+  </option>
+
+  <option id="CONNECTION_STATE_DESC">
+    <text>Enumeration of connection state values.</text>
+  </option>
+
+  <option id="NTG_STATE_CONNECTING_DESC">
+    <subtext><text>Indicates that the connection is in the process of being established.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_CONNECTED_DESC">
+    <subtext><text>Indicates that the connection has been established.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_TIMEOUT_DESC">
+    <subtext><text>Indicates that the connection has timed out.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_FAILED_DESC">
+    <subtext><text>Indicates that the connection has failed.</text></subtext>
+  </option>
+
+  <option id="NTG_STATE_CLOSED_DESC">
+    <subtext><text>Indicates that the connection has been closed.</text></subtext>
   </option>
   <!--end descriptions-->
 
@@ -488,8 +822,6 @@
   </option>
 
   <option id="ARG_STREAM_PARAMS">
-    <config id="ARG_INT_ID"/>
-
     <category-title><ref><sb>media</sb></ref>: <docs-ref href="">ntgcalls.MediaDescription</docs-ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
@@ -512,7 +844,7 @@
     <config id="INPUT_MODE_DESC"/>
   </option>
 
-  <option id="ARG_MEDIA">
+  <option id="ARG_MEDIA_C">
     <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
@@ -545,6 +877,21 @@
   <option id="ARG_SCREEN_DEVICE">
     <category-title><ref>screen_info</ref>: <code>pytgcalls.ScreenInfo</code></category-title>
     <subtext><text>The video media device.</text></subtext>
+  </option>
+
+  <option id="ARG_CUSTOM_DATA">
+    <category-title><shi language="c">void*</shi> <ref><sb>userData</sb></ref></category-title>
+    <subtext><text>Custom data that can be passed to the callback function.</text></subtext>
+  </option>
+
+  <option id="ARG_ASYNC_STRUCT">
+    <category-title><docs-ref link="/NTgCalls/Using Async">ntg_async_struct</docs-ref><shi language="c">*</shi> <ref><sb>future</sb></ref></category-title>
+    <subtext><text>The <code>ntg_async_struct</code> instance that will be used to track the async operation.</text></subtext>
+  </option>
+
+  <option id="ARG_MEDIA">
+    <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref>desc</ref></category-title>
+    <config id="ARG_MEDIA_DESC"/>
   </option>
   <!--end parameters-->
 
@@ -616,7 +963,7 @@
     <team>
       <member owner="true">
         <name>Laky</name>
-        <role>DevOps Engineer, Software Architect, Porting Engineer</role>
+        <role>DevOps Engineer, Software Architect</role>
         <github-username>Laky-64</github-username>
         <telegram-username>Laky64</telegram-username>
       </member>
@@ -664,7 +1011,7 @@
       </member>
     </team>
     <footer-links>
-      <contribution-link>https://github.com/pytgcalls</contribution-link>
+      <contribution-link>https://github.com/pytgcalls/pytgcalls.github.io</contribution-link>
       <category title="Products">
         <link href="/PyTgCalls/Changelogs">Changelogs</link>
         <link href="https://github.com/pytgcalls/pytgcalls/">PyTgCalls</link>
@@ -694,7 +1041,10 @@
     <file>Callbacks.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>Connect.xml</file>
+      <file>Connect P2P.xml</file>
       <file>Create Call.xml</file>
+      <file>Create P2P Call.xml</file>
+      <file>Exchange Keys.xml</file>
       <file>Stop.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
@@ -709,8 +1059,12 @@
     </group>
     <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
+      <file>AuthParams.xml</file>
+      <file>DhConfig.xml</file>
       <file>MediaDescription.xml</file>
       <file>MediaState.xml</file>
+      <file>Protocol.xml</file>
+      <file>RTCServer.xml</file>
       <file>VideoDescription.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
@@ -722,9 +1076,13 @@
     <microtag>C Api</microtag>
     <file>Getting Started.xml</file>
     <file>Callback Registration.xml</file>
+    <file>Using Async.xml</file>
     <group basepath="NTgCalls/Basic Methods/">
       <file>ntg_connect.xml</file>
-      <file>ntg_get_params.xml</file>
+      <file>ntg_connect_p2p.xml</file>
+      <file>ntg_create.xml</file>
+      <file>ntg_create_p2p.xml</file>
+      <file>ntg_exchange_keys.xml</file>
       <file>ntg_stop.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
@@ -738,17 +1096,26 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
+      <file>ntg_get_protocol.xml</file>
       <file>ntg_get_state.xml</file>
+      <file>ntg_send_signaling_data.xml</file>
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
-      <file>ntg_group_call_struct.xml</file>
+      <file>ntg_auth_params_struct.xml</file>
+      <file>ntg_call_struct.xml</file>
+      <file>ntg_dh_config_struct.xml</file>
+      <file>ntg_log_message_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
+      <file>ntg_protocol_struct.xml</file>
+      <file>ntg_rtc_server_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
       <file>ntg_input_mode_enum.xml</file>
+      <file>ntg_log_level_enum.xml</file>
+      <file>ntg_log_source_enum.xml</file>
       <file>ntg_stream_status_enum.xml</file>
       <file>ntg_stream_type_enum.xml</file>
     </group>
@@ -770,22 +1137,27 @@
     <file>Custom Api.xml</file>
     <file>Media Devices.xml</file>
     <file>Decorators.xml</file>
+    <file>Filters.xml</file>
+    <file>Using Filters.xml</file>
     <group basepath="PyTgCalls/Available Enums/">
       <file>AudioQuality.xml</file>
-      <file>MediaStream.xml</file>
+      <file>Call Status.xml</file>
+      <file>Call Type.xml</file>
+      <file>ChatUpdate Status.xml</file>
+      <file>GroupCallParticipant Action.xml</file>
+      <file>MediaStream Flags.xml</file>
       <file>VideoQuality.xml</file>
     </group>
 
     <microtag>Methods</microtag>
     <group basepath="PyTgCalls/Basic Methods/">
+      <file>Play.xml</file>
       <file>Idle.xml</file>
-      <file>Join Group Call.xml</file>
-      <file>Leave Group Call.xml</file>
+      <file>Leave Call.xml</file>
       <file>Run.xml</file>
       <file>Start.xml</file>
     </group>
     <group basepath="PyTgCalls/Stream Methods/">
-      <file>Change Stream.xml</file>
       <file>Mute Stream.xml</file>
       <file>Pause Stream.xml</file>
       <file>Played Time.xml</file>
@@ -794,8 +1166,6 @@
     </group>
     <group basepath="PyTgCalls/Advanced Methods/">
       <file>Change Volume Call.xml</file>
-      <file>Get Active Call.xml</file>
-      <file>Get Call.xml</file>
       <file>Get Participants.xml</file>
     </group>
 
@@ -808,23 +1178,13 @@
       <file>VideoParameters.xml</file>
       <file>VideoStream.xml</file>
     </group>
-    <group basepath="PyTgCalls/Piped Stream/">
-      <file>AudioImagePiped.xml</file>
-      <file>AudioPiped.xml</file>
-      <file>AudioVideoPiped.xml</file>
-      <file>VideoPiped.xml</file>
-    </group>
-    <group basepath="PyTgCalls/Capture Devices/">
-      <file>CaptureAudioDevice.xml</file>
-      <file>CaptureAVDesktop.xml</file>
-      <file>CaptureAVDeviceDesktop.xml</file>
-      <file>CaptureVideoDesktop.xml</file>
-    </group>
+
     <group basepath="PyTgCalls/Advanced Types/">
-      <file>GroupCall.xml</file>
+      <file>Call.xml</file>
+      <file>CallConfig.xml</file>
+      <file>ChatUpdate.xml</file>
+      <file>GroupCallConfig.xml</file>
       <file>GroupCallParticipant.xml</file>
-      <file>JoinedGroupCallParticipant.xml</file>
-      <file>LeftGroupCallParticipant.xml</file>
       <file>StreamAudioEnded.xml</file>
       <file>StreamVideoEnded.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>

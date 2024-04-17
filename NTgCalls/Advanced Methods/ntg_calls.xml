@@ -1,37 +1,32 @@
 <page>
     <h1>ntg_calls</h1>
     <text>
-        This function returns a list of <code>ntg_group_call_struct</code> instances,
+        This function returns a list of <code>ntg_call_struct</code> instances,
         each containing information about an active group call associated with the channel or group.
-        You should provide a buffer as an array of <code>ntg_group_call_struct</code>
+        You should provide a buffer as an array of <code>ntg_call_struct</code>
         elements with a size matching the value returned by <code>ntg_calls_count</code>.
         The function populates this list with data for active group calls and returns the number of group calls retrieved.
     </text>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="10">
+    <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
             uint32_t uid = ntg_init();
-
+            ...
             int size = ...  ; // Get the size of the call list
-            ntg_group_call_struct buffer[size];
-
-            int result = ntg_calls(uid, buffer, size);
-            if (result &lt; 0) {
-                printf("Failed to retrieve group calls (Error code: %d).\n", result);
-                return 1;
-            }
-
+            ntg_call_struct buffer[size];
+            ntg_async_struct future;
+            // Initialize the async struct
+            int result = ntg_calls(uid, buffer, size, &amp;future);
+            // Wait for the async operation to complete
             for (int i = 0; i &lt; result; i++) {
                 printf("Group Call %d:\n", i + 1);
                 printf("  Chat ID: %lld\n", buffer[i].chatId);
                 printf("  Status: %d\n", buffer[i].status);
             }
-
             ... // Your Code Here
-
             return 0;
         }
     </syntax-highlight>
@@ -48,15 +43,21 @@
             <subtext>
                 <config id="ARG_C_UID"/>
 
-                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_group_call_struct">ntg_group_call_struct</docs-ref><shi language="c">*</shi> <ref>buffer</ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_call_struct">ntg_call_struct</docs-ref><shi language="c">*</shi> <ref><sb>buffer</sb></ref></category-title>
                 <subtext><text>The buffer that will hold the retrieved group call information.</text></subtext>
 
                 <config id="ARG_BUF_SIZE"/>
+                <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_C_EXCEPTIONS"/>
                 <config id="SMALL_BUFF_EXCEPTION"/>

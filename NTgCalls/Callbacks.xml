@@ -41,18 +41,35 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>on_disconnect</sb></ref>()</category-title>
+        <category-title><ref>NTgCalls.<sb>on_connection_change</sb></ref>()</category-title>
         <subtext>
-            <config id="CALLBACK_DISCONNECT_DESC"/>
+            <config id="CALLBACK_CONN_CHANGE_DESC"/>
             <h3>Example</h3>
             <syntax-highlight mark="4-7">
                 ...
                 app = NTgCalls()
                 ...
-                def handler(chat_id: int):
-                    print(chat_id)
+                def handler(chat_id: int, state: ConnectionState):
+                    print(chat_id, state)
                     ...
-                app.on_disconnect(handler)
+                app.on_connection_change(handler)
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref>NTgCalls.<sb>on_signaling</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_SIGNALING_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight mark="4-7">
+                ...
+                app = NTgCalls()
+                ...
+                def handler(chat_id: int, payload: bytes):
+                    print(chat_id, payload)
+                ...
+                app.on_signaling(handler)
             </syntax-highlight>
         </subtext>
     </category>

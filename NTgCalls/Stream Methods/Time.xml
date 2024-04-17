@@ -9,7 +9,7 @@
         app = NTgCalls(client)
 
         print(
-            app.time(
+            await app.time(
                 -1001185324811,
             )
         )
@@ -17,7 +17,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>time</sb></ref>() <shi>-> int</shi>
+        <shi>async</shi> <ref>NTgCalls.<sb>time</sb></ref>() <shi>-> int</shi>
     </category-title>
     <subtext>
         <config id="TIME_DESC_2"/>

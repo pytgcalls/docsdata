@@ -8,7 +8,7 @@
 
         app = NTgCalls()
 
-        params = app.create_call(
+        params = await app.create_call(
             -1001185324811,
             MediaDescription(
                 AudioDescription(
@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>NTgCalls.<sb>create_call</sb></ref>() <shi>-> str</shi>
+        <shi>async</shi> <ref>NTgCalls.<sb>create_call</sb></ref>() <shi>-> str</shi>
     </category-title>
     <subtext>
         <config id="CREATE_DESC2"/>
@@ -32,6 +32,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
+                <config id="ARG_INT_ID"/>
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>

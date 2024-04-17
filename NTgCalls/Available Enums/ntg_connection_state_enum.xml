@@ -1,0 +1,28 @@
+<page>
+    <h1>ntg_connection_state_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref><sb>ntg_connection_state_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="CONNECTION_STATE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_STATE_CONNECTING</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="NTG_STATE_CONNECTING_DESC"/>
+
+            <category-title><ref><sb>NTG_STATE_CONNECTED</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="NTG_STATE_CONNECTED_DESC"/>
+
+            <category-title><ref><sb>NTG_STATE_TIMEOUT</sb></ref> <shi>=</shi> 4</category-title>
+            <config id="NTG_STATE_TIMEOUT_DESC"/>
+
+            <category-title><ref><sb>NTG_STATE_FAILED</sb></ref> <shi>=</shi> 8</category-title>
+            <config id="NTG_STATE_FAILED_DESC"/>
+
+            <category-title><ref><sb>NTG_STATE_CLOSED</sb></ref> <shi>=</shi> 12</category-title>
+            <config id="NTG_STATE_CLOSED_DESC"/>
+        </subtext>
+    </subtext>
+</page>

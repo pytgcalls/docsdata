@@ -1,0 +1,20 @@
+<page>
+    <h1>GroupCallConfig</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref>pytgcalls.types.<sb>GroupCallConfig</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Configuration descriptor for a group call</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>invite_hash</ref>: Optional[<shi>str</shi>]</category-title>
+            <subtext><text>Unique identifier for a group call invite in t.me link form</text></subtext>
+            <category-title><ref>join_as</ref>: <config id="ARG_UNION_PEER"/></category-title>
+            <subtext><text>InputPeer to join as a channel or a profile</text></subtext>
+            <category-title><ref>auto_start</ref>: <shi>bool</shi></category-title>
+            <subtext><text>Start group call if not present, by default, is True</text></subtext>
+        </subtext>
+    </subtext>
+</page>

@@ -2,7 +2,7 @@
     <h1>VideoDescription</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>VideoDescription</sb></ref>
+        <shi>class</shi> <ref>ntgcalls.types.<sb>VideoDescription</sb></ref>
     </category-title>
     <subtext>
         <config id="VIDEO_CONFIG_DESC"/>

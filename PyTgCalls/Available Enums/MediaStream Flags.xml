@@ -1,11 +1,11 @@
 <page>
-    <h1>MediaStream</h1>
+    <h1>MediaStream Flags</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>MediaStream</sb></ref>
+        <shi>class</shi> <ref>pytgcalls.types.MediaStream.<sb>Flags</sb></ref>
     </category-title>
     <subtext>
-        <text>Enumeration for managing media stream requirements in group calls.</text>
+        <text>Enumeration for managing media stream requirements in telegram calls.</text>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
@@ -17,6 +17,9 @@
 
             <category-title><ref><sb>REQUIRED</sb></ref> <shi>=</shi> 4</category-title>
             <subtext><text>Indicates that the stream is mandatory.</text></subtext>
+
+            <category-title><ref><sb>NO_LATENCY</sb></ref> <shi>=</shi> 8</category-title>
+            <subtext><text>Used to indicate that the stream should be sent with no latency.</text></subtext>
         </subtext>
     </subtext>
 </page>

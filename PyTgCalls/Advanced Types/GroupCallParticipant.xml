@@ -32,6 +32,9 @@
 
             <category-title><ref><sb>volume</sb></ref> <shi>-> int</shi></category-title>
             <subtext><text>Volume level of the participant.</text></subtext>
+
+            <category-title><ref><sb>action</sb></ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/GroupCallParticipant Action">Action</docs-ref></category-title>
+            <subtext><text>Current action of the participant.</text></subtext>
         </subtext>
     </subtext>
 </page>

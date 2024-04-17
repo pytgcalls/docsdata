@@ -5,7 +5,7 @@
         <shi>class</shi> <ref>pytgcalls.types.<sb>AudioQuality</sb></ref>
     </category-title>
     <subtext>
-        <text>Enumeration of audio quality settings for group calls.</text>
+        <text>Enumeration of audio quality settings for audio streams in telegram calls.</text>
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
