@@ -3,6 +3,128 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgApr24.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v2.0.X"
+            description="Private Calls, Code Rework, Async Support and more!"
+            mainbg="#070d16"
+            version="2.0.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Private Calls:</b> Now you can make private calls by just using a single method for also group calls, by using <docs-ref link="/PyTgCalls/Basic Methods/Play">play()</docs-ref>.</text></item>
+                <item><text><b>Code Rework:</b> The code has been reworked to improve performance, stability and to make it more readable.</text></item>
+                <item><text><b>Async Support:</b> NTgCalls now supports asynchronous methods for improved performance.</text></item>
+                <item><text><b>Filters for Updates:</b> Added filters for updates to allow for more granular control over updates, <docs-ref link="/PyTgCalls/Filters">More Info</docs-ref>.</text></item>
+                <item><text><b>Improved Documentation:</b> Updated documentation with more examples, new UI and comprehensive guidance.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>Now methods like <code>change_stream()</code> and <code>join_group_call()</code> was removed, now you can use <code>play()</code> for both private, group calls and changing streams.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # Change stream
+                            call_py.change_stream(
+                                -1001234567890,
+                                AudioPiped(
+                                    'input.mp4',
+                                ),
+                            )
+                            <br/>
+                            # Join group call
+                            call_py.join_group_call(
+                                -1001234567890,
+                                AudioPiped(
+                                    'input.mp4',
+                                ),
+                            )
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            # Change stream
+                            call_py.play(
+                                -1001234567890,
+                                AudioPiped(
+                                    'input.mp4',
+                                ),
+                            )
+                            <br/>
+                            # Join group call
+                            call_py.play(
+                                -1001234567890,
+                                AudioPiped(
+                                    'input.mp4',
+                                ),
+                            )
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Now all listeners like <code>on_stream_end()</code> was unified in <code>on_update()</code> and with <docs-ref link="/PyTgCalls/Filters">filters</docs-ref>, for example:</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # On Closed Voice Chat
+                            @call_py.on_closed_voice_chat()
+                            async def on_closed_voice_chat(client: PyTgCalls, update: Update):
+                                print(update)
+                            <br/>
+                            # On stream end
+                            @call_py.on_stream_end()
+                            async def on_stream_end(client: PyTgCalls, update: Update):
+                                print(update)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from pytgcalls import filters
+                            from pytgcalls.types import ChatUpdate
+                            ...
+                            # On Closed Voice Chat
+                            @call_py.on_update(filters.chat_update(ChatUpdate.CLOSED_VOICE_CHAT))
+                            async def on_closed_voice_chat(client: PyTgCalls, update: Update):
+                                print(update)
+                            <br/>
+                            # On stream end
+                            @call_py.on_update(filters.stream_end)
+                            async def on_stream_end(client: PyTgCalls, update: Update):
+                                print(update)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Reworked <code>GroupCall</code> type, now is <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref> and now is more powerful and easy to use.</text>
+                </item>
+                <item>
+                    <text>Removed <code>JoinedGroupCallParticipant</code> and <code>LeftGroupCallParticipant</code> classes, now you can see the action in <docs-ref link="/PyTgCalls/Advanced Types/GroupCallParticipant">GroupCallParticipant</docs-ref> class.</text>
+                </item>
+                <item>
+                    <text>Removed all legacy types and input stream, now is a mandatory to use <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref> for all streams.</text>
+                </item>
+                <item>
+                    <text>Now <code>ping()</code> from <docs-ref link="/PyTgCalls/Client">Client</docs-ref> is not anymore a coroutine, now is a normal method.</text>
+                </item>
+                <item>
+                    <text>Removed <code>get_active_call()</code> and <code>get_call()</code>, now is a mandatory to use <code>calls()</code> from <docs-ref link="/PyTgCalls/Client">Client</docs-ref>.</text>
+                </item>
+                <item>
+                    <text>Renamed <code>leave_group_call</code> to <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref>.</text>
+                </item>
+                <item>
+                    <text>For more info about breaking changes, check the <docs-ref link="/PyTgCalls/Examples">Examples</docs-ref>, if we missed something, please <a href="https://github.com/pytgcalls/docsdata/issues/new">open an issue</a>.</text>
+                </item>
+            </list>
+            <h3 noref="true">Additional Notes</h3>
+            <text>
+                We're pleased to announce that now is available an unofficial porting of NTgCalls for Rust, for more info, check the <a href="https://github.com/YouKnow-sys/ntgcalls-rs">repository</a>.
+            </text>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgFeb24.png"
             minititle="MAJOR UPDATE"
             bigtitle="PyTgCalls v1.2.X"
