@@ -23,7 +23,7 @@
             int result = ntg_create_p2p(
                 uid,
                 chatID,
-                dhConfig,
+                &amp;dhConfig,
                 g_a_hash,
                 sizeG_A_Hash,
                 desc,

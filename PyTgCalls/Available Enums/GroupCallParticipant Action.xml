@@ -9,13 +9,13 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>JOINED</sb></ref></category-title>
+            <category-title><ref><sb>JOINED</sb></ref> <shi>=</shi> 1</category-title>
             <subtext><text>Represents a participant joined in a group call.</text></subtext>
 
-            <category-title><ref><sb>LEFT</sb></ref></category-title>
+            <category-title><ref><sb>LEFT</sb></ref> <shi>=</shi> 2</category-title>
             <subtext><text>Represents a participant left a group call.</text></subtext>
 
-            <category-title><ref><sb>UPDATED</sb></ref></category-title>
+            <category-title><ref><sb>UPDATED</sb></ref> <shi>=</shi> 4</category-title>
             <subtext><text>Represents a participant updated in a group call.</text></subtext>
         </subtext>
     </subtext>
