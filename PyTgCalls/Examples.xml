@@ -20,10 +20,6 @@
             <column>Append parameters to ffmpeg</column>
         </item>
         <item>
-            <column><ref-shi url="example/calls_with_module/example_module.py" language="py">calls_with_module</ref-shi></column>
-            <column>Join a group call directly without waiting for PyTgCalls to start</column>
-        </item>
-        <item>
             <column><ref-shi url="example/capture_mic/example_mic.py" language="py">capture_mic</ref-shi></column>
             <column>Capture microphone</column>
         </item>
