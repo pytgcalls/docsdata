@@ -16,7 +16,7 @@
 
         ...  # Call API methods
 
-        app.join_group_call(
+        app.play(
             -1001185324811,
             CaptureAudioDevice(
                 MediaDevices.get_audio_devices()[0],

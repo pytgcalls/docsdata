@@ -17,6 +17,7 @@
                 and ignore any other update. Filters are passed as the first argument of the decorator:
                 <syntax-highlight>
                     from pytgcalls import filters
+                    from pytgcalls.types import ChatUpdate
                     ...
                     @pytgcalls.on_update(filters.chat_update(ChatUpdate.Status.INCOMING_CALL))
                     def on_incoming_call(client, update):
@@ -43,6 +44,7 @@
                     This example will show you how to only handle updates that are <b>left</b> updates from a specific <b>chat</b> and ignore any other update:
                     <syntax-highlight>
                         from pytgcalls import filters
+                        from pytgcalls.types import ChatUpdate
                         ...
                         @pytgcalls.on_update(~filters.chat_update(ChatUpdate.Status.LEFT_GROUP) &amp; filters.chat(1234567890))
                         def on_incoming_voice_call(client, update):
@@ -55,6 +57,7 @@
                     This example will show you how to only handle updates that are <b>left</b> updates or <b>incoming call</b> updates and from a specific <b>chat</b>:
                     <syntax-highlight>
                         from pytgcalls import filters
+                        from pytgcalls.types import ChatUpdate
                         ...
                         @pytgcalls.on_update(filters.chat(1234567890) &amp; (filters.chat_update(ChatUpdate.Status.LEFT_GROUP) | filters.chat_update(ChatUpdate.Status.INCOMING_CALL)))
                         def on_incoming_voice_call(client, update):

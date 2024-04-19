@@ -16,7 +16,7 @@
         ...
         app = PyTgCalls(client)
         app.start()
-        app.join_group_call(
+        app.play(
             -1001185324811,
             MediaStream(
                 'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
@@ -91,7 +91,7 @@
         <item>
             Now you can call any method you want:
             <syntax-highlight>
-                app.join_group_call(
+                app.play(
                     -1001185324811,
                     MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
@@ -118,7 +118,7 @@
 
         async def main():
             await app.start()
-            await app.join_group_call(
+            await app.play(
                 -1001185324811,
                 MediaStream(
                     'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
@@ -146,7 +146,7 @@
             <syntax-highlight>
                 async def main():
                 await app.start()
-                await app.join_group_call(
+                await app.play(
                     -1001185324811,
                     MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
