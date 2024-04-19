@@ -905,7 +905,7 @@
             ...
             app = PyTgCalls(client)
             app.start()
-            app.join_group_call(
+            app.play(
                 -1001185324811,
                 MediaStream(
                     'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',

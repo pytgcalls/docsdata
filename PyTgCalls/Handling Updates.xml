@@ -23,16 +23,16 @@
     <h3>Using Decorators</h3>
     <text>The most elegant way to register a stream end handler is by using the <docs-ref link="">on_stream_end()</docs-ref> decorator:</text>
     <syntax-highlight>
-        from pytgcalls import PyTgCalls
+        from pytgcalls import PyTgCalls, filters
         from pytgcalls.types import Update
         from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
-        @app.on_stream_end()
+        @app.on_update(filters.stream_end)
         async def my_handler(client: PyTgCalls, update: Update):
             if isinstance(update, StreamVideoEnded):
-                await pytgcalls.change_stream(
+                await pytgcalls.play(
                     -1001185324811,
                     stream=MediaStream(
                         'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
