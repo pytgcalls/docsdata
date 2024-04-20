@@ -1009,6 +1009,24 @@
         <github-username>branchscope</github-username>
         <telegram-username>branchscope</telegram-username>
       </member>
+      <member>
+        <name>Sad! Luffy</name>
+        <role>Copywriter</role>
+        <github-username>SadLuffy</github-username>
+        <telegram-username>SadLuffy</telegram-username>
+      </member>
+      <member>
+        <name>Roj</name>
+        <role>MTKruto</role>
+        <github-username>roj1512</github-username>
+        <telegram-username>roj1512</telegram-username>
+      </member>
+      <member>
+        <name>YouKnow</name>
+        <role>Rust Developer, Porting Engineer</role>
+        <github-username>YouKnow-sys</github-username>
+        <telegram-username>INVICORE</telegram-username>
+      </member>
     </team>
     <footer-links>
       <contribution-link>https://github.com/pytgcalls/pytgcalls.github.io</contribution-link>
