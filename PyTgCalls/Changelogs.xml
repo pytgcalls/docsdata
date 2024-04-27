@@ -82,7 +82,7 @@
                             from pytgcalls.types import ChatUpdate
                             ...
                             # On Closed Voice Chat
-                            @call_py.on_update(filters.chat_update(ChatUpdate.CLOSED_VOICE_CHAT))
+                            @call_py.on_update(filters.chat_update(ChatUpdate.Status.CLOSED_VOICE_CHAT))
                             async def on_closed_voice_chat(client: PyTgCalls, update: Update):
                                 print(update)
                             <br/>
