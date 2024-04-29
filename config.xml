@@ -914,7 +914,7 @@
             idle()
         </syntax-highlight>
       </file>
-      <file title="pytgcalls.c">
+      <file title="ntgcalls.c">
         <syntax-highlight language="c">
             #include &lt;stdint.h&gt;
             #include "ntgcalls.h"
@@ -934,6 +934,36 @@
                 }
                 ...
                 return 0;
+            }
+        </syntax-highlight>
+      </file>
+      <file title="ntgcalls.go">
+        <syntax-highlight language="go">
+            package main
+
+            //#cgo LDFLAGS: -L . -lntgcalls -Wl,-rpath=./
+            import "C"
+            import (
+                "fmt"
+                ...
+                "example/ntgcalls"
+            )
+
+            func main() {
+                client := ntgcalls.NTgCalls()
+                defer client.Free()
+
+                chatID := ... // Obtain the chat ID
+                params := ... // Obtain connection parameters
+
+                err := ntgcalls.Connect(uid, chatID, params)
+                if err == nil {
+                    // Successfully connected to the WebRTC
+                    ...
+                } else {
+                    fmt.Printf("Failed to connect: %d\n", err)
+                }
+                ...
             }
         </syntax-highlight>
       </file>
