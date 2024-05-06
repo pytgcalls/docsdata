@@ -1,5 +1,5 @@
 <page>
-    <h1>Pause Stream</h1>
+    <h1>Resume Stream</h1>
     <text>This method allows resuming the streaming file.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
