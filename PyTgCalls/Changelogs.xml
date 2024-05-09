@@ -112,6 +112,15 @@
                     <text>Renamed <code>leave_group_call</code> to <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref>.</text>
                 </item>
                 <item>
+                    <text>Moved <code>MediaStream</code> flags under <docs-ref link="/PyTgCalls/Available Enums/MediaStream Flags">MediaStream.Flags</docs-ref> instead of <code>MediaStream</code>.</text>
+                </item>
+                <item>
+                    <text>Now <code>invite_hash</code>, <code>join_as</code> and <code>auto_start</code> are part of <docs-ref link="/PyTgCalls/Advanced Types/GroupCallConfig">GroupCallConfig</docs-ref> instead of <code>join_group_call</code>.</text>
+                </item>
+                <item>
+                    <text>Renamed <code>additional_ffmpeg_parameters</code> to <code>ffmpeg_parameters</code> in <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref>.</text>
+                </item>
+                <item>
                     <text>For more info about breaking changes, check the <docs-ref link="/PyTgCalls/Examples">Examples</docs-ref>, if we missed something, please <a href="https://github.com/pytgcalls/docsdata/issues/new">open an issue</a>.</text>
                 </item>
             </list>
