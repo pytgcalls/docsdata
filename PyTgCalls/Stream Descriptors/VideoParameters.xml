@@ -2,7 +2,7 @@
     <h1>VideoParameters</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>VideoParameters</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>VideoParameters</sb></ref>
     </category-title>
     <subtext>
         <text>Stream’s video parameters.</text>

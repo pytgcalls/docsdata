@@ -6,7 +6,7 @@
     </text>
     <h2>Details</h2>
     <category>
-        <category-title><ref>pytgcalls.filters.<sb>create</sb></ref>()</category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">create</sb></ref>()</category-title>
         <subtext>
             <text>
                 Easily create a custom filter.
@@ -41,21 +41,21 @@
             </subtext>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>me</sb></ref></category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">me</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter updates for yourself.
             </text>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>stream_end</sb></ref></category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">stream_end</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter updates for when a stream ends.
             </text>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>chat</sb></ref>()</category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">chat</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter updates coming from one or more chats.
@@ -73,7 +73,7 @@
             </subtext>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb>chat_update</sb></ref>()</category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">chat_update</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter specific type of chat updates.
@@ -89,7 +89,7 @@
                 </subtext>
             </subtext>
         </subtext>
-        <category-title><ref>pytgcalls.filters.<sb>call_participant</sb></ref>()</category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">call_participant</sb></ref>()</category-title>
         <subtext>
             <text>
                 Filter updates for when a call participant joins, leaves or is updated.

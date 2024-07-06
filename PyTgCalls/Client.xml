@@ -17,7 +17,7 @@
     <h2>Details</h2>
     <category>
         <category-title noref="true">
-            <shi>class</shi> <ref>pytgcalls.<sb>PyTgCalls</sb></ref>
+            <shi>class</shi> <ref src="class">pytgcalls.<sb>PyTgCalls</sb></ref>
         </category-title>
         <subtext>
             <text>PyTgCalls Client, the main tool for interacting with Telegram Calls.</text>

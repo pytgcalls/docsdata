@@ -31,7 +31,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>pytgcalls.<sb>idle</sb></ref>()
+        <ref src="method">pytgcalls.<sb>idle</sb></ref>()
     </category-title>
     <subtext>
         <text>Blocks the main script execution until a signal is received.</text>

@@ -17,7 +17,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>start</sb></ref>()
+        <ref src="method">PyTgCalls.<sb>start</sb></ref>()
     </category-title>
     <subtext>
         <text>Start the client.</text>

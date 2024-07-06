@@ -19,7 +19,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>run</sb></ref>()
+        <ref src="method">PyTgCalls.<sb>run</sb></ref>()
     </category-title>
     <subtext>
         <text>Start the client, idle the main script and finally stop the client.</text>

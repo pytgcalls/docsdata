@@ -2,7 +2,7 @@
     <h1>CallConfig</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>CallConfig</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>CallConfig</sb></ref>
     </category-title>
     <subtext>
         <text>Configuration descriptor for a private call</text>

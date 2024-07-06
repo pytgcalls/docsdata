@@ -2,7 +2,7 @@
     <h1>MediaStream Flags</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.MediaStream.<sb>Flags</sb></ref>
+        <shi>class</shi> <ref src="enum">pytgcalls.types.MediaStream.<sb>Flags</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration for managing media stream requirements in telegram calls.</text>

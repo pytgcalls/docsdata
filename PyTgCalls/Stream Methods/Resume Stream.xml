@@ -21,7 +21,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>resume_stream</sb></ref>() <shi>-> bool</shi>
+        <ref src="method">PyTgCalls.<sb>resume_stream</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <text>Resume the stream</text>

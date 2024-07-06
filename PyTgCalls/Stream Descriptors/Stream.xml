@@ -4,7 +4,7 @@
         <text>This class replaces the deprecated <code>pytgcalls.types.InputStream</code>.</text>
     </alert>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>Stream</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Stream</sb></ref>
     </category-title>
     <subtext>
         <text>Stream Descriptor.</text>

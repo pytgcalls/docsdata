@@ -2,7 +2,7 @@
     <h1>AudioQuality</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>AudioQuality</sb></ref>
+        <shi>class</shi> <ref src="enum">pytgcalls.types.<sb>AudioQuality</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration of audio quality settings for audio streams in telegram calls.</text>

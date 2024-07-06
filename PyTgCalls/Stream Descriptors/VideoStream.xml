@@ -4,7 +4,7 @@
         <text>This class replaces the deprecated <code>pytgcalls.types.InputVideoStream</code>.</text>
     </alert>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>VideoStream</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>VideoStream</sb></ref>
     </category-title>
     <subtext>
         <text>The raw video stream (YUV420P) descriptor</text>

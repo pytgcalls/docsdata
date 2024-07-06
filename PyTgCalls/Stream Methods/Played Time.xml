@@ -23,7 +23,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>played_time</sb></ref>() <shi>-> int</shi>
+        <ref src="method">PyTgCalls.<sb>played_time</sb></ref>() <shi>-> int</shi>
     </category-title>
     <subtext>
         <config id="TIME_DESC_2"/>

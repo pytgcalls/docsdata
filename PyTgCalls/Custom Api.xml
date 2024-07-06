@@ -24,7 +24,7 @@
     <h2>Details</h2>
     <category>
         <category-title noref="true">
-            <shi>class</shi> <ref>pytgcalls.<sb>CustomApi</sb></ref>
+            <shi>class</shi> <ref src="class">pytgcalls.<sb>CustomApi</sb></ref>
         </category-title>
         <subtext>
             <text>CustomApi, the main means host the local http api server.</text>

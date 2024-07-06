@@ -2,7 +2,7 @@
     <h1>GroupCallParticipant Action</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.GroupCallParticipant.<sb>Action</sb></ref>
+        <shi>class</shi> <ref src="enum">pytgcalls.types.GroupCallParticipant.<sb>Action</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration of actions for group call participants.</text>
