@@ -1079,7 +1079,7 @@
     </footer-links>
   </homepage-config>
 
-  <files-list id="NTgCalls" basepath="NTgCalls/" defaultfile="Quick Start.xml">
+  <files-list id="NTgCalls" description="A Native Implementation of Telegram Calls in a seamless way." basepath="NTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Build Guide.xml</file>
@@ -1169,7 +1169,7 @@
     </group>
   </files-list>
 
-  <files-list id="PyTgCalls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
+  <files-list id="PyTgCalls" description="Async Python client API for the Telegram Calls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>
