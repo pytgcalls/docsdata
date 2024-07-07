@@ -27,7 +27,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>create_p2p_call</sb></ref>() <shi>-> bytes</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>create_p2p_call</sb></ref>() <shi>-> bytes</shi>
     </category-title>
     <subtext>
         <config id="CREATE_P2P_DESC2"/>

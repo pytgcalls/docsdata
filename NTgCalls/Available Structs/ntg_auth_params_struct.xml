@@ -2,7 +2,7 @@
     <h1>ntg_auth_params_struct</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef struct</shi> <ref><sb>ntg_auth_params_struct</sb></ref>
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_auth_params_struct</sb></ref>
     </category-title>
     <subtext>
         <config id="AUTH_PARAMS_DESC"/>

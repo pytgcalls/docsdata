@@ -12,7 +12,7 @@
     <separator/>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_on_stream_end</sb></ref>()</category-title>
+        <category-title><ref src="method"><sb>ntg_on_stream_end</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_END_DESC"/>
             <br/>
@@ -47,7 +47,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_on_upgrade</sb></ref>()</category-title>
+        <category-title><ref src="method"><sb>ntg_on_upgrade</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_UPGRADE_DESC"/>
             <br/>
@@ -82,7 +82,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_on_connection_change</sb></ref>()</category-title>
+        <category-title><ref src="method"><sb>ntg_on_connection_change</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_CONN_CHANGE_DESC"/>
             <br/>
@@ -117,7 +117,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_on_signaling_data</sb></ref>()</category-title>
+        <category-title><ref src="method"><sb>ntg_on_signaling_data</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_SIGNALING_DESC"/>
             <br/>
@@ -152,7 +152,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref><sb>ntg_register_logger</sb></ref>()</category-title>
+        <category-title><ref src="method"><sb>ntg_register_logger</sb></ref>()</category-title>
         <subtext>
             <config id="REGISTER_LOGGER_DESC"/>
             <br/>

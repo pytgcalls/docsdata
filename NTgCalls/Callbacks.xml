@@ -7,7 +7,7 @@
     </text>
     <br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
+        <category-title><ref src="method">NTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_END_DESC"/>
             <h3>Example</h3>
@@ -24,7 +24,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>on_upgrade</sb></ref>()</category-title>
+        <category-title><ref src="method">NTgCalls.<sb>on_upgrade</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_UPGRADE_DESC"/>
             <h3>Example</h3>
@@ -41,7 +41,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>on_connection_change</sb></ref>()</category-title>
+        <category-title><ref src="method">NTgCalls.<sb>on_connection_change</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_CONN_CHANGE_DESC"/>
             <h3>Example</h3>
@@ -58,7 +58,7 @@
     </category>
     <br/><br/>
     <category>
-        <category-title><ref>NTgCalls.<sb>on_signaling</sb></ref>()</category-title>
+        <category-title><ref src="method">NTgCalls.<sb>on_signaling</sb></ref>()</category-title>
         <subtext>
             <config id="CALLBACK_SIGNALING_DESC"/>
             <h3>Example</h3>

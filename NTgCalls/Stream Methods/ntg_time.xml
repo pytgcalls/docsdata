@@ -21,7 +21,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int64_t</shi> <sb>ntg_time</sb></ref>()
+        <ref><shi language="c">int64_t</shi> <sb src="method">ntg_time</sb></ref>()
     </category-title>
     <subtext>
         <config id="TIME_DESC_2"/>

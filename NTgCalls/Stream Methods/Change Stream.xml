@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>change_stream</sb></ref>()
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>change_stream</sb></ref>()
     </category-title>
     <subtext>
         <config id="CHANGE_STREAM_DESC_2"/>

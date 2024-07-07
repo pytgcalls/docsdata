@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>mute</sb></ref>() <shi>-> bool</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>mute</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <config id="MUTE_DESC2"/>

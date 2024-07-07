@@ -16,7 +16,7 @@
     <h2>Details</h2>
     <category>
         <category-title noref="true">
-            <shi>class</shi> <ref>ntgcalls.<sb>NTgCalls</sb></ref>
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>NTgCalls</sb></ref>
         </category-title>
         <subtext>
             <text>The NTgCalls Client is your primary interface for seamless interaction with Group Calls.</text>

@@ -2,7 +2,7 @@
     <h1>StreamStatus</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>StreamStatus</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>StreamStatus</sb></ref>
     </category-title>
     <subtext>
         <config id="STREAM_STATUS_DESC"/>

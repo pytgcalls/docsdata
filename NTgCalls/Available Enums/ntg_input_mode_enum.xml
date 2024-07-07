@@ -2,7 +2,7 @@
     <h1>ntg_input_mode_enum</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef enum</shi> <ref><sb>ntg_input_mode_enum</sb></ref>
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>ntg_input_mode_enum</sb></ref>
     </category-title>
     <subtext>
         <config id="INPUT_MODE_DESC2"/>

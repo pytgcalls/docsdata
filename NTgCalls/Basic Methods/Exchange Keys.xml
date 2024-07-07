@@ -19,7 +19,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title>
-        <shi>async</shi> <ref>NTgCalls.<sb>exchange_keys</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/AuthParams">AuthParams</docs-ref>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>exchange_keys</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/AuthParams">AuthParams</docs-ref>
     </category-title>
     <subtext>
         <config id="EXCHANGE_KEYS_DESC2"/>

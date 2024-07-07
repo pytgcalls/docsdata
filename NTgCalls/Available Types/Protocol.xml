@@ -2,7 +2,7 @@
     <h1>Protocol</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef enum</shi> <ref><sb>Protocol</sb></ref>
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>Protocol</sb></ref>
     </category-title>
     <subtext>
         <config id="PROTOCOL_DESC"/>

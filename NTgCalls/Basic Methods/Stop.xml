@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>stop</sb></ref>()
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>stop</sb></ref>()
     </category-title>
     <subtext>
         <config id="STOP_DESC2"/>

@@ -2,7 +2,7 @@
     <h1>InputMode</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>InputMode</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>InputMode</sb></ref>
     </category-title>
     <subtext>
         <config id="INPUT_MODE_DESC2"/>
