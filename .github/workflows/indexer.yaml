@@ -1,0 +1,20 @@
+name: Index Files
+on:
+  workflow_dispatch:
+
+jobs:
+  index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Index files and generate mapping
+        run: bash .github/scripts/indexer.sh
+
+      - name: Commit and push changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update index files"
+          commit_options: "--no-verify"
+          branch: ${{ github.ref }}
