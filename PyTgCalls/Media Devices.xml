@@ -18,7 +18,7 @@
 
         app.play(
             -1001185324811,
-            CaptureAudioDevice(
+            MediaStream(
                 MediaDevices.get_audio_devices()[0],
             )
         )
