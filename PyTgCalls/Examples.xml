@@ -16,67 +16,67 @@
             <column>Description</column>
         </definitions>
         <item>
-            <column><ref-shi url="example/additional_ffmpeg_parameters/additional_ffmpeg_parameters.py" language="py">additional_ffmpeg_parameters</ref-shi></column>
+            <column><ref-shi url="example/additional_ffmpeg_parameters/additional_ffmpeg_parameters.py">additional_ffmpeg_parameters</ref-shi></column>
             <column>Append parameters to ffmpeg</column>
         </item>
         <item>
-            <column><ref-shi url="example/capture_mic/example_mic.py" language="py">capture_mic</ref-shi></column>
+            <column><ref-shi url="example/capture_mic/example_mic.py">capture_mic</ref-shi></column>
             <column>Capture microphone</column>
         </item>
         <item>
-            <column><ref-shi url="example/custom_api/example_api.py" language="py">custom_api</ref-shi></column>
+            <column><ref-shi url="example/custom_api/example_api.py">custom_api</ref-shi></column>
             <column>Use custom API server to bind PHP or other API to PyTgCalls</column>
         </item>
         <item>
-            <column><ref-shi url="example/fifo_conversion/example_fifo.py" language="py">fifo_conversion</ref-shi></column>
+            <column><ref-shi url="example/fifo_conversion/example_fifo.py">fifo_conversion</ref-shi></column>
             <column>Play a stream from fifo</column>
         </item>
         <item>
-            <column><ref-shi url="example/p2p_example/example_p2p.py" language="py">p2p_example</ref-shi></column>
+            <column><ref-shi url="example/p2p_example/example_p2p.py">p2p_example</ref-shi></column>
             <column>Play a stream from a private call using PyTgCalls</column>
         </item>
         <item>
-            <column><ref-shi url="example/piped_audio_calls/example_piped_audio.py" language="py">piped_audio_calls</ref-shi></column>
+            <column><ref-shi url="example/piped_audio_calls/example_piped_audio.py">piped_audio_calls</ref-shi></column>
             <column>Play audio using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
-            <column><ref-shi url="example/piped_image_calls/example_piped_image.py" language="py">piped_image_calls</ref-shi></column>
+            <column><ref-shi url="example/piped_image_calls/example_piped_image.py">piped_image_calls</ref-shi></column>
             <column>Play audio and image using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
-            <column><ref-shi url="example/raw_streaming/example_video.py" language="py">raw_streaming</ref-shi></column>
+            <column><ref-shi url="example/raw_streaming/example_video.py">raw_streaming</ref-shi></column>
             <column>Play PCM16L and RAW_VIDEO from disk</column>
         </item>
         <item>
-            <column><ref-shi url="example/remote_piped_play/example_remote_piped.py" language="py">remote_piped_play</ref-shi></column>
+            <column><ref-shi url="example/remote_piped_play/example_remote_piped.py">remote_piped_play</ref-shi></column>
             <column>Play a stream from a remote link using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
-            <column><ref-shi url="example/remote_stream_with_header/remote_stream_with_header.py" language="py">remote_stream_with_header</ref-shi></column>
+            <column><ref-shi url="example/remote_stream_with_header/remote_stream_with_header.py">remote_stream_with_header</ref-shi></column>
             <column>Play a stream from a remote link using ffmpeg for live conversion (with integrated ffmpeg) with additional headers</column>
         </item>
         <item>
-            <column><ref-shi url="example/screen_sharing/example_desktop.py" language="py">screen_sharing</ref-shi></column>
+            <column><ref-shi url="example/screen_sharing/example_desktop.py">screen_sharing</ref-shi></column>
             <column>Screen sharing</column>
         </item>
         <item>
-            <column><ref-shi url="example/screen_sharing_mic/example_desktop_mic.py" language="py">screen_sharing_mic</ref-shi></column>
+            <column><ref-shi url="example/screen_sharing_mic/example_desktop_mic.py">screen_sharing_mic</ref-shi></column>
             <column>Screen sharing with microphone</column>
         </item>
         <item>
-            <column><ref-shi url="example/simple_calls/example_simple.py" language="py">simple_calls</ref-shi></column>
+            <column><ref-shi url="example/simple_calls/example_simple.py">simple_calls</ref-shi></column>
             <column>A simple example about using PyTgCalls with High Level Methods</column>
         </item>
         <item>
-            <column><ref-shi url="example/telethon_example/example_telethon.py" language="py">telethon_example</ref-shi></column>
+            <column><ref-shi url="example/telethon_example/example_telethon.py">telethon_example</ref-shi></column>
             <column>A simple example about using PyTgCalls with Telethon</column>
         </item>
         <item>
-            <column><ref-shi url="example/video_calls/example_piped_video.py" language="py">video_calls</ref-shi></column>
+            <column><ref-shi url="example/video_calls/example_piped_video.py">video_calls</ref-shi></column>
             <column>Play audio and video using ffmpeg for live conversion (with integrated ffmpeg)</column>
         </item>
         <item>
-            <column><ref-shi url="example/youtube_dl/youtube_dl_example.py" language="py">youtube_dl</ref-shi></column>
+            <column><ref-shi url="example/youtube_dl/youtube_dl_example.py">youtube_dl</ref-shi></column>
             <column>Example usage of PyTgCalls with YoutubeDL</column>
         </item>
     </table>
