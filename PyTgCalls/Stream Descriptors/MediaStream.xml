@@ -10,7 +10,7 @@
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo]</category-title>
-            <subtext><text>The audio, video or media device path.</text></subtext>
+            <subtext><text>The audio, video, image or media device path.</text></subtext>
 
             <config id="ARG_AUDIO_PARAMSv2"/>
             <config id="ARG_VIDEO_PARAMSv2"/>
