@@ -25,6 +25,21 @@
                 </syntax-highlight>
             </text>
         </item>
+        <item>
+            <text>
+                or, without decorators. Here filters are passed as the second argument of the add_handler function;
+                the first is the callback function itself:
+                <syntax-highlight>
+                    from pytgcalls import filters
+                    from pytgcalls.types import ChatUpdate
+                    ...
+                    def on_incoming_call(client, update):
+                        print("Incoming call!", update)
+
+                    pytgcalls.add_handler(on_incoming_call, filters.chat_update(ChatUpdate.Status.INCOMING_CALL))
+                </syntax-highlight>
+            </text>
+        </item>
     </list>
     <h2>Combining Filters</h2>
     <text>

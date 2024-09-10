@@ -13,6 +13,9 @@
 
             <category-title><ref>frame_rate</ref>: <shi>int</shi></category-title>
             <config id="VIDEO_FPS_DESC"/>
+
+            <category-title><ref>adjust_by_height</ref>: <shi>bool</shi></category-title>
+            <subtext><text>Adjust the video resolution by height instead of width.</text></subtext>
         </subtext>
         <br/>
         <pg-title>STATIC METHODS</pg-title>

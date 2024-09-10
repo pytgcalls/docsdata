@@ -1,6 +1,6 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.0.8</option>
-  <option id="PYTGCALLS_VERSION">2.0.1</option>
+  <option id="NTGCALLS_VERSION">1.2.2</option>
+  <option id="PYTGCALLS_VERSION">2.0.3</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
   <!--REDIRECTS - they are case-insensitive -->
@@ -1175,6 +1175,7 @@
     <file>Decorators.xml</file>
     <file>Filters.xml</file>
     <file>Using Filters.xml</file>
+    <file>Using Handlers.xml</file>
     <group basepath="PyTgCalls/Available Enums/">
       <file>AudioQuality.xml</file>
       <file>Call Status.xml</file>

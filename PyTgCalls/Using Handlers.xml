@@ -1,0 +1,47 @@
+<page>
+    <h1>Update Handlers</h1>
+    <text>
+        Handlers are used to instruct PyTgCalls to execute a specific function when a certain event occurs.
+        For a much more convenient way to handle updates, you can use the <docs-ref link="/PyTgCalls/Decorators">decorators</docs-ref> instead.
+    </text>
+    <separator/>
+    <h2>Registering Handlers</h2>
+    <text>
+        To register a handler, you need to use the <ref>add_handler</ref> method.
+        This method takes two arguments: the first is the callback function, and the second is the filter.
+    </text>
+    <syntax-highlight>
+        from pytgcalls import PyTgCalls
+        from pytgcalls.types import Update
+        from pytgcalls import filters as call_filters
+        ...
+
+        client = # Here Your MTProto Client
+        app = PyTgCalls(client)
+
+        async def handler(client: PyTgCalls, update: Update):
+            print(update)
+
+        app.add_handler(handler, call_filters.stream_end)
+        ...
+    </syntax-highlight>
+    <h2>Removing Handlers</h2>
+    <text>
+        To remove a handler, you need to use the <ref>remove_handler</ref> method.
+        This method takes the callback function as its only argument.
+    </text>
+    <syntax-highlight>
+        from pytgcalls import PyTgCalls
+        from pytgcalls.types import Update
+        ...
+
+        client = # Here Your MTProto Client
+        app = PyTgCalls(client)
+
+        async def handler(client: PyTgCalls, update: Update):
+            print(update)
+
+        app.remove_handler(handler)
+        ...
+    </syntax-highlight>
+</page>

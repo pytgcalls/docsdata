@@ -3,6 +3,35 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgSep24.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v2.0.3"
+            description="Private Calls Stable, Performances Improvements and more!"
+            mainbg="#070d16"
+            version="2.0.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Private Calls are Now Stable:</b> Easily make private calls, even for groups, with a single method—just use <docs-ref link="/PyTgCalls/Basic Methods/Play">play()</docs-ref>! Check out the example here: <a href="https://github.com/pytgcalls/pytgcalls/blob/master/example/p2p_example/example_p2p.py">Private Calls</a>.</text></item>
+                <item><text><b>Performance Boost:</b>  We're now running the latest WebRTC version (<a href="https://chromiumdash.appspot.com/branches">m128</a>), bringing key performance fixes. Plus, with the latest pybind11 update, issues with Python's garbage collection have been resolved for a smoother experience.</text></item>
+                <item><text><b>New "adjust_by_height" Feature:</b> Adjust video resolution by height instead of width, giving you more flexibility in how you manage your video streams. Learn more <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">here</docs-ref>.</text></item>
+                <item><text><b>New Event Handlers (remove_handler &amp; add_handler):</b> These methods allow you to register listeners for existing events just like the decorators in the library. Use them to handle events such as "stream ended" or "new user connected" within PyTgCalls. Find out more <docs-ref link="/PyTgCalls/Using Handlers">here</docs-ref>.</text></item>
+                <item><text><b>Improved Documentation:</b> Enjoy clearer, more detailed documentation with fresh examples, a new UI, a powerful search engine, and step-by-step guidance to help you get started quickly.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Community Milestone</h3>
+            <text>
+                <b>Thank You All:</b> We've reached a new milestone with over 400 thousand of active monthly users! We're grateful for your support and feedback, which has helped us improve PyTgCalls and make it the go-to library for all your real-time communication needs.
+            </text>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgApr24.png"
             minititle="MAJOR UPDATE"
             bigtitle="PyTgCalls v2.0.X"
