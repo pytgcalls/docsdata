@@ -1,5 +1,5 @@
 <page>
-    <h1>Update Handlers</h1>
+    <h1>Using Handlers</h1>
     <text>
         Handlers are used to instruct PyTgCalls to execute a specific function when a certain event occurs.
         For a much more convenient way to handle updates, you can use the <docs-ref link="/PyTgCalls/Decorators">decorators</docs-ref> instead.
@@ -21,7 +21,7 @@
 
         async def handler(client: PyTgCalls, update: Update):
             print(update)
-
+        ...
         app.add_handler(handler, call_filters.stream_end)
         ...
     </syntax-highlight>
@@ -40,7 +40,7 @@
 
         async def handler(client: PyTgCalls, update: Update):
             print(update)
-
+        ...
         app.remove_handler(handler)
         ...
     </syntax-highlight>
