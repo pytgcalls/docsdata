@@ -967,7 +967,7 @@
             }
         </syntax-highlight>
       </file>
-      <file title="ntgcalls.java">
+      <file title="NTgCalls.java">
         <syntax-highlight language="java">
             import io.github.pytgcalls.NTgCalls;
             import android.util.Log;
