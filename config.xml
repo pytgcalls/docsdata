@@ -925,7 +925,7 @@
                 int64_t chatID = ...; // Obtain the chat ID
                 char* params = ...;  // Obtain connection parameters
 
-                int result = ntg_connect(uid, chatID, params);
+                int result = ntg_connect(uid, chatID, params, false);
                 if (result == 0) {
                     // Successfully connected to the WebRTC
                     ...
@@ -956,12 +956,33 @@
                 chatID := ... // Obtain the chat ID
                 params := ... // Obtain connection parameters
 
-                err := ntgcalls.Connect(uid, chatID, params)
+                err := ntgcalls.Connect(uid, chatID, params, false)
                 if err == nil {
                     // Successfully connected to the WebRTC
                     ...
                 } else {
                     fmt.Printf("Failed to connect: %d\n", err)
+                }
+                ...
+            }
+        </syntax-highlight>
+      </file>
+      <file title="ntgcalls.java">
+        <syntax-highlight language="java">
+            import io.github.pytgcalls.NTgCalls;
+            import android.util.Log;
+            ...
+            public static void main(String[] args) {
+                var client = new NTgCalls();
+                ...
+                long chatID = ...; // Obtain the chat ID
+                String params = ...; // Obtain connection parameters
+                try {
+                    client.connect(chatID, params, false);
+                    // Successfully connected to the WebRTC
+                    ...
+                } catch (Exception e) {
+                    Log.e("NTgCalls", "Failed to connect: " + e.getMessage());
                 }
                 ...
             }
