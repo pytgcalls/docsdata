@@ -29,7 +29,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_unmute</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_unmute</sb></ref>()
     </category-title>
     <subtext>
         <config id="UNMUTE_DESC2"/>

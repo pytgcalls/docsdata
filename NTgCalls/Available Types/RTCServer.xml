@@ -2,7 +2,7 @@
     <h1>RTCServer</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>RTCServer</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>RTCServer</sb></ref>
     </category-title>
     <subtext>
         <config id="RTC_SERVER_DESC"/>

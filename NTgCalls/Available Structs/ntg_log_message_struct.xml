@@ -2,7 +2,7 @@
     <h1>ntg_log_message_struct</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef struct</shi> <ref><sb>ntg_log_message_struct</sb></ref>
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_log_message_struct</sb></ref>
     </category-title>
     <subtext>
         <config id="LOG_MESSAGE_STRUCT_DESC"/>

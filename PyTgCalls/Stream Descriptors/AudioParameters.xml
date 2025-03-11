@@ -2,7 +2,7 @@
     <h1>AudioParameters</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.raw.<sb>AudioParameters</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>AudioParameters</sb></ref>
     </category-title>
     <subtext>
         <config id="AUDIO_CONFIG_DESC"/>

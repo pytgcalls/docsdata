@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>create_call</sb></ref>() <shi>-> str</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>create_call</sb></ref>() <shi>-> str</shi>
     </category-title>
     <subtext>
         <config id="CREATE_DESC2"/>

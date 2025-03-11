@@ -1,6 +1,6 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.0.8</option>
-  <option id="PYTGCALLS_VERSION">1.2.4</option>
+  <option id="NTGCALLS_VERSION">1.2.2</option>
+  <option id="PYTGCALLS_VERSION">2.0.3</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
   <!--REDIRECTS - they are case-insensitive -->
@@ -905,7 +905,7 @@
             ...
             app = PyTgCalls(client)
             app.start()
-            app.join_group_call(
+            app.play(
                 -1001185324811,
                 MediaStream(
                     'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
@@ -914,7 +914,7 @@
             idle()
         </syntax-highlight>
       </file>
-      <file title="pytgcalls.c">
+      <file title="ntgcalls.c">
         <syntax-highlight language="c">
             #include &lt;stdint.h&gt;
             #include "ntgcalls.h"
@@ -925,7 +925,7 @@
                 int64_t chatID = ...; // Obtain the chat ID
                 char* params = ...;  // Obtain connection parameters
 
-                int result = ntg_connect(uid, chatID, params);
+                int result = ntg_connect(uid, chatID, params, false);
                 if (result == 0) {
                     // Successfully connected to the WebRTC
                     ...
@@ -934,6 +934,57 @@
                 }
                 ...
                 return 0;
+            }
+        </syntax-highlight>
+      </file>
+      <file title="ntgcalls.go">
+        <syntax-highlight language="go">
+            package main
+
+            //#cgo LDFLAGS: -L . -lntgcalls -Wl,-rpath=./
+            import "C"
+            import (
+                "fmt"
+                ...
+                "example/ntgcalls"
+            )
+
+            func main() {
+                client := ntgcalls.NTgCalls()
+                defer client.Free()
+
+                chatID := ... // Obtain the chat ID
+                params := ... // Obtain connection parameters
+
+                err := ntgcalls.Connect(uid, chatID, params, false)
+                if err == nil {
+                    // Successfully connected to the WebRTC
+                    ...
+                } else {
+                    fmt.Printf("Failed to connect: %d\n", err)
+                }
+                ...
+            }
+        </syntax-highlight>
+      </file>
+      <file title="NTgCalls.java">
+        <syntax-highlight language="java">
+            import io.github.pytgcalls.NTgCalls;
+            import android.util.Log;
+            ...
+            public static void main(String[] args) {
+                var client = new NTgCalls();
+                ...
+                long chatID = ...; // Obtain the chat ID
+                String params = ...; // Obtain connection parameters
+                try {
+                    client.connect(chatID, params, false);
+                    // Successfully connected to the WebRTC
+                    ...
+                } catch (Exception e) {
+                    Log.e("NTgCalls", "Failed to connect: " + e.getMessage());
+                }
+                ...
             }
         </syntax-highlight>
       </file>
@@ -1009,6 +1060,12 @@
         <github-username>branchscope</github-username>
         <telegram-username>branchscope</telegram-username>
       </member>
+      <member>
+        <name>Jamil Md</name>
+        <role>Copywriter</role>
+        <github-username>SadLuffy</github-username>
+        <telegram-username>SadLuffy</telegram-username>
+      </member>
     </team>
     <footer-links>
       <contribution-link>https://github.com/pytgcalls/pytgcalls.github.io</contribution-link>
@@ -1031,7 +1088,7 @@
     </footer-links>
   </homepage-config>
 
-  <files-list id="NTgCalls" basepath="NTgCalls/" defaultfile="Quick Start.xml">
+  <files-list id="NTgCalls" description="A Native Implementation of Telegram Calls in a seamless way." basepath="NTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Build Guide.xml</file>
@@ -1121,7 +1178,7 @@
     </group>
   </files-list>
 
-  <files-list id="PyTgCalls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
+  <files-list id="PyTgCalls" description="Async Python client API for the Telegram Calls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>
@@ -1139,6 +1196,7 @@
     <file>Decorators.xml</file>
     <file>Filters.xml</file>
     <file>Using Filters.xml</file>
+    <file>Using Handlers.xml</file>
     <group basepath="PyTgCalls/Available Enums/">
       <file>AudioQuality.xml</file>
       <file>Call Status.xml</file>

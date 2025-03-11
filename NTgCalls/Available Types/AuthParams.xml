@@ -2,7 +2,7 @@
     <h1>AuthParams</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.<sb>AuthParams</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>AuthParams</sb></ref>
     </category-title>
     <subtext>
         <config id="AUTH_PARAMS_DESC"/>

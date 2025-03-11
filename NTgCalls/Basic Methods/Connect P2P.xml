@@ -22,7 +22,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title>
-        <shi>async</shi> <ref>NTgCalls.<sb>connect_p2p</sb></ref>()
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>connect_p2p</sb></ref>()
     </category-title>
     <subtext>
         <config id="CONNECT_P2P_DESC2"/>

@@ -16,9 +16,9 @@
 
         ...  # Call API methods
 
-        app.join_group_call(
+        app.play(
             -1001185324811,
-            CaptureAudioDevice(
+            MediaStream(
                 MediaDevices.get_audio_devices()[0],
             )
         )
@@ -29,7 +29,7 @@
     <h2>Details</h2>
     <category>
         <category-title noref="true">
-            <shi>class</shi> <ref>pytgcalls.<sb>MediaDevices</sb></ref>
+            <shi>class</shi> <ref src="class">pytgcalls.<sb>MediaDevices</sb></ref>
         </category-title>
         <subtext>
             <text>MediaDevices, the main tool for retrieving media devices list.</text>

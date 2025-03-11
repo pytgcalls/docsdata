@@ -23,7 +23,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_get_state</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_get_state</sb></ref>()
     </category-title>
     <subtext>
         <config id="GET_STATE_DESC2"/>

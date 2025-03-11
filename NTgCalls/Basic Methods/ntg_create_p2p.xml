@@ -23,7 +23,7 @@
             int result = ntg_create_p2p(
                 uid,
                 chatID,
-                dhConfig,
+                &amp;dhConfig,
                 g_a_hash,
                 sizeG_A_Hash,
                 desc,
@@ -39,7 +39,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_create_p2p</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_create_p2p</sb></ref>()
     </category-title>
     <subtext>
         <config id="CREATE_P2P_DESC2"/>
@@ -49,7 +49,7 @@
             <subtext>
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_dh_config_struct">ntg_dh_config_struct</docs-ref> <ref><sb>dhConfig</sb></ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_dh_config_struct">ntg_dh_config_struct</docs-ref><shi>*</shi> <ref><sb>dhConfig</sb></ref></category-title>
                 <subtext><config id="DH_CONFIG_DESC"/></subtext>
                 <category-title><shi language="c">uint8_t*</shi> <ref><sb>g_a_hash</sb></ref></category-title>
                 <config id="G_A_HASH_DESC"/>

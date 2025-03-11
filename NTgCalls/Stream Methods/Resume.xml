@@ -16,7 +16,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>resume</sb></ref>() <shi>-> bool</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>resume</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
         <config id="RESUME_DESC2"/>

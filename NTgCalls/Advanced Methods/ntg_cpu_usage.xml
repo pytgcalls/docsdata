@@ -20,7 +20,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_cpu_usage</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_cpu_usage</sb></ref>()
     </category-title>
     <subtext>
         <config id="CPU_USAGE_DESC2"/>

@@ -2,7 +2,7 @@
     <h1>StreamAudioEnded</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>StreamAudioEnded</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>StreamAudioEnded</sb></ref>
     </category-title>
     <subtext>
         <text>The audio stream has ended.</text>

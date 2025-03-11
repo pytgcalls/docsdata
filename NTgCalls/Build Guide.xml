@@ -43,9 +43,8 @@
                         $ sudo apt install libx11-dev build-essential curl
                     </syntax-highlight>
                     <syntax-highlight language="bash" id="arm">
-                        $ wget https://apt.llvm.org/llvm.sh
-                        $ sudo bash llvm.sh 18
                         $ sudo apt install libx11-dev build-essential curl
+                        $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 18
                     </syntax-highlight>
                 </multisyntax>
             </item>

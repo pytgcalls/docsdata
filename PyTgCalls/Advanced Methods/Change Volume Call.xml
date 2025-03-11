@@ -25,7 +25,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>change_volume_call</sb></ref>()
+        <ref src="method">PyTgCalls.<sb>change_volume_call</sb></ref>()
     </category-title>
     <subtext>
         <text>Change the stream’s volume.</text>

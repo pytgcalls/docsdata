@@ -3,10 +3,9 @@
     <h1>Create P2P Call</h1>
     <config id="CREATE_P2P_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="7-20">
+    <syntax-highlight mark="7-19">
         from ntgcalls import NTgCalls
         ...
-
         app = NTgCalls()
         dh_config = ... # Obtain the DH configuration
         g_a_hash = ... # Parameter for key exchange (Only when is incoming call)
@@ -28,7 +27,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>create_p2p_call</sb></ref>() <shi>-> bytes</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>create_p2p_call</sb></ref>() <shi>-> bytes</shi>
     </category-title>
     <subtext>
         <config id="CREATE_P2P_DESC2"/>

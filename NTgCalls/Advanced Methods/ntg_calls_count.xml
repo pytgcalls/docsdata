@@ -25,7 +25,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_calls_count</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_calls_count</sb></ref>()
     </category-title>
     <subtext>
         <text>Returns the number of active group calls.</text>

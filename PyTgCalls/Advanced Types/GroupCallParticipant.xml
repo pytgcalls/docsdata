@@ -2,7 +2,7 @@
     <h1>GroupCallParticipant</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>GroupCallParticipant</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>GroupCallParticipant</sb></ref>
     </category-title>
     <subtext>
         <text>Info about a group call participant</text>

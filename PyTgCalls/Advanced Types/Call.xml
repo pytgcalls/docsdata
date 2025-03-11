@@ -2,15 +2,13 @@
     <h1>Call</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>Call</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Call</sb></ref>
     </category-title>
     <subtext>
         <config id="CALL_DESC"/>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>
-            <config id="RET_INT_ID"/>
-
             <category-title><ref><sb>call_type</sb></ref> -> <docs-ref link="/PyTgCalls/Available Enums/Call Type">Type</docs-ref></category-title>
             <subtext><text>The type of the call.</text></subtext>
 

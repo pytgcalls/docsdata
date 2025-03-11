@@ -29,7 +29,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb>ntg_pause</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_pause</sb></ref>()
     </category-title>
     <subtext>
         <config id="PAUSE_DESC2"/>

@@ -24,7 +24,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>leave_call</sb></ref>()
+        <ref src="method">PyTgCalls.<sb>leave_call</sb></ref>()
     </category-title>
     <subtext>
         <text>Leave a group call or a private call.</text>

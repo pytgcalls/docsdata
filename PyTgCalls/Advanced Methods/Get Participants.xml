@@ -21,7 +21,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>get_participants</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]
+        <ref src="method">PyTgCalls.<sb>get_participants</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/GroupCall">GroupCall</docs-ref>]
     </category-title>
     <subtext>
         <text>Get a list of participants from a group call</text>

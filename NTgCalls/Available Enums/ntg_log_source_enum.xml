@@ -2,7 +2,7 @@
     <h1>ntg_log_source_enum</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef enum</shi> <ref><sb>ntg_log_source_enum</sb></ref>
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>ntg_log_source_enum</sb></ref>
     </category-title>
     <subtext>
         <config id="LOG_SOURCE_DESC"/>

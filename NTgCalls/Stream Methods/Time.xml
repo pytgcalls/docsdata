@@ -17,7 +17,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref>NTgCalls.<sb>time</sb></ref>() <shi>-> int</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>time</sb></ref>() <shi>-> int</shi>
     </category-title>
     <subtext>
         <config id="TIME_DESC_2"/>

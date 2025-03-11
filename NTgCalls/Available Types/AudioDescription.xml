@@ -2,7 +2,7 @@
     <h1>AudioDescription</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>ntgcalls.types.<sb>AudioDescription</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.types.<sb>AudioDescription</sb></ref>
     </category-title>
     <subtext>
         <config id="AUDIO_CONFIG_DESC"/>

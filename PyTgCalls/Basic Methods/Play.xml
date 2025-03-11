@@ -29,7 +29,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref>PyTgCalls.<sb>play</sb></ref>()
+        <ref src="method">PyTgCalls.<sb>play</sb></ref>()
     </category-title>
     <subtext>
         <text>Join in a group call or accept/request a private call to stream audio or video.</text>

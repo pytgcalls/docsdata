@@ -2,7 +2,7 @@
     <h1>MediaStream</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref>pytgcalls.types.<sb>MediaStream</sb></ref>
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>MediaStream</sb></ref>
     </category-title>
     <subtext>
         <text>The media stream piped descriptor.</text>
@@ -10,7 +10,7 @@
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo]</category-title>
-            <subtext><text>The audio, video or media device path.</text></subtext>
+            <subtext><text>The audio, video, image or media device path.</text></subtext>
 
             <config id="ARG_AUDIO_PARAMSv2"/>
             <config id="ARG_VIDEO_PARAMSv2"/>

@@ -2,7 +2,7 @@
     <h1>ntg_protocol_struct</h1>
     <br/>
     <category-title noref="true">
-        <shi language="c">typedef struct</shi> <ref><sb>ntg_protocol_struct</sb></ref>
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_protocol_struct</sb></ref>
     </category-title>
     <subtext>
         <config id="PROTOCOL_DESC"/>
@@ -12,9 +12,9 @@
         <config id="MIN_LAYER_DESC"/>
         <category-title><shi language="c">int32_t</shi> <ref>maxLayer</ref></category-title>
         <config id="MAX_LAYER_DESC"/>
-        <category-title><shi language="c">bool</shi> <ref>udpP2P</ref></category-title>
+        <category-title><shi language="c++">bool</shi> <ref>udpP2P</ref></category-title>
         <config id="UDP_P2P_DESC"/>
-        <category-title><shi language="c">bool</shi> <ref>udpReflector</ref></category-title>
+        <category-title><shi language="c++">bool</shi> <ref>udpReflector</ref></category-title>
         <config id="UDP_REFLECTOR_DESC"/>
         <category-title><shi language="c">char**</shi> <ref>libraryVersions</ref></category-title>
         <config id="LIBRARY_VERSIONS_DESC"/>
