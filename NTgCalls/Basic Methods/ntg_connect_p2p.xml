@@ -52,7 +52,7 @@
                 <config id="LIBRARY_VERSIONS_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>versionsSize</sb></ref></category-title>
                 <subtext><text>Size of the versions array.</text></subtext>
-                <category-title><shi language="c">bool</shi> <ref><sb>p2pAllowed</sb></ref></category-title>
+                <category-title><shi>bool</shi> <ref><sb>p2pAllowed</sb></ref></category-title>
                 <config id="P2P_ALLOWED_DESC"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>

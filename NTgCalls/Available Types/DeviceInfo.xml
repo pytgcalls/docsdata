@@ -1,0 +1,19 @@
+<page>
+    <h1>DeviceInfo</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>DeviceInfo</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="DEVICE_INFO_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>name</ref> <shi>-> str</shi></category-title>
+            <config id="DEVICE_NAME_DESC"/>
+
+            <category-title><ref>metadata</ref> <shi>-> str</shi></category-title>
+            <config id="DEVICE_METADATA_DESC"/>
+        </subtext>
+    </subtext>
+</page>

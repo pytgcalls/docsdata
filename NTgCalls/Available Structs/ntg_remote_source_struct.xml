@@ -1,0 +1,22 @@
+<page>
+    <h1>ntg_remote_source_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_remote_source_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="REMOTE_SOURCE_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><shi language="c">uint32_t</shi> <ref>ssrc</ref></category-title>
+            <config id="SSRC_DESC"/>
+
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_status_enum">ntg_stream_status_enum</docs-ref> <ref>state</ref></category-title>
+            <config id="STREAM_STATUS_DESC2"/>
+
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_device_enum">ntg_stream_device_enum</docs-ref> <ref>device</ref></category-title>
+            <config id="STREAM_DEVICE_DESC2"/>
+        </subtext>
+    </subtext>
+</page>

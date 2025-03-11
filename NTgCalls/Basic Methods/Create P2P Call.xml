@@ -3,16 +3,14 @@
     <h1>Create P2P Call</h1>
     <config id="CREATE_P2P_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="7-19">
+    <syntax-highlight mark="6-17">
         from ntgcalls import NTgCalls
         ...
         app = NTgCalls()
-        dh_config = ... # Obtain the DH configuration
-        g_a_hash = ... # Parameter for key exchange (Only when is incoming call)
-        params = await app.create_p2p_call(
+        ...
+
+        await app.create_p2p_call(
             -1001185324811,
-            config,
-            g_a_hash,
             MediaDescription(
                 AudioDescription(
                     input_mode=InputMode.File,
@@ -27,7 +25,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>create_p2p_call</sb></ref>() <shi>-> bytes</shi>
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>create_p2p_call</sb></ref>()
     </category-title>
     <subtext>
         <config id="CREATE_P2P_DESC2"/>
@@ -36,10 +34,6 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>config</sb></ref>: <docs-ref link="/NTgCalls/Available Types/DhConfig">DhConfig</docs-ref></category-title>
-                <subtext><config id="DH_CONFIG_DESC"/></subtext>
-                <category-title><ref><sb>g_a_hash</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
-                <config id="G_A_HASH_DESC"/>
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>

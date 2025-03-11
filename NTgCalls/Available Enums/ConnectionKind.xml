@@ -1,0 +1,18 @@
+<page>
+    <h1>ConnectionKind</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionKind</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="CONNECTION_KIND_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NORMAL</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="CONNECTION_KIND_NORMAL_DESC"/>
+            <category-title><ref><sb>PRESENTATION</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+        </subtext>
+    </subtext>
+</page>

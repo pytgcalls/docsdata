@@ -15,8 +15,8 @@
             int sizeGAOrB = ...; // Obtain the size of the parameter for key exchange
             int64_t fingerprint = ...; // Obtain the fingerprint
             ntg_auth_params_struct buffer;
-            ntg_async_struct future;
             // Initialize the async struct
+            ntg_async_struct future;
             int result = ntg_exchange_keys(uid, chatID, g_a_or_b, sizeGAOrB, fingerprint, &amp;buffer, &amp;future);
             // Wait for the async operation to complete
         }

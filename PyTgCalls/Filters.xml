@@ -105,5 +105,27 @@
                 </subtext>
             </subtext>
         </subtext>
+        <category-title><ref>pytgcalls.filters.<sb src="method">stream_frame</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Filter updates for when stream frames are received.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>directions</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/Direction">Direction</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more directions to filter stream frames.
+                    </text>
+                </subtext>
+                <category-title><ref>devices</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/Device">Device</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more devices to filter stream frames.
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
     </category>
 </page>

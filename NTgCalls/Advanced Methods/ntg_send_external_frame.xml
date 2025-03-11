@@ -1,0 +1,65 @@
+<page>
+    <h1>ntg_send_external_frame</h1>
+    <config id="SEND_EXTERNAL_FRAME_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="18">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uint32_t uid = ntg_init();
+            ...
+            int64_t chatID = ...; // Obtain the chat ID
+            uint8_t* pcm16_le_data = ...; // Obtain the PCM16 LE data
+            int size = ...; // Obtain the size of the PCM16 LE data
+            ntg_frame_data frame_data = {
+                .timestamp = ..., // Obtain the timestamp
+                .flags = 0,
+                .rotation = 0,
+                .layer = 0,
+            };
+            // Initialize the async struct
+            ntg_async_struct future;
+            ntg_send_external_frame(uid, chatID, NTG_STREAM_DEVICE_MICROPHONE, pcm16_le_data, size, &amp;frame_data, &amp;future);
+            // Wait for the async operation to complete
+            return 0;
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb src="method">ntg_send_external_frame</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_UID"/>
+                <config id="ARG_C_CHAT_ID"/>
+                <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_device_enum">ntg_stream_device_enum</docs-ref> <ref><sb>device</sb></ref></category-title>
+                <config id="DEVICE_DESC"/>
+                <category-title><shi language="c">uint8_t*</shi> <ref><sb>frame</sb></ref></category-title>
+                <config id="FRAME_BUFFER_DESC"/>
+                <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
+                <subtext><text>The size of the PCM16 LE data.</text></subtext>
+                <category-title><docs-ref link="/NTgCalls/Available Types/ntg_frame_data_struct">ntg_frame_data_struct</docs-ref><shi>*</shi> <ref><sb>frame_data</sb></ref></category-title>
+                <subtext><config id="FRAME_DATA_DESC"/></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

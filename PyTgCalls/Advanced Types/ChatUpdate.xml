@@ -9,9 +9,9 @@
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <config id="RET_INT_ID"/>
-            <category-title><ref>status</ref> -> <docs-ref link="/PyTgCalls/Available Enums/ChatUpdate Status">Status</docs-ref></category-title>
+            <category-title><ref>status</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/ChatUpdate Status">Status</docs-ref></category-title>
             <subtext><text>Status of the chat.</text></subtext>
-            <category-title><ref>action</ref> -> <shi>Any</shi></category-title>
+            <category-title><ref>action</ref> <shi>-></shi> <shi>Any</shi></category-title>
             <subtext><text>Action of the chat.</text></subtext>
         </subtext>
     </subtext>

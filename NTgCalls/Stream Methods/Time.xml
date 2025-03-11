@@ -26,13 +26,14 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
+                <config id="STREAM_MODE"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="NTG_NO_GROUP_CALL"/>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

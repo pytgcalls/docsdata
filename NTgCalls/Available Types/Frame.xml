@@ -1,0 +1,22 @@
+<page>
+    <h1>Frame</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>Frame</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="FRAME_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>ssrc</ref>: <shi>int</shi></category-title>
+            <config id="SSRC_DESC"/>
+
+            <category-title><ref>data</ref>: <shi>bytes</shi></category-title>
+            <config id="FRAME_BUFFER_DESC"/>
+
+            <category-title><ref>frame_data</ref>: <docs-ref link="/NTgCalls/Available Types/FrameData">ntgcalls.FrameData</docs-ref></category-title>
+            <subtext><config id="FRAME_DATA_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

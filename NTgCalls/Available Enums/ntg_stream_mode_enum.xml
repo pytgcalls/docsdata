@@ -1,0 +1,19 @@
+<page>
+    <h1>ntg_stream_mode_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>ntg_stream_mode_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="STREAM_MODE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_STREAM_CAPTURE</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="MODE_CAPTURE_DESC"/>
+
+            <category-title><ref><sb>NTG_STREAM_PLAYBACK</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="MODE_PLAYBACK_DESC"/>
+        </subtext>
+    </subtext>
+</page>

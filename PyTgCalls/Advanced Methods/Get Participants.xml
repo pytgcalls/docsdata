@@ -32,5 +32,12 @@
                 <config id="ARG_CHAT_ID"/>
             </subtext>
         </category>
+    <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="UNSUPPORTED_METHOD_EXCEPTION"/>
+            </subtext>
+        </category>
     </subtext>
 </page>

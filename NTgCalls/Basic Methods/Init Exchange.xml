@@ -1,0 +1,47 @@
+<page>
+    <p2p-banner/>
+    <h1>Init Exchange</h1>
+    <config id="INIT_EXCHANGE_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight mark="7-11">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        dh_config = ... # Obtain the DH configuration
+        g_a_hash = ... # Parameter for key exchange (Only when is incoming call)
+        params = await app.init_exchange(
+            -1001185324811,
+            config,
+            g_a_hash,
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>init_exchange</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="INIT_EXCHANGE_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+                <category-title><ref><sb>config</sb></ref>: <docs-ref link="/NTgCalls/Available Types/DhConfig">ntgcalls.DhConfig</docs-ref></category-title>
+                <subtext><config id="DH_CONFIG_DESC"/></subtext>
+                <category-title><ref><sb>g_a_hash</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
+                <config id="G_A_HASH_DESC"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+                <config id="CONNECTION_ALREADY_EXCHANGE_DESC"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

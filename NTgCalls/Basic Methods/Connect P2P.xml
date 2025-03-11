@@ -31,7 +31,7 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>rtc_servers</sb></ref>:  <shi>list</shi>[<docs-ref link="/NTgCalls/Available Types/RTCServer">RTCServer</docs-ref>]</category-title>
+                <category-title><ref><sb>rtc_servers</sb></ref>:  <shi>list</shi>[<docs-ref link="/NTgCalls/Available Types/RTCServer">ntgcalls.RTCServer</docs-ref>]</category-title>
                 <config id="RTC_SERVERS_DESC"/>
                 <category-title><ref><sb>versions</sb></ref>: <shi>list</shi>[<shi>str</shi>]</category-title>
                 <config id="LIBRARY_VERSIONS_DESC"/>

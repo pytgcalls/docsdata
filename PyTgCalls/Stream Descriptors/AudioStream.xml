@@ -11,7 +11,7 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_INPUT_MODE"/>
+            <config id="ARG_MEDIA_SOURCE"/>
 
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The audio file path or shell command (PCM16L format only).</text></subtext>

@@ -1,0 +1,47 @@
+<page>
+    <h1>Record</h1>
+    <text>This method allows recording audio or video from a group call or a private call.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="10-13">
+        from pytgcalls import Client
+        from pytgcalls import idle
+        ...
+
+        app = PyTgCalls(client)
+        app.start()
+
+        ...  # Call API methods
+
+        app.record(
+            -1001185324811,
+            'record.mp3',
+        )
+
+        idle()
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref src="method">PyTgCalls.<sb>record</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Join in a group call or accept/request a private call to record audio or video.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_CHAT_ID"/>
+                <category-title><ref>stream</ref>: Union[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">Stream</docs-ref>, <docs-ref link="/PyTgCalls/Stream Descriptors/RecordStream">RecordStream</docs-ref>, <docs-ref link="/PyTgCalls/Advanced Types/SpeakerDevice">SpeakerDevice</docs-ref>, Path, <shi>str</shi>]</category-title>
+                <subtext><text>Output Streams base descriptor</text></subtext>
+                <config id="CALL_CONFIG_DESC"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="PLAY_EXCEPTIONS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

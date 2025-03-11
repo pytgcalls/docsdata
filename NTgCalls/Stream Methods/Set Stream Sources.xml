@@ -1,15 +1,22 @@
 <page>
-    <h1>Change Stream</h1>
+    <h1>Set Stream Sources</h1>
+    <alert type="warning">
+        <text>This method replaces the deprecated <code>change_stream</code> method.</text>
+    </alert>
     <config id="CHANGE_STREAM_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="6-17">
+    <syntax-highlight mark="9-21">
         from ntgcalls import NTgCalls
+        from ntgcalls import StreamMode
+        from ntgcalls import MediaDescription
+        from ntgcalls import AudioDescription
         ...
 
         app = NTgCalls()
 
-        await app.change_stream(
+        await app.set_stream_sources(
             -1001185324811,
+            StreamMode.CAPTURE,
             MediaDescription(
                 AudioDescription(
                     input_mode=InputMode.File,
@@ -24,7 +31,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>change_stream</sb></ref>()
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>set_stream_sources</sb></ref>()
     </category-title>
     <subtext>
         <config id="CHANGE_STREAM_DESC_2"/>
@@ -33,6 +40,7 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
+                <config id="STREAM_MODE"/>
                 <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>
@@ -40,7 +48,7 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="NTG_NO_GROUP_CALL"/>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
                 <config id="NTG_STREAM_EXCEPTIONS"/>
             </subtext>
         </category>

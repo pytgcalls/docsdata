@@ -2,25 +2,22 @@
     <h1>AudioDescription</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.types.<sb>AudioDescription</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>AudioDescription</sb></ref>
     </category-title>
     <subtext>
         <config id="AUDIO_CONFIG_DESC"/>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_INPUT_MODE"/>
-
-            <config id="ARG_C_INPUT_MEDIA"/>
+            <config id="ARG_MEDIA_SOURCE"/>
 
             <category-title><ref>sample_rate</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_SAMPLE_DESC"/>
 
-            <category-title><ref>bits_per_sample</ref>: <shi>int</shi></category-title>
-            <config id="AUDIO_BPS_DESC"/>
-
             <category-title><ref>channel_count</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_CHAN_DESC"/>
+
+            <config id="ARG_INPUT_MEDIA"/>
         </subtext>
     </subtext>
 </page>

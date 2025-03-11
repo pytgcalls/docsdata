@@ -9,13 +9,13 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_C_INPUT_MODE"/>
+            <config id="ARG_C_MEDIA_SOURCE"/>
             <config id="ARG_C_INPUT_MEDIA"/>
 
-            <category-title><shi language="c">uint16_t</shi> <ref>width</ref></category-title>
+            <category-title><shi language="c">int16_t</shi> <ref>width</ref></category-title>
             <config id="VIDEO_WIDTH_DESC"/>
 
-            <category-title><shi language="c">uint16_t</shi> <ref>height</ref></category-title>
+            <category-title><shi language="c">int16_t</shi> <ref>height</ref></category-title>
             <config id="VIDEO_HEIGHT_DESC"/>
 
             <category-title><shi language="c">uint8_t</shi> <ref>fps</ref></category-title>

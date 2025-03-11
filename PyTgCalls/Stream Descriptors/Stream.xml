@@ -1,7 +1,7 @@
 <page>
     <h1>Stream</h1>
     <alert type="warning">
-        <text>This class replaces the deprecated <code>pytgcalls.types.InputStream</code>.</text>
+        <text>This class replaces the deprecated <code>InputStream</code>.</text>
     </alert>
     <category-title noref="true">
         <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Stream</sb></ref>

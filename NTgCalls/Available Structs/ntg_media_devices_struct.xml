@@ -1,0 +1,37 @@
+<page>
+    <h1>ntg_media_devices_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_media_devices_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="MEDIA_DEVICES_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_device_info_struct">ntg_device_info_struct</docs-ref><shi language="c">*</shi> <ref>microphone</ref></category-title>
+            <config id="MICROPHONE_DEVICES_DESC"/>
+
+            <category-title><shi language="c">int</shi> <ref>sizeMicrophone</ref></category-title>
+            <subtext><text>Size of the microphone list</text></subtext>
+
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_device_info_struct">ntg_device_info_struct</docs-ref><shi language="c">*</shi> <ref>speaker</ref></category-title>
+            <config id="SPEAKER_DEVICES_DESC"/>
+
+            <category-title><shi language="c">int</shi> <ref>sizeSpeaker</ref></category-title>
+            <subtext><text>Size of the speaker list</text></subtext>
+
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_device_info_struct">ntg_device_info_struct</docs-ref><shi language="c">*</shi> <ref>camera</ref></category-title>
+            <config id="CAMERA_DEVICES_DESC"/>
+
+            <category-title><shi language="c">int</shi> <ref>sizeCamera</ref></category-title>
+            <subtext><text>Size of the camera list</text></subtext>
+
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_device_info_struct">ntg_device_info_struct</docs-ref><shi language="c">*</shi> <ref>screen</ref></category-title>
+            <config id="SCREEN_DEVICES_DESC"/>
+
+            <category-title><shi language="c">int</shi> <ref>sizeScreen</ref></category-title>
+            <subtext><text>Size of the screen list</text></subtext>
+        </subtext>
+    </subtext>
+</page>

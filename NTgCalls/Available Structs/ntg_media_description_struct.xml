@@ -9,11 +9,17 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_audio_description_struct">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>audio</ref></category-title>
-            <config id="AUDIO_DESC"/>
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_audio_description_struct">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>microphone</ref></category-title>
+            <config id="MICROPHONE_DESC"/>
 
-            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_video_description_struct">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>video</ref></category-title>
-            <config id="VIDEO_DESC"/>
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_audio_description_struct">ntg_audio_description_struct</docs-ref><shi language="c">*</shi> <ref>speaker</ref></category-title>
+            <config id="SPEAKER_DESC"/>
+
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_video_description_struct">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>camera</ref></category-title>
+            <config id="CAMERA_DESC"/>
+
+            <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_video_description_struct">ntg_video_description_struct</docs-ref><shi language="c">*</shi> <ref>screen</ref></category-title>
+            <config id="SCREEN_DESC"/>
         </subtext>
     </subtext>
 </page>

@@ -1,0 +1,25 @@
+<page>
+    <h1>ntg_stream_device_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>ntg_stream_device_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="STREAM_DEVICE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_STREAM_MICROPHONE</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="STREAM_DEVICE_MICROPHONE_DESC"/>
+
+            <category-title><ref><sb>NTG_STREAM_SPEAKER</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="STREAM_DEVICE_SPEAKER_DESC"/>
+
+            <category-title><ref><sb>NTG_STREAM_CAMERA</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="STREAM_DEVICE_CAMERA_DESC"/>
+
+            <category-title><ref><sb>NTG_STREAM_SCREEN</sb></ref> <shi>=</shi> 3</category-title>
+            <config id="STREAM_DEVICE_SCREEN_DESC"/>
+        </subtext>
+    </subtext>
+</page>

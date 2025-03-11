@@ -1,0 +1,22 @@
+<page>
+    <h1>ntg_ssrc_group_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_ssrc_group_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="SSRC_GROUP_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><shi language="c">char*</shi> <ref>semantics</ref></category-title>
+            <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+
+            <category-title><shi language="c">int*</shi> <ref>ssrcs</ref></category-title>
+            <config id="SSRC_GROUP_SSRCS_DESC"/>
+
+            <category-title><shi language="c">int</shi> <ref>sizeSsrcs</ref></category-title>
+            <subtext><text>Sizes of the ssrcs list</text></subtext>
+        </subtext>
+    </subtext>
+</page>

@@ -1,0 +1,24 @@
+<page>
+    <h1>RecordStream</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>RecordStream</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The record stream piped descriptor.</text>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>audio</ref>: Optional[Union[<shi>bool</shi>, <shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/SpeakerDevice">SpeakerDevice</docs-ref>]]</category-title>
+            <subtext><text>The speaker device, audio file or if it should be sent as updates.</text></subtext>
+
+            <config id="ARG_AUDIO_PARAMSv2"/>
+
+            <category-title><ref>camera</ref>: Optional[<shi>bool</shi>]</category-title>
+            <subtext><text>Whether to record the camera.</text></subtext>
+
+            <category-title><ref>screen</ref>: Optional[<shi>bool</shi>]</category-title>
+            <subtext><text>Whether to record the screen.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

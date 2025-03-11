@@ -1,0 +1,46 @@
+<page>
+    <h1>Add Incoming Video</h1>
+    <config id="ADD_INCOMING_VIDEO_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight mark="9-13">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        ...
+        endpoint = ...
+        ssrc_groups = ...
+
+        await app.add_incoming_video(
+            -1001185324811,
+            endpoint,
+            ssrc_groups,
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>add_incoming_video</sb></ref>() <shi>-> int</shi>
+    </category-title>
+    <subtext>
+        <config id="ADD_INCOMING_VIDEO_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+                <category-title><ref><sb>endpoint</sb></ref>: <shi>str</shi></category-title>
+                <config id="ENDPOINT_DESC"/>
+                <category-title><ref><sb>ssrc_groups</sb></ref>: <shi>list</shi>[<docs-ref link="/NTgCalls/Available Types/SsrcGroup">ntgcalls.SsrcGroup</docs-ref>]</category-title>
+                <config id="SSRC_GROUPS_DESC"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

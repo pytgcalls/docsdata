@@ -1,8 +1,11 @@
 <page>
-    <h1>InputMode</h1>
+    <h1>MediaSource</h1>
+    <alert type="warning">
+        <text>This enum replaces the deprecated <code>InputMode</code> enum.</text>
+    </alert>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>InputMode</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaSource</sb></ref>
     </category-title>
     <subtext>
         <config id="INPUT_MODE_DESC2"/>
@@ -18,8 +21,14 @@
             <category-title><ref><sb>FFMPEG</sb></ref> <shi>=</shi> 4</category-title>
             <config id="MODE_FFMPEG_DESC"/>
 
-            <category-title><ref><sb>NO_LATENCY</sb></ref> <shi>=</shi> 8</category-title>
-            <config id="MODE_NO_LATENCY_DESC"/>
+            <category-title><ref><sb>DEVICE</sb></ref> <shi>=</shi> 8</category-title>
+            <config id="MODE_DEVICE_DESC"/>
+
+            <category-title><ref><sb>DESKTOP</sb></ref> <shi>=</shi> 16</category-title>
+            <config id="MODE_DESKTOP_DESC"/>
+
+            <category-title><ref><sb>EXTERNAL</sb></ref> <shi>=</shi> 32</category-title>
+            <config id="MODE_EXTERNAL_DESC"/>
         </subtext>
     </subtext>
 </page>

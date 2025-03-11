@@ -40,10 +40,10 @@
                         <tab id="arm">ARM64</tab>
                     </tabs>
                     <syntax-highlight language="bash" id="x86">
-                        $ sudo apt install libx11-dev build-essential curl
+                        $ sudo apt install libx11-dev build-essential curl alsa-lib-devel pulseaudio-libs-devel mesa-libgbm-devel libXcomposite-devel libXrandr-devel libXtst-devel
                     </syntax-highlight>
                     <syntax-highlight language="bash" id="arm">
-                        $ sudo apt install libx11-dev build-essential curl
+                        $ sudo apt install libx11-dev build-essential curl alsa-lib-devel pulseaudio-libs-devel mesa-libgbm-devel libXcomposite-devel libXrandr-devel libXtst-devel
                         $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 18
                     </syntax-highlight>
                 </multisyntax>
@@ -53,8 +53,8 @@
         <list style="numbers">
             <item>
                 <text>
-                    <b>Install Microsoft Visual Studio 2019:</b><br/>
-                    Install Microsoft Visual Studio 2019 with the C++ workload. You can download it from the <a href="https://visualstudio.microsoft.com/downloads/">official website</a>.
+                    <b>Install Microsoft Visual Studio 2022:</b><br/>
+                    Install Microsoft Visual Studio 2022 with the C++ workload. You can download it from the <a href="https://visualstudio.microsoft.com/downloads/">official website</a>.
                 </text>
             </item>
             <item>
@@ -134,7 +134,7 @@
             Follow these steps to compile NTgCalls on your system.
         </text>
         <alert type="important">
-            It's essential to have Python 3.8+ installed on your server.
+            It's essential to have Python 3.9+ installed on your server.
         </alert>
         <subtext>
             <h3>Building Shared Library</h3>
@@ -200,6 +200,59 @@
                     </text>
                     <syntax-highlight language="bash">
                         $ pip3 install . -U
+                    </syntax-highlight>
+                </item>
+            </list>
+            <br/>
+            <h3>Building Java for Android Bindings</h3>
+            <text>
+                NTgCalls offers Java for Android Bindings, facilitating seamless integration with Java for Android.
+                Follow these steps to compile NTgCalls with Java for Android Bindings:
+            </text>
+            <list style="numbers">
+                <item>
+                    <text>
+                        <b>Change Directory:</b><br/>
+                        Navigate to the root directory of the NTgCalls project:
+                    </text>
+                    <syntax-highlight language="bash">
+                        $ cd /path/to/ntgcalls
+                    </syntax-highlight>
+                </item>
+                <item>
+                    <text>
+                        <b>Generate .so libraries for the Android platform:</b><br/>
+                        Run the following command to generate the .so libraries for the Android platform:
+                    </text>
+                    <syntax-highlight language="bash">
+                        $ python3 setup.py build_lib --android
+                    </syntax-highlight>
+                </item>
+                <item>
+                    <text>
+                        <b>Enter in the Android directory:</b><br/>
+                        Navigate to the Android directory of the NTgCalls project:
+                    </text>
+                    <syntax-highlight language="bash">
+                        $ cd android
+                    </syntax-highlight>
+                </item>
+                <item>
+                    <text>
+                        <b>Build the Android project:</b><br/>
+                        Run the following command to build the Android project:
+                    </text>
+                    <syntax-highlight language="bash">
+                        $ ./gradlew build assembleRelease
+                    </syntax-highlight>
+                </item>
+                <item>
+                    <text>
+                        <b>Get the .aar file:</b><br/>
+                        Copy the generated .aar file to your desired directory:
+                    </text>
+                    <syntax-highlight language="bash">
+                        $ cp build/outputs/aar/ntgcalls-release.aar /path/to/your/directory
                     </syntax-highlight>
                 </item>
             </list>

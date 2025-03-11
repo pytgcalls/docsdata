@@ -178,7 +178,7 @@
                 <item><text><b>Static Typing:</b> PyTgCalls is now fully statically typed, ensuring that the types of each method and class are thoroughly checked.</text></item>
                 <item><text><b>YtDlp Support:</b> MediaStream now supports links from YouTube using YtDlp, for example: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=iSbLHrrqmoM</a></text></item>
                 <item>
-                    <text><b>MediaStream Quality Support:</b> MediaStream now accepts enhanced quality options for audio and video parameters. For audio, use <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>, and for video, use <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>.</text>
+                    <text><b>MediaStream Quality Support:</b> MediaStream now accepts enhanced quality options for audio and video parameters. For audio, use <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref>, and for video, use <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">VideoQuality</docs-ref>.</text>
                     <multisyntax as-blame="true">
                         <syntax-highlight>
                             call_py.join_group_call(

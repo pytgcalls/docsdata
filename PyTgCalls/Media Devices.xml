@@ -5,10 +5,10 @@
         This functionality proves valuable when you intend to stream content from either your screen or microphone.
     </text>
     <h3>Example</h3>
-    <syntax-highlight mark="13-15">
+    <syntax-highlight mark="13">
         from pytgcalls import Client
         from pytgcalls import idle
-        from pytgcalls.media_devices import MediaDevices
+        from pytgcalls import MediaDevices
         ...
 
         app = PyTgCalls(client)
@@ -18,9 +18,7 @@
 
         app.play(
             -1001185324811,
-            MediaStream(
-                MediaDevices.get_audio_devices()[0],
-            )
+            MediaDevices.get_audio_devices()[0],
         )
 
         idle()
@@ -37,10 +35,16 @@
             <category>
                 <pg-title>METHODS</pg-title>
                 <subtext>
-                    <category-title><ref><sb>get_audio_devices</sb></ref>() <shi>-> list</shi>[pytgcalls.DeviceInfo]</category-title>
-                    <subtext><text>Retrieve a list of available audio input devices.</text></subtext>
+                    <category-title><ref><sb>microphone_devices</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/InputDevice">pytgcalls.InputDevice</docs-ref>]</category-title>
+                    <subtext><text>Retrieve a list of available microphone devices</text></subtext>
 
-                    <category-title><ref><sb>get_screen_devices</sb></ref>() <shi>-> list</shi>[pytgcalls.ScreenInfo]</category-title>
+                    <category-title><ref><sb>speaker_devices</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/SpeakerDevice">pytgcalls.SpeakerDevice</docs-ref>]</category-title>
+                    <subtext><text>Retrieve a list of available speaker devices</text></subtext>
+
+                    <category-title><ref><sb>camera_devices</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/InputDevice">pytgcalls.InputDevice</docs-ref>]</category-title>
+                    <subtext><text>Retrieve a list of available camera devices</text></subtext>
+
+                    <category-title><ref><sb>screen_devices</sb></ref>() <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/ScreenDevice">pytgcalls.ScreenDevice</docs-ref>]</category-title>
                     <subtext><text>Retrieve a list of available screen devices</text></subtext>
                 </subtext>
             </category>

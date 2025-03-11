@@ -1,8 +1,8 @@
 <page>
-    <h1>Played Time</h1>
-    <config id="TIME_DESC"/>
+    <h1>Pause</h1>
+    <text>This method allows pausing the streaming file.</text>
     <h3>Example</h3>
-    <syntax-highlight mark="11-13">
+    <syntax-highlight mark="10-12">
         from pytgcalls import Client
         from pytgcalls import idle
         ...
@@ -12,10 +12,8 @@
 
         ...  # Call API methods
 
-        print(
-            app.played_time(
-                -1001185324811,
-            )
+        app.pause(
+            -1001185324811,
         )
 
         idle()
@@ -23,10 +21,10 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref src="method">PyTgCalls.<sb>played_time</sb></ref>() <shi>-> int</shi>
+        <ref src="method">PyTgCalls.<sb>pause</sb></ref>() <shi>-> bool</shi>
     </category-title>
     <subtext>
-        <config id="TIME_DESC_2"/>
+        <text>Pause the stream</text>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>

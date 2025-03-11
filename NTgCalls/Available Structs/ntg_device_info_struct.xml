@@ -1,0 +1,19 @@
+<page>
+    <h1>ntg_device_info_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_device_info_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="DEVICE_INFO_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><shi language="c">char*</shi> <sb><ref>name</ref></sb></category-title>
+            <config id="DEVICE_NAME_DESC"/>
+
+            <category-title><shi language="c">char*</shi> <sb><ref>metadata</ref></sb></category-title>
+            <config id="DEVICE_METADATA_DESC"/>
+        </subtext>
+    </subtext>
+</page>

@@ -1,0 +1,22 @@
+<page>
+    <h1>RemoteSource</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>RemoteSource</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="REMOTE_SOURCE_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>ssrc</ref> <shi>-> int</shi></category-title>
+            <config id="SSRC_DESC"/>
+
+            <category-title><ref>state</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref></category-title>
+            <config id="STREAM_STATUS_DESC2"/>
+
+            <category-title><ref>device</ref> <shi>-> </shi> <docs-ref link="/NTgCalls/Available Enums/StreamDevice">ntgcalls.StreamDevice</docs-ref></category-title>
+            <config id="STREAM_DEVICE_DESC2"/>
+        </subtext>
+    </subtext>
+</page>

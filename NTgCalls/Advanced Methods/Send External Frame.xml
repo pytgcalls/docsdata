@@ -1,0 +1,56 @@
+<page>
+    <h1>Send External Frame</h1>
+    <config id="SEND_EXTERNAL_FRAME_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight mark="11-21">
+        from ntgcalls import NTgCalls
+        from ntgcalls import StreamDevice
+        from ntgcalls import FrameData
+        from datetime import datetime
+        ...
+
+        app = NTgCalls()
+        ...
+        pcm16_le_data = ...
+
+        await app.send_external_frame(
+            -1001185324811,
+            StreamDevice.MICROPHONE,
+            pcm16_le_data,
+            FrameData(
+                int(datetime.now().timestamp()),
+                0,
+                0,
+                0,
+            )
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>send_external_frame</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+                <category-title><ref><sb>device</sb></ref>: <docs-ref link="/NTgCalls/Available Enums/StreamDevice">ntgcalls.StreamDevice</docs-ref></category-title>
+                <config id="DEVICE_DESC"/>
+                <category-title><ref><sb>frame</sb></ref>: <shi>bytes</shi></category-title>
+                <config id="FRAME_BUFFER_DESC"/>
+                <category-title><ref><sb>frame_data</sb></ref>:  <docs-ref link="/NTgCalls/Available Types/FrameData">ntgcalls.FrameData</docs-ref></category-title>
+                <subtext><config id="FRAME_DATA_DESC"/></subtext>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+
+            </subtext>
+        </category>
+    </subtext>
+</page>

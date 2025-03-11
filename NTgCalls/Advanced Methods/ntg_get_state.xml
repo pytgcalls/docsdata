@@ -11,9 +11,9 @@
             ...
             int64_t chatID = ...; // Obtain the chat ID
             ntg_media_state_struct buffer;
-            ntg_async_struct future;
             // Initialize the async struct
-            int result = ntg_get_state(uid, chatID, &amp;buffer, &amp;future);
+            ntg_async_struct future;
+            ntg_get_state(uid, chatID, &amp;buffer, &amp;future);
             // Wait for the async operation to complete and use
             // the buffer for EditGroupCallParticipant
             ...

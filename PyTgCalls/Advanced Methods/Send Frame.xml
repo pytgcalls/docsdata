@@ -1,0 +1,53 @@
+<page>
+    <h1>Send Frame</h1>
+    <text>This method allows sending an external frame to the group call or private call.</text>
+    <h3>Example</h3>
+    <syntax-highlight mark="11-18">
+        from pytgcalls import PyTgCalls
+        from pytgcalls import Device
+        from pytgcalls.types import Frame
+        from datetime import datetime
+        ...
+
+        app = PyTgCalls()
+        ...
+        pcm16_le_data = ...
+
+        app.send_frame(
+            -1001185324811,
+            Device.MICROPHONE,
+            pcm16_le_data,
+            Frame.Info(
+                int(datetime.now().timestamp()),
+            )
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref src="method">PyTgCalls.<sb>send_frame</sb></ref>()
+    </category-title>
+    <subtext>
+        <text>Send an external frame to the group call or private call.</text>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_CHAT_ID"/>
+                <category-title><ref><sb>device</sb></ref>: <docs-ref link="/PyTgCalls/Available Enums/Device">pytgcalls.Device</docs-ref></category-title>
+                <config id="DEVICE_DESC"/>
+                <category-title><ref><sb>frame</sb></ref>: <shi>bytes</shi></category-title>
+                <config id="FRAME_BUFFER_DESC"/>
+                <category-title><ref><sb>frame_data</sb></ref>: <docs-ref link="/PyTgCalls/Advanced Types/Frame Info">pytgcalls.Frame.Info</docs-ref></category-title>
+                <subtext><config id="FRAME_DATA_DESC"/></subtext>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <config id="BASE_EXCEPTIONS"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

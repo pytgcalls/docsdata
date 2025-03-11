@@ -5,6 +5,7 @@
         events or conditions within your application.
         These events could include call-related occurrences, state changes, or other interactions with the NTgCalls library.
     </text>
+    <config id="NOTE_CALLBACK"/>
     <br/>
     <category>
         <category-title><ref src="method">NTgCalls.<sb>on_stream_end</sb></ref>()</category-title>
@@ -70,6 +71,40 @@
                     print(chat_id, payload)
                 ...
                 app.on_signaling(handler)
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref src="method">NTgCalls.<sb>on_frames</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_FRAMES_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight mark="4-7">
+                ...
+                app = NTgCalls()
+                ...
+                def handler(chat_id: int, mode: StreamMode, device: StreamDevice, frames: List[Frame]):
+                    print(chat_id, mode, device, frames)
+                    ...
+                app.on_frames(handler)
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref src="method">NTgCalls.<sb>on_remote_source_change</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_REMOTE_SOURCE_DESC"/>
+            <h3>Example</h3>
+            <syntax-highlight mark="4-7">
+                ...
+                app = NTgCalls()
+                ...
+                def handler(chat_id: int, source: RemoteSource):
+                    print(chat_id, source)
+                    ...
+                app.on_remote_source_change(handler)
             </syntax-highlight>
         </subtext>
     </category>

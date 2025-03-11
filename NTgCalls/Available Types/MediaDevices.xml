@@ -1,0 +1,25 @@
+<page>
+    <h1>Media Devices</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaDevices</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="MEDIA_DEVICES_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>microphone</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
+            <config id="MICROPHONE_DEVICES_DESC"/>
+
+            <category-title><ref>speaker</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
+            <config id="SPEAKER_DEVICES_DESC"/>
+
+            <category-title><ref>camera</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
+            <config id="CAMERA_DEVICES_DESC"/>
+
+            <category-title><ref>screen</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
+            <config id="SCREEN_DEVICES_DESC"/>
+        </subtext>
+    </subtext>
+</page>

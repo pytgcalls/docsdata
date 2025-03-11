@@ -18,12 +18,12 @@
         <br/>
         <pg-title>STATIC METHODS</pg-title>
         <subtext>
-            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref>)</category-title>
+            <category-title><ref><sb>from_quality</sb></ref>(quality: <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref>)</category-title>
             <subtext>
                 <alert type="warning">
                     <text>
                         This method was deprecated on PyTgCalls 1.2.X, use directly
-                        <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">pytgcalls.types.AudioQuality</docs-ref> in MediaStream instead
+                        <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref> in MediaStream instead
                     </text>
                 </alert>
                 <text>Create an AudioParameters instance from an AudioQuality enumeration.</text>
