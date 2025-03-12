@@ -32,7 +32,8 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
-                <config id="STREAM_MODE"/>
+                <category-title><ref>direction</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/Direction">Direction</docs-ref></category-title>
+                <config id="STREAM_MODE_DESC"/>
             </subtext>
         </category>
         <br/>
