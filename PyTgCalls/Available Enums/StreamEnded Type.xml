@@ -1,0 +1,19 @@
+<page>
+    <h1>StreamEnded Type</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="enum">StreamEnded.<sb>Type</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration for managing the type of stream that has ended.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>AUDIO</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="TYPE_AUDIO_DESC"/>
+
+            <category-title><ref><sb>VIDEO</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="TYPE_VIDEO_DESC"/>
+        </subtext>
+    </subtext>
+</page>

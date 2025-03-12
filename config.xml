@@ -1597,6 +1597,7 @@
       <file>ExternalMedia.xml</file>
       <file>GroupCallParticipant Action.xml</file>
       <file>MediaStream Flags.xml</file>
+      <file>StreamEnded Type.xml</file>
       <file>VideoQuality.xml</file>
     </group>
 
@@ -1643,9 +1644,8 @@
       <file>Frame Info.xml</file>
       <file>GroupCallConfig.xml</file>
       <file>GroupCallParticipant.xml</file>
-      <file>StreamAudioEnded.xml</file>
+      <file>StreamEnded.xml</file>
       <file>StreamFrames.xml</file>
-      <file>StreamVideoEnded.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>
     </group>
   </files-list>
