@@ -3,6 +3,146 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgMar25.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v2.1.X"
+            description="Enhanced Group Calls, Recording, and More!"
+            mainbg="#070d16"
+            version="2.1.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text>Switch to Group Calls V2, now is possible to stream also the screen and the video at the same time, for more info check <docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>.</text></item>
+                <item><text>Added support for recording the stream, for more info check <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref>.</text></item>
+                <item><text><b>Performance Boost and Stability:</b> We've made significant improvements to the library's performance and stability, by updating WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m132</a>) and optimizing the codebase.</text></item>
+                <item><text>New Java for Android Support, now is possible to use PyTgCalls in Android with Java, for more info check the usage at <a href="https://github.com/pytgcalls/Telegram-X">Telegram-X</a>, regarding the library can be found <a href="https://central.sonatype.com/artifact/io.github.pytgcalls/ntgcalls">here</a>.</text></item>
+                <item><text>Reduced the CPU usage up to 60% by optimizing the codebase and reduced the number of System Calls up to 90%.</text></item>
+                <item><text>Added detailed C Binding error messages for better debugging.</text></item>
+                <item><text>Now is possible natively with Media Devices to stream the microphone, the camera or the screen, for more info check <docs-ref link="/PyTgCalls/MediaDevices">MediaDevices</docs-ref>.</text></item>
+                <item><text>Added support for OpenH264 for less CPU usage and better performance.</text></item>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>Now the <docs-ref link="/PyTgCalls/Media Devices">MediaDevices</docs-ref> has been refactored, so was renamed the <code>get_screen_devices()</code> and <code>get_audio_devices()</code> to <code>screen_devices()</code> and <code>microphone_devices()</code>.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # Get screen devices
+                            screen_devices = MediaDevices.get_screen_devices()
+                            <br/>
+                            # Get microphone devices
+                            audio_devices = MediaDevices.get_audio_devices()
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            # Get screen devices
+                            screen_devices = MediaDevices.screen_devices()
+                            <br/>
+                            # Get microphone devices
+                            audio_devices = MediaDevices.microphone_devices()
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Some media management methods were renamed, for example, for example <code>pause_stream()</code> was changed to <code>pause()</code></text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # Pause the stream
+                            call_py.pause_stream(-1001234567890)
+                            <br/>
+                            # Resume the stream
+                            call_py.resume_stream(-1001234567890)
+                            <br/>
+                            # Mute the stream
+                            call_py.mute_stream(-1001234567890)
+                            <br/>
+                            # Unmute the stream
+                            call_py.unmute_stream(-1001234567890)
+                            <br/>
+                            # Get the current played time
+                            call_py.played_time(-1001234567890)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            # Pause the stream
+                            call_py.pause(-1001234567890)
+                            <br/>
+                            # Resume the stream
+                            call_py.resume(-1001234567890)
+                            <br/>
+                            # Mute the stream
+                            call_py.mute(-1001234567890)
+                            <br/>
+                            # Unmute the stream
+                            call_py.unmute(-1001234567890)
+                            <br/>
+                            # Get the current played time
+                            call_py.time(-1001234567890)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>To retrieve the current call status, use the <code>capture</code> field instead of <code>status</code> since now CallStatus can return also the current recording status.</text>
+                    <multisyntax as-blame="true">
+                         <syntax-highlight>
+                           # Get the current call status
+                           call_py.calls[-1001234567890].status
+                         </syntax-highlight>
+                         <syntax-highlight>
+                           # Get the current call status
+                           call_py.calls[-1001234567890].capture
+                         </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Now the <code>stream_end</code> filter requires brackets, since now accepts multiple parameters.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # On stream end
+                            @call_py.on_update(filters.stream_end)
+                            async def on_stream_end(client: PyTgCalls, update: Update):
+                                print(update)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            # On stream end
+                            @call_py.on_update(filters.stream_end())
+                            async def on_stream_end(client: PyTgCalls, update: Update):
+                                print(update)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Removed <code>StreamAudioEnded</code> and <code>StreamVideoEnded</code> in favor of <code>StreamEnded</code> with the <code>stream_type</code> and <code>device</code> field.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            # On stream ended
+                            @call_py.on_update(filters.stream_end())
+                            async def on_stream_ended(client: PyTgCalls, update: Update):
+                                # Check the stream type
+                                if isinstance(update, StreamAudioEnded):
+                                    print(update)
+                                elif isinstance(update, StreamVideoEnded):
+                                    print(update)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            # On stream ended
+                            @call_py.on_update(filters.stream_end())
+                            async def on_stream_ended(client: PyTgCalls, update: StreamEnded):
+                                # Check the stream type
+                                if update.stream_type == StreamEnded.Type.AUDIO:
+                                    print(update)
+                                elif update.stream_type == StreamEnded.Type.VIDEO:
+                                    print(update)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+            </list>
+        </subtext>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgSep24.png"
             minititle="MINOR UPDATE"
             bigtitle="PyTgCalls v2.0.3"
@@ -96,6 +236,7 @@
                     <text>Now all listeners like <code>on_stream_end()</code> was unified in <code>on_update()</code> and with <docs-ref link="/PyTgCalls/Filters">filters</docs-ref>, for example:</text>
                     <multisyntax as-blame="true">
                         <syntax-highlight>
+                            ...
                             # On Closed Voice Chat
                             @call_py.on_closed_voice_chat()
                             async def on_closed_voice_chat(client: PyTgCalls, update: Update):
