@@ -11,11 +11,17 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>stream_audio</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">pytgcalls.types.raw.AudioStream</docs-ref></category-title>
-            <subtext><text>Audio Stream Descriptor.</text></subtext>
+            <category-title><ref>microphone</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">pytgcalls.types.raw.AudioStream</docs-ref>]</category-title>
+            <config id="MICROPHONE_DESC"/>
 
-            <category-title><ref>stream_video</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">pytgcalls.types.raw.VideoStream</docs-ref></category-title>
-            <subtext><text>Video Stream Descriptor.</text></subtext>
+            <category-title><ref>speaker</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">pytgcalls.types.raw.AudioStream</docs-ref>]</category-title>
+            <config id="SPEAKER_DESC"/>
+
+            <category-title><ref>camera</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">pytgcalls.types.raw.VideoStream</docs-ref>]</category-title>
+            <config id="CAMERA_DESC"/>
+
+            <category-title><ref>screen</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">pytgcalls.types.raw.VideoStream</docs-ref>]</category-title>
+            <config id="SCREEN_DESC"/>
         </subtext>
     </subtext>
 </page>
