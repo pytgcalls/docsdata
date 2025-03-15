@@ -89,13 +89,15 @@
     <config id="SHELL_EXCEPTION"/>
   </option>
 
+  <option id="FFMPEG_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
+    <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
+  </option>
+
   <option id="STREAM_EXCEPTIONS">
     <category-title>exception <ref><sb>FileNotFoundError</sb></ref></category-title>
     <config id="FILE_EXCEPTION_DESC"/>
-
-    <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
-    <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
-
+    <config id="FFMPEG_EXCEPTION"/>
     <config id="SHELL_EXCEPTION"/>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoAudioSourceFound</sb></ref></category-title>
@@ -139,17 +141,12 @@
     </subtext>
   </option>
 
-  <option id="PLAY_EXCEPTIONS">
-    <config id="BASE_MTPROTO"/>
-    <config id="GROUP_CALL_EXCEPTIONS"/>
-    <config id="STREAM_EXCEPTIONS"/>
+  <option id="CALL_EXCEPTIONS">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDeclined</sb></ref></category-title>
     <subtext><text>The call was declined by the user.</text></subtext>
     <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDiscarded</sb></ref></category-title>
     <subtext><text>The call was discarded by the user while connecting.</text></subtext>
     <config id="TELEGRAM_EXCEPTION"/>
-    <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
-    <subtext><text>You are attempting to join in a call you're already a part of.</text></subtext>
     <category-title>exception <ref>pytgcalls.exceptions.<sb>UnMuteNeeded</sb></ref></category-title>
     <subtext><text>You need to unmute the userbot or make it an admin to stream audio or video.</text></subtext>
     <config id="RTMP_EXCEPTION"/>

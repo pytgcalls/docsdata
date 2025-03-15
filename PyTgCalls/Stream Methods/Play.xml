@@ -45,7 +45,10 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="PLAY_EXCEPTIONS"/>
+                <config id="BASE_MTPROTO"/>
+                <config id="GROUP_CALL_EXCEPTIONS"/>
+                <config id="STREAM_EXCEPTIONS"/>
+                <config id="CALL_EXCEPTIONS"/>
             </subtext>
         </category>
     </subtext>
