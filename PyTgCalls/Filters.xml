@@ -41,7 +41,7 @@
             </subtext>
         </subtext>
         <br/>
-        <category-title><ref>pytgcalls.filters.<sb src="method">me</sb></ref>()</category-title>
+        <category-title><ref>pytgcalls.filters.<sb src="method">me</sb></ref></category-title>
         <subtext>
             <text>
                 Filter updates for yourself.
@@ -53,6 +53,21 @@
             <text>
                 Filter updates for when a stream ends.
             </text>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>stream_type</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/StreamEnded Type">StreamEnded.Type</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more stream type to filter stream end updates.
+                    </text>
+                </subtext>
+                <category-title><ref>device</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/Device">Device</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more devices to filter stream end updates.
+                    </text>
+                </subtext>
+            </subtext>
         </subtext>
         <br/>
         <category-title><ref>pytgcalls.filters.<sb src="method">chat</sb></ref>()</category-title>
