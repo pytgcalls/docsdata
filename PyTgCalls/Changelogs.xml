@@ -15,14 +15,14 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text>Switch to Group Calls V2, now is possible to stream also the screen and the video at the same time, for more info check <docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>.</text></item>
-                <item><text>Added support for recording the stream, for more info check <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref>.</text></item>
-                <item><text><b>Performance Boost and Stability:</b> We've made significant improvements to the library's performance and stability, by updating WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m132</a>) and optimizing the codebase.</text></item>
-                <item><text>New Java for Android Support, now is possible to use PyTgCalls in Android with Java, for more info check the usage at <a href="https://github.com/pytgcalls/Telegram-X">Telegram-X</a>, regarding the library can be found <a href="https://central.sonatype.com/artifact/io.github.pytgcalls/ntgcalls">here</a>.</text></item>
-                <item><text>Reduced the CPU usage up to 60% by optimizing the codebase and reduced the number of System Calls up to 90%.</text></item>
-                <item><text>Added detailed C Binding error messages for better debugging.</text></item>
-                <item><text>Now is possible natively with Media Devices to stream the microphone, the camera or the screen, for more info check <docs-ref link="/PyTgCalls/MediaDevices">MediaDevices</docs-ref>.</text></item>
-                <item><text>Added support for OpenH264 for less CPU usage and better performance.</text></item>
+                <item><text><b>Group Calls V2 – Stream Video &amp; Screen Simultaneously:</b> Now you can stream both your screen and video at the same time! Learn more in <docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>.</text></item>
+                <item><text><b>Record Your Streams:</b> PyTgCalls now supports stream recording! Find out how to use it <docs-ref link="/PyTgCalls/Stream Methods/Record">here</docs-ref>.</text></item>
+                <item><text><b>Performance &amp; Stability Boost:</b> We've upgraded WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m132</a>) and optimized the codebase for better stability and speed.</text></item>
+                <item><text><b>PyTgCalls Now Supports Java for Android:</b> You can now use PyTgCalls in Android apps with Java! Check out <a href="https://github.com/pytgcalls/Telegram-X">Telegram-X</a> for usage details or find the library <a href="https://central.sonatype.com/artifact/io.github.pytgcalls/ntgcalls">here</a>.</text></item>
+                <item><text><b>Massive CPU Optimization:</b> CPU usage reduced by up to 60% and system calls decreased by 90%, making everything more efficient.</text></item>
+                <item><text><b>Clearer C Binding Error Messages:</b> Debugging is now easier with detailed error messages for C bindings.</text></item>
+                <item><text><b>Native Media Device Streaming:</b> Stream your microphone, camera, or screen directly with Media Devices. Learn more <docs-ref link="/PyTgCalls/Media Devices">here</docs-ref>.</text></item>
+                <item><text><b>Better Performance with OpenH264:</b> Now supporting OpenH264 for lower CPU usage and improved performance.</text></item>
             </list>
             <h3 noref="true">Breaking Changes</h3>
             <list>
