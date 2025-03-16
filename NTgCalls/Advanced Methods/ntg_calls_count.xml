@@ -13,8 +13,8 @@
             ...
             int64_t chatID = ...; // Obtain the chat ID
             int count = 0;
-            ntg_async_struct future;
             // Initialize the async struct
+            ntg_async_struct future;
             int result = ntg_calls_count(uid, &amp;count, &amp;future);
             // Wait for the async operation to complete
             printf("Number of active group calls: %d\n", count);

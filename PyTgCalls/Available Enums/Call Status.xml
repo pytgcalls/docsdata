@@ -2,7 +2,7 @@
     <h1>Call Status</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="enum">pytgcalls.types.Call.<sb>Status</sb></ref>
+        <shi>class</shi> <ref src="enum">Call.<sb>Status</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration for managing call statuses.</text>

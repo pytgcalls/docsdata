@@ -1,0 +1,25 @@
+<page>
+    <h1>FrameData</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>FrameData</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="FRAME_DATA_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>absolute_capture_timestamp_ms</ref>: <shi>int</shi></category-title>
+            <config id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC"/>
+
+            <category-title><ref>rotation</ref>: <shi>int</shi></category-title>
+            <config id="FRAME_DATA_ROTATION_DESC"/>
+
+            <category-title><ref>width</ref>: <shi>int</shi></category-title>
+            <config id="FRAME_DATA_WIDTH_DESC"/>
+
+            <category-title><ref>height</ref>: <shi>int</shi></category-title>
+            <config id="FRAME_DATA_HEIGHT_DESC"/>
+        </subtext>
+    </subtext>
+</page>

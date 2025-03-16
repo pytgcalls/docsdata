@@ -2,7 +2,7 @@
     <h1>Call Type</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="enum">pytgcalls.types.Call.<sb>Type</sb></ref>
+        <shi>class</shi> <ref src="enum">Call.<sb>Type</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration for managing call types.</text>

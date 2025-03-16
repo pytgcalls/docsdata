@@ -1,7 +1,7 @@
 <page>
     <h1>VideoStream</h1>
     <alert type="warning">
-        <text>This class replaces the deprecated <code>pytgcalls.types.InputVideoStream</code>.</text>
+        <text>This class replaces the deprecated <code>InputVideoStream</code>.</text>
     </alert>
     <category-title noref="true">
         <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>VideoStream</sb></ref>
@@ -11,7 +11,7 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_INPUT_MODE"/>
+            <config id="ARG_MEDIA_SOURCE"/>
 
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
             <subtext><text>The video file path or shell command (YUV420P format only).</text></subtext>

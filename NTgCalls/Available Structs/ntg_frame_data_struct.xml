@@ -1,0 +1,25 @@
+<page>
+    <h1>ntg_frame_data_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_frame_data_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="FRAME_DATA_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><shi language="c">int64_t</shi> <sb><ref>absolute_capture_timestamp_ms</ref></sb></category-title>
+            <config id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC"/>
+
+            <category-title><shi language="c">uint16_t</shi> <sb><ref>rotation</ref></sb></category-title>
+            <config id="FRAME_DATA_ROTATION_DESC"/>
+
+            <category-title><shi language="c">uint16_t</shi> <sb><ref>width</ref></sb></category-title>
+            <config id="FRAME_DATA_WIDTH_DESC"/>
+
+            <category-title><shi language="c">uint16_t</shi> <sb><ref>height</ref></sb></category-title>
+            <config id="FRAME_DATA_HEIGHT_DESC"/>
+        </subtext>
+    </subtext>
+</page>

@@ -13,7 +13,7 @@
             int64_t time = 0;
             ntg_async_struct future;
             // Initialize the async struct
-            int64_t result = ntg_time(uid, chatID, &amp;time, &amp;future);
+            int64_t result = ntg_time(uid, chatID, NTG_STREAM_CAPTURE, &amp;time, &amp;future);
             // Wait for the async operation to complete
             return 0;
         }
@@ -21,7 +21,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int64_t</shi> <sb src="method">ntg_time</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_time</sb></ref>()
     </category-title>
     <subtext>
         <config id="TIME_DESC_2"/>
@@ -31,6 +31,7 @@
             <subtext>
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
+                <config id="NTG_STREAM_MODE"/>
                 <category-title><shi language="c">int64_t*</shi> <ref><sb>time</sb></ref></category-title>
                 <subtext>The playback time in seconds.</subtext>
                 <config id="ARG_ASYNC_STRUCT"/>

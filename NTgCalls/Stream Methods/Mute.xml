@@ -31,7 +31,7 @@
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <config id="NTG_NO_GROUP_CALL"/>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

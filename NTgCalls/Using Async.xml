@@ -25,12 +25,12 @@
             std::mutex mtx;
             asyncData.userData = &amp;mtx;
             asyncData.promise = onCallReady;
-            mutex.lock();
+            mtx.lock();
             int error = ntg_pause(asyncData);
             if (error != 0) {
                 // Handle error
             }
-            mutex.lock();
+            mtx.lock();
             // Async operation completed
             if (asyncData.errorCode != 0) {
                 // Handle Async error
@@ -66,12 +66,12 @@
             data.chatID = 1234567890;
             asyncData.userData = &amp;data;
             asyncData.promise = onCallReady;
-            mutex.lock();
+            mtx.lock();
             int error = ntg_pause(asyncData);
             if (error != 0) {
                 // Handle error
             }
-            mutex.lock();
+            mtx.lock();
             // Async operation completed
             if (asyncData.errorCode != 0) {
                 // Handle Async error

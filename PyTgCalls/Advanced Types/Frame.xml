@@ -1,0 +1,22 @@
+<page>
+    <h1>Frame</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Frame</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="FRAME_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>ssrc</ref> <shi>-> int</shi></category-title>
+            <config id="SSRC_DESC"/>
+
+            <category-title><ref>frame</ref> <shi>-> bytes</shi></category-title>
+            <config id="FRAME_BUFFER_DESC"/>
+
+            <category-title><ref>info</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Advanced Types/Frame Info">Frame.Info</docs-ref></category-title>
+            <subtext><config id="FRAME_DATA_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

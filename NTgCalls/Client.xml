@@ -35,6 +35,35 @@
 
                     <category-title><ref><sb>get_protocol</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/Protocol">ntgcalls.Protocol</docs-ref></category-title>
                     <subtext><config id="GET_PROTOCOL_DESC"/></subtext>
+
+                    <category-title><ref><sb>get_media_devices</sb></ref>() <shi>-></shi> <docs-ref link="/NTgCalls/Available Types/MediaDevices">ntgcalls.MediaDevices</docs-ref></category-title>
+                    <subtext><config id="GET_MEDIA_DEVICES_DESC"/></subtext>
+
+                    <category-title><ref><sb>enable_glib_loop</sb></ref>()</category-title>
+                    <subtext>
+                        <config id="ENABLE_GLIB_LOOP_DESC"/>
+                        <br/>
+                        <category>
+                            <pg-title>PARAMETERS</pg-title>
+                            <subtext>
+                                <category-title><ref>enable</ref>: <shi>bool</shi></category-title>
+                                <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                            </subtext>
+                        </category>
+                    </subtext>
+
+                    <category-title><ref><sb>enable_h264_encoder</sb></ref>()</category-title>
+                    <subtext>
+                        <config id="ENABLE_H264_ENCODER_DESC"/>
+                        <br/>
+                        <category>
+                            <pg-title>PARAMETERS</pg-title>
+                            <subtext>
+                                <category-title><ref>enable</ref>: <shi>bool</shi></category-title>
+                                <config id="ENABLE_OR_DISABLE_H264_DESC"/>
+                            </subtext>
+                        </category>
+                    </subtext>
                 </subtext>
             </category>
         </subtext>

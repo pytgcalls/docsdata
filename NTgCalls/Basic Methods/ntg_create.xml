@@ -37,7 +37,7 @@
                 <config id="ARG_C_CHAT_ID"/>
                 <config id="ARG_MEDIA_C"/>
 
-                <category-title><shi language="c">char*</shi> <ref>buffer</ref></category-title>
+                <category-title><shi language="c">char*</shi> <sb><ref>buffer</ref></sb></category-title>
                 <subtext>
                     <text>
                         A string buffer to store the connection parameters retrieved from WebRTC.

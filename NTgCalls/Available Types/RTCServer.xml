@@ -7,7 +7,7 @@
     <subtext>
         <config id="RTC_SERVER_DESC"/>
         <br/>
-        <pg-title>PROPERTIES</pg-title>
+        <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>id</ref>: <shi>int</shi></category-title>
             <config id="RTC_ID_DESC"/>

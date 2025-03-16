@@ -15,7 +15,7 @@
             <config id="ARG_AUDIO_PARAMSv2"/>
             <config id="ARG_VIDEO_PARAMSv2"/>
 
-            <category-title><ref>audio_path</ref>: Optional[Union[<shi>str</shi>, DeviceInfo]]</category-title>
+            <category-title><ref>audio_path</ref>: Optional[Union[<shi>str</shi>, Path, <docs-ref link="/PyTgCalls/Advanced Types/InputDevice">InputDevice</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/ExternalMedia">ExternalMedia</docs-ref>]]</category-title>
             <subtext><text>The audio or input audio device path.</text></subtext>
 
             <category-title><ref>audio_flags</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/MediaStream Flags">Flags</docs-ref>]</category-title>

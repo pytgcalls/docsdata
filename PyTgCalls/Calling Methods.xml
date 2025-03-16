@@ -9,7 +9,6 @@
     <syntax-highlight>
         from pytgcalls import PyTgCalls
         from pytgcalls import idle
-        from pytgcalls.types import MediaStream
         ...
         api_id = 12345
         api_hash = '0123456789abcdef0123456789abcdef'
@@ -18,18 +17,18 @@
         app.start()
         app.play(
             -1001185324811,
-            MediaStream(
-                'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-            )
+            'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
         )
         idle()
     </syntax-highlight>
     <h3>Basic step-by-step</h3>
     <list style="numbers">
-        <item syntax-highlight="from pytgcalls import PyTgCalls
+        <item>
+            Let’s begin by importing the Client class and idle function:
+            <syntax-highlight>
+                from pytgcalls import PyTgCalls
                 from pytgcalls import idle
-                from pytgcalls.types import MediaStream">
-            Let’s begin by importing the Client class, Stream type and idle function:
+            </syntax-highlight>
         </item>
         <item>
             Now let’s import your MTProto Client:
@@ -93,9 +92,7 @@
             <syntax-highlight>
                 app.play(
                     -1001185324811,
-                    MediaStream(
-                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                    )
+                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                 )
             </syntax-highlight>
         </item>
@@ -112,7 +109,6 @@
         import asyncio
         from pytgcalls import PyTgCalls
         from pytgcalls import idle
-        from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
@@ -120,13 +116,11 @@
             await app.start()
             await app.play(
                 -1001185324811,
-                MediaStream(
-                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                )
+                'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
             )
             await idle()
 
-        asyncio.get_event_loop().run_until_complete(main())
+        asyncio.run(main())
     </syntax-highlight>
     <h3>Asynchronous step-by-step</h3>
     <list style="numbers">
@@ -145,19 +139,19 @@
             here, we define one, and we put our code inside it; method calls require the await keyword:
             <syntax-highlight>
                 async def main():
-                await app.start()
-                await app.play(
-                    -1001185324811,
-                    MediaStream(
-                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                    await app.start()
+                    await app.play(
+                        -1001185324811,
+                        MediaStream(
+                            'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                        )
                     )
-                )
-                await idle()
+                    await idle()
             </syntax-highlight>
         </item>
         <item>
             Then, we tell asyncio to call <code>main()</code> in async mode
-            <syntax-highlight>asyncio.get_event_loop().run_until_complete(main())</syntax-highlight>
+            <syntax-highlight>asyncio.run(main())</syntax-highlight>
         </item>
     </list>
 </page>

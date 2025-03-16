@@ -1,0 +1,19 @@
+<page>
+    <h1>NetworkInfo</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>NetworkInfo</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="NETWORK_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>state</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/ConnectionState">ntgcalls.ConnectionState</docs-ref></category-title>
+            <config id="CONNECTION_STATE_DESC2"/>
+
+            <category-title><ref>kind</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/ConnectionKind">ntgcalls.ConnectionKind</docs-ref></category-title>
+            <subtext><config id="CONNECTION_KIND_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

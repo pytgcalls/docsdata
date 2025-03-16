@@ -1,0 +1,40 @@
+<page>
+    <h1>Stop Presentation</h1>
+    <config id="STOP_PRESENTATION_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight mark="7-9">
+        from ntgcalls import NTgCalls
+        ...
+
+        app = NTgCalls()
+        ...
+
+        await app.stop_presentation(
+            -1001185324811,
+        )
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <shi>async</shi> <ref src="method">NTgCalls.<sb>stop_presentation</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="STOP_PRESENTATION_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_INT_ID"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>RAISES</pg-title>
+            <subtext>
+                <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
+                <subtext><text>The presentation was not initialized.</text></subtext>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

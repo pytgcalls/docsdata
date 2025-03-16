@@ -1,0 +1,19 @@
+<page>
+    <h1>Direction</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Direction</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="STREAM_MODE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>OUTGOING</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="MODE_CAPTURE_DESC"/>
+
+            <category-title><ref><sb>INCOMING</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="MODE_PLAYBACK_DESC"/>
+        </subtext>
+    </subtext>
+</page>

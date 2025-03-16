@@ -50,6 +50,9 @@
                     <category-title><ref><sb>ping</sb></ref> <shi>-></shi> <shi>int</shi></category-title>
                     <subtext><text>Ping of NTgCalls core</text></subtext>
 
+                    <category-title><ref><sb>mtproto_client</sb></ref> <shi>-></shi> Any</category-title>
+                    <subtext><text>Get the MTProto client</text></subtext>
+
                     <category-title><shi>async</shi> <ref><sb>cpu_usage</sb></ref> <shi>-> float</shi></category-title>
                     <subtext><text>Get the CPU usage of the current process</text></subtext>
                 </subtext>

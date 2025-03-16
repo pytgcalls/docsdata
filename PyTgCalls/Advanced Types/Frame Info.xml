@@ -1,0 +1,25 @@
+<page>
+    <h1>Frame Info</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>Frame.Info</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Represents frame info.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>capture_time</ref> <shi>-> int</shi></category-title>
+            <config id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC"/>
+
+            <category-title><ref>width</ref> <shi>-> int</shi></category-title>
+            <config id="FRAME_DATA_ROTATION_DESC"/>
+
+            <category-title><ref>height</ref> <shi>-> int</shi></category-title>
+            <config id="FRAME_DATA_WIDTH_DESC"/>
+
+            <category-title><ref>rotation</ref> <shi>-> int</shi></category-title>
+            <config id="FRAME_DATA_HEIGHT_DESC"/>
+        </subtext>
+    </subtext>
+</page>

@@ -1,8 +1,8 @@
 <page>
-    <h1>Resume Stream</h1>
-    <text>This method allows resuming the streaming file.</text>
+    <h1>Time</h1>
+    <config id="TIME_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="10-12">
+    <syntax-highlight mark="11-13">
         from pytgcalls import Client
         from pytgcalls import idle
         ...
@@ -12,8 +12,10 @@
 
         ...  # Call API methods
 
-        app.resume_stream(
-            -1001185324811,
+        print(
+            app.time(
+                -1001185324811,
+            )
         )
 
         idle()
@@ -21,15 +23,17 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref src="method">PyTgCalls.<sb>resume_stream</sb></ref>() <shi>-> bool</shi>
+        <ref src="method">PyTgCalls.<sb>time</sb></ref>() <shi>-> int</shi>
     </category-title>
     <subtext>
-        <text>Resume the stream</text>
+        <config id="TIME_DESC_2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
+                <category-title><ref>direction</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/Direction">Direction</docs-ref></category-title>
+                <config id="STREAM_MODE_DESC"/>
             </subtext>
         </category>
         <br/>

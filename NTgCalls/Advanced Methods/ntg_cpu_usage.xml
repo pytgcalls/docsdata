@@ -10,8 +10,8 @@
             uint32_t uid = ntg_init();
             ...
             double buffer;
-            ntg_async_struct future;
             // Initialize the async struct
+            ntg_async_struct future;
             int64_t usage = ntg_cpu_usage(uid, &amp;buffer, &amp;future);
             // Wait for the async operation to complete and use
             return 0;

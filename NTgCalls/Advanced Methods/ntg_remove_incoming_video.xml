@@ -1,8 +1,8 @@
 <page>
-    <h1>ntg_change_stream</h1>
-    <config id="CHANGE_STREAM_DESC"/>
+    <h1>ntg_remove_incoming_video</h1>
+    <config id="REMOVE_INCOMING_VIDEO_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="13">
+    <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
@@ -10,12 +10,10 @@
             uint32_t uid = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
-            ntg_media_description_struct desc = {
-                // Fill in updated media description fields
-            };
-            ntg_async_struct future;
+            char* endpoint = ...; // Obtain the endpoint of the incoming video
             // Initialize the async struct
-            int result = ntg_change_stream(uid, chatID, desc, &amp;future);
+            ntg_async_struct future;
+            ntg_remove_incoming_video(uid, chatID, endpoint, &amp;future);
             // Wait for the async operation to complete
             return 0;
         }
@@ -23,17 +21,18 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb src="method">ntg_change_stream</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_remove_incoming_video</sb></ref>()
     </category-title>
     <subtext>
-        <config id="CHANGE_STREAM_DESC_2"/>
+        <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_C_UID"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <config id="ARG_MEDIA"/>
+                <category-title><shi language="c">char*</shi> <ref><sb>endpoint</sb></ref></category-title>
+                <config id="ENDPOINT_DESC"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -47,8 +46,6 @@
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
-
-                <config id="STREAM_C_EXCEPTIONS"/>
             </subtext>
         </category>
     </subtext>

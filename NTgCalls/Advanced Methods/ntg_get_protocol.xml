@@ -2,7 +2,7 @@
     <h1>ntg_get_protocol</h1>
     <config id="GET_PROTOCOL_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="11">
+    <syntax-highlight language="c" mark="9">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
@@ -11,7 +11,7 @@
             ...
             int64_t chatID = ...; // Obtain the chat ID
             ntg_protocol_struct buffer;
-            int result = ntg_get_protocol(uid, chatID, &amp;buffer);
+            ntg_get_protocol(uid, chatID, &amp;buffer);
             ...
             return 0;
         }

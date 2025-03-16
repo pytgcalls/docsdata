@@ -6,9 +6,7 @@
         These events might include changes in call status, media state updates, or other critical moments in
         the NTgCalls library's operation.
     </text>
-    <alert type="note">
-        When registering callbacks, keep in mind that each registration replaces the previously set callback.
-    </alert>
+    <config id="NOTE_CALLBACK"/>
     <separator/>
     <br/><br/>
     <category>
@@ -152,6 +150,75 @@
     </category>
     <br/><br/>
     <category>
+        <category-title><ref src="method"><sb>ntg_on_frames</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_FRAMES_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_frames_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>Callback function to be executed when frames are received.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+                ...
+                void myOnFramesCallback(uint32_t uid, int64_t chatID, ntg_frame_struct *frames, size_t count, void *customData) {
+                    // Your callback logic here
+                }
+                ...
+                int main() {
+                    uint32_t uid = ntg_init();
+                    ... // Your Code Here
+                    ntg_on_frames(uid, myOnFramesCallback, customData);
+                    ...
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+        <separator/>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref src="method"><sb>ntg_remote_source_callback</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_REMOTE_SOURCE_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_UID"/>
+                    <category-title><shi language="c">ntg_remote_source_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>Callback function to be executed when a remote source is added or removed.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="10">
+                #include "ntgcalls.h"
+                ...
+                void myRemoteSourceCallback(uint32_t uid, int64_t chatID, ntg_remote_source_struct *source, void *customData) {
+                    // Your callback logic here
+                }
+                ...
+                int main() {
+                    uint32_t uid = ntg_init();
+                    ... // Your Code Here
+                    ntg_remote_source_callback(uid, myRemoteSourceCallback, customData);
+                    ...
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
         <category-title><ref src="method"><sb>ntg_register_logger</sb></ref>()</category-title>
         <subtext>
             <config id="REGISTER_LOGGER_DESC"/>
@@ -172,7 +239,7 @@
                 void logger(ntg_log_message_struct* message) {
                     printf("Log message: %s\n", message->message);
                 }
-
+                ...
                 int main() {
                     ntg_register_logger(logger);
                     ...

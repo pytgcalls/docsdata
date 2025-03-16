@@ -44,6 +44,7 @@
             <pg-title>RAISES</pg-title>
             <subtext>
                 <config id="CONNECTION_EXCEPTIONS"/>
+                <config id="UNSUPPORTED_METHOD_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

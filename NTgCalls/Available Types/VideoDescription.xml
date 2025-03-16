@@ -2,21 +2,21 @@
     <h1>VideoDescription</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.types.<sb>VideoDescription</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>VideoDescription</sb></ref>
     </category-title>
     <subtext>
         <config id="VIDEO_CONFIG_DESC"/>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <config id="ARG_INPUT_MODE"/>
-
-            <config id="ARG_INPUT_MEDIA"/>
+            <config id="ARG_MEDIA_SOURCE"/>
 
             <config id="ARG_VIDEO_CONFIG"/>
 
             <category-title><ref>fps</ref>: <shi>int</shi></category-title>
             <config id="VIDEO_FPS_DESC"/>
+
+            <config id="ARG_INPUT_MEDIA"/>
         </subtext>
     </subtext>
 </page>

@@ -1,0 +1,36 @@
+<page>
+    <h1>ntg_get_media_devices</h1>
+    <config id="GET_MEDIA_DEVICES_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="9">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            ...
+            ntg_media_devices_struct devices;
+            // Initialize the async struct
+            ntg_async_struct future;
+            ntg_get_media_devices(&amp;devices, &amp;future);
+            // Wait for the async operation to complete
+            return 0;
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb src="method">ntg_get_media_devices</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="GET_MEDIA_DEVICES_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><docs-ref link="/NTgCalls/Available Types/ntg_media_devices_struct">ntg_media_devices_struct</docs-ref><shi>*</shi> <ref><sb>buffer</sb></ref></category-title>
+                <config id="MEDIA_DEVICES_DESC"/>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

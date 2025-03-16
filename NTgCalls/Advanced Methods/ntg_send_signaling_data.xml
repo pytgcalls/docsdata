@@ -12,9 +12,9 @@
             int64_t chatID = ...; // Obtain the chat ID
             uint8_t* buffer = ...; // Obtain the signaling data
             int size = ...; // Obtain the size of the signaling data
-            ntg_async_struct future;
             // Initialize the async struct
-            int result = ntg_send_signaling_data(uid, chatID, buffer, size, &amp;future);
+            ntg_async_struct future;
+            ntg_send_signaling_data(uid, chatID, buffer, size, &amp;future);
             // Wait for the async operation to complete
             return 0;
         }

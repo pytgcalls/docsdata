@@ -1,0 +1,19 @@
+<page>
+    <h1>ntg_network_info_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_network_info_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="NETWORK_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_connection_state_enum">ntg_connection_state_enum</docs-ref> <ref>state</ref></category-title>
+            <config id="CONNECTION_STATE_DESC2"/>
+
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_connection_kind_enum">ntg_connection_kind_enum</docs-ref> <ref>kind</ref></category-title>
+            <subtext><config id="CONNECTION_KIND_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

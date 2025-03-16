@@ -20,6 +20,10 @@
             <column>Append parameters to ffmpeg</column>
         </item>
         <item>
+            <column><ref-shi url="example/bridged_calls/example_bridged.py">bridged_calls</ref-shi></column>
+            <column>Create a bridge between two group calls</column>
+        </item>
+        <item>
             <column><ref-shi url="example/capture_mic/example_mic.py">capture_mic</ref-shi></column>
             <column>Capture microphone</column>
         </item>
@@ -28,8 +32,28 @@
             <column>Use custom API server to bind PHP or other API to PyTgCalls</column>
         </item>
         <item>
+            <column><ref-shi url="example/custom_filters/example_custom.py">custom_filters</ref-shi></column>
+            <column>Make custom filters to use it in PyTgCalls</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/docker_example/docker_example.py">docker_example</ref-shi></column>
+            <column>Run PyTgCalls in Docker image</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/external_capture/example_external.py">external_capture</ref-shi></column>
+            <column>Capture audio and video frames and receive them as updates</column>
+        </item>
+        <item>
             <column><ref-shi url="example/fifo_conversion/example_fifo.py">fifo_conversion</ref-shi></column>
             <column>Play a stream from fifo</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/frame_sending/example_frame_sending.py">frame_sending</ref-shi></column>
+            <column>Send audio frames manually from Python directly.</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/multiple_clients/example_multiple.py">multiple_clients</ref-shi></column>
+            <column>Use multiple clients in one script</column>
         </item>
         <item>
             <column><ref-shi url="example/p2p_example/example_p2p.py">p2p_example</ref-shi></column>
@@ -74,6 +98,10 @@
         <item>
             <column><ref-shi url="example/video_calls/example_piped_video.py">video_calls</ref-shi></column>
             <column>Play audio and video using ffmpeg for live conversion (with integrated ffmpeg)</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/whisper_transcription/example_transcription.py">whisper_transcription</ref-shi></column>
+            <column>Transcribe audio from a group call or a private call using Whisper AI</column>
         </item>
         <item>
             <column><ref-shi url="example/youtube_dl/youtube_dl_example.py">youtube_dl</ref-shi></column>

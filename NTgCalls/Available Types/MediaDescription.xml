@@ -2,18 +2,24 @@
     <h1>MediaDescription</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.types.<sb>MediaDescription</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaDescription</sb></ref>
     </category-title>
     <subtext>
         <config id="MEDIA_DESC"/>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>audio</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/AudioDescription">ntgcalls.AudioDescription</docs-ref><shi>]</shi></category-title>
-            <config id="AUDIO_DESC"/>
+            <category-title><ref>microphone</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/AudioDescription">ntgcalls.AudioDescription</docs-ref><shi>]</shi></category-title>
+            <config id="MICROPHONE_DESC"/>
 
-            <category-title><ref>video</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/VideoDescription">ntgcalls.VideoDescription</docs-ref><shi>]</shi></category-title>
-            <config id="VIDEO_DESC"/>
+            <category-title><ref>speaker</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/AudioDescription">ntgcalls.AudioDescription</docs-ref><shi>]</shi></category-title>
+            <config id="SPEAKER_DESC"/>
+
+            <category-title><ref>camera</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/VideoDescription">ntgcalls.VideoDescription</docs-ref><shi>]</shi></category-title>
+            <config id="CAMERA_DESC"/>
+
+            <category-title><ref>screen</ref>: <shi>Optional[</shi><docs-ref link="/NTgCalls/Available Types/VideoDescription">ntgcalls.VideoDescription</docs-ref><shi>]</shi></category-title>
+            <config id="SCREEN_DESC"/>
         </subtext>
     </subtext>
 </page>

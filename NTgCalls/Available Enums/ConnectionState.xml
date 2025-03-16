@@ -9,15 +9,15 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>CONNECTING</sb></ref> <shi>=</shi> 1</category-title>
+            <category-title><ref><sb>CONNECTING</sb></ref> <shi>=</shi> 0</category-title>
             <config id="NTG_STATE_CONNECTING_DESC"/>
-            <category-title><ref><sb>CONNECTED</sb></ref> <shi>=</shi> 2</category-title>
+            <category-title><ref><sb>CONNECTED</sb></ref> <shi>=</shi> 1</category-title>
             <config id="NTG_STATE_CONNECTED_DESC"/>
-            <category-title><ref><sb>TIMEOUT</sb></ref> <shi>=</shi> 4</category-title>
-            <config id="NTG_STATE_TIMEOUT_DESC"/>
-            <category-title><ref><sb>FAILED</sb></ref> <shi>=</shi> 8</category-title>
+            <category-title><ref><sb>FAILED</sb></ref> <shi>=</shi> 2</category-title>
             <config id="NTG_STATE_FAILED_DESC"/>
-            <category-title><ref><sb>CLOSED</sb></ref> <shi>=</shi> 12</category-title>
+            <category-title><ref><sb>TIMEOUT</sb></ref> <shi>=</shi> 3</category-title>
+            <config id="NTG_STATE_TIMEOUT_DESC"/>
+            <category-title><ref><sb>CLOSED</sb></ref> <shi>=</shi> 4</category-title>
             <config id="NTG_STATE_CLOSED_DESC"/>
         </subtext>
     </subtext>

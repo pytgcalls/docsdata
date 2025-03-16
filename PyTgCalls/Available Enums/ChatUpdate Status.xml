@@ -2,7 +2,7 @@
     <h1>ChatUpdate Status</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="enum">pytgcalls.types.ChatUpdate.<sb>Status</sb></ref>
+        <shi>class</shi> <ref src="enum">ChatUpdate.<sb>Status</sb></ref>
     </category-title>
     <subtext>
         <text>Enumeration for managing chat update status in telegram calls.</text>

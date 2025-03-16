@@ -9,9 +9,9 @@
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>
-            <category-title><ref>g_a_or_b</ref>: <shi>bytes</shi></category-title>
+            <category-title><ref>g_a_or_b</ref> <shi>-> bytes</shi></category-title>
             <config id="G_A_OR_B_DESC"/>
-            <category-title><ref>key_fingerprint</ref>: <shi>int</shi></category-title>
+            <category-title><ref>key_fingerprint</ref> <shi>-> int</shi></category-title>
             <config id="KEY_FINGERPRINT_DESC"/>
         </subtext>
     </subtext>

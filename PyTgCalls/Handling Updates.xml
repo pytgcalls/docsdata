@@ -20,6 +20,10 @@
         updates, which occur when a video stream ends. The same setup logic is shared with every type of handler, and you should not
         have troubles settings them up once you have learned from this section.
     </text>
+    <alert type="note">
+        You can mix <code>def</code> and <code>async def</code> handlers as much as you need,
+        PyTgCalls will still work concurrently and efficiently regardless of what you choose.
+    </alert>
     <h3>Using Decorators</h3>
     <text>The most elegant way to register a stream end handler is by using the <docs-ref link="">on_stream_end()</docs-ref> decorator:</text>
     <syntax-highlight>
@@ -29,14 +33,12 @@
         ...
         app = PyTgCalls(client)
 
-        @app.on_update(filters.stream_end)
+        @app.on_update(filters.stream_end())
         async def my_handler(client: PyTgCalls, update: Update):
             if isinstance(update, StreamVideoEnded):
                 await pytgcalls.play(
                     -1001185324811,
-                    stream=MediaStream(
-                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                    )
+                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                 )
 
         app.run()
@@ -45,8 +47,27 @@
         The defined <code>my_handler</code> function, which accepts two arguments (client, update),
         will be executed whenever a new update arrives.
     </text>
-    <alert type="note">
-        You can mix <code>def</code> and <code>async def</code> handlers as much as you need,
-        PyTgCalls will still work concurrently and efficiently regardless of what you choose.
-    </alert>
+    <br/>
+    <h3>Using add_handler()</h3>
+    <text>
+        The <docs-ref link="/PyTgCalls/Using Handlers#Registering=Handlers">add_handler()</docs-ref> method takes any handler instance that wraps around your defined callback function and registers it in your Client.
+        It is useful in case you want to programmatically add handlers.
+    </text>
+    <syntax-highlight>
+        from pytgcalls import PyTgCalls, filters
+        from pytgcalls.types import Update
+        from pytgcalls.types import MediaStream
+        ...
+        app = PyTgCalls(client)
+
+        async def my_handler(client: PyTgCalls, update: Update):
+            if isinstance(update, StreamVideoEnded):
+                await pytgcalls.play(
+                    -1001185324811,
+                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+                )
+
+        app.add_handler(my_handler, filters.stream_end())
+        app.run()
+    </syntax-highlight>
 </page>

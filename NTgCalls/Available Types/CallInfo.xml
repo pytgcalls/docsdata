@@ -1,0 +1,19 @@
+<page>
+    <h1>MediaInfo</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>CallInfo</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="CALL_INFO_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>playback</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref></category-title>
+            <config id="PLAYBACK_DESC"/>
+
+            <category-title><ref>capture</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref></category-title>
+            <config id="CAPTURE_DESC"/>
+        </subtext>
+    </subtext>
+</page>

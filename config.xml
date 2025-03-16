@@ -1,6 +1,6 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.2.2</option>
-  <option id="PYTGCALLS_VERSION">2.0.3</option>
+  <option id="NTGCALLS_VERSION">1.3.0</option>
+  <option id="PYTGCALLS_VERSION">2.1.0</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
   <!--REDIRECTS - they are case-insensitive -->
@@ -17,6 +17,11 @@
     <subtext><text>This error occurs when attempting to execute an action on a call that you have not joined.</text></subtext>
   </option>
 
+  <option id="UNSUPPORTED_METHOD_EXCEPTION">
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>UnsupportedMethod</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to execute an action on a call kind that doesn't support it.</text></subtext>
+  </option>
+
   <option id="BASE_MTPROTO">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoMTProtoClient</sb></ref></category-title>
     <subtext><text>This method can only be called with a valid MTProto client set.</text></subtext>
@@ -31,7 +36,7 @@
 
   <option id="CONNECTION_EXCEPTIONS">
     <config id="BASE_EXCEPTIONS"/>
-   <config id="GROUP_CALL_EXCEPTIONS"/>
+    <config id="GROUP_CALL_EXCEPTIONS"/>
   </option>
 
   <option id="GROUP_CALL_EXCEPTIONS">
@@ -84,13 +89,15 @@
     <config id="SHELL_EXCEPTION"/>
   </option>
 
+  <option id="FFMPEG_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
+    <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
+  </option>
+
   <option id="STREAM_EXCEPTIONS">
     <category-title>exception <ref><sb>FileNotFoundError</sb></ref></category-title>
     <config id="FILE_EXCEPTION_DESC"/>
-
-    <category-title>exception <ref>ntgcalls.<sb>FFmpegError</sb></ref></category-title>
-    <subtext><text>To use Piped input stream, make sure you have FFmpeg installed.</text></subtext>
-
+    <config id="FFMPEG_EXCEPTION"/>
     <config id="SHELL_EXCEPTION"/>
 
     <category-title>exception <ref>pytgcalls.exceptions.<sb>NoAudioSourceFound</sb></ref></category-title>
@@ -111,11 +118,6 @@
     <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
   </option>
 
-  <option id="NTG_NO_GROUP_CALL">
-    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
-    <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
-  </option>
-
   <option id="TELEGRAM_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>TelegramServerError</sb></ref></category-title>
     <subtext>
@@ -125,14 +127,34 @@
     </subtext>
   </option>
 
+  <option id="TRANSPORT_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>TransportParseException</sb></ref></category-title>
+    <subtext><text>This error occurs when attempting to send invalid Transports.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_NOT_FOUND_EXCEPTION">
+    <category-title>exception <ref>ntgcalls.<sb>ConnectionNotFound</sb></ref></category-title>
+    <subtext>
+      <text>
+        This error occurs when attempting to execute an action on a non-existent Group Call.
+      </text>
+    </subtext>
+  </option>
+
+  <option id="CALL_EXCEPTIONS">
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDeclined</sb></ref></category-title>
+    <subtext><text>The call was declined by the user.</text></subtext>
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDiscarded</sb></ref></category-title>
+    <subtext><text>The call was discarded by the user while connecting.</text></subtext>
+    <config id="TELEGRAM_EXCEPTION"/>
+    <category-title>exception <ref>pytgcalls.exceptions.<sb>UnMuteNeeded</sb></ref></category-title>
+    <subtext><text>You need to unmute the userbot or make it an admin to stream audio or video.</text></subtext>
+    <config id="RTMP_EXCEPTION"/>
+  </option>
+
   <option id="RUNNING_EXCEPTION">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>PyTgCallsAlreadyRunning</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>
-  </option>
-
-  <option id="CONNECTION_EXCEPTION">
-    <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
-    <subtext><text>This error occurs when attempting to execute an action on a non-existent Group Call.</text></subtext>
   </option>
 
   <option id="RTMP_EXCEPTION">
@@ -312,16 +334,12 @@
     <subtext><text>Media parameters of the stream.</text></subtext>
   </option>
 
-  <option id="INPUT_MODE_DESC">
+  <option id="MEDIA_SOURCE_DESC">
     <subtext><text>The input mode for audio or video.</text></subtext>
   </option>
 
   <option id="ARG_INPUT_MEDIA_DESC">
     <subtext><text>The input media source.</text></subtext>
-  </option>
-
-  <option id="AUDIO_BPS_DESC">
-    <subtext><text>Audio bits per sample (8 or 16).</text></subtext>
   </option>
 
   <option id="VIDEO_WIDTH_DESC">
@@ -336,12 +354,20 @@
     <text>Media Configuration for the Stream.</text>
   </option>
 
-  <option id="AUDIO_DESC">
-    <subtext><text>Audio configuration for the stream.</text></subtext>
+  <option id="MICROPHONE_DESC">
+    <subtext><text>Microphone configuration for the stream.</text></subtext>
   </option>
 
-  <option id="VIDEO_DESC">
-    <subtext><text>Video configuration for the stream.</text></subtext>
+  <option id="SPEAKER_DESC">
+    <subtext><text>Speaker configuration for the stream.</text></subtext>
+  </option>
+
+  <option id="CAMERA_DESC">
+    <subtext><text>Camera configuration for the stream.</text></subtext>
+  </option>
+
+  <option id="SCREEN_DESC">
+    <subtext><text>Screen configuration for the stream.</text></subtext>
   </option>
 
   <option id="MEDIA_STATE_DESC">
@@ -376,8 +402,64 @@
     <subtext><text>Input mode using FFmpeg.</text></subtext>
   </option>
 
-  <option id="MODE_NO_LATENCY_DESC">
-    <subtext><text>Input mode with no latency.</text></subtext>
+  <option id="MODE_DEVICE_DESC">
+    <subtext><text>Input mode using a device source.</text></subtext>
+  </option>
+
+  <option id="MODE_DESKTOP_DESC">
+    <subtext><text>Input mode using a desktop source.</text></subtext>
+  </option>
+
+  <option id="MODE_EXTERNAL_DESC">
+    <subtext><text>Input mode using an external source.</text></subtext>
+  </option>
+
+  <option id="STREAM_DEVICE_DESC">
+    <text>Enumeration of stream device values.</text>
+  </option>
+
+  <option id="STREAM_DEVICE_DESC2">
+    <subtext><text>Stream’s Device.</text></subtext>
+  </option>
+
+  <option id="STREAM_DEVICE_MICROPHONE_DESC">
+    <subtext><text>Input mode using a microphone source.</text></subtext>
+  </option>
+
+  <option id="STREAM_DEVICE_SPEAKER_DESC">
+    <subtext><text>Input mode using a speaker source.</text></subtext>
+  </option>
+
+  <option id="STREAM_DEVICE_CAMERA_DESC">
+    <subtext><text>Input mode using a camera source.</text></subtext>
+  </option>
+
+  <option id="STREAM_DEVICE_SCREEN_DESC">
+    <subtext><text>Input mode using a screen source.</text></subtext>
+  </option>
+
+  <option id="DEVICE_INFO_DESC">
+    <text>Device Information.</text>
+  </option>
+
+  <option id="DEVICE_NAME_DESC">
+    <subtext><text>Device name.</text></subtext>
+  </option>
+
+  <option id="DEVICE_METADATA_DESC">
+    <subtext><text>Device metadata, such as the device ID.</text></subtext>
+  </option>
+
+  <option id="SSRC_GROUP_DESC">
+    <text>SSRC Group with the SSRCs of the video stream and the semantics.</text>
+  </option>
+
+  <option id="SSRC_GROUP_SEMANTICS_DESC">
+    <subtext><text>Enumeration of SSRC group semantics values.</text></subtext>
+  </option>
+
+  <option id="SSRC_GROUP_SSRCS_DESC">
+    <subtext><text>SSRC Group.</text></subtext>
   </option>
 
   <option id="STREAM_STATUS_DESC">
@@ -432,6 +514,18 @@
     </text>
   </option>
 
+  <option id="CALLBACK_FRAMES_DESC">
+    <text>
+      Callback for handling when a group of frames is received.
+    </text>
+  </option>
+
+  <option id="CALLBACK_REMOTE_SOURCE_DESC">
+    <text>
+      Callback for handling when the remote source changes.
+    </text>
+  </option>
+
   <option id="GET_STATE_DESC">
     <text>
       This method allows retrieving GroupCall MTProto Configurations for
@@ -445,10 +539,6 @@
     </text>
   </option>
 
-  <option id="CALL_DESC">
-    <text>Call Descriptor for a Group Call or Private Call.</text>
-  </option>
-
   <option id="STREAM_STATUS_DESC2">
     <subtext><text>Stream’s Status.</text></subtext>
   </option>
@@ -459,14 +549,24 @@
 
   <option id="CREATE_P2P_DESC">
     <text>
-      This method allows creating a Private Call connection with the output params from Telegram method
-      <a href="https://core.telegram.org/method/messages.getDhConfig">GetDhConfig</a> and <a href="https://core.telegram.org/constructor/phoneCallRequested">PhoneCallRequested</a> when is an incoming call
-      and then use the output params for <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> (When is an incoming call) or <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> with <a href="https://core.telegram.org/constructor/phoneCallProtocol">Protocol</a>.
+      This method allows creating a Private Call connection that can be used to exchange keys and connect
     </text>
   </option>
 
   <option id="CREATE_P2P_DESC2">
     <text>Create a connection for a Private Call.</text>
+  </option>
+
+  <option id="INIT_EXCHANGE_DESC">
+    <text>
+      This method allows initializing a Private Call connection that can be used to exchange keys and connect with the output params from
+      <a href="https://core.telegram.org/method/messages.getDhConfig">GetDhConfig</a> and <a href="https://core.telegram.org/constructor/phoneCallRequested">PhoneCallRequested</a> when is an incoming call
+      and then use the output params for <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> (When is an incoming call) or <a href="https://core.telegram.org/method/phone.requestCall">RequestCall</a> with <a href="https://core.telegram.org/constructor/phoneCallProtocol">Protocol</a>.
+    </text>
+  </option>
+
+  <option id="INIT_EXCHANGE_DESC2">
+    <text>Initialize a connection for a Private Call.</text>
   </option>
 
   <option id="EXCHANGE_KEYS_DESC">
@@ -546,6 +646,245 @@
     <text>Get the protocol for a Private Call connection.</text>
   </option>
 
+  <option id="GET_MEDIA_DEVICES_DESC">
+    <text>
+      This method allows getting all the available media devices, such as microphones and cameras.
+    </text>
+  </option>
+
+  <option id="GET_MEDIA_DEVICES_DESC2">
+    <text>Get all the available media devices.</text>
+  </option>
+
+  <option id="ENABLE_GLIB_LOOP_DESC">
+    <text>Enable the GLib main loop to allow the library to use it for PipeWire on OSes that uses Wayland.</text>
+  </option>
+
+  <option id="ENABLE_GLIB_LOOP_DESC2">
+    <text>Enable the GLib main loop.</text>
+  </option>
+
+  <option id="ENABLE_OR_DISABLE_GLIB_DESC">
+    <subtext><text>Enable or disable the GLib main loop.</text></subtext>
+  </option>
+
+  <option id="ENABLE_H264_ENCODER_DESC">
+    <text>Enable the H264 encoder for video streaming.</text>
+  </option>
+
+  <option id="ENABLE_H264_ENCODER_DESC2">
+    <text>Enable the H264 encoder.</text>
+  </option>
+
+  <option id="ENABLE_OR_DISABLE_H264_DESC">
+    <subtext><text>Enable or disable the H264 encoder.</text></subtext>
+  </option>
+
+  <option id="IS_PRESENTATION_DESC">
+    <subtext><text>Whether the connection is for a presentation.</text></subtext>
+  </option>
+
+  <option id="INIT_PRESENTATION_DESC">
+    <text>
+      This method allows initializing a presentation connection, which is a connection for sharing the screen.
+    </text>
+  </option>
+
+  <option id="INIT_PRESENTATION_DESC2">
+    <text>Initialize a presentation connection.</text>
+  </option>
+
+  <option id="ADD_INCOMING_VIDEO_DESC">
+    <text>
+      This method allows to notify the library that an incoming video stream is available.
+    </text>
+  </option>
+
+  <option id="ADD_INCOMING_VIDEO_DESC2">
+      <text>Notify the library that an incoming video stream is available.</text>
+  </option>
+
+  <option id="ENDPOINT_DESC">
+    <subtext><text>Endpoint ID</text></subtext>
+  </option>
+
+  <option id="SSRC_GROUPS_DESC">
+    <subtext><text>SSRC groups for the video stream.</text></subtext>
+  </option>
+
+  <option id="REMOVE_INCOMING_VIDEO_DESC">
+    <text>
+      This method allows to notify the library that an incoming video stream is no longer available.
+    </text>
+  </option>
+
+  <option id="REMOVE_INCOMING_VIDEO_DESC2">
+    <text>Notify the library that an incoming video stream is no longer available.</text>
+  </option>
+
+  <option id="STOP_PRESENTATION_DESC">
+    <text>
+      This method allows stopping the presentation connection.
+    </text>
+  </option>
+
+  <option id="STOP_PRESENTATION_DESC2">
+    <text>Stop the presentation connection.</text>
+  </option>
+
+  <option id="STREAM_MODE">
+    <category-title><ref><sb>direction</sb></ref>: <docs-ref link="/NTgCalls/Available Enums/StreamMode">ntgcalls.StreamMode</docs-ref></category-title>
+    <config id="STREAM_MODE_DESC"/>
+  </option>
+
+  <option id="NTG_STREAM_MODE">
+    <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_mode_enum">ntg_stream_mode_enum</docs-ref> <ref><sb>streamMode</sb></ref></category-title>
+    <config id="STREAM_MODE_DESC"/>
+  </option>
+
+  <option id="SEND_EXTERNAL_FRAME_DESC">
+    <text>
+      This method allows sending an external video frame to the WebRTC connection.
+    </text>
+  </option>
+
+  <option id="SEND_EXTERNAL_FRAME_DESC2">
+    <text>Send an external video frame to the WebRTC connection.</text>
+  </option>
+
+  <option id="SKIP_EXCHANGE_DESC">
+    <text>
+      This method allows skipping the exchange of keys for a Private Call connection by using the encryption key already exchanged.
+    </text>
+  </option>
+
+  <option id="SKIP_EXCHANGE_DESC2">
+    <text>Skip the exchange of keys for a Private Call connection.</text>
+  </option>
+
+  <option id="ENCRYPTION_KEY_DESC">
+    <subtext><text>Encryption key for the connection.</text></subtext>
+  </option>
+
+  <option id="IS_OUTGOING_DESC">
+    <subtext><text>Whether the call is outgoing.</text></subtext>
+  </option>
+
+  <option id="NOTE_CALLBACK">
+    <alert type="note">
+      When registering callbacks, keep in mind that each registration replaces the previously set callback.
+    </alert>
+  </option>
+
+  <option id="STREAM_MODE_DESC">
+    <subtext><text>Stream direction for the stream.</text></subtext>
+  </option>
+
+  <option id="MODE_CAPTURE_DESC">
+    <subtext><text>Direction for sending the stream.</text></subtext>
+  </option>
+
+  <option id="MODE_PLAYBACK_DESC">
+    <subtext><text>Direction for receiving the stream.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_KIND_DESC">
+    <text>Kind of connection.</text>
+  </option>
+
+  <option id="CONNECTION_KIND_NORMAL_DESC">
+    <subtext><text>Normal connection for the camera and microphone.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_KIND_PRESENTATION_DESC">
+    <subtext><text>Presentation connection for sharing the screen and system audio.</text></subtext>
+  </option>
+
+  <option id="FRAME_DESC">
+    <text>Frame descriptor for the media stream.</text>
+  </option>
+
+  <option id="SSRC_DESC">
+    <subtext><text>SSRC of the frame.</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_DESC">
+    <text>Frame data for the media stream.</text>
+  </option>
+
+  <option id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC">
+    <subtext><text>Absolute capture timestamp in milliseconds.</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_ROTATION_DESC">
+    <subtext><text>Rotation of the video frame.</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_WIDTH_DESC">
+    <subtext><text>Width of the video frame.</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_HEIGHT_DESC">
+    <subtext><text>Height of the video frame.</text></subtext>
+  </option>
+
+  <option id="MEDIA_DEVICES_DESC">
+    <text>Media devices available for streaming.</text>
+  </option>
+
+  <option id="MICROPHONE_DEVICES_DESC">
+    <subtext><text>List of available microphones.</text></subtext>
+  </option>
+
+  <option id="SPEAKER_DEVICES_DESC">
+    <subtext><text>List of available speakers.</text></subtext>
+  </option>
+
+  <option id="CAMERA_DEVICES_DESC">
+    <subtext><text>List of available cameras.</text></subtext>
+  </option>
+
+  <option id="SCREEN_DEVICES_DESC">
+    <subtext><text>List of available screens.</text></subtext>
+  </option>
+
+  <option id="CALL_INFO_DESC">
+    <text>Call Descriptor for a Group Call or Private Call.</text>
+  </option>
+
+  <option id="PLAYBACK_DESC">
+    <subtext><text>Playback stream status.</text></subtext>
+  </option>
+
+  <option id="CAPTURE_DESC">
+    <subtext><text>Capture stream status.</text></subtext>
+  </option>
+
+  <option id="NETWORK_DESC">
+   <text>Network status for the call.</text>
+  </option>
+
+  <option id="CONNECTION_STATE_DESC2">
+    <subtext><text>Connection state for the call.</text></subtext>
+  </option>
+
+  <option id="REMOTE_SOURCE_DESC">
+    <text>Remote source for the call.</text>
+  </option>
+
+  <option id="CONNECTION_ALREADY_EXCHANGE_DESC">
+    <subtext><text>When the exchange was already initialized.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_ALREADY_ESTABLISHED_DESC">
+    <subtext><text>When the connection was already established or the key already exchanged.</text></subtext>
+  </option>
+
+  <option id="CALL_CONFIG_DESC">
+    <category-title><ref>config</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Advanced Types/CallConfig">CallConfig</docs-ref>, <docs-ref link="/PyTgCalls/Advanced Types/GroupCallConfig">GroupCallConfig</docs-ref>]]</category-title>
+    <subtext><text>Additional configuration for the call.</text></subtext>
+  </option>
+
   <option id="PROTOCOL_DESC">
     <text>Protocol for a Private Call connection.</text>
   </option>
@@ -575,6 +914,18 @@
         value in the result of the call's <a href="https://core.telegram.org/method/phone.acceptCall">AcceptCall</a> and in the <a href="https://core.telegram.org/constructor/phoneCallAccepted">PhoneCallAccepted</a> update received by the caller.
       </text>
     </subtext>
+  </option>
+
+  <option id="DEVICE_DESC">
+    <subtext><text>Device Kind</text></subtext>
+  </option>
+
+  <option id="FRAME_BUFFER_DESC">
+    <subtext><text>Frame buffer</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_DESC">
+    <subtext><text>Frame descriptor</text></subtext>
   </option>
 
   <option id="P2P_ALLOWED_DESC">
@@ -759,11 +1110,6 @@
     Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>, <a href="https://hydrogram.amanoteam.com/en/latest/telegram/base/input-peer.html">hydrogram.InputPeer</a>]
   </option>
 
-  <option id="ARG_INPUT_STREAM">
-    <category-title><ref>stream</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>, <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">pytgcalls.types.MediaStream</docs-ref>]]</category-title>
-    <subtext><text>Input Streams base descriptor</text></subtext>
-  </option>
-
   <option id="RET_INT_ID">
     <category-title><ref><sb>chat_id</sb></ref> <shi>-> int</shi></category-title>
     <config id="CHAT_ID_DESC"/>
@@ -822,7 +1168,7 @@
   </option>
 
   <option id="ARG_STREAM_PARAMS">
-    <category-title><ref><sb>media</sb></ref>: <docs-ref href="">ntgcalls.MediaDescription</docs-ref></category-title>
+    <category-title><ref><sb>media</sb></ref>: <docs-ref link="/NTgCalls/Available Types/MediaDescription">ntgcalls.MediaDescription</docs-ref></category-title>
     <config id="ARG_MEDIA_DESC"/>
   </option>
 
@@ -834,14 +1180,14 @@
     <config id="VIDEO_HEIGHT_DESC"/>
   </option>
 
-  <option id="ARG_INPUT_MODE">
-    <category-title><ref>input_mode</ref>: <docs-ref link="/NTgCalls/Available Enums/InputMode">ntgcalls.InputMode</docs-ref></category-title>
-    <config id="INPUT_MODE_DESC"/>
+  <option id="ARG_MEDIA_SOURCE">
+    <category-title><ref>input_mode</ref>: <docs-ref link="/NTgCalls/Available Enums/MediaSource">ntgcalls.MediaSource</docs-ref></category-title>
+    <config id="MEDIA_SOURCE_DESC"/>
   </option>
 
-  <option id="ARG_C_INPUT_MODE">
-    <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_input_mode_enum">ntg_input_mode_enum</docs-ref> <ref>inputMode</ref></category-title>
-    <config id="INPUT_MODE_DESC"/>
+  <option id="ARG_C_MEDIA_SOURCE">
+    <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_media_source_enum">ntg_media_source_enum</docs-ref> <ref>mediaSource</ref></category-title>
+    <config id="MEDIA_SOURCE_DESC"/>
   </option>
 
   <option id="ARG_MEDIA_C">
@@ -901,15 +1247,12 @@
         <syntax-highlight>
             from pytgcalls import PyTgCalls
             from pytgcalls import idle
-            from pytgcalls.types import MediaStream
             ...
             app = PyTgCalls(client)
             app.start()
             app.play(
-                -1001185324811,
-                MediaStream(
-                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                )
+              -1001185324811,
+              'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
             )
             idle()
         </syntax-highlight>
@@ -920,20 +1263,20 @@
             #include "ntgcalls.h"
 
             int main() {
-                uint32_t uid = ntg_init();
+              uint32_t uid = ntg_init();
 
-                int64_t chatID = ...; // Obtain the chat ID
-                char* params = ...;  // Obtain connection parameters
+              int64_t chatID = ...; // Obtain the chat ID
+              char* params = ...;  // Obtain connection parameters
 
-                int result = ntg_connect(uid, chatID, params, false);
-                if (result == 0) {
-                    // Successfully connected to the WebRTC
-                    ...
-                } else {
-                    printf("Failed to connect: %d\n", result);
-                }
-                ...
-                return 0;
+              int result = ntg_connect(uid, chatID, params, false);
+              if (result == 0) {
+                  // Successfully connected to the WebRTC
+                  ...
+              } else {
+                  printf("Failed to connect: %d\n", result);
+              }
+              ...
+              return 0;
             }
         </syntax-highlight>
       </file>
@@ -944,26 +1287,26 @@
             //#cgo LDFLAGS: -L . -lntgcalls -Wl,-rpath=./
             import "C"
             import (
-                "fmt"
-                ...
-                "example/ntgcalls"
+              "fmt"
+              ...
+              "example/ntgcalls"
             )
 
             func main() {
-                client := ntgcalls.NTgCalls()
-                defer client.Free()
+              client := ntgcalls.NTgCalls()
+              defer client.Free()
 
-                chatID := ... // Obtain the chat ID
-                params := ... // Obtain connection parameters
+              chatID := ... // Obtain the chat ID
+              params := ... // Obtain connection parameters
 
-                err := ntgcalls.Connect(uid, chatID, params, false)
-                if err == nil {
-                    // Successfully connected to the WebRTC
-                    ...
-                } else {
-                    fmt.Printf("Failed to connect: %d\n", err)
-                }
-                ...
+              err := ntgcalls.Connect(uid, chatID, params, false)
+              if err == nil {
+                  // Successfully connected to the WebRTC
+                  ...
+              } else {
+                  fmt.Printf("Failed to connect: %d\n", err)
+              }
+              ...
             }
         </syntax-highlight>
       </file>
@@ -972,19 +1315,20 @@
             import io.github.pytgcalls.NTgCalls;
             import android.util.Log;
             ...
+
             public static void main(String[] args) {
-                var client = new NTgCalls();
-                ...
-                long chatID = ...; // Obtain the chat ID
-                String params = ...; // Obtain connection parameters
-                try {
-                    client.connect(chatID, params, false);
-                    // Successfully connected to the WebRTC
-                    ...
-                } catch (Exception e) {
-                    Log.e("NTgCalls", "Failed to connect: " + e.getMessage());
-                }
-                ...
+              var client = new NTgCalls();
+              ...
+              long chatID = ...; // Obtain the chat ID
+              String params = ...; // Obtain connection parameters
+              try {
+                  client.connect(chatID, params, false);
+                  // Successfully connected to the WebRTC
+                  ...
+              } catch (Exception e) {
+                  Log.e("NTgCalls", "Failed to connect: " + e.getMessage());
+              }
+              ...
             }
         </syntax-highlight>
       </file>
@@ -1102,30 +1446,51 @@
       <file>Create Call.xml</file>
       <file>Create P2P Call.xml</file>
       <file>Exchange Keys.xml</file>
+      <file>Init Exchange.xml</file>
+      <file>Init Presentation.xml</file>
+      <file>Skip Exchange.xml</file>
       <file>Stop.xml</file>
+      <file>Stop Presentation.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
-      <file>Change Stream.xml</file>
       <file>Mute.xml</file>
       <file>Pause.xml</file>
       <file>Resume.xml</file>
+      <file>Set Stream Sources.xml</file>
+      <file>Time.xml</file>
       <file>UnMute.xml</file>
     </group>
     <group basepath="NTgCalls/Advanced Methods/">
+      <file>Add Incoming Video.xml</file>
       <file>Get State.xml</file>
+      <file>Remove Incoming Video.xml</file>
+      <file>Send External Frame.xml</file>
+      <file>Send Signaling Data.xml</file>
     </group>
     <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
       <file>AuthParams.xml</file>
+      <file>CallInfo.xml</file>
+      <file>DeviceInfo.xml</file>
       <file>DhConfig.xml</file>
+      <file>Frame.xml</file>
+      <file>FrameData.xml</file>
       <file>MediaDescription.xml</file>
+      <file>MediaDevices.xml</file>
       <file>MediaState.xml</file>
+      <file>NetworkInfo.xml</file>
       <file>Protocol.xml</file>
+      <file>RemoteSource.xml</file>
       <file>RTCServer.xml</file>
+      <file>SsrcGroup.xml</file>
       <file>VideoDescription.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
-      <file>InputMode.xml</file>
+      <file>ConnectionKind.xml</file>
+      <file>ConnectionState.xml</file>
+      <file>MediaSource.xml</file>
+      <file>StreamDevice.xml</file>
+      <file>StreamMode.xml</file>
       <file>StreamStatus.xml</file>
       <file>StreamType.xml</file>
     </group>
@@ -1140,39 +1505,60 @@
       <file>ntg_create.xml</file>
       <file>ntg_create_p2p.xml</file>
       <file>ntg_exchange_keys.xml</file>
+      <file>ntg_init_exchange.xml</file>
+      <file>ntg_init_presentation.xml</file>
+      <file>ntg_skip_exchange.xml</file>
       <file>ntg_stop.xml</file>
+      <file>ntg_stop_presentation.xml</file>
     </group>
     <group basepath="NTgCalls/Stream Methods/">
-      <file>ntg_change_stream.xml</file>
       <file>ntg_mute.xml</file>
       <file>ntg_pause.xml</file>
       <file>ntg_resume.xml</file>
+      <file>ntg_set_stream_sources.xml</file>
       <file>ntg_time.xml</file>
       <file>ntg_unmute.xml</file>
     </group>
     <group basepath="NTgCalls/Advanced Methods/">
+      <file>ntg_add_incoming_video.xml</file>
       <file>ntg_calls.xml</file>
       <file>ntg_calls_count.xml</file>
+      <file>ntg_enable_g_lib_loop.xml</file>
+      <file>ntg_enable_h264_encoder.xml</file>
+      <file>ntg_get_media_devices.xml</file>
       <file>ntg_get_protocol.xml</file>
       <file>ntg_get_state.xml</file>
+      <file>ntg_remove_incoming_video.xml</file>
+      <file>ntg_send_external_frame.xml</file>
       <file>ntg_send_signaling_data.xml</file>
     </group>
     <group basepath="NTgCalls/Available Structs/">
       <file>ntg_audio_description_struct.xml</file>
       <file>ntg_auth_params_struct.xml</file>
-      <file>ntg_call_struct.xml</file>
+      <file>ntg_call_info_struct.xml</file>
+      <file>ntg_device_info_struct.xml</file>
       <file>ntg_dh_config_struct.xml</file>
+      <file>ntg_frame_data_struct.xml</file>
+      <file>ntg_frame_struct.xml</file>
       <file>ntg_log_message_struct.xml</file>
       <file>ntg_media_description_struct.xml</file>
+      <file>ntg_media_devices_struct.xml</file>
       <file>ntg_media_state_struct.xml</file>
+      <file>ntg_network_info_struct.xml</file>
       <file>ntg_protocol_struct.xml</file>
+      <file>ntg_remote_source_struct.xml</file>
       <file>ntg_rtc_server_struct.xml</file>
+      <file>ntg_ssrc_group_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
-      <file>ntg_input_mode_enum.xml</file>
+      <file>ntg_connection_kind_enum.xml</file>
+      <file>ntg_connection_state_enum.xml</file>
       <file>ntg_log_level_enum.xml</file>
       <file>ntg_log_source_enum.xml</file>
+      <file>ntg_media_source_enum.xml</file>
+      <file>ntg_stream_device_enum.xml</file>
+      <file>ntg_stream_mode_enum.xml</file>
       <file>ntg_stream_status_enum.xml</file>
       <file>ntg_stream_type_enum.xml</file>
     </group>
@@ -1197,34 +1583,43 @@
     <file>Filters.xml</file>
     <file>Using Filters.xml</file>
     <file>Using Handlers.xml</file>
+
     <group basepath="PyTgCalls/Available Enums/">
       <file>AudioQuality.xml</file>
       <file>Call Status.xml</file>
       <file>Call Type.xml</file>
       <file>ChatUpdate Status.xml</file>
+      <file>Device.xml</file>
+      <file>Direction.xml</file>
+      <file>ExternalMedia.xml</file>
       <file>GroupCallParticipant Action.xml</file>
       <file>MediaStream Flags.xml</file>
+      <file>StreamEnded Type.xml</file>
       <file>VideoQuality.xml</file>
     </group>
 
     <microtag>Methods</microtag>
     <group basepath="PyTgCalls/Basic Methods/">
-      <file>Play.xml</file>
       <file>Idle.xml</file>
       <file>Leave Call.xml</file>
       <file>Run.xml</file>
       <file>Start.xml</file>
     </group>
+
     <group basepath="PyTgCalls/Stream Methods/">
-      <file>Mute Stream.xml</file>
-      <file>Pause Stream.xml</file>
-      <file>Played Time.xml</file>
-      <file>Resume Stream.xml</file>
-      <file>UnMute Stream.xml</file>
+      <file>Mute.xml</file>
+      <file>Pause.xml</file>
+      <file>Play.xml</file>
+      <file>Record.xml</file>
+      <file>Time.xml</file>
+      <file>Resume.xml</file>
+      <file>UnMute.xml</file>
     </group>
+
     <group basepath="PyTgCalls/Advanced Methods/">
       <file>Change Volume Call.xml</file>
       <file>Get Participants.xml</file>
+      <file>Send Frame.xml</file>
     </group>
 
     <microtag>Types</microtag>
@@ -1232,6 +1627,7 @@
       <file>AudioParameters.xml</file>
       <file>AudioStream.xml</file>
       <file>MediaStream.xml</file>
+      <file>RecordStream.xml</file>
       <file>Stream.xml</file>
       <file>VideoParameters.xml</file>
       <file>VideoStream.xml</file>
@@ -1241,10 +1637,12 @@
       <file>Call.xml</file>
       <file>CallConfig.xml</file>
       <file>ChatUpdate.xml</file>
+      <file>Frame.xml</file>
+      <file>Frame Info.xml</file>
       <file>GroupCallConfig.xml</file>
       <file>GroupCallParticipant.xml</file>
-      <file>StreamAudioEnded.xml</file>
-      <file>StreamVideoEnded.xml</file>
+      <file>StreamEnded.xml</file>
+      <file>StreamFrames.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>
     </group>
   </files-list>

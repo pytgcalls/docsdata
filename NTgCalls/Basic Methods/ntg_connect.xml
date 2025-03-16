@@ -13,7 +13,7 @@
             char* params = ...;  // Obtain connection parameters
             ntg_async_struct future;
             // Initialize the async struct
-            int result = ntg_connect(uid, chatID, params, &amp;future);
+            int result = ntg_connect(uid, chatID, params, False, &amp;future);
             // Wait for the async operation to complete
             ...
             return 0;
@@ -35,6 +35,10 @@
 
                 <category-title><shi language="c">char*</shi> <ref>params</ref></category-title>
                 <config id="TG_PARAMS_DESC"/>
+
+                <category-title><shi>bool</shi> <ref>is_presentation</ref></category-title>
+                <config id="IS_PRESENTATION_DESC"/>
+
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>

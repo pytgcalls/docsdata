@@ -6,10 +6,9 @@
     </alert>
     <text>This method allows streaming audio or video to a group call or a private call.</text>
     <h3>Example</h3>
-    <syntax-highlight mark="11-16">
+    <syntax-highlight mark="10-13">
         from pytgcalls import Client
         from pytgcalls import idle
-        from pytgcalls.types import MediaStream
         ...
 
         app = PyTgCalls(client)
@@ -19,9 +18,7 @@
 
         app.play(
             -1001185324811,
-            MediaStream(
-                'test.mp4',
-            )
+            'test.mp4',
         )
 
         idle()
@@ -38,9 +35,10 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
-                <config id="ARG_INPUT_STREAM"/>
-                <category-title><ref>config</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Advanced Types/CallConfig">pytgcalls.types.CallConfig</docs-ref>, <docs-ref link="/PyTgCalls/Advanced Types/GroupCallConfig">pytgcalls.types.GroupCallConfig</docs-ref>]]</category-title>
-                <subtext><text>Additional configuration for the call.</text></subtext>
+                <category-title><ref>stream</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/Stream">Stream</docs-ref>, <docs-ref link="/PyTgCalls/Stream Descriptors/MediaStream">MediaStream</docs-ref>, <docs-ref link="/PyTgCalls/Advanced Types/InputDevice">InputDevice</docs-ref>, Path, <shi>str</shi>]]</category-title>
+                <subtext><text>Input Streams base descriptor</text></subtext>
+
+                <config id="CALL_CONFIG_DESC"/>
             </subtext>
         </category>
         <br/>
@@ -50,14 +48,7 @@
                 <config id="BASE_MTPROTO"/>
                 <config id="GROUP_CALL_EXCEPTIONS"/>
                 <config id="STREAM_EXCEPTIONS"/>
-                <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDeclined</sb></ref></category-title>
-                <subtext><text>The call was declined by the user.</text></subtext>
-                <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDiscarded</sb></ref></category-title>
-                <subtext><text>The call was discarded by the user while connecting.</text></subtext>
-                <config id="TELEGRAM_EXCEPTION"/>
-                <category-title>exception <ref>pytgcalls.exceptions.<sb>AlreadyJoinedError</sb></ref></category-title>
-                <subtext><text>You are attempting to join in a call you're already a part of.</text></subtext>
-                <config id="RTMP_EXCEPTION"/>
+                <config id="CALL_EXCEPTIONS"/>
             </subtext>
         </category>
     </subtext>

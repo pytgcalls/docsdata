@@ -1,0 +1,22 @@
+<page>
+    <h1>StreamFrames</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>StreamFrames</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Represents stream frames.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>device</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/Device">Device</docs-ref></category-title>
+            <subtext><text>Kind of frames device.</text></subtext>
+
+            <category-title><ref>direction</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/Direction">Direction</docs-ref></category-title>
+            <subtext><text>Direction of the frames.</text></subtext>
+
+            <category-title><ref>frames</ref> <shi>-> list</shi>[<docs-ref link="/PyTgCalls/Advanced Types/Frame">Frame</docs-ref>]</category-title>
+            <subtext><text>List of frames.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

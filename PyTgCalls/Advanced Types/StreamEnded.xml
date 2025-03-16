@@ -1,0 +1,20 @@
+<page>
+    <h1>StreamEnded</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>StreamEnded</sb></ref>
+    </category-title>
+    <subtext>
+        <text>The audio stream or video stream has ended.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <config id="RET_INT_ID"/>
+            <category-title><ref>stream_type</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/StreamEnded Type">StreamEnded.Type</docs-ref></category-title>
+            <subtext><text>Get the type of the stream that has ended.</text></subtext>
+
+            <category-title><ref>device</ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/Device">pytgcalls.Device</docs-ref></category-title>
+            <subtext><text>Get the device that has ended the stream.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

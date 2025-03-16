@@ -17,8 +17,8 @@
             ...
             int size = ...  ; // Get the size of the call list
             ntg_call_struct buffer[size];
-            ntg_async_struct future;
             // Initialize the async struct
+            ntg_async_struct future;
             int result = ntg_calls(uid, buffer, size, &amp;future);
             // Wait for the async operation to complete
             for (int i = 0; i &lt; result; i++) {

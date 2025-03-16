@@ -13,6 +13,7 @@
         await app.connect(
             -1001185324811,
             tg_params,
+            False,
         )
     </syntax-highlight>
     <separator/>
@@ -29,22 +30,18 @@
                 <config id="ARG_INT_ID"/>
                 <category-title><ref>params</ref>: <shi>str</shi></category-title>
                 <config id="TG_PARAMS_DESC"/>
+                <category-title><ref>is_presentation</ref>: <shi>bool</shi></category-title>
+                <config id="IS_PRESENTATION_DESC"/>
             </subtext>
         </category>
         <br/>
         <category>
             <pg-title>RAISES</pg-title>
             <subtext>
-                <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
-                <subtext>
-                    <text>
-                        This error occurs when attempting to execute an action on a non-existent Group Call.
-                    </text>
-                </subtext>
+                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
                 <config id="TELEGRAM_EXCEPTION"/>
                 <config id="RTMP_EXCEPTION"/>
-                <category-title>exception <ref>ntgcalls.<sb>InvalidParams</sb></ref></category-title>
-                <subtext><text>This error occurs when attempting to send invalid Transports.</text></subtext>
+                <config id="TRANSPORT_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

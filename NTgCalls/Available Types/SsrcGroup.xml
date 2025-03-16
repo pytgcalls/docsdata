@@ -1,0 +1,19 @@
+<page>
+    <h1>SsrcGroup</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>SsrcGroup</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="SSRC_GROUP_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref>semantics</ref> <shi>-> str</shi></category-title>
+            <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+
+            <category-title><ref>ssrcs</ref> <shi>-> </shi> <shi>list</shi>[<shi>int</shi>]</category-title>
+            <config id="SSRC_GROUP_SSRCS_DESC"/>
+        </subtext>
+    </subtext>
+</page>
