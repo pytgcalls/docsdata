@@ -40,11 +40,11 @@
                         <tab id="arm">ARM64</tab>
                     </tabs>
                     <syntax-highlight language="bash" id="x86">
-                        $ sudo apt install libx11-dev build-essential curl alsa-lib-devel pulseaudio-libs-devel mesa-libgbm-devel libXcomposite-devel libXrandr-devel libXtst-devel
+                        $ sudo apt install libx11-dev build-essential curl libasound2-dev libpulse-dev libgbm-dev libxcomposite-dev libxrandr-dev libxtst-dev
                     </syntax-highlight>
                     <syntax-highlight language="bash" id="arm">
-                        $ sudo apt install libx11-dev build-essential curl alsa-lib-devel pulseaudio-libs-devel mesa-libgbm-devel libXcomposite-devel libXrandr-devel libXtst-devel
-                        $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 18
+                        $ sudo apt install libx11-dev build-essential curl libasound2-dev libpulse-dev libgbm-dev libxcomposite-dev libxrandr-dev libxtst-dev
+                        $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 20
                     </syntax-highlight>
                 </multisyntax>
             </item>
