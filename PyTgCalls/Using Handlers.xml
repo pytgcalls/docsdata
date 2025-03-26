@@ -22,7 +22,7 @@
         async def handler(client: PyTgCalls, update: Update):
             print(update)
         ...
-        app.add_handler(handler, call_filters.stream_end)
+        app.add_handler(handler, call_filters.stream_end())
         ...
     </syntax-highlight>
     <h2>Removing Handlers</h2>
