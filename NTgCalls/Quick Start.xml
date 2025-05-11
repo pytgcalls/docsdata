@@ -7,6 +7,14 @@
         However, if you fall into the aforementioned categories,
         you can find an example of usage with the various porting below.
     </text>
+    <h2>Recommended Bots by the Community</h2>
+    <text>
+        Looking for real-world implementations? Below is a selection of bots actively maintained and recommended
+        by the community, all using NTgCalls/Py-TgCalls under the hood. These can be a great source of inspiration or even
+        a solid starting point for your own project.
+    </text>
+    <br/>
+    <github-ref user="AshokShau" reponame="TgMusicBot"/>
     <h2>Community and Official Libraries</h2>
     <text>
         In the following section, we present a comprehensive catalog of libraries,
