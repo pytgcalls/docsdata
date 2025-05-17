@@ -17,9 +17,6 @@
 
             <category-title><ref><sb>REQUIRED</sb></ref> <shi>=</shi> 4</category-title>
             <subtext><text>Indicates that the stream is mandatory.</text></subtext>
-
-            <category-title><ref><sb>NO_LATENCY</sb></ref> <shi>=</shi> 8</category-title>
-            <subtext><text>Used to indicate that the stream should be sent with no latency.</text></subtext>
         </subtext>
     </subtext>
 </page>
