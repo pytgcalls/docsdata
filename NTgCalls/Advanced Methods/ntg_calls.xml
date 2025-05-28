@@ -13,13 +13,13 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
-            int size = ...  ; // Get the size of the call list
-            ntg_call_struct buffer[size];
+            int size;
+            ntg_call_struct* buffer;
             // Initialize the async struct
             ntg_async_struct future;
-            int result = ntg_calls(uid, buffer, size, &amp;future);
+            int result = ntg_calls(ptr, &amp;buffer, &amp;size, &amp;future);
             // Wait for the async operation to complete
             for (int i = 0; i &lt; result; i++) {
                 printf("Group Call %d:\n", i + 1);
@@ -41,12 +41,13 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
 
-                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_call_struct">ntg_call_struct</docs-ref><shi language="c">*</shi> <ref><sb>buffer</sb></ref></category-title>
-                <subtext><text>The buffer that will hold the retrieved group call information.</text></subtext>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_call_struct">ntg_call_struct</docs-ref><shi language="c">**</shi> <ref><sb>buffer</sb></ref></category-title>
+                <subtext><text>The pointer to a buffer that will hold the retrieved group call information.</text></subtext>
 
-                <config id="ARG_BUF_SIZE"/>
+                <category-title><shi language="c">int*</shi> <ref><sb>size</sb></ref></category-title>
+                <subtext><text>A pointer to an integer that will be set to the number of calls retrieved.</text></subtext>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -60,7 +61,6 @@
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_C_EXCEPTIONS"/>
-                <config id="SMALL_BUFF_EXCEPTION"/>
             </subtext>
         </category>
     </subtext>

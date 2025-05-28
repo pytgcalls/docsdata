@@ -1,0 +1,17 @@
+<page>
+    <h1>SourceInfo</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>SourceInfo</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Info about a source in a group call.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref><sb>endpoint</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Endpoint of the source.</text></subtext>
+            <category-title><ref><sb>sources</sb></ref> <shi>-> list[</shi><docs-ref link="/NTgCalls/Available Types/SsrcGroup">ntgcalls.SsrcGroup</docs-ref><shi>]</shi></category-title>
+        </subtext>
+    </subtext>
+</page>

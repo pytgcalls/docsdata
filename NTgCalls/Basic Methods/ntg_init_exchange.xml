@@ -8,7 +8,7 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
             ntg_dh_config_struct dhConfig = ...; // Obtain the DH configuration
@@ -18,7 +18,7 @@
             // Initialize the async struct
             ntg_async_struct future;
             int result = ntg_init_exchange(
-                uid,
+                ptr,
                 chatID,
                 &amp;dhConfig,
                 g_a_hash,
@@ -41,7 +41,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
                 <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_dh_config_struct">ntg_dh_config_struct</docs-ref><shi>*</shi> <ref><sb>dhConfig</sb></ref></category-title>
                 <subtext><config id="DH_CONFIG_DESC"/></subtext>

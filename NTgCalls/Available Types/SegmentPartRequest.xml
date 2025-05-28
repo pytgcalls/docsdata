@@ -1,0 +1,28 @@
+<page>
+    <h1>SegmentPartRequest</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>SegmentPartRequest</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="SEGMENT_PART_REQUEST_DESC"/>
+        <br/>
+        <pg-title>PARAMETERS</pg-title>
+        <subtext>
+            <category-title><ref>segment_id</ref>: <shi>int</shi></category-title>
+            <config id="BROADCAST_SEGMENT_ID_DESC"/>
+            <category-title><ref>part_id</ref>: <shi>int</shi></category-title>
+            <config id="BROADCAST_PART_ID_DESC"/>
+            <category-title><ref>limit</ref>: <shi>int</shi></category-title>
+            <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+            <category-title><ref>timestamp</ref>: <shi>int</shi></category-title>
+            <config id="BROADCAST_TIMESTAMP_DESC"/>
+            <category-title><ref>quality_update</ref>: <shi>bool</shi></category-title>
+            <config id="QUALITY_UPDATE_DESC"/>
+            <category-title><ref>channel_id</ref>: <shi>int</shi></category-title>
+            <config id="BROADCAST_CHANNEL_ID_DESC"/>
+            <category-title><ref>quality</ref>: <docs-ref link="/NTgCalls/Available Enums/MediaSegmentQuality">ntgcalls.MediaSegmentQuality</docs-ref></category-title>
+            <subtext><config id="MEDIA_SEGMENT_QUALITY_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

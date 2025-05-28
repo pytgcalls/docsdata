@@ -1,11 +1,8 @@
 <page>
-    <h1>ntg_set_stream_sources</h1>
-    <alert type="warning">
-        <text>This method replaces the deprecated <code>ntg_change_stream</code> method.</text>
-    </alert>
-    <config id="CHANGE_STREAM_DESC"/>
+    <h1>ntg_get_connection_mode</h1>
+    <config id="GET_CONNECTION_MODE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="13">
+    <syntax-highlight language="c" mark="10">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
@@ -13,31 +10,30 @@
             uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
-            ntg_media_description_struct desc = {
-                // Fill in updated media description fields
-            };
+            ntg_connection_mode_enum buffer;
             ntg_async_struct future;
-            // Initialize the async struct
-            int result = ntg_set_stream_sources(ptr, chatID, NTG_STREAM_CAPTURE, desc, &amp;future);
-            // Wait for the async operation to complete
+            ntg_get_connection_mode(ptr, chatID, &amp;buffer, &amp;future);
+            ...
             return 0;
         }
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb src="method">ntg_set_stream_sources</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_get_connection_mode</sb></ref>()
     </category-title>
     <subtext>
-        <config id="CHANGE_STREAM_DESC_2"/>
+        <config id="GET_CONNECTION_MODE_DESC2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <config id="NTG_STREAM_MODE"/>
-                <config id="ARG_MEDIA"/>
+
+                <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_connection_mode_enum">ntg_connection_mode_enum</docs-ref><shi>*</shi> <ref><sb>connectionMode</sb></ref></category-title>
+                <subtext><config id="CONNECTION_MODE_DESC"/></subtext>
+
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -51,8 +47,6 @@
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_CONNECTION_EXCEPTIONS"/>
-                <config id="STREAM_C_EXCEPTIONS"/>
-                <config id="RTMP_STREAMING_UNSUPPORTED_C"/>
             </subtext>
         </category>
     </subtext>

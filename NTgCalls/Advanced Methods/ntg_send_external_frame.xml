@@ -7,7 +7,7 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
             uint8_t* pcm16_le_data = ...; // Obtain the PCM16 LE data
@@ -20,7 +20,7 @@
             };
             // Initialize the async struct
             ntg_async_struct future;
-            ntg_send_external_frame(uid, chatID, NTG_STREAM_DEVICE_MICROPHONE, pcm16_le_data, size, &amp;frame_data, &amp;future);
+            ntg_send_external_frame(ptr, chatID, NTG_STREAM_DEVICE_MICROPHONE, pcm16_le_data, size, &amp;frame_data, &amp;future);
             // Wait for the async operation to complete
             return 0;
         }
@@ -36,7 +36,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
                 <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_device_enum">ntg_stream_device_enum</docs-ref> <ref><sb>device</sb></ref></category-title>
                 <config id="DEVICE_DESC"/>

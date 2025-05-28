@@ -1,0 +1,67 @@
+<page>
+    <h1>ntg_send_broadcast_part</h1>
+    <config id="SEND_BROADCAST_PART_DESC"/>
+    <h3>Example</h3>
+    <syntax-highlight language="c" mark="15">
+        #include &lt;stdint.h&gt;
+        #include "ntgcalls.h"
+
+        int main() {
+            uintptr_t ptr = ntg_init();
+            ...
+            int64_t chatID = ...; // Obtain the chat ID
+            int64_t segmentId = ...; // Obtain the segment ID
+            int32_t partId = ...; // Obtain the part ID
+            bool qualityUpdate = ...; // Obtain the quality update flag
+            uint8_t* frame = ...; // Obtain the frame data
+            int size = ...; // Obtain the size of the frame data
+            // Initialize the async struct
+            ntg_async_struct future;
+            ntg_send_broadcast_part(ptr, chatID, segmentId, partId, NTG_MEDIA_SEGMENT_SUCCESS, qualityUpdate, frame, size, &amp;future);
+            // Wait for the async operation to complete
+            return 0;
+        }
+    </syntax-highlight>
+    <separator/>
+    <h2>Details</h2>
+    <category-title noref="true">
+        <ref><shi language="c">int</shi> <sb src="method">ntg_send_broadcast_part</sb></ref>()
+    </category-title>
+    <subtext>
+        <config id="SEND_BROADCAST_PART_DESC2"/>
+        <br/>
+        <category>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <config id="ARG_C_PTR"/>
+                <config id="ARG_C_CHAT_ID"/>
+                <category-title><shi language="c">int64_t</shi> <ref><sb>segment_id</sb></ref></category-title>
+                <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                <category-title><shi language="c">int32_t</shi> <ref><sb>part_id</sb></ref></category-title>
+                <config id="BROADCAST_PART_ID_DESC"/>
+                <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_media_segment_status_enum">ntg_media_segment_status_enum</docs-ref> <ref><sb>status</sb></ref></category-title>
+                <subtext><config id="MEDIA_SEGMENT_STATUS_DESC"/></subtext>
+                <category-title><shi language="cpp">bool</shi> <ref><sb>quality_update</sb></ref></category-title>
+                <config id="QUALITY_UPDATE_DESC"/>
+                <category-title><shi language="c">uint8_t*</shi> <ref><sb>frame</sb></ref></category-title>
+                <subtext><config id="FRAME_DATA_DESC" /></subtext>
+                <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
+                <subtext><text>The size of the frame data.</text></subtext>
+                <config id="ARG_ASYNC_STRUCT"/>
+            </subtext>
+        </category>
+        <br/>
+        <category>
+            <pg-title>ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_SYNC_C_EXCEPTION"/>
+            </subtext>
+            <br/>
+            <pg-title>ASYNC ERROR CODES</pg-title>
+            <subtext>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+                <config id="BROADCAST_EXCEPTIONS_C"/>
+            </subtext>
+        </category>
+    </subtext>
+</page>

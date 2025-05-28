@@ -1,22 +1,19 @@
 <page>
-    <h1>ntg_get_params</h1>
+    <h1>ntg_create</h1>
     <config id="CREATE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="14">
+    <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
-            ntg_media_description_struct desc = {
-                // Fill in media description fields
-            };
-            char buffer[512];
+            char* buffer;
             ntg_async_struct future;
             // Initialize the async struct
-            int result = ntg_create(uid, chatID, desc, buffer, sizeof(buffer));
+            int result = ntg_create(ptr, chatID, &amp;buffer);
             // Wait for the async operation to complete and
             // use 'buffer' for JoinGroupCall
             return 0;
@@ -25,7 +22,7 @@
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb src="method">ntg_get_params</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_create</sb></ref>()
     </category-title>
     <subtext>
         <config id="CREATE_DESC2"/>
@@ -33,19 +30,17 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <config id="ARG_MEDIA_C"/>
 
-                <category-title><shi language="c">char*</shi> <sb><ref>buffer</ref></sb></category-title>
+                <category-title><shi language="c">char**</shi> <sb><ref>buffer</ref></sb></category-title>
                 <subtext>
                     <text>
-                        A string buffer to store the connection parameters retrieved from WebRTC.
+                        A string pointer to a buffer to store the connection parameters retrieved from WebRTC.
                         These parameters can be used for <a href="https://core.telegram.org/method/phone.joinGroupCall">JoinGroupCall</a>.
                     </text>
                 </subtext>
 
-                <config id="ARG_BUF_SIZE"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -59,7 +54,6 @@
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
                 <config id="BASE_C_EXCEPTIONS"/>
-                <config id="SMALL_BUFF_EXCEPTION"/>
                 <config id="CONN_ALREADY_EXISTS_C"/>
                 <config id="STREAM_C_EXCEPTIONS"/>
             </subtext>

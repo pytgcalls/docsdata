@@ -7,12 +7,12 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
             // Initialize the async struct
             ntg_async_struct future;
-            ntg_stop_presentation(uid, chatID, &amp;future);
+            ntg_stop_presentation(ptr, chatID, &amp;future);
             // Wait for the async operation to complete
         }
     </syntax-highlight>
@@ -27,7 +27,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>

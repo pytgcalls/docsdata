@@ -7,12 +7,12 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             double buffer;
             // Initialize the async struct
             ntg_async_struct future;
-            int64_t usage = ntg_cpu_usage(uid, &amp;buffer, &amp;future);
+            int64_t usage = ntg_cpu_usage(ptr, &amp;buffer, &amp;future);
             // Wait for the async operation to complete and use
             return 0;
         }
@@ -28,7 +28,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <category-title><shi language="c">double</shi><shi language="c">*</shi> <ref><sb>cpuUsage</sb></ref></category-title>
                 <subtext><config id="CPU_USAGE_DESC3"/></subtext>
                 <config id="ARG_ASYNC_STRUCT"/>

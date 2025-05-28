@@ -15,7 +15,10 @@
             <category-title><ref><sb>LEFT</sb></ref> <shi>=</shi> 2</category-title>
             <subtext><text>Represents a participant left a group call.</text></subtext>
 
-            <category-title><ref><sb>UPDATED</sb></ref> <shi>=</shi> 4</category-title>
+            <category-title><ref><sb>KICKED</sb></ref> <shi>=</shi> 4</category-title>
+            <subtext><text>Represents a participant kicked from a group call, usually when it joins from a different device while already in the call.</text></subtext>
+
+            <category-title><ref><sb>UPDATED</sb></ref> <shi>=</shi> 8</category-title>
             <subtext><text>Represents a participant updated in a group call.</text></subtext>
         </subtext>
     </subtext>

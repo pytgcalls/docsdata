@@ -40,7 +40,6 @@
             <subtext>
                 <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
                 <config id="TELEGRAM_EXCEPTION"/>
-                <config id="RTMP_EXCEPTION"/>
                 <config id="TRANSPORT_EXCEPTION"/>
             </subtext>
         </category>

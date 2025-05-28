@@ -1,0 +1,22 @@
+<page>
+    <h1>MediaSegmentQuality</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaSegmentQuality</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NONE</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="MEDIA_SEGMENT_QUALITY_NONE_DESC"/>
+            <category-title><ref><sb>THUMBNAIL</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="MEDIA_SEGMENT_QUALITY_THUMBNAIL_DESC"/>
+            <category-title><ref><sb>MEDIUM</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="MEDIA_SEGMENT_QUALITY_MEDIUM_DESC"/>
+            <category-title><ref><sb>FULL</sb></ref> <shi>=</shi> 3</category-title>
+            <config id="MEDIA_SEGMENT_QUALITY_FULL_DESC"/>
+        </subtext>
+    </subtext>
+</page>

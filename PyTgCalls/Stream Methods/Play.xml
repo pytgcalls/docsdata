@@ -49,6 +49,7 @@
                 <config id="GROUP_CALL_EXCEPTIONS"/>
                 <config id="STREAM_EXCEPTIONS"/>
                 <config id="CALL_EXCEPTIONS"/>
+                <config id="RTMP_STREAMING_UNSUPPORTED"/>
             </subtext>
         </category>
     </subtext>

@@ -33,6 +33,8 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_CHAT_ID"/>
+                <category-title><ref>close</ref>: <shi>bool</shi></category-title>
+                <subtext><text>Whether to close the call or just leave it.</text></subtext>
             </subtext>
         </category>
         <br/>

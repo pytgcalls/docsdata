@@ -1,8 +1,8 @@
 <page>
     <h1>Introduction</h1>
     <text>
-        Being a modern library, <b>NTgCalls</b> requires CMake 3.27+ to be built on your system,
-        on Linux is required at least CLang 20+ and libx11-dev.
+        Being a modern library, <b>NTgCalls</b> requires CMake 3.31+ to be built on your system,
+        on Linux is required at least CLang 20+, libasound2 and libpulse-dev.
         We recommend using the latest versions of both CMake and CLang.
     </text>
     <alert type="important">
@@ -30,8 +30,8 @@
             </item>
             <item>
                 <text>
-                    <b>Build Essential, libx11-dev, Clang 20 and etc:</b><br/>
-                    This section provides instructions on how to install four specific packages: libx11-dev,
+                    <b>Build Essential, Clang 20 and etc:</b><br/>
+                    This section provides instructions on how to install four specific packages:
                     build-essential, curl and Clang version 20. Use the following command:
                 </text>
                 <multisyntax id="os_requirements">

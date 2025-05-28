@@ -10,15 +10,6 @@
 
         params = await app.create_call(
             -1001185324811,
-            MediaDescription(
-                AudioDescription(
-                    input_mode=InputMode.File,
-                    input="audio.pcm",
-                    sample_rate=96000,
-                    bits_per_sample=16,
-                    channel_count=2,
-                ),
-            )
         )
     </syntax-highlight>
     <separator/>
@@ -33,7 +24,6 @@
             <pg-title>PARAMETERS</pg-title>
             <subtext>
                 <config id="ARG_INT_ID"/>
-                <config id="ARG_STREAM_PARAMS"/>
             </subtext>
         </category>
         <br/>

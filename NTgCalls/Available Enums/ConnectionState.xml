@@ -2,7 +2,7 @@
     <h1>ConnectionState</h1>
     <br/>
     <category-title noref="true">
-        <shi>class</shi> <ref src="class"><sb>ConnectionState</sb></ref>
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionState</sb></ref>
     </category-title>
     <subtext>
         <config id="CONNECTION_STATE_DESC"/>

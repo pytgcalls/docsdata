@@ -1,41 +1,38 @@
 <page>
-    <h1>ntg_calls_count</h1>
-    <text>
-        This function returns the number of active group calls that NTgCalls is connected to.
-    </text>
+    <h1>ntg_send_broadcast_timestamp</h1>
+    <config id="SEND_BROADCAST_TIMESTAMP_DESC"/>
     <h3>Example</h3>
     <syntax-highlight language="c" mark="11">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
-            int count = 0;
+            int64_t timestamp = ...; // Obtain the timestamp
             // Initialize the async struct
             ntg_async_struct future;
-            int result = ntg_calls_count(uid, &amp;count, &amp;future);
+            ntg_send_broadcast_timestamp(ptr, chatID, timestamp, &amp;future);
             // Wait for the async operation to complete
-            printf("Number of active group calls: %d\n", count);
-            ... // Your Code Here
             return 0;
         }
     </syntax-highlight>
     <separator/>
     <h2>Details</h2>
     <category-title noref="true">
-        <ref><shi language="c">int</shi> <sb src="method">ntg_calls_count</sb></ref>()
+        <ref><shi language="c">int</shi> <sb src="method">ntg_send_broadcast_timestamp</sb></ref>()
     </category-title>
     <subtext>
-        <text>Returns the number of active group calls.</text>
+        <config id="SEND_BROADCAST_TIMESTAMP_DESC2"/>
         <br/>
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
-                <category-title><shi language="c">int*</shi> <ref><sb>count</sb></ref></category-title>
-                <subtext>The number of active group calls.</subtext>
+                <config id="ARG_C_PTR"/>
+                <config id="ARG_C_CHAT_ID"/>
+                <category-title><shi language="c">int64_t</shi> <ref><sb>timestamp</sb></ref></category-title>
+                <config id="BROADCAST_TIMESTAMP_DESC"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>
@@ -48,7 +45,8 @@
             <br/>
             <pg-title>ASYNC ERROR CODES</pg-title>
             <subtext>
-                <config id="BASE_C_EXCEPTIONS"/>
+                <config id="BASE_CONNECTION_EXCEPTIONS"/>
+                <config id="BROADCAST_EXCEPTIONS_C"/>
             </subtext>
         </category>
     </subtext>

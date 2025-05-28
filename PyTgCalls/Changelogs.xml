@@ -3,6 +3,57 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgMay25.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v2.2.X"
+            description="Support for Large Group Calls, RTMP Streams, and More!"
+            mainbg="#070d16"
+            version="2.2.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Support for Large Group Calls:</b> PyTgCalls now supports group calls with up to 20 participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
+                <item><text><b>RTMP Stream Integration:</b> You can now connect to RTMP streams and <sb>record</sb> them using the <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref> method. This enables streaming external RTMP content directly into your group calls.</text></item>
+                <item><text><b> Group Call Discarding Option:</b> The <code>close</code> parameter has been added to the <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref> method, allowing you to fully terminate a group call when it's no longer needed.</text></item>
+                <item><text><b>Enhanced Participant Caching:</b> The <docs-ref link="/PyTgCalls/Basic Methods/Get Participants">get_participants()</docs-ref> method now supports proper caching for clients using the <code>no_update</code> parameter, ensuring accurate participant lists without triggering unnecessary updates.</text></item>
+                <item><text><b>New ChatUpdate Event:</b> The <docs-ref link="/PyTgCalls/Advanced Types/ChatUpdate">ChatUpdate</docs-ref> event has been introduced to track changes such as busy call status. You can now use the <code>filters.chat_update(ChatUpdate.Status.BUSY_CALL)</code> filter to monitor these updates.</text></item>
+                <item><text><b>New Group Call Participant Event:</b> The <docs-ref link="/PyTgCalls/Advanced Types/UpdatedGroupCallParticipant">UpdatedGroupCallParticipant</docs-ref> event enables handling of actions like participants joining from another device or being kicked. Use <code>filters.call_participant(GroupCallParticipant.Action.KICKED)</code> to listen for such events.</text></item>
+                <item><text><b>Improved Audio/Video Encoding Performance:</b> Audio and video encoding performance has been significantly improved thanks to an optimized FFmpeg build. The latest version takes advantage of advanced CPU instruction sets like AVX2, resulting in faster processing and lower latency.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>Now the <docs-ref link="/PyTgCalls/Available Enums/GroupCallParticipant Action">pytgcalls.GroupCallParticipant.Action</docs-ref> has been moved from <docs-ref link="/PyTgCalls/Advanced Types/GroupCallParticipant">pytgcalls.GroupCallParticipant</docs-ref> to <docs-ref link="/PyTgCalls/Advanced Types/UpdatedGroupCallParticipant">pytgcalls.UpdatedGroupCallParticipant</docs-ref>.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            @call_py.on_update(filters.call_participant())
+                            async def participant_handler(_: PyTgCalls, update: UpdatedGroupCallParticipant):
+                                print(update.participant.user_id, update.participant.action)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            @call_py.on_update(filters.call_participant())
+                            async def participant_handler(_: PyTgCalls, update: UpdatedGroupCallParticipant):
+                                print(update.participant.user_id, update.action)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+            </list>
+            <h3 noref="true">Additional Notes</h3>
+            <text>
+                The repository <a href="https://github.com/AshokShau/TgMusicBot">AshokShau/TgMusicBot</a> has won the <docs-ref link="/PyTgCalls/Changelogs#PyTgCon2K24">#PyTgCon2K24</docs-ref> contest!
+                It is now officially featured in the Quickstart section of the NTgCalls documentation.
+                Check it out to see an excellent example of what you can build with PyTgCalls!
+            </text>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgMar25.png"
             minititle="MAJOR UPDATE"
             bigtitle="PyTgCalls v2.1.X"

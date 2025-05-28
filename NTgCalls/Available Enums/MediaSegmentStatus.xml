@@ -1,0 +1,20 @@
+<page>
+    <h1>MediaSegmentStatus</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaSegmentStatus</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="MEDIA_SEGMENT_STATUS_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NOT_READY</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+            <category-title><ref><sb>RESYNC_NEEDED</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+            <category-title><ref><sb>SUCCESS</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+        </subtext>
+    </subtext>
+</page>

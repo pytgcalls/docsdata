@@ -17,7 +17,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_stream_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>The callback function to be executed when the stream ends.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -28,14 +28,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myStreamEndCallback(uint32_t uid, int64_t chatID, ntg_stream_type_enum type, void *data) {
+                void myStreamEndCallback(uintptr_t ptr, int64_t chatID, ntg_stream_type_enum type, void *data) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_on_stream_end(uid, myStreamEndCallback, customData);
+                    ntg_on_stream_end(ptr, myStreamEndCallback, customData);
                     ...
                     return 0;
                 }
@@ -52,7 +52,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_upgrade_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>The callback function to be executed when the stream needs to update MTProto stream parameters.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -63,14 +63,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myOnUpgradeCallback(uint32_t uid, int64_t chatID, ntg_media_state_struct mediaState, void *data) {
+                void myOnUpgradeCallback(uintptr_t ptr, int64_t chatID, ntg_media_state_struct mediaState, void *data) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_on_upgrade(uid, myOnUpgradeCallback, customData);
+                    ntg_on_upgrade(ptr, myOnUpgradeCallback, customData);
                     ...
                     return 0;
                 }
@@ -87,7 +87,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_connection_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>The callback function to be executed when the connection state changes.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -98,14 +98,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myOnConnectionChangeCallback(uint32_t uid, int64_t chatID, ntg_connection_state_enum state, void *data) {
+                void myOnConnectionChangeCallback(uintptr_t ptr, int64_t chatID, ntg_connection_state_enum state, void *data) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_on_connection_change(uid, myOnConnectionChangeCallback, customData);
+                    ntg_on_connection_change(ptr, myOnConnectionChangeCallback, customData);
                     ...
                     return 0;
                 }
@@ -122,7 +122,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_signaling_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>The callback function to be executed when signaling data is received.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -133,14 +133,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myOnSignalingDataCallback(uint32_t uid, int64_t chatID, const char *data, size_t size, void *customData) {
+                void myOnSignalingDataCallback(uintptr_t ptr, int64_t chatID, const char *data, size_t size, void *customData) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_on_signaling_data(uid, myOnSignalingDataCallback, customData);
+                    ntg_on_signaling_data(ptr, myOnSignalingDataCallback, customData);
                     ...
                     return 0;
                 }
@@ -157,7 +157,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_frames_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>Callback function to be executed when frames are received.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -168,14 +168,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myOnFramesCallback(uint32_t uid, int64_t chatID, ntg_frame_struct *frames, size_t count, void *customData) {
+                void myOnFramesCallback(uintptr_t ptr, int64_t chatID, ntg_frame_struct *frames, size_t count, void *customData) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_on_frames(uid, myOnFramesCallback, customData);
+                    ntg_on_frames(ptr, myOnFramesCallback, customData);
                     ...
                     return 0;
                 }
@@ -192,7 +192,7 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <config id="ARG_C_UID"/>
+                    <config id="ARG_C_PTR"/>
                     <category-title><shi language="c">ntg_remote_source_callback</shi> <ref><sb>callback</sb></ref></category-title>
                     <subtext><text>Callback function to be executed when a remote source is added or removed.</text></subtext>
                     <config id="ARG_CUSTOM_DATA"/>
@@ -203,14 +203,14 @@
             <syntax-highlight language="c" mark="10">
                 #include "ntgcalls.h"
                 ...
-                void myRemoteSourceCallback(uint32_t uid, int64_t chatID, ntg_remote_source_struct *source, void *customData) {
+                void myRemoteSourceCallback(uintptr_t ptr, int64_t chatID, ntg_remote_source_struct *source, void *customData) {
                     // Your callback logic here
                 }
                 ...
                 int main() {
-                    uint32_t uid = ntg_init();
+                    uintptr_t ptr = ntg_init();
                     ... // Your Code Here
-                    ntg_remote_source_callback(uid, myRemoteSourceCallback, customData);
+                    ntg_remote_source_callback(ptr, myRemoteSourceCallback, customData);
                     ...
                     return 0;
                 }
@@ -242,6 +242,76 @@
                 ...
                 int main() {
                     ntg_register_logger(logger);
+                    ...
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref src="method"><sb>ntg_on_request_broadcast_part</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_REQUEST_BROADCAST_PART_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_PTR"/>
+                    <category-title><shi language="c">ntg_broadcast_part_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>Callback function to be executed when a broadcast part is requested.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="11">
+                #include &lt;stdint.h&gt;
+                #include "ntgcalls.h"
+
+                void myRequestBroadcastPartCallback(uintptr_t ptr, int64_t chatID, ntg_segment_part_request_struct partRequest, void *customData) {
+                    // Your callback logic here
+                }
+                ...
+                int main() {
+                    uintptr_t ptr = ntg_init();
+                    ... // Your Code Here
+                    ntg_on_request_broadcast_part(ptr, myRequestBroadcastPartCallback, customData);
+                    ...
+                    return 0;
+                }
+            </syntax-highlight>
+        </subtext>
+    </category>
+    <br/><br/>
+    <category>
+        <category-title><ref src="method"><sb>ntg_on_request_broadcast_timestamp</sb></ref>()</category-title>
+        <subtext>
+            <config id="CALLBACK_REQUEST_BROADCAST_TIME_DESC"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <config id="ARG_C_PTR"/>
+                    <category-title><shi language="c">ntg_broadcast_timestamp_callback</shi> <ref><sb>callback</sb></ref></category-title>
+                    <subtext><text>Callback function to be executed when the broadcast timestamp is requested.</text></subtext>
+                    <config id="ARG_CUSTOM_DATA"/>
+                </subtext>
+            </category>
+            <br/>
+            <h3>Example</h3>
+            <syntax-highlight language="c" mark="11">
+                #include &lt;stdint.h&gt;
+                #include "ntgcalls.h"
+
+                void myRequestBroadcastTimestampCallback(uintptr_t ptr, int64_t chatID, void *customData) {
+                    // Your callback logic here
+                }
+                ...
+                int main() {
+                    uintptr_t ptr = ntg_init();
+                    ... // Your Code Here
+                    ntg_on_request_broadcast_timestamp(ptr, myRequestBroadcastTimestampCallback, customData);
                     ...
                     return 0;
                 }

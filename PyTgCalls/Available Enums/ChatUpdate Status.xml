@@ -10,7 +10,7 @@
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
             <category-title><ref><sb>KICKED</sb></ref> <shi>=</shi> 1</category-title>
-            <subtext><text>Indicates that you was kicked.</text></subtext>
+            <subtext><text>Indicates that you was kicked from the chat.</text></subtext>
             <category-title><ref><sb>LEFT_GROUP</sb></ref> <shi>=</shi> 2</category-title>
             <subtext><text>Indicates that you left the chat.</text></subtext>
             <category-title><ref><sb>CLOSED_VOICE_CHAT</sb></ref> <shi>=</shi> 4</category-title>
@@ -21,7 +21,9 @@
             <subtext><text>Indicates that the call was discarded.</text></subtext>
             <category-title><ref><sb>INCOMING_CALL</sb></ref> <shi>=</shi> 32</category-title>
             <subtext><text>Indicates that an incoming call is available.</text></subtext>
-            <category-title><ref><sb>LEFT_CALL</sb></ref> <shi>=</shi> KICKED | LEFT_GROUP | CLOSED_VOICE_CHAT | DISCARDED_CALL</category-title>
+            <category-title><ref><sb>BUSY_CALL</sb></ref> <shi>=</shi> 64</category-title>
+            <subtext><text>Indicates that the receiver is busy with another call.</text></subtext>
+            <category-title><ref><sb>LEFT_CALL</sb></ref> <shi>=</shi> KICKED | LEFT_GROUP | CLOSED_VOICE_CHAT | DISCARDED_CALL | BUSY_CALL</category-title>
             <subtext><text>Indicates that you left the call.</text></subtext>
         </subtext>
     </subtext>

@@ -24,6 +24,7 @@
             <category-title><ref><sb>screen_sharing</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Whether the participant is currently screen sharing.</text></subtext>
 
+
             <category-title><ref><sb>video_camera</sb></ref> <shi>-> bool</shi></category-title>
             <subtext><text>Whether the participant is currently broadcasting a video camera.</text></subtext>
 
@@ -33,8 +34,14 @@
             <category-title><ref><sb>volume</sb></ref> <shi>-> int</shi></category-title>
             <subtext><text>Volume level of the participant.</text></subtext>
 
-            <category-title><ref><sb>action</sb></ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/GroupCallParticipant Action">Action</docs-ref></category-title>
-            <subtext><text>Current action of the participant.</text></subtext>
+            <category-title><ref><sb>source</sb></ref> <shi>-> int</shi></category-title>
+            <subtext><text>Source ID of the participant's audio stream.</text></subtext>
+
+            <category-title><ref><sb>video_info</sb></ref> <shi>-> Optional[</shi><docs-ref link="/PyTgCalls/Advanced Types/SourceInfo">pytgcalls.SourceInfo</docs-ref><shi>]</shi></category-title>
+            <subtext><text>Info about the video stream the participant is currently broadcasting.</text></subtext>
+
+            <category-title><ref><sb>presentation_info</sb></ref> <shi>-> Optional[</shi><docs-ref link="/PyTgCalls/Advanced Types/SourceInfo">pytgcalls.SourceInfo</docs-ref><shi>]</shi></category-title>
+            <subtext><text>Info about the screen sharing stream the participant is currently broadcasting.</text></subtext>
         </subtext>
     </subtext>
 </page>

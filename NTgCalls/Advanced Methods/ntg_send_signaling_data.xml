@@ -7,14 +7,14 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
             uint8_t* buffer = ...; // Obtain the signaling data
             int size = ...; // Obtain the size of the signaling data
             // Initialize the async struct
             ntg_async_struct future;
-            ntg_send_signaling_data(uid, chatID, buffer, size, &amp;future);
+            ntg_send_signaling_data(ptr, chatID, buffer, size, &amp;future);
             // Wait for the async operation to complete
             return 0;
         }
@@ -30,7 +30,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
 
                 <category-title><shi language="c">uint8_t</shi><shi language="c">*</shi> <ref><sb>data</sb></ref></category-title>

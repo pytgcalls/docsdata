@@ -57,7 +57,7 @@
   <option id="BASE_CONNECTION_EXCEPTIONS">
     <config id="BASE_C_EXCEPTIONS"/>
     <category-title><ref><sb><shi language="c">#NTG_CONNECTION_NOT_FOUND</shi></sb></ref> <shi>-101</shi></category-title>
-    <subtext><text>The specified connection was not found.</text></subtext>
+    <config id="CONNECTION_NOT_FOUND_DESC"/>
   </option>
 
   <option id="STREAM_C_EXCEPTIONS">
@@ -134,11 +134,7 @@
 
   <option id="CONNECTION_NOT_FOUND_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>ConnectionNotFound</sb></ref></category-title>
-    <subtext>
-      <text>
-        This error occurs when attempting to execute an action on a non-existent Group Call.
-      </text>
-    </subtext>
+    <config id="CONNECTION_NOT_FOUND_DESC"/>
   </option>
 
   <option id="CALL_EXCEPTIONS">
@@ -149,29 +145,11 @@
     <category-title>exception <ref>pytgcalls.exceptions.<sb>CallDiscarded</sb></ref></category-title>
     <subtext><text>The call was discarded by the user while connecting.</text></subtext>
     <config id="TELEGRAM_EXCEPTION"/>
-    <category-title>exception <ref>pytgcalls.exceptions.<sb>UnMuteNeeded</sb></ref></category-title>
-    <subtext><text>You need to unmute the userbot or make it an admin to stream audio or video.</text></subtext>
-    <config id="RTMP_EXCEPTION"/>
   </option>
 
   <option id="RUNNING_EXCEPTION">
     <category-title>exception <ref>pytgcalls.exceptions.<sb>PyTgCallsAlreadyRunning</sb></ref></category-title>
     <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>
-  </option>
-
-  <option id="RTMP_EXCEPTION">
-    <category-title>exception <ref>ntgcalls.<sb>RTMPNeeded</sb></ref></category-title>
-    <subtext><text>This error occurs when attempting to use NTgCalls to enter an RTMP stream.</text></subtext>
-  </option>
-
-  <option id="SMALL_BUFF_EXCEPTION">
-    <category-title><ref><sb><shi language="c">#NTG_ERR_TOO_SMALL</shi></sb></ref> <shi>-3</shi></category-title>
-    <subtext>
-      <text>
-        The provided buffer is too small to store the parameters.
-        You should allocate a larger buffer and try again.
-      </text>
-    </subtext>
   </option>
 
   <option id="CRYPTO_ERROR_C">
@@ -197,6 +175,26 @@
   <option id="CONN_ALREADY_EXISTS_C">
     <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
     <subtext><text>A connection with the specified ID already exists.</text></subtext>
+  </option>
+
+  <option id="RTMP_STREAMING_UNSUPPORTED">
+    <category-title>exception <ref>ntgcalls.<sb>RTMPStreamingUnsupported</sb></ref></category-title>
+    <config id="RTMP_STREAMING_UNSUPPORTED_DESC"/>
+  </option>
+
+  <option id="RTMP_STREAMING_UNSUPPORTED_C">
+    <category-title><ref><sb><shi language="c">#NTG_ERROR_RTMP_STREAMING_UNSUPPORTED</shi></sb></ref> <shi>-300</shi></category-title>
+    <config id="RTMP_STREAMING_UNSUPPORTED_DESC"/>
+  </option>
+
+  <option id="BROADCAST_EXCEPTIONS">
+    <category-title>exception <ref>ntgcalls.<sb>RTCException</sb></ref></category-title>
+    <config id="MTPROTO_CONNECTION_NOT_INITIALIZED_DESC"/>
+  </option>
+
+  <option id="BROADCAST_EXCEPTIONS_C">
+    <category-title><ref><sb><shi language="c">#NTG_ERROR_WEBRTC</shi></sb></ref> <shi>-304</shi></category-title>
+    <config id="MTPROTO_CONNECTION_NOT_INITIALIZED_DESC"/>
   </option>
   <!--end exceptions-->
 
@@ -528,6 +526,18 @@
     </text>
   </option>
 
+  <option id="CALLBACK_REQUEST_BROADCAST_PART_DESC">
+    <text>
+      Callback for handling when a broadcast stream part is being requested.
+    </text>
+  </option>
+
+  <option id="CALLBACK_REQUEST_BROADCAST_TIME_DESC">
+    <text>
+        Callback for handling when the broadcast timestamp is being requested.
+    </text>
+  </option>
+
   <option id="GET_STATE_DESC">
     <text>
       This method allows retrieving GroupCall MTProto Configurations for
@@ -668,14 +678,6 @@
 
   <option id="ENABLE_OR_DISABLE_GLIB_DESC">
     <subtext><text>Enable or disable the GLib main loop.</text></subtext>
-  </option>
-
-  <option id="ENABLE_H264_ENCODER_DESC">
-    <text>Enable the H264 encoder for video streaming.</text>
-  </option>
-
-  <option id="ENABLE_H264_ENCODER_DESC2">
-    <text>Enable the H264 encoder.</text>
   </option>
 
   <option id="ENABLE_OR_DISABLE_H264_DESC">
@@ -926,10 +928,6 @@
     <subtext><text>Frame buffer</text></subtext>
   </option>
 
-  <option id="FRAME_DATA_DESC">
-    <subtext><text>Frame descriptor</text></subtext>
-  </option>
-
   <option id="P2P_ALLOWED_DESC">
     <subtext><text>Whether to allow P2P connection to the other participant.</text></subtext>
   </option>
@@ -1100,6 +1098,134 @@
   <option id="NTG_STATE_CLOSED_DESC">
     <subtext><text>Indicates that the connection has been closed.</text></subtext>
   </option>
+
+  <option id="RTMP_STREAMING_UNSUPPORTED_DESC">
+    <subtext><text>You need to use FFmpeg to stream to an RTMP stream.</text></subtext>
+  </option>
+
+  <option id="BROADCAST_SEGMENT_ID_DESC">
+    <subtext><text>Unique identifier of the broadcast segment.</text></subtext>
+  </option>
+
+  <option id="BROADCAST_PART_ID_DESC">
+      <subtext><text>Unique identifier of the broadcast part.</text></subtext>
+  </option>
+
+  <option id="SEND_BROADCAST_PART_DESC">
+    <text>
+      This method allows sending a broadcast stream part to the MTProto connection, obtained from
+        <a href="https://core.telegram.org/method/upload.getFile">GetFile</a> by using the <a href="https://core.telegram.org/constructor/inputGroupCallStream">InputGroupCallStream</a> constructor.
+    </text>
+  </option>
+
+  <option id="SEND_BROADCAST_PART_DESC2">
+      <text>Send a broadcast stream part to the MTProto connection.</text>
+  </option>
+
+  <option id="MEDIA_SEGMENT_STATUS_DESC">
+    <text>
+      Media segment status for the broadcast stream.
+    </text>
+  </option>
+
+  <option id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC">
+    <subtext><text>Indicates that the media segment is not ready, like when getting any kind of errors except for FloodWaits.</text></subtext>
+  </option>
+
+  <option id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC">
+    <subtext><text>Indicates that the media segment needs to be resynced, like when getting FloodWait errors.</text></subtext>
+  </option>
+
+  <option id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC">
+    <subtext><text>Indicates that the media segment is ready.</text></subtext>
+  </option>
+
+  <option id="QUALITY_UPDATE_DESC">
+    <subtext><text>Indicates if it is a quality update.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_NOT_FOUND_DESC">
+    <subtext><text>The specified connection was not found.</text></subtext>
+  </option>
+
+  <option id="MTPROTO_CONNECTION_NOT_INITIALIZED_DESC">
+    <subtext><text>This error indicates that the MTProto connection is not established or has been closed.</text></subtext>
+  </option>
+
+  <option id="SEND_BROADCAST_TIMESTAMP_DESC">
+    <text>
+      This method allows sending a broadcast timestamp to the MTProto connection, obtained from
+      <a href="https://core.telegram.org/method/phone.getGroupCallStreamChannels">GetGroupCallStreamChannels</a>.
+    </text>
+  </option>
+
+  <option id="SEND_BROADCAST_TIMESTAMP_DESC2">
+    <text>Send a broadcast timestamp to the MTProto connection.</text>
+  </option>
+
+  <option id="BROADCAST_TIMESTAMP_DESC">
+    <subtext><text>Last seen timestamp to easily start fetching livestream chunks using <a href="https://core.telegram.org/constructor/inputGroupCallStream">InputGroupCallStream</a></text></subtext>
+  </option>
+
+  <option id="GET_CONNECTION_MODE_DESC">
+    <text>
+      This method allows getting the connection mode for a Group Call connection, which can be RTMP, WebRTC, or MTProto.
+    </text>
+  </option>
+
+  <option id="GET_CONNECTION_MODE_DESC2">
+    <text>Get the connection mode for a Group Call connection.</text>
+  </option>
+
+  <option id="CONNECTION_MODE_DESC">
+    <text>Connection mode for a Group Call connection.</text>
+  </option>
+
+  <option id="MEDIA_SEGMENT_QUALITY_DESC">
+    <text>Quality of the media segment for the broadcast stream.</text>
+  </option>
+
+  <option id="MEDIA_SEGMENT_QUALITY_NONE_DESC">
+    <subtext><text>Indicates that the media segment has no quality.</text></subtext>
+  </option>
+
+  <option id="MEDIA_SEGMENT_QUALITY_THUMBNAIL_DESC">
+      <subtext><text>Indicates that the media segment is a thumbnail.</text></subtext>
+  </option>
+
+  <option id="MEDIA_SEGMENT_QUALITY_MEDIUM_DESC">
+    <subtext><text>Indicates that the media segment is of medium quality.</text></subtext>
+  </option>
+
+  <option id="MEDIA_SEGMENT_QUALITY_FULL_DESC">
+    <subtext><text>Indicates that the media segment is of full quality.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_MODE_RTC_DESC">
+    <subtext><text>Indicates that the connection mode is WebRTC.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_MODE_STREAM_DESC">
+    <subtext><text>Indicates that the connection mode is MTProto.</text></subtext>
+  </option>
+
+  <option id="CONNECTION_MODE_RTMP_DESC">
+    <subtext><text>Indicates that the connection mode is RTMP.</text></subtext>
+  </option>
+
+  <option id="SEGMENT_PART_REQUEST_DESC">
+    <text>
+      This constructor represents a request for a specific part of a broadcast stream segment.
+    </text>
+  </option>
+
+  <option id="SEGMENT_PART_REQUEST_LIMIT_DESC">
+    <subtext><text>Number of bytes to be returned.</text></subtext>
+  </option>
+
+  <option id="BROADCAST_CHANNEL_ID_DESC">
+    <subtext><text>Selected video channel.</text></subtext>
+  </option>
   <!--end descriptions-->
 
   <!--parameters-->
@@ -1127,9 +1253,9 @@
     <config id="CHAT_ID_DESC"/>
   </option>
 
-  <option id="ARG_C_UID">
-    <category-title><shi language="c">uint32_t</shi> <ref><sb>uid</sb></ref></category-title>
-    <subtext><text>The unique identifier for the NTgCalls instance.</text></subtext>
+  <option id="ARG_C_PTR">
+    <category-title><shi language="c">uintptr_t</shi> <ref><sb>ptr</sb></ref></category-title>
+    <subtext><text>The pointer to the NTgCalls instance.</text></subtext>
   </option>
 
   <option id="ARG_PARTICIPANT">
@@ -1190,16 +1316,6 @@
   <option id="ARG_C_MEDIA_SOURCE">
     <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_media_source_enum">ntg_media_source_enum</docs-ref> <ref>mediaSource</ref></category-title>
     <config id="MEDIA_SOURCE_DESC"/>
-  </option>
-
-  <option id="ARG_MEDIA_C">
-    <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_description_struct">ntg_media_description_struct</docs-ref> <ref><sb>desc</sb></ref></category-title>
-    <config id="ARG_MEDIA_DESC"/>
-  </option>
-
-  <option id="ARG_BUF_SIZE">
-    <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
-    <subtext><text>The size of the provided buffer.</text></subtext>
   </option>
 
   <option id="ARG_INPUT_MEDIA">
@@ -1265,12 +1381,12 @@
             #include "ntgcalls.h"
 
             int main() {
-              uint32_t uid = ntg_init();
+              uintptr_t ptr = ntg_init();
 
               int64_t chatID = ...; // Obtain the chat ID
               char* params = ...;  // Obtain connection parameters
 
-              int result = ntg_connect(uid, chatID, params, false);
+              int result = ntg_connect(ptr, chatID, params, false);
               if (result == 0) {
                   // Successfully connected to the WebRTC
                   ...
@@ -1301,7 +1417,7 @@
               chatID := ... // Obtain the chat ID
               params := ... // Obtain connection parameters
 
-              err := ntgcalls.Connect(uid, chatID, params, false)
+              err := client.Connect(chatID, params, false)
               if err == nil {
                   // Successfully connected to the WebRTC
                   ...
@@ -1464,9 +1580,12 @@
     </group>
     <group basepath="NTgCalls/Advanced Methods/">
       <file>Add Incoming Video.xml</file>
+      <file>Get Connection Mode.xml</file>
       <file>Get State.xml</file>
       <file>Remove Incoming Video.xml</file>
       <file>Send External Frame.xml</file>
+      <file>Send Broadcast Part.xml</file>
+      <file>Send Broadcast Timestamp.xml</file>
       <file>Send Signaling Data.xml</file>
     </group>
     <group basepath="NTgCalls/Available Types/">
@@ -1484,12 +1603,16 @@
       <file>Protocol.xml</file>
       <file>RemoteSource.xml</file>
       <file>RTCServer.xml</file>
+      <file>SegmentPartRequest.xml</file>
       <file>SsrcGroup.xml</file>
       <file>VideoDescription.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
       <file>ConnectionKind.xml</file>
+      <file>ConnectionMode.xml</file>
       <file>ConnectionState.xml</file>
+      <file>MediaSegmentQuality.xml</file>
+      <file>MediaSegmentStatus.xml</file>
       <file>MediaSource.xml</file>
       <file>StreamDevice.xml</file>
       <file>StreamMode.xml</file>
@@ -1524,13 +1647,14 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_add_incoming_video.xml</file>
       <file>ntg_calls.xml</file>
-      <file>ntg_calls_count.xml</file>
       <file>ntg_enable_g_lib_loop.xml</file>
-      <file>ntg_enable_h264_encoder.xml</file>
+      <file>ntg_get_connection_mode.xml</file>
       <file>ntg_get_media_devices.xml</file>
       <file>ntg_get_protocol.xml</file>
       <file>ntg_get_state.xml</file>
       <file>ntg_remove_incoming_video.xml</file>
+      <file>ntg_send_broadcast_part.xml</file>
+      <file>ntg_send_broadcast_timestamp.xml</file>
       <file>ntg_send_external_frame.xml</file>
       <file>ntg_send_signaling_data.xml</file>
     </group>
@@ -1550,6 +1674,7 @@
       <file>ntg_protocol_struct.xml</file>
       <file>ntg_remote_source_struct.xml</file>
       <file>ntg_rtc_server_struct.xml</file>
+      <file>ntg_segment_part_request_struct.xml</file>
       <file>ntg_ssrc_group_struct.xml</file>
       <file>ntg_video_description_struct.xml</file>
     </group>
@@ -1558,6 +1683,8 @@
       <file>ntg_connection_state_enum.xml</file>
       <file>ntg_log_level_enum.xml</file>
       <file>ntg_log_source_enum.xml</file>
+      <file>ntg_media_segment_quality_enum.xml</file>
+      <file>ntg_media_segment_status_enum.xml</file>
       <file>ntg_media_source_enum.xml</file>
       <file>ntg_stream_device_enum.xml</file>
       <file>ntg_stream_mode_enum.xml</file>
@@ -1643,6 +1770,7 @@
       <file>Frame Info.xml</file>
       <file>GroupCallConfig.xml</file>
       <file>GroupCallParticipant.xml</file>
+      <file>SourceInfo.xml</file>
       <file>StreamEnded.xml</file>
       <file>StreamFrames.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>

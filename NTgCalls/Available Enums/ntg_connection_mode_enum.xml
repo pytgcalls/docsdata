@@ -1,0 +1,20 @@
+<page>
+    <h1>ntg_connection_mode_enum</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef enum</shi> <ref src="enum"><sb>ntg_connection_mode_enum</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="CONNECTION_MODE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>NTG_CONNECTION_MODE_RTC</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="CONNECTION_MODE_RTC_DESC"/>
+            <category-title><ref><sb>NTG_CONNECTION_MODE_STREAM</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="CONNECTION_MODE_STREAM_DESC"/>
+            <category-title><ref><sb>NTG_CONNECTION_MODE_RTMP</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="CONNECTION_MODE_RTMP_DESC"/>
+        </subtext>
+    </subtext>
+</page>

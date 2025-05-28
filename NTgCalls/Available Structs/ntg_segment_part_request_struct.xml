@@ -1,0 +1,28 @@
+<page>
+    <h1>ntg_segment_part_request_struct</h1>
+    <br/>
+    <category-title noref="true">
+        <shi language="c">typedef struct</shi> <ref src="type"><sb>ntg_segment_part_request_struct</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="SEGMENT_PART_REQUEST_DESC"/>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><shi language="c">int</shi> <ref>segmentId</ref></category-title>
+            <config id="BROADCAST_SEGMENT_ID_DESC"/>
+            <category-title><shi language="c">int</shi> <ref>partId</ref></category-title>
+            <config id="BROADCAST_PART_ID_DESC"/>
+            <category-title><shi language="c">int</shi> <ref>limit</ref></category-title>
+            <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+            <category-title><shi language="c">int</shi> <ref>timestamp</ref></category-title>
+            <config id="BROADCAST_TIMESTAMP_DESC"/>
+            <category-title><shi language="cpp">bool</shi> <ref>qualityUpdate</ref></category-title>
+            <config id="QUALITY_UPDATE_DESC"/>
+            <category-title><shi language="c">int</shi> <ref>channelId</ref></category-title>
+            <config id="BROADCAST_CHANNEL_ID_DESC"/>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_media_segment_quality_enum">ntg_media_segment_quality_enum</docs-ref> <ref>quality</ref></category-title>
+            <subtext><config id="MEDIA_SEGMENT_QUALITY_DESC"/></subtext>
+        </subtext>
+    </subtext>
+</page>

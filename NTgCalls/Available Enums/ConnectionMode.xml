@@ -1,0 +1,20 @@
+<page>
+    <h1>ConnectionMode</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionMode</sb></ref>
+    </category-title>
+    <subtext>
+        <config id="CONNECTION_MODE_DESC"/>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>RTC</sb></ref> <shi>=</shi> 0</category-title>
+            <config id="CONNECTION_MODE_RTC_DESC"/>
+            <category-title><ref><sb>STREAM</sb></ref> <shi>=</shi> 1</category-title>
+            <config id="CONNECTION_MODE_STREAM_DESC"/>
+            <category-title><ref><sb>RTMP</sb></ref> <shi>=</shi> 2</category-title>
+            <config id="CONNECTION_MODE_RTMP_DESC"/>
+        </subtext>
+    </subtext>
+</page>

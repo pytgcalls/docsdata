@@ -20,7 +20,7 @@
             #include "ntgcalls.h"
 
             int main() {
-                uint32_t uid = ntg_init();
+                uintptr_t ptr = ntg_init();
 
                 ... // Your Code Here
                 return 0;
@@ -42,7 +42,7 @@
             #include "ntgcalls.h"
 
             int main() {
-                uint32_t uid = ntg_init();
+                uintptr_t ptr = ntg_init();
                 ... // Your Code Here
 
                 int result = ntg_destroy(uid);
@@ -68,8 +68,8 @@
             #include &lt;stdio.h&gt;
 
             int main() {
-                char version[8];
-                ntg_get_version(version, sizeof(version));
+                char* version;
+                ntg_get_version(&amp;version);
                 printf("NTgCalls Version: %s\n", version);
                 return 0;
             }
@@ -86,17 +86,8 @@
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
-                    <category-title><shi language="c">char*</shi> <ref>buffer</ref></category-title>
+                    <category-title><shi language="c">char**</shi> <ref>buffer</ref></category-title>
                     <subtext><text>A character buffer to store the version string.</text></subtext>
-
-                    <config id="ARG_BUF_SIZE"/>
-                </subtext>
-            </category>
-            <br/>
-            <category>
-                <pg-title>ERROR CODES</pg-title>
-                <subtext>
-                    <config id="SMALL_BUFF_EXCEPTION"/>
                 </subtext>
             </category>
         </subtext>

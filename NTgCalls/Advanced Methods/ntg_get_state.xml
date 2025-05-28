@@ -7,13 +7,13 @@
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
             ntg_media_state_struct buffer;
             // Initialize the async struct
             ntg_async_struct future;
-            ntg_get_state(uid, chatID, &amp;buffer, &amp;future);
+            ntg_get_state(ptr, chatID, &amp;buffer, &amp;future);
             // Wait for the async operation to complete and use
             // the buffer for EditGroupCallParticipant
             ...
@@ -31,7 +31,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
 
                 <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_state_struct">ntg_media_state_struct</docs-ref><shi language="c">*</shi> <ref><sb>mediaState</sb></ref></category-title>

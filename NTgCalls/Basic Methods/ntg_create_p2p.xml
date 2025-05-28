@@ -3,23 +3,19 @@
     <h1>ntg_create_p2p</h1>
     <config id="CREATE_P2P_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight language="c" mark="13-18">
+    <syntax-highlight language="c" mark="10-14">
         #include &lt;stdint.h&gt;
         #include "ntgcalls.h"
 
         int main() {
-            uint32_t uid = ntg_init();
+            uintptr_t ptr = ntg_init();
             ...
             int64_t chatID = ...; // Obtain the chat ID
-            ntg_media_description_struct desc = {
-                // Fill in media description fields
-            };
             ntg_async_struct future;
             // Initialize the async struct
             int result = ntg_create_p2p(
-                uid,
+                ptr,
                 chatID,
-                desc,
                 &amp;future
             );
             // Wait for the async operation to complete
@@ -37,9 +33,8 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <config id="ARG_C_UID"/>
+                <config id="ARG_C_PTR"/>
                 <config id="ARG_C_CHAT_ID"/>
-                <config id="ARG_MEDIA_C"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>
         </category>

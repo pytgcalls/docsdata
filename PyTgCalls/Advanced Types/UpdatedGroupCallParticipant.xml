@@ -10,6 +10,8 @@
         <pg-title>PROPERTIES</pg-title>
         <subtext>
             <config id="RET_INT_ID"/>
+            <category-title><ref><sb>action</sb></ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Available Enums/GroupCallParticipant Action">pytgcalls.GroupCallParticipant.Action</docs-ref></category-title>
+            <subtext><text>Current action of the participant.</text></subtext>
             <config id="ARG_PARTICIPANT"/>
         </subtext>
     </subtext>

@@ -142,16 +142,14 @@
                     await app.start()
                     await app.play(
                         -1001185324811,
-                        MediaStream(
-                            'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                        )
+                        'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
                     )
                     await idle()
             </syntax-highlight>
         </item>
         <item>
             Then, we tell asyncio to call <code>main()</code> in async mode
-            <syntax-highlight>asyncio.run(main())</syntax-highlight>
+            <syntax-highlight>asyncio.get_event_loop().run_until_complete(main())</syntax-highlight>
         </item>
     </list>
 </page>
