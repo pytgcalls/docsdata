@@ -15,7 +15,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Support for Large Group Calls:</b> PyTgCalls now supports group calls with up to 20 participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
+                <item><text><b>Support for Large Group Calls:</b> PyTgCalls now supports group calls with 20 or more participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
                 <item><text><b>RTMP Stream Integration:</b> You can now connect to RTMP streams and <sb>record</sb> them using the <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref> method. This enables streaming external RTMP content directly into your group calls.</text></item>
                 <item><text><b> Group Call Discarding Option:</b> The <code>close</code> parameter has been added to the <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref> method, allowing you to fully terminate a group call when it's no longer needed.</text></item>
                 <item><text><b>Enhanced Participant Caching:</b> The <docs-ref link="/PyTgCalls/Basic Methods/Get Participants">get_participants()</docs-ref> method now supports proper caching for clients using the <code>no_update</code> parameter, ensuring accurate participant lists without triggering unnecessary updates.</text></item>
