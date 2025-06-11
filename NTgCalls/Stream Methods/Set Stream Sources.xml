@@ -19,7 +19,7 @@
             StreamMode.CAPTURE,
             MediaDescription(
                 AudioDescription(
-                    input_mode=InputMode.File,
+                    media_source=MediaSource.File,
                     input="foxes.pcm",
                     sample_rate=96000,
                     bits_per_sample=16,

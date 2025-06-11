@@ -81,7 +81,7 @@
 
   <option id="NTG_STREAM_EXCEPTIONS">
     <category-title>exception <ref>ntgcalls.<sb>InvalidParams</sb></ref></category-title>
-    <subtext><text>This error occurs when attempting to send an invalid InputMode.</text></subtext>
+    <subtext><text>This error occurs when attempting to send an invalid MediaSource.</text></subtext>
 
     <category-title>exception <ref>ntgcalls.<sb>FileError</sb></ref></category-title>
     <config id="FILE_EXCEPTION_DESC"/>
