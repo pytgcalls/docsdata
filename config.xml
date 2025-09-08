@@ -748,12 +748,12 @@
 
   <option id="SEND_EXTERNAL_FRAME_DESC">
     <text>
-      This method allows sending an external video frame to the WebRTC connection.
+      This method allows sending an external audio or video frame to the WebRTC connection.
     </text>
   </option>
 
   <option id="SEND_EXTERNAL_FRAME_DESC2">
-    <text>Send an external video frame to the WebRTC connection.</text>
+    <text>Send an external audio or video frame to the WebRTC connection.</text>
   </option>
 
   <option id="SKIP_EXCHANGE_DESC">
