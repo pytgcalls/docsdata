@@ -19,7 +19,7 @@
                     from pytgcalls import filters
                     from pytgcalls.types import ChatUpdate
                     ...
-                    @pytgcalls.on_update(filters.chat_update(ChatUpdate.Status.INCOMING_CALL))
+                    @app.on_update(filters.chat_update(ChatUpdate.Status.INCOMING_CALL))
                     def on_incoming_call(client, update):
                         print("Incoming call!", update)
                 </syntax-highlight>
@@ -61,7 +61,7 @@
                         from pytgcalls import filters
                         from pytgcalls.types import ChatUpdate
                         ...
-                        @pytgcalls.on_update(~filters.chat_update(ChatUpdate.Status.LEFT_GROUP) &amp; filters.chat(1234567890))
+                        @app.on_update(~filters.chat_update(ChatUpdate.Status.LEFT_GROUP) &amp; filters.chat(1234567890))
                         def on_incoming_voice_call(client, update):
                             print("Left chat!", update)
                     </syntax-highlight>
@@ -74,7 +74,7 @@
                         from pytgcalls import filters
                         from pytgcalls.types import ChatUpdate
                         ...
-                        @pytgcalls.on_update(filters.chat(1234567890) &amp; (filters.chat_update(ChatUpdate.Status.LEFT_GROUP) | filters.chat_update(ChatUpdate.Status.INCOMING_CALL)))
+                        @app.on_update(filters.chat(1234567890) &amp; (filters.chat_update(ChatUpdate.Status.LEFT_GROUP) | filters.chat_update(ChatUpdate.Status.INCOMING_CALL)))
                         def on_incoming_voice_call(client, update):
                             print("Incoming voice call or left chat!", update)
                     </syntax-highlight>

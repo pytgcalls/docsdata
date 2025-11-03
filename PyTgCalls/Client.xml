@@ -35,13 +35,13 @@
             <category>
                 <pg-title>STATIC METHODS</pg-title>
                 <subtext>
-                    <category-title><shi>async</shi> <ref><sb>calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
+                    <category-title><shi>async</shi> <ref><sb>calls</sb></ref> <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
                     <config id="LIST_CALLS_DESC"/>
 
-                    <category-title><shi>async</shi> <ref><sb>group_calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
+                    <category-title><shi>async</shi> <ref><sb>group_calls</sb></ref> <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
                     <subtext><text>Get all group calls</text></subtext>
 
-                    <category-title><shi>async</shi> <ref><sb>private_calls</sb></ref> <shi>-> dict</shi>[<shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
+                    <category-title><shi>async</shi> <ref><sb>private_calls</sb></ref> <shi>-> dict</shi>[<shi>int</shi>, <docs-ref link="/PyTgCalls/Advanced Types/Call">Call</docs-ref>]</category-title>
                     <subtext><text>Get all private calls</text></subtext>
 
                     <category-title><ref><sb>cache_peer</sb></ref> <shi>-></shi> <config id="ARG_UNION_PEER"/></category-title>
