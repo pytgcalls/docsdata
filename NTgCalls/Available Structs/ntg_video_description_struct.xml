@@ -21,7 +21,7 @@
             <category-title><shi language="c">uint8_t</shi> <ref>fps</ref></category-title>
             <config id="VIDEO_FPS_DESC"/>
 
-            <category-title><shi language="c">bool</shi> <ref>keepOpen</ref></category-title>
+            <category-title><shi language="c++">bool</shi> <ref>keepOpen</ref></category-title>
             <config id="KEEP_OPEN_DESC"/>
         </subtext>
     </subtext>
