@@ -240,7 +240,7 @@
   </option>
 
   <option id="KEEP_OPEN_DESC">
-    <subtext><text>Whether to force the stream change or automatically detect it.</text></subtext>
+    <subtext><text>If set to true, the stream will be kept open and changes are detected automatically when the input differs from the previous one, otherwise if set to false, the stream change is always forced.</text></subtext>
   </option>
 
   <option id="FILE_EXCEPTION_DESC">
