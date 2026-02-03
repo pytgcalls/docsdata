@@ -18,6 +18,9 @@
             <config id="AUDIO_CHAN_DESC"/>
 
             <config id="ARG_INPUT_MEDIA"/>
+
+            <category-title><ref>keep_open</ref>: <shi>bool</shi></category-title>
+            <config id="KEEP_OPEN_DESC"/>
         </subtext>
     </subtext>
 </page>

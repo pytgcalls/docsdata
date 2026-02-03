@@ -3,6 +3,31 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgFeb26.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v2.2.10"
+            description="Enhanced Android Stability, Performance, and More!"
+            mainbg="#070d16"
+            version="2.2.10"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Stream Change Control:</b> Added <code>keep_open</code> parameter to <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> and <docs-ref link="/NTgCalls/Available Types/VideoDescription">VideoDescription</docs-ref>, allowing you to force stream changes or let the StreamManager automatically detect them.</text></item>
+                <item><text><b>JSON Performance Boost:</b> Replaced nlohmann JSON with Boost.JSON for improved parsing and serialization performance.</text></item>
+                <item><text><b>Android Builds Now Stable:</b> Addressed the experimental-relative-c++-abi-vtables issue on x86_64, making Android builds fully stable and production-ready.</text></item>
+                <item><text><b>Android Audio Improvements:</b> Now using Oboe for audio handling on Android, providing lower latency and better performance.</text></item>
+                <item><text><b>Linux Performance Upgrades:</b> Updated to the latest versions of libX11, FFmpeg, mesa, glib, boost and libwebrtc for improved stability and performance.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgMay25.png"
             minititle="MINOR UPDATE"
             bigtitle="PyTgCalls v2.2.X"

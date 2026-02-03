@@ -239,6 +239,10 @@
     <subtext><text>Frames per second (FPS) for video playback.</text></subtext>
   </option>
 
+  <option id="KEEP_OPEN_DESC">
+    <subtext><text>Whether to force the stream change or automatically detect it.</text></subtext>
+  </option>
+
   <option id="FILE_EXCEPTION_DESC">
     <subtext><text>The specified file does not exist.</text></subtext>
   </option>

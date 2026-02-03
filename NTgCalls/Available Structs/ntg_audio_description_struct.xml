@@ -17,6 +17,9 @@
 
             <category-title><shi language="c">uint8_t</shi> <ref>channelCount</ref></category-title>
             <config id="AUDIO_CHAN_DESC"/>
+
+            <category-title><shi language="c">bool</shi> <ref>keepOpen</ref></category-title>
+            <config id="KEEP_OPEN_DESC"/>
         </subtext>
     </subtext>
 </page>
