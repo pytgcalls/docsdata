@@ -5,10 +5,10 @@
         <banner
             imageurl="/src/assets/updates/PyTgFeb26.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v2.2.10"
+            bigtitle="PyTgCalls v2.2.11"
             description="Enhanced Android Stability, Performance, and More!"
             mainbg="#070d16"
-            version="2.2.10"
+            version="2.2.11"
             imagewidth="1920"
             imageheight="1080"
         />
