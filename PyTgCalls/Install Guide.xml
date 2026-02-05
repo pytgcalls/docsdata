@@ -1,14 +1,14 @@
 <page>
     <h1>Install Guide</h1>
     <text>
-        Being a modern Python library, <b>PyTgCalls</b> requires Python 3.9+ to be installed in your system.
+        Being a modern Python library, <b>PyTgCalls</b> requires Python 3.10+ to be installed in your system.
         We recommend using the latest versions of both Python 3 and pip.
     </text>
     <list>
         <item>Get Python 3 from the <a href="https://www.python.org/downloads/">Python website</a> or use your package manager.</item>
         <item>Get pip by following the instructions <a href="https://pip.pypa.io/en/latest/installing/">here</a>.</item>
     </list>
-    <alert type="important">PyTgCalls only supports <b>Python 3</b>, starting from version 3.9.</alert>
+    <alert type="important">PyTgCalls only supports <b>Python 3</b>, starting from version 3.10.</alert>
     <separator/>
     <h2>Install PyTgCalls</h2>
     <text>The easiest way to install and upgrade PyTgCalls to its latest stable version is by using pip:</text>
