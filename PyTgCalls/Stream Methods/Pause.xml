@@ -3,7 +3,7 @@
     <text>This method allows pausing the streaming file.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-12">
-        from pytgcalls import Client
+        from pytgcalls import PyTgCalls
         from pytgcalls import idle
         ...
 
