@@ -3,7 +3,7 @@
     <text>This method allows recording audio or video from a group call or a private call.</text>
     <h3>Example</h3>
     <syntax-highlight mark="10-13">
-        from pytgcalls import Client
+        from pytgcalls import PyTgCalls
         from pytgcalls import idle
         ...
 
