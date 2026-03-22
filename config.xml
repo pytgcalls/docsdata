@@ -1651,6 +1651,7 @@
     <group basepath="NTgCalls/Advanced Methods/">
       <file>ntg_add_incoming_video.xml</file>
       <file>ntg_calls.xml</file>
+      <file>ntg_cpu_usage.xml</file>
       <file>ntg_enable_g_lib_loop.xml</file>
       <file>ntg_get_connection_mode.xml</file>
       <file>ntg_get_media_devices.xml</file>
