@@ -9,7 +9,7 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo]</category-title>
+            <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo, <docs-ref link="/PyTgCalls/Available Enums/ExternalMedia">ExternalMedia</docs-ref>]</category-title>
             <subtext><text>The audio, video, image or media device path.</text></subtext>
 
             <config id="ARG_AUDIO_PARAMSv2"/>
