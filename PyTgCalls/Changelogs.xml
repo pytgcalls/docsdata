@@ -3,6 +3,42 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgMay26.png"
+            minititle="MINOR UPDATE"
+            bigtitle="PyTgCalls v2.3.0"
+            description="Free-Threading, Performances, Improved Stability and More!"
+            mainbg="#070d16"
+            version="2.3.0"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What's new?</h3>
+            <list>
+                <item><text><b>Performance &amp; Stability Boost:</b> Upgraded WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m149</a>) and updated to the latest versions of FFmpeg, boost, libX11, mesa, glib and pybind11 for improved stability and performance.</text></item>
+                <item><text><b>CPython Free-Threading:</b> Added support for CPython free-threaded builds, enabling GIL-free module execution for improved parallelism.</text></item>
+                <item><text><b>Android Tooling:</b> Upgraded Gradle and Android Gradle Plugin to the latest versions.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>Dropped support for <b>manylinux2014</b>, which also means the following systems are no longer supported:</text>
+                    <list>
+                        <item><text>CentOS 7</text></item>
+                        <item><text>RHEL 7</text></item>
+                        <item><text>Ubuntu 18.04</text></item>
+                        <item><text>Debian 10</text></item>
+                    </list>
+                    <text><i>This change is required to keep up with newer toolchains, libc versions and CI infrastructure.</i></text>
+                </item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgFeb26.png"
             minititle="MINOR UPDATE"
             bigtitle="PyTgCalls v2.2.11"
