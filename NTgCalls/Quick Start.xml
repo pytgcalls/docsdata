@@ -7,14 +7,15 @@
         However, if you fall into the aforementioned categories,
         you can find an example of usage with the various porting below.
     </text>
-    <h2>Recommended Bots by the Community</h2>
+    <h2>Recommended Projects by the Community</h2>
     <text>
-        Looking for real-world implementations? Below is a selection of bots actively maintained and recommended
+        Looking for real-world implementations? Below is a selection of projects actively maintained and recommended
         by the community, all using NTgCalls/Py-TgCalls under the hood. These can be a great source of inspiration or even
         a solid starting point for your own project.
     </text>
     <br/>
     <github-ref user="AshokShau" reponame="TgMusicBot"/>
+    <github-ref user="foobar26" reponame="tg2sip"/>
     <h2>Community and Official Libraries</h2>
     <text>
         In the following section, we present a comprehensive catalog of libraries,
@@ -23,6 +24,7 @@
     </text>
     <br/>
     <github-ref user="pytgcalls" reponame="pytgcalls"/>
+    <github-ref user="TakNone" reponame="phptgcalls"/>
     <github-ref user="roj1512" reponame="ntgcalls_deno"/>
     <github-ref user="YouKnow-sys" reponame="ntgcalls-rs"/>
     <h2>Enjoy the API</h2>
