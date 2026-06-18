@@ -1558,6 +1558,13 @@
       </category>
       <dsc>© 2020-2026 • PyTgCalls Foundation by Vrumger &amp; Laky64</dsc>
     </footer-links>
+    <sponsor href="https://t.me/VoipStoreBot?start=PYTG10">
+      <badge>Sponsored</badge>
+      <title>VoIPStore</title>
+      <description>SMS &amp; Accounts for all your needs. Best SMS verification on Telegram, cheap &amp; fast. 10% off on every top-up</description>
+      <button>Get 10% off</button>
+      <logo>/src/assets/sponsors/voipstore.png</logo>
+    </sponsor>
   </homepage-config>
 
   <files-list id="NTgCalls" description="A Native Implementation of Telegram Calls in a seamless way." basepath="NTgCalls/" defaultfile="Quick Start.xml">
