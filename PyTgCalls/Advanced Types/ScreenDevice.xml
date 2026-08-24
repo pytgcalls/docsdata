@@ -1,0 +1,18 @@
+<page>
+    <h1>ScreenDevice</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.media_devices.<sb>ScreenDevice</sb></ref>
+    </category-title>
+    <subtext>
+        <text>A screen or window the library can capture from.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref><sb>title</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Human readable name of the device.</text></subtext>
+            <category-title><ref><sb>metadata</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Identifier the library uses to open the device.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

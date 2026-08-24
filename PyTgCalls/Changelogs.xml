@@ -79,7 +79,7 @@
                 <item><text><b>Support for Large Group Calls:</b> PyTgCalls now supports group calls with 20 or more participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
                 <item><text><b>RTMP Stream Integration:</b> You can now connect to RTMP streams and <sb>record</sb> them using the <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref> method. This enables streaming external RTMP content directly into your group calls.</text></item>
                 <item><text><b> Group Call Discarding Option:</b> The <code>close</code> parameter has been added to the <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref> method, allowing you to fully terminate a group call when it's no longer needed.</text></item>
-                <item><text><b>Enhanced Participant Caching:</b> The <docs-ref link="/PyTgCalls/Basic Methods/Get Participants">get_participants()</docs-ref> method now supports proper caching for clients using the <code>no_update</code> parameter, ensuring accurate participant lists without triggering unnecessary updates.</text></item>
+                <item><text><b>Enhanced Participant Caching:</b> The <docs-ref link="/PyTgCalls/Advanced Methods/Get Participants">get_participants()</docs-ref> method now supports proper caching for clients using the <code>no_update</code> parameter, ensuring accurate participant lists without triggering unnecessary updates.</text></item>
                 <item><text><b>New ChatUpdate Event:</b> The <docs-ref link="/PyTgCalls/Advanced Types/ChatUpdate">ChatUpdate</docs-ref> event has been introduced to track changes such as busy call status. You can now use the <code>filters.chat_update(ChatUpdate.Status.BUSY_CALL)</code> filter to monitor these updates.</text></item>
                 <item><text><b>New Group Call Participant Event:</b> The <docs-ref link="/PyTgCalls/Advanced Types/UpdatedGroupCallParticipant">UpdatedGroupCallParticipant</docs-ref> event enables handling of actions like participants joining from another device or being kicked. Use <code>filters.call_participant(GroupCallParticipant.Action.KICKED)</code> to listen for such events.</text></item>
                 <item><text><b>Improved Audio/Video Encoding Performance:</b> Audio and video encoding performance has been significantly improved thanks to an optimized FFmpeg build. The latest version takes advantage of advanced CPU instruction sets like AVX2, resulting in faster processing and lower latency.</text></item>
@@ -268,7 +268,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Private Calls are Now Stable:</b> Easily make private calls, even for groups, with a single method—just use <docs-ref link="/PyTgCalls/Basic Methods/Play">play()</docs-ref>! Check out the example here: <a href="https://github.com/pytgcalls/pytgcalls/blob/master/example/p2p_example/example_p2p.py">Private Calls</a>.</text></item>
+                <item><text><b>Private Calls are Now Stable:</b> Easily make private calls, even for groups, with a single method—just use <docs-ref link="/PyTgCalls/Stream Methods/Play">play()</docs-ref>! Check out the example here: <a href="https://github.com/pytgcalls/pytgcalls/blob/master/example/p2p_example/example_p2p.py">Private Calls</a>.</text></item>
                 <item><text><b>Performance Boost:</b>  We're now running the latest WebRTC version (<a href="https://chromiumdash.appspot.com/branches">m128</a>), bringing key performance fixes. Plus, with the latest pybind11 update, issues with Python's garbage collection have been resolved for a smoother experience.</text></item>
                 <item><text><b>New "adjust_by_height" Feature:</b> Adjust video resolution by height instead of width, giving you more flexibility in how you manage your video streams. Learn more <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">here</docs-ref>.</text></item>
                 <item><text><b>New Event Handlers (remove_handler &amp; add_handler):</b> These methods allow you to register listeners for existing events just like the decorators in the library. Use them to handle events such as "stream ended" or "new user connected" within PyTgCalls. Find out more <docs-ref link="/PyTgCalls/Using Handlers">here</docs-ref>.</text></item>
@@ -297,7 +297,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Private Calls:</b> Now you can make private calls by just using a single method for also group calls, by using <docs-ref link="/PyTgCalls/Basic Methods/Play">play()</docs-ref>.</text></item>
+                <item><text><b>Private Calls:</b> Now you can make private calls by just using a single method for also group calls, by using <docs-ref link="/PyTgCalls/Stream Methods/Play">play()</docs-ref>.</text></item>
                 <item><text><b>Code Rework:</b> The code has been reworked to improve performance, stability and to make it more readable.</text></item>
                 <item><text><b>Async Support:</b> NTgCalls now supports asynchronous methods for improved performance.</text></item>
                 <item><text><b>Filters for Updates:</b> Added filters for updates to allow for more granular control over updates, <docs-ref link="/PyTgCalls/Filters">More Info</docs-ref>.</text></item>
@@ -523,7 +523,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, <docs-ref link="/PyTgCalls/Basic Methods/Play#Details">read here</docs-ref>.</text></item>
+                <item><text><b>AutoStart of Group Calls:</b> Now GroupCalls will be started automatically if they are not started, if you want to know how to disable it, <docs-ref link="/PyTgCalls/Stream Methods/Play#Details">read here</docs-ref>.</text></item>
                 <item>
                     <text><b>Unified Stream Design:</b> Now you can do whatever you want, streaming audio, video, both, recording the stream etc. with just one class!.</text>
                     <multisyntax as-blame="true">
@@ -654,7 +654,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Time Tracking:</b> Added the ability to determine the time of the currently playing audio/video. For more details, check <docs-ref link="/PyTgCalls/Stream Methods/Played Time">Played Time</docs-ref>.</text></item>
+                <item><text><b>Time Tracking:</b> Added the ability to determine the time of the currently playing audio/video. For more details, check <docs-ref link="/PyTgCalls/Stream Methods/Time">Played Time</docs-ref>.</text></item>
                 <item><text><b>New Errors:</b> Introduced two new errors, UnMuteNeeded and RTMPStreamNeeded.</text></item>
             </list>
             <h3 noref="true">Changes &amp; Bug Fixes</h3>

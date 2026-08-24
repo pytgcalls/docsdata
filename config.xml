@@ -2061,7 +2061,10 @@
       <file>Frame Info.xml</file>
       <file>GroupCallConfig.xml</file>
       <file>GroupCallParticipant.xml</file>
+      <file>InputDevice.xml</file>
+      <file>ScreenDevice.xml</file>
       <file>SourceInfo.xml</file>
+      <file>SpeakerDevice.xml</file>
       <file>StreamEnded.xml</file>
       <file>StreamFrames.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>
