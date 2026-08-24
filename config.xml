@@ -1,5 +1,5 @@
 <config>
-  <option id="NTGCALLS_VERSION">1.3.0</option>
+  <option id="NTGCALLS_VERSION">3.0.0b18</option>
   <option id="PYTGCALLS_VERSION">2.1.0</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
