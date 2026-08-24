@@ -36,7 +36,7 @@
                 <config id="ARG_C_CHAT_ID"/>
                 <category-title><shi language="c">char*</shi> <ref><sb>endpoint</sb></ref></category-title>
                 <config id="ENDPOINT_DESC"/>
-                <category-title><docs-ref link="/NTgCalls/Available Types/ntg_ssrc_group_struct">ntg_ssrc_group_struct</docs-ref><shi>*</shi> <ref><sb>ssrcGroups</sb></ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_ssrc_group_struct">ntg_ssrc_group_struct</docs-ref><shi>*</shi> <ref><sb>ssrcGroups</sb></ref></category-title>
                 <config id="SSRC_GROUPS_DESC"/>
                 <category-title><shi language="c">int</shi> <ref><sb>size</sb></ref></category-title>
                 <subtext><text>The size of the SSRC groups array.</text></subtext>

@@ -12,10 +12,10 @@
             <category-title><shi language="c">int64_t</shi> <sb><ref>chatID</ref></sb></category-title>
             <config id="CHAT_ID_DESC"/>
 
-            <category-title><docs-ref link="/NTgCalls/Available Types/ntg_stream_status_enum">ntg_stream_status_enum</docs-ref> <ref>playback</ref></category-title>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_status_enum">ntg_stream_status_enum</docs-ref> <ref>playback</ref></category-title>
             <config id="PLAYBACK_DESC"/>
 
-            <category-title><docs-ref link="/NTgCalls/Available Types/ntg_stream_status_enum">ntg_stream_status_enum</docs-ref> <ref>capture</ref></category-title>
+            <category-title><docs-ref link="/NTgCalls/Available Enums/ntg_stream_status_enum">ntg_stream_status_enum</docs-ref> <ref>capture</ref></category-title>
             <config id="CAPTURE_DESC"/>
         </subtext>
     </subtext>

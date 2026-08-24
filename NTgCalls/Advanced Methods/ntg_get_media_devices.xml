@@ -27,7 +27,7 @@
         <category>
             <pg-title>PARAMETERS</pg-title>
             <subtext>
-                <category-title><docs-ref link="/NTgCalls/Available Types/ntg_media_devices_struct">ntg_media_devices_struct</docs-ref><shi>*</shi> <ref><sb>buffer</sb></ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_media_devices_struct">ntg_media_devices_struct</docs-ref><shi>*</shi> <ref><sb>buffer</sb></ref></category-title>
                 <config id="MEDIA_DEVICES_DESC"/>
                 <config id="ARG_ASYNC_STRUCT"/>
             </subtext>

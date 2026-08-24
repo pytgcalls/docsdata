@@ -43,7 +43,7 @@
             <subtext>
                 <config id="ARG_C_PTR"/>
 
-                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_call_struct">ntg_call_struct</docs-ref><shi language="c">**</shi> <ref><sb>buffer</sb></ref></category-title>
+                <category-title><docs-ref link="/NTgCalls/Available Structs/ntg_call_info_struct">ntg_call_struct</docs-ref><shi language="c">**</shi> <ref><sb>buffer</sb></ref></category-title>
                 <subtext><text>The pointer to a buffer that will hold the retrieved group call information.</text></subtext>
 
                 <category-title><shi language="c">int*</shi> <ref><sb>size</sb></ref></category-title>
