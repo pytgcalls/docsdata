@@ -1,25 +1,108 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
-    <h1>Media Devices</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaDevices</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="MEDIA_DEVICES_DESC"/>
-        <br/>
-        <pg-title>PROPERTIES</pg-title>
+    <h1>MediaDevices</h1>
+    <config id="MEDIA_DEVICES_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaDevices</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>microphone</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
-            <config id="MICROPHONE_DEVICES_DESC"/>
-
-            <category-title><ref>speaker</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
-            <config id="SPEAKER_DEVICES_DESC"/>
-
-            <category-title><ref>camera</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
-            <config id="CAMERA_DEVICES_DESC"/>
-
-            <category-title><ref>screen</ref> <shi>-> list</shi>[<docs-ref link="/NTgCalls/Available Types/DeviceInfo">ntgcalls.DeviceInfo</docs-ref>]</category-title>
-            <config id="SCREEN_DEVICES_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>microphone</sb></ref>: <shi>list[ntgcalls.DeviceInfo]</shi></category-title>
+                    <config id="MICROPHONE_DESC"/>
+                    <category-title><ref><sb>speaker</sb></ref>: <shi>list[ntgcalls.DeviceInfo]</shi></category-title>
+                    <config id="SPEAKER_DESC"/>
+                    <category-title><ref><sb>camera</sb></ref>: <shi>list[ntgcalls.DeviceInfo]</shi></category-title>
+                    <config id="CAMERA_DESC"/>
+                    <category-title><ref><sb>screen</sb></ref>: <shi>list[ntgcalls.DeviceInfo]</shi></category-title>
+                    <config id="SCREEN_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_media_devices</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>microphone</sb></ref>: <shi language="c">ntg_device_info*</shi>, <ref><sb>microphone_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="MICROPHONE_DESC"/>
+                    <category-title><ref><sb>speaker</sb></ref>: <shi language="c">ntg_device_info*</shi>, <ref><sb>speaker_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="SPEAKER_DESC"/>
+                    <category-title><ref><sb>camera</sb></ref>: <shi language="c">ntg_device_info*</shi>, <ref><sb>camera_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="CAMERA_DESC"/>
+                    <category-title><ref><sb>screen</sb></ref>: <shi language="c">ntg_device_info*</shi>, <ref><sb>screen_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="SCREEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>MediaDevices</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>microphone</sb></ref>: <shi>DeviceInfo[]</shi></category-title>
+                    <config id="MICROPHONE_DESC"/>
+                    <category-title><ref><sb>speaker</sb></ref>: <shi>DeviceInfo[]</shi></category-title>
+                    <config id="SPEAKER_DESC"/>
+                    <category-title><ref><sb>camera</sb></ref>: <shi>DeviceInfo[]</shi></category-title>
+                    <config id="CAMERA_DESC"/>
+                    <category-title><ref><sb>screen</sb></ref>: <shi>DeviceInfo[]</shi></category-title>
+                    <config id="SCREEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>MediaDevices</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>java.util.List&lt;DeviceInfo&gt;</shi> <ref><sb>microphone</sb></ref></category-title>
+                    <config id="MICROPHONE_DESC"/>
+                    <category-title><shi>java.util.List&lt;DeviceInfo&gt;</shi> <ref><sb>speaker</sb></ref></category-title>
+                    <config id="SPEAKER_DESC"/>
+                    <category-title><shi>java.util.List&lt;DeviceInfo&gt;</shi> <ref><sb>camera</sb></ref></category-title>
+                    <config id="CAMERA_DESC"/>
+                    <category-title><shi>java.util.List&lt;DeviceInfo&gt;</shi> <ref><sb>screen</sb></ref></category-title>
+                    <config id="SCREEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>MediaDevices</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>microphone</sb></ref>: <shi>Vec&lt;DeviceInfo&gt;</shi></category-title>
+                    <config id="MICROPHONE_DESC"/>
+                    <category-title><ref><sb>speaker</sb></ref>: <shi>Vec&lt;DeviceInfo&gt;</shi></category-title>
+                    <config id="SPEAKER_DESC"/>
+                    <category-title><ref><sb>camera</sb></ref>: <shi>Vec&lt;DeviceInfo&gt;</shi></category-title>
+                    <config id="CAMERA_DESC"/>
+                    <category-title><ref><sb>screen</sb></ref>: <shi>Vec&lt;DeviceInfo&gt;</shi></category-title>
+                    <config id="SCREEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

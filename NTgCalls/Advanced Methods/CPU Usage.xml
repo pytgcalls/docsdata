@@ -1,0 +1,104 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>CPU Usage</h1>
+    <config id="CPU_USAGE_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+await app.cpu_usage()</syntax-highlight>
+        <syntax-highlight id="c" mark="5-8" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_cpu_usage(
+    handle,
+    &amp;out
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.cpuUsage();</syntax-highlight>
+        <syntax-highlight id="java" mark="5" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.cpuUsage();</syntax-highlight>
+        <syntax-highlight id="rust" mark="5" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.cpu_usage().await?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>cpu_usage</sb></ref>() <shi>-&gt; float</shi>
+        </category-title>
+        <subtext>
+            <config id="CPU_USAGE_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_cpu_usage</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CPU_USAGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>out</sb></ref>: <shi language="c">double*</shi></category-title>
+                    <config id="C_OUT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>cpuUsage</sb></ref>() <shi>: Promise&lt;number&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CPU_USAGE_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>double</shi> <ref src="method">NTgCalls.<sb>cpuUsage</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CPU_USAGE_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>cpu_usage</sb></ref>() <shi>-&gt; Result&lt;f64&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CPU_USAGE_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+</page>

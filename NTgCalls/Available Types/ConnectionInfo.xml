@@ -1,0 +1,88 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>ConnectionInfo</h1>
+    <config id="CONNECTION_INFO_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionInfo</sb></ref>()
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>state</sb></ref>: <shi>ntgcalls.ConnectionState</shi></category-title>
+                    <config id="CONNECTION_STATE_DESC"/>
+                    <category-title><ref><sb>kind</sb></ref>: <shi>ntgcalls.ConnectionKind</shi></category-title>
+                    <config id="CONNECTION_KIND_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_connection_info</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>state</sb></ref>: <shi language="c">ntg_connection_state</shi></category-title>
+                    <config id="CONNECTION_STATE_DESC"/>
+                    <category-title><ref><sb>kind</sb></ref>: <shi language="c">ntg_connection_kind</shi></category-title>
+                    <config id="CONNECTION_KIND_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>ConnectionInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>state</sb></ref>: <shi>ConnectionState</shi></category-title>
+                    <config id="CONNECTION_STATE_DESC"/>
+                    <category-title><ref><sb>kind</sb></ref>: <shi>ConnectionKind</shi></category-title>
+                    <config id="CONNECTION_KIND_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>ConnectionInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>ConnectionState</shi> <ref><sb>state</sb></ref></category-title>
+                    <config id="CONNECTION_STATE_DESC"/>
+                    <category-title><shi>ConnectionKind</shi> <ref><sb>kind</sb></ref></category-title>
+                    <config id="CONNECTION_KIND_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>ConnectionInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>state</sb></ref>: <shi>ConnectionState</shi></category-title>
+                    <config id="CONNECTION_STATE_DESC"/>
+                    <category-title><ref><sb>kind</sb></ref>: <shi>ConnectionKind</shi></category-title>
+                    <config id="CONNECTION_KIND_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

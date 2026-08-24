@@ -1,0 +1,155 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Finish Subchain Request</h1>
+    <config id="FINISH_SUBCHAIN_REQUEST_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-8" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+await app.finish_subchain_request(
+    chat_id,
+    subchain
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-9" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_finish_subchain_request(
+    handle,
+    chat_id,
+    subchain
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-8" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.finishSubchainRequest(
+    chatId,
+    subchain
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-8" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.finishSubchainRequest(
+    chatId,
+    subchain
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-8" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.finish_subchain_request(
+    chat_id,
+    subchain
+).await?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>finish_subchain_request</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="FINISH_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>int</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_finish_subchain_request</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="FINISH_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>finishSubchainRequest</sb></ref>() <shi>: Promise&lt;void&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="FINISH_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>number</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>finishSubchainRequest</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="FINISH_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>subchain</sb></ref></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>finish_subchain_request</sb></ref>() <shi>-&gt; Result&lt;()&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="FINISH_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

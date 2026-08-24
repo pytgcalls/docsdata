@@ -1,34 +1,168 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>RTCServer</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>RTCServer</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="RTC_SERVER_DESC"/>
-        <br/>
-        <pg-title>PARAMETERS</pg-title>
+    <config id="RTC_SERVER_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>RTCServer</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>id</ref>: <shi>int</shi></category-title>
-            <config id="RTC_ID_DESC"/>
-            <category-title><ref>ipv4</ref>: <shi>str</shi></category-title>
-            <config id="RTC_IPV4_DESC"/>
-            <category-title><ref>ipv6</ref>: <shi>str</shi></category-title>
-            <config id="RTC_IPV6_DESC"/>
-            <category-title><ref>username</ref>: Optional[<shi>str</shi>]</category-title>
-            <config id="RTC_USERNAME_DESC"/>
-            <category-title><ref>password</ref>: Optional[<shi>str</shi>]</category-title>
-            <config id="RTC_PASSWORD_DESC"/>
-            <category-title><ref>port</ref>: <shi>int</shi></category-title>
-            <config id="RTC_PORT_DESC"/>
-            <category-title><ref>turn</ref>: <shi>bool</shi></category-title>
-            <config id="RTC_TURN_DESC"/>
-            <category-title><ref>stun</ref>: <shi>bool</shi></category-title>
-            <config id="RTC_STUN_DESC"/>
-            <category-title><ref>tcp</ref>: <shi>bool</shi></category-title>
-            <config id="RTC_TCP_DESC"/>
-            <category-title><ref>peer_tag</ref>: Optional[<shi>bytes</shi>]</category-title>
-            <config id="RTC_PEER_TAG_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="RTC_ID_DESC"/>
+                    <category-title><ref><sb>ipv4</sb></ref>: <shi>str</shi></category-title>
+                    <config id="RTC_IPV4_DESC"/>
+                    <category-title><ref><sb>ipv6</sb></ref>: <shi>str</shi></category-title>
+                    <config id="RTC_IPV6_DESC"/>
+                    <category-title><ref><sb>port</sb></ref>: <shi>int</shi></category-title>
+                    <config id="RTC_PORT_DESC"/>
+                    <category-title><ref><sb>username</sb></ref>: <shi>Optional</shi>[<shi>str</shi>]</category-title>
+                    <config id="RTC_USERNAME_DESC"/>
+                    <category-title><ref><sb>password</sb></ref>: <shi>Optional</shi>[<shi>str</shi>]</category-title>
+                    <config id="RTC_PASSWORD_DESC"/>
+                    <category-title><ref><sb>turn</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_TURN_DESC"/>
+                    <category-title><ref><sb>stun</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_STUN_DESC"/>
+                    <category-title><ref><sb>tcp</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_TCP_DESC"/>
+                    <category-title><ref><sb>peer_tag</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
+                    <config id="RTC_PEER_TAG_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_rtc_server</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>id</sb></ref>: <shi language="c">uint64_t</shi></category-title>
+                    <config id="RTC_ID_DESC"/>
+                    <category-title><ref><sb>ipv4</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="RTC_IPV4_DESC"/>
+                    <category-title><ref><sb>ipv6</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="RTC_IPV6_DESC"/>
+                    <category-title><ref><sb>port</sb></ref>: <shi language="c">uint16_t</shi></category-title>
+                    <config id="RTC_PORT_DESC"/>
+                    <category-title><ref><sb>username</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="RTC_USERNAME_DESC"/>
+                    <category-title><ref><sb>password</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="RTC_PASSWORD_DESC"/>
+                    <category-title><ref><sb>turn</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="RTC_TURN_DESC"/>
+                    <category-title><ref><sb>stun</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="RTC_STUN_DESC"/>
+                    <category-title><ref><sb>tcp</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="RTC_TCP_DESC"/>
+                    <category-title><ref><sb>peer_tag</sb></ref>: <shi language="c">uint8_t*</shi>, <ref><sb>peer_tag_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="RTC_PEER_TAG_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>RTCServer</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>id</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="RTC_ID_DESC"/>
+                    <category-title><ref><sb>ipv4</sb></ref>: <shi>string</shi></category-title>
+                    <config id="RTC_IPV4_DESC"/>
+                    <category-title><ref><sb>ipv6</sb></ref>: <shi>string</shi></category-title>
+                    <config id="RTC_IPV6_DESC"/>
+                    <category-title><ref><sb>port</sb></ref>: <shi>number</shi></category-title>
+                    <config id="RTC_PORT_DESC"/>
+                    <category-title><ref><sb>username</sb></ref><shi>?</shi>: <shi>string</shi></category-title>
+                    <config id="RTC_USERNAME_DESC"/>
+                    <category-title><ref><sb>password</sb></ref><shi>?</shi>: <shi>string</shi></category-title>
+                    <config id="RTC_PASSWORD_DESC"/>
+                    <category-title><ref><sb>turn</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="RTC_TURN_DESC"/>
+                    <category-title><ref><sb>stun</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="RTC_STUN_DESC"/>
+                    <category-title><ref><sb>tcp</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="RTC_TCP_DESC"/>
+                    <category-title><ref><sb>peerTag</sb></ref><shi>?</shi>: <shi>Buffer</shi></category-title>
+                    <config id="RTC_PEER_TAG_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>RTCServer</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>id</sb></ref></category-title>
+                    <config id="RTC_ID_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>ipv4</sb></ref></category-title>
+                    <config id="RTC_IPV4_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>ipv6</sb></ref></category-title>
+                    <config id="RTC_IPV6_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>port</sb></ref></category-title>
+                    <config id="RTC_PORT_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>username</sb></ref></category-title>
+                    <config id="RTC_USERNAME_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>password</sb></ref></category-title>
+                    <config id="RTC_PASSWORD_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>turn</sb></ref></category-title>
+                    <config id="RTC_TURN_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>stun</sb></ref></category-title>
+                    <config id="RTC_STUN_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>tcp</sb></ref></category-title>
+                    <config id="RTC_TCP_DESC"/>
+                    <category-title><shi>byte[]</shi> <ref><sb>peer_tag</sb></ref></category-title>
+                    <config id="RTC_PEER_TAG_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>RTCServer</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>id</sb></ref>: <shi>u64</shi></category-title>
+                    <config id="RTC_ID_DESC"/>
+                    <category-title><ref><sb>ipv4</sb></ref>: <shi>String</shi></category-title>
+                    <config id="RTC_IPV4_DESC"/>
+                    <category-title><ref><sb>ipv6</sb></ref>: <shi>String</shi></category-title>
+                    <config id="RTC_IPV6_DESC"/>
+                    <category-title><ref><sb>port</sb></ref>: <shi>u16</shi></category-title>
+                    <config id="RTC_PORT_DESC"/>
+                    <category-title><ref><sb>username</sb></ref>: <shi>Option&lt;String&gt;</shi></category-title>
+                    <config id="RTC_USERNAME_DESC"/>
+                    <category-title><ref><sb>password</sb></ref>: <shi>Option&lt;String&gt;</shi></category-title>
+                    <config id="RTC_PASSWORD_DESC"/>
+                    <category-title><ref><sb>turn</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_TURN_DESC"/>
+                    <category-title><ref><sb>stun</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_STUN_DESC"/>
+                    <category-title><ref><sb>tcp</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="RTC_TCP_DESC"/>
+                    <category-title><ref><sb>peer_tag</sb></ref>: <shi>Option&lt;Vec&lt;u8&gt;&gt;</shi></category-title>
+                    <config id="RTC_PEER_TAG_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

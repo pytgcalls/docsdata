@@ -1,19 +1,78 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>StreamMode</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>StreamMode</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="STREAM_MODE_DESC"/>
-        <br/>
-        <pg-title>ENUMERATION MEMBERS</pg-title>
+    <config id="STREAM_MODE_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>StreamMode</sb></ref>
+        </category-title>
         <subtext>
-            <category-title><ref><sb>CAPTURE</sb></ref> <shi>=</shi> 0</category-title>
-            <config id="MODE_CAPTURE_DESC"/>
-
-            <category-title><ref><sb>PLAYBACK</sb></ref> <shi>=</shi> 1</category-title>
-            <config id="MODE_PLAYBACK_DESC"/>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamMode.<sb>CAPTURE</sb></ref></category-title>
+                <config id="MODE_CAPTURE_DESC"/>
+                <category-title><ref>StreamMode.<sb>PLAYBACK</sb></ref></category-title>
+                <config id="MODE_PLAYBACK_DESC"/>
+            </subtext>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_stream_mode</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_STREAM_MODE_CAPTURE</sb></ref></category-title>
+                <config id="MODE_CAPTURE_DESC"/>
+                <category-title><ref><sb>NTG_STREAM_MODE_PLAYBACK</sb></ref></category-title>
+                <config id="MODE_PLAYBACK_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>StreamMode</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamMode.<sb>CAPTURE</sb></ref></category-title>
+                <config id="MODE_CAPTURE_DESC"/>
+                <category-title><ref>StreamMode.<sb>PLAYBACK</sb></ref></category-title>
+                <config id="MODE_PLAYBACK_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>StreamMode</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamMode.<sb>CAPTURE</sb></ref></category-title>
+                <config id="MODE_CAPTURE_DESC"/>
+                <category-title><ref>StreamMode.<sb>PLAYBACK</sb></ref></category-title>
+                <config id="MODE_PLAYBACK_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>StreamMode</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamMode::<sb>Capture</sb></ref></category-title>
+                <config id="MODE_CAPTURE_DESC"/>
+                <category-title><ref>StreamMode::<sb>Playback</sb></ref></category-title>
+                <config id="MODE_PLAYBACK_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
 </page>

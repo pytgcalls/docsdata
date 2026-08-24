@@ -1,24 +1,118 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Protocol</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class"><sb>Protocol</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="PROTOCOL_DESC"/>
-        <br/>
-        <pg-title>PROPERTIES</pg-title>
+    <config id="PROTOCOL_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>Protocol</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>min_layer</ref> <shi>-> int</shi></category-title>
-            <config id="MIN_LAYER_DESC"/>
-            <category-title><ref>max_layer</ref> <shi>-> int</shi></category-title>
-            <config id="MAX_LAYER_DESC"/>
-            <category-title><ref>udp_p2p</ref> <shi>-> bool</shi></category-title>
-            <config id="UDP_P2P_DESC"/>
-            <category-title><ref>udp_reflector</ref> <shi>-> bool</shi></category-title>
-            <config id="UDP_REFLECTOR_DESC"/>
-            <category-title><ref>library_versions</ref> <shi>-> list</shi>[<shi>str</shi>]</category-title>
-            <config id="LIBRARY_VERSIONS_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>min_layer</sb></ref>: <shi>int</shi></category-title>
+                    <config id="MIN_LAYER_DESC"/>
+                    <category-title><ref><sb>max_layer</sb></ref>: <shi>int</shi></category-title>
+                    <config id="MAX_LAYER_DESC"/>
+                    <category-title><ref><sb>udp_p2p</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="UDP_P2P_DESC"/>
+                    <category-title><ref><sb>udp_reflector</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="UDP_REFLECTOR_DESC"/>
+                    <category-title><ref><sb>library_versions</sb></ref>: <shi>list[str]</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_protocol</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>min_layer</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="MIN_LAYER_DESC"/>
+                    <category-title><ref><sb>max_layer</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="MAX_LAYER_DESC"/>
+                    <category-title><ref><sb>udp_p2p</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="UDP_P2P_DESC"/>
+                    <category-title><ref><sb>udp_reflector</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="UDP_REFLECTOR_DESC"/>
+                    <category-title><ref><sb>library_versions</sb></ref>: <shi language="c">char**</shi>, <ref><sb>library_versions_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>Protocol</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>minLayer</sb></ref>: <shi>number</shi></category-title>
+                    <config id="MIN_LAYER_DESC"/>
+                    <category-title><ref><sb>maxLayer</sb></ref>: <shi>number</shi></category-title>
+                    <config id="MAX_LAYER_DESC"/>
+                    <category-title><ref><sb>udpP2p</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="UDP_P2P_DESC"/>
+                    <category-title><ref><sb>udpReflector</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="UDP_REFLECTOR_DESC"/>
+                    <category-title><ref><sb>libraryVersions</sb></ref>: <shi>string[]</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>Protocol</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>int</shi> <ref><sb>min_layer</sb></ref></category-title>
+                    <config id="MIN_LAYER_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>max_layer</sb></ref></category-title>
+                    <config id="MAX_LAYER_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>udp_p2p</sb></ref></category-title>
+                    <config id="UDP_P2P_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>udp_reflector</sb></ref></category-title>
+                    <config id="UDP_REFLECTOR_DESC"/>
+                    <category-title><shi>java.util.List&lt;String&gt;</shi> <ref><sb>library_versions</sb></ref></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>Protocol</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>min_layer</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="MIN_LAYER_DESC"/>
+                    <category-title><ref><sb>max_layer</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="MAX_LAYER_DESC"/>
+                    <category-title><ref><sb>udp_p2p</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="UDP_P2P_DESC"/>
+                    <category-title><ref><sb>udp_reflector</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="UDP_REFLECTOR_DESC"/>
+                    <category-title><ref><sb>library_versions</sb></ref>: <shi>Vec&lt;String&gt;</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

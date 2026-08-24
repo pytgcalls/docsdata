@@ -1,0 +1,98 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>SubchainRequest</h1>
+    <config id="SUBCHAIN_REQUEST_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>SubchainRequest</sb></ref>()
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>int</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>int</shi></category-title>
+                    <config id="HEIGHT_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>int</shi></category-title>
+                    <config id="LIMIT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_subchain_request</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="HEIGHT_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="LIMIT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>SubchainRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>number</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>number</shi></category-title>
+                    <config id="HEIGHT_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>number</shi></category-title>
+                    <config id="LIMIT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>SubchainRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>int</shi> <ref><sb>subchain</sb></ref></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>height</sb></ref></category-title>
+                    <config id="HEIGHT_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>limit</sb></ref></category-title>
+                    <config id="LIMIT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>SubchainRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>subchain</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="SUBCHAIN_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="HEIGHT_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="LIMIT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

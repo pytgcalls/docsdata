@@ -1,14 +1,18 @@
 <page>
     <h1>Introduction</h1>
     <text>
-        Being a modern library, <b>NTgCalls</b> requires CMake 3.31+ to be built on your system,
-        on Linux is required at least CLang 20+, libasound2 and libpulse-dev.
-        We recommend using the latest versions of both CMake and CLang.
+        Being a modern library, <b>NTgCalls</b> requires CMake 3.27+ and Python 3.10+ to be built on your system.
+        On Linux it also needs libasound2 and libpulse-dev. We recommend using the latest version of CMake.
     </text>
     <alert type="important">
-        Before building NTgCalls, check for pre-compiled shared libs on <a href="https://github.com/pytgcalls/ntgcalls/releases">GitHub Releases</a> or
-        Python Bindings from <a href="https://pypi.org/project/ntgcalls/">PyPI</a>.
+        Before building NTgCalls, check for pre-compiled shared libs on <a href="https://github.com/pytgcalls/ntgcalls/releases">GitHub Releases</a>,
+        Python bindings on <a href="https://pypi.org/project/ntgcalls/">PyPI</a>, the Node.js package on <a href="https://www.npmjs.com/package/ntgcalls">npm</a> or
+        the crate on <a href="https://crates.io/crates/ntgcalls">crates.io</a>.
         Building from source may be necessary if pre-compiled packages are not available.
+    </alert>
+    <alert type="note">
+        On Linux x86_64, macOS and Android the build downloads its own Clang toolchain, so there is
+        nothing to install by hand. Linux ARM64 is the only platform that uses the system compiler.
     </alert>
     <separator/>
     <h1>Installing Prerequisites</h1>
@@ -30,9 +34,8 @@
             </item>
             <item>
                 <text>
-                    <b>Build Essential, Clang 20 and etc:</b><br/>
-                    This section provides instructions on how to install four specific packages:
-                    build-essential, curl and Clang version 20. Use the following command:
+                    <b>Install the build dependencies:</b><br/>
+                    On ARM64 the toolchain is not downloaded, so Clang has to come from the system:
                 </text>
                 <multisyntax id="os_requirements">
                     <tabs>
@@ -44,7 +47,7 @@
                     </syntax-highlight>
                     <syntax-highlight language="bash" id="arm">
                         $ sudo apt install libx11-dev build-essential curl libasound2-dev libpulse-dev
-                        $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 20
+                        $ curl -s https://apt.llvm.org/llvm.sh | sudo bash -s -- 22
                     </syntax-highlight>
                 </multisyntax>
             </item>
@@ -111,7 +114,7 @@
             <item>
                 <text>
                     <b>Change to the Directory Where You Want to Clone the Repo:</b><br/>
-                    Navigate to the directory where you want to store the NTgCalls source code. You can use the `cd` command to change directories.
+                    Navigate to the directory where you want to store the NTgCalls source code. You can use the <code>cd</code> command to change directories.
                 </text>
                 <syntax-highlight language="bash">
                     $ cd /path/to/your/directory
@@ -129,120 +132,85 @@
         </list>
         <h2>Compilation</h2>
         <text>
-            Now that you have successfully installed all the required prerequisites for NTgCalls,
-            it's time to build the library.
-            Follow these steps to compile NTgCalls on your system.
+            Every binding is built through the same entry point, <code>setup.py build_lib</code>, which
+            takes the target you want and reads how to build it from that target's own configuration.
+            Run every command from the root directory of the project.
         </text>
         <alert type="important">
-            It's essential to have Python 3.10+ installed on your server.
+            It's essential to have Python 3.10+ installed on your system.
         </alert>
         <subtext>
-            <h3>Building Shared Library</h3>
+            <h3>Shared Library</h3>
             <text>
-                For developers looking to use NTgCalls with C and C++, we provide C Bindings.
-                Follow these steps to compile NTgCalls with C Bindings in either Release or Debug mode:
+                For developers looking to use NTgCalls with C and C++, we provide C bindings.
+                This is the default target, so it needs no <code>--target</code>:
             </text>
-            <list style="numbers">
-                <item>
-                    <text>
-                        <b>Change Directory:</b><br/>
-                        Navigate to the root directory of the NTgCalls project:
-                    </text>
-                    <syntax-highlight language="bash">
-                        $ cd /path/to/ntgcalls
-                    </syntax-highlight>
-                </item>
-                <item>
-                    <text>
-                        <b>Generate Library:</b><br/>
-                        Run the following command to generate the libraries:
-                    </text>
-                    <multisyntax id="build_type">
-                        <tabs>
-                            <tab id="debug">Debug</tab>
-                            <tab id="release">Release</tab>
-                        </tabs>
-                        <syntax-highlight language="bash" id="debug">
-                            # Shared
-                            $ python3 setup.py build_lib --debug
-                            # Static
-                            $ python3 setup.py build_lib --debug --static
-                        </syntax-highlight>
-                        <syntax-highlight language="bash" id="release">
-                            # Shared
-                            $ python3 setup.py build_lib
-                            # Static
-                            $ python3 setup.py build_lib --static
-                        </syntax-highlight>
-                    </multisyntax>
-                </item>
-            </list>
+            <multisyntax id="build_type">
+                <tabs>
+                    <tab id="shared">Shared</tab>
+                    <tab id="static">Static</tab>
+                </tabs>
+                <syntax-highlight language="bash" id="shared">
+                    $ python3 setup.py build_lib
+                </syntax-highlight>
+                <syntax-highlight language="bash" id="static">
+                    $ python3 setup.py build_lib --static
+                </syntax-highlight>
+            </multisyntax>
+            <text>
+                The libraries and the generated <code>ntgcalls.h</code> are written to
+                <code>shared-output</code> or <code>static-output</code>.
+            </text>
             <br/>
-            <h3>Building Python Bindings</h3>
+            <h3>Python Bindings</h3>
             <text>
-                NTgCalls offers Python Bindings, facilitating seamless integration with Python.
-                Follow these steps to compile NTgCalls with Python Bindings:
+                The Python bindings are installed like any other package, and the extension is
+                compiled as part of the install:
             </text>
-            <list style="numbers">
-                <item>
-                    <text>
-                        <b>Change Directory:</b><br/>
-                        Navigate to the root directory of the NTgCalls project:
-                    </text>
-                    <syntax-highlight language="bash">
-                        $ cd /path/to/ntgcalls
-                    </syntax-highlight>
-                </item>
-                <item>
-                    <text>
-                        <b>Install Python Bindings:</b><br/>
-                        Run the following command to install the Python Bindings:
-                    </text>
-                    <syntax-highlight language="bash">
-                        $ pip3 install . -U
-                    </syntax-highlight>
-                </item>
-            </list>
+            <syntax-highlight language="bash">
+                $ pip3 install . -U
+            </syntax-highlight>
             <br/>
-            <h3>Building Java for Android Bindings</h3>
+            <h3>Node.js Bindings</h3>
             <text>
-                NTgCalls offers Java for Android Bindings, facilitating seamless integration with Java for Android.
-                Follow these steps to compile NTgCalls with Java for Android Bindings:
+                The Node.js addon is built through the same command, and lands in
+                <code>targets/node/build/Release</code>:
+            </text>
+            <syntax-highlight language="bash">
+                $ python3 setup.py build_lib --target=node
+            </syntax-highlight>
+            <br/>
+            <h3>Rust Crate</h3>
+            <text>
+                The crate links against the C shared library. Build it once, then point the crate at
+                the result through <code>NTGCALLS_LIB_DIR</code>, otherwise the build script downloads
+                the matching release from GitHub:
+            </text>
+            <syntax-highlight language="bash">
+                $ python3 setup.py build_lib --static
+                $ NTGCALLS_LIB_DIR=$PWD/static-output/lib cargo build --manifest-path targets/rust/Cargo.toml
+            </syntax-highlight>
+            <br/>
+            <h3>Java for Android Bindings</h3>
+            <text>
+                The Android target builds the native libraries for all four ABIs, then Gradle packs
+                them into the archive:
             </text>
             <list style="numbers">
                 <item>
                     <text>
-                        <b>Change Directory:</b><br/>
-                        Navigate to the root directory of the NTgCalls project:
+                        <b>Generate the .so libraries for the Android platform:</b>
                     </text>
                     <syntax-highlight language="bash">
-                        $ cd /path/to/ntgcalls
+                        $ python3 setup.py build_lib --target=android
                     </syntax-highlight>
                 </item>
                 <item>
                     <text>
-                        <b>Generate .so libraries for the Android platform:</b><br/>
-                        Run the following command to generate the .so libraries for the Android platform:
+                        <b>Build the Android project:</b>
                     </text>
                     <syntax-highlight language="bash">
-                        $ python3 setup.py build_lib --android
-                    </syntax-highlight>
-                </item>
-                <item>
-                    <text>
-                        <b>Enter in the Android directory:</b><br/>
-                        Navigate to the Android directory of the NTgCalls project:
-                    </text>
-                    <syntax-highlight language="bash">
-                        $ cd android
-                    </syntax-highlight>
-                </item>
-                <item>
-                    <text>
-                        <b>Build the Android project:</b><br/>
-                        Run the following command to build the Android project:
-                    </text>
-                    <syntax-highlight language="bash">
+                        $ cd targets/android
                         $ ./gradlew build assembleRelease
                     </syntax-highlight>
                 </item>
@@ -252,10 +220,26 @@
                         Copy the generated .aar file to your desired directory:
                     </text>
                     <syntax-highlight language="bash">
-                        $ cp build/outputs/aar/ntgcalls-release.aar /path/to/your/directory
+                        $ cp app/build/outputs/aar/app-release.aar /path/to/your/directory
                     </syntax-highlight>
                 </item>
             </list>
+            <br/>
+            <h3>Other Options</h3>
+            <text>
+                <code>build_lib</code> also accepts <code>--no-preserve-cache</code> to drop the build
+                directory once it is done, and <code>--defines=key=value;key2=value2</code> to
+                override any substitution the target configuration uses.
+            </text>
+            <text>
+                Two more commands are available: <code>list_targets</code> prints the targets that can
+                be built, and <code>generate</code> writes the language-agnostic schema every binding
+                and the documentation are generated from, without building anything.
+            </text>
+            <syntax-highlight language="bash">
+                $ python3 setup.py list_targets
+                $ python3 setup.py generate
+            </syntax-highlight>
         </subtext>
     </subtext>
 </page>

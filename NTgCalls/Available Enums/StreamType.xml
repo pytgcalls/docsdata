@@ -1,19 +1,78 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>StreamType</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>StreamType</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="STREAM_TYPE_DESC"/>
-        <br/>
-        <pg-title>ENUMERATION MEMBERS</pg-title>
+    <config id="STREAM_TYPE_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>StreamType</sb></ref>
+        </category-title>
         <subtext>
-            <category-title><ref><sb>AUDIO</sb></ref> <shi>=</shi> 0</category-title>
-            <config id="TYPE_AUDIO_DESC"/>
-
-            <category-title><ref><sb>VIDEO</sb></ref> <shi>=</shi> 1</category-title>
-            <config id="TYPE_VIDEO_DESC"/>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamType.<sb>AUDIO</sb></ref></category-title>
+                <config id="TYPE_AUDIO_DESC"/>
+                <category-title><ref>StreamType.<sb>VIDEO</sb></ref></category-title>
+                <config id="TYPE_VIDEO_DESC"/>
+            </subtext>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_stream_type</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_STREAM_TYPE_AUDIO</sb></ref></category-title>
+                <config id="TYPE_AUDIO_DESC"/>
+                <category-title><ref><sb>NTG_STREAM_TYPE_VIDEO</sb></ref></category-title>
+                <config id="TYPE_VIDEO_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>StreamType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamType.<sb>AUDIO</sb></ref></category-title>
+                <config id="TYPE_AUDIO_DESC"/>
+                <category-title><ref>StreamType.<sb>VIDEO</sb></ref></category-title>
+                <config id="TYPE_VIDEO_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>StreamType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamType.<sb>AUDIO</sb></ref></category-title>
+                <config id="TYPE_AUDIO_DESC"/>
+                <category-title><ref>StreamType.<sb>VIDEO</sb></ref></category-title>
+                <config id="TYPE_VIDEO_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>StreamType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>StreamType::<sb>Audio</sb></ref></category-title>
+                <config id="TYPE_AUDIO_DESC"/>
+                <category-title><ref>StreamType::<sb>Video</sb></ref></category-title>
+                <config id="TYPE_VIDEO_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
 </page>
