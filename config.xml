@@ -3,6 +3,12 @@
   <option id="PYTGCALLS_VERSION">2.1.0</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
+  <!--DOCUMENTATION VERSIONS - "ref" is the git ref of this repository-->
+  <versions>
+    <version ref="master" default="true" description="Documentation of the latest stable release">Stable</version>
+    <version ref="dev" description="Documentation of the upcoming release">Beta</version>
+  </versions>
+
   <!--REDIRECTS - they are case-insensitive -->
   <redirects>
     <redirect path="/changelog">/PyTgCalls/Changelogs</redirect>
