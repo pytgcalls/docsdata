@@ -50,34 +50,9 @@
     <subtext><text>You cannot edit a group call that hasn't been initiated.</text></subtext>
   </option>
 
-  <option id="BASE_SYNC_C_EXCEPTION">
-    <category-title><ref><sb><shi language="c">#NTG_INVALID_UID</shi></sb></ref> <shi>-2</shi></category-title>
-    <subtext><text>The provided UID is invalid.</text></subtext>
-  </option>
-
   <option id="BASE_C_EXCEPTIONS">
     <category-title><ref><sb><shi language="c">#NTG_UNKNOWN_EXCEPTION</shi></sb></ref> <shi>-1</shi></category-title>
     <subtext><text>An unknown exception occurred.</text></subtext>
-  </option>
-
-  <option id="BASE_CONNECTION_EXCEPTIONS">
-    <config id="BASE_C_EXCEPTIONS"/>
-    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_NOT_FOUND</shi></sb></ref> <shi>-101</shi></category-title>
-    <config id="CONNECTION_NOT_FOUND_DESC"/>
-  </option>
-
-  <option id="STREAM_C_EXCEPTIONS">
-    <category-title><ref><sb><shi language="c">#NTG_FILE_NOT_FOUND</shi></sb></ref> <shi>-200</shi></category-title>
-    <subtext><text>The specified file was not found.</text></subtext>
-
-    <category-title><ref><sb><shi language="c">#NTG_ENCODER_NOT_FOUND</shi></sb></ref> <shi>-201</shi></category-title>
-    <subtext><text>The required encoder was not found.</text></subtext>
-
-    <category-title><ref><sb><shi language="c">#NTG_FFMPEG_NOT_FOUND</shi></sb></ref> <shi>-202</shi></category-title>
-    <subtext><text>FFmpeg is not found in the system.</text></subtext>
-
-    <category-title><ref><sb><shi language="c">#NTG_SHELL_ERROR</shi></sb></ref> <shi>-203</shi></category-title>
-    <subtext><text>An error occurred while executing a shell command.</text></subtext>
   </option>
 
   <option id="SHELL_EXCEPTION">
@@ -119,11 +94,6 @@
     <subtext><text>This error occurs when yt-dlp encounters an error.</text></subtext>
   </option>
 
-  <option id="GROUPCALL_NOT_FOUND_EXCEPTION">
-    <category-title>exception <ref>pytgcalls.exceptions.<sb>GroupCallNotFound</sb></ref></category-title>
-    <config id="NO_GROUP_CALL_EXCEPTION_DESC"/>
-  </option>
-
   <option id="TELEGRAM_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>TelegramServerError</sb></ref></category-title>
     <subtext>
@@ -158,16 +128,6 @@
     <subtext><text>This error occurs when attempting to start a client that is already running.</text></subtext>
   </option>
 
-  <option id="CRYPTO_ERROR_C">
-    <category-title><ref><sb><shi language="c">#NTG_CRYPTO_ERROR</shi></sb></ref> <shi>-102</shi></category-title>
-    <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
-  </option>
-
-  <option id="INVALID_TRANSPORT_C">
-    <category-title><ref><sb><shi language="c">#NTG_INVALID_TRANSPORT</shi></sb></ref> <shi>-301</shi></category-title>
-    <subtext><text>The specified transport is invalid.</text></subtext>
-  </option>
-
   <option id="CRYPTO_ERROR">
     <category-title>exception <ref>ntgcalls.<sb>CryptoError</sb></ref></category-title>
     <subtext><config id="CRYPTO_ERROR_DESC"/></subtext>
@@ -178,18 +138,8 @@
     <subtext><text>A connection with the specified ID is already established or does not exist.</text></subtext>
   </option>
 
-  <option id="CONN_ALREADY_EXISTS_C">
-    <category-title><ref><sb><shi language="c">#NTG_CONNECTION_ALREADY_EXISTS</shi></sb></ref> <shi>-100</shi></category-title>
-    <subtext><text>A connection with the specified ID already exists.</text></subtext>
-  </option>
-
   <option id="RTMP_STREAMING_UNSUPPORTED">
     <category-title>exception <ref>ntgcalls.<sb>RTMPStreamingUnsupported</sb></ref></category-title>
-    <config id="RTMP_STREAMING_UNSUPPORTED_DESC"/>
-  </option>
-
-  <option id="RTMP_STREAMING_UNSUPPORTED_C">
-    <category-title><ref><sb><shi language="c">#NTG_ERROR_RTMP_STREAMING_UNSUPPORTED</shi></sb></ref> <shi>-300</shi></category-title>
     <config id="RTMP_STREAMING_UNSUPPORTED_DESC"/>
   </option>
 
@@ -198,10 +148,6 @@
     <config id="MTPROTO_CONNECTION_NOT_INITIALIZED_DESC"/>
   </option>
 
-  <option id="BROADCAST_EXCEPTIONS_C">
-    <category-title><ref><sb><shi language="c">#NTG_ERROR_WEBRTC</shi></sb></ref> <shi>-304</shi></category-title>
-    <config id="MTPROTO_CONNECTION_NOT_INITIALIZED_DESC"/>
-  </option>
   <option id="SIGNALING_ERROR_EXCEPTION">
     <category-title>exception <ref>ntgcalls.<sb>SignalingError</sb></ref></category-title> <subtext><config id="SIGNALING_ERROR_DESC"/></subtext>
   </option>
@@ -423,10 +369,6 @@
     <subtext><text>Indicates whether the video stream is stopped.</text></subtext>
   </option>
 
-  <option id="INPUT_MODE_DESC2">
-    <text>Enumeration of input modes for audio and video streams.</text>
-  </option>
-
   <option id="MODE_FILE_DESC">
     <subtext><text>Input mode using a file source.</text></subtext>
   </option>
@@ -453,10 +395,6 @@
 
   <option id="STREAM_DEVICE_DESC">
     <text>Enumeration of stream device values.</text>
-  </option>
-
-  <option id="STREAM_DEVICE_DESC2">
-    <subtext><text>Stream’s Device.</text></subtext>
   </option>
 
   <option id="STREAM_DEVICE_MICROPHONE_DESC">
@@ -588,10 +526,6 @@
     </text>
   </option>
 
-  <option id="STREAM_STATUS_DESC2">
-    <subtext><text>Stream’s Status.</text></subtext>
-  </option>
-
   <option id="BUG_FIX_CHANGELOGS">
     <item><text><b>Bug Fixes:</b> Addressed various bugs for a more stable experience.</text></item>
   </option>
@@ -717,10 +651,6 @@
     <subtext><text>Enable or disable the GLib main loop.</text></subtext>
   </option>
 
-  <option id="ENABLE_OR_DISABLE_H264_DESC">
-    <subtext><text>Enable or disable the H264 encoder.</text></subtext>
-  </option>
-
   <option id="IS_PRESENTATION_DESC">
     <subtext><text>Whether the connection is for a presentation.</text></subtext>
   </option>
@@ -771,16 +701,6 @@
 
   <option id="STOP_PRESENTATION_DESC2">
     <text>Stop the presentation connection.</text>
-  </option>
-
-  <option id="STREAM_MODE">
-    <category-title><ref><sb>direction</sb></ref>: <docs-ref link="/NTgCalls/Available Enums/StreamMode">ntgcalls.StreamMode</docs-ref></category-title>
-    <config id="STREAM_MODE_DESC"/>
-  </option>
-
-  <option id="NTG_STREAM_MODE">
-    <category-title><docs-ref link="/NTgCalls/Available Enums/StreamMode">ntg_stream_mode_enum</docs-ref> <ref><sb>streamMode</sb></ref></category-title>
-    <config id="STREAM_MODE_DESC"/>
   </option>
 
   <option id="SEND_EXTERNAL_FRAME_DESC">
@@ -873,22 +793,6 @@
     <text>Media devices available for streaming.</text>
   </option>
 
-  <option id="MICROPHONE_DEVICES_DESC">
-    <subtext><text>List of available microphones.</text></subtext>
-  </option>
-
-  <option id="SPEAKER_DEVICES_DESC">
-    <subtext><text>List of available speakers.</text></subtext>
-  </option>
-
-  <option id="CAMERA_DEVICES_DESC">
-    <subtext><text>List of available cameras.</text></subtext>
-  </option>
-
-  <option id="SCREEN_DEVICES_DESC">
-    <subtext><text>List of available screens.</text></subtext>
-  </option>
-
   <option id="CALL_INFO_DESC">
     <text>Call Descriptor for a Group Call or Private Call.</text>
   </option>
@@ -899,14 +803,6 @@
 
   <option id="CAPTURE_DESC">
     <subtext><text>Capture stream status.</text></subtext>
-  </option>
-
-  <option id="NETWORK_DESC">
-   <text>Network status for the call.</text>
-  </option>
-
-  <option id="CONNECTION_STATE_DESC2">
-    <subtext><text>Connection state for the call.</text></subtext>
   </option>
 
   <option id="REMOTE_SOURCE_DESC">
@@ -989,18 +885,6 @@
 
   <option id="CPU_USAGE_DESC2">
       <text>Get the CPU usage of the current process.</text>
-  </option>
-
-  <option id="CPU_USAGE_DESC3">
-    <text>Buffer to store the CPU usage.</text>
-  </option>
-
-  <option id="REGISTER_LOGGER_DESC">
-    <text>Register a logger for the library, this logger will be used for all instances.</text>
-  </option>
-
-  <option id="LOGGER_DESC">
-    <text>Callback for logging messages.</text>
   </option>
 
   <option id="LOG_MESSAGE_STRUCT_DESC">
@@ -1559,29 +1443,9 @@
     <config id="CHAT_ID_DESC"/>
   </option>
 
-  <option id="ARG_INT_ID">
-    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
-    <config id="CHAT_ID_DESC"/>
-  </option>
-
-  <option id="ARG_C_CHAT_ID">
-    <category-title><shi language="c">int64_t</shi> <ref><sb>chatID</sb></ref></category-title>
-    <config id="CHAT_ID_DESC"/>
-  </option>
-
-  <option id="ARG_C_PTR">
-    <category-title><shi language="c">uintptr_t</shi> <ref><sb>ptr</sb></ref></category-title>
-    <subtext><text>The pointer to the NTgCalls instance.</text></subtext>
-  </option>
-
   <option id="ARG_PARTICIPANT">
     <category-title><ref><sb>participant</sb></ref> <shi>-></shi> <docs-ref link="/PyTgCalls/Advanced Types/GroupCallParticipant">pytgcalls.GroupCallParticipant</docs-ref></category-title>
     <subtext><text>Info about a group call participant.</text></subtext>
-  </option>
-
-  <option id="ARG_AUDIO_PARAMS">
-    <category-title><ref>audio_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.types.raw.AudioParameters</docs-ref>]</category-title>
-    <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
   <option id="ARG_AUDIO_PARAMSv2">
@@ -1589,31 +1453,14 @@
     <config id="ARG_AUDIO_PARAMS_DESC"/>
   </option>
 
-  <option id="ARG_VIDEO_PARAMS">
-    <category-title><ref>video_parameters</ref>: Optional[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>]</category-title>
-    <config id="ARG_VIDEO_PARAMS_DESC"/>
-  </option>
-
   <option id="ARG_VIDEO_PARAMSv2">
     <category-title><ref>video_parameters</ref>: Optional[Union[<docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref>, <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">pytgcalls.types.VideoQuality</docs-ref>]]</category-title>
     <config id="ARG_VIDEO_PARAMS_DESC"/>
   </option>
 
-  <option id="ARG_FFMPEG_PARAMS">
-    <config id="ARG_HTTP_PARAMS"/>
-
-    <category-title><ref>additional_ffmpeg_parameters</ref>: Optional[<shi>str</shi>]</category-title>
-    <subtext><text>FFmpeg additional parameters.</text></subtext>
-  </option>
-
   <option id="ARG_HTTP_PARAMS">
     <category-title><ref>headers</ref>: Optional[<shi>dict</shi>[<shi>str</shi>, <shi>str</shi>]]</category-title>
     <subtext><text>HTTP connection’s headers.</text></subtext>
-  </option>
-
-  <option id="ARG_STREAM_PARAMS">
-    <category-title><ref><sb>media</sb></ref>: <docs-ref link="/NTgCalls/Available Types/MediaDescription">ntgcalls.MediaDescription</docs-ref></category-title>
-    <config id="ARG_MEDIA_DESC"/>
   </option>
 
   <option id="ARG_VIDEO_CONFIG">
@@ -1629,45 +1476,6 @@
     <config id="MEDIA_SOURCE_DESC"/>
   </option>
 
-  <option id="ARG_C_MEDIA_SOURCE">
-    <category-title><docs-ref link="/NTgCalls/Available Enums/MediaSource">ntg_media_source_enum</docs-ref> <ref>mediaSource</ref></category-title>
-    <config id="MEDIA_SOURCE_DESC"/>
-  </option>
-
-  <option id="ARG_INPUT_MEDIA">
-    <category-title><ref>input</ref>: <shi>str</shi></category-title>
-    <config id="ARG_INPUT_MEDIA_DESC"/>
-  </option>
-
-  <option id="ARG_C_INPUT_MEDIA">
-    <category-title><shi language="c">char*</shi> <ref>input</ref></category-title>
-    <config id="ARG_INPUT_MEDIA_DESC"/>
-  </option>
-
-  <option id="ARG_AUDIO_PATH">
-    <category-title><ref>audio_path</ref>: <shi>str</shi></category-title>
-    <subtext><text>The audio file path.</text></subtext>
-  </option>
-
-  <option id="ARG_AUDIO_DEVICE">
-    <category-title><ref>audio_info</ref>: <code>pytgcalls.DeviceInfo</code></category-title>
-    <subtext><text>The audio media device.</text></subtext>
-  </option>
-
-  <option id="ARG_SCREEN_DEVICE">
-    <category-title><ref>screen_info</ref>: <code>pytgcalls.ScreenInfo</code></category-title>
-    <subtext><text>The video media device.</text></subtext>
-  </option>
-
-  <option id="ARG_CUSTOM_DATA">
-    <category-title><shi language="c">void*</shi> <ref><sb>userData</sb></ref></category-title>
-    <subtext><text>Custom data that can be passed to the callback function.</text></subtext>
-  </option>
-
-  <option id="ARG_MEDIA">
-    <category-title><docs-ref link="/NTgCalls/Available Types/MediaDescription">ntg_media_description_struct</docs-ref> <ref>desc</ref></category-title>
-    <config id="ARG_MEDIA_DESC"/>
-  </option>
   <!--end parameters-->
 
   <homepage-config>
