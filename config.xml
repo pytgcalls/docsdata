@@ -1673,7 +1673,14 @@
       </category>
       <dsc>© 2020-2026 • PyTgCalls Foundation by Vrumger &amp; Laky64</dsc>
     </footer-links>
-    <sponsor href="https://t.me/VoipStoreBot?start=PYTG10">
+    <sponsor href="https://pinguproxy.com/?ref=pytgcalls" weight="75">
+      <badge>Sponsored</badge>
+      <title>PinguProxy</title>
+      <description>Fast datacenter &amp; residential proxies. First 30 signups get 1GB free, or code PYTG10 for 10% off datacenter</description>
+      <button>Get 1GB free</button>
+      <logo>/src/assets/sponsors/pingu-proxy.png</logo>
+    </sponsor>
+    <sponsor href="https://t.me/VoipStoreBot?start=PYTG10" weight="25">
       <badge>Sponsored</badge>
       <title>VoIPStore</title>
       <description>SMS &amp; Accounts for all your needs. Best SMS verification on Telegram, cheap &amp; fast. 10% off on every top-up</description>
