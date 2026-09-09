@@ -1680,6 +1680,7 @@
       <button>Get 10% off</button>
       <logo>/src/assets/sponsors/voipstore.png</logo>
     </sponsor>
+    <donation-link>https://buymeacoffee.com/pytgcalls</donation-link>
   </homepage-config>
 
   <files-list id="NTgCalls" description="A Native Implementation of Telegram Calls in a seamless way." basepath="NTgCalls/" defaultfile="Quick Start.xml">
