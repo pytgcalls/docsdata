@@ -3,6 +3,80 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgSep26.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v3.0.X"
+            description="Conference Calls, Node.js and Rust Bindings and More!"
+            mainbg="#070d16"
+            version="3.0.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What&apos;s new?</h3>
+            <list>
+                <item><text><b>End-to-End Encrypted Conference Calls:</b> Full support for Telegram conference calls, including joining through an invite message, screen sharing and the emoji fingerprint used to verify the call.</text></item>
+                <item><text><b>Node.js and Rust Bindings:</b> NTgCalls is now published on <a href="https://www.npmjs.com/package/ntgcalls">npm</a> and <a href="https://crates.io/crates/ntgcalls">crates.io</a>, joining Python, C and the Android SDK. Every binding is generated from one language-agnostic schema, so all languages expose the same API.</text></item>
+                <item><text><b>Newer Call Protocols:</b> Added protocol V12 and V13 for private calls, simulcast streams for peer-to-peer calls, and TCP support for reflector relays, improving quality on restrictive networks.</text></item>
+                <item><text><b>macOS Media Devices:</b> Added camera and microphone enumeration on macOS, with an AVFoundation capturer that supports Continuity Camera, plus fixes to screen capture.</text></item>
+                <item><text><b>Performance &amp; Stability Boost:</b> Upgraded WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m152</a>) and updated FFmpeg, boost, libX11, mesa, glib and pybind11.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>Support for <b>Hydrogram</b> has been dropped. Pyrogram and Telethon remain supported.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            from hydrogram import Client
+                            from pytgcalls import PyTgCalls
+                            <br/>
+                            app = Client(
+                                'py-tgcalls',
+                                api_id=123456789,
+                                api_hash='abcdef12345',
+                            )
+                            call_py = PyTgCalls(app)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from pyrogram import Client
+                            from pytgcalls import PyTgCalls
+                            <br/>
+                            app = Client(
+                                'py-tgcalls',
+                                api_id=123456789,
+                                api_hash='abcdef12345',
+                            )
+                            call_py = PyTgCalls(app)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text>Some <b>NTgCalls</b> symbols have been renamed for consistency across bindings. This only affects you if you use NTgCalls directly.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            from ntgcalls import NetworkInfo
+                            from ntgcalls import MediaSegmentStatus
+                            <br/>
+                            client.on_signaling(handler)
+                            await client.send_signaling(chat_id, data)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from ntgcalls import ConnectionInfo
+                            from ntgcalls import MediaSegmentPartStatus
+                            <br/>
+                            client.on_signaling_data(handler)
+                            await client.send_signaling_data(chat_id, data)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgMay26.png"
             minititle="MINOR UPDATE"
             bigtitle="PyTgCalls v2.3.0"
