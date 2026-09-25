@@ -16,13 +16,9 @@
                     <category-title><ref><sb>muted</sb></ref>: <shi>bool</shi></category-title>
                     <config id="MEDIA_MUTED_DESC"/>
                     <category-title><ref><sb>video_paused</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="MEDIA_PAUSED_DESC"/>
                     <category-title><ref><sb>video_stopped</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="MEDIA_STOPPED_DESC"/>
                     <category-title><ref><sb>presentation_paused</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="PRESENTATIONPAUSED_DESC"/>
                     <category-title><ref><sb>presentation_stopped</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="PRESENTATIONSTOPPED_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -38,13 +34,9 @@
                     <category-title><ref><sb>muted</sb></ref>: <shi language="c">bool</shi></category-title>
                     <config id="MEDIA_MUTED_DESC"/>
                     <category-title><ref><sb>video_paused</sb></ref>: <shi language="c">bool</shi></category-title>
-                    <config id="MEDIA_PAUSED_DESC"/>
                     <category-title><ref><sb>video_stopped</sb></ref>: <shi language="c">bool</shi></category-title>
-                    <config id="MEDIA_STOPPED_DESC"/>
                     <category-title><ref><sb>presentation_paused</sb></ref>: <shi language="c">bool</shi></category-title>
-                    <config id="PRESENTATIONPAUSED_DESC"/>
                     <category-title><ref><sb>presentation_stopped</sb></ref>: <shi language="c">bool</shi></category-title>
-                    <config id="PRESENTATIONSTOPPED_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -60,13 +52,9 @@
                     <category-title><ref><sb>muted</sb></ref>: <shi>boolean</shi></category-title>
                     <config id="MEDIA_MUTED_DESC"/>
                     <category-title><ref><sb>videoPaused</sb></ref>: <shi>boolean</shi></category-title>
-                    <config id="MEDIA_PAUSED_DESC"/>
                     <category-title><ref><sb>videoStopped</sb></ref>: <shi>boolean</shi></category-title>
-                    <config id="MEDIA_STOPPED_DESC"/>
                     <category-title><ref><sb>presentationPaused</sb></ref>: <shi>boolean</shi></category-title>
-                    <config id="PRESENTATIONPAUSED_DESC"/>
                     <category-title><ref><sb>presentationStopped</sb></ref>: <shi>boolean</shi></category-title>
-                    <config id="PRESENTATIONSTOPPED_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -81,14 +69,10 @@
                 <subtext>
                     <category-title><shi>boolean</shi> <ref><sb>muted</sb></ref></category-title>
                     <config id="MEDIA_MUTED_DESC"/>
-                    <category-title><shi>boolean</shi> <ref><sb>videoPaused</sb></ref></category-title>
-                    <config id="MEDIA_PAUSED_DESC"/>
-                    <category-title><shi>boolean</shi> <ref><sb>videoStopped</sb></ref></category-title>
-                    <config id="MEDIA_STOPPED_DESC"/>
-                    <category-title><shi>boolean</shi> <ref><sb>presentationPaused</sb></ref></category-title>
-                    <config id="PRESENTATIONPAUSED_DESC"/>
-                    <category-title><shi>boolean</shi> <ref><sb>presentationStopped</sb></ref></category-title>
-                    <config id="PRESENTATIONSTOPPED_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>video_paused</sb></ref></category-title>
+                    <category-title><shi>boolean</shi> <ref><sb>video_stopped</sb></ref></category-title>
+                    <category-title><shi>boolean</shi> <ref><sb>presentation_paused</sb></ref></category-title>
+                    <category-title><shi>boolean</shi> <ref><sb>presentation_stopped</sb></ref></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -104,13 +88,9 @@
                     <category-title><ref><sb>muted</sb></ref>: <shi>bool</shi></category-title>
                     <config id="MEDIA_MUTED_DESC"/>
                     <category-title><ref><sb>video_paused</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="MEDIA_PAUSED_DESC"/>
                     <category-title><ref><sb>video_stopped</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="MEDIA_STOPPED_DESC"/>
                     <category-title><ref><sb>presentation_paused</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="PRESENTATIONPAUSED_DESC"/>
                     <category-title><ref><sb>presentation_stopped</sb></ref>: <shi>bool</shi></category-title>
-                    <config id="PRESENTATIONSTOPPED_DESC"/>
                 </subtext>
             </category>
         </subtext>
