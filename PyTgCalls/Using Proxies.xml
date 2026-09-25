@@ -1,0 +1,62 @@
+<page>
+    <h1>Using Proxies</h1>
+    <text>
+        YouTube often blocks or rate-limits server IP addresses. Routing yt-dlp and FFmpeg through a proxy keeps the playback working when the IP of your server gets flagged.
+    </text>
+    <separator/>
+    <h2>How it works</h2>
+    <list style="numbers">
+        <item><b>yt-dlp</b> resolves the direct media URLs, without downloading anything.</item>
+        <item><b>FFmpeg</b> downloads and decodes the stream from those URLs.</item>
+    </list>
+    <text>
+        YouTube binds the resolved URLs to the IP address that requested them, so both steps must go through the same proxy.
+    </text>
+    <separator/>
+    <h2>Setting up the proxy</h2>
+    <syntax-highlight mark="7-8">
+        PROXY = 'http://username:password@host:port'
+        ...
+        await app.play(
+            chat_id,
+            MediaStream(
+                'https://www.youtube.com/watch?v=msiLgFkXvD8',
+                ytdlp_parameters=f'--proxy {PROXY}',
+                ffmpeg_parameters=f'-http_proxy {PROXY}',
+            ),
+        )
+    </syntax-highlight>
+    <alert type="important">
+        FFmpeg only supports <b>HTTP</b> proxies. A SOCKS proxy passed only to yt-dlp is not enough, the download would come from a different IP address and fail.
+    </alert>
+    <separator/>
+    <h2>Troubleshooting</h2>
+    <subtext>
+        <category-title noref="true">HTTP Error 403: Forbidden</category-title>
+        <subtext><text>Only yt-dlp is using the proxy, pass it to <b>ffmpeg_parameters</b> too.</text></subtext>
+        <category-title noref="true">HTTP Error 403 with a rotating proxy</category-title>
+        <subtext><text>The exit IP changed between yt-dlp and FFmpeg, use a sticky session.</text></subtext>
+        <category-title noref="true">Sign in to confirm you're not a bot</category-title>
+        <subtext><text>The proxy IP address is flagged, switch to a residential proxy or pass your cookies with <b>--cookies cookies.txt</b>.</text></subtext>
+        <category-title noref="true">Unable to connect to proxy</category-title>
+        <subtext><text>Check the credentials and the format, it must be <b>http://username:password@host:port</b>.</text></subtext>
+    </subtext>
+    <separator/>
+    <h2>Using PinguProxy</h2>
+    <text>
+        <a href="https://pinguproxy.com/?ref=pytgcalls">PinguProxy</a> sponsors PyTgCalls, the first 30 signups get 1GB for free. Two things matter when streaming:
+    </text>
+    <list>
+        <item><b>Prefer residential proxies</b>: YouTube flags datacenter IP ranges much more often, so they hit the bot check sooner.</item>
+        <item><b>Always use a session</b>: rotating proxies change the exit IP on every connection, append <b>_session-&lt;id&gt;</b> to the username so yt-dlp and FFmpeg share the same IP address.</item>
+    </list>
+    <syntax-highlight mark="2-3">
+        PROXY = (
+            f'http://username_session-{chat_id}:password'
+            '@proxy.pinguproxy.com:12934'
+        )
+    </syntax-highlight>
+    <text>
+        Port <b>12934</b> routes through residential IPs and <b>12933</b> through datacenter ones. A session per chat keeps every stream on its own IP, add <b>_country-XX</b> before the session to pick the exit country.
+    </text>
+</page>
