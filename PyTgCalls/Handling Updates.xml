@@ -16,30 +16,29 @@
     </text>
     <h2>Registering a Handler</h2>
     <text>
-        To explain how handlers work, let's examine the one that will be in charge of handling <code>StreamVideoEnded</code>
-        updates, which occur when a video stream ends. The same setup logic is shared with every type of handler, and you should not
-        have troubles settings them up once you have learned from this section.
+        To explain how handlers work, let's examine the one that will be in charge of handling <code>StreamEnded</code>
+        updates for video streams, which occur when a video stream ends. The same setup logic is shared with every type of handler, and you should not
+        have trouble setting them up once you have learned from this section.
     </text>
     <alert type="note">
         You can mix <code>def</code> and <code>async def</code> handlers as much as you need,
         PyTgCalls will still work concurrently and efficiently regardless of what you choose.
     </alert>
     <h3>Using Decorators</h3>
-    <text>The most elegant way to register a stream end handler is by using the <docs-ref link="">on_stream_end()</docs-ref> decorator:</text>
+    <text>The most elegant way to register a stream end handler is by using the <docs-ref link="/PyTgCalls/Decorators">on_update()</docs-ref> decorator together with the <docs-ref link="/PyTgCalls/Filters">stream_end()</docs-ref> filter:</text>
     <syntax-highlight>
         from pytgcalls import PyTgCalls, filters
+        from pytgcalls.types import StreamEnded
         from pytgcalls.types import Update
-        from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
-        @app.on_update(filters.stream_end())
+        @app.on_update(filters.stream_end(StreamEnded.Type.VIDEO))
         async def my_handler(client: PyTgCalls, update: Update):
-            if isinstance(update, StreamVideoEnded):
-                await pytgcalls.play(
-                    -1001185324811,
-                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                )
+            await client.play(
+                update.chat_id,
+                'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+            )
 
         app.run()
     </syntax-highlight>
@@ -55,19 +54,18 @@
     </text>
     <syntax-highlight>
         from pytgcalls import PyTgCalls, filters
+        from pytgcalls.types import StreamEnded
         from pytgcalls.types import Update
-        from pytgcalls.types import MediaStream
         ...
         app = PyTgCalls(client)
 
         async def my_handler(client: PyTgCalls, update: Update):
-            if isinstance(update, StreamVideoEnded):
-                await pytgcalls.play(
-                    -1001185324811,
-                    'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
-                )
+            await client.play(
+                update.chat_id,
+                'http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4',
+            )
 
-        app.add_handler(my_handler, filters.stream_end())
+        app.add_handler(my_handler, filters.stream_end(StreamEnded.Type.VIDEO))
         app.run()
     </syntax-highlight>
 </page>
