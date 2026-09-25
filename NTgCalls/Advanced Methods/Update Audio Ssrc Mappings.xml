@@ -1,0 +1,155 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Update Audio Ssrc Mappings</h1>
+    <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-8" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+await app.update_audio_ssrc_mappings(
+    chat_id,
+    ssrc_groups
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-9" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_update_audio_ssrc_mappings(
+    handle,
+    chat_id,
+    ssrc_groups, ssrc_groups_len
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-8" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.updateAudioSsrcMappings(
+    chatId,
+    ssrcGroups
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-8" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.updateAudioSsrcMappings(
+    chatId,
+    ssrcGroups
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-8" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.update_audio_ssrc_mappings(
+    chat_id,
+    ssrc_groups
+).await?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>update_audio_ssrc_mappings</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>ssrc_groups</sb></ref>: <shi>list[ntgcalls.SsrcMapping]</shi></category-title>
+                    <config id="SSRC_GROUPS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_update_audio_ssrc_mappings</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>ssrc_groups</sb></ref>: <shi language="c">const ntg_ssrc_mapping*</shi>, <ref><sb>ssrc_groups_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="SSRC_GROUPS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>updateAudioSsrcMappings</sb></ref>() <shi>: Promise&lt;void&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>ssrcGroups</sb></ref>: <shi>SsrcMapping[]</shi></category-title>
+                    <config id="SSRC_GROUPS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>updateAudioSsrcMappings</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>java.util.List&lt;SsrcMapping&gt;</shi> <ref><sb>ssrcGroups</sb></ref></category-title>
+                    <config id="SSRC_GROUPS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>update_audio_ssrc_mappings</sb></ref>() <shi>-&gt; Result&lt;()&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="UPDATE_AUDIO_SSRC_MAPPINGS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>ssrc_groups</sb></ref>: <shi>Vec&lt;SsrcMapping&gt;</shi></category-title>
+                    <config id="SSRC_GROUPS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

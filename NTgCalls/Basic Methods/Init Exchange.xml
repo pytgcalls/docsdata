@@ -1,47 +1,213 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
-    <p2p-banner/>
     <h1>Init Exchange</h1>
     <config id="INIT_EXCHANGE_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="7-11">
-        from ntgcalls import NTgCalls
-        ...
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-9" language="python">
+from ntgcalls import NTgCalls
 
-        app = NTgCalls()
-        dh_config = ... # Obtain the DH configuration
-        g_a_hash = ... # Parameter for key exchange (Only when is incoming call)
-        params = await app.init_exchange(
-            -1001185324811,
-            config,
-            g_a_hash,
-        )
-    </syntax-highlight>
+app = NTgCalls()
+
+await app.init_exchange(
+    user_id,
+    dh_config,
+    ga_hash
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-11" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_init_exchange(
+    handle,
+    user_id,
+    dh_config,
+    ga_hash, ga_hash_len,
+    &amp;out, &amp;out_len
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-9" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.initExchange(
+    userId,
+    dhConfig,
+    gaHash
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-9" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.initExchange(
+    userId,
+    dhConfig,
+    gaHash
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-9" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.init_exchange(
+    user_id,
+    dh_config,
+    ga_hash
+).await?;</syntax-highlight>
+    </multisyntax>
     <separator/>
     <h2>Details</h2>
-    <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>init_exchange</sb></ref>()
-    </category-title>
-    <subtext>
-        <config id="INIT_EXCHANGE_DESC2"/>
-        <br/>
-        <category>
-            <pg-title>PARAMETERS</pg-title>
-            <subtext>
-                <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>config</sb></ref>: <docs-ref link="/NTgCalls/Available Types/DhConfig">ntgcalls.DhConfig</docs-ref></category-title>
-                <subtext><config id="DH_CONFIG_DESC"/></subtext>
-                <category-title><ref><sb>g_a_hash</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
-                <config id="G_A_HASH_DESC"/>
-            </subtext>
-        </category>
-        <br/>
-        <category>
-            <pg-title>RAISES</pg-title>
-            <subtext>
-                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
-                <category-title>exception <ref>ntgcalls.<sb>ConnectionError</sb></ref></category-title>
-                <config id="CONNECTION_ALREADY_EXCHANGE_DESC"/>
-            </subtext>
-        </category>
-    </subtext>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>init_exchange</sb></ref>() <shi>-&gt; bytes</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_EXCHANGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>dh_config</sb></ref>: <shi>ntgcalls.DhConfig</shi></category-title>
+                    <config id="DH_CONFIG_DESC"/>
+                    <category-title><ref><sb>ga_hash</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
+                    <config id="G_A_HASH_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="CONNECTION_ALREADY_EXCHANGE_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_init_exchange</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="INIT_EXCHANGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>dh_config</sb></ref>: <shi language="c">ntg_dh_config</shi></category-title>
+                    <config id="DH_CONFIG_DESC"/>
+                    <category-title><ref><sb>ga_hash</sb></ref>: <shi language="c">const uint8_t*</shi>, <ref><sb>ga_hash_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="G_A_HASH_DESC"/>
+                    <category-title><ref><sb>out</sb></ref>: <shi language="c">uint8_t**</shi>, <ref><sb>out_len</sb></ref>: <shi language="c">size_t*</shi></category-title>
+                    <config id="C_OUT_LEN_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="CONNECTION_ALREADY_EXCHANGE_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>initExchange</sb></ref>() <shi>: Promise&lt;Buffer&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_EXCHANGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>userId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>dhConfig</sb></ref>: <shi>DhConfig</shi></category-title>
+                    <config id="DH_CONFIG_DESC"/>
+                    <category-title><ref><sb>gaHash</sb></ref><shi>?</shi>: <shi>Buffer</shi></category-title>
+                    <config id="G_A_HASH_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="CONNECTION_ALREADY_EXCHANGE_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>byte[]</shi> <ref src="method">NTgCalls.<sb>initExchange</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="INIT_EXCHANGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>userId</sb></ref></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><shi>DhConfig</shi> <ref><sb>dhConfig</sb></ref></category-title>
+                    <config id="DH_CONFIG_DESC"/>
+                    <category-title><shi>byte[]</shi> <ref><sb>gaHash</sb></ref></category-title>
+                    <config id="G_A_HASH_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="CONNECTION_ALREADY_EXCHANGE_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>init_exchange</sb></ref>() <shi>-&gt; Result&lt;Vec&lt;u8&gt;&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_EXCHANGE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>dh_config</sb></ref>: <shi>DhConfig</shi></category-title>
+                    <config id="DH_CONFIG_DESC"/>
+                    <category-title><ref><sb>ga_hash</sb></ref>: <shi>Option&lt;Vec&lt;u8&gt;&gt;</shi></category-title>
+                    <config id="G_A_HASH_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="CONNECTION_ALREADY_EXCHANGE_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

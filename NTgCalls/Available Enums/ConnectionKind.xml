@@ -1,18 +1,78 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>ConnectionKind</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionKind</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="CONNECTION_KIND_DESC"/>
-        <br/>
-        <pg-title>ENUMERATION MEMBERS</pg-title>
+    <config id="CONNECTION_KIND_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>ConnectionKind</sb></ref>
+        </category-title>
         <subtext>
-            <category-title><ref><sb>NORMAL</sb></ref> <shi>=</shi> 0</category-title>
-            <config id="CONNECTION_KIND_NORMAL_DESC"/>
-            <category-title><ref><sb>PRESENTATION</sb></ref> <shi>=</shi> 1</category-title>
-            <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionKind.<sb>NORMAL</sb></ref></category-title>
+                <config id="CONNECTION_KIND_NORMAL_DESC"/>
+                <category-title><ref>ConnectionKind.<sb>PRESENTATION</sb></ref></category-title>
+                <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            </subtext>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_connection_kind</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_CONNECTION_KIND_NORMAL</sb></ref></category-title>
+                <config id="CONNECTION_KIND_NORMAL_DESC"/>
+                <category-title><ref><sb>NTG_CONNECTION_KIND_PRESENTATION</sb></ref></category-title>
+                <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>ConnectionKind</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionKind.<sb>NORMAL</sb></ref></category-title>
+                <config id="CONNECTION_KIND_NORMAL_DESC"/>
+                <category-title><ref>ConnectionKind.<sb>PRESENTATION</sb></ref></category-title>
+                <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>ConnectionKind</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionKind.<sb>NORMAL</sb></ref></category-title>
+                <config id="CONNECTION_KIND_NORMAL_DESC"/>
+                <category-title><ref>ConnectionKind.<sb>PRESENTATION</sb></ref></category-title>
+                <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>ConnectionKind</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionKind::<sb>Normal</sb></ref></category-title>
+                <config id="CONNECTION_KIND_NORMAL_DESC"/>
+                <category-title><ref>ConnectionKind::<sb>Presentation</sb></ref></category-title>
+                <config id="CONNECTION_KIND_PRESENTATION_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
 </page>

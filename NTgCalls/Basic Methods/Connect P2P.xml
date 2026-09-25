@@ -1,55 +1,250 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
-    <p2p-banner/>
     <h1>Connect P2P</h1>
     <config id="CONNECT_P2P_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="9-14">
-        from ntgcalls import NTgCalls
-        ...
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-11" language="python">
+from ntgcalls import NTgCalls
 
-        app = NTgCalls()
-        rtc_servers = ... # Obtain the RTC servers
-        dh_config = ... # Obtain the DH configuration
-        versions = ... # Obtain the library versions
-        p2p_allowed = ... # Obtain whether P2P is allowed
-        await app.connect_p2p(
-            -1001185324811,
-            rtc_servers,
-            versions,
-            p2p_allowed
-        )
-    </syntax-highlight>
+app = NTgCalls()
+
+await app.connect_p2p(
+    user_id,
+    servers,
+    versions,
+    p2p_allowed,
+    custom_parameters
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-12" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_connect_p2p(
+    handle,
+    user_id,
+    servers, servers_len,
+    versions, versions_len,
+    p2p_allowed,
+    custom_parameters
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-11" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.connectP2p(
+    userId,
+    servers,
+    versions,
+    p2pAllowed,
+    customParameters
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-11" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.connectP2p(
+    userId,
+    servers,
+    versions,
+    p2pAllowed,
+    customParameters
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-11" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.connect_p2p(
+    user_id,
+    servers,
+    versions,
+    p2p_allowed,
+    custom_parameters
+).await?;</syntax-highlight>
+    </multisyntax>
     <separator/>
     <h2>Details</h2>
-    <category-title>
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>connect_p2p</sb></ref>()
-    </category-title>
-    <subtext>
-        <config id="CONNECT_P2P_DESC2"/>
-        <br/>
-        <category>
-            <pg-title>PARAMETERS</pg-title>
-            <subtext>
-                <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>rtc_servers</sb></ref>:  <shi>list</shi>[<docs-ref link="/NTgCalls/Available Types/RTCServer">ntgcalls.RTCServer</docs-ref>]</category-title>
-                <config id="RTC_SERVERS_DESC"/>
-                <category-title><ref><sb>versions</sb></ref>: <shi>list</shi>[<shi>str</shi>]</category-title>
-                <config id="LIBRARY_VERSIONS_DESC"/>
-                <category-title><ref><sb>p2p_allowed</sb></ref>: <shi>bool</shi></category-title>
-                <config id="P2P_ALLOWED_DESC"/>
-            </subtext>
-        </category>
-        <br/>
-        <category>
-            <pg-title>RAISES</pg-title>
-            <subtext>
-                <config id="P2P_CONN_ERROR"/>
-                <config id="CRYPTO_ERROR"/>
-                <category-title>exception <ref>ntgcalls.<sb>SignalingError</sb></ref></category-title>
-                <subtext><config id="SIGNALING_ERROR_DESC"/></subtext>
-                <category-title>exception <ref>ntgcalls.<sb>SignalingUnsupported</sb></ref></category-title>
-                <subtext><config id="SIGNALING_UNSUPPORTED_DESC"/></subtext>
-            </subtext>
-        </category>
-    </subtext>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>connect_p2p</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CONNECT_P2P_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>servers</sb></ref>: <shi>list[ntgcalls.RTCServer]</shi></category-title>
+                    <config id="RTC_SERVERS_DESC"/>
+                    <category-title><ref><sb>versions</sb></ref>: <shi>list[str]</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                    <category-title><ref><sb>p2p_allowed</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="P2P_ALLOWED_DESC"/>
+                    <category-title><ref><sb>custom_parameters</sb></ref>: <shi>Optional</shi>[<shi>str</shi>]</category-title>
+                    <config id="CUSTOM_PARAMETERS_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="P2P_CONN_ERROR"/>
+                    <config id="CRYPTO_ERROR"/>
+                    <config id="SIGNALING_ERROR_EXCEPTION"/>
+                    <config id="SIGNALING_UNSUPPORTED_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_connect_p2p</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CONNECT_P2P_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>servers</sb></ref>: <shi language="c">const ntg_rtc_server*</shi>, <ref><sb>servers_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="RTC_SERVERS_DESC"/>
+                    <category-title><ref><sb>versions</sb></ref>: <shi language="c">const char**</shi>, <ref><sb>versions_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                    <category-title><ref><sb>p2p_allowed</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="P2P_ALLOWED_DESC"/>
+                    <category-title><ref><sb>custom_parameters</sb></ref>: <shi language="c">const char*</shi></category-title>
+                    <config id="CUSTOM_PARAMETERS_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="P2P_CONN_ERROR"/>
+                    <config id="CRYPTO_ERROR"/>
+                    <config id="SIGNALING_ERROR_EXCEPTION"/>
+                    <config id="SIGNALING_UNSUPPORTED_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>connectP2p</sb></ref>() <shi>: Promise&lt;void&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CONNECT_P2P_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>userId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>servers</sb></ref>: <shi>RTCServer[]</shi></category-title>
+                    <config id="RTC_SERVERS_DESC"/>
+                    <category-title><ref><sb>versions</sb></ref>: <shi>string[]</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                    <category-title><ref><sb>p2pAllowed</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="P2P_ALLOWED_DESC"/>
+                    <category-title><ref><sb>customParameters</sb></ref><shi>?</shi>: <shi>string</shi></category-title>
+                    <config id="CUSTOM_PARAMETERS_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="P2P_CONN_ERROR"/>
+                    <config id="CRYPTO_ERROR"/>
+                    <config id="SIGNALING_ERROR_EXCEPTION"/>
+                    <config id="SIGNALING_UNSUPPORTED_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>connectP2p</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CONNECT_P2P_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>userId</sb></ref></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><shi>java.util.List&lt;RTCServer&gt;</shi> <ref><sb>servers</sb></ref></category-title>
+                    <config id="RTC_SERVERS_DESC"/>
+                    <category-title><shi>java.util.List&lt;String&gt;</shi> <ref><sb>versions</sb></ref></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>p2pAllowed</sb></ref></category-title>
+                    <config id="P2P_ALLOWED_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>customParameters</sb></ref></category-title>
+                    <config id="CUSTOM_PARAMETERS_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="P2P_CONN_ERROR"/>
+                    <config id="CRYPTO_ERROR"/>
+                    <config id="SIGNALING_ERROR_EXCEPTION"/>
+                    <config id="SIGNALING_UNSUPPORTED_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>connect_p2p</sb></ref>() <shi>-&gt; Result&lt;()&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CONNECT_P2P_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>servers</sb></ref>: <shi>Vec&lt;RTCServer&gt;</shi></category-title>
+                    <config id="RTC_SERVERS_DESC"/>
+                    <category-title><ref><sb>versions</sb></ref>: <shi>Vec&lt;String&gt;</shi></category-title>
+                    <config id="LIBRARY_VERSIONS_DESC"/>
+                    <category-title><ref><sb>p2p_allowed</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="P2P_ALLOWED_DESC"/>
+                    <category-title><ref><sb>custom_parameters</sb></ref>: <shi>Option&lt;String&gt;</shi></category-title>
+                    <config id="CUSTOM_PARAMETERS_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="P2P_CONN_ERROR"/>
+                    <config id="CRYPTO_ERROR"/>
+                    <config id="SIGNALING_ERROR_EXCEPTION"/>
+                    <config id="SIGNALING_UNSUPPORTED_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

@@ -1,19 +1,88 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>SsrcGroup</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>SsrcGroup</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="SSRC_GROUP_DESC"/>
-        <br/>
-        <pg-title>PROPERTIES</pg-title>
+    <config id="SSRC_GROUP_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>SsrcGroup</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>semantics</ref> <shi>-> str</shi></category-title>
-            <config id="SSRC_GROUP_SEMANTICS_DESC"/>
-
-            <category-title><ref>ssrcs</ref> <shi>-> </shi> <shi>list</shi>[<shi>int</shi>]</category-title>
-            <config id="SSRC_GROUP_SSRCS_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>semantics</sb></ref>: <shi>str</shi></category-title>
+                    <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>list[int]</shi></category-title>
+                    <config id="SSRC_GROUP_SSRCS_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_ssrc_group</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>semantics</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi language="c">uint32_t*</shi>, <ref><sb>ssrcs_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="SSRC_GROUP_SSRCS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>SsrcGroup</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>semantics</sb></ref>: <shi>string</shi></category-title>
+                    <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>number[]</shi></category-title>
+                    <config id="SSRC_GROUP_SSRCS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>SsrcGroup</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>String</shi> <ref><sb>semantics</sb></ref></category-title>
+                    <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+                    <category-title><shi>java.util.List&lt;int&gt;</shi> <ref><sb>ssrcs</sb></ref></category-title>
+                    <config id="SSRC_GROUP_SSRCS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>SsrcGroup</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>semantics</sb></ref>: <shi>String</shi></category-title>
+                    <config id="SSRC_GROUP_SEMANTICS_DESC"/>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>Vec&lt;u32&gt;</shi></category-title>
+                    <config id="SSRC_GROUP_SSRCS_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

@@ -1,26 +1,118 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>AudioDescription</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>AudioDescription</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="AUDIO_CONFIG_DESC"/>
-        <br/>
-        <pg-title>PARAMETERS</pg-title>
+    <config id="AUDIO_CONFIG_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>AudioDescription</sb></ref>()
+        </category-title>
         <subtext>
-            <config id="ARG_MEDIA_SOURCE"/>
-
-            <category-title><ref>sample_rate</ref>: <shi>int</shi></category-title>
-            <config id="AUDIO_SAMPLE_DESC"/>
-
-            <category-title><ref>channel_count</ref>: <shi>int</shi></category-title>
-            <config id="AUDIO_CHAN_DESC"/>
-
-            <config id="ARG_INPUT_MEDIA"/>
-
-            <category-title><ref>keep_open</ref>: <shi>bool</shi></category-title>
-            <config id="KEEP_OPEN_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi>ntgcalls.MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>sample_rate</sb></ref>: <shi>int</shi></category-title>
+                    <config id="AUDIO_SAMPLE_DESC"/>
+                    <category-title><ref><sb>channel_count</sb></ref>: <shi>int</shi></category-title>
+                    <config id="AUDIO_CHAN_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>str</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_audio_description</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi language="c">ntg_media_source</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>sample_rate</sb></ref>: <shi language="c">uint32_t</shi></category-title>
+                    <config id="AUDIO_SAMPLE_DESC"/>
+                    <category-title><ref><sb>channel_count</sb></ref>: <shi language="c">uint8_t</shi></category-title>
+                    <config id="AUDIO_CHAN_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>AudioDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>mediaSource</sb></ref>: <shi>MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>sampleRate</sb></ref>: <shi>number</shi></category-title>
+                    <config id="AUDIO_SAMPLE_DESC"/>
+                    <category-title><ref><sb>channelCount</sb></ref>: <shi>number</shi></category-title>
+                    <config id="AUDIO_CHAN_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>string</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keepOpen</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>AudioDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>MediaSource</shi> <ref><sb>media_source</sb></ref></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>sample_rate</sb></ref></category-title>
+                    <config id="AUDIO_SAMPLE_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>channel_count</sb></ref></category-title>
+                    <config id="AUDIO_CHAN_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>input</sb></ref></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>keep_open</sb></ref></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>AudioDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi>MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>sample_rate</sb></ref>: <shi>u32</shi></category-title>
+                    <config id="AUDIO_SAMPLE_DESC"/>
+                    <category-title><ref><sb>channel_count</sb></ref>: <shi>u8</shi></category-title>
+                    <config id="AUDIO_CHAN_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>String</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

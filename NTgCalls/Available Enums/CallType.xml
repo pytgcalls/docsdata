@@ -1,0 +1,108 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>CallType</h1>
+    <config id="CALL_TYPE_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>CallType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>CallType.<sb>GROUP</sb></ref></category-title>
+                <config id="CALL_TYPE_GROUP_DESC"/>
+                <category-title><ref>CallType.<sb>OUTGOING</sb></ref></category-title>
+                <config id="CALL_TYPE_OUTGOING_DESC"/>
+                <category-title><ref>CallType.<sb>INCOMING</sb></ref></category-title>
+                <config id="CALL_TYPE_INCOMING_DESC"/>
+                <category-title><ref>CallType.<sb>P2P</sb></ref></category-title>
+                <config id="CALL_TYPE_P2P_DESC"/>
+                <category-title><ref>CallType.<sb>CONFERENCE</sb></ref></category-title>
+                <config id="CALL_TYPE_CONFERENCE_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_call_type</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_CALL_TYPE_GROUP</sb></ref></category-title>
+                <config id="CALL_TYPE_GROUP_DESC"/>
+                <category-title><ref><sb>NTG_CALL_TYPE_OUTGOING</sb></ref></category-title>
+                <config id="CALL_TYPE_OUTGOING_DESC"/>
+                <category-title><ref><sb>NTG_CALL_TYPE_INCOMING</sb></ref></category-title>
+                <config id="CALL_TYPE_INCOMING_DESC"/>
+                <category-title><ref><sb>NTG_CALL_TYPE_P2P</sb></ref></category-title>
+                <config id="CALL_TYPE_P2P_DESC"/>
+                <category-title><ref><sb>NTG_CALL_TYPE_CONFERENCE</sb></ref></category-title>
+                <config id="CALL_TYPE_CONFERENCE_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>CallType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>CallType.<sb>GROUP</sb></ref></category-title>
+                <config id="CALL_TYPE_GROUP_DESC"/>
+                <category-title><ref>CallType.<sb>OUTGOING</sb></ref></category-title>
+                <config id="CALL_TYPE_OUTGOING_DESC"/>
+                <category-title><ref>CallType.<sb>INCOMING</sb></ref></category-title>
+                <config id="CALL_TYPE_INCOMING_DESC"/>
+                <category-title><ref>CallType.<sb>P2P</sb></ref></category-title>
+                <config id="CALL_TYPE_P2P_DESC"/>
+                <category-title><ref>CallType.<sb>CONFERENCE</sb></ref></category-title>
+                <config id="CALL_TYPE_CONFERENCE_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>CallType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>CallType.<sb>GROUP</sb></ref></category-title>
+                <config id="CALL_TYPE_GROUP_DESC"/>
+                <category-title><ref>CallType.<sb>OUTGOING</sb></ref></category-title>
+                <config id="CALL_TYPE_OUTGOING_DESC"/>
+                <category-title><ref>CallType.<sb>INCOMING</sb></ref></category-title>
+                <config id="CALL_TYPE_INCOMING_DESC"/>
+                <category-title><ref>CallType.<sb>P2P</sb></ref></category-title>
+                <config id="CALL_TYPE_P2P_DESC"/>
+                <category-title><ref>CallType.<sb>CONFERENCE</sb></ref></category-title>
+                <config id="CALL_TYPE_CONFERENCE_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>CallType</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>CallType::<sb>Group</sb></ref></category-title>
+                <config id="CALL_TYPE_GROUP_DESC"/>
+                <category-title><ref>CallType::<sb>Outgoing</sb></ref></category-title>
+                <config id="CALL_TYPE_OUTGOING_DESC"/>
+                <category-title><ref>CallType::<sb>Incoming</sb></ref></category-title>
+                <config id="CALL_TYPE_INCOMING_DESC"/>
+                <category-title><ref>CallType::<sb>P2p</sb></ref></category-title>
+                <config id="CALL_TYPE_P2P_DESC"/>
+                <category-title><ref>CallType::<sb>Conference</sb></ref></category-title>
+                <config id="CALL_TYPE_CONFERENCE_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+</page>

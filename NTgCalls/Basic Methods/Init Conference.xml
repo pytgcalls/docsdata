@@ -1,0 +1,173 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Init Conference</h1>
+    <config id="INIT_CONFERENCE_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-9" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+await app.init_conference(
+    chat_id,
+    user_id,
+    last_block
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-11" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_init_conference(
+    handle,
+    chat_id,
+    user_id,
+    last_block, last_block_len,
+    &amp;out
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-9" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.initConference(
+    chatId,
+    userId,
+    lastBlock
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-9" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.initConference(
+    chatId,
+    userId,
+    lastBlock
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-9" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.init_conference(
+    chat_id,
+    user_id,
+    last_block
+).await?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>init_conference</sb></ref>() <shi>-&gt; ntgcalls.ConferenceJoinParams</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_CONFERENCE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>last_block</sb></ref>: <shi>Optional</shi>[<shi>bytes</shi>]</category-title>
+                    <config id="LAST_BLOCK_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_init_conference</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="INIT_CONFERENCE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>last_block</sb></ref>: <shi language="c">const uint8_t*</shi>, <ref><sb>last_block_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="LAST_BLOCK_DESC"/>
+                    <category-title><ref><sb>out</sb></ref>: <shi language="c">ntg_conference_join_params*</shi></category-title>
+                    <config id="C_OUT_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>initConference</sb></ref>() <shi>: Promise&lt;ConferenceJoinParams&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_CONFERENCE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>userId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>lastBlock</sb></ref><shi>?</shi>: <shi>Buffer</shi></category-title>
+                    <config id="LAST_BLOCK_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>ConferenceJoinParams</shi> <ref src="method">NTgCalls.<sb>initConference</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="INIT_CONFERENCE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>long</shi> <ref><sb>userId</sb></ref></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><shi>byte[]</shi> <ref><sb>lastBlock</sb></ref></category-title>
+                    <config id="LAST_BLOCK_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>init_conference</sb></ref>() <shi>-&gt; Result&lt;ConferenceJoinParams&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="INIT_CONFERENCE_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>last_block</sb></ref>: <shi>Option&lt;Vec&lt;u8&gt;&gt;</shi></category-title>
+                    <config id="LAST_BLOCK_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

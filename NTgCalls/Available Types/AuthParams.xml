@@ -1,18 +1,88 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>AuthParams</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>AuthParams</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="AUTH_PARAMS_DESC"/>
-        <br/>
-        <pg-title>PROPERTIES</pg-title>
+    <config id="AUTH_PARAMS_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>AuthParams</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>g_a_or_b</ref> <shi>-> bytes</shi></category-title>
-            <config id="G_A_OR_B_DESC"/>
-            <category-title><ref>key_fingerprint</ref> <shi>-> int</shi></category-title>
-            <config id="KEY_FINGERPRINT_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>key_fingerprint</sb></ref>: <shi>int</shi></category-title>
+                    <config id="KEY_FINGERPRINT_DESC"/>
+                    <category-title><ref><sb>g_a_or_b</sb></ref>: <shi>bytes</shi></category-title>
+                    <config id="G_A_OR_B_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_auth_params</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>key_fingerprint</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="KEY_FINGERPRINT_DESC"/>
+                    <category-title><ref><sb>g_a_or_b</sb></ref>: <shi language="c">uint8_t*</shi>, <ref><sb>g_a_or_b_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="G_A_OR_B_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>AuthParams</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>keyFingerprint</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="KEY_FINGERPRINT_DESC"/>
+                    <category-title><ref><sb>gAOrB</sb></ref>: <shi>Buffer</shi></category-title>
+                    <config id="G_A_OR_B_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>AuthParams</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>key_fingerprint</sb></ref></category-title>
+                    <config id="KEY_FINGERPRINT_DESC"/>
+                    <category-title><shi>byte[]</shi> <ref><sb>g_a_or_b</sb></ref></category-title>
+                    <config id="G_A_OR_B_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>AuthParams</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>key_fingerprint</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="KEY_FINGERPRINT_DESC"/>
+                    <category-title><ref><sb>g_a_or_b</sb></ref>: <shi>Vec&lt;u8&gt;</shi></category-title>
+                    <config id="G_A_OR_B_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

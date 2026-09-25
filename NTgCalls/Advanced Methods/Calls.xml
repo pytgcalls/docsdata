@@ -1,0 +1,104 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Calls</h1>
+    <config id="LIST_CALLS_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+await app.calls()</syntax-highlight>
+        <syntax-highlight id="c" mark="5-8" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_calls(
+    handle,
+    &amp;out, &amp;out_len
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.calls();</syntax-highlight>
+        <syntax-highlight id="java" mark="5" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.calls();</syntax-highlight>
+        <syntax-highlight id="rust" mark="5" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.calls().await?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>calls</sb></ref>() <shi>-&gt; dict[int, ntgcalls.CallInfo]</shi>
+        </category-title>
+        <subtext>
+            <config id="CALLS_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_calls</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CALLS_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>out</sb></ref>: <shi language="c">ntg_call_info_entry**</shi>, <ref><sb>out_len</sb></ref>: <shi language="c">size_t*</shi></category-title>
+                    <config id="C_OUT_LEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>calls</sb></ref>() <shi>: Promise&lt;Map&lt;bigint, CallInfo&gt;&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CALLS_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>java.util.Map&lt;long,  media.CallInfo&gt;</shi> <ref src="method">NTgCalls.<sb>calls</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CALLS_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>calls</sb></ref>() <shi>-&gt; Result&lt;HashMap&lt;i64, CallInfo&gt;&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CALLS_DESC2"/>
+            <br/>
+        </subtext>
+    </lang-block>
+</page>

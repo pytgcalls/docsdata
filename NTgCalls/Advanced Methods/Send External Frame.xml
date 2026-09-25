@@ -1,56 +1,185 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Send External Frame</h1>
     <config id="SEND_EXTERNAL_FRAME_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="11-21">
-        from ntgcalls import NTgCalls
-        from ntgcalls import StreamDevice
-        from ntgcalls import FrameData
-        from datetime import datetime
-        ...
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-10" language="python">
+from ntgcalls import NTgCalls
 
-        app = NTgCalls()
-        ...
-        pcm16_le_data = ...
+app = NTgCalls()
 
-        await app.send_external_frame(
-            -1001185324811,
-            StreamDevice.MICROPHONE,
-            pcm16_le_data,
-            FrameData(
-                int(datetime.now().timestamp()),
-                0,
-                0,
-                0,
-            )
-        )
-    </syntax-highlight>
+await app.send_external_frame(
+    chat_id,
+    device,
+    data,
+    frame_data
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-11" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_send_external_frame(
+    handle,
+    chat_id,
+    device,
+    data, data_len,
+    frame_data
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-10" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.sendExternalFrame(
+    chatId,
+    device,
+    data,
+    frameData
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-10" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.sendExternalFrame(
+    chatId,
+    device,
+    data,
+    frameData
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-10" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.send_external_frame(
+    chat_id,
+    device,
+    data,
+    frame_data
+).await?;</syntax-highlight>
+    </multisyntax>
     <separator/>
     <h2>Details</h2>
-    <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>send_external_frame</sb></ref>()
-    </category-title>
-    <subtext>
-        <config id="SEND_EXTERNAL_FRAME_DESC2"/>
-        <br/>
-        <category>
-            <pg-title>PARAMETERS</pg-title>
-            <subtext>
-                <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>device</sb></ref>: <docs-ref link="/NTgCalls/Available Enums/StreamDevice">ntgcalls.StreamDevice</docs-ref></category-title>
-                <config id="DEVICE_DESC"/>
-                <category-title><ref><sb>frame</sb></ref>: <shi>bytes</shi></category-title>
-                <config id="FRAME_BUFFER_DESC"/>
-                <category-title><ref><sb>frame_data</sb></ref>:  <docs-ref link="/NTgCalls/Available Types/FrameData">ntgcalls.FrameData</docs-ref></category-title>
-                <subtext><config id="FRAME_DATA_DESC"/></subtext>
-            </subtext>
-        </category>
-        <br/>
-        <category>
-            <pg-title>RAISES</pg-title>
-            <subtext>
-
-            </subtext>
-        </category>
-    </subtext>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>send_external_frame</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>ntgcalls.StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                    <category-title><ref><sb>data</sb></ref>: <shi>bytes</shi></category-title>
+                    <config id="FRAME_BUFFER_DESC"/>
+                    <category-title><ref><sb>frame_data</sb></ref>: <shi>ntgcalls.FrameData</shi></category-title>
+                    <config id="FRAME_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_send_external_frame</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi language="c">ntg_stream_device</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                    <category-title><ref><sb>data</sb></ref>: <shi language="c">const uint8_t*</shi>, <ref><sb>data_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="FRAME_BUFFER_DESC"/>
+                    <category-title><ref><sb>frame_data</sb></ref>: <shi language="c">ntg_frame_data</shi></category-title>
+                    <config id="FRAME_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>sendExternalFrame</sb></ref>() <shi>: Promise&lt;void&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                    <category-title><ref><sb>data</sb></ref>: <shi>Buffer</shi></category-title>
+                    <config id="FRAME_BUFFER_DESC"/>
+                    <category-title><ref><sb>frameData</sb></ref>: <shi>FrameData</shi></category-title>
+                    <config id="FRAME_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>sendExternalFrame</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>StreamDevice</shi> <ref><sb>device</sb></ref></category-title>
+                    <config id="DEVICE_DESC"/>
+                    <category-title><shi>byte[]</shi> <ref><sb>data</sb></ref></category-title>
+                    <config id="FRAME_BUFFER_DESC"/>
+                    <category-title><shi>FrameData</shi> <ref><sb>frameData</sb></ref></category-title>
+                    <config id="FRAME_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>send_external_frame</sb></ref>() <shi>-&gt; Result&lt;()&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="SEND_EXTERNAL_FRAME_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                    <category-title><ref><sb>data</sb></ref>: <shi>Vec&lt;u8&gt;</shi></category-title>
+                    <config id="FRAME_BUFFER_DESC"/>
+                    <category-title><ref><sb>frame_data</sb></ref>: <shi>FrameData</shi></category-title>
+                    <config id="FRAME_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

@@ -1,28 +1,138 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>SegmentPartRequest</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>SegmentPartRequest</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="SEGMENT_PART_REQUEST_DESC"/>
-        <br/>
-        <pg-title>PARAMETERS</pg-title>
+    <config id="SEGMENT_PART_REQUEST_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>SegmentPartRequest</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>segment_id</ref>: <shi>int</shi></category-title>
-            <config id="BROADCAST_SEGMENT_ID_DESC"/>
-            <category-title><ref>part_id</ref>: <shi>int</shi></category-title>
-            <config id="BROADCAST_PART_ID_DESC"/>
-            <category-title><ref>limit</ref>: <shi>int</shi></category-title>
-            <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
-            <category-title><ref>timestamp</ref>: <shi>int</shi></category-title>
-            <config id="BROADCAST_TIMESTAMP_DESC"/>
-            <category-title><ref>quality_update</ref>: <shi>bool</shi></category-title>
-            <config id="QUALITY_UPDATE_DESC"/>
-            <category-title><ref>channel_id</ref>: <shi>int</shi></category-title>
-            <config id="BROADCAST_CHANNEL_ID_DESC"/>
-            <category-title><ref>quality</ref>: <docs-ref link="/NTgCalls/Available Enums/MediaSegmentQuality">ntgcalls.MediaSegmentQuality</docs-ref></category-title>
-            <subtext><config id="MEDIA_SEGMENT_QUALITY_DESC"/></subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>segment_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                    <category-title><ref><sb>part_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="BROADCAST_PART_ID_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>int</shi></category-title>
+                    <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+                    <category-title><ref><sb>timestamp</sb></ref>: <shi>int</shi></category-title>
+                    <config id="BROADCAST_TIMESTAMP_DESC"/>
+                    <category-title><ref><sb>quality_update</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="QUALITY_UPDATE_DESC"/>
+                    <category-title><ref><sb>channel_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="BROADCAST_CHANNEL_ID_DESC"/>
+                    <category-title><ref><sb>quality</sb></ref>: <shi>ntgcalls.MediaSegmentQuality</shi></category-title>
+                    <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_segment_part_request</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>segment_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                    <category-title><ref><sb>part_id</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="BROADCAST_PART_ID_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+                    <category-title><ref><sb>timestamp</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="BROADCAST_TIMESTAMP_DESC"/>
+                    <category-title><ref><sb>quality_update</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="QUALITY_UPDATE_DESC"/>
+                    <category-title><ref><sb>channel_id</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="BROADCAST_CHANNEL_ID_DESC"/>
+                    <category-title><ref><sb>quality</sb></ref>: <shi language="c">ntg_media_segment_quality</shi></category-title>
+                    <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>SegmentPartRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>segmentId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                    <category-title><ref><sb>partId</sb></ref>: <shi>number</shi></category-title>
+                    <config id="BROADCAST_PART_ID_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>number</shi></category-title>
+                    <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+                    <category-title><ref><sb>timestamp</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="BROADCAST_TIMESTAMP_DESC"/>
+                    <category-title><ref><sb>qualityUpdate</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="QUALITY_UPDATE_DESC"/>
+                    <category-title><ref><sb>channelId</sb></ref>: <shi>number</shi></category-title>
+                    <config id="BROADCAST_CHANNEL_ID_DESC"/>
+                    <category-title><ref><sb>quality</sb></ref>: <shi>MediaSegmentQuality</shi></category-title>
+                    <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>SegmentPartRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>segment_id</sb></ref></category-title>
+                    <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>part_id</sb></ref></category-title>
+                    <config id="BROADCAST_PART_ID_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>limit</sb></ref></category-title>
+                    <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+                    <category-title><shi>long</shi> <ref><sb>timestamp</sb></ref></category-title>
+                    <config id="BROADCAST_TIMESTAMP_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>quality_update</sb></ref></category-title>
+                    <config id="QUALITY_UPDATE_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>channel_id</sb></ref></category-title>
+                    <config id="BROADCAST_CHANNEL_ID_DESC"/>
+                    <category-title><shi>MediaSegmentQuality</shi> <ref><sb>quality</sb></ref></category-title>
+                    <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>SegmentPartRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>segment_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="BROADCAST_SEGMENT_ID_DESC"/>
+                    <category-title><ref><sb>part_id</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="BROADCAST_PART_ID_DESC"/>
+                    <category-title><ref><sb>limit</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="SEGMENT_PART_REQUEST_LIMIT_DESC"/>
+                    <category-title><ref><sb>timestamp</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="BROADCAST_TIMESTAMP_DESC"/>
+                    <category-title><ref><sb>quality_update</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="QUALITY_UPDATE_DESC"/>
+                    <category-title><ref><sb>channel_id</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="BROADCAST_CHANNEL_ID_DESC"/>
+                    <category-title><ref><sb>quality</sb></ref>: <shi>MediaSegmentQuality</shi></category-title>
+                    <config id="MEDIA_SEGMENT_QUALITY_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

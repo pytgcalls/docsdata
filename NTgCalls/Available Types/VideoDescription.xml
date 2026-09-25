@@ -1,25 +1,128 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>VideoDescription</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>VideoDescription</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="VIDEO_CONFIG_DESC"/>
-        <br/>
-        <pg-title>PARAMETERS</pg-title>
+    <config id="VIDEO_CONFIG_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>VideoDescription</sb></ref>()
+        </category-title>
         <subtext>
-            <config id="ARG_MEDIA_SOURCE"/>
-
-            <config id="ARG_VIDEO_CONFIG"/>
-
-            <category-title><ref>fps</ref>: <shi>int</shi></category-title>
-            <config id="VIDEO_FPS_DESC"/>
-
-            <config id="ARG_INPUT_MEDIA"/>
-
-            <category-title><ref>keep_open</ref>: <shi>bool</shi></category-title>
-            <config id="KEEP_OPEN_DESC"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi>ntgcalls.MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>width</sb></ref>: <shi>int</shi></category-title>
+                    <config id="VIDEO_WIDTH_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>int</shi></category-title>
+                    <config id="VIDEO_HEIGHT_DESC"/>
+                    <category-title><ref><sb>fps</sb></ref>: <shi>int</shi></category-title>
+                    <config id="VIDEO_FPS_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>str</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_video_description</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi language="c">ntg_media_source</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>width</sb></ref>: <shi language="c">int16_t</shi></category-title>
+                    <config id="VIDEO_WIDTH_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi language="c">int16_t</shi></category-title>
+                    <config id="VIDEO_HEIGHT_DESC"/>
+                    <category-title><ref><sb>fps</sb></ref>: <shi language="c">uint8_t</shi></category-title>
+                    <config id="VIDEO_FPS_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>VideoDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>mediaSource</sb></ref>: <shi>MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>width</sb></ref>: <shi>number</shi></category-title>
+                    <config id="VIDEO_WIDTH_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>number</shi></category-title>
+                    <config id="VIDEO_HEIGHT_DESC"/>
+                    <category-title><ref><sb>fps</sb></ref>: <shi>number</shi></category-title>
+                    <config id="VIDEO_FPS_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>string</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keepOpen</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>VideoDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>MediaSource</shi> <ref><sb>media_source</sb></ref></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>width</sb></ref></category-title>
+                    <config id="VIDEO_WIDTH_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>height</sb></ref></category-title>
+                    <config id="VIDEO_HEIGHT_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>fps</sb></ref></category-title>
+                    <config id="VIDEO_FPS_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>input</sb></ref></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>keep_open</sb></ref></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>VideoDescription</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>media_source</sb></ref>: <shi>MediaSource</shi></category-title>
+                    <config id="MEDIA_SOURCE_DESC"/>
+                    <category-title><ref><sb>width</sb></ref>: <shi>i16</shi></category-title>
+                    <config id="VIDEO_WIDTH_DESC"/>
+                    <category-title><ref><sb>height</sb></ref>: <shi>i16</shi></category-title>
+                    <config id="VIDEO_HEIGHT_DESC"/>
+                    <category-title><ref><sb>fps</sb></ref>: <shi>u8</shi></category-title>
+                    <config id="VIDEO_FPS_DESC"/>
+                    <category-title><ref><sb>input</sb></ref>: <shi>String</shi></category-title>
+                    <config id="ARG_INPUT_MEDIA_DESC"/>
+                    <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="KEEP_OPEN_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

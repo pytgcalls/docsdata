@@ -1,22 +1,98 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>RemoteSource</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>RemoteSource</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="REMOTE_SOURCE_DESC"/>
-        <br/>
-        <pg-title>PROPERTIES</pg-title>
+    <config id="REMOTE_SOURCE_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>RemoteSource</sb></ref>()
+        </category-title>
         <subtext>
-            <category-title><ref>ssrc</ref> <shi>-> int</shi></category-title>
-            <config id="SSRC_DESC"/>
-
-            <category-title><ref>state</ref> <shi>-></shi> <docs-ref link="/NTgCalls/Available Enums/StreamStatus">ntgcalls.StreamStatus</docs-ref></category-title>
-            <config id="STREAM_STATUS_DESC2"/>
-
-            <category-title><ref>device</ref> <shi>-> </shi> <docs-ref link="/NTgCalls/Available Enums/StreamDevice">ntgcalls.StreamDevice</docs-ref></category-title>
-            <config id="STREAM_DEVICE_DESC2"/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>int</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                    <category-title><ref><sb>state</sb></ref>: <shi>ntgcalls.StreamStatus</shi></category-title>
+                    <config id="STREAM_STATUS_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>ntgcalls.StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                </subtext>
+            </category>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_remote_source</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi language="c">uint32_t</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                    <category-title><ref><sb>state</sb></ref>: <shi language="c">ntg_stream_status</shi></category-title>
+                    <config id="STREAM_STATUS_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi language="c">ntg_stream_device</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>RemoteSource</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>number</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                    <category-title><ref><sb>state</sb></ref>: <shi>StreamStatus</shi></category-title>
+                    <config id="STREAM_STATUS_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>RemoteSource</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>int</shi> <ref><sb>ssrc</sb></ref></category-title>
+                    <config id="SSRC_DESC"/>
+                    <category-title><shi>StreamStatus</shi> <ref><sb>state</sb></ref></category-title>
+                    <config id="STREAM_STATUS_DESC"/>
+                    <category-title><shi>StreamDevice</shi> <ref><sb>device</sb></ref></category-title>
+                    <config id="DEVICE_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>RemoteSource</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>u32</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                    <category-title><ref><sb>state</sb></ref>: <shi>StreamStatus</shi></category-title>
+                    <config id="STREAM_STATUS_DESC"/>
+                    <category-title><ref><sb>device</sb></ref>: <shi>StreamDevice</shi></category-title>
+                    <config id="DEVICE_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

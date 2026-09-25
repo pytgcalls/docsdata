@@ -1,0 +1,88 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>SsrcMapping</h1>
+    <config id="SSRC_MAPPING_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>SsrcMapping</sb></ref>()
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>int</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_ssrc_mapping</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi language="c">int32_t</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>SsrcMapping</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>userId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>number</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>SsrcMapping</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>user_id</sb></ref></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><shi>int</shi> <ref><sb>ssrc</sb></ref></category-title>
+                    <config id="SSRC_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>SsrcMapping</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>user_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="USER_ID_DESC"/>
+                    <category-title><ref><sb>ssrc</sb></ref>: <shi>i32</shi></category-title>
+                    <config id="SSRC_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

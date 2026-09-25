@@ -1,57 +1,215 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Set Stream Sources</h1>
-    <alert type="warning">
-        <text>This method replaces the deprecated <code>change_stream</code> method.</text>
-    </alert>
     <config id="CHANGE_STREAM_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="9-21">
-        from ntgcalls import NTgCalls
-        from ntgcalls import StreamMode
-        from ntgcalls import MediaDescription
-        from ntgcalls import AudioDescription
-        ...
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-9" language="python">
+from ntgcalls import NTgCalls
 
-        app = NTgCalls()
+app = NTgCalls()
 
-        await app.set_stream_sources(
-            -1001185324811,
-            StreamMode.CAPTURE,
-            MediaDescription(
-                AudioDescription(
-                    media_source=MediaSource.File,
-                    input="foxes.pcm",
-                    sample_rate=96000,
-                    bits_per_sample=16,
-                    channel_count=2,
-                ),
-            )
-        )
-    </syntax-highlight>
+await app.set_stream_sources(
+    chat_id,
+    mode,
+    media
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-10" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_set_stream_sources(
+    handle,
+    chat_id,
+    mode,
+    media
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-9" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.setStreamSources(
+    chatId,
+    mode,
+    media
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-9" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.setStreamSources(
+    chatId,
+    mode,
+    media
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-9" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.set_stream_sources(
+    chat_id,
+    mode,
+    media
+).await?;</syntax-highlight>
+    </multisyntax>
     <separator/>
     <h2>Details</h2>
-    <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>set_stream_sources</sb></ref>()
-    </category-title>
-    <subtext>
-        <config id="CHANGE_STREAM_DESC_2"/>
-        <br/>
-        <category>
-            <pg-title>PARAMETERS</pg-title>
-            <subtext>
-                <config id="ARG_INT_ID"/>
-                <config id="STREAM_MODE"/>
-                <config id="ARG_STREAM_PARAMS"/>
-            </subtext>
-        </category>
-        <br/>
-        <category>
-            <pg-title>RAISES</pg-title>
-            <subtext>
-                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
-                <config id="NTG_STREAM_EXCEPTIONS"/>
-                <config id="RTMP_STREAMING_UNSUPPORTED"/>
-            </subtext>
-        </category>
-    </subtext>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>set_stream_sources</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CHANGE_STREAM_DESC_2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>mode</sb></ref>: <shi>ntgcalls.StreamMode</shi></category-title>
+                    <config id="STREAM_MODE_DESC"/>
+                    <category-title><ref><sb>media</sb></ref>: <shi>ntgcalls.MediaDescription</shi></category-title>
+                    <config id="ARG_MEDIA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="NTG_STREAM_EXCEPTIONS"/>
+                    <config id="RTMP_STREAMING_UNSUPPORTED"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_set_stream_sources</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CHANGE_STREAM_DESC_2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>mode</sb></ref>: <shi language="c">ntg_stream_mode</shi></category-title>
+                    <config id="STREAM_MODE_DESC"/>
+                    <category-title><ref><sb>media</sb></ref>: <shi language="c">ntg_media_description</shi></category-title>
+                    <config id="ARG_MEDIA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="NTG_STREAM_EXCEPTIONS"/>
+                    <config id="RTMP_STREAMING_UNSUPPORTED"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>setStreamSources</sb></ref>() <shi>: Promise&lt;void&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CHANGE_STREAM_DESC_2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>mode</sb></ref>: <shi>StreamMode</shi></category-title>
+                    <config id="STREAM_MODE_DESC"/>
+                    <category-title><ref><sb>media</sb></ref>: <shi>MediaDescription</shi></category-title>
+                    <config id="ARG_MEDIA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="NTG_STREAM_EXCEPTIONS"/>
+                    <config id="RTMP_STREAMING_UNSUPPORTED"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>setStreamSources</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="CHANGE_STREAM_DESC_2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>StreamMode</shi> <ref><sb>mode</sb></ref></category-title>
+                    <config id="STREAM_MODE_DESC"/>
+                    <category-title><shi>MediaDescription</shi> <ref><sb>media</sb></ref></category-title>
+                    <config id="ARG_MEDIA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="NTG_STREAM_EXCEPTIONS"/>
+                    <config id="RTMP_STREAMING_UNSUPPORTED"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>set_stream_sources</sb></ref>() <shi>-&gt; Result&lt;()&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="CHANGE_STREAM_DESC_2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>mode</sb></ref>: <shi>StreamMode</shi></category-title>
+                    <config id="STREAM_MODE_DESC"/>
+                    <category-title><ref><sb>media</sb></ref>: <shi>MediaDescription</shi></category-title>
+                    <config id="ARG_MEDIA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                    <config id="NTG_STREAM_EXCEPTIONS"/>
+                    <config id="RTMP_STREAMING_UNSUPPORTED"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

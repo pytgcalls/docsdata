@@ -1,0 +1,127 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Enable GLib Loop</h1>
+    <config id="ENABLE_GLIB_LOOP_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="3-5" language="python">
+from ntgcalls import NTgCalls
+
+NTgCalls.enable_glib_loop(
+    enable
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="3-5" language="c">
+#include "ntgcalls.h"
+
+ntg_result result = ntg_enable_glib_loop(
+    enable,
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="3-5" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+NTgCalls.enableGlibLoop(
+    enable
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="3-5" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls.enableGlibLoop(
+    enable
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="3-5" language="rust">
+use ntgcalls::NTgCalls;
+
+NTgCalls::enable_glib_loop(
+    enable
+)?;</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>enable_glib_loop</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ENABLE_GLIB_LOOP_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>enable</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_enable_glib_loop</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ENABLE_GLIB_LOOP_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>enable</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>static</shi> <ref src="method">NTgCalls.<sb>enableGlibLoop</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ENABLE_GLIB_LOOP_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>enable</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>static</shi> <shi>void</shi> <ref src="method">NTgCalls.<sb>enableGlibLoop</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ENABLE_GLIB_LOOP_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>boolean</shi> <ref><sb>enable</sb></ref></category-title>
+                    <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub fn</shi> <ref src="method">NTgCalls::<sb>enable_glib_loop</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ENABLE_GLIB_LOOP_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>enable</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="ENABLE_OR_DISABLE_GLIB_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

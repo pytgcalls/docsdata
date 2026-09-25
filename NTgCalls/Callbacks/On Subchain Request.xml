@@ -1,0 +1,174 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>On Subchain Request</h1>
+    <config id="ON_SUBCHAIN_REQUEST_DESC"/>
+    <h3>Example</h3>
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-11" language="python">
+from ntgcalls import NTgCalls
+
+app = NTgCalls()
+
+def on_subchain_request(
+    chat_id,
+    subchain_request
+):
+    ...
+
+app.on_subchain_request(on_subchain_request)</syntax-highlight>
+        <syntax-highlight id="c" mark="5" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_on_subchain_request_callback(handle, &amp;on_subchain_request_callback, NULL);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-10" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+app.onSubchainRequest((
+    chatId,
+    subchainRequest
+) => {
+    // ...
+});</syntax-highlight>
+        <syntax-highlight id="java" mark="5-10" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.onSubchainRequest((
+    chatId,
+    subchainRequest
+) -> {
+    // ...
+});</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-10" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.on_subchain_request(|
+    chat_id,
+    subchain_request
+| {
+    // ...
+});</syntax-highlight>
+    </multisyntax>
+    <separator/>
+    <h2>Details</h2>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>on_subchain_request</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ON_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>CALLBACK ARGUMENTS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain_request</sb></ref>: <shi>ntgcalls.SubchainRequest</shi></category-title>
+                    <config id="SUBCHAIN_REQUEST_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_on_subchain_request_callback</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ON_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>callback</sb></ref>: <shi language="c">ntg_subchain_request_callback_cb</shi></category-title>
+                    <config id="C_CALLBACK_DESC"/>
+                    <category-title><ref><sb>user_data</sb></ref>: <shi language="c">void*</shi></category-title>
+                    <config id="C_USER_DATA_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>CALLBACK ARGUMENTS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain_request</sb></ref>: <shi language="c">ntg_subchain_request</shi></category-title>
+                    <config id="SUBCHAIN_REQUEST_DESC"/>
+                    <category-title><ref><sb>user_data</sb></ref>: <shi language="c">void*</shi></category-title>
+                    <config id="C_USER_DATA_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>static</shi> <ref src="method">NTgCalls.<sb>onSubchainRequest</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ON_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>CALLBACK ARGUMENTS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchainRequest</sb></ref>: <shi>SubchainRequest</shi></category-title>
+                    <config id="SUBCHAIN_REQUEST_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>void</shi> <ref src="method">NTgCalls.<sb>onSubchainRequest</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ON_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>CALLBACK ARGUMENTS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>SubchainRequest</shi> <ref><sb>subchainRequest</sb></ref></category-title>
+                    <config id="SUBCHAIN_REQUEST_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub fn</shi> <ref src="method">NTgCalls::<sb>on_subchain_request</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="ON_SUBCHAIN_REQUEST_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>CALLBACK ARGUMENTS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>subchain_request</sb></ref>: <shi>SubchainRequest</shi></category-title>
+                    <config id="SUBCHAIN_REQUEST_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

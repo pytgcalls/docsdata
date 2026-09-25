@@ -1,0 +1,98 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>VideoRotation</h1>
+    <config id="VIDEO_ROTATION_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>VideoRotation</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_0</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_0_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_90</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_90_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_180</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_180_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_270</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_270_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_video_rotation</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_VIDEO_ROTATION_VIDEO_ROTATION_0</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_0_DESC"/>
+                <category-title><ref><sb>NTG_VIDEO_ROTATION_VIDEO_ROTATION_90</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_90_DESC"/>
+                <category-title><ref><sb>NTG_VIDEO_ROTATION_VIDEO_ROTATION_180</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_180_DESC"/>
+                <category-title><ref><sb>NTG_VIDEO_ROTATION_VIDEO_ROTATION_270</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_270_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>VideoRotation</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_0</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_0_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_90</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_90_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_180</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_180_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_270</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_270_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>VideoRotation</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_0</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_0_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_90</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_90_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_180</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_180_DESC"/>
+                <category-title><ref>VideoRotation.<sb>VIDEO_ROTATION_270</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_270_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>VideoRotation</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>VideoRotation::<sb>VideoRotation0</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_0_DESC"/>
+                <category-title><ref>VideoRotation::<sb>VideoRotation90</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_90_DESC"/>
+                <category-title><ref>VideoRotation::<sb>VideoRotation180</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_180_DESC"/>
+                <category-title><ref>VideoRotation::<sb>VideoRotation270</sb></ref></category-title>
+                <config id="VIDEO_ROTATION_VIDEO_ROTATION_270_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+</page>

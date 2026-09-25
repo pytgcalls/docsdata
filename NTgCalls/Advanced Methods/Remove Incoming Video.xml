@@ -1,42 +1,193 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Remove Incoming Video</h1>
     <config id="REMOVE_INCOMING_VIDEO_DESC"/>
     <h3>Example</h3>
-    <syntax-highlight mark="8-11">
-        from ntgcalls import NTgCalls
-        ...
+    <multisyntax id="languages">
+        <tabs>
+            <tab id="python">Python</tab>
+            <tab id="c">C</tab>
+            <tab id="node">Node.js</tab>
+            <tab id="java">Java</tab>
+            <tab id="rust">Rust</tab>
+        </tabs>
+        <syntax-highlight id="python" mark="5-8" language="python">
+from ntgcalls import NTgCalls
 
-        app = NTgCalls()
-        ...
-        endpoint = ...
+app = NTgCalls()
 
-        await app.remove_incoming_video(
-            -1001185324811,
-            endpoint,
-        )
-    </syntax-highlight>
+await app.remove_incoming_video(
+    chat_id,
+    endpoint
+)</syntax-highlight>
+        <syntax-highlight id="c" mark="5-10" language="c">
+#include "ntgcalls.h"
+
+ntg_instance* handle = ntg_instance_create();
+
+ntg_result result = ntg_remove_incoming_video(
+    handle,
+    chat_id,
+    endpoint,
+    &amp;out
+);</syntax-highlight>
+        <syntax-highlight id="node" mark="5-8" language="javascript">
+const { NTgCalls } = require('ntgcalls');
+
+const app = new NTgCalls();
+
+await app.removeIncomingVideo(
+    chatId,
+    endpoint
+);</syntax-highlight>
+        <syntax-highlight id="java" mark="5-8" language="java">
+import io.github.pytgcalls.NTgCalls;
+
+NTgCalls app = new NTgCalls();
+
+app.removeIncomingVideo(
+    chatId,
+    endpoint
+);</syntax-highlight>
+        <syntax-highlight id="rust" mark="5-8" language="rust">
+use ntgcalls::NTgCalls;
+
+let app = NTgCalls::new();
+
+app.remove_incoming_video(
+    chat_id,
+    endpoint
+).await?;</syntax-highlight>
+    </multisyntax>
     <separator/>
     <h2>Details</h2>
-    <category-title noref="true">
-        <shi>async</shi> <ref src="method">NTgCalls.<sb>remove_incoming_video</sb></ref>()
-    </category-title>
-    <subtext>
-        <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
-        <br/>
-        <category>
-            <pg-title>PARAMETERS</pg-title>
-            <subtext>
-                <config id="ARG_INT_ID"/>
-                <category-title><ref><sb>endpoint</sb></ref>: <shi>str</shi></category-title>
-                <config id="ENDPOINT_DESC"/>
-            </subtext>
-        </category>
-        <br/>
-        <category>
-            <pg-title>RAISES</pg-title>
-            <subtext>
-                <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
-            </subtext>
-        </category>
-    </subtext>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>async</shi> <ref src="method">NTgCalls.<sb>remove_incoming_video</sb></ref>() <shi>-&gt; bool</shi>
+        </category-title>
+        <subtext>
+            <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>endpoint</sb></ref>: <shi>str</shi></category-title>
+                    <config id="ENDPOINT_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_remove_incoming_video</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>handle</sb></ref>: <shi language="c">ntg_instance*</shi></category-title>
+                    <config id="C_HANDLE_DESC"/>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>endpoint</sb></ref>: <shi language="c">const char*</shi></category-title>
+                    <config id="ENDPOINT_DESC"/>
+                    <category-title><ref><sb>out</sb></ref>: <shi language="c">bool*</shi></category-title>
+                    <config id="C_OUT_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <ref src="method">NTgCalls.<sb>removeIncomingVideo</sb></ref>() <shi>: Promise&lt;boolean&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>endpoint</sb></ref>: <shi>string</shi></category-title>
+                    <config id="ENDPOINT_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>boolean</shi> <ref src="method">NTgCalls.<sb>removeIncomingVideo</sb></ref>()
+        </category-title>
+        <subtext>
+            <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>String</shi> <ref><sb>endpoint</sb></ref></category-title>
+                    <config id="ENDPOINT_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>remove_incoming_video</sb></ref>() <shi>-&gt; Result&lt;bool&gt;</shi>
+        </category-title>
+        <subtext>
+            <config id="REMOVE_INCOMING_VIDEO_DESC2"/>
+            <br/>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>endpoint</sb></ref>: <shi>String</shi></category-title>
+                    <config id="ENDPOINT_DESC"/>
+                </subtext>
+            </category>
+            <br/>
+            <category>
+                <pg-title>RAISES</pg-title>
+                <subtext>
+                    <config id="CONNECTION_NOT_FOUND_EXCEPTION"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
 </page>

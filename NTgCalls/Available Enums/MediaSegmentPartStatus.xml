@@ -1,0 +1,98 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>MediaSegmentPartStatus</h1>
+    <config id="MEDIA_SEGMENT_STATUS_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>MediaSegmentPartStatus</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>MediaSegmentPartStatus.<sb>NOT_READY</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>RESYNC_NEEDED</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>DOWNLOADING</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_PART_STATUS_DOWNLOADING_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>SUCCESS</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_media_segment_part_status</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_MEDIA_SEGMENT_PART_STATUS_NOT_READY</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+                <category-title><ref><sb>NTG_MEDIA_SEGMENT_PART_STATUS_RESYNC_NEEDED</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+                <category-title><ref><sb>NTG_MEDIA_SEGMENT_PART_STATUS_DOWNLOADING</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_PART_STATUS_DOWNLOADING_DESC"/>
+                <category-title><ref><sb>NTG_MEDIA_SEGMENT_PART_STATUS_SUCCESS</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>MediaSegmentPartStatus</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>MediaSegmentPartStatus.<sb>NOT_READY</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>RESYNC_NEEDED</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>DOWNLOADING</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_PART_STATUS_DOWNLOADING_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>SUCCESS</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>MediaSegmentPartStatus</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>MediaSegmentPartStatus.<sb>NOT_READY</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>RESYNC_NEEDED</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>DOWNLOADING</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_PART_STATUS_DOWNLOADING_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus.<sb>SUCCESS</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>MediaSegmentPartStatus</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>MediaSegmentPartStatus::<sb>NotReady</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_NOT_READY_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus::<sb>ResyncNeeded</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_RESYNC_NEEDED_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus::<sb>Downloading</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_PART_STATUS_DOWNLOADING_DESC"/>
+                <category-title><ref>MediaSegmentPartStatus::<sb>Success</sb></ref></category-title>
+                <config id="MEDIA_SEGMENT_STATUS_SUCCESS_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+</page>

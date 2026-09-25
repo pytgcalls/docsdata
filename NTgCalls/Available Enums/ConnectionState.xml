@@ -1,24 +1,108 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>ConnectionState</h1>
-    <br/>
-    <category-title noref="true">
-        <shi>class</shi> <ref src="class">ntgcalls.<sb>ConnectionState</sb></ref>
-    </category-title>
-    <subtext>
-        <config id="CONNECTION_STATE_DESC"/>
-        <br/>
-        <pg-title>ENUMERATION MEMBERS</pg-title>
+    <config id="CONNECTION_STATE_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>ConnectionState</sb></ref>
+        </category-title>
         <subtext>
-            <category-title><ref><sb>CONNECTING</sb></ref> <shi>=</shi> 0</category-title>
-            <config id="NTG_STATE_CONNECTING_DESC"/>
-            <category-title><ref><sb>CONNECTED</sb></ref> <shi>=</shi> 1</category-title>
-            <config id="NTG_STATE_CONNECTED_DESC"/>
-            <category-title><ref><sb>FAILED</sb></ref> <shi>=</shi> 2</category-title>
-            <config id="NTG_STATE_FAILED_DESC"/>
-            <category-title><ref><sb>TIMEOUT</sb></ref> <shi>=</shi> 3</category-title>
-            <config id="NTG_STATE_TIMEOUT_DESC"/>
-            <category-title><ref><sb>CLOSED</sb></ref> <shi>=</shi> 4</category-title>
-            <config id="NTG_STATE_CLOSED_DESC"/>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionState.<sb>CONNECTING</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTING_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CONNECTED</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>FAILED</sb></ref></category-title>
+                <config id="NTG_STATE_FAILED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>TIMEOUT</sb></ref></category-title>
+                <config id="NTG_STATE_TIMEOUT_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CLOSED</sb></ref></category-title>
+                <config id="NTG_STATE_CLOSED_DESC"/>
+            </subtext>
         </subtext>
-    </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_connection_state</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_CONNECTION_STATE_CONNECTING</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTING_DESC"/>
+                <category-title><ref><sb>NTG_CONNECTION_STATE_CONNECTED</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTED_DESC"/>
+                <category-title><ref><sb>NTG_CONNECTION_STATE_FAILED</sb></ref></category-title>
+                <config id="NTG_STATE_FAILED_DESC"/>
+                <category-title><ref><sb>NTG_CONNECTION_STATE_TIMEOUT</sb></ref></category-title>
+                <config id="NTG_STATE_TIMEOUT_DESC"/>
+                <category-title><ref><sb>NTG_CONNECTION_STATE_CLOSED</sb></ref></category-title>
+                <config id="NTG_STATE_CLOSED_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>ConnectionState</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionState.<sb>CONNECTING</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTING_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CONNECTED</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>FAILED</sb></ref></category-title>
+                <config id="NTG_STATE_FAILED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>TIMEOUT</sb></ref></category-title>
+                <config id="NTG_STATE_TIMEOUT_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CLOSED</sb></ref></category-title>
+                <config id="NTG_STATE_CLOSED_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>ConnectionState</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionState.<sb>CONNECTING</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTING_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CONNECTED</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>FAILED</sb></ref></category-title>
+                <config id="NTG_STATE_FAILED_DESC"/>
+                <category-title><ref>ConnectionState.<sb>TIMEOUT</sb></ref></category-title>
+                <config id="NTG_STATE_TIMEOUT_DESC"/>
+                <category-title><ref>ConnectionState.<sb>CLOSED</sb></ref></category-title>
+                <config id="NTG_STATE_CLOSED_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>ConnectionState</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>ConnectionState::<sb>Connecting</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTING_DESC"/>
+                <category-title><ref>ConnectionState::<sb>Connected</sb></ref></category-title>
+                <config id="NTG_STATE_CONNECTED_DESC"/>
+                <category-title><ref>ConnectionState::<sb>Failed</sb></ref></category-title>
+                <config id="NTG_STATE_FAILED_DESC"/>
+                <category-title><ref>ConnectionState::<sb>Timeout</sb></ref></category-title>
+                <config id="NTG_STATE_TIMEOUT_DESC"/>
+                <category-title><ref>ConnectionState::<sb>Closed</sb></ref></category-title>
+                <config id="NTG_STATE_CLOSED_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
 </page>
