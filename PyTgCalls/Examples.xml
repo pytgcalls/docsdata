@@ -105,7 +105,7 @@
         </item>
         <item>
             <column><ref-shi url="example/youtube_dl/youtube_dl_example.py">youtube_dl</ref-shi></column>
-            <column>Example usage of PyTgCalls with YoutubeDL</column>
+            <column>Example usage of PyTgCalls with yt-dlp through a proxy</column>
         </item>
     </table>
 </page>

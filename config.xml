@@ -1802,6 +1802,7 @@
     <microtag>Getting Started</microtag>
     <file>Calling Methods.xml</file>
     <file>Handling Updates.xml</file>
+    <file>Using Proxies.xml</file>
     <file>Examples.xml</file>
 
     <microtag>Api Reference</microtag>
