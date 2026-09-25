@@ -41,4 +41,22 @@
         <category-title noref="true">Unable to connect to proxy</category-title>
         <subtext><text>Check the credentials and the format, it must be <b>http://username:password@host:port</b>.</text></subtext>
     </subtext>
+    <separator/>
+    <h2>Using PinguProxy</h2>
+    <text>
+        <a href="https://pinguproxy.com/?ref=pytgcalls">PinguProxy</a> sponsors PyTgCalls, the first 30 signups get 1GB for free. Two things matter when streaming:
+    </text>
+    <list>
+        <item><b>Prefer residential proxies</b>: YouTube flags datacenter IP ranges much more often, so they hit the bot check sooner.</item>
+        <item><b>Always use a session</b>: rotating proxies change the exit IP on every connection, append <b>_session-&lt;id&gt;</b> to the username so yt-dlp and FFmpeg share the same IP address.</item>
+    </list>
+    <syntax-highlight mark="2-3">
+        PROXY = (
+            f'http://username_session-{chat_id}:password'
+            '@proxy.pinguproxy.com:12934'
+        )
+    </syntax-highlight>
+    <text>
+        Port <b>12934</b> routes through residential IPs and <b>12933</b> through datacenter ones. A session per chat keeps every stream on its own IP, add <b>_country-XX</b> before the session to pick the exit country.
+    </text>
 </page>
