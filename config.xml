@@ -473,7 +473,7 @@
 
   <option id="CALLBACK_UPGRADE_DESC">
     <text>
-      Callback for handling when is needed to update GroupCall MTProto Configurations.
+      Callback called when the GroupCall MTProto configuration needs to be updated.
     </text>
   </option>
 
