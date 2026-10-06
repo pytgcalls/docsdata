@@ -78,6 +78,7 @@ app.on_request_participants(|
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>request</sb></ref>: <shi>ntgcalls.ParticipantsRequest</shi></category-title>
+                    <config id="PARTICIPANTS_REQUEST_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -109,6 +110,7 @@ app.on_request_participants(|
                     <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>request</sb></ref>: <shi language="c">ntg_participants_request</shi></category-title>
+                    <config id="PARTICIPANTS_REQUEST_DESC"/>
                     <category-title><ref><sb>user_data</sb></ref>: <shi language="c">void*</shi></category-title>
                     <config id="C_USER_DATA_DESC"/>
                 </subtext>
@@ -128,6 +130,7 @@ app.on_request_participants(|
                     <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>request</sb></ref>: <shi>ParticipantsRequest</shi></category-title>
+                    <config id="PARTICIPANTS_REQUEST_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -145,6 +148,7 @@ app.on_request_participants(|
                     <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><shi>ParticipantsRequest</shi> <ref><sb>request</sb></ref></category-title>
+                    <config id="PARTICIPANTS_REQUEST_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -162,6 +166,7 @@ app.on_request_participants(|
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>request</sb></ref>: <shi>ParticipantsRequest</shi></category-title>
+                    <config id="PARTICIPANTS_REQUEST_DESC"/>
                 </subtext>
             </category>
         </subtext>
