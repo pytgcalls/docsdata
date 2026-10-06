@@ -1216,7 +1216,7 @@
   </option>
 
   <option id="ON_REQUEST_PARTICIPANTS_DESC">
-    <text>This method allows you to register a callback that is invoked when the participant list of a conference call has to be refreshed.</text>
+    <text>This method allows you to register a callback that is invoked when audio is received from SSRCs that are not mapped to any participant of a conference call yet.</text>
   </option>
 
   <option id="ON_REQUEST_PARTICIPANTS_DESC2">
@@ -1281,6 +1281,14 @@
 
   <option id="SSRC_MAPPING_DESC">
     <text>Association between an audio SSRC and the user it belongs to.</text>
+  </option>
+
+  <option id="PARTICIPANTS_REQUEST_DESC">
+    <text>Audio SSRCs whose participants have to be resolved.</text>
+  </option>
+
+  <option id="PARTICIPANTS_REQUEST_SSRCS_DESC">
+    <text>Audio SSRCs that are not mapped to any participant yet.</text>
   </option>
 
   <option id="SUBCHAIN_REQUEST_DESC">
