@@ -1,0 +1,72 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>ParticipantsRequest</h1>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>ParticipantsRequest</sb></ref>()
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>list[int]</shi></category-title>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_participants_request</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi language="c">uint32_t*</shi>, <ref><sb>ssrcs_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>ParticipantsRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>number[]</shi></category-title>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>ParticipantsRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>java.util.List&lt;int&gt;</shi> <ref><sb>ssrcs</sb></ref></category-title>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>ParticipantsRequest</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>ssrcs</sb></ref>: <shi>Vec&lt;u32&gt;</shi></category-title>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>

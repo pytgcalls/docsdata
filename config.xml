@@ -1767,6 +1767,7 @@
       <file>MediaDescription.xml</file>
       <file>MediaDevices.xml</file>
       <file>MediaState.xml</file>
+      <file>ParticipantsRequest.xml</file>
       <file>Protocol.xml</file>
       <file>RTCServer.xml</file>
       <file>RemoteSource.xml</file>
