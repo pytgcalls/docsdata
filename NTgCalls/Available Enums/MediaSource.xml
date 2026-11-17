@@ -18,8 +18,6 @@
                 <config id="MODE_FILE_DESC"/>
                 <category-title><ref>MediaSource.<sb>SHELL</sb></ref></category-title>
                 <config id="MODE_SHELL_DESC"/>
-                <category-title><ref>MediaSource.<sb>FFMPEG</sb></ref></category-title>
-                <config id="MODE_FFMPEG_DESC"/>
                 <category-title><ref>MediaSource.<sb>DEVICE</sb></ref></category-title>
                 <config id="MODE_DEVICE_DESC"/>
                 <category-title><ref>MediaSource.<sb>DESKTOP</sb></ref></category-title>
@@ -42,8 +40,6 @@
                 <config id="MODE_FILE_DESC"/>
                 <category-title><ref><sb>NTG_MEDIA_SOURCE_SHELL</sb></ref></category-title>
                 <config id="MODE_SHELL_DESC"/>
-                <category-title><ref><sb>NTG_MEDIA_SOURCE_FFMPEG</sb></ref></category-title>
-                <config id="MODE_FFMPEG_DESC"/>
                 <category-title><ref><sb>NTG_MEDIA_SOURCE_DEVICE</sb></ref></category-title>
                 <config id="MODE_DEVICE_DESC"/>
                 <category-title><ref><sb>NTG_MEDIA_SOURCE_DESKTOP</sb></ref></category-title>
@@ -66,8 +62,6 @@
                 <config id="MODE_FILE_DESC"/>
                 <category-title><ref>MediaSource.<sb>SHELL</sb></ref></category-title>
                 <config id="MODE_SHELL_DESC"/>
-                <category-title><ref>MediaSource.<sb>FFMPEG</sb></ref></category-title>
-                <config id="MODE_FFMPEG_DESC"/>
                 <category-title><ref>MediaSource.<sb>DEVICE</sb></ref></category-title>
                 <config id="MODE_DEVICE_DESC"/>
                 <category-title><ref>MediaSource.<sb>DESKTOP</sb></ref></category-title>
@@ -90,8 +84,6 @@
                 <config id="MODE_FILE_DESC"/>
                 <category-title><ref>MediaSource.<sb>SHELL</sb></ref></category-title>
                 <config id="MODE_SHELL_DESC"/>
-                <category-title><ref>MediaSource.<sb>FFMPEG</sb></ref></category-title>
-                <config id="MODE_FFMPEG_DESC"/>
                 <category-title><ref>MediaSource.<sb>DEVICE</sb></ref></category-title>
                 <config id="MODE_DEVICE_DESC"/>
                 <category-title><ref>MediaSource.<sb>DESKTOP</sb></ref></category-title>
@@ -114,8 +106,6 @@
                 <config id="MODE_FILE_DESC"/>
                 <category-title><ref>MediaSource::<sb>Shell</sb></ref></category-title>
                 <config id="MODE_SHELL_DESC"/>
-                <category-title><ref>MediaSource::<sb>Ffmpeg</sb></ref></category-title>
-                <config id="MODE_FFMPEG_DESC"/>
                 <category-title><ref>MediaSource::<sb>Device</sb></ref></category-title>
                 <config id="MODE_DEVICE_DESC"/>
                 <category-title><ref>MediaSource::<sb>Desktop</sb></ref></category-title>

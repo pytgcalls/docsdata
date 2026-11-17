@@ -23,6 +23,7 @@
                     <config id="ARG_INPUT_MEDIA_DESC"/>
                     <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
+                    <category-title><ref><sb>bitrate</sb></ref>: <shi>Optional</shi>[<shi>int</shi>]</category-title>
                 </subtext>
             </category>
         </subtext>
@@ -45,6 +46,7 @@
                     <config id="ARG_INPUT_MEDIA_DESC"/>
                     <category-title><ref><sb>keep_open</sb></ref>: <shi language="c">bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
+                    <category-title><ref><sb>bitrate</sb></ref>: <shi language="c">uint32_t*</shi></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -67,6 +69,7 @@
                     <config id="ARG_INPUT_MEDIA_DESC"/>
                     <category-title><ref><sb>keepOpen</sb></ref>: <shi>boolean</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
+                    <category-title><ref><sb>bitrate</sb></ref><shi>?</shi>: <shi>number</shi></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -89,6 +92,7 @@
                     <config id="ARG_INPUT_MEDIA_DESC"/>
                     <category-title><shi>boolean</shi> <ref><sb>keep_open</sb></ref></category-title>
                     <config id="KEEP_OPEN_DESC"/>
+                    <category-title><shi>Integer</shi> <ref><sb>bitrate</sb></ref></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -111,6 +115,7 @@
                     <config id="ARG_INPUT_MEDIA_DESC"/>
                     <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
+                    <category-title><ref><sb>bitrate</sb></ref>: <shi>Option&lt;u32&gt;</shi></category-title>
                 </subtext>
             </category>
         </subtext>

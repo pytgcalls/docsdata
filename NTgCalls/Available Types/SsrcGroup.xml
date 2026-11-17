@@ -63,7 +63,7 @@
                 <subtext>
                     <category-title><shi>String</shi> <ref><sb>semantics</sb></ref></category-title>
                     <config id="SSRC_GROUP_SEMANTICS_DESC"/>
-                    <category-title><shi>java.util.List&lt;int&gt;</shi> <ref><sb>ssrcs</sb></ref></category-title>
+                    <category-title><shi>java.util.List&lt;Integer&gt;</shi> <ref><sb>ssrcs</sb></ref></category-title>
                     <config id="SSRC_GROUP_SSRCS_DESC"/>
                 </subtext>
             </category>

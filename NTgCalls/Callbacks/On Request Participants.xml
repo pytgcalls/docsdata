@@ -11,13 +11,14 @@
             <tab id="java">Java</tab>
             <tab id="rust">Rust</tab>
         </tabs>
-        <syntax-highlight id="python" mark="5-10" language="python">
+        <syntax-highlight id="python" mark="5-11" language="python">
 from ntgcalls import NTgCalls
 
 app = NTgCalls()
 
 def on_request_participants(
-    chat_id
+    chat_id,
+    request
 ):
     ...
 
@@ -28,33 +29,36 @@ app.on_request_participants(on_request_participants)</syntax-highlight>
 ntg_instance* handle = ntg_instance_create();
 
 ntg_on_request_participants_callback(handle, &amp;on_request_participants_callback, NULL);</syntax-highlight>
-        <syntax-highlight id="node" mark="5-9" language="javascript">
+        <syntax-highlight id="node" mark="5-10" language="javascript">
 const { NTgCalls } = require('ntgcalls');
 
 const app = new NTgCalls();
 
 app.onRequestParticipants((
-    chatId
+    chatId,
+    request
 ) => {
     // ...
 });</syntax-highlight>
-        <syntax-highlight id="java" mark="5-9" language="java">
+        <syntax-highlight id="java" mark="5-10" language="java">
 import io.github.pytgcalls.NTgCalls;
 
 NTgCalls app = new NTgCalls();
 
 app.onRequestParticipants((
-    chatId
+    chatId,
+    request
 ) -> {
     // ...
 });</syntax-highlight>
-        <syntax-highlight id="rust" mark="5-9" language="rust">
+        <syntax-highlight id="rust" mark="5-10" language="rust">
 use ntgcalls::NTgCalls;
 
 let app = NTgCalls::new();
 
 app.on_request_participants(|
-    chat_id
+    chat_id,
+    request
 | {
     // ...
 });</syntax-highlight>
@@ -73,6 +77,7 @@ app.on_request_participants(|
                 <subtext>
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>request</sb></ref>: <shi>ntgcalls.ParticipantsRequest</shi></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -103,6 +108,7 @@ app.on_request_participants(|
                     <config id="C_HANDLE_DESC"/>
                     <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>request</sb></ref>: <shi language="c">ntg_participants_request</shi></category-title>
                     <category-title><ref><sb>user_data</sb></ref>: <shi language="c">void*</shi></category-title>
                     <config id="C_USER_DATA_DESC"/>
                 </subtext>
@@ -121,6 +127,7 @@ app.on_request_participants(|
                 <subtext>
                     <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>request</sb></ref>: <shi>ParticipantsRequest</shi></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -137,6 +144,7 @@ app.on_request_participants(|
                 <subtext>
                     <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
                     <config id="CHAT_ID_DESC"/>
+                    <category-title><shi>ParticipantsRequest</shi> <ref><sb>request</sb></ref></category-title>
                 </subtext>
             </category>
         </subtext>
@@ -153,6 +161,7 @@ app.on_request_participants(|
                 <subtext>
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
+                    <category-title><ref><sb>request</sb></ref>: <shi>ParticipantsRequest</shi></category-title>
                 </subtext>
             </category>
         </subtext>
