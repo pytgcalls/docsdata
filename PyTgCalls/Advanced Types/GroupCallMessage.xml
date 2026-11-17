@@ -1,0 +1,34 @@
+<page>
+    <h1>GroupCallMessage</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="class">pytgcalls.types.<sb>GroupCallMessage</sb></ref>
+    </category-title>
+    <subtext>
+        <text>A message sent in the chat of a group call.</text>
+        <br/>
+        <pg-title>PROPERTIES</pg-title>
+        <subtext>
+            <category-title><ref><sb>message_id</sb></ref> <shi>-> int</shi></category-title>
+            <subtext><text>Unique identifier of the message inside the group call. In conference calls it is a local identifier assigned in arrival order.</text></subtext>
+
+            <category-title><ref><sb>sender_id</sb></ref> <shi>-> int</shi></category-title>
+            <subtext><text>Identifier of the user or chat that sent the message.</text></subtext>
+
+            <category-title><ref><sb>text</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Text of the message, without formatting.</text></subtext>
+
+            <category-title><ref><sb>html</sb></ref> <shi>-> str</shi></category-title>
+            <subtext><text>Text of the message with its formatting as HTML, in the same format accepted by <docs-ref link="/PyTgCalls/Advanced Methods/Send Message">send_message()</docs-ref>.</text></subtext>
+
+            <category-title><ref><sb>date</sb></ref> <shi>-> int</shi></category-title>
+            <subtext><text>Date the message was sent, as a Unix timestamp.</text></subtext>
+
+            <category-title><ref><sb>stars</sb></ref> <shi>-> int</shi></category-title>
+            <subtext><text>Telegram Stars paid to send the message.</text></subtext>
+
+            <category-title><ref><sb>from_admin</sb></ref> <shi>-> bool</shi></category-title>
+            <subtext><text>Whether the message was sent by an admin of the group call, always False in conference calls.</text></subtext>
+        </subtext>
+    </subtext>
+</page>

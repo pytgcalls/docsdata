@@ -1183,6 +1183,30 @@
     <text>Retrieve the emoji fingerprint of the call.</text>
   </option>
 
+  <option id="ENCRYPT_MESSAGE_DESC">
+    <text>This method encrypts a message for the chat of an end-to-end encrypted conference call, using the same key that protects the call media. The result is sent with phone.sendGroupCallEncryptedMessage.</text>
+  </option>
+
+  <option id="ENCRYPT_MESSAGE_DESC2">
+    <text>Encrypt a conference call message.</text>
+  </option>
+
+  <option id="DECRYPT_MESSAGE_DESC">
+    <text>This method decrypts a message received in the chat of an end-to-end encrypted conference call through updateGroupCallEncryptedMessage.</text>
+  </option>
+
+  <option id="DECRYPT_MESSAGE_DESC2">
+    <text>Decrypt a conference call message.</text>
+  </option>
+
+  <option id="MESSAGE_DATA_DESC">
+    <subtext><text>Serialized message to encrypt.</text></subtext>
+  </option>
+
+  <option id="ENCRYPTED_MESSAGE_DATA_DESC">
+    <subtext><text>Encrypted message received from the server.</text></subtext>
+  </option>
+
   <option id="INIT_CONFERENCE_DESC">
     <text>This method allows initializing a conference call, returning the params to be sent to Telegram.</text>
   </option>
@@ -1441,6 +1465,27 @@
   <option id="RET_INT_ID">
     <category-title><ref><sb>chat_id</sb></ref> <shi>-> int</shi></category-title>
     <config id="CHAT_ID_DESC"/>
+  </option>
+
+  <option id="ARG_REPORT_SPAM">
+    <category-title><ref>report_spam</ref>: <shi>bool</shi> = <shi>False</shi></category-title>
+    <subtext><text>Whether to also report the deleted messages as spam.</text></subtext>
+  </option>
+
+  <option id="CALL_MESSAGE_HTML_DESC">
+    <subtext>
+      <text>Text of the message, formatted with the HTML of the Telegram Bot API. Only the formatting allowed in group call chats is supported:</text>
+      <list>
+        <item><text><code>&lt;b&gt;</code>, <code>&lt;strong&gt;</code> bold</text></item>
+        <item><text><code>&lt;i&gt;</code>, <code>&lt;em&gt;</code> italic</text></item>
+        <item><text><code>&lt;u&gt;</code>, <code>&lt;ins&gt;</code> underline</text></item>
+        <item><text><code>&lt;s&gt;</code>, <code>&lt;strike&gt;</code>, <code>&lt;del&gt;</code> strikethrough</text></item>
+        <item><text><code>&lt;tg-spoiler&gt;</code>, <code>&lt;span class="tg-spoiler"&gt;</code> spoiler</text></item>
+        <item><text><code>&lt;code&gt;</code> monospace</text></item>
+        <item><text><code>&lt;tg-emoji emoji-id="..."&gt;</code> custom emoji</text></item>
+      </list>
+      <text>In conference calls <code>&lt;code&gt;</code> is not supported. Other tags are sent as plain text, Markdown is not supported. Escape <code>&amp;</code>, <code>&lt;</code> and <code>&gt;</code> as <code>&amp;amp;</code>, <code>&amp;lt;</code> and <code>&amp;gt;</code>.</text>
+    </subtext>
   </option>
 
   <option id="ARG_PARTICIPANT">
@@ -1832,6 +1877,7 @@
       <file>Device.xml</file>
       <file>Direction.xml</file>
       <file>ExternalMedia.xml</file>
+      <file>GroupCallMessage Action.xml</file>
       <file>GroupCallParticipant Action.xml</file>
       <file>MediaStream Flags.xml</file>
       <file>StreamEnded Type.xml</file>
@@ -1858,8 +1904,11 @@
 
     <group basepath="PyTgCalls/Advanced Methods/">
       <file>Change Volume Call.xml</file>
+      <file>Delete Messages.xml</file>
+      <file>Delete Participant Messages.xml</file>
       <file>Get Participants.xml</file>
       <file>Send Frame.xml</file>
+      <file>Send Message.xml</file>
     </group>
 
     <microtag>Types</microtag>
@@ -1880,6 +1929,7 @@
       <file>Frame.xml</file>
       <file>Frame Info.xml</file>
       <file>GroupCallConfig.xml</file>
+      <file>GroupCallMessage.xml</file>
       <file>GroupCallParticipant.xml</file>
       <file>InputDevice.xml</file>
       <file>ScreenDevice.xml</file>
@@ -1887,6 +1937,7 @@
       <file>SpeakerDevice.xml</file>
       <file>StreamEnded.xml</file>
       <file>StreamFrames.xml</file>
+      <file>UpdatedGroupCallMessage.xml</file>
       <file>UpdatedGroupCallParticipant.xml</file>
     </group>
   </files-list>

@@ -120,6 +120,22 @@
                 </subtext>
             </subtext>
         </subtext>
+        <category-title><ref>pytgcalls.filters.<sb src="method">call_message</sb></ref>()</category-title>
+        <subtext>
+            <text>
+                Filter updates for when a message is received or deleted in the group call chat.
+            </text>
+            <br/>
+            <pg-title>PARAMETERS</pg-title>
+            <subtext>
+                <category-title><ref>flags</ref>: Optional[<docs-ref link="/PyTgCalls/Available Enums/GroupCallMessage Action">GroupCallMessage.Action</docs-ref>]</category-title>
+                <subtext>
+                    <text>
+                        Pass one or more flags to filter group call message updates.
+                    </text>
+                </subtext>
+            </subtext>
+        </subtext>
         <category-title><ref>pytgcalls.filters.<sb src="method">stream_frame</sb></ref>()</category-title>
         <subtext>
             <text>

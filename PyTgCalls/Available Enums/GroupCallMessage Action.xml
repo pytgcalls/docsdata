@@ -1,0 +1,19 @@
+<page>
+    <h1>GroupCallMessage Action</h1>
+    <br/>
+    <category-title noref="true">
+        <shi>class</shi> <ref src="enum">GroupCallMessage.<sb>Action</sb></ref>
+    </category-title>
+    <subtext>
+        <text>Enumeration of actions for group call messages.</text>
+        <br/>
+        <pg-title>ENUMERATION MEMBERS</pg-title>
+        <subtext>
+            <category-title><ref><sb>RECEIVED</sb></ref> <shi>=</shi> 1</category-title>
+            <subtext><text>Represents a message received in the group call chat.</text></subtext>
+
+            <category-title><ref><sb>DELETED</sb></ref> <shi>=</shi> 2</category-title>
+            <subtext><text>Represents a message deleted from the group call chat.</text></subtext>
+        </subtext>
+    </subtext>
+</page>
