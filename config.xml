@@ -207,7 +207,11 @@
   </option>
 
   <option id="AUDIO_CHAN_DESC">
-    <subtext><text>Audio channel count (1-2, max allowed by PCM16L).</text></subtext>
+    <subtext><text>Audio channel count (1-2, max allowed by PCM16L). With 2 channels the audio is encoded in stereo.</text></subtext>
+  </option>
+
+  <option id="AUDIO_BITRATE_DESC">
+    <subtext><text>Opus encoder bitrate in bits per second (6000-510000, PyTgCalls caps it at 192000). If not set, the WebRTC default is used, 32 kbps in mono and 64 kbps in stereo.</text></subtext>
   </option>
 
   <option id="VIDEO_CONFIG_DESC">
@@ -375,10 +379,6 @@
 
   <option id="MODE_SHELL_DESC">
     <subtext><text>Input mode using a shell command.</text></subtext>
-  </option>
-
-  <option id="MODE_FFMPEG_DESC">
-    <subtext><text>Input mode using FFmpeg.</text></subtext>
   </option>
 
   <option id="MODE_DEVICE_DESC">

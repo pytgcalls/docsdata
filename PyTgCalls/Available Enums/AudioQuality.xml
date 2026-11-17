@@ -9,17 +9,20 @@
         <br/>
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
-            <category-title><ref><sb>STUDIO</sb></ref> <shi>=</shi> (96000, 2)</category-title>
-            <subtext><text>Represents studio-quality audio with a bitrate of 96000 and 2 channels.</text></subtext>
+            <category-title><ref><sb>STUDIO</sb></ref> <shi>=</shi> (96000, 2, 192000)</category-title>
+            <subtext><text>Represents studio-quality audio with a sample rate of 96000, 2 channels and an Opus bitrate of 192 kbps.</text></subtext>
 
-            <category-title><ref><sb>HIGH</sb></ref> <shi>=</shi> (48000, 2)</category-title>
-            <subtext><text>Represents high-quality audio with a bitrate of 48000 and 2 channels.</text></subtext>
+            <category-title><ref><sb>HIGH</sb></ref> <shi>=</shi> (48000, 2, 128000)</category-title>
+            <subtext><text>Represents high-quality audio with a sample rate of 48000, 2 channels and an Opus bitrate of 128 kbps.</text></subtext>
 
             <category-title><ref><sb>MEDIUM</sb></ref> <shi>=</shi> (36000, 1)</category-title>
-            <subtext><text>Represents medium-quality audio with a bitrate of 36000 and 1 channel.</text></subtext>
+            <subtext><text>Represents medium-quality audio with a sample rate of 36000 and 1 channel.</text></subtext>
 
             <category-title><ref><sb>LOW</sb></ref> <shi>=</shi> (24000, 1)</category-title>
-            <subtext><text>Represents low-quality audio with a bitrate of 24000 and 1 channel.</text></subtext>
+            <subtext><text>Represents low-quality audio with a sample rate of 24000 and 1 channel.</text></subtext>
+
+            <category-title><ref><sb>VOICE</sb></ref> <shi>=</shi> (48000, 1)</category-title>
+            <subtext><text>Represents voice audio with a sample rate of 48000 and 1 channel, encoded like the official Telegram clients.</text></subtext>
         </subtext>
     </subtext>
 </page>

@@ -9,11 +9,14 @@
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
-            <category-title><ref>bitrate</ref>: <shi>int</shi></category-title>
+            <category-title><ref>sample_rate</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_SAMPLE_DESC"/>
 
             <category-title><ref>channels</ref>: <shi>int</shi></category-title>
             <config id="AUDIO_CHAN_DESC"/>
+
+            <category-title><ref>bitrate</ref>: Optional[<shi>int</shi>]</category-title>
+            <config id="AUDIO_BITRATE_DESC"/>
         </subtext>
         <br/>
         <pg-title>STATIC METHODS</pg-title>
