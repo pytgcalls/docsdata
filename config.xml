@@ -218,6 +218,10 @@
     <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
   </option>
 
+  <option id="VIDEO_FORMAT_DESC">
+    <subtext><text>Format of the video read from the source, Matroska if not set. Ignored for devices and desktop capture. A Matroska stream carrying H264 without B-frames, VP8, VP9 or AV1 is sent without re-encoding when it matches the negotiated codec, and re-encoded only when it doesn't, or briefly when a viewer needs a keyframe. When playing back to a file or a shell command, I420 composes every participant into an animated grid at the given size and frame rate, while Matroska writes a single participant as received and decodes, composes and re-encodes when there are more, which uses more CPU. External media always receives each participant separately.</text></subtext>
+  </option>
+
   <option id="VIDEO_CONFIG_DESC">
     <text>Stream’s Video Configuration</text>
   </option>
@@ -409,6 +413,14 @@
     <subtext><text>Ogg Opus audio for files and shell commands, or one Opus packet per frame for external media.</text></subtext>
   </option>
 
+  <option id="FORMAT_I420_DESC">
+    <subtext><text>Raw I420 video frames.</text></subtext>
+  </option>
+
+  <option id="FORMAT_MATROSKA_DESC">
+    <subtext><text>Matroska video for files and shell commands, or one compressed frame per call for external media, with its codec and keyframe flag in FrameData.</text></subtext>
+  </option>
+
   <option id="CODEC_DESC">
     <text>Enumeration of the codecs a single frame can carry.</text>
   </option>
@@ -425,8 +437,28 @@
     <subtext><text>A raw I420 video frame.</text></subtext>
   </option>
 
+  <option id="CODEC_H264_DESC">
+    <subtext><text>An H264 video frame in Annex B format.</text></subtext>
+  </option>
+
+  <option id="CODEC_VP8_DESC">
+    <subtext><text>A VP8 video frame.</text></subtext>
+  </option>
+
+  <option id="CODEC_VP9_DESC">
+    <subtext><text>A VP9 video frame.</text></subtext>
+  </option>
+
+  <option id="CODEC_AV1_DESC">
+    <subtext><text>An AV1 video frame made of OBUs.</text></subtext>
+  </option>
+
   <option id="FRAME_DATA_CODEC_DESC">
     <subtext><text>Codec of the frame data.</text></subtext>
+  </option>
+
+  <option id="FRAME_DATA_KEYFRAME_DESC">
+    <subtext><text>Whether the frame can be decoded without the previous frames. Always true for audio and raw video frames; for compressed video it marks the keyframes.</text></subtext>
   </option>
 
   <option id="STREAM_DEVICE_DESC">

@@ -7,17 +7,20 @@
         <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>VideoStream</sb></ref>
     </category-title>
     <subtext>
-        <text>The raw video stream (YUV420P) descriptor</text>
+        <text>The raw video stream descriptor</text>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <config id="ARG_MEDIA_SOURCE"/>
 
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
-            <subtext><text>The video file path or shell command (YUV420P format only).</text></subtext>
+            <subtext><text>The video file path or shell command, producing data in the selected format.</text></subtext>
 
             <category-title><ref>parameters </ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">pytgcalls.types.raw.VideoParameters</docs-ref></category-title>
             <config id="ARG_VIDEO_PARAMS_DESC"/>
+
+            <category-title><ref>format</ref>: <docs-ref link="/NTgCalls/Available Enums/Format">ntgcalls.Format</docs-ref></category-title>
+            <subtext><text>Format of the video data, YUV420P by default. With Format.MATROSKA the path must produce a Matroska stream with H264 (without B-frames), VP8, VP9 or AV1 video.</text></subtext>
         </subtext>
     </subtext>
 </page>

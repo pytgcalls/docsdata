@@ -18,11 +18,17 @@
 
             <config id="ARG_AUDIO_PARAMSv2"/>
 
-            <category-title><ref>camera</ref>: Optional[<shi>bool</shi>]</category-title>
-            <subtext><text>Whether to record the camera.</text></subtext>
+            <category-title><ref>camera</ref>: Optional[Union[<shi>bool</shi>, <shi>str</shi>]]</category-title>
+            <subtext>
+                <text>The video file where to record the camera, or if it should be sent as updates.</text>
+                <br/>
+                <text>When more participants have the camera on, they are composed into an animated grid at the size and frame rate of the video parameters. A <code>.mkv</code> file is written without going through FFmpeg: a single participant is saved as received, more participants are decoded, composed and re-encoded, which uses more CPU. Any other format is composed and encoded by FFmpeg.</text>
+            </subtext>
 
-            <category-title><ref>screen</ref>: Optional[<shi>bool</shi>]</category-title>
-            <subtext><text>Whether to record the screen.</text></subtext>
+            <category-title><ref>screen</ref>: Optional[Union[<shi>bool</shi>, <shi>str</shi>]]</category-title>
+            <subtext><text>The video file where to record the screen sharing, or if it should be sent as updates. It works like the camera, in its own file.</text></subtext>
+
+            <config id="ARG_VIDEO_PARAMSv2"/>
         </subtext>
     </subtext>
 </page>

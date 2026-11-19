@@ -23,6 +23,9 @@
 
             <category-title><ref>codec</ref> <shi>-> Optional</shi>[<docs-ref link="/NTgCalls/Available Enums/Codec">ntgcalls.Codec</docs-ref>]</category-title>
             <subtext><text>Codec of the frame data. When sending, if not set it defaults to PCM for the microphone and the speaker and to I420 for the camera and the screen.</text></subtext>
+
+            <category-title><ref>keyframe</ref> <shi>-> bool</shi></category-title>
+            <config id="FRAME_DATA_KEYFRAME_DESC"/>
         </subtext>
     </subtext>
 </page>
