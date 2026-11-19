@@ -13,13 +13,16 @@
             <config id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC"/>
 
             <category-title><ref>width</ref> <shi>-> int</shi></category-title>
-            <config id="FRAME_DATA_ROTATION_DESC"/>
-
-            <category-title><ref>height</ref> <shi>-> int</shi></category-title>
             <config id="FRAME_DATA_WIDTH_DESC"/>
 
-            <category-title><ref>rotation</ref> <shi>-> int</shi></category-title>
+            <category-title><ref>height</ref> <shi>-> int</shi></category-title>
             <config id="FRAME_DATA_HEIGHT_DESC"/>
+
+            <category-title><ref>rotation</ref> <shi>-> int</shi></category-title>
+            <config id="FRAME_DATA_ROTATION_DESC"/>
+
+            <category-title><ref>codec</ref> <shi>-> Optional</shi>[<docs-ref link="/NTgCalls/Available Enums/Codec">ntgcalls.Codec</docs-ref>]</category-title>
+            <subtext><text>Codec of the frame data. When sending, if not set it defaults to PCM for the microphone and the speaker and to I420 for the camera and the screen.</text></subtext>
         </subtext>
     </subtext>
 </page>

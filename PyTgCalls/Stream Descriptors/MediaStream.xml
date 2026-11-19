@@ -7,6 +7,8 @@
     <subtext>
         <text>The media stream piped descriptor.</text>
         <br/>
+        <text>When the audio is already Opus, as in most WebM and Ogg files, and no FFmpeg parameters are given for it, the packets are sent without decoding and re-encoding, using about half the CPU.</text>
+        <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>media_path</ref>: Union[<shi>str</shi>, ScreenInfo, DeviceInfo, <docs-ref link="/PyTgCalls/Available Enums/ExternalMedia">ExternalMedia</docs-ref>]</category-title>

@@ -10,7 +10,11 @@
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <category-title><ref>audio</ref>: Optional[Union[<shi>bool</shi>, <shi>str</shi>, <docs-ref link="/PyTgCalls/Advanced Types/SpeakerDevice">SpeakerDevice</docs-ref>]]</category-title>
-            <subtext><text>The speaker device, audio file or if it should be sent as updates.</text></subtext>
+            <subtext>
+                <text>The speaker device, audio file or if it should be sent as updates.</text>
+                <br/>
+                <text>A <code>.opus</code> or <code>.ogg</code> file is written as Ogg Opus without going through FFmpeg: a single participant is saved as received, more participants are decoded, mixed and re-encoded, which uses more CPU than the other formats.</text>
+            </subtext>
 
             <config id="ARG_AUDIO_PARAMSv2"/>
 

@@ -7,17 +7,20 @@
         <shi>class</shi> <ref src="class">pytgcalls.types.raw.<sb>AudioStream</sb></ref>
     </category-title>
     <subtext>
-        <text>The raw audio stream (PCM16L) descriptor</text>
+        <text>The raw audio stream descriptor</text>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
             <config id="ARG_MEDIA_SOURCE"/>
 
             <category-title><ref>path</ref>: <shi>str</shi></category-title>
-            <subtext><text>The audio file path or shell command (PCM16L format only).</text></subtext>
+            <subtext><text>The audio file path or shell command, producing data in the selected format.</text></subtext>
 
             <category-title><ref>parameters</ref>: <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">pytgcalls.types.raw.AudioParameters</docs-ref></category-title>
             <config id="ARG_AUDIO_PARAMS_DESC"/>
+
+            <category-title><ref>format</ref>: <docs-ref link="/NTgCalls/Available Enums/Format">ntgcalls.Format</docs-ref></category-title>
+            <subtext><text>Format of the audio data, PCM16L by default. With Format.OGG the path must produce an Ogg Opus stream.</text></subtext>
         </subtext>
     </subtext>
 </page>
