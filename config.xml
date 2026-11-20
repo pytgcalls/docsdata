@@ -215,7 +215,7 @@
   </option>
 
   <option id="AUDIO_FORMAT_DESC">
-    <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
+    <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. Sending Ogg Opus uses about half the CPU of PCM, since the packets are sent without being encoded again, and are re-encoded only when they don't match the requested channels or bitrate. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
   </option>
 
   <option id="VIDEO_FORMAT_DESC">
@@ -410,7 +410,7 @@
   </option>
 
   <option id="FORMAT_OGG_DESC">
-    <subtext><text>Ogg Opus audio for files and shell commands, or one Opus packet per frame for external media.</text></subtext>
+    <subtext><text>Ogg Opus audio for files and shell commands, or one Opus packet per frame for external media. The lightest choice, since the packets are sent and received without being decoded or encoded.</text></subtext>
   </option>
 
   <option id="FORMAT_I420_DESC">
@@ -418,7 +418,7 @@
   </option>
 
   <option id="FORMAT_MATROSKA_DESC">
-    <subtext><text>Matroska video for files and shell commands, or one compressed frame per call for external media, with its codec and keyframe flag in FrameData.</text></subtext>
+    <subtext><text>Matroska video for files and shell commands, or one compressed frame per call for external media, with its codec and keyframe flag in FrameData. The lightest choice, since the frames are sent and received without being decoded or encoded, saving most of the CPU spent on video.</text></subtext>
   </option>
 
   <option id="CODEC_DESC">

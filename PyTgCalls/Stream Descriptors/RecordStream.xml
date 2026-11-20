@@ -1,5 +1,8 @@
 <page>
     <h1>RecordStream</h1>
+    <alert type="note">
+        Recording to <code>.opus</code> and <code>.mkv</code> uses the least CPU.
+    </alert>
     <br/>
     <category-title noref="true">
         <shi>class</shi> <ref src="class">pytgcalls.types.<sb>RecordStream</sb></ref>

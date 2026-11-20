@@ -1,15 +1,14 @@
 <page>
     <h1>MediaStream</h1>
+    <alert type="note">
+        Opus audio, as in WebM, Ogg and most YouTube streams, and H264 without B-frames, VP8, VP9 or AV1 video no larger than the requested quality are sent as they are, using far less CPU. FFmpeg parameters on a track turn this off for that track.
+    </alert>
     <br/>
     <category-title noref="true">
         <shi>class</shi> <ref src="class">pytgcalls.types.<sb>MediaStream</sb></ref>
     </category-title>
     <subtext>
         <text>The media stream piped descriptor.</text>
-        <br/>
-        <text>When the audio is already Opus, as in most WebM and Ogg files, and no FFmpeg parameters are given for it, the packets are sent without decoding and re-encoding, using about half the CPU.</text>
-        <br/>
-        <text>The same applies to the video when it is H264 without B-frames, VP8, VP9 or AV1, no larger than the requested quality and with no FFmpeg parameters given for it: the frames are sent as they are, saving most of the CPU spent on video. Otherwise the video is decoded and re-encoded as usual.</text>
         <br/>
         <pg-title>PARAMETERS</pg-title>
         <subtext>
