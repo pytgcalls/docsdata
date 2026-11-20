@@ -3,6 +3,100 @@
     <category>
         <br/>
         <banner
+            imageurl="/src/assets/updates/PyTgNov26.png"
+            minititle="MAJOR UPDATE"
+            bigtitle="PyTgCalls v4.0.X"
+            description="Opus and Video Passthrough, Video Recording and More!"
+            mainbg="#070d16"
+            version="4.0.X"
+            imagewidth="1920"
+            imageheight="1080"
+        />
+        <subtext>
+            <h3 noref="true">What&apos;s new?</h3>
+            <list>
+                <item><text><b>Opus Passthrough:</b> When the audio is already Opus, as in WebM, Ogg and most YouTube streams, it is sent without decoding and re-encoding, using about half the CPU.</text></item>
+                <item><text><b>Video Passthrough:</b> H264 without B-frames, VP8, VP9 and AV1 videos are sent as they are, saving most of the CPU spent on video. A viewer joining the call still gets a picture right away, and the video is re-encoded automatically when it doesn&apos;t match the call or the bandwidth drops.</text></item>
+                <item><text><b>Video Recording:</b> <docs-ref link="/PyTgCalls/Stream Descriptors/RecordStream">RecordStream</docs-ref> now records the camera and the screen sharing to a file, composing the participants into an animated grid.</text></item>
+                <item><text><b>Lightweight Recording:</b> <code>.opus</code> and <code>.mkv</code> recordings are written without FFmpeg, saving a single participant exactly as received.</text></item>
+                <item><text><b>Compressed External Media:</b> The new <docs-ref link="/NTgCalls/Available Enums/Format">Format</docs-ref> selects compressed or raw media, and <docs-ref link="/NTgCalls/Available Types/FrameData">FrameData</docs-ref> now carries the <docs-ref link="/NTgCalls/Available Enums/Codec">Codec</docs-ref> and keyframe flag of each frame, so Opus packets and compressed video can be sent and received directly.</text></item>
+                <item><text><b>Studio-Grade Audio:</b> Music now reaches listeners with up to 80% more fidelity to the original in our tests, with richer highs and full stereo separation.</text></item>
+                <item><text><b>Audio Quality Control:</b> The new <code>bitrate</code> parameter of <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">AudioParameters</docs-ref> and <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> lets you pick the audio quality, and it can be changed while the call is running.</text></item>
+                <item><text><b>New Audio Presets:</b> <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref> <code>STUDIO</code> and <code>HIGH</code> now stream in stereo at a much higher quality, while the new <code>VOICE</code> preset sounds like the official Telegram clients.</text></item>
+                <item><text><b>Group Call Messages:</b> Read, send and delete the messages of the group call chat with <docs-ref link="/PyTgCalls/Advanced Methods/Send Message">send_message()</docs-ref>, <docs-ref link="/PyTgCalls/Advanced Methods/Delete Messages">delete_messages()</docs-ref> and the new <code>filters.call_message()</code> filter, with formatting through Telegram Bot API HTML.</text></item>
+                <item><text><b>musl Support:</b> NTgCalls now ships musllinux builds for x86_64 and arm64 on PyPI, npm and crates.io, so it runs on Alpine Linux out of the box.</text></item>
+                <item><text><b>Optional Arguments:</b> Optional fields of NTgCalls types can now be omitted in Python and Java, so <code>MediaDescription(microphone=...)</code> works without passing every source.</text></item>
+                <config id="BUG_FIX_CHANGELOGS"/>
+            </list>
+            <h3 noref="true">Breaking Changes</h3>
+            <list>
+                <item>
+                    <text>The <code>bitrate</code> parameter of <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">AudioParameters</docs-ref> has been renamed to <code>sample_rate</code>, while <code>bitrate</code> now sets the Opus encoder bitrate.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            from pytgcalls.types.raw import AudioParameters
+                            <br/>
+                            AudioParameters(
+                                bitrate=48000,
+                                channels=2,
+                            )
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from pytgcalls.types.raw import AudioParameters
+                            <br/>
+                            AudioParameters(
+                                sample_rate=48000,
+                                channels=2,
+                                bitrate=128000,
+                            )
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item><text>The default <code>AudioQuality.HIGH</code> now streams in stereo at a higher quality, which uses more upload bandwidth. Use <code>AudioQuality.VOICE</code> to keep the previous outgoing audio.</text></item>
+                <item>
+                    <text>NTgCalls now expects compressed media by default: <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> reads Ogg Opus and <docs-ref link="/NTgCalls/Available Types/VideoDescription">VideoDescription</docs-ref> reads Matroska. Raw PCM and I420 sources now need the <code>format</code> parameter. The PyTgCalls raw <docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">AudioStream</docs-ref> and <docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">VideoStream</docs-ref> keep PCM and I420 as their default.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            from ntgcalls import AudioDescription, MediaSource
+                            <br/>
+                            AudioDescription(
+                                MediaSource.SHELL, 48000, 2,
+                                'ffmpeg -i input.mp3 -f s16le pipe:1', False,
+                            )
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from ntgcalls import AudioDescription, Format, MediaSource
+                            <br/>
+                            AudioDescription(
+                                MediaSource.SHELL, 48000, 2,
+                                'ffmpeg -i input.mp3 -f s16le pipe:1', False,
+                                format=Format.PCM,
+                            )
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+                <item>
+                    <text><docs-ref link="/NTgCalls/Available Types/FrameData">FrameData</docs-ref> now requires the <code>codec</code> and <code>keyframe</code> of the frame. <docs-ref link="/PyTgCalls/Advanced Methods/Send Frame">send_frame()</docs-ref> fills them in for raw frames when they are not given.</text>
+                    <multisyntax as-blame="true">
+                        <syntax-highlight>
+                            from ntgcalls import FrameData, VideoRotation
+                            <br/>
+                            FrameData(0, VideoRotation.VIDEO_ROTATION_0, 1280, 720)
+                        </syntax-highlight>
+                        <syntax-highlight>
+                            from ntgcalls import Codec, FrameData, VideoRotation
+                            <br/>
+                            FrameData(0, VideoRotation.VIDEO_ROTATION_0, 1280, 720, Codec.I420, True)
+                        </syntax-highlight>
+                    </multisyntax>
+                </item>
+            </list>
+        </subtext>
+        <separator/>
+    </category>
+    <category>
+        <br/>
+        <banner
             imageurl="/src/assets/updates/PyTgSep26.png"
             minititle="MAJOR UPDATE"
             bigtitle="PyTgCalls v3.0.X"
