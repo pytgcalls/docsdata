@@ -1894,9 +1894,11 @@
     </group>
     <group basepath="NTgCalls/Available Enums/">
       <file>CallType.xml</file>
+      <file>Codec.xml</file>
       <file>ConnectionKind.xml</file>
       <file>ConnectionMode.xml</file>
       <file>ConnectionState.xml</file>
+      <file>Format.xml</file>
       <file>MediaSegmentPartStatus.xml</file>
       <file>MediaSegmentQuality.xml</file>
       <file>MediaSource.xml</file>

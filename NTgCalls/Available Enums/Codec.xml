@@ -1,0 +1,128 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>Codec</h1>
+    <config id="CODEC_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class">ntgcalls.<sb>Codec</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>Codec.<sb>PCM</sb></ref></category-title>
+                <config id="CODEC_PCM_DESC"/>
+                <category-title><ref>Codec.<sb>OPUS</sb></ref></category-title>
+                <config id="CODEC_OPUS_DESC"/>
+                <category-title><ref>Codec.<sb>I420</sb></ref></category-title>
+                <config id="CODEC_I420_DESC"/>
+                <category-title><ref>Codec.<sb>H264</sb></ref></category-title>
+                <config id="CODEC_H264_DESC"/>
+                <category-title><ref>Codec.<sb>VP8</sb></ref></category-title>
+                <config id="CODEC_VP8_DESC"/>
+                <category-title><ref>Codec.<sb>VP9</sb></ref></category-title>
+                <config id="CODEC_VP9_DESC"/>
+                <category-title><ref>Codec.<sb>AV1</sb></ref></category-title>
+                <config id="CODEC_AV1_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">enum</shi> <sb src="class">ntg_codec</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref><sb>NTG_CODEC_PCM</sb></ref></category-title>
+                <config id="CODEC_PCM_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_OPUS</sb></ref></category-title>
+                <config id="CODEC_OPUS_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_I420</sb></ref></category-title>
+                <config id="CODEC_I420_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_H264</sb></ref></category-title>
+                <config id="CODEC_H264_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_VP8</sb></ref></category-title>
+                <config id="CODEC_VP8_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_VP9</sb></ref></category-title>
+                <config id="CODEC_VP9_DESC"/>
+                <category-title><ref><sb>NTG_CODEC_AV1</sb></ref></category-title>
+                <config id="CODEC_AV1_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>Codec</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>Codec.<sb>PCM</sb></ref></category-title>
+                <config id="CODEC_PCM_DESC"/>
+                <category-title><ref>Codec.<sb>OPUS</sb></ref></category-title>
+                <config id="CODEC_OPUS_DESC"/>
+                <category-title><ref>Codec.<sb>I420</sb></ref></category-title>
+                <config id="CODEC_I420_DESC"/>
+                <category-title><ref>Codec.<sb>H264</sb></ref></category-title>
+                <config id="CODEC_H264_DESC"/>
+                <category-title><ref>Codec.<sb>VP8</sb></ref></category-title>
+                <config id="CODEC_VP8_DESC"/>
+                <category-title><ref>Codec.<sb>VP9</sb></ref></category-title>
+                <config id="CODEC_VP9_DESC"/>
+                <category-title><ref>Codec.<sb>AV1</sb></ref></category-title>
+                <config id="CODEC_AV1_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>enum</shi> <ref src="class"><sb>Codec</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>Codec.<sb>PCM</sb></ref></category-title>
+                <config id="CODEC_PCM_DESC"/>
+                <category-title><ref>Codec.<sb>OPUS</sb></ref></category-title>
+                <config id="CODEC_OPUS_DESC"/>
+                <category-title><ref>Codec.<sb>I420</sb></ref></category-title>
+                <config id="CODEC_I420_DESC"/>
+                <category-title><ref>Codec.<sb>H264</sb></ref></category-title>
+                <config id="CODEC_H264_DESC"/>
+                <category-title><ref>Codec.<sb>VP8</sb></ref></category-title>
+                <config id="CODEC_VP8_DESC"/>
+                <category-title><ref>Codec.<sb>VP9</sb></ref></category-title>
+                <config id="CODEC_VP9_DESC"/>
+                <category-title><ref>Codec.<sb>AV1</sb></ref></category-title>
+                <config id="CODEC_AV1_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub enum</shi> <ref src="class"><sb>Codec</sb></ref>
+        </category-title>
+        <subtext>
+            <pg-title>ENUMERATION MEMBERS</pg-title>
+            <subtext>
+                <category-title><ref>Codec::<sb>Pcm</sb></ref></category-title>
+                <config id="CODEC_PCM_DESC"/>
+                <category-title><ref>Codec::<sb>Opus</sb></ref></category-title>
+                <config id="CODEC_OPUS_DESC"/>
+                <category-title><ref>Codec::<sb>I420</sb></ref></category-title>
+                <config id="CODEC_I420_DESC"/>
+                <category-title><ref>Codec::<sb>H264</sb></ref></category-title>
+                <config id="CODEC_H264_DESC"/>
+                <category-title><ref>Codec::<sb>Vp8</sb></ref></category-title>
+                <config id="CODEC_VP8_DESC"/>
+                <category-title><ref>Codec::<sb>Vp9</sb></ref></category-title>
+                <config id="CODEC_VP9_DESC"/>
+                <category-title><ref>Codec::<sb>Av1</sb></ref></category-title>
+                <config id="CODEC_AV1_DESC"/>
+            </subtext>
+        </subtext>
+    </lang-block>
+</page>

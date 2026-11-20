@@ -24,6 +24,9 @@
                     <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
                     <category-title><ref><sb>bitrate</sb></ref>: <shi>Optional</shi>[<shi>int</shi>]</category-title>
+                    <config id="AUDIO_BITRATE_DESC"/>
+                    <category-title><ref><sb>format</sb></ref>: <shi>Optional</shi>[<shi>ntgcalls.Format</shi>]</category-title>
+                    <config id="AUDIO_FORMAT_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -47,6 +50,9 @@
                     <category-title><ref><sb>keep_open</sb></ref>: <shi language="c">bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
                     <category-title><ref><sb>bitrate</sb></ref>: <shi language="c">uint32_t*</shi></category-title>
+                    <config id="AUDIO_BITRATE_DESC"/>
+                    <category-title><ref><sb>format</sb></ref>: <shi language="c">ntg_format*</shi></category-title>
+                    <config id="AUDIO_FORMAT_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -70,6 +76,9 @@
                     <category-title><ref><sb>keepOpen</sb></ref>: <shi>boolean</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
                     <category-title><ref><sb>bitrate</sb></ref><shi>?</shi>: <shi>number</shi></category-title>
+                    <config id="AUDIO_BITRATE_DESC"/>
+                    <category-title><ref><sb>format</sb></ref><shi>?</shi>: <shi>Format</shi></category-title>
+                    <config id="AUDIO_FORMAT_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -93,6 +102,9 @@
                     <category-title><shi>boolean</shi> <ref><sb>keep_open</sb></ref></category-title>
                     <config id="KEEP_OPEN_DESC"/>
                     <category-title><shi>Integer</shi> <ref><sb>bitrate</sb></ref></category-title>
+                    <config id="AUDIO_BITRATE_DESC"/>
+                    <category-title><shi>Format</shi> <ref><sb>format</sb></ref></category-title>
+                    <config id="AUDIO_FORMAT_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -116,6 +128,9 @@
                     <category-title><ref><sb>keep_open</sb></ref>: <shi>bool</shi></category-title>
                     <config id="KEEP_OPEN_DESC"/>
                     <category-title><ref><sb>bitrate</sb></ref>: <shi>Option&lt;u32&gt;</shi></category-title>
+                    <config id="AUDIO_BITRATE_DESC"/>
+                    <category-title><ref><sb>format</sb></ref>: <shi>Option&lt;Format&gt;</shi></category-title>
+                    <config id="AUDIO_FORMAT_DESC"/>
                 </subtext>
             </category>
         </subtext>

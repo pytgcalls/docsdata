@@ -1,6 +1,7 @@
 <!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Decrypt Message</h1>
+    <config id="DECRYPT_MESSAGE_DESC"/>
     <h3>Example</h3>
     <multisyntax id="languages">
         <tabs>
@@ -70,6 +71,7 @@ app.decrypt_message(
             <shi>async</shi> <ref src="method">NTgCalls.<sb>decrypt_message</sb></ref>() <shi>-&gt; bytes</shi>
         </category-title>
         <subtext>
+            <config id="DECRYPT_MESSAGE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -79,6 +81,7 @@ app.decrypt_message(
                     <category-title><ref><sb>user_id</sb></ref>: <shi>int</shi></category-title>
                     <config id="USER_ID_DESC"/>
                     <category-title><ref><sb>data</sb></ref>: <shi>bytes</shi></category-title>
+                    <config id="ENCRYPTED_MESSAGE_DATA_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -96,6 +99,7 @@ app.decrypt_message(
             <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_decrypt_message</sb></ref>()
         </category-title>
         <subtext>
+            <config id="DECRYPT_MESSAGE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -107,6 +111,7 @@ app.decrypt_message(
                     <category-title><ref><sb>user_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
                     <config id="USER_ID_DESC"/>
                     <category-title><ref><sb>data</sb></ref>: <shi language="c">const uint8_t*</shi>, <ref><sb>data_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="ENCRYPTED_MESSAGE_DATA_DESC"/>
                     <category-title><ref><sb>out</sb></ref>: <shi language="c">uint8_t**</shi>, <ref><sb>out_len</sb></ref>: <shi language="c">size_t*</shi></category-title>
                     <config id="C_OUT_LEN_DESC"/>
                 </subtext>
@@ -126,6 +131,7 @@ app.decrypt_message(
             <ref src="method">NTgCalls.<sb>decryptMessage</sb></ref>() <shi>: Promise&lt;Buffer&gt;</shi>
         </category-title>
         <subtext>
+            <config id="DECRYPT_MESSAGE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -135,6 +141,7 @@ app.decrypt_message(
                     <category-title><ref><sb>userId</sb></ref>: <shi>bigint</shi></category-title>
                     <config id="USER_ID_DESC"/>
                     <category-title><ref><sb>data</sb></ref>: <shi>Buffer</shi></category-title>
+                    <config id="ENCRYPTED_MESSAGE_DATA_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -152,6 +159,7 @@ app.decrypt_message(
             <shi>byte[]</shi> <ref src="method">NTgCalls.<sb>decryptMessage</sb></ref>()
         </category-title>
         <subtext>
+            <config id="DECRYPT_MESSAGE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -161,6 +169,7 @@ app.decrypt_message(
                     <category-title><shi>long</shi> <ref><sb>userId</sb></ref></category-title>
                     <config id="USER_ID_DESC"/>
                     <category-title><shi>byte[]</shi> <ref><sb>data</sb></ref></category-title>
+                    <config id="ENCRYPTED_MESSAGE_DATA_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -178,6 +187,7 @@ app.decrypt_message(
             <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>decrypt_message</sb></ref>() <shi>-&gt; Result&lt;Vec&lt;u8&gt;&gt;</shi>
         </category-title>
         <subtext>
+            <config id="DECRYPT_MESSAGE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -187,6 +197,7 @@ app.decrypt_message(
                     <category-title><ref><sb>user_id</sb></ref>: <shi>i64</shi></category-title>
                     <config id="USER_ID_DESC"/>
                     <category-title><ref><sb>data</sb></ref>: <shi>Vec&lt;u8&gt;</shi></category-title>
+                    <config id="ENCRYPTED_MESSAGE_DATA_DESC"/>
                 </subtext>
             </category>
             <br/>

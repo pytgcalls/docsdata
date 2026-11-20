@@ -21,6 +21,10 @@
                     <config id="FRAME_DATA_WIDTH_DESC"/>
                     <category-title><ref><sb>height</sb></ref>: <shi>int</shi></category-title>
                     <config id="FRAME_DATA_HEIGHT_DESC"/>
+                    <category-title><ref><sb>codec</sb></ref>: <shi>ntgcalls.Codec</shi></category-title>
+                    <config id="FRAME_DATA_CODEC_DESC"/>
+                    <category-title><ref><sb>keyframe</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="FRAME_DATA_KEYFRAME_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -41,6 +45,10 @@
                     <config id="FRAME_DATA_WIDTH_DESC"/>
                     <category-title><ref><sb>height</sb></ref>: <shi language="c">uint16_t</shi></category-title>
                     <config id="FRAME_DATA_HEIGHT_DESC"/>
+                    <category-title><ref><sb>codec</sb></ref>: <shi language="c">ntg_codec</shi></category-title>
+                    <config id="FRAME_DATA_CODEC_DESC"/>
+                    <category-title><ref><sb>keyframe</sb></ref>: <shi language="c">bool</shi></category-title>
+                    <config id="FRAME_DATA_KEYFRAME_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -61,6 +69,10 @@
                     <config id="FRAME_DATA_WIDTH_DESC"/>
                     <category-title><ref><sb>height</sb></ref>: <shi>number</shi></category-title>
                     <config id="FRAME_DATA_HEIGHT_DESC"/>
+                    <category-title><ref><sb>codec</sb></ref>: <shi>Codec</shi></category-title>
+                    <config id="FRAME_DATA_CODEC_DESC"/>
+                    <category-title><ref><sb>keyframe</sb></ref>: <shi>boolean</shi></category-title>
+                    <config id="FRAME_DATA_KEYFRAME_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -81,6 +93,10 @@
                     <config id="FRAME_DATA_WIDTH_DESC"/>
                     <category-title><shi>int</shi> <ref><sb>height</sb></ref></category-title>
                     <config id="FRAME_DATA_HEIGHT_DESC"/>
+                    <category-title><shi>Codec</shi> <ref><sb>codec</sb></ref></category-title>
+                    <config id="FRAME_DATA_CODEC_DESC"/>
+                    <category-title><shi>boolean</shi> <ref><sb>keyframe</sb></ref></category-title>
+                    <config id="FRAME_DATA_KEYFRAME_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -101,6 +117,10 @@
                     <config id="FRAME_DATA_WIDTH_DESC"/>
                     <category-title><ref><sb>height</sb></ref>: <shi>u16</shi></category-title>
                     <config id="FRAME_DATA_HEIGHT_DESC"/>
+                    <category-title><ref><sb>codec</sb></ref>: <shi>Codec</shi></category-title>
+                    <config id="FRAME_DATA_CODEC_DESC"/>
+                    <category-title><ref><sb>keyframe</sb></ref>: <shi>bool</shi></category-title>
+                    <config id="FRAME_DATA_KEYFRAME_DESC"/>
                 </subtext>
             </category>
         </subtext>
