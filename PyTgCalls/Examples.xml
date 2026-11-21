@@ -56,6 +56,18 @@
             <column>Use multiple clients in one script</column>
         </item>
         <item>
+            <column><ref-shi url="example/opus_passthrough/example_opus_passthrough.py">opus_passthrough</ref-shi></column>
+            <column>Play an Opus file without re-encoding it, using far less CPU</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/opus_recording/example_opus_recording.py">opus_recording</ref-shi></column>
+            <column>Record a call to an Opus file without going through FFmpeg</column>
+        </item>
+        <item>
+            <column><ref-shi url="example/opus_streaming/example_opus.py">opus_streaming</ref-shi></column>
+            <column>Play Ogg Opus from disk without FFmpeg, the lightest way to stream audio</column>
+        </item>
+        <item>
             <column><ref-shi url="example/p2p_example/example_p2p.py">p2p_example</ref-shi></column>
             <column>Play a stream from a private call using PyTgCalls</column>
         </item>
