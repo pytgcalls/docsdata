@@ -5,7 +5,7 @@
         <shi>class</shi> <ref src="class">pytgcalls.types.<sb>StreamFrames</sb></ref>
     </category-title>
     <subtext>
-        <text>Represents stream frames.</text>
+        <text>Represents stream frames. When the audio is received as Opus, each frame is an Opus packet: the packets arrive in order through a jitter buffer that rebuilds short gaps, while a longer pause, such as a muted participant, shows up as a jump of <code>capture_time</code>.</text>
         <br/>
         <pg-title>PROPERTIES</pg-title>
         <subtext>

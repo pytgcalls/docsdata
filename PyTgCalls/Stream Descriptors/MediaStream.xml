@@ -1,7 +1,7 @@
 <page>
     <h1>MediaStream</h1>
     <alert type="note">
-        Opus audio, as in WebM, Ogg and most YouTube streams, and H264 without B-frames, VP8, VP9 or AV1 video no larger than the requested quality are sent as they are, using far less CPU. Opus audio is re-encoded when its average bitrate goes more than 25% above the one of the audio parameters, so VBR files are sent as they are. FFmpeg parameters on a track turn this off for that track.
+        Opus audio, as in WebM, Ogg and most YouTube streams, and H264 without B-frames, VP8, VP9 or AV1 video no larger than the requested quality are sent as they are, using far less CPU. Opus audio is re-encoded when its channels don't match the audio parameters or its average bitrate goes more than 25% above theirs, so VBR files are sent as they are. Since the packets are sent as they are, the audio parameters can't raise their quality: a 128 kbps Opus file stays at 128 kbps even with <code>AudioQuality.MASTER</code>, so encode the file at the bitrate you want, starting from a lossless source. FFmpeg parameters on a track turn this off for that track.
     </alert>
     <br/>
     <category-title noref="true">

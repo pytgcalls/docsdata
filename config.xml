@@ -846,7 +846,7 @@
   </option>
 
   <option id="FRAME_DATA_ABSOLUTE_CAPTURE_TIMESTAMP_MS_DESC">
-    <subtext><text>Absolute capture timestamp in milliseconds.</text></subtext>
+    <subtext><text>Absolute capture timestamp in milliseconds. For received Opus packets it follows the RTP clock of the sender, so 20 ms packets are exactly 20 ms apart and a pause in the audio shows up as a gap.</text></subtext>
   </option>
 
   <option id="FRAME_DATA_ROTATION_DESC">
@@ -1348,7 +1348,7 @@
   </option>
 
   <option id="ON_FRAMES_DESC2">
-    <text>Register a callback for the decoded frames.</text>
+    <text>Register a callback for the frames of external media. With <code>Format.OGG</code> each audio frame is an Opus packet: received packets arrive in order through a jitter buffer that rebuilds short gaps, while a longer pause, such as a muted participant, shows up as a jump of <code>absolute_capture_timestamp_ms</code>.</text>
   </option>
 
   <option id="ON_SIGNALING_DATA_DESC2">

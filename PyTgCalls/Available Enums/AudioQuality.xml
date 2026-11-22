@@ -1,5 +1,8 @@
 <page>
     <h1>AudioQuality</h1>
+    <alert type="note">
+        When an Opus source is sent as it is, the bitrate of the preset is the highest one it accepts before re-encoding it, not the quality it is streamed at. A higher preset only sounds better when the source carries that quality, such as a lossless file or an Opus file encoded at that bitrate.
+    </alert>
     <br/>
     <category-title noref="true">
         <shi>class</shi> <ref src="enum">pytgcalls.types.<sb>AudioQuality</sb></ref>
@@ -10,7 +13,7 @@
         <pg-title>ENUMERATION MEMBERS</pg-title>
         <subtext>
             <category-title><ref><sb>MASTER</sb></ref> <shi>=</shi> (96000, 2, 510000)</category-title>
-            <subtext><text>Represents the highest audio quality with a sample rate of 96000, 2 channels and the maximum Opus bitrate of 510 kbps, indistinguishable from a lossless source.</text></subtext>
+            <subtext><text>Represents the highest audio quality with a sample rate of 96000, 2 channels and the maximum Opus bitrate of 510 kbps, indistinguishable from a lossless source. It uploads about 3.8 MB per minute for each call.</text></subtext>
 
             <category-title><ref><sb>STUDIO</sb></ref> <shi>=</shi> (96000, 2, 192000)</category-title>
             <subtext><text>Represents studio-quality audio with a sample rate of 96000, 2 channels and an Opus bitrate of 192 kbps.</text></subtext>
