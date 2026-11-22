@@ -27,6 +27,8 @@
                     <config id="AUDIO_BITRATE_DESC"/>
                     <category-title><ref><sb>format</sb></ref>: <shi>Optional</shi>[<shi>ntgcalls.Format</shi>]</category-title>
                     <config id="AUDIO_FORMAT_DESC"/>
+                    <category-title><ref><sb>max_delay_ms</sb></ref>: <shi>Optional</shi>[<shi>int</shi>]</category-title>
+                    <config id="MAX_DELAY_MS_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -53,6 +55,8 @@
                     <config id="AUDIO_BITRATE_DESC"/>
                     <category-title><ref><sb>format</sb></ref>: <shi language="c">ntg_format*</shi></category-title>
                     <config id="AUDIO_FORMAT_DESC"/>
+                    <category-title><ref><sb>max_delay_ms</sb></ref>: <shi language="c">uint32_t*</shi></category-title>
+                    <config id="MAX_DELAY_MS_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -79,6 +83,8 @@
                     <config id="AUDIO_BITRATE_DESC"/>
                     <category-title><ref><sb>format</sb></ref><shi>?</shi>: <shi>Format</shi></category-title>
                     <config id="AUDIO_FORMAT_DESC"/>
+                    <category-title><ref><sb>maxDelayMs</sb></ref><shi>?</shi>: <shi>number</shi></category-title>
+                    <config id="MAX_DELAY_MS_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -105,6 +111,8 @@
                     <config id="AUDIO_BITRATE_DESC"/>
                     <category-title><shi>Format</shi> <ref><sb>format</sb></ref></category-title>
                     <config id="AUDIO_FORMAT_DESC"/>
+                    <category-title><shi>Integer</shi> <ref><sb>max_delay_ms</sb></ref></category-title>
+                    <config id="MAX_DELAY_MS_DESC"/>
                 </subtext>
             </category>
         </subtext>
@@ -131,6 +139,8 @@
                     <config id="AUDIO_BITRATE_DESC"/>
                     <category-title><ref><sb>format</sb></ref>: <shi>Option&lt;Format&gt;</shi></category-title>
                     <config id="AUDIO_FORMAT_DESC"/>
+                    <category-title><ref><sb>max_delay_ms</sb></ref>: <shi>Option&lt;u32&gt;</shi></category-title>
+                    <config id="MAX_DELAY_MS_DESC"/>
                 </subtext>
             </category>
         </subtext>

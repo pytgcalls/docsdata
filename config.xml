@@ -214,6 +214,10 @@
     <subtext><text>Opus encoder bitrate in bits per second (6000-510000). If not set, the WebRTC default is used, 32 kbps in mono and 64 kbps in stereo.</text></subtext>
   </option>
 
+  <option id="MAX_DELAY_MS_DESC">
+    <subtext><text>Longest time in milliseconds to wait for a late Opus packet when receiving Ogg Opus, 1000 if not set. Received packets go through a jitter buffer that adapts to the connection up to this limit, and a packet that doesn't arrive in time is rebuilt from the next one. A lower value lowers the latency of live frames, while a higher value loses fewer packets on unstable connections. Ignored for PCM.</text></subtext>
+  </option>
+
   <option id="AUDIO_FORMAT_DESC">
     <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. Sending Ogg Opus uses about half the CPU of PCM, since the packets are sent without being encoded again, and are re-encoded only when they don't match the requested channels or bitrate. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
   </option>
