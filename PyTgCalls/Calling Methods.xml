@@ -36,16 +36,12 @@
                 <tabs>
                     <tab id="pyrogram">PyrogramMod</tab>
                     <tab id="telethon">Telethon</tab>
-                    <tab id="hydrogram">Hydrogram</tab>
                 </tabs>
                 <syntax-highlight id="pyrogram">
                     from pyrogram import Client
                 </syntax-highlight>
                 <syntax-highlight id="telethon">
                     from telethon import TelegramClient
-                </syntax-highlight>
-                <syntax-highlight id="hydrogram">
-                    from hydrogram import Client
                 </syntax-highlight>
             </multisyntax>
         </item>
@@ -62,16 +58,12 @@
                 <tabs>
                     <tab id="pyrogram">PyrogramMod</tab>
                     <tab id="telethon">Telethon</tab>
-                    <tab id="hydrogram">Hydrogram</tab>
                 </tabs>
                 <syntax-highlight id="pyrogram">
                     client = Client('test_session', api_id, api_hash)
                 </syntax-highlight>
                 <syntax-highlight id="telethon">
                     client = TelegramClient('test_session', api_id, api_hash)
-                </syntax-highlight>
-                <syntax-highlight id="hydrogram">
-                    client = Client('test_session', api_id, api_hash)
                 </syntax-highlight>
             </multisyntax>
         </item>

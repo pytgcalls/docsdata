@@ -1531,7 +1531,7 @@
   </option>
 
   <option id="ARG_UNION_PEER">
-    Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>, <a href="https://hydrogram.amanoteam.com/en/latest/telegram/base/input-peer.html">hydrogram.InputPeer</a>]
+    Union[<a href="https://docs.pyrogram.org/telegram/base/input-peer">pyrogram.InputPeer</a>, <a href="https://tl.telethon.dev/types/input_peer.html">telethon.InputPeer</a>]
   </option>
 
   <option id="RET_INT_ID">
