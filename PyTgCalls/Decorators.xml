@@ -22,7 +22,7 @@
         app.run()
     </syntax-highlight>
     <separator/>
-    <h1>PyTgCalls Decorators</h1>
+    <h1>Py-TgCalls Decorators</h1>
     <br/>
     <category>
         <category-title><ref>@PyTgCalls.<sb>on_update</sb></ref>()</category-title>

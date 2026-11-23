@@ -25,7 +25,7 @@
             <subtext>
                 <alert type="warning">
                     <text>
-                        This method was deprecated on PyTgCalls 1.2.X, use directly
+                        This method was deprecated on Py-TgCalls 1.2.X, use directly
                         <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref> in MediaStream instead
                     </text>
                 </alert>

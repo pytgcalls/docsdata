@@ -4,7 +4,7 @@
         This function will run indefinitely in order to block the main script
         execution and prevent it from exiting while having client(s) that are still running in the background.
 
-        PyTgCalls works by keeping your handlers in a pool of worker threads, which run
+        Py-TgCalls works by keeping your handlers in a pool of worker threads, which run
         concurrently outside the main thread. Calling idle() will ensure that the client(s) remain active, by
         preventing the main script from ending until you decide to quit.
 

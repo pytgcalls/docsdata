@@ -1,7 +1,7 @@
 <page>
-    <h1>PyTgCalls Client</h1>
+    <h1>Py-TgCalls Client</h1>
     <text>
-        You now are in the API Reference section. Here you can find detailed information about PyTgCalls API:
+        You now are in the API Reference section. Here you can find detailed information about Py-TgCalls API:
         the main Client class, all available methods, types, attributes and decorators detailed descriptions can be found starting from this page.
 
         This page is about the Client class, which exposes high-level methods for easy access to the API.
@@ -20,15 +20,15 @@
             <shi>class</shi> <ref src="class">pytgcalls.<sb>PyTgCalls</sb></ref>
         </category-title>
         <subtext>
-            <text>PyTgCalls Client, the main tool for interacting with Telegram Calls.</text>
+            <text>Py-TgCalls Client, the main tool for interacting with Telegram Calls.</text>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
                 <subtext>
                     <category-title><ref>app</ref>: Union[<a href="https://docs.pyrogram.org/api/client">pyrogram.Client</a>, <a href="https://docs.telethon.dev/en/latest/modules/client.html">telethon.TelegramClient</a>, <a href="https://hydrogram.amanoteam.com/en/latest/api/client.html">hydrogram.Client</a>]</category-title>
                     <subtext><text>Pass the MTProto Client</text></subtext>
-                    <category-title><ref>cache_duration</ref>: <shi>int</shi></category-title>
-                    <subtext><text>Cache duration of a Full Chat query</text></subtext>
+                    <category-title><ref>workers</ref>: <shi>int</shi></category-title>
+                    <subtext><text>Number of threads used to run the update handlers, by default the number of CPU cores plus four, up to 32</text></subtext>
                 </subtext>
             </category>
             <br/>

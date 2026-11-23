@@ -5,7 +5,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgNov26.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v4.0.X"
+            bigtitle="Py-TgCalls v4.0.X"
             description="Studio-Quality Audio, Lower CPU and Video Recording!"
             mainbg="#070d16"
             version="4.0.X"
@@ -15,7 +15,7 @@
         <subtext>
             <h3 noref="true">What&apos;s new?</h3>
             <list>
-                <item><text><b>Opus Passthrough:</b> When the audio is already Opus, as in WebM, Ogg and most YouTube streams, it is sent without decoding and re-encoding, using about half the CPU.</text></item>
+                <item><text><b>Opus Passthrough:</b> When the audio is already Opus, as in WebM, Ogg and most YouTube streams, it is sent without decoding and re-encoding, keeping its original quality and skipping the CPU spent on audio encoding.</text></item>
                 <item><text><b>Video Passthrough:</b> H264 without B-frames, VP8, VP9 and AV1 videos are sent as they are, saving most of the CPU spent on video. A viewer joining the call still gets a picture right away, and the video is re-encoded automatically when it doesn&apos;t match the call or the bandwidth drops.</text></item>
                 <item><text><b>Video Recording:</b> <docs-ref link="/PyTgCalls/Stream Descriptors/RecordStream">RecordStream</docs-ref> now records the camera and the screen sharing to a file, composing the participants into an animated grid.</text></item>
                 <item><text><b>Stutter-Free Opus Recording:</b> Received Opus goes through a jitter buffer that adapts to the connection, and late or lost packets are rebuilt instead of becoming silence, so recordings and external frames stay smooth even when the call comes from a distant data center. The new <code>max_delay_ms</code> parameter of <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> caps how long it waits for a late packet.</text></item>
@@ -55,7 +55,7 @@
                 </item>
                 <item><text>The default <code>AudioQuality.HIGH</code> now streams in stereo at a higher quality, which uses more upload bandwidth. Use <code>AudioQuality.VOICE</code> to keep the previous outgoing audio.</text></item>
                 <item>
-                    <text>NTgCalls now expects compressed media by default: <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> reads Ogg Opus and <docs-ref link="/NTgCalls/Available Types/VideoDescription">VideoDescription</docs-ref> reads Matroska. Raw PCM and I420 sources now need the <code>format</code> parameter. The PyTgCalls raw <docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">AudioStream</docs-ref> and <docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">VideoStream</docs-ref> keep PCM and I420 as their default.</text>
+                    <text>NTgCalls now expects compressed media by default: <docs-ref link="/NTgCalls/Available Types/AudioDescription">AudioDescription</docs-ref> reads Ogg Opus and <docs-ref link="/NTgCalls/Available Types/VideoDescription">VideoDescription</docs-ref> reads Matroska. Raw PCM and I420 sources now need the <code>format</code> parameter. The Py-TgCalls raw <docs-ref link="/PyTgCalls/Stream Descriptors/AudioStream">AudioStream</docs-ref> and <docs-ref link="/PyTgCalls/Stream Descriptors/VideoStream">VideoStream</docs-ref> keep PCM and I420 as their default.</text>
                     <multisyntax as-blame="true">
                         <syntax-highlight>
                             from ntgcalls import AudioDescription, MediaSource
@@ -100,7 +100,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgSep26.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v3.0.X"
+            bigtitle="Py-TgCalls v3.0.X"
             description="Conference Calls, Node.js and Rust Bindings and More!"
             mainbg="#070d16"
             version="3.0.X"
@@ -174,7 +174,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgMay26.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v2.3.0"
+            bigtitle="Py-TgCalls v2.3.0"
             description="Free-Threading, Performances, Improved Stability and More!"
             mainbg="#070d16"
             version="2.3.0"
@@ -210,7 +210,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgFeb26.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v2.2.11"
+            bigtitle="Py-TgCalls v2.2.11"
             description="Enhanced Android Stability, Performance, and More!"
             mainbg="#070d16"
             version="2.2.11"
@@ -235,7 +235,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgMay25.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v2.2.X"
+            bigtitle="Py-TgCalls v2.2.X"
             description="Support for Large Group Calls, RTMP Streams, and More!"
             mainbg="#070d16"
             version="2.2.X"
@@ -245,7 +245,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Support for Large Group Calls:</b> PyTgCalls now supports group calls with 20 or more participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
+                <item><text><b>Support for Large Group Calls:</b> Py-TgCalls now supports group calls with 20 or more participants in channels, allowing the deprecation of the <code>UnMuteNeeded</code> exception.</text></item>
                 <item><text><b>RTMP Stream Integration:</b> You can now connect to RTMP streams and <sb>record</sb> them using the <docs-ref link="/PyTgCalls/Stream Methods/Record">record()</docs-ref> method. This enables streaming external RTMP content directly into your group calls.</text></item>
                 <item><text><b> Group Call Discarding Option:</b> The <code>close</code> parameter has been added to the <docs-ref link="/PyTgCalls/Basic Methods/Leave Call">leave_call()</docs-ref> method, allowing you to fully terminate a group call when it's no longer needed.</text></item>
                 <item><text><b>Enhanced Participant Caching:</b> The <docs-ref link="/PyTgCalls/Advanced Methods/Get Participants">get_participants()</docs-ref> method now supports proper caching for clients using the <code>no_update</code> parameter, ensuring accurate participant lists without triggering unnecessary updates.</text></item>
@@ -276,7 +276,7 @@
             <text>
                 The repository <a href="https://github.com/AshokShau/TgMusicBot">AshokShau/TgMusicBot</a> has won the <docs-ref link="/PyTgCalls/Changelogs#PyTgCon2K24">#PyTgCon2K24</docs-ref> contest!
                 It is now officially featured in the Quickstart section of the NTgCalls documentation.
-                Check it out to see an excellent example of what you can build with PyTgCalls!
+                Check it out to see an excellent example of what you can build with Py-TgCalls!
             </text>
         </subtext>
         <separator/>
@@ -286,7 +286,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgMar25.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v2.1.X"
+            bigtitle="Py-TgCalls v2.1.X"
             description="Enhanced Group Calls, Recording, and More!"
             mainbg="#070d16"
             version="2.1.X"
@@ -297,9 +297,9 @@
             <h3 noref="true">What's new?</h3>
             <list>
                 <item><text><b>Group Calls V2 – Stream Video &amp; Screen Simultaneously:</b> Now you can stream both your screen and video at the same time! Learn more in <docs-ref link="/PyTgCalls/Stream Descriptors/Stream">pytgcalls.types.raw.Stream</docs-ref>.</text></item>
-                <item><text><b>Record Your Streams:</b> PyTgCalls now supports stream recording! Find out how to use it <docs-ref link="/PyTgCalls/Stream Methods/Record">here</docs-ref>.</text></item>
+                <item><text><b>Record Your Streams:</b> Py-TgCalls now supports stream recording! Find out how to use it <docs-ref link="/PyTgCalls/Stream Methods/Record">here</docs-ref>.</text></item>
                 <item><text><b>Performance &amp; Stability Boost:</b> We've upgraded WebRTC to the latest version (<a href="https://chromiumdash.appspot.com/branches">m132</a>) and optimized the codebase for better stability and speed.</text></item>
-                <item><text><b>PyTgCalls Now Supports Java for Android:</b> You can now use PyTgCalls in Android apps with Java! Check out <a href="https://github.com/pytgcalls/Telegram-X">Telegram-X</a> for usage details or find the library <a href="https://central.sonatype.com/artifact/io.github.pytgcalls/ntgcalls">here</a>.</text></item>
+                <item><text><b>Py-TgCalls Now Supports Java for Android:</b> You can now use Py-TgCalls in Android apps with Java! Check out <a href="https://github.com/pytgcalls/Telegram-X">Telegram-X</a> for usage details or find the library <a href="https://central.sonatype.com/artifact/io.github.pytgcalls/ntgcalls">here</a>.</text></item>
                 <item><text><b>Massive CPU Optimization:</b> CPU usage reduced by up to 60% and system calls decreased by 90%, making everything more efficient.</text></item>
                 <item><text><b>Clearer C Binding Error Messages:</b> Debugging is now easier with detailed error messages for C bindings.</text></item>
                 <item><text><b>Native Media Device Streaming:</b> Stream your microphone, camera, or screen directly with Media Devices. Learn more <docs-ref link="/PyTgCalls/Media Devices">here</docs-ref>.</text></item>
@@ -427,7 +427,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgSep24.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v2.0.3"
+            bigtitle="Py-TgCalls v2.0.3"
             description="Private Calls Stable, Performances Improvements and more!"
             mainbg="#070d16"
             version="2.0.X"
@@ -438,7 +438,7 @@
             <h3 noref="true">What's new?</h3>
             <list>
                 <item><text><b>Private Calls are Now Stable:</b> Easily make private calls, even for groups, with a single method—just use <docs-ref link="/PyTgCalls/Stream Methods/Play">play()</docs-ref>! Check out the example here: <a href="https://github.com/pytgcalls/pytgcalls/blob/master/example/p2p_example/example_p2p.py">Private Calls</a>.</text></item>
-                <item><text><b>Performance Boost:</b>  We're now running the latest WebRTC version (<a href="https://chromiumdash.appspot.com/branches">m128</a>), bringing key performance fixes. Plus, with the latest pybind11 update, issues with Python's garbage collection have been resolved for a smoother experience.</text></item>
+                <item><text><b>Performance Boost:</b> We're now running the latest WebRTC version (<a href="https://chromiumdash.appspot.com/branches">m128</a>), bringing key performance fixes. Plus, with the latest pybind11 update, issues with Python's garbage collection have been resolved for a smoother experience.</text></item>
                 <item><text><b>New "adjust_by_height" Feature:</b> Adjust video resolution by height instead of width, giving you more flexibility in how you manage your video streams. Learn more <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">here</docs-ref>.</text></item>
                 <item><text><b>New Event Handlers (remove_handler &amp; add_handler):</b> These methods allow you to register listeners for existing events just like the decorators in the library. Use them to handle events such as "stream ended" or "new user connected" within PyTgCalls. Find out more <docs-ref link="/PyTgCalls/Using Handlers">here</docs-ref>.</text></item>
                 <item><text><b>Improved Documentation:</b> Enjoy clearer, more detailed documentation with fresh examples, a new UI, a powerful search engine, and step-by-step guidance to help you get started quickly.</text></item>
@@ -446,7 +446,7 @@
             </list>
             <h3 noref="true">Community Milestone</h3>
             <text>
-                <b>Thank You All:</b> We've reached a new milestone with over 400 thousand of active monthly users! We're grateful for your support and feedback, which has helped us improve PyTgCalls and make it the go-to library for all your real-time communication needs.
+                <b>Thank You All:</b> We've reached a new milestone with over 400 thousand of active monthly users! We're grateful for your support and feedback, which has helped us improve Py-TgCalls and make it the go-to library for all your real-time communication needs.
             </text>
         </subtext>
         <separator/>
@@ -456,7 +456,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgApr24.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v2.0.X"
+            bigtitle="Py-TgCalls v2.0.X"
             description="Private Calls, Code Rework, Async Support and more!"
             mainbg="#070d16"
             version="2.0.X"
@@ -588,7 +588,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgFeb24.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v1.2.X"
+            bigtitle="Py-TgCalls v1.2.X"
             description="Static Typing, YtDlp support and More"
             mainbg="#070d16"
             version="1.2.X"
@@ -598,7 +598,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Static Typing:</b> PyTgCalls is now fully statically typed, ensuring that the types of each method and class are thoroughly checked.</text></item>
+                <item><text><b>Static Typing:</b> Py-TgCalls is now fully statically typed, ensuring that the types of each method and class are thoroughly checked.</text></item>
                 <item><text><b>YtDlp Support:</b> MediaStream now supports links from YouTube using YtDlp, for example: <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">https://www.youtube.com/watch?v=iSbLHrrqmoM</a></text></item>
                 <item>
                     <text><b>MediaStream Quality Support:</b> MediaStream now accepts enhanced quality options for audio and video parameters. For audio, use <docs-ref link="/PyTgCalls/Available Enums/AudioQuality">AudioQuality</docs-ref>, and for video, use <docs-ref link="/PyTgCalls/Available Enums/VideoQuality">VideoQuality</docs-ref>.</text>
@@ -645,12 +645,12 @@
             imageurl="/src/assets/updates/PyTgCon24.png"
             minititle="NEWS"
             bigtitle="#PyTgCon2K24"
-            description="If you've crafted a public open repository, it's time to showcase your work in the PyTgCalls Contest! 🌟"
+            description="If you've crafted a public open repository, it's time to showcase your work in the Py-TgCalls Contest! 🌟"
             mainbg="#070d16"
             version="1.1.6"
             imagewidth="1920"
             imageheight="1080"
-            presentationtitle="PyTgCalls Contest"
+            presentationtitle="Py-TgCalls Contest"
             presentationdescription="Competition for bot developers"
             presentationbuttontitle="Participate"
             presentationbuttonurl="https://github.com/pytgcalls/pytgcalls/discussions/199"
@@ -659,21 +659,21 @@
         <subtext>
             <h3 noref="true">Here's how to join:</h3>
             <list>
-                <item><text><b>Visit the discussion page:</b> <a href="https://github.com/pytgcalls/pytgcalls/discussions/199">PyTgCalls Contest</a></text></item>
+                <item><text><b>Visit the discussion page:</b> <a href="https://github.com/pytgcalls/pytgcalls/discussions/199">Py-TgCalls Contest</a></text></item>
                 <item><text><b> Share these details:</b> Your Repository Name, Brief Description of Your Bot, Link to Your Repository</text></item>
             </list>
             <h3 noref="true">Prizes and Recognition</h3>
             <list>
                 <item><text>Encourage upvotes by reposting this message in your channels.</text></item>
-                <item><text>The bot with the highest upvotes earns a prestigious place in the PyTgCalls documentation.</text></item>
+                <item><text>The bot with the highest upvotes earns a prestigious place in the Py-TgCalls documentation.</text></item>
             </list>
             <h3 noref="true">Contest Rules</h3>
             <list>
                 <item><text>Make sure your repository goes beyond minor tweaks of a fork.</text></item>
-                <item><text>Use the <a href="https://pypi.org/project/py-tgcalls/1.1.2/">latest</a> PyTgCalls version).</text></item>
+                <item><text>Use the <a href="https://pypi.org/project/py-tgcalls/1.1.2/">latest</a> Py-TgCalls version).</text></item>
                 <item><text>Your repository should be public.</text></item>
             </list>
-            <text>Join the contest now and showcase your PyTgCalls-powered bot for a chance to be featured prominently on the PyTgCalls documentation! Good luck!</text>
+            <text>Join the contest now and showcase your Py-TgCalls-powered bot for a chance to be featured prominently on the Py-TgCalls documentation! Good luck!</text>
         </subtext>
         <separator/>
     </category>
@@ -682,7 +682,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgDec23v2.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v1.1.X"
+            bigtitle="Py-TgCalls v1.1.X"
             description="Unified Stream Design, AutoStart GroupCalls and More"
             mainbg="#070d16"
             version="1.1.X"
@@ -754,7 +754,7 @@
             <h3 noref="true">Deprecation Notice</h3>
             <text>
                 As we said in the last post,
-                now PyTgCalls <b>0.8.6</b> has reached the <b>end of life</b>,
+                now Py-TgCalls <b>0.8.6</b> has reached the <b>end of life</b>,
                 so this update is completely incompatible with this or previous versions.
                 We have also deprecated most of the Stream Piped methods, here's the list:
             </text>
@@ -776,7 +776,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgDec23.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v1.0.X"
+            bigtitle="Py-TgCalls v1.0.X"
             description="NTgCalls, Hydrogram Support, New Documentation, and More"
             mainbg="#070d16"
             version="1.0.X"
@@ -786,7 +786,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>NTgCalls Integration:</b> The PyTgCalls core has been updated to use NTgCalls instead of TgCallsJS, making it more portable and eliminating overhead. Now, you only need to install ffmpeg on your machine, resulting in improved performance.</text></item>
+                <item><text><b>NTgCalls Integration:</b> The Py-TgCalls core has been updated to use NTgCalls instead of TgCallsJS, making it more portable and eliminating overhead. Now, you only need to install ffmpeg on your machine, resulting in improved performance.</text></item>
                 <item><text><b>Hydrogram Support:</b> Official support for Hydrogram, a new mtproto client based on Pyrogram, providing new possibilities and enhancing the overall experience.</text></item>
                 <item><text><b>New Documentation:</b> Revamped documentation with improved clarity, comprehensive examples, and up-to-date guidance for developers.</text></item>
                 <config id="BUG_FIX_CHANGELOGS"/>
@@ -797,7 +797,7 @@
             </text>
             <h3 noref="true">Deprecation Notice</h3>
             <text>
-                <b>End-of-Life (EOL) Dates:</b> Due to changes in Pyrogram and significant time since the release of PyTgCalls 0.8.X, different versions are marked for end-of-life:
+                <b>End-of-Life (EOL) Dates:</b> Due to changes in Pyrogram and significant time since the release of Py-TgCalls 0.8.X, different versions are marked for end-of-life:
             </text>
             <list>
                 <item><text><b>0.8.0, 0.8.1, 0.8.2, 0.8.3, 0.8.4, 0.8.5:</b> Support ended due to outdated versions.</text></item>
@@ -813,7 +813,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgSep22.png"
             minititle="BUG FIXES"
-            bigtitle="PyTgCalls v0.9.X"
+            bigtitle="Py-TgCalls v0.9.X"
             description="Feature Enhancements and Bug Fixes"
             mainbg="#070d16"
             version="0.9.X"
@@ -865,7 +865,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgDec21.png"
             minititle="BUG FIXES"
-            bigtitle="PyTgCalls v0.8.3"
+            bigtitle="Py-TgCalls v0.8.3"
             description="WebRTC Retry Fixes and Asynchronous Method Invocation"
             mainbg="#070d16"
             version="0.8.X"
@@ -886,7 +886,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgNov21.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v0.8.X"
+            bigtitle="Py-TgCalls v0.8.X"
             description="Telethon Support, Group/Channel Join, Video Group Call, and More"
             mainbg="#070d16"
             version="0.8.X"
@@ -930,7 +930,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgAug21v2.png"
             minititle="MAJOR UPDATE"
-            bigtitle="PyTgCalls v0.7.X"
+            bigtitle="Py-TgCalls v0.7.X"
             description="Code Cleanup, Full Asynchronous Support, and Enhanced Functionality"
             mainbg="#070d16"
             version="0.7.X"
@@ -945,11 +945,11 @@
             </list>
             <h3 noref="true">Changes &amp; Fixes</h3>
             <list>
-                <item><text><b>PyTgCalls Re-Base:</b> Code cleanup and fixes for a more streamlined and efficient codebase.</text></item>
+                <item><text><b>Py-TgCalls Re-Base:</b> Code cleanup and fixes for a more streamlined and efficient codebase.</text></item>
                 <item><text><b>Fully Async:</b> The library is now fully asynchronous for improved performance.</text></item>
                 <item><text><b>Communication Update:</b> Removed the internal socket server for Node.js communication between Python, replaced with stdin and stdout.</text></item>
                 <item><text><b>CustomAPI Renewed:</b> CustomAPI upgraded to version 2.1 with new features and improvements.</text></item>
-                <item><text><b>RawUpdate Enhancement:</b> RawUpdate renewed with PyTgCalls Object Update for better handling of updates.</text></item>
+                <item><text><b>RawUpdate Enhancement:</b> RawUpdate renewed with Py-TgCalls Object Update for better handling of updates.</text></item>
                 <item><text><b>Method Name Change:</b> .run() is now .start() and no longer blocks code execution.</text></item>
                 <item><text><b>Logging Update:</b> Now logs are directed to Python Logging for improved logging capabilities.</text></item>
                 <item><text><b>Voice Call Handling:</b> If the stream is deleted, the userbot will exit the voice call by printing an error in RawUpdate.</text></item>
@@ -963,7 +963,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgAug21.png"
             minititle="MINOR UPDATE"
-            bigtitle="PyTgCalls v0.6.X"
+            bigtitle="Py-TgCalls v0.6.X"
             description="Multi-core Beta Support, Function Execution Without Node.js Core Waiting, and More"
             mainbg="#070d16"
             version="0.6.X"
@@ -973,7 +973,7 @@
         <subtext>
             <h3 noref="true">What's new?</h3>
             <list>
-                <item><text><b>Multi-core support:</b> PyTgCalls now supports multiple cores for enhanced performance.</text></item>
+                <item><text><b>Multi-core support:</b> Py-TgCalls now supports multiple cores for enhanced performance.</text></item>
                 <item><text><b>Remote version check:</b> Added the ability to check for the latest version available on GitHub remotely.</text></item>
             </list>
             <h3 noref="true">Changes &amp; Fixes</h3>
@@ -990,7 +990,7 @@
         <banner
             imageurl="/src/assets/updates/PyTgJul21.png"
             minititle="BUG FIXES"
-            bigtitle="PyTgCalls v0.5.X"
+            bigtitle="Py-TgCalls v0.5.X"
             description="Smoother Installation, Active Calls Resolved, and Enhanced Error Insight"
             mainbg="#070d16"
             version="0.5.X"
@@ -1000,7 +1000,7 @@
         <subtext>
             <h3 noref="true">Changes &amp; Fixes</h3>
             <list>
-                <item><text><b>Fixed PyPi builds: </b>Fixed an issue where PyTgCalls compiled without the JavaScript core</text></item>
+                <item><text><b>Fixed PyPi builds: </b>Fixed an issue where Py-TgCalls compiled without the JavaScript core</text></item>
                 <item><text><b>Improved join_group_call error: </b>The join_group_call error is now more descriptive</text></item>
                 <config id="BUG_FIX_CHANGELOGS"/>
             </list>

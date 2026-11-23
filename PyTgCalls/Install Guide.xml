@@ -1,33 +1,33 @@
 <page>
     <h1>Install Guide</h1>
     <text>
-        Being a modern Python library, <b>PyTgCalls</b> requires Python 3.10+ to be installed in your system.
+        Being a modern Python library, <b>Py-TgCalls</b> requires Python 3.10+ to be installed in your system.
         We recommend using the latest versions of both Python 3 and pip.
     </text>
     <list>
         <item>Get Python 3 from the <a href="https://www.python.org/downloads/">Python website</a> or use your package manager.</item>
         <item>Get pip by following the instructions <a href="https://pip.pypa.io/en/latest/installing/">here</a>.</item>
     </list>
-    <alert type="important">PyTgCalls only supports <b>Python 3</b>, starting from version 3.10.</alert>
+    <alert type="important">Py-TgCalls only supports <b>Python 3</b>, starting from version 3.10.</alert>
     <separator/>
-    <h2>Install PyTgCalls</h2>
-    <text>The easiest way to install and upgrade PyTgCalls to its latest stable version is by using pip:</text>
+    <h2>Install Py-TgCalls</h2>
+    <text>The easiest way to install and upgrade Py-TgCalls to its latest stable version is by using pip:</text>
     <syntax-highlight language="bash">
         $ pip3 install -U py-tgcalls
     </syntax-highlight>
     <h2>Bleeding Edge</h2>
     <text>
-        PyTgCalls is always evolving: although new releases on PyPI are only published when a significant number of changes are added,
+        Py-TgCalls is always evolving: although new releases on PyPI are only published when a significant number of changes are added,
         this doesn’t mean you can’t try new features right now!
 
-        In case you’d like to try out the latest PyTgCalls’ features, the  <a href="https://github.com/pytgcalls/pytgcalls">GitHub repo</a> is constantly updated with new changes;
+        In case you’d like to try out the latest Py-TgCalls’ features, the <a href="https://github.com/pytgcalls/pytgcalls">GitHub repo</a> is constantly updated with new changes;
         you can install the development version straight from the <code>master</code> branch using this command (note “master.zip” in the link):
     </text>
     <syntax-highlight language="bash">
         $ pip3 install -U git+https://github.com/pytgcalls/pytgcalls
     </syntax-highlight>
     <h2>Verifying</h2>
-    <text>To verify that PyTgCalls is correctly installed, open a Python shell and import it. If no errors show up you are good to go.</text>
+    <text>To verify that Py-TgCalls is correctly installed, open a Python shell and import it. If no errors show up you are good to go.</text>
     <syntax-highlight language="python">
         >>> import pytgcalls
         >>> pytgcalls.__version__

@@ -6,7 +6,7 @@
     </text>
     <h2>Defining Updates</h2>
     <text>
-        First of all, let's define what these updates are. As hinted earlier, updates are events that happen in PyTgCalls, such as
+        First of all, let's define what these updates are. As hinted earlier, updates are events that happen in Py-TgCalls, such as
         joining a group call, changes in the participant list, stream ended etc. They are meant to notify you about a new
         specific state change. These updates are handled by registering one or more callback functions in your app
         using <docs-ref link="/PyTgCalls/Decorators">Decorators</docs-ref>.
@@ -22,7 +22,7 @@
     </text>
     <alert type="note">
         You can mix <code>def</code> and <code>async def</code> handlers as much as you need,
-        PyTgCalls will still work concurrently and efficiently regardless of what you choose.
+        Py-TgCalls will still work concurrently and efficiently regardless of what you choose.
     </alert>
     <h3>Using Decorators</h3>
     <text>The most elegant way to register a stream end handler is by using the <docs-ref link="/PyTgCalls/Decorators">on_update()</docs-ref> decorator together with the <docs-ref link="/PyTgCalls/Filters">stream_end()</docs-ref> filter:</text>

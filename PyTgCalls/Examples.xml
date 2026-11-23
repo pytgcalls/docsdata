@@ -1,7 +1,7 @@
 <page>
     <h1>Examples</h1>
     <text>
-        This page contains example scripts to demonstrate how PyTgCalls looks like.
+        This page contains example scripts to demonstrate how Py-TgCalls looks like.
 
         Every script is working right away (assuming you correctly set up your credentials), meaning you can simply copy-paste them
         and run. The only things you have to modify are session names and target chats, where applicable.
@@ -29,15 +29,15 @@
         </item>
         <item>
             <column><ref-shi url="example/custom_api/example_api.py">custom_api</ref-shi></column>
-            <column>Use custom API server to bind PHP or other API to PyTgCalls</column>
+            <column>Use custom API server to bind PHP or other API to Py-TgCalls</column>
         </item>
         <item>
             <column><ref-shi url="example/custom_filters/example_custom.py">custom_filters</ref-shi></column>
-            <column>Make custom filters to use it in PyTgCalls</column>
+            <column>Make custom filters to use it in Py-TgCalls</column>
         </item>
         <item>
             <column><ref-shi url="example/docker_example/docker_example.py">docker_example</ref-shi></column>
-            <column>Run PyTgCalls in Docker image</column>
+            <column>Run Py-TgCalls in Docker image</column>
         </item>
         <item>
             <column><ref-shi url="example/external_capture/example_external.py">external_capture</ref-shi></column>
@@ -57,7 +57,7 @@
         </item>
         <item>
             <column><ref-shi url="example/opus_passthrough/example_opus_passthrough.py">opus_passthrough</ref-shi></column>
-            <column>Play an Opus file without re-encoding it, using far less CPU</column>
+            <column>Play an Opus file without re-encoding it, keeping its original quality</column>
         </item>
         <item>
             <column><ref-shi url="example/opus_recording/example_opus_recording.py">opus_recording</ref-shi></column>
@@ -69,7 +69,7 @@
         </item>
         <item>
             <column><ref-shi url="example/p2p_example/example_p2p.py">p2p_example</ref-shi></column>
-            <column>Play a stream from a private call using PyTgCalls</column>
+            <column>Play a stream from a private call using Py-TgCalls</column>
         </item>
         <item>
             <column><ref-shi url="example/piped_audio_calls/example_piped_audio.py">piped_audio_calls</ref-shi></column>
@@ -101,11 +101,11 @@
         </item>
         <item>
             <column><ref-shi url="example/simple_calls/example_simple.py">simple_calls</ref-shi></column>
-            <column>A simple example about using PyTgCalls with High Level Methods</column>
+            <column>A simple example about using Py-TgCalls with High Level Methods</column>
         </item>
         <item>
             <column><ref-shi url="example/telethon_example/example_telethon.py">telethon_example</ref-shi></column>
-            <column>A simple example about using PyTgCalls with Telethon</column>
+            <column>A simple example about using Py-TgCalls with Telethon</column>
         </item>
         <item>
             <column><ref-shi url="example/video_calls/example_piped_video.py">video_calls</ref-shi></column>
@@ -117,7 +117,7 @@
         </item>
         <item>
             <column><ref-shi url="example/youtube_dl/youtube_dl_example.py">youtube_dl</ref-shi></column>
-            <column>Example usage of PyTgCalls with yt-dlp through a proxy</column>
+            <column>Example usage of Py-TgCalls with yt-dlp through a proxy</column>
         </item>
     </table>
 </page>

@@ -44,7 +44,7 @@
     <separator/>
     <h2>Using PinguProxy</h2>
     <text>
-        <a href="https://pinguproxy.com/?ref=pytgcalls">PinguProxy</a> sponsors PyTgCalls, the first 30 signups get 1GB for free. Two things matter when streaming:
+        <a href="https://pinguproxy.com/?ref=pytgcalls">PinguProxy</a> sponsors Py-TgCalls, the first 30 signups get 1GB for free. Two things matter when streaming:
     </text>
     <list>
         <item><b>Prefer residential proxies</b>: YouTube flags datacenter IP ranges much more often, so they hit the bot check sooner.</item>

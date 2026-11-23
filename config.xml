@@ -219,7 +219,7 @@
   </option>
 
   <option id="AUDIO_FORMAT_DESC">
-    <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. Sending Ogg Opus uses about half the CPU of PCM, since the packets are sent without being encoded again, and are re-encoded only when they don't match the requested channels or bitrate. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
+    <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. Sending Ogg Opus skips the audio encoding and keeps the original quality, since the packets are sent without being encoded again, and are re-encoded only when they don't match the requested channels or bitrate. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
   </option>
 
   <option id="VIDEO_FORMAT_DESC">
@@ -1689,23 +1689,23 @@
     </pres-items>
     <numeric-pres-points>
       <item
-        title="20 MLN+"
-        description="Total downloads from PyPi or Github"
+        title="23 MLN+"
+        description="Total downloads from PyPI, GitHub, npm and crates.io"
       />
       <item
-        title="30,000+"
-        description="Projects that have adopted PyTgCalls or NTgCalls"
-        origin="Available NTgCalls since 2023"
+        title="38,000+"
+        description="Projects built on Py-TgCalls or NTgCalls"
+        origin="Since NTgCalls launched in 2023"
       />
       <item
-        title="78,9%"
-        description="Developer preference for PyTgCalls"
-        origin="Based on Github stats 2024"
+        title="80.3%"
+        description="Developer preference for Py-TgCalls"
+        origin="Based on GitHub stats 2026"
       />
     </numeric-pres-points>
     <citation>
       <value>
-        Our mission is to make Telegram calls effortless for developers of all backgrounds, from complex class to seamless integration.<br/>
+        Our mission is to make Telegram calls easy for every developer.<br/>
         No prior WebRTC or C++ experience is required.
       </value>
     </citation>
@@ -1784,11 +1784,11 @@
         <link href="https://t.me/pytgcallschat">Ask to PyTgCalls Community</link>
       </category>
       <category title="Company">
-        <link href="https://github.com/pytgcalls">Github Organization</link>
+        <link href="https://github.com/pytgcalls">GitHub Organization</link>
         <link href="https://github.com/pytgcalls/pytgcalls.github.io">Contribute to this site</link>
         <link href="https://t.me/pytgcallsnews">Newsletter</link>
       </category>
-      <dsc>© 2020-2026 • PyTgCalls Foundation by Vrumger &amp; Laky64</dsc>
+      <dsc>© 2020-2026 • Py-TgCalls Foundation by Vrumger &amp; LaurenTheStoat</dsc>
     </footer-links>
     <sponsor href="https://pinguproxy.com/?ref=pytgcalls" weight="75">
       <badge>Sponsored</badge>
@@ -1922,7 +1922,7 @@
     </group>
   </files-list>
 
-  <files-list id="PyTgCalls" description="Async Python client API for the Telegram Calls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
+  <files-list id="PyTgCalls" title="Py-TgCalls" description="Async Python client API for the Telegram Calls" basepath="PyTgCalls/" defaultfile="Quick Start.xml">
     <microtag>Introduction</microtag>
     <file>Quick Start.xml</file>
     <file>Install Guide.xml</file>

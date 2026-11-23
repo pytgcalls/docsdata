@@ -1,11 +1,11 @@
 <page>
     <h1>Calling Methods</h1>
     <text>
-        At this point, we have successfully <docs-ref link="/PyTgCalls/Install Guide">installed PyTgCalls</docs-ref> and installed an MTProto client;
+        At this point, we have successfully <docs-ref link="/PyTgCalls/Install Guide">installed Py-TgCalls</docs-ref> and installed an MTProto client;
         we are now aiming towards the core of the library. It’s time to start playing with the API!
     </text>
     <h2>Basic Usage</h2>
-    <text>Making API method calls with PyTgCalls is very simple. Here’s a basic example we are going to examine step by step:</text>
+    <text>Making API method calls with Py-TgCalls is very simple. Here’s a basic example we are going to examine step by step:</text>
     <syntax-highlight>
         from pytgcalls import PyTgCalls
         from pytgcalls import idle
@@ -76,13 +76,13 @@
             </multisyntax>
         </item>
         <item>
-            Initialize the PyTgCalls client:
+            Initialize the Py-TgCalls client:
             <syntax-highlight>
                 app = PyTgCalls(client)
             </syntax-highlight>
         </item>
         <item>
-            Start the PyTgCalls client:
+            Start the Py-TgCalls client:
             <syntax-highlight>
                 app.start()
             </syntax-highlight>
@@ -104,7 +104,7 @@
         </item>
     </list>
     <h2>Asynchronous Calls</h2>
-    <text>In case you wish to run PyTgCalls asynchronously:</text>
+    <text>In case you wish to run Py-TgCalls asynchronously:</text>
     <syntax-highlight>
         import asyncio
         from pytgcalls import PyTgCalls
@@ -125,7 +125,7 @@
     <h3>Asynchronous step-by-step</h3>
     <list style="numbers">
         <item>
-            Import PyTgCalls, AsyncIO and create an instance:
+            Import Py-TgCalls, AsyncIO and create an instance:
             <syntax-highlight>
                 import asyncio
                 from pytgcalls import PyTgCalls

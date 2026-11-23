@@ -1,7 +1,7 @@
 <page>
     <h1>Using Handlers</h1>
     <text>
-        Handlers are used to instruct PyTgCalls to execute a specific function when a certain event occurs.
+        Handlers are used to instruct Py-TgCalls to execute a specific function when a certain event occurs.
         For a much more convenient way to handle updates, you can use the <docs-ref link="/PyTgCalls/Decorators">decorators</docs-ref> instead.
     </text>
     <separator/>
