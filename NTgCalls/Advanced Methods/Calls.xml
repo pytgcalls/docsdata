@@ -85,7 +85,7 @@ app.calls().await?;</syntax-highlight>
     </lang-block>
     <lang-block language="java">
         <category-title noref="true">
-            <shi>java.util.Map&lt;Long,  media.CallInfo&gt;</shi> <ref src="method">NTgCalls.<sb>calls</sb></ref>()
+            <shi>java.util.Map&lt;Long, CallInfo&gt;</shi> <ref src="method">NTgCalls.<sb>calls</sb></ref>()
         </category-title>
         <subtext>
             <config id="CALLS_DESC2"/>
