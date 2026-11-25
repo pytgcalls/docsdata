@@ -42,6 +42,9 @@
 
             <category-title><ref><sb>presentation_info</sb></ref> <shi>-> Optional[</shi><docs-ref link="/PyTgCalls/Advanced Types/SourceInfo">pytgcalls.SourceInfo</docs-ref><shi>]</shi></category-title>
             <subtext><text>Info about the screen sharing stream the participant is currently broadcasting.</text></subtext>
+
+            <category-title><ref><sb>has_e2e_key</sb></ref> <shi>-> Optional[bool]</shi></category-title>
+            <subtext><text>Whether the participant holds the key of an end-to-end encrypted conference call, as recorded by its blockchain. It is <code>None</code> in group calls that are not end-to-end encrypted. A participant who just joined is <code>False</code> until its key is added, and an <docs-ref link="/PyTgCalls/Advanced Types/UpdatedGroupCallParticipant">UpdatedGroupCallParticipant</docs-ref> update is sent when it changes.</text></subtext>
         </subtext>
     </subtext>
 </page>
