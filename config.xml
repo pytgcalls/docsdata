@@ -1239,6 +1239,22 @@
     <text>Close a pending subchain request.</text>
   </option>
 
+  <option id="CREATE_REMOVE_BLOCK_DESC">
+    <text>This method allows creating the end-to-end chain block that removes the given participants from a conference call and rotates its shared key, so the removed users can no longer decrypt the call. The block has to be sent to Telegram with phone.deleteConferenceCallParticipants.</text>
+  </option>
+
+  <option id="CREATE_REMOVE_BLOCK_DESC2">
+    <text>Create the chain block that removes conference participants.</text>
+  </option>
+
+  <option id="USER_IDS_DESC">
+    <text>The ids of the users to remove from the call.</text>
+  </option>
+
+  <option id="PARTICIPANTS_DESC">
+    <text>The ids of the users holding the key of the call.</text>
+  </option>
+
   <option id="GET_CALL_TYPE_DESC">
     <text>This method allows retrieving the kind of call handled by a connection.</text>
   </option>
@@ -1287,6 +1303,22 @@
     <text>Initialize a conference call.</text>
   </option>
 
+  <option id="REJOIN_DESC">
+    <text>This method allows replacing the connection of a group call with a new one while keeping its media streams playing from the same position. The returned join payload has to be sent to Telegram again with phone.joinGroupCall, and the response passed to Connect.</text>
+  </option>
+
+  <option id="REJOIN_DESC2">
+    <text>Rejoin a group call keeping its media.</text>
+  </option>
+
+  <option id="REJOIN_CONFERENCE_DESC">
+    <text>This method allows rejoining a conference call with a new connection and a fresh end-to-end session, for example after an end-to-end failure, while keeping its media streams playing from the same position. The returned join parameters have to be sent to Telegram again with phone.joinGroupCall.</text>
+  </option>
+
+  <option id="REJOIN_CONFERENCE_DESC2">
+    <text>Rejoin a conference call with a new end-to-end session.</text>
+  </option>
+
   <option id="PING_DESC">
     <text>This method allows checking that the native library is loaded and responding.</text>
   </option>
@@ -1333,6 +1365,30 @@
 
   <option id="ON_UPDATE_EMOJIS_DESC2">
     <text>Register a callback for the emoji fingerprint updates.</text>
+  </option>
+
+  <option id="ON_E2E_FAILURE_DESC">
+    <text>This method allows you to register a callback that is invoked when the end-to-end chain of a conference call can no longer be applied, for example after the participant has been removed from the call. The call can no longer be decrypted and has to be left and joined again.</text>
+  </option>
+
+  <option id="ON_E2E_FAILURE_DESC2">
+    <text>Register a callback for the end-to-end chain failures.</text>
+  </option>
+
+  <option id="GET_E2E_PARTICIPANTS_DESC">
+    <text>This method allows retrieving the users that currently hold the key of a conference call, as recorded by its end-to-end chain. Comparing it with the participants of the call shows who cannot decrypt the media yet and who left without being removed.</text>
+  </option>
+
+  <option id="GET_E2E_PARTICIPANTS_DESC2">
+    <text>Retrieve the end-to-end chain participants of a conference call.</text>
+  </option>
+
+  <option id="ON_E2E_PARTICIPANTS_DESC">
+    <text>This method allows you to register a callback that is invoked when the users holding the key of a conference call change, as recorded by its end-to-end chain. Users still in this list after leaving the call can be removed with Create Remove Block.</text>
+  </option>
+
+  <option id="ON_E2E_PARTICIPANTS_DESC2">
+    <text>Register a callback for the end-to-end chain participants.</text>
   </option>
 
   <option id="ON_UPGRADE_DESC2">
