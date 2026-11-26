@@ -1,6 +1,7 @@
 <!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Create Remove Block</h1>
+    <config id="CREATE_REMOVE_BLOCK_DESC"/>
     <h3>Example</h3>
     <multisyntax id="languages">
         <tabs>
@@ -65,6 +66,7 @@ app.create_remove_block(
             <shi>async</shi> <ref src="method">NTgCalls.<sb>create_remove_block</sb></ref>() <shi>-&gt; bytes</shi>
         </category-title>
         <subtext>
+            <config id="CREATE_REMOVE_BLOCK_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -72,6 +74,7 @@ app.create_remove_block(
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>int</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>user_ids</sb></ref>: <shi>list[int]</shi></category-title>
+                    <config id="USER_IDS_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -89,6 +92,7 @@ app.create_remove_block(
             <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_create_remove_block</sb></ref>()
         </category-title>
         <subtext>
+            <config id="CREATE_REMOVE_BLOCK_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -98,6 +102,7 @@ app.create_remove_block(
                     <category-title><ref><sb>chat_id</sb></ref>: <shi language="c">int64_t</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>user_ids</sb></ref>: <shi language="c">const int64_t*</shi>, <ref><sb>user_ids_len</sb></ref>: <shi language="c">size_t</shi></category-title>
+                    <config id="USER_IDS_DESC"/>
                     <category-title><ref><sb>out</sb></ref>: <shi language="c">uint8_t**</shi>, <ref><sb>out_len</sb></ref>: <shi language="c">size_t*</shi></category-title>
                     <config id="C_OUT_LEN_DESC"/>
                 </subtext>
@@ -117,6 +122,7 @@ app.create_remove_block(
             <ref src="method">NTgCalls.<sb>createRemoveBlock</sb></ref>() <shi>: Promise&lt;Buffer&gt;</shi>
         </category-title>
         <subtext>
+            <config id="CREATE_REMOVE_BLOCK_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -124,6 +130,7 @@ app.create_remove_block(
                     <category-title><ref><sb>chatId</sb></ref>: <shi>bigint</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>userIds</sb></ref>: <shi>bigint[]</shi></category-title>
+                    <config id="USER_IDS_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -141,6 +148,7 @@ app.create_remove_block(
             <shi>byte[]</shi> <ref src="method">NTgCalls.<sb>createRemoveBlock</sb></ref>()
         </category-title>
         <subtext>
+            <config id="CREATE_REMOVE_BLOCK_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -148,6 +156,7 @@ app.create_remove_block(
                     <category-title><shi>long</shi> <ref><sb>chatId</sb></ref></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><shi>java.util.List&lt;Long&gt;</shi> <ref><sb>userIds</sb></ref></category-title>
+                    <config id="USER_IDS_DESC"/>
                 </subtext>
             </category>
             <br/>
@@ -165,6 +174,7 @@ app.create_remove_block(
             <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>create_remove_block</sb></ref>() <shi>-&gt; Result&lt;Vec&lt;u8&gt;&gt;</shi>
         </category-title>
         <subtext>
+            <config id="CREATE_REMOVE_BLOCK_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -172,6 +182,7 @@ app.create_remove_block(
                     <category-title><ref><sb>chat_id</sb></ref>: <shi>i64</shi></category-title>
                     <config id="CHAT_ID_DESC"/>
                     <category-title><ref><sb>user_ids</sb></ref>: <shi>Vec&lt;i64&gt;</shi></category-title>
+                    <config id="USER_IDS_DESC"/>
                 </subtext>
             </category>
             <br/>

@@ -1,6 +1,7 @@
 <!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Rejoin Conference</h1>
+    <config id="REJOIN_CONFERENCE_DESC"/>
     <h3>Example</h3>
     <multisyntax id="languages">
         <tabs>
@@ -65,6 +66,7 @@ app.rejoin_conference(
             <shi>async</shi> <ref src="method">NTgCalls.<sb>rejoin_conference</sb></ref>() <shi>-&gt; ntgcalls.ConferenceJoinParams</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_CONFERENCE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -89,6 +91,7 @@ app.rejoin_conference(
             <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_rejoin_conference</sb></ref>()
         </category-title>
         <subtext>
+            <config id="REJOIN_CONFERENCE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -117,6 +120,7 @@ app.rejoin_conference(
             <ref src="method">NTgCalls.<sb>rejoinConference</sb></ref>() <shi>: Promise&lt;ConferenceJoinParams&gt;</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_CONFERENCE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -141,6 +145,7 @@ app.rejoin_conference(
             <shi>ConferenceJoinParams</shi> <ref src="method">NTgCalls.<sb>rejoinConference</sb></ref>()
         </category-title>
         <subtext>
+            <config id="REJOIN_CONFERENCE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -165,6 +170,7 @@ app.rejoin_conference(
             <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>rejoin_conference</sb></ref>() <shi>-&gt; Result&lt;ConferenceJoinParams&gt;</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_CONFERENCE_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>

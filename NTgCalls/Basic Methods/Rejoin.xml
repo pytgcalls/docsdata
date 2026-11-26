@@ -1,6 +1,7 @@
 <!-- @generated from schema.ntl / DO NOT EDIT -->
 <page>
     <h1>Rejoin</h1>
+    <config id="REJOIN_DESC"/>
     <h3>Example</h3>
     <multisyntax id="languages">
         <tabs>
@@ -60,6 +61,7 @@ app.rejoin(
             <shi>async</shi> <ref src="method">NTgCalls.<sb>rejoin</sb></ref>() <shi>-&gt; str</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -83,6 +85,7 @@ app.rejoin(
             <ref><shi language="c">ntg_result</shi> <sb src="method">ntg_rejoin</sb></ref>()
         </category-title>
         <subtext>
+            <config id="REJOIN_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -110,6 +113,7 @@ app.rejoin(
             <ref src="method">NTgCalls.<sb>rejoin</sb></ref>() <shi>: Promise&lt;string&gt;</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -133,6 +137,7 @@ app.rejoin(
             <shi>String</shi> <ref src="method">NTgCalls.<sb>rejoin</sb></ref>()
         </category-title>
         <subtext>
+            <config id="REJOIN_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
@@ -156,6 +161,7 @@ app.rejoin(
             <shi>pub async fn</shi> <ref src="method">NTgCalls::<sb>rejoin</sb></ref>() <shi>-&gt; Result&lt;String&gt;</shi>
         </category-title>
         <subtext>
+            <config id="REJOIN_DESC2"/>
             <br/>
             <category>
                 <pg-title>PARAMETERS</pg-title>
