@@ -731,6 +731,86 @@
     <text>Get all the available media devices.</text>
   </option>
 
+  <option id="GET_MEDIA_INFO_DESC">
+    <text>This method tells what NTgCalls can do with a file on its own, without FFmpeg: with <code>CAPTURE</code> it opens the file and describes its tracks, with <code>PLAYBACK</code> it describes what a recording to that path would contain.</text>
+  </option>
+
+  <option id="GET_MEDIA_INFO_DESC2">
+    <text>Get how a file is read, or how a recording to it is written.</text>
+  </option>
+
+  <option id="MEDIA_INFO_PATH_DESC">
+    <subtext><text>Path of the file. With <code>PLAYBACK</code> only its extension matters, so the file doesn&apos;t need to exist.</text></subtext>
+  </option>
+
+  <option id="MEDIA_INFO_MODE_DESC">
+    <subtext><text><code>CAPTURE</code> to read the file, <code>PLAYBACK</code> to record to it. With <code>CAPTURE</code> a missing file raises <code>FileError</code> and an unreadable one <code>FFmpegError</code>.</text></subtext>
+  </option>
+
+  <option id="MEDIA_INFO_DESC">
+    <text>What a file contains when read, or what a recording to it would contain.</text>
+  </option>
+
+  <option id="MEDIA_INFO_CONTAINER_DESC">
+    <subtext><text>Name of the container, as libav calls it. Empty when NTgCalls can&apos;t record to the path.</text></subtext>
+  </option>
+
+  <option id="MEDIA_INFO_DURATION_DESC">
+    <subtext><text>Duration in milliseconds, or 0 when unknown, as in live streams and with <code>PLAYBACK</code>.</text></subtext>
+  </option>
+
+  <option id="MEDIA_INFO_AUDIO_DESC">
+    <subtext><text>The audio track, or <code>None</code> when the file has none or the container can&apos;t record audio.</text></subtext>
+  </option>
+
+  <option id="MEDIA_INFO_VIDEO_DESC">
+    <subtext><text>The video track, or <code>None</code> when the file has none or the container can&apos;t record video. Cover art is ignored.</text></subtext>
+  </option>
+
+  <option id="AUDIO_INFO_DESC">
+    <text>Details of an audio track.</text>
+  </option>
+
+  <option id="VIDEO_INFO_DESC">
+    <text>Details of a video track.</text>
+  </option>
+
+  <option id="MEDIA_INFO_CODEC_DESC">
+    <subtext><text>Name of the codec, as libav calls it. With <code>PLAYBACK</code> it is the codec the recording is written with, and it is empty for video, which depends on the call.</text></subtext>
+  </option>
+
+  <option id="AUDIO_INFO_SAMPLE_RATE_DESC">
+    <subtext><text>Sample rate in Hz, or 0 with <code>PLAYBACK</code>, where the requested sample rate is used.</text></subtext>
+  </option>
+
+  <option id="AUDIO_INFO_CHANNELS_DESC">
+    <subtext><text>Number of channels, or 0 with <code>PLAYBACK</code>, where the requested channels are used.</text></subtext>
+  </option>
+
+  <option id="AUDIO_INFO_SUPPORTED_DESC">
+    <subtext><text>Whether NTgCalls can read or write this track without FFmpeg.</text></subtext>
+  </option>
+
+  <option id="AUDIO_INFO_PASSTHROUGH_DESC">
+    <subtext><text>Whether the audio can be sent or recorded as it is, without re-encoding. It is only a precondition: the bitrate and channels of the call still decide. See <docs-ref link="/PyTgCalls/Passthrough">Passthrough</docs-ref>.</text></subtext>
+  </option>
+
+  <option id="VIDEO_INFO_FRAME_RATE_DESC">
+    <subtext><text>Average frames per second, or 0 when unknown.</text></subtext>
+  </option>
+
+  <option id="VIDEO_INFO_B_FRAMES_DESC">
+    <subtext><text>Whether the video uses B-frames, which can&apos;t be sent as they are.</text></subtext>
+  </option>
+
+  <option id="VIDEO_INFO_SUPPORTED_DESC">
+    <subtext><text>Whether NTgCalls can read or write this track without FFmpeg.</text></subtext>
+  </option>
+
+  <option id="VIDEO_INFO_PASSTHROUGH_DESC">
+    <subtext><text>Whether the video can be sent or recorded as it is, without re-encoding. It is only a precondition: the codec and size negotiated by the call, and the size and frame rate requested, still decide. See <docs-ref link="/PyTgCalls/Passthrough">Passthrough</docs-ref>.</text></subtext>
+  </option>
+
   <option id="ENABLE_GLIB_LOOP_DESC">
     <text>Enable the GLib main loop to allow the library to use it for PipeWire on OSes that uses Wayland.</text>
   </option>

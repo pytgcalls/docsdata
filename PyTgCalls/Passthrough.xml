@@ -6,15 +6,15 @@
     <alert type="note" title="Sent as it is">
         <list>
             <item>Opus audio, from Ogg, WebM, MKA or YouTube</item>
-            <item>H264 without B-frames, VP8, VP9 or AV1, in the codec and size of the call</item>
+            <item>H264 Baseline, Main or High without B-frames, VP8, VP9 or AV1, in the codec and size of the call</item>
             <item>Recording one participant to <code>.ogg</code>, <code>.mkv</code> or <code>.webm</code></item>
         </list>
     </alert>
     <alert type="warning" title="Re-encoded">
         <list>
             <item>MP3, AAC, FLAC, Vorbis and WAV audio</item>
-            <item>H264 with B-frames, like most phone videos and downloads</item>
-            <item>A video codec or size different from the call</item>
+            <item>H264 with B-frames, like most phone videos and downloads, and 10-bit, 4:2:2, 4:4:4 or interlaced H264, which many phones can&apos;t decode</item>
+            <item>A video codec or size different from the call, or above the size and frame rate of your <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">VideoParameters</docs-ref></item>
             <item>Recording several participants, or to <code>.mp4</code>, <code>.m4a</code>, <code>.wav</code> or <code>.flac</code></item>
         </list>
     </alert>
@@ -44,7 +44,16 @@
     <separator/>
     <h2>Check it</h2>
     <text>
-        Enable the <code>ntgcalls</code> logger to see whether each stream is forwarded or re-encoded, and why:
+        Before playing, <docs-ref link="/NTgCalls/Advanced Methods/Get Media Info">get_media_info()</docs-ref> tells whether a file can be sent as it is:
+    </text>
+    <syntax-highlight>
+        from ntgcalls import NTgCalls, StreamMode
+
+        info = NTgCalls.get_media_info('song.webm', StreamMode.CAPTURE)
+        print(info.audio.passthrough)
+    </syntax-highlight>
+    <text>
+        While playing, enable the <code>ntgcalls</code> logger to see whether each stream is forwarded or re-encoded, and why:
     </text>
     <syntax-highlight>
         import logging
