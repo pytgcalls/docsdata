@@ -30,6 +30,18 @@
         ffmpeg -i input.mp4 -c:v libx264 -bf 0 -s 1280x720 -c:a libopus -b:a 128k output.mkv
     </syntax-highlight>
     <separator/>
+    <h2>Fixed or adaptive quality</h2>
+    <text>
+        Audio sent as it is keeps the bitrate of the file and doesn&apos;t follow the connection, while re-encoded audio adapts to it. Pick what suits your server:
+    </text>
+    <list>
+        <item><b>Fixed:</b> on a stable, fast connection, use Opus files encoded at the bitrate you want. They are sent as they are, with constant quality.</item>
+        <item><b>Adaptive:</b> on an unstable connection, let NTgCalls encode the audio. It lowers the bitrate when the bandwidth drops and adds error correction when packets get lost.</item>
+    </list>
+    <text>
+        To always re-encode an Opus source, set a <code>bitrate</code> in <docs-ref link="/PyTgCalls/Stream Descriptors/AudioParameters">AudioParameters</docs-ref> lower than the one of the file. Passthrough also switches to re-encoding on its own when the channels don&apos;t match.
+    </text>
+    <separator/>
     <h2>Check it</h2>
     <text>
         Enable the <code>ntgcalls</code> logger to see whether each stream is forwarded or re-encoded, and why:
