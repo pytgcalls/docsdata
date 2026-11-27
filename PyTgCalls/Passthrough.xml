@@ -1,0 +1,51 @@
+<page>
+    <h1>Passthrough</h1>
+    <text>
+        When your media already matches the call, NTgCalls sends it as it is, without decoding and encoding it again. You get the original quality and a fraction of the CPU.
+    </text>
+    <alert type="note" title="Sent as it is">
+        <list>
+            <item>Opus audio, from Ogg, WebM, MKA or YouTube</item>
+            <item>H264 without B-frames, VP8, VP9 or AV1, in the codec and size of the call</item>
+            <item>Recording one participant to <code>.ogg</code>, <code>.mkv</code> or <code>.webm</code></item>
+        </list>
+    </alert>
+    <alert type="warning" title="Re-encoded">
+        <list>
+            <item>MP3, AAC, FLAC, Vorbis and WAV audio</item>
+            <item>H264 with B-frames, like most phone videos and downloads</item>
+            <item>A video codec or size different from the call</item>
+            <item>Recording several participants, or to <code>.mp4</code>, <code>.m4a</code>, <code>.wav</code> or <code>.flac</code></item>
+        </list>
+    </alert>
+    <text>
+        Re-encoding is automatic, so everything still plays. It only costs more CPU.
+    </text>
+    <separator/>
+    <h2>Make a file passthrough-ready</h2>
+    <text>
+        Convert it once, with Opus audio and H264 without B-frames at the size of your <docs-ref link="/PyTgCalls/Stream Descriptors/VideoParameters">VideoParameters</docs-ref>:
+    </text>
+    <syntax-highlight language="bash">
+        ffmpeg -i input.mp4 -c:v libx264 -bf 0 -s 1280x720 -c:a libopus -b:a 128k output.mkv
+    </syntax-highlight>
+    <separator/>
+    <h2>Check it</h2>
+    <text>
+        Enable the <code>ntgcalls</code> logger to see whether each stream is forwarded or re-encoded, and why:
+    </text>
+    <syntax-highlight>
+        import logging
+
+        logging.basicConfig(level=logging.INFO)
+        logging.getLogger('ntgcalls').setLevel(logging.INFO)
+    </syntax-highlight>
+    <syntax-highlight language="text">
+        INFO:ntgcalls:libav_demuxer.cpp:134 Sending the Opus audio without re-encoding it
+        INFO:ntgcalls:passthrough_video_encoder.cpp:87 Forwarding the encoded H264 video without re-encoding it
+        INFO:ntgcalls:passthrough_video_encoder.cpp:102 Re-encoding the video, the source uses B-frames
+    </syntax-highlight>
+    <text>
+        Lines starting with <b>Sending</b> or <b>Forwarding</b> mean passthrough. <b>Re-encoding</b> lasts for the whole file and says why at the end, while <b>Encoding the video until the next usable source keyframe</b> lasts only a moment, after a bandwidth drop or a keyframe request.
+    </text>
+</page>
