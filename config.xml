@@ -1,5 +1,5 @@
 <config>
-  <option id="NTGCALLS_VERSION">4.0.0b2</option>
+  <option id="NTGCALLS_VERSION">4.0.0b3</option>
   <option id="PYTGCALLS_VERSION">4.0.0b4</option>
   <option id="PYPI_PACKAGE">py-tgcalls</option>
 
@@ -2009,6 +2009,7 @@
       <file>Get E2E Participants.xml</file>
       <file>Get Emojis Fingerprint.xml</file>
       <file>Get Media Devices.xml</file>
+      <file>Get Media Info.xml</file>
       <file>Get Protocol.xml</file>
       <file>Get State.xml</file>
       <file>Ping.xml</file>
@@ -2037,6 +2038,7 @@
     </group>
     <group basepath="NTgCalls/Available Types/">
       <file>AudioDescription.xml</file>
+      <file>AudioInfo.xml</file>
       <file>AuthParams.xml</file>
       <file>CallInfo.xml</file>
       <file>ConferenceJoinParams.xml</file>
@@ -2047,6 +2049,7 @@
       <file>FrameData.xml</file>
       <file>MediaDescription.xml</file>
       <file>MediaDevices.xml</file>
+      <file>MediaInfo.xml</file>
       <file>MediaState.xml</file>
       <file>ParticipantsRequest.xml</file>
       <file>Protocol.xml</file>
@@ -2057,6 +2060,7 @@
       <file>SsrcMapping.xml</file>
       <file>SubchainRequest.xml</file>
       <file>VideoDescription.xml</file>
+      <file>VideoInfo.xml</file>
     </group>
     <group basepath="NTgCalls/Available Enums/">
       <file>CallType.xml</file>

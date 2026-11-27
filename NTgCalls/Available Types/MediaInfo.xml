@@ -1,0 +1,108 @@
+<!-- @generated from schema.ntl / DO NOT EDIT -->
+<page>
+    <h1>MediaInfo</h1>
+    <config id="MEDIA_INFO_DESC"/>
+    <separator/>
+    <h2>Details</h2>
+    <lang-tabs id="languages"/>
+    <lang-block language="python" default="true">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class">ntgcalls.<sb>MediaInfo</sb></ref>()
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>container</sb></ref>: <shi>str</shi></category-title>
+                    <config id="MEDIA_INFO_CONTAINER_DESC"/>
+                    <category-title><ref><sb>duration_ms</sb></ref>: <shi>int</shi></category-title>
+                    <config id="MEDIA_INFO_DURATION_DESC"/>
+                    <category-title><ref><sb>audio</sb></ref>: <shi>Optional</shi>[<shi>ntgcalls.AudioInfo</shi>]</category-title>
+                    <config id="MEDIA_INFO_AUDIO_DESC"/>
+                    <category-title><ref><sb>video</sb></ref>: <shi>Optional</shi>[<shi>ntgcalls.VideoInfo</shi>]</category-title>
+                    <config id="MEDIA_INFO_VIDEO_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="c">
+        <category-title noref="true">
+            <ref><shi language="c">struct</shi> <sb src="class">ntg_media_info</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>container</sb></ref>: <shi language="c">char*</shi></category-title>
+                    <config id="MEDIA_INFO_CONTAINER_DESC"/>
+                    <category-title><ref><sb>duration_ms</sb></ref>: <shi language="c">int64_t</shi></category-title>
+                    <config id="MEDIA_INFO_DURATION_DESC"/>
+                    <category-title><ref><sb>audio</sb></ref>: <shi language="c">ntg_audio_info*</shi></category-title>
+                    <config id="MEDIA_INFO_AUDIO_DESC"/>
+                    <category-title><ref><sb>video</sb></ref>: <shi language="c">ntg_video_info*</shi></category-title>
+                    <config id="MEDIA_INFO_VIDEO_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="node">
+        <category-title noref="true">
+            <shi>interface</shi> <ref src="class"><sb>MediaInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>container</sb></ref>: <shi>string</shi></category-title>
+                    <config id="MEDIA_INFO_CONTAINER_DESC"/>
+                    <category-title><ref><sb>durationMs</sb></ref>: <shi>bigint</shi></category-title>
+                    <config id="MEDIA_INFO_DURATION_DESC"/>
+                    <category-title><ref><sb>audio</sb></ref><shi>?</shi>: <shi>AudioInfo</shi></category-title>
+                    <config id="MEDIA_INFO_AUDIO_DESC"/>
+                    <category-title><ref><sb>video</sb></ref><shi>?</shi>: <shi>VideoInfo</shi></category-title>
+                    <config id="MEDIA_INFO_VIDEO_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="java">
+        <category-title noref="true">
+            <shi>class</shi> <ref src="class"><sb>MediaInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><shi>String</shi> <ref><sb>container</sb></ref></category-title>
+                    <config id="MEDIA_INFO_CONTAINER_DESC"/>
+                    <category-title><shi>long</shi> <ref><sb>duration_ms</sb></ref></category-title>
+                    <config id="MEDIA_INFO_DURATION_DESC"/>
+                    <category-title><shi>AudioInfo</shi> <ref><sb>audio</sb></ref></category-title>
+                    <config id="MEDIA_INFO_AUDIO_DESC"/>
+                    <category-title><shi>VideoInfo</shi> <ref><sb>video</sb></ref></category-title>
+                    <config id="MEDIA_INFO_VIDEO_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+    <lang-block language="rust">
+        <category-title noref="true">
+            <shi>pub struct</shi> <ref src="class"><sb>MediaInfo</sb></ref>
+        </category-title>
+        <subtext>
+            <category>
+                <pg-title>PARAMETERS</pg-title>
+                <subtext>
+                    <category-title><ref><sb>container</sb></ref>: <shi>String</shi></category-title>
+                    <config id="MEDIA_INFO_CONTAINER_DESC"/>
+                    <category-title><ref><sb>duration_ms</sb></ref>: <shi>i64</shi></category-title>
+                    <config id="MEDIA_INFO_DURATION_DESC"/>
+                    <category-title><ref><sb>audio</sb></ref>: <shi>Option&lt;AudioInfo&gt;</shi></category-title>
+                    <config id="MEDIA_INFO_AUDIO_DESC"/>
+                    <category-title><ref><sb>video</sb></ref>: <shi>Option&lt;VideoInfo&gt;</shi></category-title>
+                    <config id="MEDIA_INFO_VIDEO_DESC"/>
+                </subtext>
+            </category>
+        </subtext>
+    </lang-block>
+</page>
