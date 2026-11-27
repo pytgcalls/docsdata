@@ -219,11 +219,11 @@
   </option>
 
   <option id="AUDIO_FORMAT_DESC">
-    <subtext><text>Format of the audio exchanged with the source or the destination, Ogg (Opus) if not set. Ignored for devices. Sending Ogg Opus skips the audio encoding and keeps the original quality, since the packets are sent without being encoded again, and are re-encoded only when they don't match the requested channels or bitrate. When recording to a file or a shell command in Ogg, a single participant is written as-is, while more participants are decoded, mixed and re-encoded, which uses more CPU than recording in PCM.</text></subtext>
+    <subtext><text>Format of the audio exchanged with the source or the destination, AUTO if not set. Ignored for devices. When reading, AUTO detects the container from the file itself. When writing to a file, it picks the container from the extension (.ogg, .opus, .mka, .mkv, .webm, .mp4, .m4a, .wav, .flac) and falls back to Ogg, which is also used for shell commands. Opus audio is sent without being decoded or encoded again and keeps its original quality, while MP3, AAC, FLAC, Vorbis and WAV are decoded and re-encoded to Opus. When recording, Ogg, Matroska and WebM write a single participant as received and decode, mix and re-encode when there are more, while MP4 is always re-encoded to AAC and WAV and FLAC store the decoded audio at the requested sample rate, which uses more CPU than recording in PCM.</text></subtext>
   </option>
 
   <option id="VIDEO_FORMAT_DESC">
-    <subtext><text>Format of the video read from the source, Matroska if not set. Ignored for devices and desktop capture. A Matroska stream carrying H264 without B-frames, VP8, VP9 or AV1 is sent without re-encoding when it matches the negotiated codec, and re-encoded only when it doesn't, or briefly when a viewer needs a keyframe. When playing back to a file or a shell command, I420 composes every participant into an animated grid at the given size and frame rate, while Matroska writes a single participant as received and decodes, composes and re-encodes when there are more, which uses more CPU. External media always receives each participant separately.</text></subtext>
+    <subtext><text>Format of the video read from the source or written to the destination, AUTO if not set. Ignored for devices and desktop capture. When reading, AUTO detects the container from the file itself, and H264 without B-frames, VP8, VP9 or AV1 is sent without re-encoding when it matches the negotiated codec, and re-encoded only when it doesn't, or briefly when a viewer needs a keyframe. H264 with B-frames, used by most phone and downloaded videos, is always re-encoded. When writing to a file, AUTO picks Matroska, WebM or MP4 from the extension and falls back to Matroska, which is also used for shell commands. I420 composes every participant into an animated grid at the given size and frame rate, while the other formats write a single participant as received and decode, compose and re-encode when there are more, which uses more CPU. External media always receives each participant separately.</text></subtext>
   </option>
 
   <option id="VIDEO_CONFIG_DESC">
@@ -421,8 +421,28 @@
     <subtext><text>Raw I420 video frames.</text></subtext>
   </option>
 
+  <option id="FORMAT_AUTO_DESC">
+    <subtext><text>Default. When reading, detects the container from the file itself. When writing to a file, picks the container from its extension, falling back to Ogg for audio and Matroska for video, which are also used for shell commands.</text></subtext>
+  </option>
+
+  <option id="FORMAT_WEBM_DESC">
+    <subtext><text>WebM audio or video, the web subset of Matroska. Holds Opus audio and VP8, VP9 or AV1 video, sent and received without being decoded or encoded.</text></subtext>
+  </option>
+
+  <option id="FORMAT_MP4_DESC">
+    <subtext><text>MP4 audio or video, also used for .m4a files. H264, VP9 and AV1 video is sent and received as it is, except H264 with B-frames, which is re-encoded, while the audio is decoded when reading and encoded to AAC when writing. Recordings are fragmented MP4, which stays playable if the recording is interrupted. An MP4 read from a shell command must be saved with faststart, because the index at the end of the file can't be reached from a pipe.</text></subtext>
+  </option>
+
+  <option id="FORMAT_WAV_DESC">
+    <subtext><text>WAV audio, uncompressed 16-bit PCM with a header. Recordings are written at the requested sample rate.</text></subtext>
+  </option>
+
+  <option id="FORMAT_FLAC_DESC">
+    <subtext><text>FLAC audio, lossless and compressed. Recordings are written at the requested sample rate.</text></subtext>
+  </option>
+
   <option id="FORMAT_MATROSKA_DESC">
-    <subtext><text>Matroska video for files and shell commands, or one compressed frame per call for external media, with its codec and keyframe flag in FrameData. The lightest choice, since the frames are sent and received without being decoded or encoded, saving most of the CPU spent on video.</text></subtext>
+    <subtext><text>Matroska audio or video for files and shell commands, or one compressed frame per call for external media, with its codec and keyframe flag in FrameData. Holds Opus audio and H264, VP8, VP9 or AV1 video, which are sent and received without being decoded or encoded, saving most of the CPU spent on media.</text></subtext>
   </option>
 
   <option id="CODEC_DESC">

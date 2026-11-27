@@ -20,6 +20,16 @@
                 <config id="FORMAT_I420_DESC"/>
                 <category-title><ref>Format.<sb>MATROSKA</sb></ref></category-title>
                 <config id="FORMAT_MATROSKA_DESC"/>
+                <category-title><ref>Format.<sb>AUTO</sb></ref></category-title>
+                <config id="FORMAT_AUTO_DESC"/>
+                <category-title><ref>Format.<sb>WEBM</sb></ref></category-title>
+                <config id="FORMAT_WEBM_DESC"/>
+                <category-title><ref>Format.<sb>MP4</sb></ref></category-title>
+                <config id="FORMAT_MP4_DESC"/>
+                <category-title><ref>Format.<sb>WAV</sb></ref></category-title>
+                <config id="FORMAT_WAV_DESC"/>
+                <category-title><ref>Format.<sb>FLAC</sb></ref></category-title>
+                <config id="FORMAT_FLAC_DESC"/>
             </subtext>
         </subtext>
     </lang-block>
@@ -38,6 +48,16 @@
                 <config id="FORMAT_I420_DESC"/>
                 <category-title><ref><sb>NTG_FORMAT_MATROSKA</sb></ref></category-title>
                 <config id="FORMAT_MATROSKA_DESC"/>
+                <category-title><ref><sb>NTG_FORMAT_AUTO</sb></ref></category-title>
+                <config id="FORMAT_AUTO_DESC"/>
+                <category-title><ref><sb>NTG_FORMAT_WEBM</sb></ref></category-title>
+                <config id="FORMAT_WEBM_DESC"/>
+                <category-title><ref><sb>NTG_FORMAT_MP4</sb></ref></category-title>
+                <config id="FORMAT_MP4_DESC"/>
+                <category-title><ref><sb>NTG_FORMAT_WAV</sb></ref></category-title>
+                <config id="FORMAT_WAV_DESC"/>
+                <category-title><ref><sb>NTG_FORMAT_FLAC</sb></ref></category-title>
+                <config id="FORMAT_FLAC_DESC"/>
             </subtext>
         </subtext>
     </lang-block>
@@ -56,6 +76,16 @@
                 <config id="FORMAT_I420_DESC"/>
                 <category-title><ref>Format.<sb>MATROSKA</sb></ref></category-title>
                 <config id="FORMAT_MATROSKA_DESC"/>
+                <category-title><ref>Format.<sb>AUTO</sb></ref></category-title>
+                <config id="FORMAT_AUTO_DESC"/>
+                <category-title><ref>Format.<sb>WEBM</sb></ref></category-title>
+                <config id="FORMAT_WEBM_DESC"/>
+                <category-title><ref>Format.<sb>MP4</sb></ref></category-title>
+                <config id="FORMAT_MP4_DESC"/>
+                <category-title><ref>Format.<sb>WAV</sb></ref></category-title>
+                <config id="FORMAT_WAV_DESC"/>
+                <category-title><ref>Format.<sb>FLAC</sb></ref></category-title>
+                <config id="FORMAT_FLAC_DESC"/>
             </subtext>
         </subtext>
     </lang-block>
@@ -74,6 +104,16 @@
                 <config id="FORMAT_I420_DESC"/>
                 <category-title><ref>Format.<sb>MATROSKA</sb></ref></category-title>
                 <config id="FORMAT_MATROSKA_DESC"/>
+                <category-title><ref>Format.<sb>AUTO</sb></ref></category-title>
+                <config id="FORMAT_AUTO_DESC"/>
+                <category-title><ref>Format.<sb>WEBM</sb></ref></category-title>
+                <config id="FORMAT_WEBM_DESC"/>
+                <category-title><ref>Format.<sb>MP4</sb></ref></category-title>
+                <config id="FORMAT_MP4_DESC"/>
+                <category-title><ref>Format.<sb>WAV</sb></ref></category-title>
+                <config id="FORMAT_WAV_DESC"/>
+                <category-title><ref>Format.<sb>FLAC</sb></ref></category-title>
+                <config id="FORMAT_FLAC_DESC"/>
             </subtext>
         </subtext>
     </lang-block>
@@ -92,6 +132,16 @@
                 <config id="FORMAT_I420_DESC"/>
                 <category-title><ref>Format::<sb>Matroska</sb></ref></category-title>
                 <config id="FORMAT_MATROSKA_DESC"/>
+                <category-title><ref>Format::<sb>Auto</sb></ref></category-title>
+                <config id="FORMAT_AUTO_DESC"/>
+                <category-title><ref>Format::<sb>Webm</sb></ref></category-title>
+                <config id="FORMAT_WEBM_DESC"/>
+                <category-title><ref>Format::<sb>Mp4</sb></ref></category-title>
+                <config id="FORMAT_MP4_DESC"/>
+                <category-title><ref>Format::<sb>Wav</sb></ref></category-title>
+                <config id="FORMAT_WAV_DESC"/>
+                <category-title><ref>Format::<sb>Flac</sb></ref></category-title>
+                <config id="FORMAT_FLAC_DESC"/>
             </subtext>
         </subtext>
     </lang-block>
