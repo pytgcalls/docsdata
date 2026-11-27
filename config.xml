@@ -1960,6 +1960,13 @@
       <button>Get 10% off</button>
       <logo>/src/assets/sponsors/voipstore.png</logo>
     </sponsor>
+    <announcement id="v4.0-beta" href="https://t.me/pytgcallsnews">
+      <badge>Beta testers wanted</badge>
+      <title>I want YOU to test the v4.0 beta</title>
+      <description>Local files play without FFmpeg, with passthrough and way less CPU.</description>
+      <button>Join the beta</button>
+      <image>/src/assets/announcements/i-want-you.webp</image>
+    </announcement>
     <donation-link>https://buymeacoffee.com/pytgcalls</donation-link>
   </homepage-config>
 
